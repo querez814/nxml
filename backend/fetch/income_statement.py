@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 import requests as r
 import dotenv as env
 import os
-
+import pandas as pd
 env.load_dotenv()
 
 av_api = os.getenv("ALPHA_VANTAGE")
@@ -15,13 +15,11 @@ def get_quarterly_statement_data(ticker: str):
     response = r.get(url)
     data_json = response.json()
 
-    print("Full API Response:", data_json)  # Debugging step
+    print("Full API Response:", data_json)  
 
-    # Extract the list of quarterly reports
     quarterly_reports = data_json.get("quarterlyReports", [])
-    print("Quarterly Reports Extracted:", quarterly_reports)  # Debugging step
+    print("Quarterly Reports Extracted:", quarterly_reports)   
 
-    # Keys to exclude
     keys_to_exclude = [
         'costofGoodsAndServicesSold', 'reportedCurrency', 'investmentIncomeNet',
         'netInterestIncome', 'nonInterestIncome', 'otherNonOperatingIncome',
@@ -29,7 +27,6 @@ def get_quarterly_statement_data(ticker: str):
         'netIncomeFromContinuingOperations', 'comprehensiveIncomeNetOfTax'
     ]
 
-    # Filter unwanted keys and add fiscalDateEnding as a field
     transformed_reports = [
         {
             "fiscalDateEnding": report.get("fiscalDateEnding", "N/A"),
@@ -38,7 +35,9 @@ def get_quarterly_statement_data(ticker: str):
         for report in quarterly_reports
     ]
 
-    print("Transformed Reports:", transformed_reports)  # Debugging step
+    print("Transformed Reports:", transformed_reports)  
 
     return transformed_reports
+
+
 
