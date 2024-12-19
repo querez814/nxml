@@ -4,7 +4,6 @@
 	export let data: { income_qoq_data?: any; marginData?: any } = {};
 	const income_qoq_data = data?.income_qoq_data || [];
 	const marginData = data?.marginData || [];
-	// Ensure the data is properly formatted and cleaned
 	const formattedData = Array.isArray(income_qoq_data)
 		? income_qoq_data.map((entry: any) => ({
 				fiscalDateEnding: entry.fiscalDateEnding || '-',

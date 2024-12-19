@@ -1,10 +1,8 @@
 <script lang="ts">
 	export let data: { bs_yoy_data?: any };
 
-	// Safely handle undefined or null data
 	const bs_yoy_data = data?.bs_yoy_data || [];
 
-	// Ensure the data is properly formatted and cleaned
 	const formattedData = Array.isArray(bs_yoy_data)
 		? bs_yoy_data.map((entry: any) => ({
 				fiscalDateEnding: entry.fiscalDateEnding || '-',
