@@ -1,9 +1,9 @@
 <script lang="ts">
-	export let data: { income_qoq_data?: any };
-
-	// Safely handle undefined or null data
+	import { onMount } from 'svelte';
+	import { page } from '$app/state';
+	export let data: { income_qoq_data?: any; marginData?: any } = {};
 	const income_qoq_data = data?.income_qoq_data || [];
-
+	const marginData = data?.marginData || [];
 	// Ensure the data is properly formatted and cleaned
 	const formattedData = Array.isArray(income_qoq_data)
 		? income_qoq_data.map((entry: any) => ({
@@ -79,6 +79,8 @@
 					{/each}
 				</tbody>
 			</table>
+
+			<div class="p-4"></div>
 		</div>
 	</div>
 </main>
