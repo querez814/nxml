@@ -1,4 +1,5 @@
 from fastapi import APIRouter, HTTPException
+
 import requests as r
 import dotenv as env
 import os
@@ -10,7 +11,7 @@ av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
 @router.get("/earnings-statement/quarterly/{ticker}")
-def get_quarterly_statement_data(ticker: str):
+def get_quarterly_earnings_data(ticker: str):
     url = f"https://www.alphavantage.co/query?function=EARNINGS&symbol={ticker}&apikey={av_api}"
     response = r.get(url)
     data_json = response.json()
@@ -32,7 +33,7 @@ def get_quarterly_statement_data(ticker: str):
 
 @router.get("/earnings-statement/quarterly/{ticker}/yoy")
 def get_yoy(ticker: str):
-    result = pd.DataFrame(get_quarterly_statement_data(ticker))
+    result = pd.DataFrame(get_quarterly_earnings_data(ticker))
     
     for column in result.columns:
         if column != "reportedDate":

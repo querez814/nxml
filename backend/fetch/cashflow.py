@@ -23,17 +23,13 @@ def get_quarterly_cashflow_statement_data(ticker: str):
     if not quarterly_reports:
         raise HTTPException(status_code=404, detail="No quarterly cash flow data found")
     
-    # Create a DataFrame from quarterly reports
     df = pd.DataFrame(quarterly_reports)
     
-    # Convert relevant columns to numeric for calculations
     df["operatingCashflow"] = pd.to_numeric(df["operatingCashflow"], errors="coerce")
     df["capitalExpenditures"] = pd.to_numeric(df["capitalExpenditures"], errors="coerce")
     
-    # Calculate Free Cash Flow (FCF) and convert it to a string
     df["freeCashFlow"] = (df["operatingCashflow"] - df["capitalExpenditures"]).astype(str)
     
-    # Exclude unwanted keys
     keys_to_exclude = [
         "reportedCurrency",
         "proceedsFromIssuanceOfCommonStock",
@@ -45,12 +41,9 @@ def get_quarterly_cashflow_statement_data(ticker: str):
     ]
     transformed_reports = df.drop(columns=keys_to_exclude, errors="ignore")
     
-    # Convert to list of dictionaries for JSON response
     result = transformed_reports.to_dict(orient="records")
     
     return result
 
 
 
-
-print(get_quarterly_cashflow_statement_data("AMD"))

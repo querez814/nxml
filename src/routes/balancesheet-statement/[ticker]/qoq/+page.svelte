@@ -1,10 +1,8 @@
 <script lang="ts">
 	export let data: { balancesheet_qoq_data?: any };
 
-	// Safely handle undefined or null data
 	const bs_qoq_data = data?.balancesheet_qoq_data || [];
 
-	// Ensure the data is properly formatted and cleaned
 	const formattedData = Array.isArray(bs_qoq_data)
 		? bs_qoq_data.map((entry: any) => ({
 				fiscalDateEnding: entry.fiscalDateEnding || '-',

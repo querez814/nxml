@@ -5,7 +5,7 @@ export const load = async ({ params, fetch }: { params: any; fetch: any }) => {
 	);
 
 	const cashflow_yoy_data = await response.json();
-	console.log('Income Data Fetched:', cashflow_yoy_data); // Debug the response
+	console.log('Income Data Fetched:', cashflow_yoy_data);
 
 	return {
 		cashflow_yoy_data
