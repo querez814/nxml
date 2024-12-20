@@ -7,7 +7,9 @@ from fetch.bs_computations import router as bs_computations_router
 from fetch.income_statement import router as income_router
 from fetch.is_computations import router as is_computations_router
 from fetch.earnings import router as earnings_router
-
+from fetch.valuations import router as valuation_router
+from fetch.summary import router as summary_router
+from fetch.prices import router as prices_router
 app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
@@ -31,3 +33,6 @@ app.include_router(balancesheet_router, prefix="/financials", tags=["Balance She
 app.include_router(is_computations_router, prefix="/financials", tags=["Income Computations"])
 app.include_router(cf_computations_router, prefix="/financials", tags=["Cash Flow Computations"])
 app.include_router(bs_computations_router, prefix="/financials", tags=["Balance Sheet Computations"])
+app.include_router(valuation_router,prefix="/financials",tags=["Valuation"])
+app.include_router(summary_router, prefix="/financials", tags=["Summary"])
+app.include_router(prices_router, prefix="/financials", tags=["Summary"])

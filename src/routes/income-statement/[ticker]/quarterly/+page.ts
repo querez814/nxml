@@ -9,6 +9,7 @@ export const load = async ({ params, fetch }) => {
 	console.log('Income Data Fetched:', income_data);
 
 	return {
-		income_data
+		income_data,
+		ticker
 	};
 };

@@ -1,7 +1,7 @@
 <script lang="ts">
+	import TickerCard from '$lib/components/TickerCard.svelte';
 	import { Popover } from 'svelte-ux';
 	export let data;
-
 	const { income_data } = data;
 
 	const formatToMillions = (num: string) => {
@@ -37,7 +37,6 @@
 	<h1 class="mb-6 text-center text-3xl font-bold text-gray-800 dark:text-gray-100">
 		Quarterly Financial Metrics
 	</h1>
-
 	<div
 		class="relative max-h-[600px] overflow-x-auto overflow-y-auto rounded-xl border border-gray-200 bg-white shadow-sm dark:border-gray-700 dark:bg-gray-800"
 	>
