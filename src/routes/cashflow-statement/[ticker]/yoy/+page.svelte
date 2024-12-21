@@ -1,10 +1,8 @@
 <script lang="ts">
 	export let data: { cashflow_yoy_data?: any };
 
-	// Safely handle undefined or null data
 	const cashflow_yoy_data = data?.cashflow_yoy_data || [];
 
-	// Ensure the data is properly formatted and cleaned
 	const formattedData = Array.isArray(cashflow_yoy_data)
 		? cashflow_yoy_data.map((entry: any) => ({
 				fiscalDateEnding: entry.fiscalDateEnding || '-',

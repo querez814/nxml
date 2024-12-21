@@ -1,10 +1,24 @@
 <script lang="ts">
+	import { Popover } from 'svelte-ux';
 	export let data;
+
 	const { cashflow_data } = data;
+
 	const formatToMillions = (num: string) => {
 		if (!num || num === 'None') return '-';
 		const millions = (parseFloat(num) / 1_000_000).toFixed(2);
 		return `${Number(millions).toLocaleString()}M`;
+	};
+
+	let openStates: { [key: string]: boolean } = {
+		fiscalDateEnding: false,
+		operatingCashflow: false,
+		depreciationDepletionAndAmortization: false,
+		capitalExpenditures: false,
+		changeInReceivables: false,
+		changeInInventory: false,
+		paymentsForRepurchaseOfCommonStock: false,
+		freeCashFlow: false
 	};
 </script>
 
@@ -14,14 +28,47 @@
 		<table class="auto table w-full border-collapse text-sm">
 			<thead class="bg-yellow-80 sticky top-0 text-white">
 				<tr>
-					<th class="border px-4 py-3">Fiscal Date Ending</th>
-					<th class="border px-4 py-3">Operating Cash Flow</th>
-					<th class="border px-4 py-3">D&A</th>
-					<th class="border px-4 py-3">Cap-Ex</th>
-					<th class="border px-4 py-3">Change in Receivables</th>
-					<th class="border px-4 py-3">Change in Inventory</th>
-					<th class="border px-4 py-3">Payments for Stock Repurchase</th>
-					<th class="border px-4 py-3">Free Cash Flow</th>
+					{#each Object.entries(openStates) as [key, isOpen]}
+						<th class="relative whitespace-nowrap px-4 py-3 text-left font-medium">
+							<div class="inline-block">
+								<Popover bind:open={openStates[key]}>
+									<div
+										class="rounded border border-gray-600 bg-gray-800 p-2 text-sm text-white shadow"
+										style="position: absolute; left: 0; top: 100%; transform: translateY(10px); max-width: 400px;"
+									>
+										{#if key === 'fiscalDateEnding'}
+											The last date of the company's reporting period (like the end of a quarter or
+											year).
+										{:else if key === 'operatingCashflow'}
+											Money from the company's core operations, showing if it’s making cash from its
+											business.
+										{:else if key === 'depreciationDepletionAndAmortization'}
+											The gradual reduction in value of assets over time, like machines or natural
+											resources.
+										{:else if key === 'capitalExpenditures'}
+											Money spent to buy or improve long-term assets like buildings or equipment.
+										{:else if key === 'changeInReceivables'}
+											Difference in money owed to the company by customers.
+										{:else if key === 'changeInInventory'}
+											Difference in the cost of items the company has but hasn't sold yet.
+										{:else if key === 'paymentsForRepurchaseOfCommonStock'}
+											Money spent by the company to buy back its own shares.
+										{:else if key === 'freeCashFlow'}
+											Cash left after paying for operations and investments, available for dividends
+											or growth.
+										{/if}
+									</div>
+								</Popover>
+
+								<button
+									class="p-2 transition duration-150 hover:outline hover:outline-2 hover:outline-yellow-500"
+									on:click={() => (openStates[key] = !openStates[key])}
+								>
+									{key.replace(/([A-Z])/g, ' $1').replace(/^[a-z]/, (c) => c.toUpperCase())}
+								</button>
+							</div>
+						</th>
+					{/each}
 				</tr>
 			</thead>
 

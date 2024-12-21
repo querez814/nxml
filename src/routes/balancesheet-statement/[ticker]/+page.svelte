@@ -1,15 +1,29 @@
 <script lang="ts">
-	// Access the data returned from `+page.ts`
+	import { Popover } from 'svelte-ux';
 	export let data;
 
-	// Destructure the income_data from data
 	const { balancesheet_data } = data;
 
-	// Helper function to format numbers into millions with commas
 	const formatToMillions = (num: string) => {
 		if (!num || num === 'None') return '-';
 		const millions = (parseFloat(num) / 1_000_000).toFixed(2);
 		return `${Number(millions).toLocaleString()}M`;
+	};
+
+	let openStates: { [key: string]: boolean } = {
+		fiscalDateEnding: false,
+		totalCurrentAssets: false,
+		totalAssets: false,
+		totalCurrentLiabilities: false,
+		totalLiabilities: false,
+		working_capital: false,
+		totalShareholderEquity: false,
+		commonStockSharesOutstanding: false,
+		cashAndCashEquivalentsAtCarryingValue: false,
+		inventory: false,
+		propertyPlantEquipment: false,
+		deferredRevenue: false,
+		currentDebt: false
 	};
 </script>
 
@@ -21,19 +35,55 @@
 		<table class="auto table w-full border-collapse text-sm">
 			<thead class="bg-yellow-80 sticky top-0 text-white">
 				<tr>
-					<th class="border px-4 py-3">Fiscal Date Ending</th>
-					<th class="border px-4 py-3">Current Assets</th>
-					<th class="border px-4 py-3">Total Assets</th>
-					<th class="border px-4 py-3">Current Liabilities</th>
-					<th class="border px-4 py-3">Total Liabilities</th>
-					<th class="border px-4 py-3">Working Capital</th>
-					<th class="border px-4 py-3">Shareholder Equity</th>
-					<th class="border px-4 py-3">Shares Outstanding</th>
-					<th class="border px-4 py-3">Cash and Cash Equivalents</th>
-					<th class="border px-4 py-3">Inventory</th>
-					<th class="border px-4 py-3">Property Plant and Equipment</th>
-					<th class="border px-4 py-3">Deferred Revenue</th>
-					<th class="border px-4 py-3">Current Debt</th>
+					{#each Object.entries(openStates) as [key, isOpen]}
+						<th class="relative whitespace-nowrap px-4 py-3 text-left font-medium">
+							<div class="inline-block">
+								<Popover bind:open={openStates[key]}>
+									<div
+										class="rounded border border-gray-600 bg-gray-800 p-2 text-sm text-white shadow"
+										style="position: absolute; left: 0; top: 100%; transform: translateY(10px); max-width: 400px;"
+									>
+										{#if key === 'fiscalDateEnding'}
+											The last date of the company's reporting period (like the end of a quarter or
+											year).
+										{:else if key === 'totalCurrentAssets'}
+											Things the company owns that it can quickly turn into cash.
+										{:else if key === 'totalAssets'}
+											Everything the company owns, including cash, property, and equipment.
+										{:else if key === 'totalCurrentLiabilities'}
+											Short-term bills or money the company owes, due soon.
+										{:else if key === 'totalLiabilities'}
+											All the money the company owes, like loans or unpaid bills.
+										{:else if key === 'working_capital'}
+											Money left after subtracting short-term bills from short-term assets.
+										{:else if key === 'totalShareholderEquity'}
+											The value left for shareholders if the company sold everything and paid all
+											debts.
+										{:else if key === 'commonStockSharesOutstanding'}
+											How many shares of the company's stock are owned by people.
+										{:else if key === 'cashAndCashEquivalentsAtCarryingValue'}
+											Money the company has in the bank or as cash.
+										{:else if key === 'inventory'}
+											Items the company plans to sell but hasn’t sold yet.
+										{:else if key === 'propertyPlantEquipment'}
+											Big things the company owns, like buildings, machines, or land.
+										{:else if key === 'deferredRevenue'}
+											Money the company has received but hasn’t yet earned (like prepayments).
+										{:else if key === 'currentDebt'}
+											Loans or money the company must repay soon.
+										{/if}
+									</div>
+								</Popover>
+
+								<button
+									class="p-2 transition duration-150 hover:outline hover:outline-2 hover:outline-yellow-500"
+									on:click={() => (openStates[key] = !openStates[key])}
+								>
+									{key.replace(/([A-Z])/g, ' $1').replace(/^[a-z]/, (c) => c.toUpperCase())}
+								</button>
+							</div>
+						</th>
+					{/each}
 				</tr>
 			</thead>
 
@@ -62,7 +112,6 @@
 						<td class="border px-4 py-3 text-right"
 							>{formatToMillions(entry.cashAndCashEquivalentsAtCarryingValue)}</td
 						>
-
 						<td class="border px-4 py-3 text-right">{formatToMillions(entry.inventory)}</td>
 						<td class="border px-4 py-3 text-right"
 							>{formatToMillions(entry.propertyPlantEquipment)}</td
