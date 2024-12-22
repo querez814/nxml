@@ -9,9 +9,9 @@ env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
+
 @router.get("/cashflow-statement/quarterly/{ticker}")
 def get_quarterly_cashflow_statement_data(ticker: str):
-    # Fetch data from Alpha Vantage API
     url = f"https://www.alphavantage.co/query?function=CASH_FLOW&symbol={ticker}&apikey={av_api}"
     response = r.get(url)
     if response.status_code != 200:
@@ -25,10 +25,16 @@ def get_quarterly_cashflow_statement_data(ticker: str):
     
     df = pd.DataFrame(quarterly_reports)
     
-    df["operatingCashflow"] = pd.to_numeric(df["operatingCashflow"], errors="coerce")
-    df["capitalExpenditures"] = pd.to_numeric(df["capitalExpenditures"], errors="coerce")
+    numeric_columns = ["operatingCashflow", "capitalExpenditures"]
+    for col in numeric_columns:
+        if col in df.columns:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
     
-    df["freeCashFlow"] = (df["operatingCashflow"] - df["capitalExpenditures"]).astype(str)
+    df["freeCashFlow"] = df["operatingCashflow"] - df["capitalExpenditures"]
+    
+    # Replace NaN and infinite values with 0
+    df.replace([float("inf"), -float("inf"), pd.NA], 0, inplace=True)
+    df.fillna(0, inplace=True)
     
     keys_to_exclude = [
         "reportedCurrency",
@@ -41,9 +47,8 @@ def get_quarterly_cashflow_statement_data(ticker: str):
     ]
     transformed_reports = df.drop(columns=keys_to_exclude, errors="ignore")
     
-    result = transformed_reports.to_dict(orient="records")
+    # Convert numeric columns to floats for JSON serialization
+    transformed_reports = transformed_reports.astype({col: float for col in numeric_columns if col in transformed_reports.columns})
     
+    result = transformed_reports.to_dict(orient="records")
     return result
-
-
-

@@ -48,16 +48,28 @@ def calculate_valuations(ticker:str):
 def get_cap_struct(ticker: str):
     # Fetch balance sheet data
     bs = pd.DataFrame(get_quarterly_balance_sheet_data(ticker))
-    
+    if bs.empty:
+        raise HTTPException(status_code=404, detail="No data returned from get_quarterly_balance_sheet_data")
+
+    print("Balance Sheet Data:", bs.head())
+
     # Fetch prices data
     prices = get_prices(ticker)
-    
+    if not prices:
+        raise HTTPException(status_code=404, detail="No data returned from get_prices")
+
+    print("Prices Data:", prices[:5])  # Print first 5 entries
+
     # Ensure prices data is in the correct format
     if isinstance(prices, list):
-        # Convert prices to a DataFrame
         prices_df = pd.DataFrame(prices)
     else:
         raise ValueError("Prices data is not in the expected format (list of dictionaries).")
+
+    if prices_df.empty:
+        raise HTTPException(status_code=404, detail="Prices DataFrame is empty")
+
+    print("Prices DataFrame:", prices_df.head())
 
     # Check if required columns exist
     if "fiscalDateEnding" not in prices_df.columns or "5. adjusted close" not in prices_df.columns:
@@ -65,13 +77,23 @@ def get_cap_struct(ticker: str):
 
     # Filter prices for matching fiscalDateEnding
     fiscal_dates = bs["fiscalDateEnding"].tolist()
+    print("Fiscal Dates from Balance Sheet:", fiscal_dates)
+
     filtered_prices = prices_df[prices_df["fiscalDateEnding"].isin(fiscal_dates)][["fiscalDateEnding", "5. adjusted close"]]
+    if filtered_prices.empty:
+        raise HTTPException(status_code=404, detail="No matching fiscal dates found in prices data")
+
+    print("Filtered Prices:", filtered_prices.head())
 
     # Merge prices and balance sheet data
     merged = pd.merge(filtered_prices, bs, on="fiscalDateEnding", how="left")
+    if merged.empty:
+        raise HTTPException(status_code=404, detail="Merged DataFrame is empty")
+
+    print("Merged DataFrame:", merged.head())
 
     # Convert columns to numeric
-    for col in ["5. adjusted close", "commonStockSharesOutstanding","cashAndCashEquivalentsAtCarryingValue","currentDebt"]:
+    for col in ["5. adjusted close", "commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]:
         merged[col] = pd.to_numeric(merged[col], errors="coerce")
 
     # Handle missing or invalid data
@@ -79,7 +101,6 @@ def get_cap_struct(ticker: str):
 
     # Calculate market capitalization (mc)
     merged["mc"] = merged["commonStockSharesOutstanding"] * merged["5. adjusted close"]
-
     merged["ev"] = merged["mc"] + merged["cashAndCashEquivalentsAtCarryingValue"] + merged["currentDebt"]
 
     # Rename columns for clarity
@@ -88,9 +109,14 @@ def get_cap_struct(ticker: str):
         "commonStockSharesOutstanding": "shares_outstanding",
         "cashAndCashEquivalentsAtCarryingValue": "cash_cash_eq",
         "currentDebt": "currentDebt"
-    })[["fiscalDateEnding", "adjustedPrice", "shares_outstanding", "cash_cash_eq", "currentDebt", "mc","ev"]].to_dict(orient="records")
-    
-    return result
+    })[["fiscalDateEnding", "adjustedPrice", "shares_outstanding", "cash_cash_eq", "currentDebt", "mc", "ev"]]
+
+    if result.empty:
+        raise HTTPException(status_code=404, detail="Final result DataFrame is empty")
+
+    return result.to_dict(orient="records")
+
+
 @router.get("/valuation/quarterly/{ticker}/ttm")
 def get_valuation(ticker: str):
     # Fetch data from APIs
