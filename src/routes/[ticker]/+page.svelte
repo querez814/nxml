@@ -1,8 +1,16 @@
 <script lang="ts">
 	import ValuationCard from '$lib/components/ui/valuationcard/ValuationCard.svelte';
+	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
 	import type { PageData } from './$types';
-	let { data }: { data: PageData } = $props();
-	let new_data = data.data[0];
+
+	let new_data: any;
+
+	$: new_data = $page.data.data[0];
+
+	onMount(() => {
+		new_data = $page.data.data[0];
+	});
 </script>
 
 <div class="valuation">

@@ -35,7 +35,6 @@
     hover:shadow-2xl
   "
 >
-	<!-- Top (Header) Section with a gradient background -->
 	<div class="bg-gradient-to-r from-green-600 via-emerald-500 to-green-400 p-6">
 		<Card.Header>
 			<Card.Title class="text-2xl font-extrabold tracking-tight text-white">
@@ -45,7 +44,6 @@
 		</Card.Header>
 	</div>
 
-	<!-- Content Area -->
 	<div class="p-6 text-gray-800">
 		<Card.Content class="mb-6">
 			<h3 class="mb-2 text-lg font-semibold uppercase tracking-wider text-green-700">

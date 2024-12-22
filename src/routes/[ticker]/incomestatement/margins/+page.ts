@@ -3,6 +3,6 @@ import type { PageLoad } from './$types';
 
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
-	const quarters = await fetchIncomeStatementMargins(ticker); // Fetch the first item
+	const quarters = await fetchIncomeStatementMargins(ticker);
 	return { quarters };
 }) satisfies PageLoad;

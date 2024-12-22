@@ -2,6 +2,6 @@ import { fetchBalanceSheetRatios } from '../../../../api/balancesheet/balanceshe
 import type { PageLoad } from './$types';
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
-	const quarters = await fetchBalanceSheetRatios(ticker); // Fetch the first item
+	const quarters = await fetchBalanceSheetRatios(ticker);
 	return { quarters };
 }) satisfies PageLoad;

@@ -77,46 +77,34 @@ from fastapi.responses import JSONResponse
 
 @router.get("/income-statement/quarterly/{ticker}/ttmmetrics")
 def get_ttm_data(ticker: str):
-    # Fetch the income statement data as a list of dictionaries
     quarterly_data = get_quarterly_statement_data(ticker)
     
-    # Convert the list of dictionaries into a DataFrame
     income = pd.DataFrame(quarterly_data)
     
-    # Ensure numeric conversion for all columns except "fiscalDateEnding"
     for col in income.columns:
         if col != "fiscalDateEnding":
             income[col] = pd.to_numeric(income[col], errors="coerce")
     
-    # Fill missing values with 0
     income = income.fillna(0)
     
-    # Sort the DataFrame by fiscalDateEnding to ensure the most recent data is first
     income = income.sort_values(by="fiscalDateEnding", ascending=False)
     
-    # Initialize a list to hold results
     result = []
     
-    # Loop through each quarter to calculate both quarter metrics and TTM metrics
     for i in range(len(income)):
         quarter_data = income.iloc[i].to_dict()
         ttm_metrics = {}
         
-        # Calculate TTM metrics for the most recent 4 quarters up to the current quarter
         for col in income.columns:
             if col != "fiscalDateEnding":
-                # Ensure at least one quarter is included in TTM
                 ttm_metrics[f"{col}_ttm"] = income[col].iloc[max(0, i):i + 4].sum()
         
-        # Combine current quarter data with TTM metrics
         quarter_data.update(ttm_metrics)
         
-        # Convert all numpy types to native Python types
         for key, value in quarter_data.items():
             if isinstance(value, (np.integer, np.floating)):
                 quarter_data[key] = value.item()
         
         result.append(quarter_data)
     
-    # Return JSON response
     return {"ticker": ticker, "quarters": result}

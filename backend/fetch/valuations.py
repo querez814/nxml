@@ -46,21 +46,18 @@ def calculate_valuations(ticker:str):
 
 @router.get("/capitalstructure/quarterly/{ticker}")
 def get_cap_struct(ticker: str):
-    # Fetch balance sheet data
     bs = pd.DataFrame(get_quarterly_balance_sheet_data(ticker))
     if bs.empty:
         raise HTTPException(status_code=404, detail="No data returned from get_quarterly_balance_sheet_data")
 
     print("Balance Sheet Data:", bs.head())
 
-    # Fetch prices data
     prices = get_prices(ticker)
     if not prices:
         raise HTTPException(status_code=404, detail="No data returned from get_prices")
 
-    print("Prices Data:", prices[:5])  # Print first 5 entries
+    print("Prices Data:", prices[:5])  
 
-    # Ensure prices data is in the correct format
     if isinstance(prices, list):
         prices_df = pd.DataFrame(prices)
     else:
@@ -71,11 +68,9 @@ def get_cap_struct(ticker: str):
 
     print("Prices DataFrame:", prices_df.head())
 
-    # Check if required columns exist
     if "fiscalDateEnding" not in prices_df.columns or "5. adjusted close" not in prices_df.columns:
         raise KeyError("Expected columns 'fiscalDateEnding' or '5. adjusted close' are missing in prices data.")
 
-    # Filter prices for matching fiscalDateEnding
     fiscal_dates = bs["fiscalDateEnding"].tolist()
     print("Fiscal Dates from Balance Sheet:", fiscal_dates)
 
@@ -85,25 +80,20 @@ def get_cap_struct(ticker: str):
 
     print("Filtered Prices:", filtered_prices.head())
 
-    # Merge prices and balance sheet data
     merged = pd.merge(filtered_prices, bs, on="fiscalDateEnding", how="left")
     if merged.empty:
         raise HTTPException(status_code=404, detail="Merged DataFrame is empty")
 
     print("Merged DataFrame:", merged.head())
 
-    # Convert columns to numeric
     for col in ["5. adjusted close", "commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]:
         merged[col] = pd.to_numeric(merged[col], errors="coerce")
 
-    # Handle missing or invalid data
     merged.fillna(0, inplace=True)
 
-    # Calculate market capitalization (mc)
     merged["mc"] = merged["commonStockSharesOutstanding"] * merged["5. adjusted close"]
     merged["ev"] = merged["mc"] + merged["cashAndCashEquivalentsAtCarryingValue"] + merged["currentDebt"]
 
-    # Rename columns for clarity
     result = merged.rename(columns={
         "5. adjusted close": "adjustedPrice",
         "commonStockSharesOutstanding": "shares_outstanding",
@@ -119,19 +109,15 @@ def get_cap_struct(ticker: str):
 
 @router.get("/valuation/quarterly/{ticker}/ttm")
 def get_valuation(ticker: str):
-    # Fetch data from APIs
-    summary = pd.DataFrame([get_summary(ticker)])  # Convert JSON to DataFrame
-    symbol = summary.loc[0, "Symbol"]  # Extract Symbol directly from the DataFrame
+    summary = pd.DataFrame([get_summary(ticker)])  
+    symbol = summary.loc[0, "Symbol"]  
 
-    # Fetch and prepare other data
     cap_struct = pd.DataFrame(get_cap_struct(ticker))
     ttm = pd.DataFrame(calculate_valuations(ticker))
     earnings = pd.DataFrame(get_quarterly_earnings_data(ticker))
 
-    # Add the Symbol column to cap_struct for consistency
     cap_struct["Symbol"] = symbol
 
-    # Extract and cast additional metrics from summary
     additional_metrics = [
         "AnalystTargetPrice",
         "AnalystRatingStrongBuy",
@@ -144,7 +130,6 @@ def get_valuation(ticker: str):
         "Sector", "Industry"
     ]
     exclude_cols=["fiscalDateEnding", "Symbol","Sector","Industry"]
-    # Ensure numeric conversion for relevant columns
     def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol","Sector","Industry"]):
         for col in df.columns:
             if col not in exclude_cols:
@@ -160,10 +145,8 @@ def get_valuation(ticker: str):
     ttm = ensure_numeric(ttm)
     earnings = ensure_numeric(earnings)
 
-    # Initialize result DataFrame
     result = pd.DataFrame()
 
-    # Perform calculations
     if "ev" in cap_struct.columns and "totalRevenue_ttm" in ttm.columns:
         result["fiscalDateEnding"] = cap_struct["fiscalDateEnding"]
         result["symbol"] = cap_struct["Symbol"]
@@ -177,14 +160,11 @@ def get_valuation(ticker: str):
     else:
         raise KeyError("Required columns 'ev' or 'totalRevenue_ttm' are missing in the input data.")
 
-    # Add additional metrics to the DataFrame
     for metric, value in metrics.items():
         result[metric] = value
 
-    # Handle missing or infinite values
     result.fillna(0, inplace=True)
     result.replace([float('inf'), -float('inf')], 0, inplace=True)
 
-    # Convert to dictionary for JSON response
     return result.to_dict(orient="records")
 
