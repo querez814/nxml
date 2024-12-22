@@ -1,17 +1,16 @@
 from fastapi import APIRouter, HTTPException
+from fastapi.responses import JSONResponse
 import requests as r
 import dotenv as env
 import os
 import pandas as pd
-from fetch.earnings import get_quarterly_earnings_data as earnings
 import numpy as np
+
+from fetch.earnings import get_quarterly_earnings_data as earnings
+
 env.load_dotenv()
-
 av_api = os.getenv("ALPHA_VANTAGE")
-
 router = APIRouter()
-
-
 
 @router.get("/income-statement/quarterly/{ticker}")
 def get_quarterly_statement_data(ticker: str):
@@ -25,10 +24,8 @@ def get_quarterly_statement_data(ticker: str):
     if not quarterly_reports:
         raise HTTPException(status_code=404, detail="No quarterly reports found.")
 
-    # Convert to DataFrame
     quarterly_df = pd.DataFrame(quarterly_reports)
 
-    # Ensure numerical columns are converted properly
     numeric_columns = [
         "totalRevenue", "grossProfit", "ebit", "ebitda", 
         "operatingIncome", "netIncome"
@@ -36,43 +33,55 @@ def get_quarterly_statement_data(ticker: str):
     for col in numeric_columns:
         quarterly_df[col] = pd.to_numeric(quarterly_df[col], errors="coerce")
 
-  
+    quarterly_df.replace([np.inf, -np.inf], np.nan, inplace=True)
+    quarterly_df.fillna(0, inplace=True)
 
-  
-
-    # Integrate earnings data
     earnings_df = pd.DataFrame(earnings(ticker))
+    for col in ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]:
+        earnings_df[col] = pd.to_numeric(earnings_df[col], errors="coerce")
+
+    earnings_df.replace([np.inf, -np.inf], np.nan, inplace=True)
+    earnings_df.fillna(0, inplace=True)
+
     quarterly_df["reportedEPS"] = earnings_df["reportedEPS"]
     quarterly_df["estimatedEPS"] = earnings_df["estimatedEPS"]
     quarterly_df["surprise"] = earnings_df["surprise"]
     quarterly_df["surprisePercentage"] = earnings_df["surprisePercentage"]
 
-    # Convert transformed reports back to dictionary
     keys_to_exclude = [
-         'reportedCurrency', 'investmentIncomeNet',
+        'reportedCurrency', 'investmentIncomeNet',
         'netInterestIncome', 'nonInterestIncome', 'otherNonOperatingIncome',
         'depreciation', 'depreciationAndAmortization',
         'netIncomeFromContinuingOperations', 'comprehensiveIncomeNetOfTax'
     ]
 
-    transformed_reports = [
-        {
+    transformed_reports = []
+    for report in quarterly_df.to_dict(orient="records"):
+        filtered_report = {
             "fiscalDateEnding": report.get("fiscalDateEnding", "N/A"),
             **{k: v for k, v in report.items() if k not in keys_to_exclude and k != "fiscalDateEnding"}
         }
-        for report in quarterly_df.to_dict(orient="records")
-    ]
+
+        cleaned_report = {
+            k: (None if pd.isna(v) else float(v) if isinstance(v, (int, float, np.number)) else v)
+            for k, v in filtered_report.items()
+        }
+        transformed_reports.append(cleaned_report)
 
     print("Transformed Reports:", transformed_reports)
 
     return transformed_reports
 
 
+from fastapi.responses import JSONResponse
 
 @router.get("/income-statement/quarterly/{ticker}/ttmmetrics")
 def get_ttm_data(ticker: str):
-    # Fetch the income statement data as a DataFrame
-    income = pd.DataFrame(get_quarterly_statement_data(ticker))
+    # Fetch the income statement data as a list of dictionaries
+    quarterly_data = get_quarterly_statement_data(ticker)
+    
+    # Convert the list of dictionaries into a DataFrame
+    income = pd.DataFrame(quarterly_data)
     
     # Ensure numeric conversion for all columns except "fiscalDateEnding"
     for col in income.columns:
