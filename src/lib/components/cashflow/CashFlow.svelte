@@ -15,7 +15,6 @@
 </script>
 
 <div class="mx-auto w-full max-w-screen-2xl px-6 py-12">
-	<!-- A 'card-like' container with gradient background, ring, and shadow -->
 	<div
 		class="
 		rounded-xl
@@ -28,13 +27,11 @@
 		ring-slate-700
 	"
 	>
-		<!-- Title & subtitle -->
 		<h2 class="mb-2 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
 			Most Recent Income Statement
 		</h2>
 		<p class="mb-8 text-slate-300">Key figures from the latest quarterly report</p>
 
-		<!-- Table wrapper: handle overflow if columns exceed screen width -->
 		<div class="overflow-x-auto rounded-lg">
 			<table
 				class="
@@ -47,7 +44,6 @@
 					text-slate-100
 				"
 			>
-				<!-- Table Head -->
 				<thead>
 					<tr class="bg-slate-700/80 text-sm uppercase md:text-base">
 						<th class="px-4 py-3">Fiscal Date Ending</th>

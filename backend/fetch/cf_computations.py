@@ -20,15 +20,12 @@ router = APIRouter()
 
 @router.get("/cashflow-statement/quarterly/{ticker}/margins")
 def get_cf_margins(ticker:str):
-    #get income as dataframe
     income = pd.DataFrame(get_quarterly_statement_data(ticker))
 
-    #convert income df to numeric
     for col in income.columns:
         if col!="fiscalDateEnding":
             income[col] = pd.to_numeric(income[col], errors="coerce")
     
-    #cashflow as dataframe        
     cash_flow = pd.DataFrame(get_quarterly_cashflow_statement_data(ticker))
     for col in cash_flow.columns:
         if col!="fiscalDateEnding":
@@ -59,35 +56,26 @@ def get_cf_margins(ticker:str):
 
 @router.get("/cashflow-statement/quarterly/{ticker}/margins/yoy")
 def get_cf_margins_yoy(ticker: str):
-    # Retrieve margins data as DataFrame
     cf = pd.DataFrame(get_cf_margins(ticker))
 
-    # Remove percent signs and convert numeric columns to float
     for col in ["net_profit_margin", "ocf_margin", "fcf_margin"]:
         cf[col] = cf[col].str.replace("%", "").astype(float)
 
-    # Reverse the DataFrame order and reset the index
     cf = cf.iloc[::-1].reset_index(drop=True)
 
-    # Calculate YoY growth (periods=4 for quarterly data)
     cf_ratios_yoy = cf.set_index("fiscalDateEnding").pct_change(periods=4, fill_method=None) * 100
 
-    # Rename columns to include YoY suffix
     cf_ratios_yoy.columns = [f"{col}_YoY" for col in cf_ratios_yoy.columns]
 
-    # Reset index and reverse order again
     cf_ratios_yoy = cf_ratios_yoy.reset_index()
     cf_ratios_yoy = cf_ratios_yoy[::-1].reset_index(drop=True)
 
-    # Fill NaN values with 0
     cf_ratios_yoy = cf_ratios_yoy.fillna(0)
 
-    # Format numeric values as percentages
     for col in cf_ratios_yoy.columns:
         if col != "fiscalDateEnding":
             cf_ratios_yoy[col] = cf_ratios_yoy[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
 
-    # Convert to JSON format for API response
     cf_ratios_yoy_json = cf_ratios_yoy.to_dict(orient="records")
 
     return cf_ratios_yoy_json
@@ -95,35 +83,26 @@ def get_cf_margins_yoy(ticker: str):
 
 @router.get("/cashflow-statement/quarterly/{ticker}/margins/qoq")
 def get_cf_margins_qoq(ticker: str):
-    # Retrieve margins data as DataFrame
     cf = pd.DataFrame(get_cf_margins(ticker))
 
-    # Remove percent signs and convert numeric columns to float
     for col in ["net_profit_margin", "ocf_margin", "fcf_margin"]:
         cf[col] = cf[col].str.replace("%", "").astype(float)
 
-    # Reverse the DataFrame order and reset the index
     cf = cf.iloc[::-1].reset_index(drop=True)
 
-    # Calculate YoY growth (periods=4 for quarterly data)
     cf_ratios_qoq = cf.set_index("fiscalDateEnding").pct_change(periods=4, fill_method=None) * 100
 
-    # Rename columns to include YoY suffix
     cf_ratios_qoq.columns = [f"{col}_QoQ" for col in cf_ratios_qoq.columns]
 
-    # Reset index and reverse order again
     cf_ratios_qoq = cf_ratios_qoq.reset_index()
     cf_ratios_qoq = cf_ratios_qoq[::-1].reset_index(drop=True)
 
-    # Fill NaN values with 0
     cf_ratios_qoq = cf_ratios_qoq.fillna(0)
 
-    # Format numeric values as percentages
     for col in cf_ratios_qoq.columns:
         if col != "fiscalDateEnding":
             cf_ratios_qoq[col] = cf_ratios_qoq[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
 
-    # Convert to JSON format for API response
     cf_ratios_qoq_json = cf_ratios_qoq.to_dict(orient="records")
 
     return cf_ratios_qoq_json

@@ -32,7 +32,6 @@ def get_quarterly_cashflow_statement_data(ticker: str):
     
     df["freeCashFlow"] = df["operatingCashflow"] - df["capitalExpenditures"]
     
-    # Replace NaN and infinite values with 0
     df.replace([float("inf"), -float("inf"), pd.NA], 0, inplace=True)
     df.fillna(0, inplace=True)
     
@@ -47,7 +46,6 @@ def get_quarterly_cashflow_statement_data(ticker: str):
     ]
     transformed_reports = df.drop(columns=keys_to_exclude, errors="ignore")
     
-    # Convert numeric columns to floats for JSON serialization
     transformed_reports = transformed_reports.astype({col: float for col in numeric_columns if col in transformed_reports.columns})
     
     result = transformed_reports.to_dict(orient="records")
