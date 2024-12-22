@@ -7,10 +7,7 @@
 </script>
 
 <div class="mx-auto w-full max-w-screen-2xl px-6 py-12">
-	<!-- Title -->
 	<h1 class="mb-8 text-center text-4xl font-bold text-slate-100">Balance Sheet Data</h1>
-
-	<!-- Render each quarter's balance sheet -->
 
 	<BalanceSheet
 		fiscalDateEnding={singlequarter.fiscalDateEnding}
