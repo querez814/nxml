@@ -10,15 +10,8 @@
 	</h2>
 
 	<div
-		class="
-      rounded-xl
-      bg-gradient-to-br
-      from-gray-800
-      to-gray-900
-      p-6
-      shadow-xl ring-1
-      ring-gray-700
-    "
+		class="rounded-xl bg-gradient-to-br from-gray-800 to-gray-900 p-6 shadow-xl ring-1
+      ring-gray-700"
 	>
 		{#if quarters.length > 0}
 			<div class="overflow-x-auto">
