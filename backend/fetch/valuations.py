@@ -46,18 +46,21 @@ def calculate_valuations(ticker:str):
 
 @router.get("/capitalstructure/quarterly/{ticker}")
 def get_cap_struct(ticker: str):
+    # Fetch balance sheet data
     bs = pd.DataFrame(get_quarterly_balance_sheet_data(ticker))
     if bs.empty:
         raise HTTPException(status_code=404, detail="No data returned from get_quarterly_balance_sheet_data")
 
     print("Balance Sheet Data:", bs.head())
 
+    # Fetch prices data
     prices = get_prices(ticker)
     if not prices:
         raise HTTPException(status_code=404, detail="No data returned from get_prices")
 
-    print("Prices Data:", prices[:5])  
+    print("Prices Data:", prices[:5])  # Print first 5 entries
 
+    # Ensure prices data is in the correct format
     if isinstance(prices, list):
         prices_df = pd.DataFrame(prices)
     else:
@@ -68,34 +71,42 @@ def get_cap_struct(ticker: str):
 
     print("Prices DataFrame:", prices_df.head())
 
+    # Check if required columns exist
     if "fiscalDateEnding" not in prices_df.columns or "5. adjusted close" not in prices_df.columns:
         raise KeyError("Expected columns 'fiscalDateEnding' or '5. adjusted close' are missing in prices data.")
 
-    fiscal_dates = bs["fiscalDateEnding"].tolist()
-    print("Fiscal Dates from Balance Sheet:", fiscal_dates)
+    # Sort prices data by fiscalDateEnding for easier lookup
+    prices_df["fiscalDateEnding"] = pd.to_datetime(prices_df["fiscalDateEnding"])
+    prices_df.sort_values(by="fiscalDateEnding", ascending=False, inplace=True)
 
-    filtered_prices = prices_df[prices_df["fiscalDateEnding"].isin(fiscal_dates)][["fiscalDateEnding", "5. adjusted close"]]
-    if filtered_prices.empty:
-        raise HTTPException(status_code=404, detail="No matching fiscal dates found in prices data")
+    # Resolve missing fiscalDateEnding in prices
+    def get_closest_adjusted_close(date):
+        matching_row = prices_df[prices_df["fiscalDateEnding"] <= date].head(1)
+        if not matching_row.empty:
+            return matching_row["5. adjusted close"].values[0]
+        return None
 
-    print("Filtered Prices:", filtered_prices.head())
+    # Apply logic to get adjusted close for each balance sheet date
+    bs["adjustedPrice"] = bs["fiscalDateEnding"].apply(
+        lambda date: get_closest_adjusted_close(pd.to_datetime(date))
+    )
 
-    merged = pd.merge(filtered_prices, bs, on="fiscalDateEnding", how="left")
-    if merged.empty:
-        raise HTTPException(status_code=404, detail="Merged DataFrame is empty")
+    if bs["adjustedPrice"].isnull().all():
+        raise HTTPException(status_code=404, detail="No adjusted price data available for any balance sheet dates")
 
-    print("Merged DataFrame:", merged.head())
+    print("Balance Sheet Data with Adjusted Prices:", bs.head())
 
-    for col in ["5. adjusted close", "commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]:
-        merged[col] = pd.to_numeric(merged[col], errors="coerce")
+    # Merge balance sheet and prices data
+    for col in ["adjustedPrice", "commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]:
+        bs[col] = pd.to_numeric(bs[col], errors="coerce")
 
-    merged.fillna(0, inplace=True)
+    bs.fillna(0, inplace=True)
 
-    merged["mc"] = merged["commonStockSharesOutstanding"] * merged["5. adjusted close"]
-    merged["ev"] = merged["mc"] + merged["cashAndCashEquivalentsAtCarryingValue"] + merged["currentDebt"]
+    bs["mc"] = bs["commonStockSharesOutstanding"] * bs["adjustedPrice"]
+    bs["ev"] = bs["mc"] + bs["cashAndCashEquivalentsAtCarryingValue"] + bs["currentDebt"]
 
-    result = merged.rename(columns={
-        "5. adjusted close": "adjustedPrice",
+    result = bs.rename(columns={
+        "adjustedPrice": "adjustedPrice",
         "commonStockSharesOutstanding": "shares_outstanding",
         "cashAndCashEquivalentsAtCarryingValue": "cash_cash_eq",
         "currentDebt": "currentDebt"
@@ -105,6 +116,7 @@ def get_cap_struct(ticker: str):
         raise HTTPException(status_code=404, detail="Final result DataFrame is empty")
 
     return result.to_dict(orient="records")
+
 
 
 @router.get("/valuation/quarterly/{ticker}/ttm")
