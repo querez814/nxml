@@ -2,7 +2,9 @@ const api_url = import.meta.env.VITE_API_URL;
 
 export const fetchValuation = async (ticker: string): Promise<any[]> => {
 	// Ensure api_url is prepended to the request path
-	const response = await fetch(`${api_url}/financials/valuation/quarterly/${ticker}/ttm`);
+	const response = await fetch(
+		`https://investorterminal-production.up.railway.app/financials/valuation/quarterly/${ticker}/ttm`
+	);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
 	}
