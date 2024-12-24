@@ -1,7 +1,7 @@
+const api_url = import.meta.env.VITE_API_URL;
+
 export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(
-		`http://127.0.0.1:8000/financials/income-statement/quarterly/${ticker}`
-	);
+	const response = await fetch(`${api_url}/financials/income-statement/quarterly/${ticker}`);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
 	}
@@ -12,7 +12,7 @@ export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
 
 export const fetchIncomeStatementMargins = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
-		`http://127.0.0.1:8000/financials/income-statement/quarterly/${ticker}/margins`
+		`${api_url}/financials/income-statement/quarterly/${ticker}/margins`
 	);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch income statement margins data: ${response.statusText}`);

@@ -1,7 +1,7 @@
+const api_url = import.meta.env.VITE_API_URL;
+
 export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(
-		`http://127.0.0.1:8000/financials/balancesheet-statement/quarterly/${ticker}`
-	);
+	const response = await fetch(`${api_url}/financials/balancesheet-statement/quarterly/${ticker}`);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
 	}
@@ -12,7 +12,7 @@ export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
 
 export const fetchBalanceSheetRatios = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
-		`http://127.0.0.1:8000/financials/balancesheet-statement/quarterly/${ticker}/ratios`
+		`${api_url}/financials/balancesheet-statement/quarterly/${ticker}/ratios`
 	);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch balance sheet ratios data: ${response.statusText}`);

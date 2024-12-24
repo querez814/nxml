@@ -1,7 +1,6 @@
+const api_url = import.meta.env.VITE_API_URL;
 export const fetchCashFlow = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(
-		`http://127.0.0.1:8000/financials/cashflow-statement/quarterly/${ticker}`
-	);
+	const response = await fetch(`${api_url}/financials/cashflow-statement/quarterly/${ticker}`);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
 	}
@@ -12,7 +11,7 @@ export const fetchCashFlow = async (ticker: string): Promise<any[]> => {
 
 export const fetchCashFlowMargins = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
-		`http://127.0.0.1:8000/financials/cashflow-statement/quarterly/${ticker}/margins`
+		`${api_url}/financials/cashflow-statement/quarterly/${ticker}/margins`
 	);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch cash flow margin data: ${response.statusText}`);
@@ -24,7 +23,7 @@ export const fetchCashFlowMargins = async (ticker: string): Promise<any[]> => {
 
 export const fetchCashFlowRatios = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
-		`http://127.0.0.1:8000/financials/cashflow-statement/quarterly/${ticker}/ratios`
+		`${api_url}/financials/cashflow-statement/quarterly/${ticker}/ratios`
 	);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch cash flow ratios data: ${response.statusText}`);
