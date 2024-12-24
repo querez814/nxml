@@ -11,16 +11,17 @@ from fetch.valuations import router as valuation_router
 from fetch.summary import router as summary_router
 from fetch.prices import router as prices_router
 app = FastAPI()
+
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],
+    allow_origins=[
+        "http://localhost:5173",  # For local development
+        "https://theinvestorterminal.vercel.app"  # Replace with your Vercel frontend URL
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
 )
-
-
-
 @app.get("/")
 def read_root():
     return {"Hello dawg"}
