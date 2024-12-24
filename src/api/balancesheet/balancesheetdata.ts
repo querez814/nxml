@@ -1,7 +1,9 @@
 const api_url = import.meta.env.VITE_API_URL;
 
 export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(api_url`/financials/balancesheet-statement/quarterly/${ticker}`);
+	const response = await fetch(
+		`https://investorterminal-production.up.railway.app/financials/balancesheet-statement/quarterly/${ticker}`
+	);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
 	}
