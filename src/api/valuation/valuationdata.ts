@@ -1,4 +1,4 @@
-const api_url = import.meta.env.VITE_API_URL;
+const api_url: string = import.meta.env.VITE_API_URL;
 
 export const fetchValuation = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(`${api_url}/financials/valuation/quarterly/${ticker}/ttm`);
