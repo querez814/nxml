@@ -119,6 +119,7 @@ def get_cap_struct(ticker: str):
 
 
 
+
 @router.get("/valuation/quarterly/{ticker}/ttm")
 def get_valuation(ticker: str):
     summary = pd.DataFrame([get_summary(ticker)])  
