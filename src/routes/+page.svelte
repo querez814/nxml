@@ -76,7 +76,7 @@
 				</p>
 			</div>
 			<div class="flex flex-col items-center mx-auto">
-				<div class="flex flex-col md:flex-row gap-4">
+				<div class="flex flex-col items-center md:flex-row gap-4">
 					<SignedOut>
 						<a href={siteMetaData.urls.auth.signup}>
 							<Button size="sm" class="px-6 hover:text-foreground">

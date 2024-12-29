@@ -34,7 +34,7 @@ const siteMetadata = {
             signup: PUBLIC_NODE_ENV === 'development' ?
                 'https://strong-possum-2.accounts.dev/sign-up' : '#',
             userProfile: PUBLIC_NODE_ENV === 'development' ?
-                '#' : '#',
+                'https://strong-possum-2.accounts.dev/user' : '#',
             fallback: PUBLIC_BASE_URL
         },
         subscription: {
