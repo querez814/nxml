@@ -7,20 +7,20 @@
 	import Button from '$lib/components/ui/button/button.svelte';
 </script>
 
-<header class="flex flex-row justify-between [&>*:not(ul)]:w-64 px-12 my-6">
-    <div class="text-2xl font-bold">
+<header class="flex flex-row justify-between [&>*:not(ul)]:w-64 px-4 md:px-12 my-6">
+    <div class="text-xl md:text-2xl font-bold">
         InvestorTerminal
     </div>
-    <ul>
+    <ul class="flex *:md:hidden">
 
     </ul>
-    <div class="flex justify-end gap-6">
+    <div class="hidden md:flex justify-end gap-6">
         <SignedIn>
             <UserButton />
         </SignedIn>
         <SignedOut>
             <SignInButton>
-                <Button size="sm" variant="default" class="px-6">
+                <Button size="sm" variant="default" class="px-6 hover:text-foreground">
                     Login
                 </Button>
             </SignInButton>

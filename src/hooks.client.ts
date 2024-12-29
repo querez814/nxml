@@ -4,14 +4,14 @@ import { initializeClerkClient } from 'clerk-sveltekit/client'
 // Or for headless mode:
 // import { initializeClerkClient } from 'clerk-sveltekit/headless'
 import { PUBLIC_CLERK_PUBLISHABLE_KEY } from '$env/static/public'
-
-console.log(PUBLIC_CLERK_PUBLISHABLE_KEY)
+import siteMetaData from '$lib/config/site-metadata';
 
 initializeClerkClient(PUBLIC_CLERK_PUBLISHABLE_KEY, {
-	afterSignInUrl: '/app/',
-	afterSignUpUrl: '/app/',
-	signInUrl: 'https://strong-possum-2.accounts.dev/sign-in',
-	signUpUrl: 'https://strong-possum-2.accounts.dev/sign-up',
+	// NOTE: Looks like it adds this to query params in the base url need to make such handle it for now it is blank
+	afterSignInUrl: '', //siteMetaData.urls.app.base,
+	afterSignUpUrl: '', //siteMetaData.urls.app.base,
+	signInUrl: siteMetaData.urls.auth.signin,
+	signUpUrl: siteMetaData.urls.auth.signup,
 })
 
 export const handleError: HandleClientError = async ({ error, event }) => {

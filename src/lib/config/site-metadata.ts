@@ -1,0 +1,83 @@
+import {
+    PUBLIC_API_URL,
+    PUBLIC_BASE_APP_URL,
+    PUBLIC_BASE_URL,
+    PUBLIC_NODE_ENV
+} from '$env/static/public'
+import type { PricingFeature, TierFrequency } from '$lib/types';
+
+
+
+
+const siteMetadata = {
+    title: 'InvestorTerminal',
+    author: 'InvestorTerminal',
+    headerTitle: 'InvestorTerminal',
+    description: '',
+    theme: 'system', // system, dark or light
+    locale: 'en-US',
+    language: 'en-us',
+    urls: {
+        app: {
+            api: PUBLIC_API_URL ?? "",
+            base: PUBLIC_BASE_APP_URL ?? "",
+        },
+        web: {
+            landing:  PUBLIC_BASE_URL ?? "",
+            pricing: PUBLIC_BASE_URL ? ( PUBLIC_BASE_URL + '#pricing' ) : '#pricing',
+            privacyPolicy: '/legal/privacy-policy',
+            termsOfService: '/legal/terms-of-service',
+        },
+        auth: {
+            signin: PUBLIC_NODE_ENV === 'development' ? 
+                'https://strong-possum-2.accounts.dev/sign-in' : '#',
+            signup: PUBLIC_NODE_ENV === 'development' ?
+                'https://strong-possum-2.accounts.dev/sign-up' : '#',
+            userProfile: PUBLIC_NODE_ENV === 'development' ?
+                '#' : '#',
+            fallback: PUBLIC_BASE_URL
+        },
+        subscription: {
+            portal: PUBLIC_NODE_ENV === 'development' ?
+                '#' : '#',
+        }
+    },
+    social: {
+        banner: '',
+        mastodon: '',
+        email: '',
+        github: '',
+        twitter: '',
+        facebook: '',
+        youtube: '',
+        linkedin: '',
+        threads: '',
+        instagram: '',
+    },
+    subscriptionTiers: {
+        basic: {
+            monthly: {
+                link: PUBLIC_NODE_ENV === 'development' ?
+                    '#' : '#', 
+                priceId: PUBLIC_NODE_ENV === 'development' ?
+                    '#' : '#',
+                price: 40,
+                currency: 'USD',
+                frequency: 'mo' as TierFrequency 
+            },
+        },
+        pro_investor: {
+            monthly: {
+                link: PUBLIC_NODE_ENV === 'development' ?
+                    '#' : '#', 
+                priceId: PUBLIC_NODE_ENV === 'development' ?
+                    '#' : '#',
+                price: 80,
+                currency: 'USD',
+                frequency: 'mo' as TierFrequency 
+            },
+        }
+    },
+}
+  
+export default siteMetadata; 

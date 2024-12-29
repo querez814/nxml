@@ -1,16 +1,15 @@
 <script lang="ts">
 	import DarkBannerDots from '$lib/components/common/dark-banner-dots.svelte';
+    import BG from '$lib/../media/images/banner-light.svg';
 
-	const bgSrc = 'https://assets.website-files.com/63e36d09413f83c58ac5d998/63f498f97df68f71bd38f2b5_Banner%20Light.svg';
-
-	$: bgImage = `background-image: url("${bgSrc}");`;
+	$: bgImage = `background-image: url("${BG}");`;
 	$: bgPosition = 'background-position: 50%;';
 	$: bgRepeat = 'background-repeat: no-repeat;';
 	$: bgSize = 'background-size: cover;';
 </script>
 
 
-<div class="w-full max-w-screen p-3">
+<div class="hidden lg:flex w-full max-w-screen p-3">
     <div class="relative flex items-center justify-center w-full h-10 bg-muted rounded-sm border border-border" style="{bgImage} {bgPosition} {bgRepeat} {bgSize}">
         <span class="text-[0.815rem]">
             <slot />
