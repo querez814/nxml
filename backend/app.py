@@ -10,6 +10,8 @@ from fetch.earnings import router as earnings_router
 from fetch.valuations import router as valuation_router
 from fetch.summary import router as summary_router
 from fetch.prices import router as prices_router
+from crypto.crypto import crypto_router as crypto_router
+#from fred.m2 import liquidity_router as m2_router
 app = FastAPI()
 
 app.add_middleware(
@@ -38,3 +40,5 @@ app.include_router(bs_computations_router, prefix="/financials", tags=["Balance 
 app.include_router(valuation_router,prefix="/financials",tags=["Valuation"])
 app.include_router(summary_router, prefix="/financials", tags=["Summary"])
 app.include_router(prices_router, prefix="/financials", tags=["Summary"])
+app.include_router(crypto_router, prefix="/crypto", tags=["Crypto"])
+#app.include_router(m2_router, prefix="/macro", tags = ["FRED"] )
