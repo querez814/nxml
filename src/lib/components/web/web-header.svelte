@@ -8,9 +8,9 @@
 </script>
 
 <header class="flex flex-row justify-between [&>*:not(ul)]:w-64 px-4 md:px-12 my-6">
-    <div class="text-xl md:text-2xl font-bold">
+    <a href="/" class="text-xl md:text-2xl font-bold">
         InvestorTerminal
-    </div>
+    </a>
     <ul class="flex *:md:hidden">
 
     </ul>

@@ -6,9 +6,6 @@ import {
 } from '$env/static/public'
 import type { PricingFeature, TierFrequency } from '$lib/types';
 
-
-
-
 const siteMetadata = {
     title: 'InvestorTerminal',
     author: 'InvestorTerminal',
@@ -24,6 +21,7 @@ const siteMetadata = {
         },
         web: {
             landing:  PUBLIC_BASE_URL ?? "",
+            notFound: PUBLIC_BASE_URL ?? "",
             pricing: PUBLIC_BASE_URL ? ( PUBLIC_BASE_URL + '#pricing' ) : '#pricing',
             privacyPolicy: '/legal/privacy-policy',
             termsOfService: '/legal/terms-of-service',
@@ -39,7 +37,7 @@ const siteMetadata = {
         },
         subscription: {
             portal: PUBLIC_NODE_ENV === 'development' ?
-                '#' : '#',
+                'https://billing.stripe.com/p/login/test_5kA7stcTv74H1DW7ss' : '#',
         }
     },
     social: {
@@ -55,28 +53,17 @@ const siteMetadata = {
         instagram: '',
     },
     subscriptionTiers: {
-        basic: {
+        early_adopter: {
             monthly: {
                 link: PUBLIC_NODE_ENV === 'development' ?
-                    '#' : '#', 
+                    'https://buy.stripe.com/test_28ocPt9t6eYBgpO6oo' : '#', 
                 priceId: PUBLIC_NODE_ENV === 'development' ?
-                    '#' : '#',
-                price: 40,
+                    'price_1QZ9jRIXutq0kjUXUFf9Qrt9' : '#',
+                price: 25,
                 currency: 'USD',
                 frequency: 'mo' as TierFrequency 
             },
         },
-        pro_investor: {
-            monthly: {
-                link: PUBLIC_NODE_ENV === 'development' ?
-                    '#' : '#', 
-                priceId: PUBLIC_NODE_ENV === 'development' ?
-                    '#' : '#',
-                price: 80,
-                currency: 'USD',
-                frequency: 'mo' as TierFrequency 
-            },
-        }
     },
 }
   

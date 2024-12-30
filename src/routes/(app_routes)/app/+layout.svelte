@@ -12,9 +12,9 @@
 </script>
     
 <SignedIn let:user>
+    <!-- Add some check here to see if user has free trial days left or not!  -->
     {#if alwaysRedirect || ( user?.publicMetadata["subscriptionActive"] as boolean ) === false }
         {#await goto(siteMetaData.urls.web.pricing) }
-        {:then _}
             <!-- This will never actually render, as the redirect will happen first -->
         {/await}
     {/if}

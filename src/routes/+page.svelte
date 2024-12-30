@@ -26,6 +26,7 @@
       { name: "Advanced analytics", included: false },
     ]
 
+
 	const faq = [
 		{
 			question: "Is it accessible?",
@@ -42,6 +43,10 @@
 	]
 
 	const appMainFeature = [
+		{
+		 	icon: null,
+			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+		},
 		{
 		 	icon: null,
 			description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
