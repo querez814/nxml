@@ -1,4 +1,4 @@
-import { fetchIncomeStatementMargins } from '../../../../api/incomesheet/incomedata';
+import { fetchIncomeStatementMargins } from '../../../../../../api/incomesheet/incomedata';
 import type { PageLoad } from './$types';
 
 export const load = (async ({ params }) => {

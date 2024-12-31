@@ -1,4 +1,4 @@
-import { fetchBalanceSheetRatios } from '../../../../api/balancesheet/balancesheetdata';
+import { fetchBalanceSheetRatios } from '../../../../../../api/balancesheet/balancesheetdata';
 import type { PageLoad } from './$types';
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
