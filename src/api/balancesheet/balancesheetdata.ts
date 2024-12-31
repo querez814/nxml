@@ -9,7 +9,7 @@ export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
 	const rawData = await response.json();
 	return cleanBalanceSheetData(rawData);
 };
-
+//comment
 export const fetchBalanceSheetRatios = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
 		`${api_url}/financials/balancesheet-statement/quarterly/${ticker}/ratios`
