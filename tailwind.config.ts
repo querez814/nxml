@@ -55,10 +55,30 @@ const config: Config = {
 				sm: 'calc(var(--radius) - 4px)'
 			},
 			fontFamily: {
-				sans: [...fontFamily.mono]
+				sans: [...fontFamily.sans]
+			},
+			animation: {
+				// ...other animations
+				spotlight: 'spotlight 2s ease .75s 1 forwards'
+			},
+			keyframes: {
+				// ... other keyframes
+				spotlight: {
+					'0%': {
+						opacity: "0",
+						transform: 'translate(-72%, -62%) scale(0.5)'
+					},
+					'100%': {
+						opacity: "1",
+						transform: 'translate(-50%,-40%) scale(1)'
+					}
+				}
 			}
 		}
-	}
+	},
+	plugins: [
+		require('@tailwindcss/typography'),
+	],
 };
 
 export default config;
