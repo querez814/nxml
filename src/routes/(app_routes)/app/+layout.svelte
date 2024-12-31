@@ -10,7 +10,10 @@
     const alwaysRedirect = false; //NOTE: for testing purposes only
 
 </script>
-    
+
+<svelte:head>
+    <title>{ siteMetaData.title } | App</title> 
+</svelte:head>
 <SignedIn let:user>
     <!-- Add some check here to see if user has free trial days left or not!  -->
     {#if alwaysRedirect || ( user?.publicMetadata["subscriptionActive"] as boolean ) === false }
