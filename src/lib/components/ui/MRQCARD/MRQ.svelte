@@ -1,4 +1,10 @@
 <script lang="ts">
+	import * as Card from '$lib/components/ui/card';
+	import * as Table from '$lib/components/ui/table';
+	import { Badge } from '$lib/components/ui/badge';
+	import { Separator } from '$lib/components/ui/separator';
+	import { TrendingUp, TrendingDown, Minus } from 'lucide-svelte';
+
 	let {
 		fiscalDateEnding,
 		grossProfit,
@@ -25,95 +31,118 @@
 </script>
 
 <div class="mx-auto w-full max-w-screen-2xl px-6 py-12">
-	<div
-		class="
-		rounded-xl
-		bg-gradient-to-br
-		from-slate-800
-		to-slate-900
-		p-8
-		shadow-xl
-		ring-1
-		ring-slate-700
-	"
-	>
-		<h2 class="mb-2 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
-			Most Recent Income Statement
-		</h2>
-		<p class="mb-8 text-slate-300">Key figures from the latest quarterly report</p>
+	<Card.Root class="bg-gradient-to-br from-slate-800 to-slate-900 text-slate-100">
+		<Card.Header>
+			<Card.Title class="text-3xl font-extrabold tracking-tight md:text-4xl">
+				Most Recent Income Statement
+			</Card.Title>
+			<Card.Description class="text-slate-300">
+				Quarterly financial report for period ending {fiscalDateEnding}
+			</Card.Description>
+		</Card.Header>
 
-		<div class="overflow-x-auto rounded-lg">
-			<table
-				class="
-					w-full
-					table-auto
-					border-separate
-					border-spacing-x-3
-					border-spacing-y-3
-					text-left
-					text-slate-100
-				"
-			>
-				<thead>
-					<tr class="bg-slate-700/80 text-sm uppercase md:text-base">
-						<th class="px-4 py-3">Fiscal Date Ending</th>
-						<th class="px-4 py-3">Total Revenue (M)</th>
-						<th class="px-4 py-3">Cost of Revenue (M)</th>
-						<th class="px-4 py-3">Cost of Goods and Services Sold (M)</th>
-						<th class="px-4 py-3">Gross Profit (M)</th>
+		<Card.Content>
+			<div class="mb-8 grid grid-cols-1 gap-4 md:grid-cols-3">
+				<div class="rounded-lg bg-slate-800/60 p-4">
+					<p class="text-sm text-slate-400">Revenue</p>
+					<p class="text-2xl font-bold">{totalRevenue}M</p>
+				</div>
+				<div class="rounded-lg bg-slate-800/60 p-4">
+					<p class="text-sm text-slate-400">Net Income</p>
+					<p class="text-2xl font-bold">{netIncome}M</p>
+				</div>
+				<div class="rounded-lg bg-slate-800/60 p-4">
+					<p class="text-sm text-slate-400">EPS</p>
+					<div class="flex items-center gap-2">
+						<p class="text-2xl font-bold">${reportedEPS}</p>
+						<Badge
+							variant={surprise > 0 ? 'secondary' : surprise < 0 ? 'destructive' : 'outline'}
+							class="flex items-center gap-1"
+						>
+							{#if surprise > 0}
+								<TrendingUp class="h-3 w-3" />
+							{:else if surprise < 0}
+								<TrendingDown class="h-3 w-3" />
+							{:else}
+								<Minus class="h-3 w-3" />
+							{/if}
+							{surprise > 0 ? '+' : ''}{surprisePercentage}% vs est.
+						</Badge>
+					</div>
+				</div>
+			</div>
 
-						<th class="px-4 py-3">Selling, General &amp; Admin (M)</th>
-						<th class="px-4 py-3">Research &amp; Development (M)</th>
-						<th class="px-4 py-3">Operating Expenses (M)</th>
-						<th class="px-4 py-3">EBITDA (M)</th>
-						<th class="px-4 py-3">Operating Income (M)</th>
-						<th class="px-4 py-3">Interest Income (M)</th>
-						<th class="px-4 py-3">Interest Expense (M)</th>
-						<th class="px-4 py-3">Income Before Tax (M)</th>
-						<th class="px-4 py-3">Income Tax Expense (M)</th>
-						<th class="px-4 py-3">Interest &amp; Debt Expense (M)</th>
+			<Separator class="my-6" />
 
-						<th class="px-4 py-3">Net Income (M)</th>
-						<th class="px-4 py-3">Reported EPS</th>
-						<th class="px-4 py-3">Estimated EPS</th>
-						<th class="px-4 py-3">Surprise</th>
-						<th class="px-4 py-3">Surprise %</th>
-					</tr>
-				</thead>
+			<div class="overflow-x-auto rounded-lg">
+				<Table.Root>
+					<Table.Header>
+						<Table.Row>
+							<Table.Head class="text-slate-300">Metric</Table.Head>
+							<Table.Head class="text-right text-slate-300">Amount (M)</Table.Head>
+						</Table.Row>
+					</Table.Header>
+					<Table.Body>
+						<Table.Row>
+							<Table.Cell>Total Revenue</Table.Cell>
+							<Table.Cell class="text-right">{totalRevenue}</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Cost of Revenue</Table.Cell>
+							<Table.Cell class="text-right">{costOfRevenue}</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell class="font-medium">Gross Profit</Table.Cell>
+							<Table.Cell class="text-right font-medium">{grossProfit}</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Operating Expenses</Table.Cell>
+							<Table.Cell class="text-right">{operatingExpenses}</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell>Operating Income</Table.Cell>
+							<Table.Cell class="text-right">{operatingIncome}</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell class="font-medium">EBITDA</Table.Cell>
+							<Table.Cell class="text-right font-medium">{ebitda}</Table.Cell>
+						</Table.Row>
+						<Table.Row>
+							<Table.Cell class="font-medium">Net Income</Table.Cell>
+							<Table.Cell class="text-right font-medium">{netIncome}</Table.Cell>
+						</Table.Row>
+					</Table.Body>
+				</Table.Root>
+			</div>
 
-				<tbody>
-					<tr
-						class="
-							rounded-md
-							bg-slate-800/60
-							transition-colors
-							hover:bg-slate-700/70
-						"
-					>
-						<td class="px-4 py-3">{fiscalDateEnding}</td>
-						<td class="px-4 py-3">{totalRevenue}</td>
-						<td class="px-4 py-3">{costOfRevenue}</td>
-						<td class="px-4 py-3">{costofGoodsAndServicesSold}</td>
-						<td class="px-4 py-3">{grossProfit}</td>
-						<td class="px-4 py-3">{sellingGeneralAndAdministrative}</td>
-						<td class="px-4 py-3">{researchAndDevelopment}</td>
-						<td class="px-4 py-3">{operatingExpenses}</td>
-						<td class="px-4 py-3">{ebitda}</td>
-						<td class="px-4 py-3">{operatingIncome}</td>
-						<td class="px-4 py-3">{interestIncome}</td>
-						<td class="px-4 py-3">{interestExpense}</td>
-						<td class="px-4 py-3">{incomeBeforeTax}</td>
-						<td class="px-4 py-3">{incomeTaxExpense}</td>
-						<td class="px-4 py-3">{interestAndDebtExpense}</td>
-
-						<td class="px-4 py-3">{netIncome}</td>
-						<td class="px-4 py-3">{reportedEPS}</td>
-						<td class="px-4 py-3">{estimatedEPS}</td>
-						<td class="px-4 py-3">{surprise}</td>
-						<td class="px-4 py-3">{surprisePercentage}</td>
-					</tr>
-				</tbody>
-			</table>
-		</div>
-	</div>
+			<div class="mt-8">
+				<h3 class="mb-4 text-xl font-semibold">Earnings Performance</h3>
+				<div class="grid grid-cols-1 gap-4 md:grid-cols-2">
+					<div class="rounded-lg bg-slate-800/60 p-4">
+						<p class="text-sm text-slate-400">Reported EPS</p>
+						<p class="text-2xl font-bold">${reportedEPS}</p>
+					</div>
+					<div class="rounded-lg bg-slate-800/60 p-4">
+						<p class="text-sm text-slate-400">vs Estimated</p>
+						<div class="flex items-center gap-2">
+							<p class="text-2xl font-bold">${estimatedEPS}</p>
+							<Badge
+								variant={surprise > 0 ? 'secondary' : surprise < 0 ? 'destructive' : 'outline'}
+								class="flex items-center gap-1"
+							>
+								{#if surprise > 0}
+									<TrendingUp class="h-3 w-3" />
+								{:else if surprise < 0}
+									<TrendingDown class="h-3 w-3" />
+								{:else}
+									<Minus class="h-3 w-3" />
+								{/if}
+								{surprise > 0 ? '+' : ''}{surprisePercentage}%
+							</Badge>
+						</div>
+					</div>
+				</div>
+			</div>
+		</Card.Content>
+	</Card.Root>
 </div>

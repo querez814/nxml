@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 30">
+  <!-- Just the formula text in lime green -->
+  <text x="10" y="20" font-family="monospace" fill="#32CD32" font-size="16">
+    EV = Market Capitalization + Total Debt - Cash and Cash Equivalents
+  </text>
+</svg>
