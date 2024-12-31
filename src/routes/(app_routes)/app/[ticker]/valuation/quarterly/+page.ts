@@ -1,7 +1,7 @@
-import { fetchCashFlow } from '../../../api/cashflowsheet/cashflowdata';
+import { fetchValuation } from '../../../../../../api/valuation/valuationdata';
 import type { PageLoad } from './$types';
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
-	const quarters = await fetchCashFlow(ticker);
+	const quarters = await fetchValuation(ticker);
 	return { quarters };
 }) satisfies PageLoad;

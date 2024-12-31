@@ -1,7 +1,8 @@
-import { fetchCashFlow } from '../../../../api/cashflowsheet/cashflowdata';
+import { fetchBalanceSheet } from '../../../../../../api/balancesheet/balancesheetdata';
 import type { PageLoad } from './$types';
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
-	const quarters = await fetchCashFlow(ticker);
+	const quarters = await fetchBalanceSheet(ticker);
 	return { quarters };
 }) satisfies PageLoad;
+///////dskfj
