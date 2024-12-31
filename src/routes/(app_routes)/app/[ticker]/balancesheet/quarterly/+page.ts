@@ -5,4 +5,3 @@ export const load = (async ({ params }) => {
 	const quarters = await fetchBalanceSheet(ticker);
 	return { quarters };
 }) satisfies PageLoad;
-///////dskfj
