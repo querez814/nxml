@@ -53,7 +53,7 @@ const siteMetadata = {
         instagram: '',
     },
     subscriptionTiers: {
-        early_adopter: {
+        premarket_subscription: {
             monthly: {
                 link: PUBLIC_NODE_ENV === 'development' ?
                     'https://buy.stripe.com/test_28ocPt9t6eYBgpO6oo' : '#', 
