@@ -15,8 +15,12 @@
     <title>{ siteMetaData.title } | App</title> 
 </svelte:head>
 <SignedIn let:user>
+    { console.log(user?.publicMetadata ) }
     <!-- Add some check here to see if user has free trial days left or not!  -->
-    {#if alwaysRedirect || ( user?.publicMetadata["subscriptionActive"] as boolean ) === false }
+    {#if    
+        !(typeof user?.publicMetadata["subscriptionActive"] === "boolean") || 
+        ( user?.publicMetadata["subscriptionActive"] as boolean ) === false 
+    }
         {#await goto(siteMetaData.urls.web.pricing) }
             <!-- This will never actually render, as the redirect will happen first -->
         {/await}
