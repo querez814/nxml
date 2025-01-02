@@ -5,7 +5,7 @@
 	let grossProfit = $derived(revenue - cogs);
 </script>
 
-<div class="w-full max-w-4xl space-y-6 p-4">
+<div class="background-background w-full max-w-4xl space-y-6 p-4">
 	<Card.Root class="border-slate-700 bg-slate-900 text-white">
 		<Card.Header>
 			<Card.Title class="mb-6 text-center text-3xl font-bold text-green-400"
@@ -13,9 +13,6 @@
 			>
 			<Card.Description class="space-y-8">
 				<section class="space-y-4">
-					<div class="rounded-lg bg-slate-800 p-6">
-						<h2 class="mb-4 text-xl text-green-400">The Basics</h2>
-					</div>
 					<p class="mb-4 text-lg text-slate-300">
 						The Income Statement (sometimes called the Profit & Loss Statement or Statement of
 						Earnings) tells you how much money a company made and spent over a certain period of
@@ -27,11 +24,11 @@
 				</section>
 
 				<section class="space-y-4">
-					<div class="bg slate-800 rounded-lg p-6">
-						<h2 class="mb-4 text-xl text-green-400">What is on the Income Statement?</h2>
+					<div class="bg slate-800 rounded-xl p-6">
+						<h2 class="mb-6 text-2xl text-green-400">What is on the Income Statement?</h2>
 						<div class="space-y-4">
 							<div class="space-y-4">
-								<div class="rounded-lg bg-slate-700">
+								<div class="mb-2 rounded-lg bg-slate-700">
 									<p class="text-base text-slate-300">
 										Total Revenue, Cost of Revenue, Gross Profit, Operating Expenses, EBITDA,
 										Operating Income, Net Income, EPS
@@ -54,19 +51,39 @@
 									</div>
 									<div class="rounded-lg bg-slate-700 p-4">
 										<h5 class="mb-2 text-green-400">Gross Profit</h5>
-										<p class="text-slate-300"></p>
+										<p class="text-slate-300">Total Revenue - Gross Profit</p>
 									</div>
 									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400"></h5>
-										<p class="text-slate-300"></p>
+										<h5 class="mb-2 text-green-400">Operating Expenses</h5>
+										<p class="text-slate-300">
+											The sum of Selling General and Administrative Expenses (SG&A) and Research and
+											Development (R&D)
+										</p>
 									</div>
 									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400"></h5>
-										<p class="text-slate-300"></p>
+										<h5 class="mb-2 text-green-400">Operating Income</h5>
+										<p class="text-slate-300">Gross Profit - Operating Expenses</p>
 									</div>
 									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400"></h5>
-										<p class="text-slate-300"></p>
+										<h5 class="mb-2 text-green-400">EBITDA</h5>
+										<p class="text-slate-300">
+											Earnings before Interest, Taxes, or other misc financial expenses such as
+											depreciation, amortization. The most pure picture of business operations since
+											financing is excluded
+										</p>
+									</div>
+									<div class="rounded-lg bg-slate-700 p-4">
+										<h5 class="mb-2 text-green-400">Net Income</h5>
+										<p class="text-slate-300">
+											What the business "brings home" after taxes deductions, and other expeneses
+										</p>
+									</div>
+									<div class="rounded-lg bg-slate-700 p-4">
+										<h5 class="mb-2 text-green-400">EPS</h5>
+										<p class="text-slate-300">
+											Earnings Per Share of the company. How much net income is made per share
+											outstanding.
+										</p>
 									</div>
 								</div>
 							</div>
