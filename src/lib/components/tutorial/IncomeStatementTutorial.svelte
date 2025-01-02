@@ -52,6 +52,22 @@
 											sells. Cloud computing costs, materials, manufacturing
 										</p>
 									</div>
+									<div class="rounded-lg bg-slate-700 p-4">
+										<h5 class="mb-2 text-green-400">Gross Profit</h5>
+										<p class="text-slate-300"></p>
+									</div>
+									<div class="rounded-lg bg-slate-700 p-4">
+										<h5 class="mb-2 text-green-400"></h5>
+										<p class="text-slate-300"></p>
+									</div>
+									<div class="rounded-lg bg-slate-700 p-4">
+										<h5 class="mb-2 text-green-400"></h5>
+										<p class="text-slate-300"></p>
+									</div>
+									<div class="rounded-lg bg-slate-700 p-4">
+										<h5 class="mb-2 text-green-400"></h5>
+										<p class="text-slate-300"></p>
+									</div>
 								</div>
 							</div>
 						</div>

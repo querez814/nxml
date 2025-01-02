@@ -20,12 +20,12 @@
 
 <Card.Root
 	class="
+    background-background 
     mx-auto 
     max-w-md 
     transform 
     overflow-hidden 
     rounded-xl 
-    bg-white 
     shadow-lg 
     ring-1
     ring-green-200 
