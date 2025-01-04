@@ -1,9 +1,11 @@
 <script lang="ts">
+	import { School } from 'lucide-svelte';
 	import * as Card from '$lib/components/ui/card';
 	import * as Table from '$lib/components/ui/table';
 	import { Badge } from '$lib/components/ui/badge';
 	import { Separator } from '$lib/components/ui/separator';
 	import { TrendingUp, TrendingDown, Minus } from 'lucide-svelte';
+	import IncomeStatementTutorial from '$lib/components/tutorial/IncomeStatementTutorial.svelte';
 
 	let {
 		fiscalDateEnding,
@@ -28,11 +30,49 @@
 		surprise,
 		surprisePercentage
 	} = $props();
+
+	let showPopup = $state(false);
+	let popupRef = $state<HTMLDivElement | null>(null);
+	const togglePopup = () => {
+		showPopup = !showPopup;
+	};
+
+	const handleClickOutside = (event: any) => {
+		if (
+			showPopup &&
+			popupRef &&
+			!popupRef.contains(event.target) &&
+			!event.target.closest('button')
+		) {
+			showPopup = false;
+		}
+	};
 </script>
 
+<svelte:window onclick={handleClickOutside} />
 <div class="mx-auto w-full max-w-screen-2xl px-6 py-12">
 	<Card.Root class="bg-gradient-to-br from-slate-800 to-slate-900 text-slate-100">
 		<Card.Header>
+			<button
+				onclick={togglePopup}
+				class="rounded-full p-2 transition-colors hover:bg-slate-100/10"
+				aria-label="Tutorial"
+			>
+				<School />
+			</button>
+			{#if showPopup}
+				<div
+					class="absolute left-4 top-16 z-50 rounded-lg border border-slate-700 bg-slate-900 p-4 shadow-lg"
+					role="dialog"
+					aria-label="Tutorial popup"
+				>
+					<p class="text-slate-300"></p>
+					<IncomeStatementTutorial />
+					<button onclick={togglePopup} class="mt-2 text-sm text-slate-400 hover:text-slate-200">
+						Close
+					</button>
+				</div>
+			{/if}
 			<Card.Title class="text-3xl font-extrabold tracking-tight md:text-4xl">
 				Most Recent Income Statement
 			</Card.Title>
