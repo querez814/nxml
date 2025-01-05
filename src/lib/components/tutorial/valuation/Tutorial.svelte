@@ -69,8 +69,8 @@
 	};
 </script>
 
-<div class="w-full max-w-4xl space-y-6 p-4">
-	<Card.Root class="border-slate-700 bg-slate-900 text-white">
+<div class="w-full max-w-4xl space-y-6 bg-slate-900 p-4">
+	<Card.Root class="background-background border-slate-700 bg-slate-900 text-white">
 		<Card.Header>
 			<Card.Title class="mb-6 text-center text-3xl font-bold text-green-400">
 				Understanding EV/Sales Across Industries

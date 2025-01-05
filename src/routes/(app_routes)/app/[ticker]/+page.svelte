@@ -128,14 +128,16 @@
 					<Dialog.Portal>
 						<Dialog.Overlay class="fixed inset-0 bg-black/50 backdrop-blur-sm" />
 						<Dialog.Content
-							class="fixed left-[50%] top-[50%] h-[90vh] w-[95vw] max-w-[1400px] translate-x-[-50%] translate-y-[-50%] overflow-y-auto rounded-lg bg-white p-8 shadow-xl"
+							class="bg-black-800 fixed left-[50%] top-[50%] h-[90vh] w-[95vw] max-w-[1400px] translate-x-[-50%] translate-y-[-50%] overflow-y-auto rounded-lg p-8 shadow-xl"
 						>
 							<div class="mx-auto flex h-full max-w-[1200px] flex-col">
-								<Dialog.Title class="mb-2 text-2xl font-bold text-green-700">
+								<Dialog.Title
+									class="motion-safe: mb-2 animate-pulse text-2xl font-bold text-green-700 transition-all duration-200"
+								>
 									{metric.title}
 								</Dialog.Title>
 
-								<Dialog.Description class="mb-6 text-slate-600">
+								<Dialog.Description class="mb-6 text-slate-300">
 									{metric.description}
 								</Dialog.Description>
 
