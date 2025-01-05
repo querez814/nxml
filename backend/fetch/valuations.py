@@ -107,10 +107,10 @@ def get_cap_struct(ticker: str):
 
     result = bs.rename(columns={
         "adjustedPrice": "adjustedPrice",
-        "commonStockSharesOutstanding": "shares_outstanding",
-        "cashAndCashEquivalentsAtCarryingValue": "cash_cash_eq",
+        "commonStockSharesOutstanding": "sharesOutstanding",
+        "cashAndCashEquivalentsAtCarryingValue": "cashCashEq",
         "currentDebt": "currentDebt"
-    })[["fiscalDateEnding", "adjustedPrice", "shares_outstanding", "cash_cash_eq", "currentDebt", "mc", "ev"]]
+    })[["fiscalDateEnding", "adjustedPrice", "sharesOutstanding", "cashCashEq", "currentDebt", "mc", "ev"]]
 
     if result.empty:
         raise HTTPException(status_code=404, detail="Final result DataFrame is empty")

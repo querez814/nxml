@@ -1,10 +1,10 @@
 <script lang="ts">
-	import Fwdpe from '$lib/components/tutorial/FWDPE.svelte';
-	import TrailingPe from '$lib/components/tutorial/TrailingPE.svelte';
-	import PSales from '$lib/components/tutorial/PSales.svelte';
+	import Fwdpe from '$lib/components/tutorial/valuation/FWDPE.svelte';
+	import TrailingPe from '$lib/components/tutorial/valuation/TrailingPE.svelte';
+	import PSales from '$lib/components/tutorial/valuation/PSales.svelte';
 	import ValuationCard from '$lib/components/ui/valuationcard/ValuationCard.svelte';
-	import Tutorial from '$lib/components/tutorial/Tutorial.svelte';
-	import EVtoEbitda from '$lib/components/tutorial/EVtoEbitda.svelte';
+	import Tutorial from '$lib/components/tutorial/valuation/Tutorial.svelte';
+	import EVtoEbitda from '$lib/components/tutorial/valuation/EVtoEbitda.svelte';
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import * as Dialog from '$lib/components/ui/dialog';

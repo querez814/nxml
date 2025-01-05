@@ -97,7 +97,7 @@ def get_ttm_data(ticker: str):
         
         for col in income.columns:
             if col != "fiscalDateEnding":
-                ttm_metrics[f"{col}_ttm"] = income[col].iloc[max(0, i):i + 4].sum()
+                ttm_metrics[f"{col}TTM"] = income[col].iloc[max(0, i):i + 4].sum()
         
         quarter_data.update(ttm_metrics)
         

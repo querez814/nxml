@@ -20,6 +20,9 @@ export const fetchIncomeStatementMargins = async (ticker: string): Promise<any[]
 	const rawData = await response.json();
 	return cleanIncomeStatementMarginsData(rawData);
 };
+
+// TYPE IN FORK - "money"
+//
 const cleanIncomeStatementData = (data: any[]): any[] => {
 	return data.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,

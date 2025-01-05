@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { School } from 'lucide-svelte';
-	import IncomeStatementTutorial from '$lib/components/tutorial/IncomeStatementTutorial.svelte';
+	import IncomeStatementTutorial from '$lib/components/tutorial/incomestatement/IncomeStatementTutorial.svelte';
 	import Mrq from '$lib/components/ui/MRQCARD/MRQ.svelte';
 	import type { PageData } from './$types';
 	let { data }: { data: PageData } = $props();

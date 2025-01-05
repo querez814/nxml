@@ -45,9 +45,9 @@ def get_quarterly_balance_sheet_data(ticker: str):
     df.fillna(0, inplace=True)
 
     if "totalCurrentAssets" in df.columns and "totalCurrentLiabilities" in df.columns:
-        df["working_capital"] = df["totalCurrentAssets"] - df["totalCurrentLiabilities"]
+        df["workingCapital"] = df["totalCurrentAssets"] - df["totalCurrentLiabilities"]
     else:
-        df["working_capital"] = 0  
+        df["workingCapital"] = 0  
 
     keys_to_include = [
         "fiscalDateEnding",
@@ -55,7 +55,7 @@ def get_quarterly_balance_sheet_data(ticker: str):
         "totalAssets",
         "totalCurrentLiabilities",
         "totalLiabilities",
-        "working_capital",
+        "workingCapital",
         "totalShareholderEquity",
         "commonStockSharesOutstanding",
         "cashAndCashEquivalentsAtCarryingValue",

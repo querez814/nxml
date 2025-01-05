@@ -9,7 +9,6 @@ export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
 	const rawData = await response.json();
 	return cleanBalanceSheetData(rawData);
 };
-//comment
 export const fetchBalanceSheetRatios = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
 		`${api_url}/financials/balancesheet-statement/quarterly/${ticker}/ratios`
@@ -28,7 +27,7 @@ const cleanBalanceSheetData = (data: any[]): any[] => {
 		totalAssets: (parseFloat(item.totalAssets) / 1e6).toLocaleString(),
 		totalCurrentLiabilities: (parseFloat(item.totalCurrentLiabilities) / 1e6).toLocaleString(),
 		totalLiabilities: (parseFloat(item.totalLiabilities) / 1e6).toLocaleString(),
-		working_capital: (parseFloat(item.working_capital) / 1e6).toLocaleString(),
+		workingCapital: (parseFloat(item.workingCapital) / 1e6).toLocaleString(),
 		totalShareholderEquity: (parseFloat(item.totalShareholderEquity) / 1e6).toLocaleString(),
 		commonStockSharesOutstanding: parseFloat(item.commonStockSharesOutstanding).toLocaleString(),
 		cashAndCashEquivalentsAtCarryingValue: (
