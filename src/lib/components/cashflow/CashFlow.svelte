@@ -27,11 +27,6 @@
 		ring-slate-700
 	"
 	>
-		<h2 class="mb-2 text-3xl font-extrabold tracking-tight text-white md:text-4xl">
-			Most Recent Income Statement
-		</h2>
-		<p class="mb-8 text-slate-300">Key figures from the latest quarterly report</p>
-
 		<div class="overflow-x-auto rounded-lg">
 			<table
 				class="
