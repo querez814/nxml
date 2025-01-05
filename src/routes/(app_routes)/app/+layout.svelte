@@ -5,10 +5,14 @@
     import siteMetaData from '$lib/config/site-metadata';
     import { goto } from '$app/navigation';
     import AppHeader from '$lib/components/app/app-header.svelte';
+	import { setTerminalGridState } from '$lib/state/terminal-grid-state.svelte.ts';
+	import { setTerminalCommandState } from '$lib/state/terminal-command-state.svelte.ts';
 
 
     const alwaysRedirect = false; //NOTE: for testing purposes only
 
+    setTerminalGridState();
+    setTerminalCommandState();
 </script>
 
 <svelte:head>

@@ -10,4 +10,18 @@ declare global {
 	}
 }
 
+export type TerminalCardType = 'stock' | 'budget' | 'table'; //16
+
+
+// ---------------------------------------
+export interface TableColumn {
+    key: string;
+    label: string;
+    type: 'text' | 'year' | 'integer' | 'float' | 'money' | 'ratio' | 'percentage' | 'trend-icon';
+}
+
+export interface TableData {
+    [key: string]: any;
+}
+
 export {};
