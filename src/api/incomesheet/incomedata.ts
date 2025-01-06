@@ -10,6 +10,24 @@ export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
 	return cleanIncomeStatementData(rawData);
 };
 
+export const fetchIncomeStatementYoY = async (ticker: string): Promise<any[]> => {
+	const response = await fetch(`${api_url}/financials/income-statement/quarterly/${ticker}/yoy`);
+	if (!response.ok) {
+		throw new Error(`Failed to fetch income statement YoY data: ${response.statusText}`);
+	}
+	const rawData = await response.json();
+	return rawData;
+};
+
+export const fetchIncomeStatementQoQ = async (ticker: string): Promise<any[]> => {
+	const response = await fetch(`${api_url}/financials/income-statement/quarterly/${ticker}/qoq`);
+	if (!response.ok) {
+		throw new Error(`Failed to fetch income statement QoQ data: ${response.statusText}`);
+	}
+	const rawData = await response.json();
+	return rawData;
+};
+
 export const fetchIncomeStatementMargins = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(
 		`${api_url}/financials/income-statement/quarterly/${ticker}/margins`

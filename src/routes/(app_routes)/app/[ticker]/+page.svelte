@@ -8,7 +8,8 @@
 	import { page } from '$app/stores';
 	import { onMount } from 'svelte';
 	import * as Dialog from '$lib/components/ui/dialog';
-	import type { PageData } from './$types';
+	import * as Card from '$lib/components/ui/card';
+	import { ChartBar, TrendingUp, DollarSign, Calculator, LineChart } from 'lucide-svelte';
 
 	type FinancialData = {
 		symbol: string;
@@ -30,12 +31,6 @@
 	let new_data = $state<FinancialData | null>(null);
 	let activeMetric = $state('');
 
-	let cardTitle = $state('EV to Sales');
-	let desc1 = $state('We can break it down into two components');
-	let desc2 = $state('Enterprise Value & Revenue (ttm)');
-	let content1 = $state('Enterprise Value');
-	let content2 = $state('Revenue (ttm)');
-
 	const pageDataRef = $derived({
 		data: $page.data.data[0] as FinancialData
 	});
@@ -50,32 +45,47 @@
 		{
 			id: 'evToSales',
 			title: 'EV to Sales (ttm)',
-			component: Tutorial,
-			description: 'Learn how Enterprise Value to Sales helps value growth companies'
+			Icon: ChartBar,
+			Component: Tutorial,
+			description: 'Learn how Enterprise Value to Sales helps value growth companies',
+			color: 'from-emerald-500 to-green-600',
+			bgHover: 'hover:bg-emerald-500/10'
 		},
 		{
 			id: 'evToEbitda',
 			title: 'EV to EBITDA',
-			component: EVtoEbitda,
-			description: 'Understand operating performance valuation using EV/EBITDA'
+			Icon: Calculator,
+			Component: EVtoEbitda,
+			description: 'Understand operating performance valuation using EV/EBITDA',
+			color: 'from-green-500 to-emerald-600',
+			bgHover: 'hover:bg-green-500/10'
 		},
 		{
 			id: 'priceToSales',
 			title: 'Price to Sales (ttm)',
-			component: PSales,
-			description: 'Explore revenue-based valuation metrics'
+			Icon: DollarSign,
+			Component: PSales,
+			description: 'Explore revenue-based valuation metrics',
+			color: 'from-teal-500 to-green-600',
+			bgHover: 'hover:bg-teal-500/10'
 		},
 		{
 			id: 'trailingPE',
 			title: 'Trailing P/E',
-			component: TrailingPe,
-			description: 'Learn about historical earnings-based valuation'
+			Icon: TrendingUp,
+			Component: TrailingPe,
+			description: 'Learn about historical earnings-based valuation',
+			color: 'from-green-600 to-emerald-500',
+			bgHover: 'hover:bg-green-600/10'
 		},
 		{
 			id: 'forwardPE',
 			title: 'Forward P/E',
-			component: Fwdpe,
-			description: 'Understand future earnings expectations and valuation'
+			Icon: LineChart,
+			Component: Fwdpe,
+			description: 'Understand future earnings expectations and valuation',
+			color: 'from-emerald-600 to-green-500',
+			bgHover: 'hover:bg-emerald-600/10'
 		}
 	] as const;
 
@@ -85,78 +95,113 @@
 			new_data = pageDataRef.data;
 		}
 	});
-
-	const ActiveComponent = $derived(
-		metrics.find((m) => m.id === activeMetric)?.component ?? Tutorial
-	);
 </script>
 
 <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 	{#if mounted && new_data}
 		<div class="mb-8">
-			<ValuationCard
-				symbol={new_data.symbol}
-				AnalystTargetPrice={new_data.AnalystTargetPrice}
-				AnalystRatingStrongBuy={new_data.AnalystRatingStrongBuy}
-				AnalystRatingBuy={new_data.AnalystRatingBuy}
-				AnalystRatingHold={new_data.AnalystRatingHold}
-				AnalystRatingSell={new_data.AnalystRatingSell}
-				AnalystRatingStrongSell={new_data.AnalystRatingStrongSell}
-				evtosales={new_data.evtosales}
-				evtoebitda={new_data.evtoebitda}
-				revenue_per_share_ttm={new_data.revenue_per_share_ttm}
-				price_to_sales_ratio_ttm={new_data.price_to_sales_ratio_ttm}
-				TrailingPE={new_data.TrailingPE}
-				ForwardPE={new_data.ForwardPE}
-			/>
+			<ValuationCard {...new_data} />
 		</div>
 	{/if}
 
 	{#if mounted}
-		<div class="grid grid-cols-1 gap-6 p-6 md:grid-cols-2 lg:grid-cols-3">
-			{#each metrics as metric}
-				<Dialog.Root>
-					<Dialog.Trigger>
-						<button
-							class="w-full rounded-lg p-4 text-3xl text-green-700 transition-all duration-300 ease-in-out hover:scale-105 hover:bg-green-50/10 hover:text-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 motion-safe:animate-pulse"
-							onclick={() => (activeMetric = metric.id)}
-						>
-							{metric.title}
-						</button>
-					</Dialog.Trigger>
+		<div class="space-y-6">
+			<div class="text-center">
+				<h2 class="text-2xl font-bold tracking-tight text-primary">
+					Understanding Valuation Metrics
+				</h2>
+				<p class="mt-2 text-muted-foreground">
+					Click any metric below to learn more about how it works and why it matters
+				</p>
+			</div>
 
-					<Dialog.Portal>
-						<Dialog.Overlay class="fixed inset-0 bg-black/50 backdrop-blur-sm" />
-						<Dialog.Content
-							class="fixed left-[50%] top-[50%] h-[90vh] w-[95vw] max-w-[1400px] translate-x-[-50%] translate-y-[-50%] overflow-y-auto rounded-lg bg-white p-8 shadow-xl"
-						>
-							<div class="mx-auto flex h-full max-w-[1200px] flex-col">
-								<Dialog.Title class="mb-2 text-2xl font-bold text-green-700">
-									{metric.title}
-								</Dialog.Title>
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+				{#each metrics as metric}
+					<Dialog.Root>
+						<Dialog.Trigger>
+							<Card.Root
+								class="hover:scale-102 group h-full overflow-hidden transition-all duration-300"
+							>
+								<Card.Header class="space-y-1">
+									<div class="flex items-center justify-between">
+										<div class={`rounded-full p-2 ${metric.bgHover}`}>
+											<metric.Icon
+												class={`h-6 w-6 bg-gradient-to-r ${metric.color} bg-clip-text text-transparent`}
+											/>
+										</div>
+										<span class="text-sm text-muted-foreground">Click to learn more</span>
+									</div>
+									<Card.Title
+										class={`bg-gradient-to-r ${metric.color} bg-clip-text text-xl font-semibold text-transparent transition-colors group-hover:bg-clip-text`}
+									>
+										{metric.title}
+									</Card.Title>
+								</Card.Header>
+								<Card.Content>
+									<p class="text-sm text-muted-foreground">{metric.description}</p>
+								</Card.Content>
+							</Card.Root>
+						</Dialog.Trigger>
 
-								<Dialog.Description class="mb-6 text-slate-600">
-									{metric.description}
-								</Dialog.Description>
-
-								<div class="flex-grow overflow-y-auto py-4">
-									{#if ActiveComponent}
-										<ActiveComponent />
-									{/if}
+						<Dialog.Portal>
+							<Dialog.Overlay class="fixed inset-0 bg-black/80 backdrop-blur-sm" />
+							<Dialog.Content
+								class="fixed left-[50%] top-[50%] flex h-[90vh] w-[95vw] max-w-[1400px] -translate-x-1/2 -translate-y-1/2 flex-col rounded-xl border bg-background shadow-2xl"
+							>
+								<div class={`w-full bg-gradient-to-r ${metric.color} flex-shrink-0 p-6`}>
+									<Dialog.Title class="text-4xl font-bold text-white">
+										{metric.title}
+									</Dialog.Title>
+									<Dialog.Description class="mt-2 text-white/90">
+										{metric.description}
+									</Dialog.Description>
 								</div>
 
-								<div class="flex justify-end border-t border-slate-200 pt-6">
+								<div class="flex-1 overflow-y-auto p-6">
+									<div class="tutorial-content">
+										<metric.Component />
+									</div>
+								</div>
+
+								<div
+									class="flex-shrink-0 border-t bg-background/95 p-6 backdrop-blur supports-[backdrop-filter]:bg-background/50"
+								>
 									<Dialog.Close
-										class="rounded-lg bg-green-700 px-4 py-2 text-white transition-colors hover:bg-green-600"
+										class="inline-flex h-10 items-center justify-center rounded-md bg-primary px-4 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
 									>
 										Close Tutorial
 									</Dialog.Close>
 								</div>
-							</div>
-						</Dialog.Content>
-					</Dialog.Portal>
-				</Dialog.Root>
-			{/each}
+							</Dialog.Content>
+						</Dialog.Portal>
+					</Dialog.Root>
+				{/each}
+			</div>
 		</div>
 	{/if}
 </div>
+
+<style>
+	.tutorial-content {
+		max-height: calc(90vh - 200px);
+		overflow-y: auto;
+	}
+
+	.tutorial-content::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	.tutorial-content::-webkit-scrollbar-track {
+		background: rgba(0, 0, 0, 0.1);
+		border-radius: 4px;
+	}
+
+	.tutorial-content::-webkit-scrollbar-thumb {
+		background: rgba(0, 0, 0, 0.2);
+		border-radius: 4px;
+	}
+
+	.tutorial-content::-webkit-scrollbar-thumb:hover {
+		background: rgba(0, 0, 0, 0.3);
+	}
+</style>
