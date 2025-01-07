@@ -1,4 +1,6 @@
 from fastapi import APIRouter, HTTPException
+from fetch.income_statement import get_quarterly_statement_data 
+
 import requests as r
 import dotenv as env
 import os
@@ -8,7 +10,6 @@ env.load_dotenv()
 
 av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
-
 
 @router.get("/cashflow-statement/quarterly/{ticker}")
 def get_quarterly_cashflow_statement_data(ticker: str):
@@ -24,11 +25,15 @@ def get_quarterly_cashflow_statement_data(ticker: str):
         raise HTTPException(status_code=404, detail="No quarterly cash flow data found")
     
     df = pd.DataFrame(quarterly_reports)
+    income_df = pd.DataFrame(get_quarterly_statement_data(ticker))
     
-    numeric_columns = ["operatingCashflow", "capitalExpenditures"]
-    for col in numeric_columns:
-        if col in df.columns:
+    for col in df.columns:
+        if col != "fiscalDateEnding":
             df[col] = pd.to_numeric(df[col], errors="coerce")
+            
+    for col in income_df.columns:
+        if col != "fiscalDateEnding":
+            income_df[col] = pd.to_numeric(income_df[col], errors="coerce")
     
     df["freeCashFlow"] = df["operatingCashflow"] - df["capitalExpenditures"]
     
@@ -44,9 +49,57 @@ def get_quarterly_cashflow_statement_data(ticker: str):
         "changeInCashAndCashEquivalents",
         "changeInExchangeRate"
     ]
-    transformed_reports = df.drop(columns=keys_to_exclude, errors="ignore")
     
-    transformed_reports = transformed_reports.astype({col: float for col in numeric_columns if col in transformed_reports.columns})
+    df = df.drop(columns=keys_to_exclude, errors="ignore")
     
-    result = transformed_reports.to_dict(orient="records")
-    return result
+    # Calculate margins
+    df["net_profit_margin"] = (df["netIncome"]/df["operatingCashflow"])*100
+    df["ocf_margin"] = (df["operatingCashflow"]/income_df["totalRevenue"])*100
+    df["fcf_margin"] = (df["freeCashFlow"]/income_df["totalRevenue"])*100
+    
+    # Calculate ratios
+    df["roce"] = df["netIncome"]/df["capitalExpenditures"]
+    df["cash_flow_adequacy_ratio"] = df["operatingCashflow"]/(df["capitalExpenditures"]+df["dividendPayout"]+df["cashflowFromFinancing"])
+    df["capex_ratio"] = df["operatingCashflow"]/df["capitalExpenditures"]
+    df["change_working_capital"] = df["changeInReceivables"]-df["changeInInventory"]
+    
+    # Format ratio values
+    ratio_cols = ["roce", "cash_flow_adequacy_ratio", "capex_ratio", "change_working_capital"]
+    for col in ratio_cols:
+        df[col] = df[col].apply(lambda x: f"{x:.2f}" if pd.notnull(x) else "0.00")
+    
+    # Format margin values    
+    margin_cols = ["net_profit_margin", "ocf_margin", "fcf_margin"]
+    for col in margin_cols:
+        df[col] = df[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+    
+    # Prepare for YoY and QoQ calculations
+    result_df = df.iloc[::-1].reset_index(drop=True)
+    numeric_cols = [col for col in result_df.columns if col != "fiscalDateEnding" 
+                   and col not in margin_cols and col not in ratio_cols]
+    
+    change_df = pd.DataFrame()
+    change_df["fiscalDateEnding"] = result_df["fiscalDateEnding"]
+    
+    # Calculate YoY and QoQ for numeric columns
+    for col in numeric_cols:
+        yoy_series = result_df[col].pct_change(periods=4) * 100
+        change_df[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+        
+        qoq_series = result_df[col].pct_change(periods=1) * 100
+        change_df[f"{col}_QoQ"] = qoq_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+    
+    # Calculate YoY and QoQ for margin and ratio columns
+    for col in margin_cols + ratio_cols:
+        temp_series = pd.to_numeric(result_df[col].str.replace('%', ''), errors='coerce')
+        
+        yoy_series = temp_series.pct_change(periods=4) * 100
+        change_df[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+        
+        qoq_series = temp_series.pct_change(periods=1) * 100
+        change_df[f"{col}_QoQ"] = qoq_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+    
+    final_df = pd.merge(result_df, change_df, on="fiscalDateEnding")
+    final_df = final_df.iloc[::-1].reset_index(drop=True)
+    
+    return final_df.to_dict(orient="records")

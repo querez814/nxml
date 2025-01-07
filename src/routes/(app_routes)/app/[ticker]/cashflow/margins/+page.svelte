@@ -40,9 +40,11 @@
 
 	function formatValue(value: string | number): string {
 		if (typeof value === 'number') {
-			return value.toLocaleString('en-US', {
-				maximumFractionDigits: 2
-			});
+			return (
+				value.toLocaleString('en-US', {
+					maximumFractionDigits: 2
+				}) + '%'
+			);
 		}
 		return String(value);
 	}

@@ -1,4 +1,5 @@
 const api_url = import.meta.env.VITE_API_URL;
+
 export const fetchCashFlow = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(`${api_url}/financials/cashflow-statement/quarterly/${ticker}`);
 	if (!response.ok) {
@@ -7,6 +8,26 @@ export const fetchCashFlow = async (ticker: string): Promise<any[]> => {
 
 	const rawData = await response.json();
 	return cleanCashFlowData(rawData);
+};
+
+export const fetchCashFlowYoy = async (ticker: string): Promise<any[]> => {
+	const response = await fetch(`${api_url}/financials/cashflow-statement/quarterly/${ticker}/yoy`);
+	if (!response.ok) {
+		throw new Error(`Failed to fetch cash flow yoy data: ${response.statusText}`);
+	}
+
+	const rawData = await response.json();
+	return rawData;
+};
+
+export const fetchCashFlowQoq = async (ticker: string): Promise<any[]> => {
+	const response = await fetch(`${api_url}/financials/cashflow-statement/quarterly/${ticker}/qoq`);
+	if (!response.ok) {
+		throw new Error(`Failed to fetch cash flow qoq data: ${response.statusText}`);
+	}
+
+	const rawData = await response.json();
+	return rawData;
 };
 
 export const fetchCashFlowMargins = async (ticker: string): Promise<any[]> => {

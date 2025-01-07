@@ -27,7 +27,7 @@ const cleanBalanceSheetData = (data: any[]): any[] => {
 		totalAssets: (parseFloat(item.totalAssets) / 1e6).toLocaleString(),
 		totalCurrentLiabilities: (parseFloat(item.totalCurrentLiabilities) / 1e6).toLocaleString(),
 		totalLiabilities: (parseFloat(item.totalLiabilities) / 1e6).toLocaleString(),
-		workingCapital: (parseFloat(item.workingCapital) / 1e6).toLocaleString(),
+		working_capital: (parseFloat(item.working_capital) / 1e6).toLocaleString(),
 		totalShareholderEquity: (parseFloat(item.totalShareholderEquity) / 1e6).toLocaleString(),
 		commonStockSharesOutstanding: parseFloat(item.commonStockSharesOutstanding).toLocaleString(),
 		cashAndCashEquivalentsAtCarryingValue: (

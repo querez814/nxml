@@ -46,21 +46,18 @@ def calculate_valuations(ticker:str):
 
 @router.get("/capitalstructure/quarterly/{ticker}")
 def get_cap_struct(ticker: str):
-    # Fetch balance sheet data
     bs = pd.DataFrame(get_quarterly_balance_sheet_data(ticker))
     if bs.empty:
         raise HTTPException(status_code=404, detail="No data returned from get_quarterly_balance_sheet_data")
 
     print("Balance Sheet Data:", bs.head())
 
-    # Fetch prices data
     prices = get_prices(ticker)
     if not prices:
         raise HTTPException(status_code=404, detail="No data returned from get_prices")
 
     print("Prices Data:", prices[:5])  # Print first 5 entries
 
-    # Ensure prices data is in the correct format
     if isinstance(prices, list):
         prices_df = pd.DataFrame(prices)
     else:
@@ -71,22 +68,18 @@ def get_cap_struct(ticker: str):
 
     print("Prices DataFrame:", prices_df.head())
 
-    # Check if required columns exist
     if "fiscalDateEnding" not in prices_df.columns or "5. adjusted close" not in prices_df.columns:
         raise KeyError("Expected columns 'fiscalDateEnding' or '5. adjusted close' are missing in prices data.")
 
-    # Sort prices data by fiscalDateEnding for easier lookup
     prices_df["fiscalDateEnding"] = pd.to_datetime(prices_df["fiscalDateEnding"])
     prices_df.sort_values(by="fiscalDateEnding", ascending=False, inplace=True)
 
-    # Resolve missing fiscalDateEnding in prices
     def get_closest_adjusted_close(date):
         matching_row = prices_df[prices_df["fiscalDateEnding"] <= date].head(1)
         if not matching_row.empty:
             return matching_row["5. adjusted close"].values[0]
         return None
 
-    # Apply logic to get adjusted close for each balance sheet date
     bs["adjustedPrice"] = bs["fiscalDateEnding"].apply(
         lambda date: get_closest_adjusted_close(pd.to_datetime(date))
     )
@@ -96,7 +89,6 @@ def get_cap_struct(ticker: str):
 
     print("Balance Sheet Data with Adjusted Prices:", bs.head())
 
-    # Merge balance sheet and prices data
     for col in ["adjustedPrice", "commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]:
         bs[col] = pd.to_numeric(bs[col], errors="coerce")
 
@@ -142,8 +134,8 @@ def get_valuation(ticker: str):
         "ForwardPE",
         "Sector", "Industry"
     ]
-    exclude_cols=["fiscalDateEnding", "Symbol","Sector","Industry"]
-    def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol","Sector","Industry"]):
+    exclude_cols=["fiscalDateEnding", "Symbol"]
+    def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol",]):
         for col in df.columns:
             if col not in exclude_cols:
                 df[col] = pd.to_numeric(df[col], errors="coerce")
