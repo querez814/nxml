@@ -32,18 +32,15 @@
 			return;
 		}
 
-		// Check if first part looks like a ticker
 		if (parts.length > 0 && /^[A-Za-z]{1,5}$/.test(parts[0])) {
 			const ticker = parts[0].toUpperCase();
 			let path = `/app/${ticker}`;
 
-			// Check for section (bs, cf, is, val)
 			if (parts[1]) {
 				const section = sectionAliases[parts[1] as keyof typeof sectionAliases] || parts[1];
 				if (section in sectionAliases || Object.values(sectionAliases).includes(section)) {
 					path += `/${section}`;
 
-					// Check for subsection (q, r, m)
 					if (parts[2]) {
 						const subsection =
 							subsectionAliases[parts[2] as keyof typeof subsectionAliases] || parts[2];
