@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { TableHandler, Datatable, ThSort, ThFilter } from '@vincjo/datatables';
+	import { TableHandler, Datatable, ThSort, ThFilter, RowsPerPage } from '@vincjo/datatables';
 	import * as Tabs from '$lib/components/ui/tabs';
 
 	interface RowData {
@@ -21,41 +21,17 @@
 	let activeTab = $state('raw');
 
 	let rawTable = $derived(
-		props.rawData ? new TableHandler(props.rawData, { rowsPerPage: 20 }) : null
+		props.rawData ? new TableHandler(props.rawData, { rowsPerPage: 40 }) : null
 	);
 	let yoyTable = $derived(
-		props.yoyData ? new TableHandler(props.yoyData, { rowsPerPage: 20 }) : null
+		props.yoyData ? new TableHandler(props.yoyData, { rowsPerPage: 40 }) : null
 	);
 	let qoqTable = $derived(
-		props.qoqData ? new TableHandler(props.qoqData, { rowsPerPage: 20 }) : null
+		props.qoqData ? new TableHandler(props.qoqData, { rowsPerPage: 40 }) : null
 	);
-
-	function formatCurrency(value: string): string {
-		// Handle empty or null values
-		if (value === null || value === undefined || value === '') {
-			return '—';
-		}
-
-		const num = parseFloat(value);
-
-		// Handle non-numeric values
-		if (isNaN(num)) {
-			console.warn(`Invalid numeric value encountered: ${value}`);
-			return '—';
-		}
-
-		// Handle actual zero separately from invalid data
-		if (num === 0) {
-			return '$0';
-		}
-
-		return new Intl.NumberFormat('en-US', {
-			style: 'currency',
-			currency: 'USD',
-			minimumFractionDigits: 0,
-			maximumFractionDigits: 0
-		}).format(num);
-	}
+	let marginsTable = $derived(
+		props.marginsData ? new TableHandler(props.marginsDataData, { rowsPerPage: 40 }) : null
+	);
 
 	function formatValue(value: string, isRawValue: boolean, originalMetric: string): string {
 		if (!isRawValue) {
@@ -67,7 +43,7 @@
 			const num = parseFloat(value);
 			return num.toFixed(2);
 		}
-		return value; // Just return the pre-formatted string
+		return value;
 	}
 
 	function getValueClass(value: string, isRawValue: boolean): string {
@@ -95,6 +71,9 @@
 			{/if}
 			{#if props.qoqData}
 				<Tabs.Trigger value="qoq">Quarter over Quarter</Tabs.Trigger>
+			{/if}
+			{#if props.marginsData}
+				<Tabs.Trigger value="margins">Margins</Tabs.Trigger>
 			{/if}
 		</Tabs.List>
 
@@ -218,6 +197,52 @@
 							</thead>
 							<tbody>
 								{#each qoqTable.rows as row (row.metric)}
+									<tr class="hover:bg-slate-800">
+										<td class="border-b border-slate-700 p-2">{row.metric}</td>
+										{#each props.quarters as quarter}
+											<td
+												class="border-b border-slate-700 p-2 text-right {getValueClass(
+													row[quarter],
+													false
+												)}"
+											>
+												{formatValue(row[quarter], false, row.originalMetric)}
+											</td>
+										{/each}
+									</tr>
+								{/each}
+							</tbody>
+						</table>
+					</Datatable>
+				</div>
+			</Tabs.Content>
+		{/if}
+		{#if props.marginsData && marginsTable}
+			<Tabs.Content value="margins">
+				<div class="mt-4">
+					<Datatable table={marginsTable}>
+						<table class="w-full border-collapse">
+							<thead>
+								<tr>
+									<ThSort table={marginsTable} field={'metric'}>Metric</ThSort>
+									{#each props.quarters as quarter}
+										<ThSort table={marginsTable} field={quarter}>
+											{new Date(quarter).toLocaleDateString('en-US', {
+												year: 'numeric',
+												month: 'short'
+											})}
+										</ThSort>
+									{/each}
+								</tr>
+								<tr>
+									<ThFilter table={marginsTable} field={'metric'} />
+									{#each props.quarters as quarter}
+										<ThFilter table={marginsTable} field={quarter} />
+									{/each}
+								</tr>
+							</thead>
+							<tbody>
+								{#each marginsTable.rows as row (row.metric)}
 									<tr class="hover:bg-slate-800">
 										<td class="border-b border-slate-700 p-2">{row.metric}</td>
 										{#each props.quarters as quarter}

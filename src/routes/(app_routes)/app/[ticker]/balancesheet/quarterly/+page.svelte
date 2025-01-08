@@ -5,29 +5,22 @@
 	let { data }: { data: PageData } = $props();
 	const quarters = data.quarters || [];
 
-	// Helper function to format metric names
 	function formatMetricName(name: string): string {
-		return (
-			name
-				// Skip fiscal date ending
-				.replace(/([A-Z])/g, ' $1') // Add space before capital letters
-				.split('_')
-				.join(' ') // Replace underscores with spaces
-				.trim() // Remove extra spaces
-				.replace(/\b\w/g, (c) => c.toUpperCase())
-		); // Capitalize first letter of each word
+		return name
+			.replace(/([A-Z])/g, ' $1')
+			.split('_')
+			.join(' ')
+			.trim()
+			.replace(/\b\w/g, (c) => c.toUpperCase());
 	}
 
-	// Extract fiscal dates for the quarters prop
 	const quarterDates = quarters.map((q) => q.fiscalDateEnding);
 
-	// Transform for raw metrics (excluding YoY and QoQ)
 	const rawData =
 		quarters.length > 0
 			? Object.keys(quarters[0])
 					.filter(
 						(key) =>
-							// Exclude these fields
 							!['_id', 'symbol', 'reportedCurrency', '__v', 'fiscalDateEnding'].includes(key) &&
 							!key.endsWith('_YoY') &&
 							!key.endsWith('_QoQ')
@@ -44,7 +37,6 @@
 					}))
 			: [];
 
-	// Transform for YoY metrics
 	const yoyData =
 		quarters.length > 0
 			? Object.keys(quarters[0])
@@ -61,7 +53,6 @@
 					}))
 			: [];
 
-	// Transform for QoQ metrics
 	const qoqData =
 		quarters.length > 0
 			? Object.keys(quarters[0])
