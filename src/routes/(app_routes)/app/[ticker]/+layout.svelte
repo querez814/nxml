@@ -6,13 +6,23 @@
 	import StdNav from '$lib/components/cmd/StdNav.svelte';
 	import * as Toggle from '$lib/components/ui/toggle';
 	import { Terminal } from 'lucide-svelte';
+	import { afterNavigate } from '$app/navigation';
+	import { invalidate } from '$app/navigation';
 
 	let showCommandLine = $state(true);
 	let ticker = $derived($page.params.ticker?.toUpperCase() ?? '');
+	let key = $state(0);
 
-	function handleTickerChange(newTicker: string) {
+	afterNavigate(() => {
+		key++;
+	});
+
+	async function handleTickerChange(newTicker: string) {
 		if (newTicker !== ticker) {
 			goto(`/app/${newTicker}`);
+		} else {
+			key++;
+			await invalidate('app:data');
 		}
 	}
 
@@ -50,7 +60,9 @@
 	</div>
 
 	<main class="container mx-auto px-4" class:pt-28={showCommandLine} class:pt-16={!showCommandLine}>
-		<slot />
+		{#key key}
+			<slot />
+		{/key}
 	</main>
 </div>
 
