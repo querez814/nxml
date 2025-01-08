@@ -30,7 +30,7 @@
 		props.qoqData ? new TableHandler(props.qoqData, { rowsPerPage: 40 }) : null
 	);
 	let marginsTable = $derived(
-		props.marginsData ? new TableHandler(props.marginsDataData, { rowsPerPage: 40 }) : null
+		props.marginsData ? new TableHandler(props.marginsData, { rowsPerPage: 40 }) : null
 	);
 
 	function formatValue(value: string, isRawValue: boolean, originalMetric: string): string {

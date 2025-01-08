@@ -1,81 +1,87 @@
 <script lang="ts">
 	import type { PageData } from './$types';
+	import DataTable from '$lib/components/display/DataTable.svelte';
+
 	let { data }: { data: PageData } = $props();
-	let quarters = data.quarters || [];
+	const quarters = data.quarters || [];
+
+	function formatMetricName(name: string): string {
+		const metricDisplayNames: { [key: string]: string } = {
+			evtosales: 'EV/Sales',
+			evtogrossprofit: 'EV/Gross Profit',
+			evtoebit: 'EV/EBIT',
+			evtoebitda: 'EV/EBITDA',
+			evtonetincome: 'EV/Net Income',
+			revenue_per_share_ttm: 'Revenue Per Share (TTM)',
+			price_to_sales_ratio_ttm: 'Price to Sales Ratio (TTM)'
+		};
+
+		return (
+			metricDisplayNames[name] ||
+			name
+				.replace(/([A-Z])/g, ' $1')
+				.split('_')
+				.join(' ')
+				.trim()
+				.replace(/\b\w/g, (c) => c.toUpperCase())
+		);
+	}
+	const quarterDates = quarters.map((q) => q.fiscalDateEnding);
+
+	// Define the metrics we want to display
+	const valuationMetrics = [
+		'evtosales',
+		'evtogrossprofit',
+		'evtoebit',
+		'evtoebitda',
+		'evtonetincome',
+		'revenue_per_share_ttm',
+		'price_to_sales_ratio_ttm'
+	];
+
+	const excludedKeys = [
+		'_id',
+		'symbol',
+		'reportedCurrency',
+		'__v',
+		'fiscalDateEnding',
+		'AnalystTargetPrice',
+		'AnalystRatingStrongBuy',
+		'AnalystRatingBuy',
+		'AnalystRatingHold',
+		'AnalystRatingSell',
+		'AnalystRatingStrongSell',
+		'TrailingPE',
+		'ForwardPE',
+		'Sector',
+		'Industry'
+	];
+
+	// Create raw data structure for the DataTable
+	const rawData =
+		quarters.length > 0
+			? valuationMetrics.map((metric) => ({
+					metric: formatMetricName(metric),
+					originalMetric: metric,
+					...quarters.reduce(
+						(acc, quarter) => ({
+							...acc,
+							[quarter.fiscalDateEnding]: quarter[metric].toFixed(2)
+						}),
+						{}
+					)
+				}))
+			: [];
+
+	// Since valuation metrics don't have YoY or QoQ, we'll pass empty arrays
+	const yoyData = [];
+	const qoqData = [];
+	const marginsData = [];
 </script>
 
-<div class="mx-auto w-full max-w-screen-2xl px-4 py-8">
-	<h2 class="mb-4 text-3xl font-extrabold uppercase tracking-wide text-white">
-		Quarterly Valuation Metrics (ttm)
-	</h2>
-
-	<div
-		class="
-      rounded-xl
-      bg-gradient-to-br
-      from-gray-800
-      to-gray-900
-      p-6
-      shadow-xl ring-1
-      ring-gray-700
-    "
-	>
-		{#if quarters.length > 0}
-			<div class="overflow-x-auto">
-				<table
-					class="
-            w-full
-            table-auto
-            border-collapse
-            text-left
-            text-gray-100
-          "
-				>
-					<caption
-						class="
-              caption-top
-              p-3
-              text-left
-              text-lg
-              font-bold
-              text-white
-            "
-					>
-						All Quarters (Newest First)
-					</caption>
-
-					<thead class="sticky top-0 z-10 bg-gray-700 text-sm uppercase tracking-wider">
-						<tr>
-							<th class="px-4 py-3">Fiscal Date Ending</th>
-							<th class="px-4 py-3">EV/Sales</th>
-							<th class="px-4 py-3">EV/Gross Profit</th>
-							<th class="px-4 py-3">EV/EBITDA </th>
-							<th class="px-4 py-3">EV/Net Income</th>
-							<th class="px-4 py-3">Revenue/Share</th>
-							<th class="px-4 py-3">P/S Ratio</th>
-						</tr>
-					</thead>
-
-					<tbody>
-						{#each quarters as row}
-							<tr class="border-b border-gray-600/40 hover:bg-gray-800/40">
-								<td class="px-4 py-3 text-left">{row.fiscalDateEnding}</td>
-								<td class="px-4 py-3">{row.evtosales}</td>
-								<td class="px-4 py-3">{row.evtogrossprofit}</td>
-								<td class="px-4 py-3">{row.evtoebitda}</td>
-								<td class="px-4 py-3">{row.evtonetincome}</td>
-								<td class="px-4 py-3">{row.revenue_per_share_ttm}</td>
-								<td class="px-4 py-3">{row.price_to_sales_ratio_ttm}</td>
-							</tr>
-						{/each}
-					</tbody>
-				</table>
-			</div>
-		{:else}
-			<p class="mt-4 text-base text-white">No quarterly data found.</p>
-		{/if}
-	</div>
-</div>
-
-<style>
-</style>
+<DataTable
+	{rawData}
+	quarters={quarterDates}
+	title="Valuation Metrics"
+	ratioMetrics={valuationMetrics}
+/>
