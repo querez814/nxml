@@ -3,9 +3,8 @@
 	import { onMount } from 'svelte';
 
 	let { onTickerChange } = $props<{
-		onTickerChange?: (ticker: string) => void;
+		onTickerChange?: (ticker: string, fullPath?: string) => void;
 	}>();
-
 	let inputValue = $state('');
 	let history: string[] = [];
 	let historyIndex = -1;
@@ -53,8 +52,11 @@
 				}
 			}
 
-			onTickerChange?.(ticker);
-			goto(path);
+			if (parts[1]) {
+				goto(path, { invalidateAll: true });
+			} else {
+				onTickerChange?.(ticker);
+			}
 		}
 	}
 
@@ -90,7 +92,6 @@
 		}
 	}
 
-	// Handle keyboard shortcut
 	function handleGlobalKeydown(event: KeyboardEvent) {
 		if (event.key === '/' && !event.ctrlKey && !event.metaKey && !event.altKey) {
 			event.preventDefault();

@@ -102,7 +102,6 @@
 		</div>
 	{/if}
 
-	<!-- Section Navigation -->
 	{#if ticker}
 		<button
 			onclick={toggleNav}

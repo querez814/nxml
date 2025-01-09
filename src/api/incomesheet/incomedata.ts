@@ -21,13 +21,12 @@ export const fetchIncomeStatementAnnual = async (ticker: string): Promise<any[]>
 const cleanIncomeStatementData = (data: any[]): any[] => {
 	return data.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
-		grossProfit: (parseFloat(item.grossProfit) / 1e6).toLocaleString(),
 		totalRevenue: (parseFloat(item.totalRevenue) / 1e6).toLocaleString(),
 		costOfRevenue: (parseFloat(item.costOfRevenue) / 1e6).toLocaleString(),
 		costofGoodsAndServicesSold: (
 			parseFloat(item.costofGoodsAndServicesSold) / 1e6
 		).toLocaleString(),
-		operatingIncome: (parseFloat(item.operatingIncome) / 1e6).toLocaleString(),
+		grossProfit: (parseFloat(item.grossProfit) / 1e6).toLocaleString(),
 		sellingGeneralAndAdministrative: (
 			parseFloat(item.sellingGeneralAndAdministrative) / 1e6
 		).toLocaleString(),
@@ -40,6 +39,7 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 		interestAndDebtExpense: (parseFloat(item.interestAndDebtExpense) / 1e6).toLocaleString(),
 		ebit: (parseFloat(item.ebit) / 1e6).toLocaleString(),
 		ebitda: (parseFloat(item.ebitda) / 1e6).toLocaleString(),
+		operatingIncome: (parseFloat(item.operatingIncome) / 1e6).toLocaleString(),
 		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
 		reportedEPS: parseFloat(item.reportedEPS).toFixed(2),
 		estimatedEPS: parseFloat(item.estimatedEPS).toFixed(2),
@@ -50,10 +50,7 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 		ebitMargin: item.ebitMargin,
 		ebitdaMargin: item.ebitdaMargin,
 		netMargin: item.netMargin,
-		grossProfit_YoY: item.grossProfit_YoY,
-		grossProfit_QoQ: item.grossProfit_QoQ,
-		grossProfit_YoY_Derivative: item.grossProfit_YoY_Derivative,
-		grossProfit_QoQ_Derivative: item.grossProfit_QoQ_Derivative,
+
 		totalRevenue_YoY: item.totalRevenue_YoY,
 		totalRevenue_QoQ: item.totalRevenue_QoQ,
 		totalRevenue_YoY_Derivative: item.totalRevenue_YoY_Derivative,
@@ -66,10 +63,11 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 		costofGoodsAndServicesSold_QoQ: item.costofGoodsAndServicesSold_QoQ,
 		costofGoodsAndServicesSold_YoY_Derivative: item.costofGoodsAndServicesSold_YoY_Derivative,
 		costofGoodsAndServicesSold_QoQ_Derivative: item.costofGoodsAndServicesSold_QoQ_Derivative,
-		operatingIncome_YoY: item.operatingIncome_YoY,
-		operatingIncome_QoQ: item.operatingIncome_QoQ,
-		operatingIncome_YoY_Derivative: item.operatingIncome_YoY_Derivative,
-		operatingIncome_QoQ_Derivative: item.operatingIncome_QoQ_Derivative,
+		grossProfit_YoY: item.grossProfit_YoY,
+		grossProfit_QoQ: item.grossProfit_QoQ,
+		grossProfit_YoY_Derivative: item.grossProfit_YoY_Derivative,
+		grossProfit_QoQ_Derivative: item.grossProfit_QoQ_Derivative,
+
 		sellingGeneralAndAdministrative_YoY: item.sellingGeneralAndAdministrative_YoY,
 		sellingGeneralAndAdministrative_QoQ: item.sellingGeneralAndAdministrative_QoQ,
 		sellingGeneralAndAdministrative_YoY_Derivative:
@@ -112,6 +110,10 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 		ebitda_QoQ: item.ebitda_QoQ,
 		ebitda_YoY_Derivative: item.ebitda_YoY_Derivative,
 		ebitda_QoQ_Derivative: item.ebitda_QoQ_Derivative,
+		operatingIncome_YoY: item.operatingIncome_YoY,
+		operatingIncome_QoQ: item.operatingIncome_QoQ,
+		operatingIncome_YoY_Derivative: item.operatingIncome_YoY_Derivative,
+		operatingIncome_QoQ_Derivative: item.operatingIncome_QoQ_Derivative,
 		netIncome_YoY: item.netIncome_YoY,
 		netIncome_QoQ: item.netIncome_QoQ,
 		netIncome_YoY_Derivative: item.netIncome_YoY_Derivative,

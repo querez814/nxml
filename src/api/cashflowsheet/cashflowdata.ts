@@ -23,23 +23,19 @@ const cleanCashFlowData = (data: any[]): any[] => {
 	return data.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 
+		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
 		operatingCashflow: (parseFloat(item.operatingCashflow) / 1e6).toLocaleString(),
-		paymentsForOperatingActivities: (
-			parseFloat(item.paymentsForOperatingActivities) / 1e6
-		).toLocaleString(),
-		proceedsFromOperatingActivities: (
-			parseFloat(item.proceedsFromOperatingActivities) / 1e6
-		).toLocaleString(),
-		changeInOperatingLiabilities: (
-			parseFloat(item.changeInOperatingLiabilities) / 1e6
-		).toLocaleString(),
+		capitalExpenditures: (parseFloat(item.capitalExpenditures) / 1e6).toLocaleString(),
+		freeCashFlow: (parseFloat(item.freeCashFlow) / 1e6).toLocaleString(),
+		changeInInventory: (parseFloat(item.changeInInventory) / 1e6).toLocaleString(),
 		changeInOperatingAssets: (parseFloat(item.changeInOperatingAssets) / 1e6).toLocaleString(),
 		depreciationDepletionAndAmortization: (
 			parseFloat(item.depreciationDepletionAndAmortization) / 1e6
 		).toLocaleString(),
-		capitalExpenditures: (parseFloat(item.capitalExpenditures) / 1e6).toLocaleString(),
+		changeInOperatingLiabilities: (
+			parseFloat(item.changeInOperatingLiabilities) / 1e6
+		).toLocaleString(),
 		changeInReceivables: (parseFloat(item.changeInReceivables) / 1e6).toLocaleString(),
-		changeInInventory: (parseFloat(item.changeInInventory) / 1e6).toLocaleString(),
 		profitLoss: (parseFloat(item.profitLoss) / 1e6).toLocaleString(),
 		cashflowFromInvestment: (parseFloat(item.cashflowFromInvestment) / 1e6).toLocaleString(),
 		cashflowFromFinancing: (parseFloat(item.cashflowFromFinancing) / 1e6).toLocaleString(),
@@ -63,8 +59,7 @@ const cleanCashFlowData = (data: any[]): any[] => {
 		proceedsFromRepurchaseOfEquity: (
 			parseFloat(item.proceedsFromRepurchaseOfEquity) / 1e6
 		).toLocaleString(),
-		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
-		freeCashFlow: (parseFloat(item.freeCashFlow) / 1e6).toLocaleString(),
+
 		change_working_capital: (parseFloat(item.change_working_capital) / 1e6).toLocaleString(),
 
 		// Parsing Cash Flow Ratios
@@ -76,13 +71,13 @@ const cleanCashFlowData = (data: any[]): any[] => {
 		capex_ratio: parseFloat(item.capex_ratio).toFixed(2),
 
 		// Mapping YoY
+		netIncome_YoY: item.netIncome_YoY,
 		operatingCashflow_YoY: item.operatingCashflow_YoY,
-		paymentsForOperatingActivities_YoY: item.paymentsForOperatingActivities_YoY,
-		proceedsFromOperatingActivities_YoY: item.proceedsFromOperatingActivities_YoY,
-		changeInOperatingLiabilities_YoY: item.changeInOperatingLiabilities_YoY,
-		changeInOperatingAssets_YoY: item.changeInOperatingAssets_YoY,
-		depreciationDepletionAndAmortization_YoY: item.depreciationDepletionAndAmortization_YoY,
 		capitalExpenditures_YoY: item.capitalExpenditures_YoY,
+		freeCashFlow_YoY: item.freeCashFlow_YoY,
+		changeInOperatingAssets_YoY: item.changeInOperatingAssets_YoY,
+		changeInOperatingLiabilities_YoY: item.changeInOperatingLiabilities_YoY,
+		depreciationDepletionAndAmortization_YoY: item.depreciationDepletionAndAmortization_YoY,
 		changeInReceivables_YoY: item.changeInReceivables_YoY,
 		changeInInventory_YoY: item.changeInInventory_YoY,
 		profitLoss_YoY: item.profitLoss_YoY,
@@ -96,8 +91,6 @@ const cleanCashFlowData = (data: any[]): any[] => {
 		dividendPayoutCommonStock_YoY: item.dividendPayoutCommonStock_YoY,
 		dividendPayoutPreferredStock_YoY: item.dividendPayoutPreferredStock_YoY,
 		proceedsFromRepurchaseOfEquity_YoY: item.proceedsFromRepurchaseOfEquity_YoY,
-		netIncome_YoY: item.netIncome_YoY,
-		freeCashFlow_YoY: item.freeCashFlow_YoY,
 		net_profit_margin_YoY: item.net_profit_margin_YoY,
 		ocf_margin_YoY: item.ocf_margin_YoY,
 		fcf_margin_YoY: item.fcf_margin_YoY,
@@ -107,13 +100,13 @@ const cleanCashFlowData = (data: any[]): any[] => {
 		change_working_capital_YoY: item.change_working_capital_YoY,
 
 		// Mapping QoQ
+		netIncome_QoQ: item.netIncome_QoQ,
 		operatingCashflow_QoQ: item.operatingCashflow_QoQ,
-		paymentsForOperatingActivities_QoQ: item.paymentsForOperatingActivities_QoQ,
-		proceedsFromOperatingActivities_QoQ: item.proceedsFromOperatingActivities_QoQ,
+		capitalExpenditures_QoQ: item.capitalExpenditures_QoQ,
+		freeCashFlow_QoQ: item.freeCashFlow_QoQ,
 		changeInOperatingLiabilities_QoQ: item.changeInOperatingLiabilities_QoQ,
 		changeInOperatingAssets_QoQ: item.changeInOperatingAssets_QoQ,
 		depreciationDepletionAndAmortization_QoQ: item.depreciationDepletionAndAmortization_QoQ,
-		capitalExpenditures_QoQ: item.capitalExpenditures_QoQ,
 		changeInReceivables_QoQ: item.changeInReceivables_QoQ,
 		changeInInventory_QoQ: item.changeInInventory_QoQ,
 		profitLoss_QoQ: item.profitLoss_QoQ,
@@ -127,8 +120,7 @@ const cleanCashFlowData = (data: any[]): any[] => {
 		dividendPayoutCommonStock_QoQ: item.dividendPayoutCommonStock_QoQ,
 		dividendPayoutPreferredStock_QoQ: item.dividendPayoutPreferredStock_QoQ,
 		proceedsFromRepurchaseOfEquity_QoQ: item.proceedsFromRepurchaseOfEquity_QoQ,
-		netIncome_QoQ: item.netIncome_QoQ,
-		freeCashFlow_QoQ: item.freeCashFlow_QoQ,
+
 		net_profit_margin_QoQ: item.net_profit_margin_QoQ,
 		ocf_margin_QoQ: item.ocf_margin_QoQ,
 		fcf_margin_QoQ: item.fcf_margin_QoQ,
@@ -143,21 +135,17 @@ const cleanCashFlowDataAnnual = (data: any[]): any[] => {
 	return data.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 
+		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
 		operatingCashflow: (parseFloat(item.operatingCashflow) / 1e6).toLocaleString(),
-		paymentsForOperatingActivities: (
-			parseFloat(item.paymentsForOperatingActivities) / 1e6
-		).toLocaleString(),
-		proceedsFromOperatingActivities: (
-			parseFloat(item.proceedsFromOperatingActivities) / 1e6
-		).toLocaleString(),
+		capitalExpenditures: (parseFloat(item.capitalExpenditures) / 1e6).toLocaleString(),
+		freeCashFlow: (parseFloat(item.freeCashFlow) / 1e6).toLocaleString(),
+		changeInOperatingAssets: (parseFloat(item.changeInOperatingAssets) / 1e6).toLocaleString(),
 		changeInOperatingLiabilities: (
 			parseFloat(item.changeInOperatingLiabilities) / 1e6
 		).toLocaleString(),
-		changeInOperatingAssets: (parseFloat(item.changeInOperatingAssets) / 1e6).toLocaleString(),
 		depreciationDepletionAndAmortization: (
 			parseFloat(item.depreciationDepletionAndAmortization) / 1e6
 		).toLocaleString(),
-		capitalExpenditures: (parseFloat(item.capitalExpenditures) / 1e6).toLocaleString(),
 		changeInReceivables: (parseFloat(item.changeInReceivables) / 1e6).toLocaleString(),
 		changeInInventory: (parseFloat(item.changeInInventory) / 1e6).toLocaleString(),
 		profitLoss: (parseFloat(item.profitLoss) / 1e6).toLocaleString(),
@@ -183,8 +171,7 @@ const cleanCashFlowDataAnnual = (data: any[]): any[] => {
 		proceedsFromRepurchaseOfEquity: (
 			parseFloat(item.proceedsFromRepurchaseOfEquity) / 1e6
 		).toLocaleString(),
-		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
-		freeCashFlow: (parseFloat(item.freeCashFlow) / 1e6).toLocaleString(),
+
 		change_working_capital: (parseFloat(item.change_working_capital) / 1e6).toLocaleString(),
 
 		net_profit_margin: item.net_profit_margin,
