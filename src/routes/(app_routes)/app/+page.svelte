@@ -8,7 +8,7 @@
 	import * as Separator from '$lib/components/ui/separator';
 	import { Terminal, Sparkles, Keyboard, TrendingUp } from 'lucide-svelte';
 	import WelcomeCarousel from '$lib/components/welcome/WelcomeCarousel.svelte';
-	import QuickTutorial from '$lib/components/welcome/QuickTutorial.svelte';
+	import LandingTutorial from '$lib/components/welcome/LandingTutorial.svelte';
 
 	let showTutorial = $state(false);
 </script>
@@ -71,7 +71,7 @@
 									<Dialog.Portal>
 										<Dialog.Overlay />
 										<Dialog.Content class="sm:max-w-2xl">
-											<QuickTutorial />
+											<LandingTutorial />
 											<Dialog.Close>
 												<Button.Root variant="outline" size="sm" class="mt-4">
 													Close Tutorial
@@ -80,8 +80,7 @@
 										</Dialog.Content>
 									</Dialog.Portal>
 								</Dialog.Root>
-								<Button.Root variant="ghost" size="sm">Command List</Button.Root>
-								<Button.Root variant="ghost" size="sm" href="/">Back Home</Button.Root>
+								<Button.Root variant="ghost" size="sm">Command List (Adding Soon)</Button.Root>
 							</div>
 						</div>
 					</div>
