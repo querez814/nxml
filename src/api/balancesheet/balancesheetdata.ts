@@ -1,5 +1,5 @@
 const api_url = import.meta.env.VITE_API_URL;
-
+//
 export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
 	const response = await fetch(`${api_url}/financials/balancesheet-statement/quarterly/${ticker}`);
 	if (!response.ok) {
