@@ -11,6 +11,9 @@ from fetch.earnings import get_quarterly_earnings_data as earnings
 env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
+
+
+
 @router.get("/income-statement/quarterly/{ticker}")
 def get_quarterly_statement_data(ticker: str):
     url = f"https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol={ticker}&apikey={av_api}"
@@ -142,3 +145,87 @@ def get_ttm_data(ticker: str):
         result.append(quarter_data)
     
     return {"ticker": ticker, "quarters": result}
+
+@router.get("/income-statement/annual/{ticker}")
+def get_annual_statement_data(ticker:str):
+    url = f"https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol={ticker}&apikey={av_api}"
+    response = r.get(url)
+    if response.status_code != 200:
+        raise HTTPException(status_code=500, detail="Failed to fetch data from Alpha Vantage")
+
+    data_json = response.json()
+    annual_reports = data_json.get("annualReports", [])
+    
+    if not annual_reports:
+        raise HTTPException(status_code=404, detail="No quarterly reports found.")
+
+    df = pd.DataFrame(annual_reports)
+    earnings_df = pd.DataFrame(earnings(ticker))
+
+    for col in df.columns:
+        if col != "fiscalDateEnding":
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+
+    for col in ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]:
+        earnings_df[col] = pd.to_numeric(earnings_df[col], errors="coerce")
+
+    df.replace([np.inf, -np.inf], np.nan, inplace=True)
+    df.fillna(0, inplace=True)
+    earnings_df.replace([np.inf, -np.inf], np.nan, inplace=True)
+    earnings_df.fillna(0, inplace=True)
+
+    df["reportedEPS"] = earnings_df["reportedEPS"]
+    df["estimatedEPS"] = earnings_df["estimatedEPS"]
+    df["surprise"] = earnings_df["surprise"]
+    df["surprisePercentage"] = earnings_df["surprisePercentage"]
+
+    keys_to_exclude = [
+        'reportedCurrency', 'investmentIncomeNet',
+        'netInterestIncome', 'nonInterestIncome', 'otherNonOperatingIncome',
+        'depreciation', 'depreciationAndAmortization',
+        'netIncomeFromContinuingOperations', 'comprehensiveIncomeNetOfTax'
+    ]
+    
+    df = df.drop(columns=keys_to_exclude, errors='ignore')
+    
+    df["grossMargin"] = (df["grossProfit"] / df["totalRevenue"]) * 100
+    df["operatingMargin"] = (df["operatingIncome"] / df["totalRevenue"]) * 100
+    df["ebitMargin"] = (df["ebit"] / df["totalRevenue"]) * 100
+    df["ebitdaMargin"] = (df["ebitda"] / df["totalRevenue"]) * 100
+    df["netMargin"] = (df["netIncome"] / df["totalRevenue"]) * 100
+
+    margin_cols = ["grossMargin", "operatingMargin", "ebitMargin", "ebitdaMargin", "netMargin"]
+    for col in margin_cols:
+        df[col] = df[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+
+    result_df = df.iloc[::-1].reset_index(drop=True)
+    numeric_cols = [col for col in result_df.columns if col != "fiscalDateEnding" and col not in margin_cols]
+    
+    changes_list = []
+    
+    for col in numeric_cols:
+        temp_dict = {"fiscalDateEnding": result_df["fiscalDateEnding"]}
+        
+        yoy_series = result_df[col].pct_change(periods=1, fill_method=None) * 100
+        
+        temp_dict[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+        
+        changes_list.append(pd.DataFrame(temp_dict))
+
+    for col in margin_cols:
+        temp_dict = {"fiscalDateEnding": result_df["fiscalDateEnding"]}
+        temp_series = pd.to_numeric(result_df[col].str.replace('%', ''), errors='coerce')
+        
+        
+        temp_dict[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+        
+        changes_list.append(pd.DataFrame(temp_dict))
+
+    all_changes = changes_list[0]
+    for df_change in changes_list[1:]:
+        all_changes = pd.merge(all_changes, df_change, on="fiscalDateEnding")
+
+    final_df = pd.merge(result_df, all_changes, on="fiscalDateEnding")
+    final_df = final_df.iloc[::-1].reset_index(drop=True)
+    
+    return final_df.to_dict(orient="records")

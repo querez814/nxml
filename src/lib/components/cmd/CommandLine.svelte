@@ -20,8 +20,7 @@
 
 	const subsectionAliases: Record<string, string> = {
 		q: 'quarterly',
-		r: 'ratios',
-		m: 'margins'
+		a: 'annual'
 	};
 
 	function parseCommand(input: string): void {

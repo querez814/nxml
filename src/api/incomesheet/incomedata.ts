@@ -9,6 +9,15 @@ export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
 	return cleanIncomeStatementData(rawData);
 };
 
+export const fetchIncomeStatementAnnual = async (ticker: string): Promise<any[]> => {
+	const response = await fetch(`${api_url}/financials/income-statement/annual/${ticker}`);
+	if (!response.ok) {
+		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
+	}
+	const rawData = await response.json();
+	return cleanIncomeStatementDataAnnual(rawData);
+};
+
 const cleanIncomeStatementData = (data: any[]): any[] => {
 	return data.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
@@ -143,5 +152,63 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 		netMargin_QoQ: item.netMargin_QoQ,
 		netMargin_YoY_Derivative: item.netMargin_YoY_Derivative,
 		netMargin_QoQ_Derivative: item.netMargin_QoQ_Derivative
+	}));
+};
+
+const cleanIncomeStatementDataAnnual = (data: any[]): any[] => {
+	return data.map((item) => ({
+		fiscalDateEnding: item.fiscalDateEnding,
+		grossProfit: (parseFloat(item.grossProfit) / 1e6).toLocaleString(),
+		totalRevenue: (parseFloat(item.totalRevenue) / 1e6).toLocaleString(),
+		costOfRevenue: (parseFloat(item.costOfRevenue) / 1e6).toLocaleString(),
+		costofGoodsAndServicesSold: (
+			parseFloat(item.costofGoodsAndServicesSold) / 1e6
+		).toLocaleString(),
+		operatingIncome: (parseFloat(item.operatingIncome) / 1e6).toLocaleString(),
+		sellingGeneralAndAdministrative: (
+			parseFloat(item.sellingGeneralAndAdministrative) / 1e6
+		).toLocaleString(),
+		researchAndDevelopment: (parseFloat(item.researchAndDevelopment) / 1e6).toLocaleString(),
+		operatingExpenses: (parseFloat(item.operatingExpenses) / 1e6).toLocaleString(),
+		interestIncome: (parseFloat(item.interestIncome) / 1e6).toLocaleString(),
+		interestExpense: (parseFloat(item.interestExpense) / 1e6).toLocaleString(),
+		incomeBeforeTax: (parseFloat(item.incomeBeforeTax) / 1e6).toLocaleString(),
+		incomeTaxExpense: (parseFloat(item.incomeTaxExpense) / 1e6).toLocaleString(),
+		interestAndDebtExpense: (parseFloat(item.interestAndDebtExpense) / 1e6).toLocaleString(),
+		ebit: (parseFloat(item.ebit) / 1e6).toLocaleString(),
+		ebitda: (parseFloat(item.ebitda) / 1e6).toLocaleString(),
+		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
+		reportedEPS: parseFloat(item.reportedEPS).toFixed(2),
+		estimatedEPS: parseFloat(item.estimatedEPS).toFixed(2),
+		surprise: parseFloat(item.surprise).toFixed(2),
+		surprisePercentage: parseFloat(item.surprisePercentage).toFixed(2),
+		grossMargin: item.grossMargin,
+		operatingMargin: item.operatingMargin,
+		ebitMargin: item.ebitMargin,
+		ebitdaMargin: item.ebitdaMargin,
+		netMargin: item.netMargin,
+		grossProfit_YoY: item.grossProfit_YoY,
+		totalRevenue_YoY: item.totalRevenue_YoY,
+		totalRevenue_YoY_Derivative: item.totalRevenue_YoY_Derivative,
+		costofGoodsAndServicesSold_YoY: item.costofGoodsAndServicesSold_YoY,
+		costofGoodsAndServicesSold_YoY_Derivative: item.costofGoodsAndServicesSold_YoY_Derivative,
+		operatingIncome_YoY: item.operatingIncome_YoY,
+		sellingGeneralAndAdministrative_YoY: item.sellingGeneralAndAdministrative_YoY,
+		researchAndDevelopment_YoY: item.researchAndDevelopment_YoY,
+		operatingExpenses_YoY: item.operatingExpenses_YoY,
+		interestIncome_YoY: item.interestIncome_YoY,
+		interestExpense_YoY: item.interestExpense_YoY,
+		incomeBeforeTax_YoY: item.incomeBeforeTax_YoY,
+		incomeTaxExpense_YoY: item.incomeTaxExpense_YoY,
+		interestAndDebtExpense_YoY: item.interestAndDebtExpense_YoY,
+		ebit_YoY: item.ebit_YoY,
+		ebitda_YoY: item.ebitda_YoY,
+		netIncome_YoY: item.netIncome_YoY,
+		reportedEPS_YoY: item.reportedEPS_YoY,
+		grossMargin_YoY: item.grossMargin_YoY,
+		operatingMargin_YoY: item.operatingMargin_YoY,
+		ebitMargin_YoY: item.ebitMargin_YoY,
+		ebitdaMargin_YoY: item.ebitdaMargin_YoY,
+		netMargin_YoY: item.netMargin_YoY
 	}));
 };

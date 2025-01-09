@@ -16,19 +16,19 @@
 			name: 'Balance Sheet',
 			path: 'balancesheet',
 			icon: PieChart,
-			subsections: ['Quarterly', 'Ratios']
+			subsections: ['Annual', 'Quarterly']
 		},
 		{
 			name: 'Cash Flow',
 			path: 'cashflow',
 			icon: DollarSign,
-			subsections: ['Margins', 'Quarterly', 'Ratios']
+			subsections: ['Annual', 'Quarterly']
 		},
 		{
 			name: 'Income',
 			path: 'incomestatement',
 			icon: BarChart2,
-			subsections: ['Margins', 'Quarterly']
+			subsections: ['Annual', 'Quarterly']
 		},
 		{
 			name: 'Valuation',
@@ -70,7 +70,6 @@
 
 	function showTickerSelector() {
 		showTickerInput = true;
-		// Use requestAnimationFrame to focus after the input is rendered
 		requestAnimationFrame(() => {
 			inputRef?.focus();
 		});
@@ -80,10 +79,9 @@
 <svelte:window on:click={handleClickOutside} />
 
 <div class="nav-container relative flex items-center gap-2">
-	<!-- Ticker Selection -->
 	{#if !showTickerInput}
 		<button
-			on:click={showTickerSelector}
+			onclick={showTickerSelector}
 			class="flex items-center gap-2 rounded-md bg-background/80 px-3 py-1.5 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"
 			aria-label="Select ticker symbol"
 		>
@@ -97,7 +95,7 @@
 				bind:this={inputRef}
 				bind:value={tickerInput}
 				placeholder="Enter ticker..."
-				on:keydown={handleKeydown}
+				onkeydown={handleKeydown}
 				class="w-32 rounded-md bg-background/80 px-3 py-1.5 font-mono text-sm text-foreground placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-ring"
 				aria-label="Enter ticker symbol"
 			/>
@@ -107,7 +105,7 @@
 	<!-- Section Navigation -->
 	{#if ticker}
 		<button
-			on:click={toggleNav}
+			onclick={toggleNav}
 			class="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"
 			aria-expanded={isOpen}
 			aria-haspopup="true"
@@ -128,7 +126,7 @@
 							class="group flex items-center rounded-md px-3 py-2 text-sm text-popover-foreground hover:bg-accent hover:text-accent-foreground"
 							role="menuitem"
 						>
-							<svelte:component this={section.icon} class="mr-2 h-4 w-4 text-primary" />
+							{section.icon}
 							{section.name}
 						</a>
 						<div class="ml-6 space-y-1" role="none">

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import type { PageData } from '../quarterly/$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 
 	let { data }: { data: PageData } = $props();
@@ -14,7 +14,7 @@
 			.replace(/\b\w/g, (c) => c.toUpperCase());
 	}
 
-	const quarterDates = quarters.map((q) => q.fiscalDateEnding);
+	const quarterDates = quarters.map((q: any) => q.fiscalDateEnding);
 
 	const marginMetrics = ['grossMargin', 'ebitdaMargin', 'operatingMargin', 'netMargin'];
 
@@ -41,7 +41,7 @@
 						metric: formatMetricName(metric),
 						originalMetric: metric,
 						...quarters.reduce(
-							(acc, quarter) => ({
+							(acc: any, quarter: any) => ({
 								...acc,
 								[quarter.fiscalDateEnding]: quarter[metric]
 							}),
@@ -63,29 +63,7 @@
 						metric: formatMetricName(metric.replace('_YoY', '')),
 						originalMetric: metric.replace('_YoY', ''),
 						...quarters.reduce(
-							(acc, quarter) => ({
-								...acc,
-								[quarter.fiscalDateEnding]: quarter[metric]
-							}),
-							{}
-						)
-					}))
-			: [];
-
-	const qoqData =
-		quarters.length > 0
-			? Object.keys(quarters[0])
-					.filter(
-						(key) =>
-							key.endsWith('_QoQ') &&
-							!key.includes('_Derivative') &&
-							!marginMetrics.some((metric) => key.startsWith(metric))
-					)
-					.map((metric) => ({
-						metric: formatMetricName(metric.replace('_QoQ', '')),
-						originalMetric: metric.replace('_QoQ', ''),
-						...quarters.reduce(
-							(acc, quarter) => ({
+							(acc: any, quarter: any) => ({
 								...acc,
 								[quarter.fiscalDateEnding]: quarter[metric]
 							}),
@@ -100,7 +78,7 @@
 					metric: formatMetricName(metric),
 					originalMetric: metric,
 					...quarters.reduce(
-						(acc, quarter) => ({
+						(acc: any, quarter: any) => ({
 							...acc,
 							[quarter.fiscalDateEnding]: quarter[metric]
 						}),
@@ -113,7 +91,6 @@
 <DataTable
 	{rawData}
 	{yoyData}
-	{qoqData}
 	{marginsData}
 	quarters={quarterDates}
 	title="Quarterly Income Statement"
