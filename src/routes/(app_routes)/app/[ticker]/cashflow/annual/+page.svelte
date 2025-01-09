@@ -93,6 +93,6 @@
 	{yoyData}
 	{marginsData}
 	quarters={quarterDates}
-	title="Cash Flow Statement - Quarterly"
+	title="Cash Flow Metrics"
 	ratioMetrics={marginMetrics}
 />

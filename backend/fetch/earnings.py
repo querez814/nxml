@@ -14,49 +14,85 @@ router = APIRouter()
 def get_quarterly_earnings_data(ticker: str):
     url = f"https://www.alphavantage.co/query?function=EARNINGS&symbol={ticker}&apikey={av_api}"
     response = r.get(url)
+    if response.status_code != 200:
+        raise HTTPException(status_code=500, detail="Failed to fetch data from Alpha Vantage")
+    
     data_json = response.json()
-
-    print("Full API Response:", data_json)  
-
     quarterly_reports = data_json.get("quarterlyEarnings", [])
-    print("Quarterly Reports Extracted:", quarterly_reports)   
+    
+    if not quarterly_reports:
+        raise HTTPException(status_code=404, detail="No quarterly earnings data found")
+    
+    df = pd.DataFrame(quarterly_reports)
+    
+    numeric_cols = ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]
+    for col in df.columns:
+        if col in numeric_cols:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    
+    df.fillna(0, inplace=True)
+    df["reportedEPS"] = df["reportedEPS"].apply(lambda x: f"{x:.2f}")
+    df["estimatedEPS"] = df["estimatedEPS"].apply(lambda x: f"{x:.2f}")
+    df["surprise"] = df["surprise"].apply(lambda x: f"{x:.2f}")
+    df["surprisePercentage"] = df["surprisePercentage"].apply(lambda x: f"{x:.1f}%")
+    
+    result_df = df.iloc[::-1].reset_index(drop=True)
+    
+    change_df = pd.DataFrame()
+    change_df["fiscalDateEnding"] = result_df["fiscalDateEnding"]
+    
+    for col in numeric_cols:
+        temp_series = pd.to_numeric(result_df[col], errors='coerce')
+        
+        yoy_series = temp_series.pct_change(periods=4) * 100
+        change_df[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+        
+        qoq_series = temp_series.pct_change(periods=1) * 100
+        change_df[f"{col}_QoQ"] = qoq_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+    
+    final_df = pd.merge(result_df, change_df, on="fiscalDateEnding")
+    final_df = final_df.iloc[::-1].reset_index(drop=True)
+    
+    return final_df.to_dict(orient="records")
 
 
-
-
-    return quarterly_reports 
-
+@router.get("/earnings-statement/annual/{ticker}")
+def get_annual_earnings_data(ticker: str):
+    url = f"https://www.alphavantage.co/query?function=EARNINGS&symbol={ticker}&apikey={av_api}"
+    response = r.get(url)
+    if response.status_code != 200:
+        raise HTTPException(status_code=500, detail="Failed to fetch data from Alpha Vantage")
     
+    data_json = response.json()
+    annual_reports = data_json.get("annualEarnings", [])
     
+    if not annual_reports:
+        raise HTTPException(status_code=404, detail="No quarterly earnings data found")
     
+    df = pd.DataFrame(annual_reports)
     
-
-@router.get("/earnings-statement/quarterly/{ticker}/yoy")
-def get_yoy(ticker: str):
-    result = pd.DataFrame(get_quarterly_earnings_data(ticker))
+    numeric_cols = ["reportedEPS"]
+    for col in df.columns:
+        if col in numeric_cols:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
     
-    for column in result.columns:
-        if column != "reportedDate":
-            result[column] = pd.to_numeric(result[column], errors="coerce")
+    df.fillna(0, inplace=True)
     
-    result = result.iloc[::-1].reset_index(drop=True)
+    df["reportedEPS"] = df["reportedEPS"].apply(lambda x: f"{x:.2f}")
     
-    yoy_df = result.set_index("reportedDate").pct_change(periods=4, fill_method=None) * 100
- 
-    yoy_df.columns = [f"{col}_YoY" for col in yoy_df.columns]
+    result_df = df.iloc[::-1].reset_index(drop=True)
     
-    yoy_df = yoy_df.reset_index()
-    yoy_df = yoy_df.iloc[::-1].reset_index(drop=True)
+    change_df = pd.DataFrame()
+    change_df["fiscalDateEnding"] = result_df["fiscalDateEnding"]
     
-    yoy_df = yoy_df.fillna(0)
+    for col in numeric_cols:
+        temp_series = pd.to_numeric(result_df[col], errors='coerce')
+        
+        yoy_series = temp_series.pct_change(periods=1) * 100
+        change_df[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+        
     
-    for col in yoy_df.columns:
-        if col != "reportedDate":
-            yoy_df[col] = yoy_df[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+    final_df = pd.merge(result_df, change_df, on="fiscalDateEnding")
+    final_df = final_df.iloc[::-1].reset_index(drop=True)
     
-    yoy_json = yoy_df.to_dict(orient="records")
-    
-    return yoy_json
-
-
-
+    return final_df.to_dict(orient="records")

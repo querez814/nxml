@@ -8,7 +8,13 @@ from fetch.earnings import get_quarterly_earnings_data
 from fetch.income_statement import get_ttm_data
 from fetch.balancesheet import get_quarterly_balance_sheet_data
 from fetch.summary import get_summary
-
+import numpy as np
+def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol"]):
+    """Converts DataFrame columns to numeric values, excluding specified columns."""
+    for col in df.columns:
+        if col not in exclude_cols:
+            df[col] = pd.to_numeric(df[col], errors="coerce")
+    return df.fillna(0)
 
 env.load_dotenv()
 
@@ -20,47 +26,56 @@ router = APIRouter()
 @router.get("/valuation/quarterly/{ticker}")
 def calculate_valuations(ticker:str):
     ttm_data = pd.DataFrame(get_ttm_data(ticker)["quarters"])
+    
+    print("Available columns:", ttm_data.columns.tolist())
+    
     for col in ttm_data.columns:
-        if col!="fiscalDateEnding":
-            ttm_data[col]=pd.to_numeric(ttm_data[col],errors="coerce")
+        if col != "fiscalDateEnding":
+            ttm_data[col] = pd.to_numeric(ttm_data[col], errors="coerce")
             
     ttm_data = ttm_data.fillna(0)
+    ttm_data = ttm_data.sort_values(by="fiscalDateEnding", ascending=False)
     
-    ttm_data = ttm_data.sort_values(by="fiscalDateEnding",ascending=False)
     ttm_df = pd.DataFrame()
-    ttm_df["totalRevenue_ttm"] = ttm_data["totalRevenue_ttm"]
-    ttm_df["grossProfit_ttm"] = ttm_data["grossProfit_ttm"]
-    ttm_df["ebit_ttm"] = ttm_data["ebit_ttm"]
-    ttm_df["ebitda_ttm"] = ttm_data["ebitda_ttm"]
-    ttm_df["operatingIncome_ttm"] = ttm_data["operatingIncome_ttm"]
-    ttm_df["netIncome_ttm"] = ttm_data["netIncome_ttm"]
-    ttm_df["reportedEPS_ttm"] = ttm_data["reportedEPS_ttm"]
-
+    ttm_df["fiscalDateEnding"] = ttm_data["fiscalDateEnding"]
+    
+    column_mapping = {
+        "totalRevenueTTM": "totalRevenue_ttm",
+        "grossProfitTTM": "grossProfit_ttm",
+        "ebitTTM": "ebit_ttm",
+        "ebitdaTTM": "ebitda_ttm",
+        "operatingIncomeTTM": "operatingIncome_ttm",
+        "netIncomeTTM": "netIncome_ttm",
+        "reportedEPSTTM": "reportedEPS_ttm"
+    }
+    
+    for old_name, new_name in column_mapping.items():
+        if old_name in ttm_data.columns:
+            ttm_df[new_name] = ttm_data[old_name]
+    
     for col in ttm_df.columns:
         if col != "fiscalDateEnding":
-            ttm_df[col] = ttm_df[col].apply(lambda x:f"{x:.2f}" if pd.notnull(x) else"0")
+            ttm_df[col] = ttm_df[col].apply(lambda x: f"{x:.2f}" if pd.notnull(x) else "0")
     
-    ttm_df = ttm_df.to_dict(orient="records")
-
-    return ttm_df
+    print("TTM DataFrame columns after processing:", ttm_df.columns.tolist())
+    print("Sample of processed data:", ttm_df.head())
+    
+    return ttm_df.to_dict(orient="records")
 
 @router.get("/capitalstructure/quarterly/{ticker}")
 def get_cap_struct(ticker: str):
-    # Fetch balance sheet data
     bs = pd.DataFrame(get_quarterly_balance_sheet_data(ticker))
     if bs.empty:
         raise HTTPException(status_code=404, detail="No data returned from get_quarterly_balance_sheet_data")
 
     print("Balance Sheet Data:", bs.head())
 
-    # Fetch prices data
     prices = get_prices(ticker)
     if not prices:
         raise HTTPException(status_code=404, detail="No data returned from get_prices")
 
-    print("Prices Data:", prices[:5])  # Print first 5 entries
+    print("Prices Data:", prices[:5])  
 
-    # Ensure prices data is in the correct format
     if isinstance(prices, list):
         prices_df = pd.DataFrame(prices)
     else:
@@ -71,22 +86,18 @@ def get_cap_struct(ticker: str):
 
     print("Prices DataFrame:", prices_df.head())
 
-    # Check if required columns exist
     if "fiscalDateEnding" not in prices_df.columns or "5. adjusted close" not in prices_df.columns:
         raise KeyError("Expected columns 'fiscalDateEnding' or '5. adjusted close' are missing in prices data.")
 
-    # Sort prices data by fiscalDateEnding for easier lookup
     prices_df["fiscalDateEnding"] = pd.to_datetime(prices_df["fiscalDateEnding"])
     prices_df.sort_values(by="fiscalDateEnding", ascending=False, inplace=True)
 
-    # Resolve missing fiscalDateEnding in prices
     def get_closest_adjusted_close(date):
         matching_row = prices_df[prices_df["fiscalDateEnding"] <= date].head(1)
         if not matching_row.empty:
             return matching_row["5. adjusted close"].values[0]
         return None
 
-    # Apply logic to get adjusted close for each balance sheet date
     bs["adjustedPrice"] = bs["fiscalDateEnding"].apply(
         lambda date: get_closest_adjusted_close(pd.to_datetime(date))
     )
@@ -96,7 +107,6 @@ def get_cap_struct(ticker: str):
 
     print("Balance Sheet Data with Adjusted Prices:", bs.head())
 
-    # Merge balance sheet and prices data
     for col in ["adjustedPrice", "commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]:
         bs[col] = pd.to_numeric(bs[col], errors="coerce")
 
@@ -127,57 +137,42 @@ def get_valuation(ticker: str):
 
     cap_struct = pd.DataFrame(get_cap_struct(ticker))
     ttm = pd.DataFrame(calculate_valuations(ticker))
-    earnings = pd.DataFrame(get_quarterly_earnings_data(ticker))
+
+    numeric_cols = [col for col in ttm.columns if col != "fiscalDateEnding"]
+    for col in numeric_cols:
+        ttm[col] = pd.to_numeric(ttm[col].str.replace(',', ''), errors='coerce')
 
     cap_struct["Symbol"] = symbol
 
-    additional_metrics = [
-        "AnalystTargetPrice",
-        "AnalystRatingStrongBuy",
-        "AnalystRatingBuy",
-        "AnalystRatingHold",
-        "AnalystRatingSell",
-        "AnalystRatingStrongSell",
-        "TrailingPE",
-        "ForwardPE",
-        "Sector", "Industry"
-    ]
-    exclude_cols=["fiscalDateEnding", "Symbol","Sector","Industry"]
-    def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol","Sector","Industry"]):
-        for col in df.columns:
-            if col not in exclude_cols:
-                df[col] = pd.to_numeric(df[col], errors="coerce")
-        return df
-
-    metrics = {}
-    for metric in additional_metrics:
-        if metric not in exclude_cols:
-            metrics[metric] = pd.to_numeric(summary.loc[0, metric], errors="coerce")
-
     cap_struct = ensure_numeric(cap_struct)
-    ttm = ensure_numeric(ttm)
-    earnings = ensure_numeric(earnings)
 
     result = pd.DataFrame()
+    result["fiscalDateEnding"] = cap_struct["fiscalDateEnding"]
+    result["symbol"] = symbol
 
-    if "ev" in cap_struct.columns and "totalRevenue_ttm" in ttm.columns:
-        result["fiscalDateEnding"] = cap_struct["fiscalDateEnding"]
-        result["symbol"] = cap_struct["Symbol"]
-        result["evtosales"] = (cap_struct["ev"] / ttm["totalRevenue_ttm"]).round(2)
-        result["evtogrossprofit"] = (cap_struct["ev"] / ttm["grossProfit_ttm"]).round(2)
-        result["evtoebit"] = (cap_struct["ev"] / ttm["ebit_ttm"]).round(2)
-        result["evtoebitda"] = (cap_struct["ev"] / ttm["ebitda_ttm"]).round(2)
-        result["evtonetincome"] = (cap_struct["ev"] / ttm["netIncome_ttm"]).round(2)
-        result["revenue_per_share_ttm"] = (ttm["totalRevenue_ttm"] / cap_struct["shares_outstanding"]).round(2)
-        result["price_to_sales_ratio_ttm"] = (cap_struct["adjustedPrice"] / result["revenue_per_share_ttm"]).round(2)
-    else:
-        raise KeyError("Required columns 'ev' or 'totalRevenue_ttm' are missing in the input data.")
+    print("TTM columns:", ttm.columns.tolist())
+    print("Cap struct columns:", cap_struct.columns.tolist())
 
-    for metric, value in metrics.items():
-        result[metric] = value
+    result["evtosales"] = (cap_struct["ev"] / ttm["totalRevenue_ttm"]).replace([np.inf, -np.inf], 0).round(2)
+    result["evtogrossprofit"] = (cap_struct["ev"] / ttm["grossProfit_ttm"]).replace([np.inf, -np.inf], 0).round(2)
+    result["evtoebit"] = (cap_struct["ev"] / ttm["ebit_ttm"]).replace([np.inf, -np.inf], 0).round(2)
+    result["evtoebitda"] = (cap_struct["ev"] / ttm["ebitda_ttm"]).replace([np.inf, -np.inf], 0).round(2)
+    result["evtonetincome"] = (cap_struct["ev"] / ttm["netIncome_ttm"]).replace([np.inf, -np.inf], 0).round(2)
+    result["revenue_per_share_ttm"] = (ttm["totalRevenue_ttm"] / cap_struct["sharesOutstanding"]).replace([np.inf, -np.inf], 0).round(2)
+    result["price_to_sales_ratio_ttm"] = (cap_struct["adjustedPrice"] / result["revenue_per_share_ttm"]).replace([np.inf, -np.inf], 0).round(2)
 
-    result.fillna(0, inplace=True)
-    result.replace([float('inf'), -float('inf')], 0, inplace=True)
+    additional_metrics = [
+        "AnalystTargetPrice", "AnalystRatingStrongBuy", "AnalystRatingBuy",
+        "AnalystRatingHold", "AnalystRatingSell", "AnalystRatingStrongSell",
+        "TrailingPE", "ForwardPE", "Sector", "Industry"
+    ]
 
+    for metric in additional_metrics:
+        if metric in summary.columns:
+            if metric in ["Sector", "Industry"]:
+                result[metric] = summary[metric].iloc[0]
+            else:
+                result[metric] = pd.to_numeric(summary[metric], errors="coerce")
+
+    result = result.fillna(0)
     return result.to_dict(orient="records")
-

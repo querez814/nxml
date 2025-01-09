@@ -5,24 +5,19 @@ export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
 	if (!response.ok) {
 		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
 	}
-
 	const rawData = await response.json();
 	return cleanIncomeStatementData(rawData);
 };
 
-export const fetchIncomeStatementMargins = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(
-		`${api_url}/financials/income-statement/quarterly/${ticker}/margins`
-	);
+export const fetchIncomeStatementAnnual = async (ticker: string): Promise<any[]> => {
+	const response = await fetch(`${api_url}/financials/income-statement/annual/${ticker}`);
 	if (!response.ok) {
-		throw new Error(`Failed to fetch income statement margins data: ${response.statusText}`);
+		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
 	}
 	const rawData = await response.json();
-	return cleanIncomeStatementMarginsData(rawData);
+	return cleanIncomeStatementDataAnnual(rawData);
 };
 
-// TYPE IN FORK - "money"
-//
 const cleanIncomeStatementData = (data: any[]): any[] => {
 	return data.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
@@ -32,6 +27,145 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 			parseFloat(item.costofGoodsAndServicesSold) / 1e6
 		).toLocaleString(),
 		grossProfit: (parseFloat(item.grossProfit) / 1e6).toLocaleString(),
+		sellingGeneralAndAdministrative: (
+			parseFloat(item.sellingGeneralAndAdministrative) / 1e6
+		).toLocaleString(),
+		researchAndDevelopment: (parseFloat(item.researchAndDevelopment) / 1e6).toLocaleString(),
+		operatingExpenses: (parseFloat(item.operatingExpenses) / 1e6).toLocaleString(),
+		interestIncome: (parseFloat(item.interestIncome) / 1e6).toLocaleString(),
+		interestExpense: (parseFloat(item.interestExpense) / 1e6).toLocaleString(),
+		incomeBeforeTax: (parseFloat(item.incomeBeforeTax) / 1e6).toLocaleString(),
+		incomeTaxExpense: (parseFloat(item.incomeTaxExpense) / 1e6).toLocaleString(),
+		interestAndDebtExpense: (parseFloat(item.interestAndDebtExpense) / 1e6).toLocaleString(),
+		ebit: (parseFloat(item.ebit) / 1e6).toLocaleString(),
+		ebitda: (parseFloat(item.ebitda) / 1e6).toLocaleString(),
+		operatingIncome: (parseFloat(item.operatingIncome) / 1e6).toLocaleString(),
+		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
+		reportedEPS: parseFloat(item.reportedEPS).toFixed(2),
+		estimatedEPS: parseFloat(item.estimatedEPS).toFixed(2),
+		surprise: parseFloat(item.surprise).toFixed(2),
+		surprisePercentage: parseFloat(item.surprisePercentage).toFixed(2),
+		grossMargin: item.grossMargin,
+		operatingMargin: item.operatingMargin,
+		ebitMargin: item.ebitMargin,
+		ebitdaMargin: item.ebitdaMargin,
+		netMargin: item.netMargin,
+
+		totalRevenue_YoY: item.totalRevenue_YoY,
+		totalRevenue_QoQ: item.totalRevenue_QoQ,
+		totalRevenue_YoY_Derivative: item.totalRevenue_YoY_Derivative,
+		totalRevenue_QoQ_Derivative: item.totalRevenue_QoQ_Derivative,
+		costOfRevenue_YoY: item.costOfRevenue_YoY,
+		costOfRevenue_QoQ: item.costOfRevenue_QoQ,
+		costOfRevenue_YoY_Derivative: item.costOfRevenue_YoY_Derivative,
+		costOfRevenue_QoQ_Derivative: item.costOfRevenue_QoQ_Derivative,
+		costofGoodsAndServicesSold_YoY: item.costofGoodsAndServicesSold_YoY,
+		costofGoodsAndServicesSold_QoQ: item.costofGoodsAndServicesSold_QoQ,
+		costofGoodsAndServicesSold_YoY_Derivative: item.costofGoodsAndServicesSold_YoY_Derivative,
+		costofGoodsAndServicesSold_QoQ_Derivative: item.costofGoodsAndServicesSold_QoQ_Derivative,
+		grossProfit_YoY: item.grossProfit_YoY,
+		grossProfit_QoQ: item.grossProfit_QoQ,
+		grossProfit_YoY_Derivative: item.grossProfit_YoY_Derivative,
+		grossProfit_QoQ_Derivative: item.grossProfit_QoQ_Derivative,
+
+		sellingGeneralAndAdministrative_YoY: item.sellingGeneralAndAdministrative_YoY,
+		sellingGeneralAndAdministrative_QoQ: item.sellingGeneralAndAdministrative_QoQ,
+		sellingGeneralAndAdministrative_YoY_Derivative:
+			item.sellingGeneralAndAdministrative_YoY_Derivative,
+		sellingGeneralAndAdministrative_QoQ_Derivative:
+			item.sellingGeneralAndAdministrative_QoQ_Derivative,
+		researchAndDevelopment_YoY: item.researchAndDevelopment_YoY,
+		researchAndDevelopment_QoQ: item.researchAndDevelopment_QoQ,
+		researchAndDevelopment_YoY_Derivative: item.researchAndDevelopment_YoY_Derivative,
+		researchAndDevelopment_QoQ_Derivative: item.researchAndDevelopment_QoQ_Derivative,
+		operatingExpenses_YoY: item.operatingExpenses_YoY,
+		operatingExpenses_QoQ: item.operatingExpenses_QoQ,
+		operatingExpenses_YoY_Derivative: item.operatingExpenses_YoY_Derivative,
+		operatingExpenses_QoQ_Derivative: item.operatingExpenses_QoQ_Derivative,
+		interestIncome_YoY: item.interestIncome_YoY,
+		interestIncome_QoQ: item.interestIncome_QoQ,
+		interestIncome_YoY_Derivative: item.interestIncome_YoY_Derivative,
+		interestIncome_QoQ_Derivative: item.interestIncome_QoQ_Derivative,
+		interestExpense_YoY: item.interestExpense_YoY,
+		interestExpense_QoQ: item.interestExpense_QoQ,
+		interestExpense_YoY_Derivative: item.interestExpense_YoY_Derivative,
+		interestExpense_QoQ_Derivative: item.interestExpense_QoQ_Derivative,
+		incomeBeforeTax_YoY: item.incomeBeforeTax_YoY,
+		incomeBeforeTax_QoQ: item.incomeBeforeTax_QoQ,
+		incomeBeforeTax_YoY_Derivative: item.incomeBeforeTax_YoY_Derivative,
+		incomeBeforeTax_QoQ_Derivative: item.incomeBeforeTax_QoQ_Derivative,
+		incomeTaxExpense_YoY: item.incomeTaxExpense_YoY,
+		incomeTaxExpense_QoQ: item.incomeTaxExpense_QoQ,
+		incomeTaxExpense_YoY_Derivative: item.incomeTaxExpense_YoY_Derivative,
+		incomeTaxExpense_QoQ_Derivative: item.incomeTaxExpense_QoQ_Derivative,
+		interestAndDebtExpense_YoY: item.interestAndDebtExpense_YoY,
+		interestAndDebtExpense_QoQ: item.interestAndDebtExpense_QoQ,
+		interestAndDebtExpense_YoY_Derivative: item.interestAndDebtExpense_YoY_Derivative,
+		interestAndDebtExpense_QoQ_Derivative: item.interestAndDebtExpense_QoQ_Derivative,
+		ebit_YoY: item.ebit_YoY,
+		ebit_QoQ: item.ebit_QoQ,
+		ebit_YoY_Derivative: item.ebit_YoY_Derivative,
+		ebit_QoQ_Derivative: item.ebit_QoQ_Derivative,
+		ebitda_YoY: item.ebitda_YoY,
+		ebitda_QoQ: item.ebitda_QoQ,
+		ebitda_YoY_Derivative: item.ebitda_YoY_Derivative,
+		ebitda_QoQ_Derivative: item.ebitda_QoQ_Derivative,
+		operatingIncome_YoY: item.operatingIncome_YoY,
+		operatingIncome_QoQ: item.operatingIncome_QoQ,
+		operatingIncome_YoY_Derivative: item.operatingIncome_YoY_Derivative,
+		operatingIncome_QoQ_Derivative: item.operatingIncome_QoQ_Derivative,
+		netIncome_YoY: item.netIncome_YoY,
+		netIncome_QoQ: item.netIncome_QoQ,
+		netIncome_YoY_Derivative: item.netIncome_YoY_Derivative,
+		netIncome_QoQ_Derivative: item.netIncome_QoQ_Derivative,
+		reportedEPS_YoY: item.reportedEPS_YoY,
+		reportedEPS_QoQ: item.reportedEPS_QoQ,
+		reportedEPS_YoY_Derivative: item.reportedEPS_YoY_Derivative,
+		reportedEPS_QoQ_Derivative: item.reportedEPS_QoQ_Derivative,
+		estimatedEPS_YoY: item.estimatedEPS_YoY,
+		estimatedEPS_QoQ: item.estimatedEPS_QoQ,
+		estimatedEPS_YoY_Derivative: item.estimatedEPS_YoY_Derivative,
+		estimatedEPS_QoQ_Derivative: item.estimatedEPS_QoQ_Derivative,
+		surprise_YoY: item.surprise_YoY,
+		surprise_QoQ: item.surprise_QoQ,
+		surprise_YoY_Derivative: item.surprise_YoY_Derivative,
+		surprise_QoQ_Derivative: item.surprise_QoQ_Derivative,
+		surprisePercentage_YoY: item.surprisePercentage_YoY,
+		surprisePercentage_QoQ: item.surprisePercentage_QoQ,
+		surprisePercentage_YoY_Derivative: item.surprisePercentage_YoY_Derivative,
+		surprisePercentage_QoQ_Derivative: item.surprisePercentage_QoQ_Derivative,
+		grossMargin_YoY: item.grossMargin_YoY,
+		grossMargin_QoQ: item.grossMargin_QoQ,
+		grossMargin_YoY_Derivative: item.grossMargin_YoY_Derivative,
+		grossMargin_QoQ_Derivative: item.grossMargin_QoQ_Derivative,
+		operatingMargin_YoY: item.operatingMargin_YoY,
+		operatingMargin_QoQ: item.operatingMargin_QoQ,
+		operatingMargin_YoY_Derivative: item.operatingMargin_YoY_Derivative,
+		operatingMargin_QoQ_Derivative: item.operatingMargin_QoQ_Derivative,
+		ebitMargin_YoY: item.ebitMargin_YoY,
+		ebitMargin_QoQ: item.ebitMargin_QoQ,
+		ebitMargin_YoY_Derivative: item.ebitMargin_YoY_Derivative,
+		ebitMargin_QoQ_Derivative: item.ebitMargin_QoQ_Derivative,
+		ebitdaMargin_YoY: item.ebitdaMargin_YoY,
+		ebitdaMargin_QoQ: item.ebitdaMargin_QoQ,
+		ebitdaMargin_YoY_Derivative: item.ebitdaMargin_YoY_Derivative,
+		ebitdaMargin_QoQ_Derivative: item.ebitdaMargin_QoQ_Derivative,
+		netMargin_YoY: item.netMargin_YoY,
+		netMargin_QoQ: item.netMargin_QoQ,
+		netMargin_YoY_Derivative: item.netMargin_YoY_Derivative,
+		netMargin_QoQ_Derivative: item.netMargin_QoQ_Derivative
+	}));
+};
+
+const cleanIncomeStatementDataAnnual = (data: any[]): any[] => {
+	return data.map((item) => ({
+		fiscalDateEnding: item.fiscalDateEnding,
+		grossProfit: (parseFloat(item.grossProfit) / 1e6).toLocaleString(),
+		totalRevenue: (parseFloat(item.totalRevenue) / 1e6).toLocaleString(),
+		costOfRevenue: (parseFloat(item.costOfRevenue) / 1e6).toLocaleString(),
+		costofGoodsAndServicesSold: (
+			parseFloat(item.costofGoodsAndServicesSold) / 1e6
+		).toLocaleString(),
 		operatingIncome: (parseFloat(item.operatingIncome) / 1e6).toLocaleString(),
 		sellingGeneralAndAdministrative: (
 			parseFloat(item.sellingGeneralAndAdministrative) / 1e6
@@ -43,21 +177,40 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 		incomeBeforeTax: (parseFloat(item.incomeBeforeTax) / 1e6).toLocaleString(),
 		incomeTaxExpense: (parseFloat(item.incomeTaxExpense) / 1e6).toLocaleString(),
 		interestAndDebtExpense: (parseFloat(item.interestAndDebtExpense) / 1e6).toLocaleString(),
+		ebit: (parseFloat(item.ebit) / 1e6).toLocaleString(),
 		ebitda: (parseFloat(item.ebitda) / 1e6).toLocaleString(),
 		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
 		reportedEPS: parseFloat(item.reportedEPS).toFixed(2),
 		estimatedEPS: parseFloat(item.estimatedEPS).toFixed(2),
 		surprise: parseFloat(item.surprise).toFixed(2),
-		surprisePercentage: parseFloat(item.surprisePercentage).toFixed(2)
-	}));
-};
-
-const cleanIncomeStatementMarginsData = (data: any[]): any[] => {
-	return data.map((item) => ({
-		fiscalDateEnding: item.fiscalDateEnding,
+		surprisePercentage: parseFloat(item.surprisePercentage).toFixed(2),
 		grossMargin: item.grossMargin,
-		ebitdaMargin: item.ebitdaMargin,
 		operatingMargin: item.operatingMargin,
-		netMargin: item.netMargin
+		ebitMargin: item.ebitMargin,
+		ebitdaMargin: item.ebitdaMargin,
+		netMargin: item.netMargin,
+		grossProfit_YoY: item.grossProfit_YoY,
+		totalRevenue_YoY: item.totalRevenue_YoY,
+		totalRevenue_YoY_Derivative: item.totalRevenue_YoY_Derivative,
+		costofGoodsAndServicesSold_YoY: item.costofGoodsAndServicesSold_YoY,
+		costofGoodsAndServicesSold_YoY_Derivative: item.costofGoodsAndServicesSold_YoY_Derivative,
+		operatingIncome_YoY: item.operatingIncome_YoY,
+		sellingGeneralAndAdministrative_YoY: item.sellingGeneralAndAdministrative_YoY,
+		researchAndDevelopment_YoY: item.researchAndDevelopment_YoY,
+		operatingExpenses_YoY: item.operatingExpenses_YoY,
+		interestIncome_YoY: item.interestIncome_YoY,
+		interestExpense_YoY: item.interestExpense_YoY,
+		incomeBeforeTax_YoY: item.incomeBeforeTax_YoY,
+		incomeTaxExpense_YoY: item.incomeTaxExpense_YoY,
+		interestAndDebtExpense_YoY: item.interestAndDebtExpense_YoY,
+		ebit_YoY: item.ebit_YoY,
+		ebitda_YoY: item.ebitda_YoY,
+		netIncome_YoY: item.netIncome_YoY,
+		reportedEPS_YoY: item.reportedEPS_YoY,
+		grossMargin_YoY: item.grossMargin_YoY,
+		operatingMargin_YoY: item.operatingMargin_YoY,
+		ebitMargin_YoY: item.ebitMargin_YoY,
+		ebitdaMargin_YoY: item.ebitdaMargin_YoY,
+		netMargin_YoY: item.netMargin_YoY
 	}));
 };
