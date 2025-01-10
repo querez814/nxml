@@ -1,47 +1,42 @@
 <script lang="ts">
 	import * as Card from '$lib/components/ui/card';
-	import {
-		Terminal,
-		Command,
-		Search,
-		Brain,
-		Keyboard,
-		ChevronLeft,
-		ChevronRight
-	} from 'lucide-svelte';
+	import { Terminal, Keyboard, ChevronLeft, ChevronRight } from 'lucide-svelte';
 	import { writable } from 'svelte/store';
 
 	const currentStep = writable(0);
 
-	const tutorialSteps = [
+	const commands = [
 		{
-			title: 'Welcome to InvestorTerminal',
-			icon: Terminal,
-			description: 'Your home for financial information of any publicly listed ticker.',
-			example:
-				"Press '/' to type the command line at any time, click the next button to learn how to navigate around the site"
+			title: '[ticker]',
+			icon: Keyboard,
+			desc: 'This leads you to an overview of the ticker with the most recent technical information to assess an entry point, and curated news!'
 		},
 		{
-			title: 'Basic Navigation',
-			icon: Command,
-			description: 'Navigate to Any Stock or Metric by using simple commands. ',
-			example:
-				'> AAPL CF Q    // Navigates to AAPL quarterly cash flow data along with some computations to help assess it \n> MSFT IS Q    // Navigates to Microsoft Income Statement Quarterly. Additonally writing A at the end gives you the annualized data '
+			title: 'Balance Sheet Commands',
+			icon: Keyboard,
+			desc: '[ticker] BS Q for Quarterly Balance Sheet and [ticker] BS A gets you the annual'
 		},
 		{
-			title: 'Quick Search',
-			icon: Search,
-			description:
-				'Use the search command to access company financial metrics for your own analysis.',
-			example:
-				'> All terminal commands are in the Command List, which you can click on after this brief tutorial'
+			title: 'Cash Flow Commands',
+			icon: Keyboard,
+			desc: '[ticker] CF Q for Quarterly Cash Flow Statement and [ticker] CF A gets you the annual'
+		},
+		{
+			title: 'Income Statement Commands',
+			icon: Keyboard,
+			desc: '[ticker] IS Q for Quarterly Income Statement and [ticker] IS A gets you the annual'
+		},
+		{
+			title: 'Valuation Commands',
+			icon: Keyboard,
+			desc: '[ticker] VAL Q for TTM Valuation Metrics'
 		}
 	];
 
-	$: currentTutorialStep = tutorialSteps[$currentStep];
+	$: currentTutorialStep = commands[$currentStep];
 
 	function nextStep() {
-		currentStep.update((step) => Math.min(step + 1, tutorialSteps.length - 1));
+		currentStep.update((step) => Math.min(step + 1, commands.length - 1));
 	}
 
 	function prevStep() {
@@ -72,7 +67,7 @@
 				<button
 					class="flex items-center gap-1 rounded-md border px-3 py-2 hover:bg-muted disabled:opacity-50"
 					on:click={nextStep}
-					disabled={$currentStep === tutorialSteps.length - 1}
+					disabled={$currentStep === commands.length - 1}
 				>
 					Next
 					<ChevronRight class="h-4 w-4" />
@@ -83,17 +78,11 @@
 		<Card.Content class="px-4">
 			<div class="flex flex-col gap-6">
 				<p class="text-lg text-muted-foreground">
-					{currentTutorialStep.description}
+					{currentTutorialStep.desc}
 				</p>
 
-				<div class="rounded-md bg-muted p-2">
-					<pre class="whitespace-pre-wrap font-mono text-sm">
-                        <code>{currentTutorialStep.example}</code>
-                    </pre>
-				</div>
-
 				<div class="flex justify-center gap-2">
-					{#each tutorialSteps as _, i}
+					{#each commands as _, i}
 						<div
 							class="h-2 w-2 rounded-full transition-colors duration-200"
 							class:bg-primary={i === $currentStep}
