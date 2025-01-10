@@ -15,11 +15,7 @@
 <SignedIn let:user>
     { console.log(user?.publicMetadata ) }
     <!-- Add some check here to see if user has free trial days left or not!  -->
-    {#if    
-        (( user?.publicMetadata["daysLeftInTrial"] as number ) > 0 ) ||
-        (!(typeof user?.publicMetadata["subscriptionActive"] === "boolean") || 
-        ( user?.publicMetadata["subscriptionActive"] as boolean ) === false )
-    }
+    {#if (alwaysRedirect)}
         {#await goto(siteMetaData.urls.web.pricing) }
             <!-- This will never actually render, as the redirect will happen first -->
         {/await}
