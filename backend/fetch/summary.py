@@ -1,4 +1,6 @@
 from fastapi import APIRouter, HTTPException
+import spacy
+import asyncio
 import requests as r
 import dotenv as env
 import os
@@ -8,6 +10,8 @@ from typing import List, Dict, Any
 import pytz
 from collections import Counter
 from fetch.prices import get_prices
+from packages import get_valuation
+
 env.load_dotenv()
 
 av_api = os.getenv("ALPHA_VANTAGE")
@@ -236,7 +240,25 @@ async def get_curated_news(
     excluded_list = [s.strip() for s in excluded_sources.split(',')]
     curated_data = curate_news(data_json, ticker, sort_by, min_relevance, excluded_list)
     
-    prices_list = get_prices(ticker) 
+    ttm_valuation = await get_valuation(ticker) 
+    if ttm_valuation:
+        latest_valuation = ttm_valuation[0]  
+        curated_data["ttm_display"] = {
+            "evtosales": latest_valuation["evtosales"],
+            "evtogrossprofit": latest_valuation["evtogrossprofit"],
+            "evtoebitda": latest_valuation["evtoebitda"],
+            "evtonetincome": latest_valuation["evtonetincome"],
+            "revenue_per_share_ttm": latest_valuation["revenue_per_share_ttm"],
+            "price_to_sales_ratio_ttm": latest_valuation["price_to_sales_ratio_ttm"],
+            "AnalystTargetPrice": latest_valuation["AnalystTargetPrice"],
+            "AnalystRatingStrongBuy": latest_valuation["AnalystRatingStrongBuy"],
+            "AnalystRatingBuy": latest_valuation["AnalystRatingBuy"],
+            "AnalystRatingHold": latest_valuation["AnalystRatingHold"],
+            "AnalystRatingSell": latest_valuation["AnalystRatingSell"],
+            "AnalystRatingStrongSell": latest_valuation["AnalystRatingStrongSell"],
+        }
+    
+    prices_list = await get_prices(ticker) if asyncio.iscoroutinefunction(get_prices) else get_prices(ticker)
     
     if prices_list:
         prices_list.sort(key=lambda p: p["fiscalDateEnding"], reverse=True)
@@ -255,4 +277,3 @@ async def get_curated_news(
         }
     
     return curated_data
-
