@@ -6,9 +6,6 @@ import {
 } from '$env/static/public';
 import type { PricingFeature, TierFrequency } from '$lib/types';
 
-// Force bypass in development mode
-const BYPASS_STRIPE = true; // Changed to force bypass
-
 const siteMetadata = {
 	title: 'InvestorTerminal',
 	author: 'InvestorTerminal',
@@ -30,14 +27,17 @@ const siteMetadata = {
 			termsOfService: '/legal/terms-of-service'
 		},
 		auth: {
-			// Force to app route in development
-			signin: '/app',
-			signup: '/app',
-			userProfile: '/app',
-			fallback: '/app'
+            signin: PUBLIC_NODE_ENV === 'development' ? 
+            'https://strong-possum-2.accounts.dev/sign-in' : 'https://strong-possum-2.accounts.dev/sign-in',
+            signup: PUBLIC_NODE_ENV === 'development' ?
+                'https://strong-possum-2.accounts.dev/sign-up' : 'https://strong-possum-2.accounts.dev/sign-up',
+            userProfile: PUBLIC_NODE_ENV === 'development' ?
+                'https://strong-possum-2.accounts.dev/user' : 'https://strong-possum-2.accounts.dev/user',
+			fallback: PUBLIC_BASE_URL,
 		},
 		subscription: {
-			portal: '/app' // Force to app route
+            portal: PUBLIC_NODE_ENV === 'development' ?
+                'https://billing.stripe.com/p/login/test_5kA7stcTv74H1DW7ss' : '#',
 		}
 	},
 	social: {

@@ -14,7 +14,6 @@
 </svelte:head>
 
 <SignedIn let:user>
-	{console.log(user?.publicMetadata)}
 	<!-- Add some check here to see if user has free trial days left or not!  -->
 	{#if alwaysRedirect}
 		{#await goto(siteMetaData.urls.web.pricing)}
