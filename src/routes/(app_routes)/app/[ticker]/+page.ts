@@ -1,7 +1,11 @@
-import { fetchValuation } from '../../../../api/valuation/valuationdata';
 import type { PageLoad } from './$types';
+import { fetchNewsData } from '../../../../api/media/newscuration';
+
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
-	const data = await fetchValuation(ticker);
-	return { data };
+	const newsData = await fetchNewsData(ticker);
+
+	return {
+		newsData
+	};
 }) satisfies PageLoad;

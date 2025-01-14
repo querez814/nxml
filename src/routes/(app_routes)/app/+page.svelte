@@ -9,8 +9,10 @@
 	import { Terminal, Sparkles, Keyboard, TrendingUp } from 'lucide-svelte';
 	import WelcomeCarousel from '$lib/components/welcome/WelcomeCarousel.svelte';
 	import LandingTutorial from '$lib/components/welcome/LandingTutorial.svelte';
+	import CommandList from '$lib/components/welcome/CommandList.svelte';
 
 	let showTutorial = $state(false);
+	let showCommands = $state(false);
 </script>
 
 <SignedIn let:user>
@@ -35,7 +37,7 @@
 				<Card.Header class="flex items-center justify-between space-y-1">
 					<Card.Title class="flex items-center gap-2 text-2xl font-bold tracking-tight">
 						<Terminal class="h-6 w-6" />
-						InvestorTerminal
+						Due Diligence
 					</Card.Title>
 					<SignOutButton>
 						<Button.Root variant="ghost" size="sm">Sign Out</Button.Root>
@@ -80,7 +82,23 @@
 										</Dialog.Content>
 									</Dialog.Portal>
 								</Dialog.Root>
-								<Button.Root variant="ghost" size="sm">Command List (Adding Soon)</Button.Root>
+
+								<Dialog.Root bind:open={showCommands}>
+									<Dialog.Trigger>
+										<Button.Root variant="ghost" size="sm">Command List</Button.Root>
+									</Dialog.Trigger>
+									<Dialog.Portal>
+										<Dialog.Overlay />
+										<Dialog.Content class="sm:max-w-2xl">
+											<CommandList />
+											<Dialog.Close>
+												<Button.Root variant="outline" size="sm" class="mt-4">
+													Close Commands
+												</Button.Root>
+											</Dialog.Close>
+										</Dialog.Content>
+									</Dialog.Portal>
+								</Dialog.Root>
 							</div>
 						</div>
 					</div>

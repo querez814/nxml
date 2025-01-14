@@ -52,11 +52,7 @@
 				}
 			}
 
-			if (parts[1]) {
-				goto(path, { invalidateAll: true });
-			} else {
-				onTickerChange?.(ticker);
-			}
+			goto(path, { invalidateAll: true });
 		}
 	}
 
@@ -64,7 +60,6 @@
 		if (inputValue.trim()) {
 			history = [...history, inputValue];
 			historyIndex = history.length;
-
 			parseCommand(inputValue);
 			inputValue = '';
 		}
@@ -115,7 +110,7 @@
 			type="text"
 			bind:value={inputValue}
 			onkeydown={handleKeydown}
-			placeholder="Try 'AAPL bs r' or type 'help'"
+			placeholder="Try 'AAPL bs q' or type 'help'"
 			class="flex-1 border-none bg-transparent font-mono text-sm text-gray-100 outline-none placeholder:text-gray-600"
 		/>
 	</div>

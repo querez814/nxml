@@ -1,231 +1,254 @@
-from fastapi import APIRouter
+from fastapi import APIRouter, HTTPException
 import requests as r
 import dotenv as env
 import os
 import pandas as pd
 import numpy as np
 from fetch.prices import get_prices
-
-
-
 env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 
 router = APIRouter()
 
+@router.get("/technical-analysis/{interval}/{ticker}")
+def technical_analysis(interval: str, ticker: str):
+    prices = get_prices(ticker)
+    price_lookup = {
+        price['fiscalDateEnding']: {
+            'open': float(price['1. open']),
+            'high': float(price['2. high']),
+            'low': float(price['3. low']),
+            'close': float(price['4. close']),
+            'volume': int(price['6. volume'])
+        }
+        for price in prices
+    }
 
-
-#RSI ROUTER FOR DEVELOPMENT
-@router.get("/rsi/{interval}/{ticker}")
-def get_rsi(interval:str, ticker:str):
-    #Getting the RSI from the API
-    url = f"https://www.alphavantage.co/query?function=RSI&symbol={ticker}&interval={interval}&time_period=14&series_type=close&apikey={av_api}"
-    response = r.get(url)
-    rsi_json = response.json()
-    rsi_series = rsi_json.get("Technical Analysis: RSI", {})
-    rsi_df_0 = pd.DataFrame(rsi_series)
-
-    return rsi_df_0
-
-
-@router.get("/macd/{interval}/{ticker}")
-def get_macd(interval:str, ticker:str):
-    url = f"https://www.alphavantage.co/query?function=MACD&symbol={ticker}&interval={interval}&series_type=close&apikey={av_api}"
-    response = r.get(url)
-    macd_json = response.json() 
-    macd_series = macd_json.get("Technical Analysis: MACD")
-    macd_df = pd.DataFrame(macd_series)
-
-    return macd_df
-
-from fastapi import APIRouter
-import requests as r
-import dotenv as env
-import os
-import pandas as pd
-import numpy as np
-from fetch.prices import get_prices
-
-env.load_dotenv()
-av_api = os.getenv("ALPHA_VANTAGE")
-
-router = APIRouter()
-
-@router.get("/complete/{interval}/{ticker}")
-def complete_response(interval: str, ticker: str):
-    rsi_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=RSI&symbol={ticker}&interval={interval}"
-        f"&time_period=14&series_type=close&apikey={av_api}"
-    )
-    rsi_json = r.get(rsi_url).json()
-    rsi_series = rsi_json.get("Technical Analysis: RSI", {})
-    rsi_df = (
-        pd.DataFrame(rsi_series)
-        .T
-        .reset_index()
-        .rename(columns={"index": "fiscalDateEnding", "RSI": "RSI"})
-    )
-    rsi_df["fiscalDateEnding"] = rsi_df["fiscalDateEnding"].astype(str)
-
-    macd_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=MACD&symbol={ticker}&interval={interval}"
-        f"&series_type=close&apikey={av_api}"
-    )
-    macd_json = r.get(macd_url).json()
-    macd_series = macd_json.get("Technical Analysis: MACD", {})
-    macd_df = (
-        pd.DataFrame(macd_series)
-        .T
-        .reset_index()
-        .rename(
-            columns={
-                "index": "fiscalDateEnding",
-                "MACD": "MACD",
-                "MACD_Signal": "MACD_Signal",
-                "MACD_Hist": "MACD_Hist",
+    def interpret_macd(macd_data):
+        interpreted_data = {}
+        previous_values = None
+        
+        for date, values in macd_data.items():
+            macd_line = float(values['MACD'])
+            signal_line = float(values['MACD_Signal'])
+            histogram = float(values['MACD_Hist'])
+            
+            analysis = {
+                'values': {
+                    'macd': macd_line,
+                    'signal': signal_line,
+                    'histogram': histogram
+                },
+                'signals': {
+                    'trend': 'bullish' if macd_line > 0 else 'bearish',
+                    'momentum': 'strengthening' if histogram > 0 else 'weakening',
+                    'signal': 'buy' if macd_line > signal_line else 'sell',
+                    'strength': 'strong' if abs(histogram) > 0.5 else 'moderate' if abs(histogram) > 0.2 else 'weak'
+                }
             }
-        )
-    )
-    macd_df["fiscalDateEnding"] = macd_df["fiscalDateEnding"].astype(str)
+            
+            if abs(histogram) < 0.1:
+                analysis['signals']['crossover'] = 'potential bullish crossover' if macd_line > signal_line else 'potential bearish crossover'
+            
+            if previous_values:
+                prev_macd = float(previous_values['MACD'])
+                prev_hist = float(previous_values['MACD_Hist'])
+                analysis['signals']['acceleration'] = 'increasing' if abs(histogram) > abs(prev_hist) else 'decreasing'
+                
+            previous_values = values
+            interpreted_data[date] = analysis
+        return interpreted_data
 
-    bbands_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=BBANDS&symbol={ticker}&interval={interval}"
-        f"&time_period=5&series_type=close&nbdevup=3&nbdevdn=3&apikey={av_api}"
-    )
-    bbands_json = r.get(bbands_url).json()
-    bbands_series = bbands_json.get("Technical Analysis: BBANDS", {})
-    bbands_df = (
-        pd.DataFrame(bbands_series)
-        .T
-        .reset_index()
-        .rename(
-            columns={
-                "index": "fiscalDateEnding",
-                "Real Upper Band": "BB_Upper",
-                "Real Lower Band": "BB_Lower",
-                "Real Middle Band": "BB_Middle",
+    def interpret_rsi(rsi_data):
+        returned_data = {}
+        for date, values in rsi_data.items():
+            if isinstance(values, dict) and 'RSI' in values:
+                numeric_rsi = float(values['RSI'])
+                returned_data[date] = {
+                    'value': numeric_rsi,
+                    'status': 'overbought' if numeric_rsi > 70 else 'oversold' if numeric_rsi < 30 else 'neutral',
+                    'trend': 'bullish' if numeric_rsi > 50 else 'bearish',
+                    'strength': 'strong' if abs(numeric_rsi - 50) > 20 else 'moderate' if abs(numeric_rsi - 50) > 10 else 'weak'
+                }
+        return returned_data
+
+    def interpret_aroon(aroon_data):
+        interpreted_data = {}
+        previous_values = None
+        
+        for date, values in aroon_data.items():
+            aroon_up = float(values['Aroon Up'])
+            aroon_down = float(values['Aroon Down'])
+            aroon_oscillator = aroon_up - aroon_down
+            
+            analysis = {
+                'values': {
+                    'aroon_up': aroon_up,
+                    'aroon_down': aroon_down,
+                    'aroon_oscillator': aroon_oscillator
+                },
+                'signals': {
+                    'trend': 'strong_bullish' if aroon_up > 70 and aroon_down < 30 else
+                            'strong_bearish' if aroon_down > 70 and aroon_up < 30 else
+                            'bullish' if aroon_up > aroon_down else 'bearish',
+                    'strength': 'strong' if abs(aroon_oscillator) > 50 else
+                               'moderate' if abs(aroon_oscillator) > 30 else 'weak',
+                    'consolidation': 'yes' if aroon_up < 30 and aroon_down < 30 else 'no',
+                    'signal': 'buy' if aroon_up > aroon_down and aroon_up > 50 else
+                             'sell' if aroon_down > aroon_up and aroon_down > 50 else 'hold'
+                }
             }
-        )
-    )
-    bbands_df["fiscalDateEnding"] = bbands_df["fiscalDateEnding"].astype(str)
-    adx_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=ADX&symbol={ticker}&interval={interval}"
-        f"&time_period=10&apikey={av_api}"
-    )
-    adx_json = r.get(adx_url).json()
-    adx_series = adx_json.get("Technical Analysis: ADX", {})
-    adx_df = (
-        pd.DataFrame(adx_series)
-        .T
-        .reset_index()
-        .rename(columns={"index": "fiscalDateEnding", "ADX": "ADX"})
-    )
-    adx_df["fiscalDateEnding"] = adx_df["fiscalDateEnding"].astype(str)
+            
+            if previous_values:
+                prev_up = float(previous_values['Aroon Up'])
+                prev_down = float(previous_values['Aroon Down'])
+                
+                analysis['signals']['momentum'] = 'increasing' if aroon_oscillator > (prev_up - prev_down) else 'decreasing'
+                
+                if aroon_up > prev_up and aroon_down < prev_down:
+                    analysis['signals']['crossover'] = 'potential bullish crossover'
+                elif aroon_down > prev_down and aroon_up < prev_up:
+                    analysis['signals']['crossover'] = 'potential bearish crossover'
+            
+            previous_values = values
+            interpreted_data[date] = analysis
+        return interpreted_data
 
-    obv_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=OBV&symbol={ticker}&interval={interval}&apikey={av_api}"
-    )
-    obv_json = r.get(obv_url).json()
-    obv_series = obv_json.get("Technical Analysis: OBV", {})
-    obv_df = (
-        pd.DataFrame(obv_series)
-        .T
-        .reset_index()
-        .rename(columns={"index": "fiscalDateEnding", "OBV": "OBV"})
-    )
-    obv_df["fiscalDateEnding"] = obv_df["fiscalDateEnding"].astype(str)
+    def interpret_stoch(stoch_data):
+        interpreted_data = {}
+        previous_values = None
+        
+        for date, values in stoch_data.items():
+            slowk = float(values['SlowK'])
+            slowd = float(values['SlowD'])
+            
+            analysis = {
+                'values': {
+                    'k_line': slowk,
+                    'd_line': slowd
+                },
+                'signals': {
+                    'status': 'overbought' if slowk > 80 else 
+                             'oversold' if slowk < 20 else 'neutral',
+                    'trend': 'bullish' if slowk > slowd else 'bearish',
+                    'strength': 'strong' if abs(slowk - 50) > 30 else 
+                               'moderate' if abs(slowk - 50) > 15 else 'weak',
+                    'signal': 'buy' if slowk > slowd and slowk < 80 else
+                             'sell' if slowk < slowd and slowk > 20 else 'hold'
+                }
+            }
+            
+            if previous_values:
+                prev_k = float(previous_values['SlowK'])
+                prev_d = float(previous_values['SlowD'])
+                
+                analysis['signals']['momentum'] = 'increasing' if slowk > prev_k else 'decreasing'
+                
+                if slowk > slowd and prev_k < prev_d:
+                    analysis['signals']['crossover'] = 'bullish crossover'
+                elif slowk < slowd and prev_k > prev_d:
+                    analysis['signals']['crossover'] = 'bearish crossover'
+            
+            previous_values = values
+            interpreted_data[date] = analysis
+        return interpreted_data
 
-    ema_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=EMA&symbol={ticker}&interval={interval}"
-        f"&time_period=10&series_type=open&apikey={av_api}"
-    )
-    ema_json = r.get(ema_url).json()
-    ema_series = ema_json.get("Technical Analysis: EMA", {})
-    ema_df = (
-        pd.DataFrame(ema_series)
-        .T
-        .reset_index()
-        .rename(columns={"index": "fiscalDateEnding", "EMA": "EMA"})
-    )
-    ema_df["fiscalDateEnding"] = ema_df["fiscalDateEnding"].astype(str)
+    def get_overall_trend(macd, rsi, aroon, stoch):
+        bullish_signals = sum([
+            1 if 'bullish' in macd['signals']['trend'] else 0,
+            1 if 'bullish' in rsi['trend'] else 0,
+            1 if 'bullish' in aroon['signals']['trend'] else 0,
+            1 if 'bullish' in stoch['signals']['trend'] else 0
+        ])
+        return 'bullish' if bullish_signals >= 3 else 'bearish'
 
-    atr_url = (
-        f"https://www.alphavantage.co/query?"
-        f"function=ATR&symbol={ticker}&interval={interval}"
-        f"&time_period=14&apikey={av_api}"
-    )
-    atr_json = r.get(atr_url).json()
-    atr_series = atr_json.get("Technical Analysis: ATR", {})
-    atr_df = (
-        pd.DataFrame(atr_series)
-        .T
-        .reset_index()
-        .rename(columns={"index": "fiscalDateEnding", "ATR": "ATR"})
-    )
-    atr_df["fiscalDateEnding"] = atr_df["fiscalDateEnding"].astype(str)
+    def get_signal_strength(macd, rsi, aroon, stoch):
+        strong_signals = sum([
+            1 if macd['signals']['strength'] == 'strong' else 0,
+            1 if rsi['strength'] == 'strong' else 0,
+            1 if aroon['signals']['strength'] == 'strong' else 0,
+            1 if stoch['signals']['strength'] == 'strong' else 0
+        ])
+        return 'strong' if strong_signals >= 3 else 'moderate' if strong_signals >= 2 else 'weak'
 
-    prices_list = get_prices(ticker)  
-    prices_df = pd.DataFrame(prices_list)
-    prices_df["fiscalDateEnding"] = prices_df["fiscalDateEnding"].astype(str)
+    def get_recommended_action(macd, rsi, aroon, stoch):
+        buy_signals = sum([
+            1 if macd['signals']['signal'] == 'buy' else 0,
+            1 if rsi['status'] == 'oversold' else 0,
+            1 if aroon['signals']['signal'] == 'buy' else 0,
+            1 if stoch['signals']['signal'] == 'buy' else 0
+        ])
+        sell_signals = sum([
+            1 if macd['signals']['signal'] == 'sell' else 0,
+            1 if rsi['status'] == 'overbought' else 0,
+            1 if aroon['signals']['signal'] == 'sell' else 0,
+            1 if stoch['signals']['signal'] == 'sell' else 0
+        ])
+        return 'buy' if buy_signals >= 3 else 'sell' if sell_signals >= 3 else 'hold'
 
-    combined_df = pd.merge(prices_df, rsi_df, on="fiscalDateEnding", how="inner")
-    combined_df = pd.merge(combined_df, macd_df, on="fiscalDateEnding", how="inner")
-    combined_df = pd.merge(combined_df, bbands_df, on="fiscalDateEnding", how="inner")
-    combined_df = pd.merge(combined_df, adx_df, on="fiscalDateEnding", how="inner")
-    combined_df = pd.merge(combined_df, obv_df, on="fiscalDateEnding", how="inner")
-    combined_df = pd.merge(combined_df, ema_df, on="fiscalDateEnding", how="inner")
-    combined_df = pd.merge(combined_df, atr_df, on="fiscalDateEnding", how="inner")
-    columns_we_want = [
-        "fiscalDateEnding",
-        "1. open",
-        "5. adjusted close",
-        "RSI",
-        "MACD",
-        "MACD_Signal",
-        "MACD_Hist",
-        "BB_Upper",
-        "BB_Lower",
-        "BB_Middle",
-        "ADX",
-        "OBV",
-        "EMA",
-        "ATR",
-    ]
-    combined_df = combined_df[columns_we_want]
+    try:
+        macd_response = r.get(f"https://www.alphavantage.co/query?function=MACD&symbol={ticker}&interval={interval}&series_type=close&apikey={av_api}")
+        rsi_response = r.get(f"https://www.alphavantage.co/query?function=RSI&symbol={ticker}&interval={interval}&time_period=14&series_type=close&apikey={av_api}")
+        aroon_response = r.get(f"https://www.alphavantage.co/query?function=AROON&symbol={ticker}&interval={interval}&time_period=14&apikey={av_api}")
+        stoch_response = r.get(f"https://www.alphavantage.co/query?function=STOCH&symbol={ticker}&interval={interval}&apikey={av_api}")
 
-    numeric_cols = ["RSI", "MACD", "MACD_Signal", "MACD_Hist", 
-                    "ADX", "OBV", "EMA", "ATR"]
-    for col in numeric_cols:
-        combined_df[col] = pd.to_numeric(combined_df[col], errors='coerce')
+        for response in [macd_response, rsi_response, aroon_response, stoch_response]:
+            if 'Error Message' in response.json():
+                raise HTTPException(status_code=400, detail=f"Alpha Vantage API error: {response.json()['Error Message']}")
+            if 'Note' in response.json():
+                raise HTTPException(status_code=429, detail=f"Alpha Vantage API limit reached: {response.json()['Note']}")
 
-    combined_df = combined_df.sort_values(by="fiscalDateEnding", ascending=True)
+        macd_data = macd_response.json().get("Technical Analysis: MACD", {})
+        rsi_data = rsi_response.json().get("Technical Analysis: RSI", {})
+        aroon_data = aroon_response.json().get("Technical Analysis: AROON", {})
+        stoch_data = stoch_response.json().get("Technical Analysis: STOCH", {})
 
-    def compute_rolling_zscore(df, col, window=20):
-        roll_mean = df[col].rolling(window=window).mean()
-        roll_std = df[col].rolling(window=window).std()
-        z_col = f"{col}_z"
-        df[z_col] = (df[col] - roll_mean) / (roll_std + 1e-9) 
-        return df
+        if not all([macd_data, rsi_data, aroon_data, stoch_data]):
+            raise HTTPException(status_code=404, detail="No technical analysis data available for this ticker")
 
-    indicators_for_z = ["RSI", "MACD", "MACD_Hist", "ADX", "OBV", "EMA", "ATR"]
-    for ind in indicators_for_z:
-        compute_rolling_zscore(combined_df, ind, window=20)
+        processed_macd = interpret_macd(macd_data)
+        processed_rsi = interpret_rsi(rsi_data)
+        processed_aroon = interpret_aroon(aroon_data)
+        processed_stoch = interpret_stoch(stoch_data)
 
+        all_dates = sorted(set(macd_data.keys()) & set(rsi_data.keys()) & 
+                         set(aroon_data.keys()) & set(stoch_data.keys()),
+                         reverse=True)
 
-    z_cols = [f"{ind}_z" for ind in indicators_for_z]
-    combined_df["Z_Composite"] = combined_df[z_cols].sum(axis=1)
+        if not all_dates:
+            raise HTTPException(status_code=404, detail="No overlapping data points found across indicators")
 
-    combined_df = combined_df.sort_values(by="fiscalDateEnding", ascending=False)
-    combined_df = combined_df.replace([np.inf, -np.inf], np.nan)
+        combined_analysis = {}
+        
+        for date in all_dates:
+            if date in price_lookup:
+                combined_analysis[date] = {
+                    'price_data': price_lookup[date],
+                    'indicators': {
+                        'macd': processed_macd[date],
+                        'rsi': processed_rsi[date],
+                        'aroon': processed_aroon[date],
+                        'stochastic': processed_stoch[date]
+                    },
+                    'summary': {
+                        'overall_trend': get_overall_trend(processed_macd[date], processed_rsi[date],
+                                                         processed_aroon[date], processed_stoch[date]),
+                        'signal_strength': get_signal_strength(processed_macd[date], processed_rsi[date],
+                                                             processed_aroon[date], processed_stoch[date]),
+                        'recommended_action': get_recommended_action(processed_macd[date], processed_rsi[date],
+                                                                  processed_aroon[date], processed_stoch[date])
+                    }
+                }
 
-    combined_df = combined_df.fillna(0)
+        return {
+            'status': 'success',
+            'data': {
+                'ticker': ticker,
+                'interval': interval,
+                'last_updated': all_dates[0],
+                'analysis': combined_analysis
+            }
+        }
 
-
-    #  RETURN EVERYTHING AS JSON 
-    return combined_df.to_dict(orient="records")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))

@@ -175,7 +175,6 @@
 			{/each}
 		</Accordion.Root>
 	</section>
-	<!-- this is a comment! -->
 	<section id="cta" class="flex w-full justify-center px-6 py-16 md:px-20">
 		<CtaCard />
 	</section>
