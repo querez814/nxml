@@ -28,7 +28,6 @@
 	}
 	const quarterDates = quarters.map((q) => q.fiscalDateEnding);
 
-	// Define the metrics we want to display
 	const valuationMetrics = [
 		'evtosales',
 		'evtogrossprofit',
@@ -57,7 +56,6 @@
 		'Industry'
 	];
 
-	// Create raw data structure for the DataTable
 	const rawData =
 		quarters.length > 0
 			? valuationMetrics.map((metric) => ({
@@ -73,7 +71,6 @@
 				}))
 			: [];
 
-	// Since valuation metrics don't have YoY or QoQ, we'll pass empty arrays
 	const yoyData = [];
 	const qoqData = [];
 	const marginsData = [];

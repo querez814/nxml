@@ -1,5 +1,4 @@
 from fastapi import APIRouter, HTTPException
-import spacy
 import asyncio
 import requests as r
 import dotenv as env

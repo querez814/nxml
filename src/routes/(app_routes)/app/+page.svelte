@@ -37,7 +37,7 @@
 				<Card.Header class="flex items-center justify-between space-y-1">
 					<Card.Title class="flex items-center gap-2 text-2xl font-bold tracking-tight">
 						<Terminal class="h-6 w-6" />
-						InvestorTerminal
+						Due Diligence
 					</Card.Title>
 					<SignOutButton>
 						<Button.Root variant="ghost" size="sm">Sign Out</Button.Root>

@@ -12,11 +12,15 @@ env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
+
+
+@router.get("/summary/{ticker}")
 def get_summary(ticker:str):
     url = f"https://www.alphavantage.co/query?function=OVERVIEW&symbol={ticker}&apikey={av_api}"
     response = r.get(url)
     data_json = response.json()
     return data_json
+
 
 def get_ttm_data(ticker: str):
     quarterly_data = get_quarterly_statement_data(ticker)
@@ -56,7 +60,10 @@ def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol"]):
 
 @router.get("/capitalstructure/quarterly/{ticker}")
 async def get_cap_struct(ticker: str):
+    
+   ticker = get_summary(ticker)["Symbol"]
    try:
+
        bs_data = get_quarterly_balance_sheet_data(ticker)
        bs = pd.DataFrame(bs_data)
        if bs.empty:
@@ -87,6 +94,8 @@ async def get_cap_struct(ticker: str):
    try:
        bs["adjustedPrice"] = bs["fiscalDateEnding"].apply(get_closest_adjusted_close)
        bs["latest_closing_price"] = latest_closing_price
+       
+       bs["Symbol"] = ticker
        
        numeric_columns = ["commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]
        for col in numeric_columns:

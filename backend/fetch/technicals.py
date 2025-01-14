@@ -5,7 +5,6 @@ import os
 import pandas as pd
 import numpy as np
 from fetch.prices import get_prices
-
 env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 
@@ -13,6 +12,18 @@ router = APIRouter()
 
 @router.get("/technical-analysis/{interval}/{ticker}")
 def technical_analysis(interval: str, ticker: str):
+    prices = get_prices(ticker)
+    price_lookup = {
+        price['fiscalDateEnding']: {
+            'open': float(price['1. open']),
+            'high': float(price['2. high']),
+            'low': float(price['3. low']),
+            'close': float(price['4. close']),
+            'volume': int(price['6. volume'])
+        }
+        for price in prices
+    }
+
     def interpret_macd(macd_data):
         interpreted_data = {}
         previous_values = None
@@ -210,22 +221,24 @@ def technical_analysis(interval: str, ticker: str):
         combined_analysis = {}
         
         for date in all_dates:
-            combined_analysis[date] = {
-                'indicators': {
-                    'macd': processed_macd[date],
-                    'rsi': processed_rsi[date],
-                    'aroon': processed_aroon[date],
-                    'stochastic': processed_stoch[date]
-                },
-                'summary': {
-                    'overall_trend': get_overall_trend(processed_macd[date], processed_rsi[date],
-                                                     processed_aroon[date], processed_stoch[date]),
-                    'signal_strength': get_signal_strength(processed_macd[date], processed_rsi[date],
+            if date in price_lookup:
+                combined_analysis[date] = {
+                    'price_data': price_lookup[date],
+                    'indicators': {
+                        'macd': processed_macd[date],
+                        'rsi': processed_rsi[date],
+                        'aroon': processed_aroon[date],
+                        'stochastic': processed_stoch[date]
+                    },
+                    'summary': {
+                        'overall_trend': get_overall_trend(processed_macd[date], processed_rsi[date],
                                                          processed_aroon[date], processed_stoch[date]),
-                    'recommended_action': get_recommended_action(processed_macd[date], processed_rsi[date],
-                                                              processed_aroon[date], processed_stoch[date])
+                        'signal_strength': get_signal_strength(processed_macd[date], processed_rsi[date],
+                                                             processed_aroon[date], processed_stoch[date]),
+                        'recommended_action': get_recommended_action(processed_macd[date], processed_rsi[date],
+                                                                  processed_aroon[date], processed_stoch[date])
+                    }
                 }
-            }
 
         return {
             'status': 'success',

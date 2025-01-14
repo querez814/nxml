@@ -1,4 +1,6 @@
 <script lang="ts">
+	import * as Card from '$lib/components/ui/card';
+	import IncomeStatementTutorial from '$lib/components/tutorial/incomestatement/IncomeStatementTutorial.svelte';
 	import type { PageData } from '../quarterly/$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 
@@ -88,11 +90,13 @@
 			: [];
 </script>
 
-<DataTable
-	{rawData}
-	{yoyData}
-	{marginsData}
-	quarters={quarterDates}
-	title="Quarterly Income Statement"
-	ratioMetrics={marginMetrics}
-/>
+<div>
+	<DataTable
+		{rawData}
+		{yoyData}
+		{marginsData}
+		quarters={quarterDates}
+		title="Quarterly Income Statement"
+		ratioMetrics={marginMetrics}
+	/>
+</div>
