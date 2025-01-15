@@ -71,7 +71,27 @@
 						)
 					}))
 			: [];
-
+	const qoqData =
+		quarters.length > 0
+			? Object.keys(quarters[0])
+					.filter(
+						(key) =>
+							key.endsWith('_QoQ') &&
+							!key.includes('_Derivative') &&
+							!marginMetrics.some((metric) => key.startsWith(metric))
+					)
+					.map((metric) => ({
+						metric: formatMetricName(metric.replace('_QoQ', '')),
+						originalMetric: metric.replace('_QoQ', ''),
+						...quarters.reduce(
+							(acc: any, quarter: any) => ({
+								...acc,
+								[quarter.fiscalDateEnding]: quarter[metric]
+							}),
+							{}
+						)
+					}))
+			: [];
 	const marginsData =
 		quarters.length > 0
 			? marginMetrics.map((metric) => ({
@@ -91,6 +111,7 @@
 <DataTable
 	{rawData}
 	{yoyData}
+	{qoqData}
 	{marginsData}
 	quarters={quarterDates}
 	title="Cash Flow Statement - Quarterly"

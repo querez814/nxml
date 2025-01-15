@@ -8,6 +8,21 @@
 	const quarters = data.quarters || [];
 
 	function formatMetricName(name: string): string {
+		const specialCases: any = {
+			costofGoodsAndServicesSold: 'Cost of Goods and Services Sold',
+			sellingGeneralAndAdministrative: 'Selling, General and Administrative',
+			researchAndDevelopment: 'Research and Development',
+			interestAndDebtExpense: 'Interest and Debt Expense',
+			ebit: 'EBIT',
+			ebitda: 'EBITDA',
+			reportedEPS: 'Reported EPS ',
+			estimatedEPS: 'Estimated EPS',
+			surprise: 'EPS Surprise'
+		};
+
+		if (specialCases[name]) {
+			return specialCases[name];
+		}
 		return name
 			.replace(/([A-Z])/g, ' $1')
 			.split('_')
@@ -25,6 +40,8 @@
 		'symbol',
 		'reportedCurrency',
 		'__v',
+		'surprisePercentage',
+		'ebitMargin',
 		'fiscalDateEnding',
 		...marginMetrics
 	];
@@ -73,7 +90,27 @@
 						)
 					}))
 			: [];
-
+	const qoqData =
+		quarters.length > 0
+			? Object.keys(quarters[0])
+					.filter(
+						(key) =>
+							key.endsWith('_QoQ') &&
+							!key.includes('_Derivative') &&
+							!marginMetrics.some((metric) => key.startsWith(metric))
+					)
+					.map((metric) => ({
+						metric: formatMetricName(metric.replace('_QoQ', '')),
+						originalMetric: metric.replace('_QoQ', ''),
+						...quarters.reduce(
+							(acc: any, quarter: any) => ({
+								...acc,
+								[quarter.fiscalDateEnding]: quarter[metric]
+							}),
+							{}
+						)
+					}))
+			: [];
 	const marginsData =
 		quarters.length > 0
 			? marginMetrics.map((metric) => ({
@@ -90,10 +127,12 @@
 			: [];
 </script>
 
-<div>
+<div class="relative z-10">
 	<DataTable
+		class="relative z-10"
 		{rawData}
 		{yoyData}
+		{qoqData}
 		{marginsData}
 		quarters={quarterDates}
 		title="Quarterly Income Statement"

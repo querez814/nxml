@@ -25,7 +25,7 @@
 			subsections: ['Annual', 'Quarterly']
 		},
 		{
-			name: 'Income',
+			name: 'Income Statement',
 			path: 'incomestatement',
 			icon: BarChart2,
 			subsections: ['Annual', 'Quarterly']
@@ -76,9 +76,9 @@
 	}
 </script>
 
-<svelte:window on:click={handleClickOutside} />
+<svelte:window onclick={handleClickOutside} />
 
-<div class="nav-container relative flex items-center gap-2">
+<nav class="nav-container relative flex items-center gap-2">
 	{#if !showTickerInput}
 		<button
 			onclick={showTickerSelector}
@@ -119,20 +119,16 @@
 				role="menu"
 			>
 				{#each sections as section}
-					<div class="px-1 py-1" role="none">
-						<a
-							href="/app/{ticker}/{section.path}"
-							class="group flex items-center rounded-md px-3 py-2 text-sm text-popover-foreground hover:bg-accent hover:text-accent-foreground"
-							role="menuitem"
-						>
-							{section.icon}
+					<div class="py-1">
+						<div class="flex items-center gap-2 px-3 py-1 text-sm font-medium">
+							<svelte:component this={section.icon} class="h-4 w-4" />
 							{section.name}
-						</a>
-						<div class="ml-6 space-y-1" role="none">
+						</div>
+						<div class="pl-2">
 							{#each section.subsections as subsection}
 								<a
 									href="/app/{ticker}/{section.path}/{subsection.toLowerCase()}"
-									class="group flex items-center rounded-md px-3 py-1 text-xs text-muted-foreground hover:bg-accent/50 hover:text-accent-foreground"
+									class="block px-3 py-1 text-xs text-muted-foreground hover:bg-accent/50 hover:text-accent-foreground"
 									role="menuitem"
 								>
 									{subsection}
@@ -144,7 +140,7 @@
 			</div>
 		{/if}
 	{/if}
-</div>
+</nav>
 
 <style>
 	:global(.nav-container) {
