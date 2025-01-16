@@ -7,7 +7,6 @@
 
 	const ticker = $derived(data.newsData?.ticker);
 	const analystTargetPrice = $derived(data.newsData?.ttm_display?.AnalystTargetPrice);
-
 	const metrics = $derived([
 		{ label: 'EV/Sales', value: data.newsData?.ttm_display?.evtosales.toFixed(2), trend: 'up' },
 		{
@@ -22,7 +21,6 @@
 		},
 		{ label: 'Latest Close', value: data.newsData?.latest_price?.close.toFixed(2), trend: 'down' }
 	]);
-
 	const sentimentData = $derived({
 		positive: data.newsData?.summary?.sentiment_distribution?.positive || 0,
 		neutral: data.newsData?.summary?.sentiment_distribution?.neutral || 0,
@@ -32,7 +30,6 @@
 			(data.newsData?.summary?.sentiment_distribution?.neutral || 0) +
 			(data.newsData?.summary?.sentiment_distribution?.negative || 0)
 	});
-
 	const getPercentage = (value: number) => ((value / sentimentData.total) * 100).toFixed(1);
 </script>
 
@@ -57,7 +54,7 @@
 				</div>
 			</div>
 		</header>
-
+		<div class="grid gap-6"></div>
 		<div class="grid gap-6">
 			<Card.Root class="border-0 bg-black/40 backdrop-blur-xl">
 				<Card.Content class="p-6">

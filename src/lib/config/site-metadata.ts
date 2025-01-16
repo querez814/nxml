@@ -4,7 +4,7 @@ import {
 	PUBLIC_BASE_URL,
 	PUBLIC_NODE_ENV
 } from '$env/static/public';
-import type { PricingFeature, TierFrequency } from '$lib/types';
+import type { PricingFeature, TierFrequency } from '$lib/types/types';
 
 const siteMetadata = {
 	title: 'InvestorTerminal',
@@ -27,17 +27,25 @@ const siteMetadata = {
 			termsOfService: '/legal/terms-of-service'
 		},
 		auth: {
-            signin: PUBLIC_NODE_ENV === 'development' ? 
-            'https://strong-possum-2.accounts.dev/sign-in' : 'https://strong-possum-2.accounts.dev/sign-in',
-            signup: PUBLIC_NODE_ENV === 'development' ?
-                'https://strong-possum-2.accounts.dev/sign-up' : 'https://strong-possum-2.accounts.dev/sign-up',
-            userProfile: PUBLIC_NODE_ENV === 'development' ?
-                'https://strong-possum-2.accounts.dev/user' : 'https://strong-possum-2.accounts.dev/user',
-			fallback: PUBLIC_BASE_URL,
+			signin:
+				PUBLIC_NODE_ENV === 'development'
+					? 'https://strong-possum-2.accounts.dev/sign-in'
+					: 'https://strong-possum-2.accounts.dev/sign-in',
+			signup:
+				PUBLIC_NODE_ENV === 'development'
+					? 'https://strong-possum-2.accounts.dev/sign-up'
+					: 'https://strong-possum-2.accounts.dev/sign-up',
+			userProfile:
+				PUBLIC_NODE_ENV === 'development'
+					? 'https://strong-possum-2.accounts.dev/user'
+					: 'https://strong-possum-2.accounts.dev/user',
+			fallback: PUBLIC_BASE_URL
 		},
 		subscription: {
-            portal: PUBLIC_NODE_ENV === 'development' ?
-                'https://billing.stripe.com/p/login/test_5kA7stcTv74H1DW7ss' : '#',
+			portal:
+				PUBLIC_NODE_ENV === 'development'
+					? 'https://billing.stripe.com/p/login/test_5kA7stcTv74H1DW7ss'
+					: '#'
 		}
 	},
 	social: {

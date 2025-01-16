@@ -1,5 +1,5 @@
 const api_url = import.meta.env.VITE_API_URL;
-import type { NewsCuration } from '$lib/types';
+import type { NewsCuration } from '$lib/types/types';
 export const fetchNewsData = async (ticker: string): Promise<NewsCuration> => {
 	const response = await fetch(`${api_url}/financials/news/${ticker}`);
 	if (!response.ok) {

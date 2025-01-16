@@ -2,7 +2,10 @@ export type PricingFeature = {
 	name: string;
 	included: boolean;
 };
-
+export type Trend = 'bullish' | 'bearish' | 'neutral';
+export type Strength = 'weak' | 'moderate' | 'strong';
+export type Signal = 'buy' | 'sell' | 'hold';
+export type Status = 'oversold' | 'neutral' | 'overbought';
 export type TierFrequency = 'mo' | 'yr' | 'once';
 
 //Types for News Curation
@@ -62,4 +65,12 @@ export interface NewsCuration {
 	top_articles: Article[];
 	market_sentiment: MarketSentiment;
 	sentiment_distribution: SentimentDistribution;
+}
+
+export interface Mover {
+	ticker: string;
+	price: string;
+	changeAmount: string;
+	changePercentage: string;
+	volume: string;
 }

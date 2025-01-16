@@ -1,6 +1,10 @@
 <script lang="ts">
 	import CommandLine from '$lib/components/cmd/CommandLine.svelte';
+	import TopGainers from '$lib/components/welcome/TopGainers.svelte';
+	import TopLosers from '$lib/components/welcome/TopLosers.svelte';
+	import TopMovers from '$lib/components/welcome/TopMovers.svelte';
 	import SignOutButton from 'clerk-sveltekit/client/SignOutButton.svelte';
+	import { fetchGainers, fetchLosers, fetchMostTraded } from '../../../api/movers/movers';
 	import SignedIn from 'clerk-sveltekit/client/SignedIn.svelte';
 	import * as Card from '$lib/components/ui/card';
 	import * as Button from '$lib/components/ui/button';
@@ -61,6 +65,11 @@
 								<TrendingUp class="h-5 w-5 animate-bounce text-primary" />
 							</div>
 							<CommandLine />
+						</div>
+						<div>
+							<TopGainers {fetchGainers} />
+							<TopLosers {fetchLosers} />
+							<TopMovers {fetchMostTraded} />
 						</div>
 
 						<div class="w-full space-y-4">
