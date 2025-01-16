@@ -66,11 +66,7 @@
 							</div>
 							<CommandLine />
 						</div>
-						<div>
-							<TopGainers {fetchGainers} />
-							<TopLosers {fetchLosers} />
-							<TopMovers {fetchMostTraded} />
-						</div>
+						<div></div>
 
 						<div class="w-full space-y-4">
 							<Separator.Root />

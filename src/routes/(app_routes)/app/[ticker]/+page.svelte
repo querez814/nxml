@@ -2,7 +2,7 @@
 	import * as Card from '$lib/components/ui/card';
 	import { fade, fly } from 'svelte/transition';
 	import type { PageData } from './$types';
-
+	import Technicals from '$lib/components/display/Technicals.svelte';
 	let { data } = $props<{ data: PageData }>();
 
 	const ticker = $derived(data.newsData?.ticker);
@@ -177,6 +177,17 @@
 					</Card.Content>
 				</Card.Root>
 			</div>
+	{#if data.technicalData}
+				<Technicals 
+					processedData={data.technicalData} 
+					dailyAnalysis={technicals.getDailyAnalysis(
+						data.technicalData, 
+						technicals.getAvailableDates(data.technicalData)[
+							technicals.getAvailableDates(data.technicalData).length - 1
+						]
+					)} 
+				/>:w
+				
 		</div>
 	</div>
 </div>

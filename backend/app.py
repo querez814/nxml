@@ -11,7 +11,7 @@ from fetch.prices import router as prices_router
 from fetch.technicals import router as entry_router
 from packages import router as pkg_router
 from filteringtickers import router as ticker_router
-
+from newssearch import router as news_router
 
 app = FastAPI()
 
@@ -42,3 +42,4 @@ app.include_router(prices_router, prefix="/financials", tags=["Summary"])
 app.include_router(entry_router, prefix="/technicals", tags=["Technicals"])
 app.include_router(ticker_router, prefix="/current", tags=["Technicals"])
 app.include_router(pkg_router, prefix="/current", tags=["Current"])
+app.include_router(news_router, prefix="/current", tags=["Current"])
