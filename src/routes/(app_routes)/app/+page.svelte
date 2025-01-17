@@ -14,9 +14,11 @@
 	import WelcomeCarousel from '$lib/components/welcome/WelcomeCarousel.svelte';
 	import LandingTutorial from '$lib/components/welcome/LandingTutorial.svelte';
 	import CommandList from '$lib/components/welcome/CommandList.svelte';
-
 	let showTutorial = $state(false);
 	let showCommands = $state(false);
+	import type { PageData } from './$types';
+
+	let { data }: { data: PageData } = $props();
 </script>
 
 <SignedIn let:user>

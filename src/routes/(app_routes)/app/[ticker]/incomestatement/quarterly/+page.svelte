@@ -3,6 +3,7 @@
 	import IncomeStatementTutorial from '$lib/components/tutorial/incomestatement/IncomeStatementTutorial.svelte';
 	import type { PageData } from '../quarterly/$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
+	import { frontPageNews } from '../../../../../../api/media/generalnews';
 
 	let { data }: { data: PageData } = $props();
 	const quarters = data.quarters || [];
