@@ -177,17 +177,6 @@
 					</Card.Content>
 				</Card.Root>
 			</div>
-	{#if data.technicalData}
-				<Technicals 
-					processedData={data.technicalData} 
-					dailyAnalysis={technicals.getDailyAnalysis(
-						data.technicalData, 
-						technicals.getAvailableDates(data.technicalData)[
-							technicals.getAvailableDates(data.technicalData).length - 1
-						]
-					)} 
-				/>:w
-				
 		</div>
 	</div>
 </div>

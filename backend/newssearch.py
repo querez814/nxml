@@ -3,12 +3,9 @@ from fastapi import APIRouter
 import yfinance as yf 
 import requests as r
 import pandas as pd
-import spacy
-import bs4
-import nltk
-import datetime
 
 router = APIRouter()
+
 
 
 @router.get("/newnew")

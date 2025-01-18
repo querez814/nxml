@@ -29,7 +29,7 @@ interface ResSubsection {
 	tag: string;
 }
 
-export const frontPageNews = async (): Promise<News> => {
+export const frontPageNews = async (): Promise<any[]> => {
 	const data = await fetch(`${api_url}/current/newnew`);
 	if (!data.ok) {
 		throw new Error('failed to fetch the front page news');
