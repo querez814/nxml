@@ -1,11 +1,10 @@
 import type { PageLoad } from './$types';
-import { fetchNewsData } from '../../../../api/media/newscuration';
+import { fetchTickerNews } from '../../../../api/media/tickernews';
 
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
-	const newsData = await fetchNewsData(ticker);
-
+	const response = await fetchTickerNews(ticker);
 	return {
-		newsData
+		news: response
 	};
 }) satisfies PageLoad;

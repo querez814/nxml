@@ -128,12 +128,13 @@
 							role="button"
 							tabindex="0"
 							class="group h-full"
-							on:click={() => {
-								if (article.url) {
-									window.open(article.url, '_blank', 'noopener,noreferrer');
+							onclick={() => {
+								const imgUrl = article?.url?.resolutions?.[0].url;
+								if (imgUrl) {
+									window.open(imgUrl, 'blank', 'noopener,noreferrer');
 								}
 							}}
-							on:keydown={(e) => {
+							onkeydown={(e) => {
 								if (e.key === 'Enter' || e.key === ' ') {
 									if (article.url) {
 										window.open(article.url, '_blank', 'noopener,noreferrer');
@@ -169,7 +170,7 @@
 										{#each article.relatedTickers as ticker}
 											<span
 												class="rounded bg-primary/10 px-2 py-1 text-xs"
-												on:click|stopPropagation={() => {
+												onclick={() => {
 													window.open(
 														`https://finance.yahoo.com/quote/${ticker}`,
 														'_blank',

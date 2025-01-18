@@ -136,10 +136,10 @@ async def get_cap_struct(ticker: str):
        raise HTTPException(status_code=500, detail=f"Error preparing final output: {str(e)}")
 
 @router.get("/valuation/quarterly/{ticker}/ttm")
-async def get_valuation(ticker: str):
+def get_valuation(ticker: str):
     summary = pd.DataFrame([get_summary(ticker)])
     symbol = summary.loc[0, "Symbol"]
-    cap_struct = pd.DataFrame(await get_cap_struct(ticker))
+    cap_struct = pd.DataFrame( get_cap_struct(ticker))
     ttm = pd.DataFrame(calculate_valuations(ticker))
 
     numeric_cols = [col for col in ttm.columns if col != "fiscalDateEnding"]

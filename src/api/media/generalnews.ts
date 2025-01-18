@@ -30,7 +30,7 @@ interface ResSubsection {
 }
 
 export const frontPageNews = async (): Promise<any[]> => {
-	const data = await fetch(`${api_url}/current/newnew`);
+	const data = await fetch(`http://127.0.0.1:8000/current/newnew`);
 	if (!data.ok) {
 		throw new Error('failed to fetch the front page news');
 	}
