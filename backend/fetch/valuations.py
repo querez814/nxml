@@ -11,18 +11,18 @@ from fetch.balancesheet import get_quarterly_balance_sheet_data
 from fetch.summary import get_summary
 import numpy as np
 
+env.load_dotenv()
+av_api = os.getenv("ALPHA_VANTAGE")
+router = APIRouter()
+
 def ensure_numeric(df, exclude_cols=["fiscalDateEnding", "Symbol"]):
     for col in df.columns:
         if col not in exclude_cols:
             df[col] = pd.to_numeric(df[col], errors="coerce")
     return df.fillna(0)
 
-env.load_dotenv()
-av_api = os.getenv("ALPHA_VANTAGE")
-router = APIRouter()
-
 @router.get("/valuation/quarterly/{ticker}")
-def calculate_valuations(ticker:str):
+def calculate_valuations(ticker: str):
     ttm_data = pd.DataFrame(get_ttm_data(ticker)["quarters"])
     
     for col in ttm_data.columns:
@@ -55,125 +55,114 @@ def calculate_valuations(ticker:str):
     
     return ttm_df.to_dict(orient="records")
 
-@router.get("/capitalstructure/quarterly/{ticker}")
-async def get_cap_struct(ticker: str):
-   ticker = get_summary(ticker)["Symbol"]
-   try:
-       bs_data = get_quarterly_balance_sheet_data(ticker)
-       bs = pd.DataFrame(bs_data)
-       if bs.empty:
-           raise HTTPException(status_code=404, detail="No balance sheet data available")
-           
-       prices = get_prices(ticker)
-       if not prices:
-           raise HTTPException(status_code=404, detail="No price data available")
-           
-       prices_df = pd.DataFrame(prices)
-       
-   except Exception as e:
-       raise HTTPException(status_code=500, detail=f"Error fetching data: {str(e)}")
-
-   try:
-       bs["Symbol"] = ticker
-       prices_df["fiscalDateEnding"] = prices_df["fiscalDateEnding"].str[:10]
-       bs["fiscalDateEnding"] = bs["fiscalDateEnding"].str[:10]
-       prices_df = prices_df.sort_values("fiscalDateEnding", ascending=False)
-       latest_closing_price = float(prices_df.iloc[0]["5. adjusted close"])
-       
-   except Exception as e:
-       raise HTTPException(status_code=500, detail=f"Error processing dates or prices: {str(e)}")
-
-   def get_closest_adjusted_close(date):
-       matching_row = prices_df[prices_df["fiscalDateEnding"] <= date].head(1)
-       if not matching_row.empty:
-           return float(matching_row["5. adjusted close"].iloc[0])
-       return None
-
-   try:
-       bs["adjustedPrice"] = bs["fiscalDateEnding"].apply(get_closest_adjusted_close)
-       numeric_columns = ["commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]
-       for col in numeric_columns:
-           bs[col] = pd.to_numeric(bs[col], errors="coerce")
-       bs.fillna(0, inplace=True)
-   except Exception as e:
-       raise HTTPException(status_code=500, detail=f"Error matching prices to dates: {str(e)}")
-
-   try:
-       latest_quarter_so = float(bs["commonStockSharesOutstanding"].iloc[0])
-       latest_quarter_cash_cash_eq = float(bs["cashAndCashEquivalentsAtCarryingValue"].iloc[0])
-       latest_quarter_current_debt = float(bs["currentDebt"].iloc[0])
-
-       bs["latest_adjusted_close"] = float(latest_closing_price)
-       bs["mc"] = bs["commonStockSharesOutstanding"] * bs["adjustedPrice"]
-       bs["currentmc"] = latest_quarter_so * latest_closing_price
-       current_mc = bs["currentmc"]
-       bs["ev"] = bs["mc"] + bs["cashAndCashEquivalentsAtCarryingValue"] + bs["currentDebt"]
-       bs["latestev"] = current_mc + latest_quarter_cash_cash_eq + latest_quarter_current_debt
-   except Exception as e:
-       raise HTTPException(status_code=500, detail=f"Error calculating metrics: {str(e)}")
-
-   try:
-       result = bs[["Symbol", "fiscalDateEnding", "adjustedPrice","latest_adjusted_close", "commonStockSharesOutstanding", 
-                   "cashAndCashEquivalentsAtCarryingValue", "currentDebt", "currentmc", 
-                   "latestev", "mc", "ev"]].copy()
-       
-       result = result.rename(columns={
-           "Symbol": "Symbol",
-           "latest_adjusted_close":"latest_closing_price",
-           "commonStockSharesOutstanding": "sharesOutstanding",
-           "cashAndCashEquivalentsAtCarryingValue": "cashCashEq",
-           "currentmc": "latestMC",
-           "mc":"mc",
-           "ev":"ev",
-           "latestev":"latestev"
-       })
-       
-       if result.empty:
-           raise HTTPException(status_code=404, detail="No results available after processing")
-       
-       return result.to_dict(orient="records")
-   except Exception as e:
-       raise HTTPException(status_code=500, detail=f"Error preparing final output: {str(e)}")
+def get_cap_struct(ticker: str):
+    ticker = get_summary(ticker)["Symbol"]
+    try:
+        bs_data = get_quarterly_balance_sheet_data(ticker)
+        bs = pd.DataFrame(bs_data)
+        if bs.empty:
+            raise HTTPException(status_code=404, detail="No balance sheet data available")
+            
+        prices = get_prices(ticker)
+        if not prices:
+            raise HTTPException(status_code=404, detail="No price data available")
+            
+        prices_df = pd.DataFrame(prices)
+        
+        prices_df["fiscalDateEnding"] = pd.to_datetime(prices_df["fiscalDateEnding"]) 
+        bs["fiscalDateEnding"] = pd.to_datetime(bs["fiscalDateEnding"])
+        prices_df = prices_df.sort_values("fiscalDateEnding", ascending=False)
+        latest_closing_price = float(prices_df.iloc[0]["5. adjusted close"])
+        
+        def get_closest_adjusted_close(date):
+            matching_row = prices_df[prices_df["fiscalDateEnding"] <= date].head(1)
+            if not matching_row.empty:
+                return float(matching_row["5. adjusted close"].iloc[0])
+            return None
+        
+        bs["adjustedPrice"] = bs["fiscalDateEnding"].apply(get_closest_adjusted_close)
+        bs["latest_closing_price"] = latest_closing_price
+        bs["Symbol"] = ticker
+        
+        numeric_columns = ["commonStockSharesOutstanding", "cashAndCashEquivalentsAtCarryingValue", "currentDebt"]
+        for col in numeric_columns:
+            bs[col] = pd.to_numeric(bs[col], errors="coerce")
+            
+        bs.fillna(0, inplace=True)
+        
+        latest_quarter_so = float(bs["commonStockSharesOutstanding"].iloc[0])
+        latest_quarter_cash_cash_eq = float(bs["cashAndCashEquivalentsAtCarryingValue"].iloc[0])
+        latest_quarter_current_debt = float(bs["currentDebt"].iloc[0])
+        
+        bs["mc"] = bs["commonStockSharesOutstanding"] * bs["adjustedPrice"]
+        bs["currentmc"] = latest_quarter_so * latest_closing_price
+        current_mc = bs["currentmc"]
+        bs["ev"] = bs["mc"] + bs["cashAndCashEquivalentsAtCarryingValue"] + bs["currentDebt"]
+        bs["latestev"] = current_mc + latest_quarter_cash_cash_eq + latest_quarter_current_debt
+        
+        result = bs[["fiscalDateEnding", "adjustedPrice", "latest_closing_price", "commonStockSharesOutstanding", 
+                    "cashAndCashEquivalentsAtCarryingValue", "currentDebt", "currentmc", 
+                    "latestev", "mc", "ev"]].copy()
+        
+        result = result.rename(columns={
+            "commonStockSharesOutstanding": "sharesOutstanding",
+            "cashAndCashEquivalentsAtCarryingValue": "cashCashEq",
+            "currentmc": "latestMC"
+        })
+        
+        if result.empty:
+            raise HTTPException(status_code=404, detail="No results available after processing")
+        
+        return result.to_dict(orient="records")
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error processing data: {str(e)}")
 
 @router.get("/valuation/quarterly/{ticker}/ttm")
 def get_valuation(ticker: str):
-    summary = pd.DataFrame([get_summary(ticker)])
-    symbol = summary.loc[0, "Symbol"]
-    cap_struct = pd.DataFrame( get_cap_struct(ticker))
-    ttm = pd.DataFrame(calculate_valuations(ticker))
+    try:
+        summary = pd.DataFrame([get_summary(ticker)])
+        symbol = summary.loc[0, "Symbol"]
+        cap_struct_data = get_cap_struct(ticker)
+        cap_struct = pd.DataFrame(cap_struct_data)
+        ttm = pd.DataFrame(calculate_valuations(ticker))
 
-    numeric_cols = [col for col in ttm.columns if col != "fiscalDateEnding"]
-    for col in numeric_cols:
-        ttm[col] = pd.to_numeric(ttm[col].str.replace(',', ''), errors='coerce')
+        numeric_cols = [col for col in ttm.columns if col != "fiscalDateEnding"]
+        for col in numeric_cols:
+            ttm[col] = pd.to_numeric(ttm[col].str.replace(',', ''), errors="coerce")
 
-    cap_struct = ensure_numeric(cap_struct)
+        cap_struct = ensure_numeric(cap_struct)
 
-    result = pd.DataFrame()
-    result["fiscalDateEnding"] = cap_struct["fiscalDateEnding"]
-    result["symbol"] = symbol
+        result = pd.DataFrame()
+        result["fiscalDateEnding"] = cap_struct["fiscalDateEnding"]
+        result["symbol"] = symbol
 
-    def safe_division(numerator, denominator):
-        result = (numerator / denominator).replace([np.inf, -np.inf], 0)
-        return result.round(2)
+        def safe_division(numerator, denominator):
+            result = (numerator / denominator).replace([np.inf, -np.inf], 0)
+            return result.round(2)
 
-    result["evtosales"] = safe_division(cap_struct["ev"], ttm["totalRevenue_ttm"])
-    result["evtogrossprofit"] = safe_division(cap_struct["ev"], ttm["grossProfit_ttm"])
-    result["evtoebit"] = safe_division(cap_struct["ev"], ttm["ebit_ttm"])
-    result["evtoebitda"] = safe_division(cap_struct["ev"], ttm["ebitda_ttm"])
-    result["evtonetincome"] = safe_division(cap_struct["ev"], ttm["netIncome_ttm"])
-    result["revenue_per_share_ttm"] = safe_division(ttm["totalRevenue_ttm"], cap_struct["sharesOutstanding"])
-    result["price_to_sales_ratio_ttm"] = safe_division(cap_struct["adjustedPrice"], result["revenue_per_share_ttm"])
+        result["evtosales"] = safe_division(cap_struct["ev"], ttm["totalRevenue_ttm"])
+        result["evtogrossprofit"] = safe_division(cap_struct["ev"], ttm["grossProfit_ttm"]) 
+        result["evtoebit"] = safe_division(cap_struct["ev"], ttm["ebit_ttm"])
+        result["evtoebitda"] = safe_division(cap_struct["ev"], ttm["ebitda_ttm"])
+        result["evtonetincome"] = safe_division(cap_struct["ev"], ttm["netIncome_ttm"])
+        result["revenue_per_share_ttm"] = safe_division(ttm["totalRevenue_ttm"], cap_struct["sharesOutstanding"])
+        result["price_to_sales_ratio_ttm"] = safe_division(cap_struct["adjustedPrice"], result["revenue_per_share_ttm"])
 
-    additional_metrics = ["AnalystTargetPrice", "AnalystRatingStrongBuy", "AnalystRatingBuy",
-                       "AnalystRatingHold", "AnalystRatingSell", "AnalystRatingStrongSell",
-                       "TrailingPE", "ForwardPE", "Sector", "Industry"]
+        additional_metrics = ["AnalystTargetPrice", "AnalystRatingStrongBuy", "AnalystRatingBuy", 
+                            "AnalystRatingHold", "AnalystRatingSell", "AnalystRatingStrongSell",
+                            "TrailingPE", "ForwardPE", "Sector", "Industry"]
 
-    for metric in additional_metrics:
-        if metric in summary.columns:
-            if metric in ["Sector", "Industry"]:
-                result[metric] = summary[metric].iloc[0]
-            else:
-                result[metric] = pd.to_numeric(summary[metric], errors="coerce")
+        for metric in additional_metrics:
+            if metric in summary.columns:
+                if metric in ["Sector", "Industry"]:
+                    result[metric] = summary[metric].iloc[0]
+                else:
+                    value = summary[metric].iloc[0]
+                    result[metric] = value if pd.notnull(value) else 0
+                    result[metric] = pd.Series([value] * len(result), index=result.index)
 
-    result = result.fillna(0)
-    return result.to_dict(orient="records")
+        result = result.fillna(0)
+        return result.to_dict(orient="records")
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=f"Error calculating valuations: {str(e)}")
