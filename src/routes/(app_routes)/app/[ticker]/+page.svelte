@@ -10,7 +10,6 @@
 	let ticker = data.ticker.toLocaleUpperCase();
 	let newsReports = data.news.slice(0, 10);
 
-	// Calculate sentiment score
 	const sentimentScore = $derived(
 		(data.valuation.AnalystRatingStrongBuy * 2 +
 			data.valuation.AnalystRatingBuy -
@@ -22,7 +21,6 @@
 				data.valuation.AnalystRatingStrongSell)
 	);
 
-	// Determine sentiment color based on score
 	const getSentimentColor = $derived(() => {
 		if (sentimentScore > 0.66) return 'bg-green-500';
 		if (sentimentScore > 0.33) return 'bg-green-400';
@@ -32,7 +30,6 @@
 		return 'bg-red-500';
 	});
 
-	// Format date to be more readable
 	function formatDate(dateString: string): string {
 		// Handle "Invalid Date" case
 		if (dateString === 'Invalid Date') {
@@ -75,7 +72,6 @@
 						</div>
 					</div>
 
-					<!-- Metrics Section -->
 					<div class="mb-8 grid grid-cols-4 gap-8">
 						<div>
 							<div class="font-mono text-xs text-gray-500">EV/SALES</div>
@@ -118,7 +114,6 @@
 						</div>
 					</div>
 
-					<!-- News Section -->
 					<div class="space-y-6">
 						<div class="font-mono text-xs text-gray-500">LATEST NEWS</div>
 						{#each newsReports as news}
@@ -133,7 +128,6 @@
 										/>
 									</div>
 
-									<!-- News Content -->
 									<div class="flex-1 space-y-2">
 										<div class="flex items-start justify-between">
 											<div class="font-mono text-sm font-medium text-gray-300">
@@ -144,7 +138,6 @@
 											</div>
 										</div>
 
-										<!-- Expandable Text Summary -->
 										<details class="group cursor-pointer">
 											<summary class="list-none">
 												<div class="line-clamp-2 font-mono text-xs text-gray-500">
@@ -159,7 +152,6 @@
 											</div>
 										</details>
 
-										<!-- News Metadata -->
 										<div class="flex items-center gap-3">
 											<Badge variant="outline">
 												<div class="font-mono text-xs text-slate-300">
@@ -192,7 +184,6 @@
 			</Card.Root>
 		</div>
 
-		<!-- Analyst Ratings Column -->
 		<div class="col-span-1">
 			<Card.Root class="border-none bg-[#111215]">
 				<div class="p-6">

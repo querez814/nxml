@@ -35,7 +35,7 @@
 	<div class="fixed left-0 right-0 top-0 z-20">
 		<div class="flex h-14 items-center justify-between bg-gray-900/30 px-4 backdrop-blur-sm">
 			<div class="flex items-center gap-4">
-				<a href="/" class="font-mono text-xl text-green-500">InvestorTerminal</a>
+				<a href="/" class="font-mono text-xl text-green-500">Due Diligence</a>
 				<Toggle.Root
 					pressed={showCommandLine}
 					onPressedChange={handlePressedChange}

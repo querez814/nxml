@@ -78,7 +78,7 @@
 				<p
 					class="mt-4 max-w-[42rem] animate-[fade-in_0.5s_ease-out] text-center text-muted-foreground"
 				>
-					Financial Data and Metrics used by the pros, at your fingertips
+					Fundamental, Essential Financial Data and Metrics used by the pros, at your fingertips
 				</p>
 			</div>
 
