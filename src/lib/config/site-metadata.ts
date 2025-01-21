@@ -7,9 +7,9 @@ import {
 import type { PricingFeature, TierFrequency } from '$lib/types/types';
 
 const siteMetadata = {
-	title: 'InvestorTerminal',
-	author: 'InvestorTerminal',
-	headerTitle: 'InvestorTerminal',
+	title: 'Due Diligence',
+	author: 'The Team :)',
+	headerTitle: 'Due Diligence',
 	description: '',
 	theme: 'system',
 	locale: 'en-US',
@@ -65,7 +65,7 @@ const siteMetadata = {
 			monthly: {
 				link: '/app', // Force to app route
 				priceId: 'test_price_id',
-				price: 25,
+				price: 15,
 				currency: 'USD',
 				frequency: 'mo' as TierFrequency
 			}

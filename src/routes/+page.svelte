@@ -84,13 +84,13 @@
 				<h1
 					class="text-transparen relative z-10 mb-0 mt-16 bg-gradient-to-b from-neutral-200 to-neutral-600 bg-clip-text pb-3 text-center font-sans text-2xl font-semibold md:px-16 md:text-5xl xl:text-6xl"
 				>
-					Seize Market Opportunities <br /> with Immediate Insights
+					Seize Market Opportunities <br /> with Fundamental Insights
 				</h1>
 				<p
 					class="mx-auto my-3 max-w-md px-6 text-center text-base leading-snug tracking-tight text-foreground/50 md:!max-w-[40rem] md:text-lg"
 				>
-					Cut through market noise with data that matters. Our terminal provides the essential
-					insights you need to make informed, strategic investment decisions.
+					The market has too much noise and charts, tired of being spammed with paid off useless
+					articles? Tired of having to analyze finances with excel? Well
 				</p>
 			</div>
 			<div class="mx-auto flex flex-col items-center">
@@ -116,19 +116,10 @@
 						</Button>
 					</a>
 				</div>
-				<p class="py-4 text-center text-[0.815rem]">Lorem ipsum damut, lorem ipsum damut</p>
 				<AsSeenOn />
 			</div>
 		</section>
 	</div>
-	<!-- this is a comment! -->
-	<section id="features" class="flex flex-wrap justify-around gap-24 py-12">
-		{#each appMainFeature as { icon, description }}
-			<FeatureSection>
-				{description}
-			</FeatureSection>
-		{/each}
-	</section>
 	<!-- this is a comment! -->
 	<section id="pricing" class="flex w-full flex-col items-center gap-4 px-6 py-12 md:px-20">
 		<h3
