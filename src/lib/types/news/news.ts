@@ -1,36 +1,48 @@
 export interface NewsResponse {
 	ticker: string;
-	count: number;
-	news: NewsItem[];
-	valuation: ValuationMetrics;
+	news: News[];
+	analystcoverage: AnalystCoverage[];
+	valuation: Valuation;
 }
 
-export interface NewsItem {
-	id: string;
-	publisher: {
-		name: string;
-		homepage_url: string;
-		logo_url: string;
-		favicon_url: string;
-	};
-	title: string;
-	author: string;
-	published_utc: string;
-	article_url: string;
-	tickers: string[];
-	description: string;
-	keywords: string[];
-	insights: NewsInsight[];
+export interface GeneralNewsResponse {
+	news_url: string;
 	image_url: string;
+	title: string;
+	text: string;
+	source_name: string;
+	date: string;
+	topics: string[];
+	sentiment: string;
+	type: string;
+	tickers: string[];
 }
 
-export interface NewsInsight {
-	ticker: string;
-	sentiment: 'positive' | 'negative' | 'neutral';
-	sentiment_reasoning: string;
+export interface News {
+	news_url: string;
+	image_url: string;
+	title: string;
+	text: string;
+	source_name: string;
+	date: string;
+	topics: string[];
+	sentiment: string;
+	type: string;
+	tickers: string[];
 }
 
-export interface ValuationMetrics {
+export interface AnalystCoverage {
+	Type: string;
+	Ticker: string;
+	AnalystFirm: string;
+	PreviousRating?: string | null;
+	CurrentRating: string;
+	PreviousPriceTarget?: string | null;
+	CurrentPriceTarget?: string | null;
+	Date: string;
+}
+
+export interface Valuation {
 	fiscalDateEnding: string;
 	symbol: string;
 	evtosales: number;
@@ -40,8 +52,8 @@ export interface ValuationMetrics {
 	evtonetincome: number;
 	revenue_per_share_ttm: number;
 	price_to_sales_ratio_ttm: number;
-	current_evtosales_ttm?: number;
-	current_price_to_sales_ratio_ttm?: number;
+	current_evtosales_ttm: number;
+	current_price_to_sales_ratio_ttm: number;
 	AnalystTargetPrice: number;
 	AnalystRatingStrongBuy: number;
 	AnalystRatingBuy: number;

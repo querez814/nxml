@@ -1,12 +1,16 @@
-import type { ValuationMetrics } from '$lib/types/news/news';
 import type { PageLoad } from './$types';
 import { getTickerNews } from '../../../../api/media/tickernews';
-import type Page from '../+page.svelte';
 
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
 	const response = await getTickerNews(ticker);
+	const valuation = response.valuation;
+	const news = response.news;
+	const analystCoverage = response.analystcoverage;
 	return {
-		news: response
+		ticker,
+		valuation,
+		news,
+		analystCoverage
 	};
 }) satisfies PageLoad;
