@@ -19,25 +19,30 @@
 	const learnMoreLink = '#features';
 
 	const features = [
-		{ name: '5 users', included: true },
-		{ name: '20 projects', included: true },
-		{ name: '20GB storage', included: true },
-		{ name: 'Priority support', included: true },
-		{ name: 'Advanced analytics', included: false }
+		{ name: 'Constant Market News Updates', included: true },
+		{ name: 'News Sentiment Tracking', included: true },
+		{ name: 'Financial Data for All Publicly Listed Companies', included: true },
+		{
+			name: 'Calculated Margins, Ratios, a complete suite for you to make the best investment decisions ',
+			included: true
+		},
+		{ name: "Terminal or Standard Form of Navigation. It's up to u!", included: false }
 	];
 
 	const faq = [
 		{
-			question: 'Is it accessible?',
-			answer: 'Yes. It adheres to the WAI-ARIA design pattern.'
+			question: 'Do you have more planned',
+			answer:
+				'Of Course! I plan to integrate technicals, more advanced financial calculations, recommendations. The more I learn so will you guys! Let me do the heavy lifting!'
 		},
 		{
-			question: 'Is it styled?',
-			answer: "Yes. It comes with default styles that matches the other components' aesthetic."
+			question: 'What about Crypto',
+			answer: "Stay posted for the first major update :) that\'s all I have to say."
 		},
 		{
-			question: 'Is it animated?',
-			answer: "Yes. It's animated by default, but you can disable it if you prefer."
+			question: 'Are there known bugs',
+			answer:
+				'Yes, as with any early release there are some holes that still need patching. You can report any bug to us and we plan on adding a list of collected bugs to the front page for you to track the completion with us. After all, the team and I just want to make really cool software that people genuinley want to use'
 		}
 	];
 
