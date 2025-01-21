@@ -1,16 +1,22 @@
 <script lang="ts">
 	import CommandLine from '$lib/components/cmd/CommandLine.svelte';
-	import TopGainers from '$lib/components/welcome/TopGainers.svelte';
-	import TopLosers from '$lib/components/welcome/TopLosers.svelte';
-	import TopMovers from '$lib/components/welcome/TopMovers.svelte';
 	import SignOutButton from 'clerk-sveltekit/client/SignOutButton.svelte';
-	import { fetchGainers, fetchLosers, fetchMostTraded } from '../../../api/movers/movers';
 	import SignedIn from 'clerk-sveltekit/client/SignedIn.svelte';
+	import { Badge } from '$lib/components/ui/badge';
 	import * as Card from '$lib/components/ui/card';
 	import * as Button from '$lib/components/ui/button';
 	import * as Dialog from '$lib/components/ui/dialog';
 	import * as Separator from '$lib/components/ui/separator';
-	import { Terminal, Sparkles, Keyboard, TrendingUp, ExternalLink } from 'lucide-svelte';
+	import {
+		Terminal,
+		Sparkles,
+		Keyboard,
+		TrendingUp,
+		Newspaper,
+		ExternalLink,
+		Video,
+		FileText
+	} from 'lucide-svelte';
 	import WelcomeCarousel from '$lib/components/welcome/WelcomeCarousel.svelte';
 	import LandingTutorial from '$lib/components/welcome/LandingTutorial.svelte';
 	import CommandList from '$lib/components/welcome/CommandList.svelte';
@@ -19,11 +25,45 @@
 	let showTutorial = $state(false);
 	let showCommands = $state(false);
 
-	function formatTimestamp(timestamp: number): string {
-		return new Date(timestamp * 1000).toLocaleString();
-	}
 	let { data }: { data: PageData } = $props();
-	const newsItems = data || [];
+	let newsResponse = data.news;
+
+	function formatDate(dateStr: string): string {
+		try {
+			const date = new Date(dateStr);
+			return new Intl.DateTimeFormat('en-US', {
+				hour: 'numeric',
+				minute: 'numeric',
+				month: 'short',
+				day: 'numeric',
+				hour12: true
+			}).format(date);
+		} catch {
+			return 'Recent';
+		}
+	}
+
+	function getNewsIcon(type: string) {
+		switch (type.toLowerCase()) {
+			case 'video':
+				return Video;
+			case 'article':
+				return FileText;
+			default:
+				return Newspaper;
+		}
+	}
+
+	function getSentimentColor(sentiment: string): string {
+		switch (sentiment.toLowerCase()) {
+			case 'positive':
+				return 'text-green-400 border-green-400/20';
+			case 'negative':
+				return 'text-red-400 border-red-400/20';
+			default:
+				return 'text-blue-400 border-blue-400/20';
+		}
+	}
 </script>
 
 <SignedIn let:user>
@@ -87,9 +127,9 @@
 											<Dialog.Content class="sm:max-w-2xl">
 												<LandingTutorial />
 												<Dialog.Close>
-													<Button.Root variant="outline" size="sm" class="mt-4">
-														Close Tutorial
-													</Button.Root>
+													<Button.Root variant="outline" size="sm" class="mt-4"
+														>Close Tutorial</Button.Root
+													>
 												</Dialog.Close>
 											</Dialog.Content>
 										</Dialog.Portal>
@@ -104,9 +144,9 @@
 											<Dialog.Content class="sm:max-w-2xl">
 												<CommandList />
 												<Dialog.Close>
-													<Button.Root variant="outline" size="sm" class="mt-4">
-														Close Commands
-													</Button.Root>
+													<Button.Root variant="outline" size="sm" class="mt-4"
+														>Close Commands</Button.Root
+													>
 												</Dialog.Close>
 											</Dialog.Content>
 										</Dialog.Portal>
@@ -118,76 +158,81 @@
 				</Card.Root>
 			</div>
 
-			<div class="mb-6">
-				<h2 class="text-2xl font-bold tracking-tight">Latest Market News</h2>
-			</div>
-			<div class="mb-12 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
-				{#each newsItems?.data as article}
-					<Card.Root class="h-full cursor-pointer overflow-hidden transition-all hover:shadow-lg">
-						<div
-							role="button"
-							tabindex="0"
-							class="group h-full"
-							onclick={() => {
-								const imgUrl = article?.url?.resolutions?.[0].url;
-								if (imgUrl) {
-									window.open(imgUrl, 'blank', 'noopener,noreferrer');
-								}
-							}}
-							onkeydown={(e) => {
-								if (e.key === 'Enter' || e.key === ' ') {
-									if (article.url) {
-										window.open(article.url, '_blank', 'noopener,noreferrer');
-									}
-								}
-							}}
-						>
-							{#if article.url?.resolutions?.[0]?.url}
-								<img
-									src={article.url.resolutions[0].url}
-									alt={article.title}
-									class="h-48 w-full object-cover transition-transform group-hover:scale-105"
-								/>
-							{/if}
+			<div class="mx-auto max-w-4xl px-4">
+				<Card.Root
+					class="border-2 bg-background/95 backdrop-blur transition-all duration-300 hover:border-primary/50 supports-[backdrop-filter]:bg-background/80"
+				>
+					<Card.Header>
+						<Card.Title class="flex items-center gap-2 text-2xl font-bold tracking-tight">
+							<Newspaper class="h-6 w-6" />
+							Market Pulse
+						</Card.Title>
+						<Card.Description>Latest market updates and financial news</Card.Description>
+					</Card.Header>
 
-							<Card.Header>
-								<Card.Title
-									class="line-clamp-2 flex items-start gap-2 text-lg group-hover:text-primary"
-								>
-									{article.title}
-									<ExternalLink
-										class="h-4 w-4 flex-shrink-0 opacity-0 transition-opacity group-hover:opacity-100"
-									/>
-								</Card.Title>
-								<Card.Description class="mt-2 text-sm text-muted-foreground">
-									{article.publisher} • {formatTimestamp(article.providerPublishTime)}
-								</Card.Description>
-							</Card.Header>
+					<Card.Content>
+						<div class="space-y-6">
+							{#each newsResponse as news, index}
+								<div class="group relative">
+									<div class="flex gap-4">
+										<div class="hidden sm:block">
+											<img
+												src={news.image_url}
+												alt={news.title}
+												class="h-24 w-24 rounded-lg object-cover transition-transform duration-300 group-hover:scale-105"
+											/>
+										</div>
 
-							{#if article.relatedTickers?.length}
-								<Card.Content>
-									<div class="flex flex-wrap gap-2">
-										{#each article.relatedTickers as ticker}
-											<span
-												class="rounded bg-primary/10 px-2 py-1 text-xs"
-												onclick={() => {
-													window.open(
-														`https://finance.yahoo.com/quote/${ticker}`,
-														'_blank',
-														'noopener,noreferrer'
-													);
-												}}
-											>
-												${ticker}
-											</span>
-										{/each}
+										<div class="flex flex-1 flex-col space-y-2">
+											<div class="flex items-start justify-between gap-4">
+												<h3 class="font-medium leading-snug text-primary">{news.title}</h3>
+												<time class="whitespace-nowrap text-sm text-muted-foreground"
+													>{formatDate(news.date)}</time
+												>
+											</div>
+
+											<p class="text-sm text-muted-foreground">{news.text}</p>
+
+											<div class="flex flex-wrap items-center gap-2">
+												<Badge variant="outline" class="flex items-center gap-1">
+													{@const NewsIcon = getNewsIcon(news.type)}
+													<NewsIcon class="h-3 w-3" />
+													<span>{news.source_name}</span>
+												</Badge>
+
+												<Badge variant="outline" class={getSentimentColor(news.sentiment)}>
+													{news.sentiment}
+												</Badge>
+
+												{#if news.topics?.length}
+													{#each news.topics as topic}
+														<span class="text-xs text-muted-foreground">#{topic}</span>
+													{/each}
+												{/if}
+
+												<a
+													href={news.news_url}
+													target="_blank"
+													rel="noopener noreferrer"
+													class="ml-auto inline-flex items-center gap-1 text-xs text-primary hover:underline"
+												>
+													Read more
+													<ExternalLink class="h-3 w-3" />
+												</a>
+											</div>
+										</div>
 									</div>
-								</Card.Content>
-							{/if}
+
+									{#if index < newsResponse.length - 1}
+										<Separator.Root class="my-4" />
+									{/if}
+								</div>
+							{/each}
 						</div>
-					</Card.Root>
-				{/each}
+					</Card.Content>
+				</Card.Root>
 			</div>
+
 			<div class="mb-8">
 				<WelcomeCarousel />
 			</div>
@@ -198,3 +243,13 @@
 		</div>
 	</div>
 </SignedIn>
+
+<style>
+	:global(.group) {
+		transform: translateZ(0);
+	}
+
+	:global(.group:hover) {
+		background-color: rgba(255, 255, 255, 0.02);
+	}
+</style>
