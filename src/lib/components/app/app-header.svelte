@@ -14,7 +14,7 @@
 <SignedIn let:user>
 	<header class="font mono flex flex-row justify-between px-4 py-6 text-green-700 md:px-12">
 		<div class="font-mono text-5xl motion-safe:animate-pulse md:motion-safe:animate-pulse">
-			InvestorTerminal
+			Due Diligence
 		</div>
 
 		<div class="hidden items-center justify-end gap-6 md:flex">

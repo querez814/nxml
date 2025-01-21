@@ -25,8 +25,7 @@
 		{
 			name: 'Calculated Margins, Ratios, a complete suite for you to make the best investment decisions ',
 			included: true
-		},
-		{ name: "Terminal or Standard Form of Navigation. It's up to u!", included: false }
+		}
 	];
 
 	const faq = [
@@ -162,7 +161,7 @@
 		>
 			Frequently Asked Questions
 		</h3>
-		<Accordion.Root class="w-full  max-w-4xl px-2">
+		<Accordion.Root class="w-full max-w-4xl px-2">
 			{#each faq as { question, answer }}
 				<Accordion.Item value={question} class="box-content">
 					<Accordion.Trigger>{question}</Accordion.Trigger>
@@ -174,6 +173,4 @@
 	<section id="cta" class="flex w-full justify-center px-6 py-16 md:px-20">
 		<CtaCard />
 	</section>
-
-	<WebFooter />
 </div>
