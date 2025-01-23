@@ -30,15 +30,15 @@ const siteMetadata = {
 			signin:
 				PUBLIC_NODE_ENV === 'development'
 					? 'https://strong-possum-2.accounts.dev/sign-in'
-					: 'https://strong-possum-2.accounts.dev/sign-in',
+					: 'accounts.yourduediligence.app/sign-in',
 			signup:
 				PUBLIC_NODE_ENV === 'development'
 					? 'https://strong-possum-2.accounts.dev/sign-up'
-					: 'https://strong-possum-2.accounts.dev/sign-up',
+					: 'accounts.yourduediligence.app/sign-up',
 			userProfile:
 				PUBLIC_NODE_ENV === 'development'
 					? 'https://strong-possum-2.accounts.dev/user'
-					: 'https://strong-possum-2.accounts.dev/user',
+					: 'https://accounts.yourduediligence.app/user',
 			fallback: PUBLIC_BASE_URL
 		},
 		subscription: {
