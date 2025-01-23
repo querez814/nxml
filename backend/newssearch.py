@@ -5,7 +5,7 @@ import requests as r
 import os
 from datetime import datetime
 from packages import get_valuation
-
+from fetch.technicals import technical_analysis
 
 env.load_dotenv()
 news_api = os.getenv("STOCK_NEWS_API_KEY")
@@ -42,9 +42,21 @@ async def get_ticker_news(ticker:str):
     for metric in val:
         formatted_item = metric.copy()
         valuation_results.append(formatted_item)
+
+    #Get technical data for the entrypoint algo    
+    technicals = await technical_analysis("daily", ticker)
+    technicals_results = [] 
+    for indicator in technicals_results:
+        formatted_item = indicator.copy()
+        technicals_results.append(formatted_item)
+
+        
+        
+
     return  {
         "ticker": ticker,
         "news": response_data,
         "analystcoverage":analyst_rate_data,
-        "valuation": valuation_results[0]
+        "valuation": valuation_results[0],
+        "entry": technicals_results[0]
     } 
