@@ -35,3 +35,9 @@ def get_prices(ticker: str):
     prices_df = pd.DataFrame(transformed_data)
 
     return prices_df.to_dict(orient="records")
+
+
+
+
+def candlesticks():
+    return  
