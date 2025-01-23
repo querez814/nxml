@@ -19,7 +19,9 @@ app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",  
+        "https://theinvestorterminal.vercel.app"
         "https://www.yourduediligence.app",  
+        "https://yourduediligence.app",  
         "https://investorterminal-production.up.railway.app",
     ],
     allow_credentials=True,
