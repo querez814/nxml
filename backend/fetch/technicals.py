@@ -241,7 +241,6 @@ def technical_analysis(interval: str, ticker: str):
                 }
 
         return {
-            'status': 'success',
             'data': {
                 'ticker': ticker,
                 'interval': interval,

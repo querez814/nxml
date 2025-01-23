@@ -5,9 +5,12 @@ export const load = (async ({ params }) => {
 	const ticker = params.ticker;
 	const interval = 'daily';
 
+	// Fetch the technicals data
 	const response = await fetchTechnicals(interval, ticker);
 
+	// Validate and cast response
 	const parsedResponse = response as unknown as { data: unknown };
+
 	if (
 		parsedResponse &&
 		typeof parsedResponse === 'object' &&
