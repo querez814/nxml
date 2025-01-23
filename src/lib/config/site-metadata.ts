@@ -20,7 +20,7 @@ const siteMetadata = {
 			base: PUBLIC_BASE_APP_URL ?? ''
 		},
 		web: {
-			landing: PUBLIC_BASE_URL ?? '',
+			landing: PUBLIC_BASE_URL ?? 'https://www.yourduediligence.app',
 			notFound: PUBLIC_BASE_URL ?? '',
 			pricing: PUBLIC_BASE_URL ? PUBLIC_BASE_URL + '#pricing' : '#pricing',
 			privacyPolicy: '/legal/privacy-policy',
