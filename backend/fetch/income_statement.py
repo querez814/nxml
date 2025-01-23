@@ -87,6 +87,7 @@ def get_quarterly_statement_data(ticker: str):
         all_changes = pd.merge(all_changes, df_change, on="fiscalDateEnding")
     final_df = pd.merge(result_df, all_changes, on="fiscalDateEnding")
     final_df = final_df.iloc[::-1].reset_index(drop=True)
+    final_df.fillna(0)
     return final_df.to_dict(orient="records")
 
 @router.get("/income-statement/quarterly/{ticker}/ttmmetrics")

@@ -21,6 +21,9 @@ async def general_news():
     
     return general_news_for_front_page
 
+
+
+
 @router.get("/{ticker}")
 async def get_ticker_news(ticker:str):
     news_url = f"https://stocknewsapi.com/api/v1?tickers={ticker}&items=50&page=1&token={os.getenv("STOCK_NEWS_API_KEY")}" 
@@ -44,12 +47,13 @@ async def get_ticker_news(ticker:str):
         valuation_results.append(formatted_item)
 
     #Get technical data for the entrypoint algo    
+    """
     technicals = await technical_analysis("daily", ticker)
     technicals_results = [] 
-    for indicator in technicals_results:
+    for indicator in technicals:
         formatted_item = indicator.copy()
         technicals_results.append(formatted_item)
-
+"""
         
         
 
@@ -58,5 +62,5 @@ async def get_ticker_news(ticker:str):
         "news": response_data,
         "analystcoverage":analyst_rate_data,
         "valuation": valuation_results[0],
-        "entry": technicals_results[0]
+  #      "entry": technicals_results[0]
     } 
