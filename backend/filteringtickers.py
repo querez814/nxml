@@ -11,10 +11,8 @@ av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
 columns = ['symbol', 'name']
-csvFile = pd.read_csv('av_tickerlist.csv', usecols=columns)
 
-ticker_list = csvFile["symbol"]
-
+"""
 @router.get("/beta/")
 def get_ticker_beta():
     high_beta_stocks = []
@@ -91,3 +89,4 @@ def complete_gainers_losers():
     
     
     
+"""

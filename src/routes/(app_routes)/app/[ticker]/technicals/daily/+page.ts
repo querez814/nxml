@@ -1,14 +1,12 @@
-import { fetchTechnicals } from '$lib/types/technicals/technicals';
+import { fetchTechnicals } from '../../../../../../api/technicals/technicals';
 import type { PageLoad } from './$types';
 
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
 	const interval = 'daily';
 
-	// Fetch the technicals data
 	const response = await fetchTechnicals(interval, ticker);
 
-	// Validate and cast response
 	const parsedResponse = response as unknown as { data: unknown };
 	if (
 		parsedResponse &&
