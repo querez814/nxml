@@ -4,9 +4,7 @@ import type { PageLoad } from './$types';
 export const load = (async ({ params }) => {
 	const ticker = params.ticker;
 	const interval = 'daily';
-
 	const response = await fetchTechnicals(interval, ticker);
-
 	const parsedResponse = response as unknown as { data: unknown };
 
 	if (
