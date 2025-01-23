@@ -5,10 +5,8 @@ export const load = (async ({ params }) => {
 	const ticker = params.ticker;
 	const interval = 'daily';
 
-	// Fetch the technicals data
 	const response = await fetchTechnicals(interval, ticker);
 
-	// Validate and cast response
 	const parsedResponse = response as unknown as { data: unknown };
 
 	if (
@@ -21,11 +19,9 @@ export const load = (async ({ params }) => {
 	) {
 		const data = parsedResponse.data as TechnicalsResponse;
 
-		// Extract the analysis for the latest date
 		const analysisDate = data.data.last_updated;
 		const analysis = data.data.analysis[analysisDate];
 
-		// Return the parsed data to be accessible in the Svelte component
 		return {
 			priceData: analysis.price_data,
 			macd: analysis.indicators.macd,
