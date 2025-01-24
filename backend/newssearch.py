@@ -1,4 +1,6 @@
 from fastapi import APIRouter, HTTPException
+import psycopg2
+from nltk.sentiment import SentimentIntensityAnalyzer
 import dotenv as env
 import pandas as pd
 import requests as r

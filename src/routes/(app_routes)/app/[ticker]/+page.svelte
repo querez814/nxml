@@ -12,14 +12,15 @@
 
 	const sentimentScore = $derived(
 		valuation
-			? (valuation.AnalystRatingStrongBuy * 2 +
+			? ((valuation.AnalystRatingStrongBuy * 2 +
 					valuation.AnalystRatingBuy -
 					(valuation.AnalystRatingSell * 2 + valuation.AnalystRatingStrongSell)) /
 					(valuation.AnalystRatingStrongBuy +
 						valuation.AnalystRatingBuy +
 						valuation.AnalystRatingHold +
 						valuation.AnalystRatingSell +
-						valuation.AnalystRatingStrongSell)
+						valuation.AnalystRatingStrongSell)) *
+					100
 			: 0
 	);
 
