@@ -197,33 +197,29 @@
 												{rate.AnalystFirm}
 											</p>
 											<div class="font-mono text-xs text-gray-500">
-												{rate['Date'] ?? 'Info not Provided'}
+												{rate['Date']}
 											</div>
 										</div>
 										<p class="mb-3 font-mono text-sm text-slate-300">{rate.Type}</p>
 										<div class="grid grid-cols-2 gap-3">
 											<div>
 												<div class="font-mono text-xs text-gray-500">Current Rating</div>
-												<div class="font-mono text-sm text-slate-300">
-													{rate.CurrentRating ?? 'Info not Provided'}
-												</div>
+												<div class="font-mono text-sm text-slate-300">{rate.CurrentRating}</div>
 											</div>
 											<div>
 												<div class="font-mono text-xs text-gray-500">Previous Rating</div>
-												<div class="font-mono text-sm text-slate-300">
-													{rate.PreviousRating ?? 'Info not Provided'}
-												</div>
+												<div class="font-mono text-sm text-slate-300">{rate.PreviousRating}</div>
 											</div>
 											<div>
 												<div class="font-mono text-xs text-gray-500">Current Target</div>
 												<div class="font-mono text-sm text-slate-300">
-													{rate.CurrentPriceTarget ?? 'Info not Provided'}
+													{rate.CurrentPriceTarget}
 												</div>
 											</div>
 											<div>
 												<div class="font-mono text-xs text-gray-500">Previous Target</div>
 												<div class="font-mono text-sm text-slate-300">
-													{rate.PreviousPriceTarget ?? 'Info not Provided'}
+													{rate.PreviousPriceTarget}
 												</div>
 											</div>
 										</div>
