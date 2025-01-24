@@ -25,11 +25,11 @@
 	);
 
 	const getSentimentColor = $derived(() => {
-		if (sentimentScore > 0.66) return 'bg-green-500';
-		if (sentimentScore > 0.33) return 'bg-green-400';
+		if (sentimentScore > 66) return 'bg-green-500';
+		if (sentimentScore > 33) return 'bg-green-400';
 		if (sentimentScore > 0) return 'bg-green-300';
-		if (sentimentScore > -0.33) return 'bg-red-300';
-		if (sentimentScore > -0.66) return 'bg-red-400';
+		if (sentimentScore > -33) return 'bg-red-300';
+		if (sentimentScore > -66) return 'bg-red-400';
 		return 'bg-red-500';
 	});
 
@@ -98,14 +98,8 @@
 							<div>
 								<div class="font-mono text-xs text-gray-500">SENTIMENT</div>
 								<div class="relative mt-2">
-									<div class="h-0.5 w-full bg-gray-800">
-										<!-- svelte-ignore element_invalid_self_closing_tag -->
-										<div
-											class="absolute left-1/2 h-0.5 {getSentimentColor}"
-											style="width: {Math.abs(
-												sentimentScore * 50
-											)}%; transform: translateX({sentimentScore < 0 ? '-100%' : '0'});"
-										/>
+									<div class="h-5 w-full bg-gray-800 text-base">
+										<h1 class="mb-2"><Progress value={sentimentScore} /></h1>
 									</div>
 									<div
 										class="mt-1 font-mono text-xs {sentimentScore >= 0
