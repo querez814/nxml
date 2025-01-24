@@ -194,7 +194,7 @@
 									<div class="p-4">
 										<div class="mb-3 flex items-center justify-between">
 											<p class="font-mono text-sm font-medium text-slate-300">
-												{rate.AnalystFirm}
+												{rate['Analyst Firm']}
 											</p>
 											<div class="font-mono text-xs text-gray-500">
 												{rate['Date']}
@@ -204,22 +204,24 @@
 										<div class="grid grid-cols-2 gap-3">
 											<div>
 												<div class="font-mono text-xs text-gray-500">Current Rating</div>
-												<div class="font-mono text-sm text-slate-300">{rate.CurrentRating}</div>
+												<div class="font-mono text-sm text-slate-300">{rate['Current Rating']}</div>
 											</div>
 											<div>
 												<div class="font-mono text-xs text-gray-500">Previous Rating</div>
-												<div class="font-mono text-sm text-slate-300">{rate.PreviousRating}</div>
+												<div class="font-mono text-sm text-slate-300">
+													{rate['Previous Rating']}
+												</div>
 											</div>
 											<div>
 												<div class="font-mono text-xs text-gray-500">Current Target</div>
 												<div class="font-mono text-sm text-slate-300">
-													{rate.CurrentPriceTarget}
+													{rate['Current Price Target']}
 												</div>
 											</div>
 											<div>
 												<div class="font-mono text-xs text-gray-500">Previous Target</div>
 												<div class="font-mono text-sm text-slate-300">
-													{rate.PreviousPriceTarget}
+													{rate['Previous Price Target']}
 												</div>
 											</div>
 										</div>
