@@ -5,86 +5,173 @@
 	let grossProfit = $derived(revenue - cogs);
 </script>
 
-<div class="background-background w-full max-w-4xl space-y-6 p-4">
-	<Card.Root class="border-slate-700 bg-slate-900 text-white">
-		<Card.Header>
-			<Card.Title class="mb-6 text-center text-3xl font-bold text-green-400"
-				>Understanding the Income Statement</Card.Title
-			>
-			<Card.Description class="space-y-8">
-				<section class="space-y-4">
-					<p class="mb-4 text-lg text-slate-300">
-						The Income Statement tells you how much money a company made and spent over a certain
-						period of time—often a quarter (3 months) or a year. Think of it as a scorecard that
-						shows: 1. How much revenue (money in) was earned 2. How much did it cost to generate
-						that money (money out) 3. How much profit in the end This statement is typically found
-						in SEC Filings but I did the work for you!
-					</p>
-				</section>
+<div class="min-h-screen bg-[#0a0b0d] p-4">
+	<Card.Root class="border-none bg-[#111215]">
+		<div class="p-6">
+			<h1 class="mb-8 font-mono text-3xl font-bold text-green-400">
+				Understanding The Income Statement
+			</h1>
 
-				<section class="space-y-4">
-					<div class="bg slate-800 rounded-xl p-6">
-						<h2 class="mb-6 text-2xl text-green-400">What is on the Income Statement?</h2>
+			<div class="mb-12 font-mono text-sm text-gray-300">
+				The income statement reveals a company's financial performance by showing revenues, costs,
+				and profitability over a specific period (quarterly or annually). Each line item tells part
+				of the company's financial story, and that story drives the movement of the assets price
+			</div>
+
+			<div class="grid grid-cols-1 gap-6 md:grid-cols-2">
+				<Card.Root class="bg-[#1a1b1e]">
+					<div class="p-4">
+						<h3 class="mb-4 font-mono text-lg text-green-400">Revenue & Direct Costs</h3>
 						<div class="space-y-4">
-							<div class="space-y-4">
-								<div class="mb-2 rounded-lg bg-slate-700"></div>
-								<div class="grid grid-cols-1 gap-4 md:grid-cols-3">
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">Total Revenue</h5>
-										<p class="text-slate-300">
-											How much money the company brought in from selling their products, services,
-											or oftentimes, both.
-										</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">Cost of Revenue/Cost of Sales</h5>
-										<p class="text-slate-300">
-											These are the direct costs tied to making or delivering whatever the company
-											sells. Cloud computing costs, materials, manufacturing
-										</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">Gross Profit</h5>
-										<p class="text-slate-300">Total Revenue - Gross Profit</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">Operating Expenses</h5>
-										<p class="text-slate-300">
-											The sum of Selling General and Administrative Expenses (SG&A) and Research and
-											Development (R&D)
-										</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">Operating Income</h5>
-										<p class="text-slate-300">Gross Profit - Operating Expenses</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">EBITDA</h5>
-										<p class="text-slate-300">
-											Earnings before Interest, Taxes, or other misc financial expenses such as
-											depreciation, amortization. The most pure picture of business operations since
-											financing is excluded
-										</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">Net Income</h5>
-										<p class="text-slate-300">
-											What the business "brings home" after taxes deductions, and other expeneses
-										</p>
-									</div>
-									<div class="rounded-lg bg-slate-700 p-4">
-										<h5 class="mb-2 text-green-400">EPS</h5>
-										<p class="text-slate-300">
-											Earnings Per Share of the company. How much net income is made per share
-											outstanding.
-										</p>
-									</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">TOTAL REVENUE</div>
+								<div class="font-mono text-sm text-gray-300">
+									All income from sales of products/services before any costs
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Includes:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Product sales revenue</li>
+									<li>Service revenue</li>
+									<li>Subscription income</li>
+									<li>Licensing fees</li>
+								</ul>
+							</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">COST OF REVENUE (COGS)</div>
+								<div class="font-mono text-sm text-gray-300">
+									Direct costs associated with delivering products/services
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Examples:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Raw materials</li>
+									<li>Direct labor costs</li>
+									<li>Manufacturing overhead</li>
+									<li>Cloud hosting costs</li>
+									<li>Product shipping</li>
+								</ul>
+							</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">GROSS PROFIT</div>
+								<div class="font-mono text-sm text-gray-300">
+									Revenue - Cost of Revenue = Core profitability
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-400">
+									Indicates how efficiently a company converts revenue into profit before other
+									expenses
 								</div>
 							</div>
 						</div>
 					</div>
-				</section>
-			</Card.Description>
-		</Card.Header>
+				</Card.Root>
+
+				<!-- Operating Expenses -->
+				<Card.Root class="bg-[#1a1b1e]">
+					<div class="p-4">
+						<h3 class="mb-4 font-mono text-lg text-green-400">Operating Expenses & Income</h3>
+						<div class="space-y-4">
+							<div>
+								<div class="font-mono text-xs text-gray-500">SG&A EXPENSES</div>
+								<div class="font-mono text-sm text-gray-300">
+									Selling, General & Administrative costs
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Includes:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Marketing & advertising</li>
+									<li>Office expenses</li>
+									<li>Executive salaries</li>
+									<li>Legal & accounting</li>
+								</ul>
+							</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">R&D EXPENSES</div>
+								<div class="font-mono text-sm text-gray-300">
+									Research & Development investments
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Examples:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Product development</li>
+									<li>Research costs</li>
+									<li>Engineering salaries</li>
+									<li>Testing & prototypes</li>
+								</ul>
+							</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">OPERATING INCOME</div>
+								<div class="font-mono text-sm text-gray-300">Gross Profit - Operating Expenses</div>
+								<div class="mt-1 font-mono text-xs text-gray-400">
+									Shows profitability from core business operations
+								</div>
+							</div>
+						</div>
+					</div>
+				</Card.Root>
+
+				<!-- EBITDA & Other Income -->
+				<Card.Root class="bg-[#1a1b1e]">
+					<div class="p-4">
+						<h3 class="mb-4 font-mono text-lg text-green-400">EBITDA & Other Metrics</h3>
+						<div class="space-y-4">
+							<div>
+								<div class="font-mono text-xs text-gray-500">EBITDA</div>
+								<div class="font-mono text-sm text-gray-300">
+									Earnings Before Interest, Taxes, Depreciation & Amortization
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Importance:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Measures operational performance</li>
+									<li>Excludes financing decisions</li>
+									<li>Comparable across companies</li>
+									<li>Key metric for valuations</li>
+								</ul>
+							</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">OTHER INCOME/EXPENSES</div>
+								<div class="font-mono text-sm text-gray-300">Non-operational financial items</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Examples:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Interest expenses</li>
+									<li>Investment income</li>
+									<li>Foreign exchange gains/losses</li>
+									<li>One-time charges</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</Card.Root>
+
+				<!-- Bottom Line Metrics -->
+				<Card.Root class="bg-[#1a1b1e]">
+					<div class="p-4">
+						<h3 class="mb-4 font-mono text-lg text-green-400">Net Income & Per Share</h3>
+						<div class="space-y-4">
+							<div>
+								<div class="font-mono text-xs text-gray-500">NET INCOME</div>
+								<div class="font-mono text-sm text-gray-300">
+									The final profit/loss after all expenses
+								</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Key Points:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Bottom line earnings</li>
+									<li>After tax profits</li>
+									<li>Available for dividends</li>
+									<li>Reinvestment potential</li>
+								</ul>
+							</div>
+							<div>
+								<div class="font-mono text-xs text-gray-500">EARNINGS PER SHARE (EPS)</div>
+								<div class="font-mono text-sm text-gray-300">Net Income ÷ Outstanding Shares</div>
+								<div class="mt-1 font-mono text-xs text-gray-500">Types:</div>
+								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
+									<li>Basic EPS (simple division)</li>
+									<li>Diluted EPS (includes options)</li>
+									<li>Adjusted EPS (non-GAAP)</li>
+									<li>TTM EPS (trailing 12 months)</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</Card.Root>
+			</div>
+		</div>
 	</Card.Root>
 </div>

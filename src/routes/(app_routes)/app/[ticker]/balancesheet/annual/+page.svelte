@@ -1,10 +1,10 @@
 <script lang="ts">
 	import type { PageData } from '../$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
-
+	import BalanceSheetTutorial from '$lib/components/tutorial/balancesheet/BalanceSheetTutorial.svelte';
 	let { data }: { data: PageData } = $props();
 	const quarters = data.quarters || [];
-
+	let showTutorial = $state(false);
 	function formatMetricName(name: string): string {
 		return name
 			.replace(/([A-Z])/g, ' $1')
@@ -69,4 +69,27 @@
 			: [];
 </script>
 
+<div class="mb-4 flex justify-end">
+	{#if !showTutorial}
+		<button
+			class="rounded border border-green-400/20 px-3 py-1 font-mono text-xs text-green-400 hover:text-green-300"
+			onclick={() => (showTutorial = true)}
+		>
+			📊 Learn about the Balance Sheet Statement
+		</button>
+	{/if}
+</div>
+{#if showTutorial}
+	<div class="mb-6">
+		<div class="relative">
+			<BalanceSheetTutorial />
+			<button
+				class="absolute right-4 top-4 font-mono text-xs text-gray-400 hover:text-gray-300"
+				onclick={() => (showTutorial = false)}
+			>
+				✕ Close
+			</button>
+		</div>
+	</div>
+{/if}
 <DataTable {rawData} {yoyData} quarters={quarterDates} title="Balance Sheet - Annual" />

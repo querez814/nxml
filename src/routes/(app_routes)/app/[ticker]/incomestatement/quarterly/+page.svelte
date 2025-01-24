@@ -1,9 +1,12 @@
 <script lang="ts">
+	import * as Button from '$lib/components/ui/button';
 	import * as Card from '$lib/components/ui/card';
+	import * as Dialog from '$lib/components/ui/dialog';
 	import IncomeStatementTutorial from '$lib/components/tutorial/incomestatement/IncomeStatementTutorial.svelte';
 	import type { PageData } from '../quarterly/$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 	import { frontPageNews } from '../../../../../../api/media/generalnews';
+	let showTutorial = $state(false);
 
 	let { data }: { data: PageData } = $props();
 	const quarters = data.quarters || [];
@@ -129,6 +132,31 @@
 </script>
 
 <div class="relative z-10">
+	<div class="mb-4 flex justify-end">
+		{#if !showTutorial}
+			<button
+				class="rounded border border-green-400/20 px-3 py-1 font-mono text-xs text-green-400 hover:text-green-300"
+				onclick={() => (showTutorial = true)}
+			>
+				📊 Learn about Income Statements
+			</button>
+		{/if}
+	</div>
+
+	{#if showTutorial}
+		<div class="mb-6">
+			<div class="relative">
+				<IncomeStatementTutorial />
+				<button
+					class="absolute right-4 top-4 font-mono text-xs text-gray-400 hover:text-gray-300"
+					onclick={() => (showTutorial = false)}
+				>
+					✕ Close
+				</button>
+			</div>
+		</div>
+	{/if}
+
 	<DataTable
 		class="relative z-10"
 		{rawData}
