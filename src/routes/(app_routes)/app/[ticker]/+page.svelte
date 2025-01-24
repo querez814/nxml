@@ -145,7 +145,7 @@
 												<summary class="list-none">
 													<div class="line-clamp-2 font-mono text-xs text-gray-500"></div>
 													<span class="mt-1 text-xs text-blue-400 group-open:hidden"
-														>Read more...</span
+														>Read summary...</span
 													>
 												</summary>
 												<div class="mt-2 font-mono text-xs text-gray-500">
