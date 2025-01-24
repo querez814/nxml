@@ -35,8 +35,8 @@
 				'Of Course! I plan to integrate technicals, more advanced financial calculations, recommendations. The more I learn so will you guys! Let me do the heavy lifting!'
 		},
 		{
-			question: 'What about Crypto',
-			answer: "Stay posted for the first major update :) that\'s all I have to say."
+			question: 'Why is it Burning my Eyes?',
+			answer: 'Light Mode coming soon for now enable dark mode for an actual pleasant experience.'
 		},
 		{
 			question: 'Are there known bugs',
