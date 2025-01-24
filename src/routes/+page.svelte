@@ -75,7 +75,10 @@
 			class="absolute h-full w-full bg-gradient-to-b from-transparent via-background/60 to-background"
 		></div>
 
-		<WebBanner>This bar serves as a means to notify visitors of important updates.</WebBanner>
+		<WebBanner
+			>Future Patch Notes and Updates will show up here, you will see features roll out through the
+			trial period</WebBanner
+		>
 		<WebHeader />
 
 		<section class="mb-12 flex flex-col gap-6">
