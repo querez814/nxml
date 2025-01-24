@@ -108,12 +108,6 @@
 							</Button>
 						</a>
 					</SignedIn>
-					<a href={learnMoreLink}>
-						<Button size="sm" variant="secondary" class="gap-2 px-6">
-							Learn more
-							<ArrowRight size={18} />
-						</Button>
-					</a>
 				</div>
 				<AsSeenOn />
 			</div>
