@@ -30,9 +30,11 @@ def get_quarterly_statement_data(ticker: str):
     for col in ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]:
         earnings_df[col] = pd.to_numeric(earnings_df[col], errors="coerce")
     df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    df.fillna(0, inplace=True)
+    df = df.replace([np.inf, -np.inf, np.nan], 0)
+
     earnings_df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    earnings_df.fillna(0, inplace=True)
+    earnings_df = earnings_df.replace([np.inf, -np.inf, np.nan], 0)
+
     df["reportedEPS"] = earnings_df["reportedEPS"]
     df["estimatedEPS"] = earnings_df["estimatedEPS"]
     df["surprise"] = earnings_df["surprise"]
@@ -87,7 +89,7 @@ def get_quarterly_statement_data(ticker: str):
         all_changes = pd.merge(all_changes, df_change, on="fiscalDateEnding")
     final_df = pd.merge(result_df, all_changes, on="fiscalDateEnding")
     final_df = final_df.iloc[::-1].reset_index(drop=True)
-    final_df.fillna(0)
+    final_df = final_df.replace([np.inf, -np.inf, np.nan], 0)
     return final_df.to_dict(orient="records")
 
 @router.get("/income-statement/quarterly/{ticker}/ttmmetrics")
