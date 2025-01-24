@@ -6,10 +6,18 @@ import os
 from datetime import datetime
 from packages import get_valuation
 from fetch.technicals import technical_analysis
+import json
+
+
 
 env.load_dotenv()
 news_api = os.getenv("STOCK_NEWS_API_KEY")
 router = APIRouter()
+
+
+    
+
+
 
 @router.get("/general")
 async def general_news():
@@ -26,7 +34,7 @@ async def general_news():
 
 @router.get("/{ticker}")
 async def get_ticker_news(ticker:str):
-    news_url = f"https://stocknewsapi.com/api/v1?tickers={ticker}&items=50&page=1&token={os.getenv("STOCK_NEWS_API_KEY")}" 
+    news_url = f"https://stocknewsapi.com/api/v1?tickers={ticker}&items=10&page=1&token={os.getenv("STOCK_NEWS_API_KEY")}" 
     response = r.get(news_url)
     #enforce json
     response_native = response.json()
