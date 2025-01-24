@@ -1,10 +1,12 @@
+
 from fastapi import APIRouter, HTTPException
-from fastapi.responses import JSONResponse
 import requests as r
 import dotenv as env
 import os
 import pandas as pd
 import numpy as np
+import gc
+from typing import Dict, List
 
 from fetch.earnings import get_quarterly_earnings_data as earnings
 
@@ -12,85 +14,139 @@ env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
+def calculate_changes(df: pd.DataFrame, col: str, is_margin: bool = False) -> Dict:
+    temp_dict = {"fiscalDateEnding": df["fiscalDateEnding"]}
+    
+    if is_margin:
+        series = pd.to_numeric(df[col].str.replace('%', ''), errors='coerce')
+    else:
+        series = df[col]
+    
+    prev4 = series.shift(4)
+    prev1 = series.shift(1)
+    
+    # Calculate YoY and QoQ changes
+    yoy = ((series - prev4) / prev4.abs()) * 100
+    qoq = ((series - prev1) / prev1.abs()) * 100
+    
+    # Calculate derivatives
+    yoy_deriv = ((yoy - yoy.shift(1)) / yoy.shift(1).abs()) * 100
+    qoq_deriv = ((qoq - qoq.shift(1)) / qoq.shift(1).abs()) * 100
+    
+    # Format results
+    temp_dict.update({
+        f"{col}_YoY": yoy.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%"),
+        f"{col}_QoQ": qoq.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%"),
+        f"{col}_YoY_Derivative": yoy_deriv.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%"),
+        f"{col}_QoQ_Derivative": qoq_deriv.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+    })
+    
+    return temp_dict
+
 @router.get("/income-statement/quarterly/{ticker}")
 def get_quarterly_statement_data(ticker: str):
-    url = f"https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol={ticker}&apikey={av_api}"
-    response = r.get(url)
-    if response.status_code != 200:
-        raise HTTPException(status_code=500, detail="Failed to fetch data from Alpha Vantage")
-    data_json = response.json()
-    quarterly_reports = data_json.get("quarterlyReports", [])
-    if not quarterly_reports:
-        raise HTTPException(status_code=404, detail="No quarterly reports found.")
-    df = pd.DataFrame(quarterly_reports)
-    earnings_df = pd.DataFrame(earnings(ticker))
-    for col in df.columns:
-        if col != "fiscalDateEnding":
-            df[col] = pd.to_numeric(df[col], errors="coerce")
-    for col in ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]:
-        earnings_df[col] = pd.to_numeric(earnings_df[col], errors="coerce")
-    df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    df = df.replace([np.inf, -np.inf, np.nan], 0)
+    try:
+        # Fetch data
+        response = r.get(f"https://www.alphavantage.co/query?function=INCOME_STATEMENT&symbol={ticker}&apikey={av_api}")
+        if response.status_code != 200:
+            raise HTTPException(status_code=500, detail="Failed to fetch data")
+            
+        quarterly_reports = response.json().get("quarterlyReports", [])
+        if not quarterly_reports:
+            raise HTTPException(status_code=404, detail="No quarterly reports found")
 
-    earnings_df.replace([np.inf, -np.inf], np.nan, inplace=True)
-    earnings_df = earnings_df.replace([np.inf, -np.inf, np.nan], 0)
+        # Initialize dataframes
+        df = pd.DataFrame(quarterly_reports)
+        earnings_df = pd.DataFrame(earnings(ticker))
 
-    df["reportedEPS"] = earnings_df["reportedEPS"]
-    df["estimatedEPS"] = earnings_df["estimatedEPS"]
-    df["surprise"] = earnings_df["surprise"]
-    df["surprisePercentage"] = earnings_df["surprisePercentage"]
-    keys_to_exclude = [
-        'reportedCurrency', 'investmentIncomeNet',
-        'netInterestIncome', 'nonInterestIncome', 'otherNonOperatingIncome',
-        'depreciation', 'depreciationAndAmortization',
-        'netIncomeFromContinuingOperations', 'comprehensiveIncomeNetOfTax'
-    ]
-    df = df.drop(columns=keys_to_exclude, errors='ignore')
-    df["grossMargin"] = (df["grossProfit"] / df["totalRevenue"]) * 100
-    df["operatingMargin"] = (df["operatingIncome"] / df["totalRevenue"]) * 100
-    df["ebitMargin"] = (df["ebit"] / df["totalRevenue"]) * 100
-    df["ebitdaMargin"] = (df["ebitda"] / df["totalRevenue"]) * 100
-    df["netMargin"] = (df["netIncome"] / df["totalRevenue"]) * 100
-    margin_cols = ["grossMargin", "operatingMargin", "ebitMargin", "ebitdaMargin", "netMargin"]
-    for col in margin_cols:
-        df[col] = df[col].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-    result_df = df.iloc[::-1].reset_index(drop=True)
-    numeric_cols = [col for col in result_df.columns if col not in ["fiscalDateEnding"] + margin_cols]
-    changes_list = []
-    for col in numeric_cols:
-        temp_dict = {"fiscalDateEnding": result_df["fiscalDateEnding"]}
-        prev4 = result_df[col].shift(4)
-        prev1 = result_df[col].shift(1)
-        yoy_series = ((result_df[col] - prev4) / prev4.abs()) * 100
-        qoq_series = ((result_df[col] - prev1) / prev1.abs()) * 100
-        yoy_derivative = ((yoy_series - yoy_series.shift(1)) / yoy_series.shift(1).abs()) * 100
-        qoq_derivative = ((qoq_series - qoq_series.shift(1)) / qoq_series.shift(1).abs()) * 100
-        temp_dict[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        temp_dict[f"{col}_QoQ"] = qoq_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        temp_dict[f"{col}_YoY_Derivative"] = yoy_derivative.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        temp_dict[f"{col}_QoQ_Derivative"] = qoq_derivative.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        changes_list.append(pd.DataFrame(temp_dict))
-    for col in margin_cols:
-        temp_dict = {"fiscalDateEnding": result_df["fiscalDateEnding"]}
-        numeric_margin = pd.to_numeric(result_df[col].str.replace('%', ''), errors='coerce')
-        prev4_margin = numeric_margin.shift(4)
-        prev1_margin = numeric_margin.shift(1)
-        yoy_series = ((numeric_margin - prev4_margin) / prev4_margin.abs()) * 100
-        qoq_series = ((numeric_margin - prev1_margin) / prev1_margin.abs()) * 100
-        yoy_derivative = ((yoy_series - yoy_series.shift(1)) / yoy_series.shift(1).abs()) * 100
-        qoq_derivative = ((qoq_series - qoq_series.shift(1)) / qoq_series.shift(1).abs()) * 100
-        temp_dict[f"{col}_YoY"] = yoy_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        temp_dict[f"{col}_QoQ"] = qoq_series.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        temp_dict[f"{col}_YoY_Derivative"] = yoy_derivative.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        temp_dict[f"{col}_QoQ_Derivative"] = qoq_derivative.apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
-        changes_list.append(pd.DataFrame(temp_dict))
-    all_changes = changes_list[0]
-    for df_change in changes_list[1:]:
-        all_changes = pd.merge(all_changes, df_change, on="fiscalDateEnding")
-    final_df = pd.merge(result_df, all_changes, on="fiscalDateEnding")
-    final_df = final_df.iloc[::-1].reset_index(drop=True)
-    final_df = final_df.replace([np.inf, -np.inf, np.nan], 0)
-    return final_df.to_dict(orient="records")
+        # Convert numeric columns
+        for col in df.columns:
+            if col != "fiscalDateEnding":
+                df[col] = pd.to_numeric(df[col], errors="coerce")
+        
+        for col in ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]:
+            earnings_df[col] = pd.to_numeric(earnings_df[col], errors="coerce")
+
+        # Clean data
+        df = df.replace([np.inf, -np.inf, np.nan], 0)
+        earnings_df = earnings_df.replace([np.inf, -np.inf, np.nan], 0)
+
+        # Add earnings data
+        for col in ["reportedEPS", "estimatedEPS", "surprise", "surprisePercentage"]:
+            df[col] = earnings_df[col]
+
+        # Remove unused columns
+        keys_to_exclude = [
+            'reportedCurrency', 'investmentIncomeNet', 'netInterestIncome', 
+            'nonInterestIncome', 'otherNonOperatingIncome', 'depreciation', 
+            'depreciationAndAmortization', 'netIncomeFromContinuingOperations', 
+            'comprehensiveIncomeNetOfTax'
+        ]
+        df = df.drop(columns=keys_to_exclude, errors='ignore')
+
+        # Calculate margins
+        margins = {
+            "grossMargin": ("grossProfit", "totalRevenue"),
+            "operatingMargin": ("operatingIncome", "totalRevenue"),
+            "ebitMargin": ("ebit", "totalRevenue"),
+            "ebitdaMargin": ("ebitda", "totalRevenue"),
+            "netMargin": ("netIncome", "totalRevenue")
+        }
+
+        for margin, (num, denom) in margins.items():
+            df[margin] = (df[num] / df[denom]) * 100
+            df[margin] = df[margin].apply(lambda x: f"{x:.1f}%" if pd.notnull(x) else "0.0%")
+
+        # Sort and prepare for calculations
+        result_df = df.iloc[::-1].reset_index(drop=True)
+        margin_cols = list(margins.keys())
+        numeric_cols = [col for col in result_df.columns if col not in ["fiscalDateEnding"] + margin_cols]
+
+        # Calculate changes in chunks
+        changes_dfs = []
+        chunk_size = 5
+        
+        # Process numeric columns
+        for i in range(0, len(numeric_cols), chunk_size):
+            chunk = numeric_cols[i:i + chunk_size]
+            for col in chunk:
+                changes = calculate_changes(result_df, col)
+                changes_dfs.append(pd.DataFrame(changes))
+                del changes
+                gc.collect()
+
+        # Process margin columns
+        for col in margin_cols:
+            changes = calculate_changes(result_df, col, is_margin=True)
+            changes_dfs.append(pd.DataFrame(changes))
+            del changes
+            gc.collect()
+
+        # Combine all changes
+        all_changes = changes_dfs[0]
+        for df_change in changes_dfs[1:]:
+            all_changes = pd.merge(all_changes, df_change, on="fiscalDateEnding")
+            del df_change
+            gc.collect()
+
+        # Create final dataframe
+        final_df = pd.merge(result_df, all_changes, on="fiscalDateEnding")
+        final_df = final_df.iloc[::-1].reset_index(drop=True)
+        final_df = final_df.replace([np.inf, -np.inf, np.nan], 0)
+
+        # Clean up memory
+        del result_df, all_changes, changes_dfs
+        gc.collect()
+
+        return final_df.to_dict(orient="records")
+        
+    except Exception as e:
+        raise HTTPException(status_code=500, detail=str(e))
+
+
+
+
+
 
 @router.get("/income-statement/quarterly/{ticker}/ttmmetrics")
 def get_ttm_data(ticker: str):
