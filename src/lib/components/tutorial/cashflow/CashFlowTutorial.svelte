@@ -2,7 +2,6 @@
 	import * as Card from '$lib/components/ui/card';
 </script>
 
-```svelte
 <div class="min-h-screen bg-[#0a0b0d] p-4">
 	<Card.Root class="border-none bg-[#111215]">
 		<div class="p-6">
