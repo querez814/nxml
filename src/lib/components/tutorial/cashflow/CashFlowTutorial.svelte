@@ -2,7 +2,6 @@
 	import * as Card from '$lib/components/ui/card';
 </script>
 
-```svelte
 <div class="min-h-screen bg-[#0a0b0d] p-4">
 	<Card.Root class="border-none bg-[#111215]">
 		<div class="p-6">
@@ -14,7 +13,6 @@
 			</div>
 
 			<div class="grid grid-cols-1 gap-6 lg:grid-cols-4">
-				<!-- Operating Activities -->
 				<Card.Root class="bg-[#1a1b1e]">
 					<div class="p-4">
 						<h3 class="mb-4 font-mono text-lg text-green-400">Operating Activities</h3>
@@ -58,7 +56,6 @@
 					</div>
 				</Card.Root>
 
-				<!-- Investing Activities -->
 				<Card.Root class="bg-[#1a1b1e]">
 					<div class="p-4">
 						<h3 class="mb-4 font-mono text-lg text-green-400">Investing Activities</h3>
@@ -100,7 +97,6 @@
 					</div>
 				</Card.Root>
 
-				<!-- Financing Activities -->
 				<Card.Root class="bg-[#1a1b1e]">
 					<div class="p-4">
 						<h3 class="mb-4 font-mono text-lg text-green-400">Financing Activities</h3>
@@ -140,7 +136,6 @@
 					</div>
 				</Card.Root>
 
-				<!-- Analysis & Ratios -->
 				<Card.Root class="bg-[#1a1b1e]">
 					<div class="p-4">
 						<h3 class="mb-4 font-mono text-lg text-green-400">Key Ratios & Analysis</h3>
@@ -193,4 +188,3 @@
 		</div>
 	</Card.Root>
 </div>
-```
