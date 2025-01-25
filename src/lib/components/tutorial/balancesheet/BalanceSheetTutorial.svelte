@@ -35,10 +35,22 @@
 							<div>
 								<div class="font-mono text-xs text-gray-500">ASSET RATIOS</div>
 								<ul class="ml-4 list-disc font-mono text-xs text-gray-400">
-									<li>Return on Assets (ROA)</li>
-									<li>Asset Turnover</li>
-									<li>Quick Ratio</li>
-									<li>Current Ratio</li>
+									<li>
+										Return on Assets (ROA) - Tells you how effective the company is at generating
+										profit from their assets
+									</li>
+									<li>
+										Asset Turnover - Tells you how efficiently a company uses their assets to
+										generate revenue
+									</li>
+									<li>
+										Quick Ratio - Measures a company's ability to pay off short term debt. Value
+										larger than 1 indicates they can pay and suggests good management
+									</li>
+									<li>
+										Current Ratio - Similar to the Quick Ratio, but includes inventory. More broad
+										and particularly useful for manufacturers, industrials, semiconductor companies
+									</li>
 								</ul>
 							</div>
 						</div>
