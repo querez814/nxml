@@ -8,7 +8,7 @@ import siteMetaData from '$lib/config/site-metadata';
 
 initializeClerkClient(PUBLIC_CLERK_PUBLISHABLE_KEY, {
 	// NOTE: Looks like it adds this to query params in the base url need to make such handle it for now it is blank
-	afterSignInUrl: '', //siteMetaData.urls.app.base,
+	afterSignInUrl: 'https://www.yourduediligence.app/app', //siteMetaData.urls.app.base,
 	afterSignUpUrl: 'https://www.yourduediligence.app', //siteMetaData.urls.app.base,
 	signInUrl: siteMetaData.urls.auth.signin,
 	signUpUrl: siteMetaData.urls.auth.signup
