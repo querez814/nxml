@@ -1,0 +1,57 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+CSCO,"Cisco Systems, Inc.",245457498800,61.86,0.37%,Communication Equipment,3254792,26.45,255650498800,Mega-Cap,Technology,2.75%,5.31%,30.24%,8.91%,4.11%,20.21%,26.29%
+MSI,"Motorola Solutions, Inc.",78867742320,472.99,0.23%,Communication Equipment,126156,51.69,83903742320,Large-Cap,Technology,2.57%,0.42%,20.95%,-1.09%,2.10%,44.64%,166.71%
+HPE,Hewlett Packard Enterprise Company,32120358600,24.37,-0.23%,Communication Equipment,3074098,12.65,31650358600,Large-Cap,Technology,4.81%,13.00%,19.24%,22.28%,14.38%,58.88%,63.89%
+ERIC,Telefonaktiebolaget LM Ericsson (publ),28853094419,8.83,0.91%,Communication Equipment,7024900,,29214566864,Large-Cap,Technology,2.46%,8.56%,33.18%,3.43%,8.56%,48.56%,-1.57%
+UI,Ubiquiti Inc.,25078930465,424.13,1.81%,Communication Equipment,25234,64.20,25500543465,Large-Cap,Technology,0.98%,20.73%,145.49%,64.84%,24.95%,220.75%,143.59%
+NOK,Nokia Oyj,25101009293,4.69,1.74%,Communication Equipment,8504059,34.58,22787676605,Large-Cap,Technology,,4.06%,26.30%,-3.76%,4.06%,34.40%,11.62%
+ZBRA,Zebra Technologies Corporation,21580040400,418.36,-0.53%,Communication Equipment,81745,56.83,23235040400,Large-Cap,Technology,5.08%,7.00%,30.84%,12.88%,8.89%,68.84%,66.61%
+CIEN,Ciena Corporation,13479702600,99.40,4.80%,Communication Equipment,2223545,163.53,13812832600,Large-Cap,Technology,10.68%,8.55%,92.04%,42.50%,11.84%,80.63%,124.92%
+JNPR,"Juniper Networks, Inc.",12842942310,38.91,0.31%,Communication Equipment,1165549,51.04,13367842310,Large-Cap,Technology,0.31%,4.16%,4.02%,-1.20%,3.58%,3.69%,58.20%
+SATS,EchoStar Corporation,7474264418,28.53,3.67%,Communication Equipment,917888,,31955742418,Mid-Cap,Technology,12.42%,20.97%,42.59%,11.82%,20.18%,78.93%,-34.43%
+LITE,Lumentum Holdings Inc.,6832215000,99.90,-0.48%,Communication Equipment,396379,,8537815000,Mid-Cap,Technology,13.55%,17.98%,83.28%,53.11%,19.57%,86.58%,28.56%
+ASTS,"AST SpaceMobile, Inc.",6516139790,19.05,-15.30%,Communication Equipment,20905018,,6210731790,Mid-Cap,Technology,4.41%,-1.70%,75.16%,-18.63%,6.59%,627.83%,125.35%
+BDC,Belden Inc.,4923888762,120.37,-1.39%,Communication Equipment,52859,28.32,5933378762,Mid-Cap,Technology,4.02%,7.32%,32.92%,3.55%,8.40%,66.29%,124.27%
+VIAV,Viavi Solutions Inc.,2329036500,10.62,1.10%,Communication Equipment,400907,,2468736500,Mid-Cap,Technology,4.38%,2.75%,38.08%,13.42%,3.76%,3.05%,-32.69%
+EXTR,"Extreme Networks, Inc.",2281971433,17.29,0.12%,Communication Equipment,160856,,2358527433,Mid-Cap,Technology,-1.26%,-2.65%,26.99%,16.61%,3.17%,2.92%,127.54%
+AAOI,"Applied Optoelectronics, Inc.",1595233170,32.49,-2.44%,Communication Equipment,556999,,1675135170,Small-Cap,Technology,6.80%,-11.95%,244.19%,79.90%,-9.66%,110.63%,143.07%
+INFN,Infinera Corporation,1560525180,6.62,0.38%,Communication Equipment,126872,,2167635180,Small-Cap,Technology,-0.30%,-0.15%,10.02%,-2.51%,0.30%,32.33%,-17.93%
+HLIT,Harmonic Inc.,1430963840,12.25,-0.29%,Communication Equipment,173754,16.82,1523586840,Small-Cap,Technology,-1.44%,-7.81%,,-14.54%,-7.18%,6.78%,51.23%
+VSAT,"Viasat, Inc.",1382803380,11.08,2.88%,Communication Equipment,2161718,,7047131380,Small-Cap,Technology,34.29%,22.53%,-30.11%,-0.19%,26.56%,-54.75%,-84.97%
+COMM,"CommScope Holding Company, Inc.",1265050940,5.84,-0.34%,Communication Equipment,1322950,,10145950940,Small-Cap,Technology,8.72%,5.02%,248.81%,-0.68%,12.48%,146.22%,-59.36%
+DGII,Digi International Inc.,1195971968,32.94,1.54%,Communication Equipment,41678,53.18,1305847968,Small-Cap,Technology,7.42%,5.53%,28.22%,5.77%,7.31%,37.11%,91.95%
+ADTN,"ADTRAN Holdings, Inc.",825574419,10.39,-0.86%,Communication Equipment,447001,,952602419,Small-Cap,Technology,3.45%,27.96%,68.22%,67.41%,25.81%,49.08%,2.05%
+NTGR,"NETGEAR, Inc.",811596058,28.34,0.46%,Communication Equipment,57865,42.74,437880058,Small-Cap,Technology,5.26%,0.75%,86.08%,33.13%,1.22%,100.64%,7.96%
+CLFD,"Clearfield, Inc.",563933872,40.53,1.54%,Communication Equipment,46650,,454217872,Small-Cap,Technology,5.53%,32.58%,-1.31%,3.77%,28.77%,57.66%,179.16%
+CRNT,Ceragon Networks Ltd.,423341565,4.94,0.41%,Communication Equipment,459277,23.48,430679565,Small-Cap,Technology,5.13%,12.07%,90.70%,87.07%,5.35%,94.47%,118.67%
+GILT,Gilat Satellite Networks Ltd.,405390870,7.14,0.42%,Communication Equipment,140560,24.52,303926870,Small-Cap,Technology,7.73%,21.33%,56.61%,43.64%,15.61%,19.90%,-30.90%
+AUDC,AudioCodes Ltd.,326450640,10.80,-0.92%,Communication Equipment,12705,27.25,315082640,Small-Cap,Technology,1.40%,16.45%,1.02%,12.49%,11.91%,-9.39%,-61.24%
+AVNW,"Aviat Networks, Inc.",242450092,19.35,0.83%,Communication Equipment,26850,,278698092,Micro-Cap,Technology,0.79%,13.89%,-33.87%,-16.71%,5.96%,-36.65%,162.16%
+TSAT,Telesat Corporation,245923504,17.87,1.25%,Communication Equipment,7983,7.19,1561512313,Micro-Cap,Technology,14.61%,2.44%,115.77%,23.77%,7.36%,83.28%,
+FEIM,"Frequency Electronics, Inc.",178196098,19.24,3.78%,Communication Equipment,35728,22.89,172501098,Micro-Cap,Technology,7.92%,-2.52%,97.23%,47.73%,0.11%,79.65%,87.84%
+ONDS,Ondas Holdings Inc.,227278497,2.15,-9.07%,Communication Equipment,2307995,,260934563,Micro-Cap,Technology,7.24%,61.22%,181.24%,159.02%,-7.42%,80.92%,-78.71%
+INSG,Inseego Corp.,179216008,12.15,1.38%,Communication Equipment,31530,,282473008,Micro-Cap,Technology,3.10%,10.82%,21.01%,-39.10%,16.76%,565.56%,-87.52%
+LTRX,"Lantronix, Inc.",151207929,3.97,-0.50%,Communication Equipment,96262,,140278929,Micro-Cap,Technology,11.30%,8.24%,3.41%,-4.83%,-4.37%,-42.40%,1.81%
+KVHI,"KVH Industries, Inc.",119586564,6.02,0.33%,Communication Equipment,22495,,70919564,Micro-Cap,Technology,2.74%,11.11%,35.44%,29.59%,5.26%,23.71%,-46.33%
+SATX,Satixfy Communications Ltd.,118739838,1.35,-3.60%,Communication Equipment,84461,,172014838,Micro-Cap,Technology,-5.41%,16.67%,97.18%,125.81%,-8.50%,286.21%,
+BKTI,BK Technologies Corporation,111423766,32.00,2.33%,Communication Equipment,18421,22.66,108672766,Micro-Cap,Technology,-4.08%,-18.57%,138.89%,22.24%,-8.81%,151.79%,124.96%
+SILC,Silicom Ltd.,105023575,16.94,-0.41%,Communication Equipment,6282,,42383575,Micro-Cap,Technology,1.06%,13.81%,8.57%,24.96%,5.58%,-1.32%,-51.19%
+AIRG,"Airgain, Inc.",95521532,8.35,-0.81%,Communication Equipment,3150,,89204532,Micro-Cap,Technology,19.60%,20.46%,22.21%,-4.64%,19.26%,155.15%,-17.37%
+PCLA,PicoCELA Inc.,58594571,2.91,21.26%,Communication Equipment,152177,,59023539,Micro-Cap,Technology,,,,,,,
+CMTL,Comtech Telecommunications Corp.,74094086,2.41,-5.12%,Communication Equipment,110034,,286936086,Micro-Cap,Technology,-4.51%,-31.17%,-12.41%,-35.53%,-36.66%,-62.26%,-92.96%
+FKWL,Franklin Wireless Corp.,57860913,4.90,0.20%,Communication Equipment,22643,,18820525,Micro-Cap,Technology,-0.81%,13.72%,20.74%,16.43%,-0.20%,52.34%,101.24%
+OCC,Optical Cable Corporation,46855938,5.63,-4.74%,Communication Equipment,38521,,57561448,Nano-Cap,Technology,19.39%,181.43%,119.70%,143.21%,63.71%,134.43%,66.95%
+AMPG,"AmpliTech Group, Inc.",38330175,1.97,1.03%,Communication Equipment,596903,,43142629,Nano-Cap,Technology,-8.45%,-1.52%,75.68%,127.01%,-62.06%,-7.58%,37.13%
+CMBM,Cambium Networks Corporation,28808676,1.08,5.88%,Communication Equipment,190511,,59226676,Nano-Cap,Technology,2.00%,41.47%,-49.75%,-29.66%,58.19%,-75.94%,-88.04%
+UTSI,UTStarcom Holdings Corp.,27363153,2.90,5.84%,Communication Equipment,9499,,-24299847,Nano-Cap,Technology,5.84%,19.34%,2.47%,-1.02%,,2.84%,-74.29%
+SYNX,Silynxcom Ltd.,22155000,4.08,-3.32%,Communication Equipment,1360,,18590000,Nano-Cap,Technology,-0.71%,31.46%,53.90%,47.55%,16.58%,37.46%,
+BOSC,B.O.S. Better Online Solutions Ltd.,22237460,3.67,-5.17%,Communication Equipment,32961,10.16,22241460,Nano-Cap,Technology,2.93%,18.04%,31.29%,32.69%,16.97%,38.85%,77.96%
+MOB,Mobilicom Limited,5501449800,2.91,-7.78%,Communication Equipment,173911,,5492038832,Nano-Cap,Technology,-11.76%,-2.48%,179.26%,138.64%,-17.32%,110.00%,
+SONM,"Sonim Technologies, Inc.",16125128,3.22,-2.72%,Communication Equipment,74834,,7065128,Nano-Cap,Technology,-12.43%,-10.30%,-4.61%,-12.66%,4.91%,-53.71%,-99.10%
+MYNA,Mynaric AG,13902831,0.52,-5.47%,Communication Equipment,123876,,73005042,Nano-Cap,Technology,13.31%,30.85%,-86.32%,-57.36%,-26.18%,-89.74%,
+CLRO,"ClearOne, Inc.",13861331,0.59,1.33%,Communication Equipment,200151,,11512331,Nano-Cap,Technology,-10.92%,-8.21%,-22.77%,-5.51%,-28.14%,-43.78%,-68.77%
+ASNS,"Actelis Networks, Inc.",9818333,1.57,-0.32%,Communication Equipment,211492,,8866333,Nano-Cap,Technology,17.16%,52.43%,0.64%,13.77%,17.16%,34.65%,
+BOXL,Boxlight Corporation,9633821,0.97,-1.43%,Communication Equipment,167823,,47307821,Nano-Cap,Technology,11.36%,172.98%,58.07%,102.06%,156.81%,20.25%,-92.25%
+VISL,"Vislink Technologies, Inc.",9340152,3.80,0.26%,Communication Equipment,9996,,1271152,Nano-Cap,Technology,-3.56%,5.28%,-41.87%,-39.65%,-1.04%,11.80%,-89.81%
+MITQ,"Moving iMage Technologies, Inc.",8709228,0.86,-2.84%,Communication Equipment,182911,,4555228,Nano-Cap,Technology,18.60%,29.41%,25.75%,42.87%,35.39%,1.14%,
+SYTA,Siyata Mobile Inc.,2296805,5.75,1.95%,Communication Equipment,23545,,6084399,Nano-Cap,Technology,-17.66%,-17.66%,-94.58%,-69.35%,-7.24%,-99.07%,

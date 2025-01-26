@@ -1,0 +1,119 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+ASML,ASML Holding N.V.,297229041920,747.36,-2.52%,Semiconductor Equipment & Materials,1010504,39.23,296258430737,Mega-Cap,Technology,5.56%,8.65%,-14.37%,7.37%,10.62%,1.17%,156.94%
+AMAT,"Applied Materials, Inc.",159083554350,189.68,-2.98%,Semiconductor Equipment & Materials,2288159,22.71,155871554350,Large-Cap,Technology,0.87%,14.99%,-15.82%,2.79%,15.67%,11.77%,194.43%
+LRCX,Lam Research Corporation,107116110000,81.03,-2.67%,Semiconductor Equipment & Materials,4465077,26.91,106032408000,Large-Cap,Technology,9.32%,15.96%,-9.23%,14.29%,15.26%,0.75%,169.70%
+KLAC,KLA Corporation,100760738447,753.70,-2.36%,Semiconductor Equipment & Materials,315351,34.37,102762378447,Large-Cap,Technology,7.77%,22.65%,1.23%,14.59%,22.50%,25.92%,331.69%
+APH,Amphenol Corporation,94049636100,78.29,0.58%,Electronic Components,3450599,44.88,97950436100,Large-Cap,Technology,9.71%,10.29%,20.96%,16.41%,12.08%,59.49%,187.60%
+GLW,Corning Incorporated,46243848090,54.45,0.81%,Electronic Components,1547578,300.06,52038848090,Large-Cap,Technology,10.65%,14.16%,21.89%,14.84%,13.66%,77.43%,81.79%
+TEL,TE Connectivity plc,46290177570,155.54,0.29%,Electronic Components,395289,15.01,49174177570,Large-Cap,Technology,8.10%,7.95%,2.92%,4.98%,8.48%,17.01%,55.87%
+GRMN,Garmin Ltd.,41515805000,212.68,-1.63%,Scientific & Technical Instruments,231705,27.47,39201575000,Large-Cap,Technology,-0.86%,1.78%,23.15%,30.50%,3.13%,67.88%,112.25%
+KEYS,"Keysight Technologies, Inc.",29910440560,173.45,0.42%,Scientific & Technical Instruments,197946,49.21,30144440560,Large-Cap,Technology,4.46%,5.82%,25.71%,9.44%,7.53%,12.43%,64.70%
+FTV,Fortive Corporation,27738572550,80.26,0.07%,Scientific & Technical Instruments,363350,32.01,30787172550,Large-Cap,Technology,1.68%,7.48%,4.44%,5.48%,6.69%,8.56%,23.13%
+TDY,Teledyne Technologies Incorporated,23717774562,515.70,0.79%,Scientific & Technical Instruments,68780,25.41,25954774562,Large-Cap,Technology,9.10%,9.51%,30.22%,14.49%,10.24%,17.45%,33.48%
+TER,"Teradyne, Inc.",21953662800,130.43,-3.24%,Semiconductor Equipment & Materials,735070,42.79,21481457800,Large-Cap,Technology,-0.10%,7.03%,-7.94%,7.04%,7.05%,23.99%,88.40%
+TRMB,Trimble Inc.,19024300800,77.06,-0.45%,Scientific & Technical Instruments,234572,12.94,19899400800,Large-Cap,Technology,4.18%,7.47%,34.36%,27.87%,8.96%,52.52%,74.03%
+JBL,Jabil Inc.,18447975630,169.85,0.52%,Electronic Components,309046,16.00,19668975630,Large-Cap,Technology,6.83%,16.53%,52.86%,35.86%,17.42%,35.62%,294.70%
+FLEX,Flex Ltd.,17240832180,43.97,-1.10%,Electronic Components,906396,19.85,18824832180,Large-Cap,Technology,6.06%,15.06%,53.10%,29.28%,15.81%,93.47%,338.64%
+COHR,Coherent Corp.,16697525440,107.96,,Scientific & Technical Instruments,832333,,19833561440,Large-Cap,Technology,11.93%,10.54%,49.90%,9.67%,13.97%,133.83%,188.43%
+ENTG,"Entegris, Inc.",15823080420,104.92,-2.12%,Semiconductor Equipment & Materials,746293,69.47,19589715420,Large-Cap,Technology,-0.01%,5.47%,-21.43%,1.67%,5.90%,-13.21%,83.01%
+CLS,Celestica Inc.,14343573930,122.30,-0.79%,Electronic Components,1417711,39.13,14886173930,Large-Cap,Technology,14.67%,29.15%,118.18%,117.48%,33.55%,298.93%,1300.80%
+SNX,TD SYNNEX Corporation,12039952000,143.03,1.08%,Electronics & Computer Distribution,147468,18.35,15236231000,Large-Cap,Technology,3.85%,21.04%,22.67%,17.18%,20.65%,35.30%,93.10%
+ONTO,Onto Innovation Inc.,11088346850,217.72,-3.02%,Semiconductor Equipment & Materials,233298,60.68,10232942850,Large-Cap,Technology,9.69%,34.23%,13.95%,7.39%,34.70%,37.84%,468.35%
+FN,Fabrinet,9692233596,265.90,-0.50%,Electronic Components,144463,31.63,8798372596,Mid-Cap,Technology,14.33%,20.78%,13.13%,7.54%,21.54%,32.32%,303.99%
+MKSI,"MKS Instruments, Inc.",8256902041,118.56,-3.37%,Scientific & Technical Instruments,251993,266.72,12419902041,Mid-Cap,Technology,1.23%,14.62%,-10.40%,18.81%,13.68%,7.37%,0.90%
+NVMI,Nova Ltd.,7461413544,252.54,-1.69%,Semiconductor Equipment & Materials,72852,47.84,7101649544,Mid-Cap,Technology,10.41%,32.73%,26.18%,38.09%,30.43%,77.86%,537.89%
+OLED,Universal Display Corporation,7030931796,146.00,-1.44%,Electronic Components,142444,29.75,6479379796,Mid-Cap,Technology,1.08%,-0.93%,-32.34%,-27.57%,1.33%,-16.82%,-30.23%
+CGNX,Cognex Corporation,6925775700,40.31,-0.18%,Scientific & Technical Instruments,284709,79.18,6715078700,Mid-Cap,Technology,2.80%,13.11%,-19.82%,3.14%,12.83%,5.81%,-30.27%
+AMKR,"Amkor Technology, Inc.",6543120430,26.24,-1.09%,Semiconductor Equipment & Materials,245634,17.93,6262361430,Mid-Cap,Technology,4.95%,4.99%,-33.29%,-12.44%,3.27%,-18.69%,102.52%
+BMI,"Badger Meter, Inc.",6425649736,218.54,0.03%,Scientific & Technical Instruments,22789,54.21,6166694736,Mid-Cap,Technology,2.18%,0.35%,14.65%,7.03%,3.00%,43.99%,246.85%
+ARW,"Arrow Electronics, Inc.",6266672064,118.85,-0.26%,Electronics & Computer Distribution,64997,13.27,9291739064,Mid-Cap,Technology,4.32%,3.84%,-2.38%,-11.13%,5.34%,1.99%,45.80%
+LFUS,"Littelfuse, Inc.",5808873123,235.14,-0.14%,Electronic Components,23371,30.09,6098014123,Mid-Cap,Technology,1.85%,0.44%,-9.27%,-7.68%,-0.08%,-2.46%,23.37%
+VNT,Vontier Corporation,5784202000,38.69,0.45%,Scientific & Technical Instruments,77993,14.70,7705802000,Mid-Cap,Technology,4.59%,5.42%,-3.12%,9.37%,5.59%,9.03%,
+NSIT,"Insight Enterprises, Inc.",5497984890,175.04,1.34%,Electronics & Computer Distribution,72692,21.78,6267351890,Mid-Cap,Technology,4.98%,11.66%,-19.04%,-22.10%,13.56%,-7.08%,146.67%
+NOVT,Novanta Inc.,5424116300,149.16,-1.22%,Scientific & Technical Instruments,65812,90.96,5841597300,Mid-Cap,Technology,1.25%,-1.63%,-12.46%,-13.73%,-1.16%,-4.10%,56.36%
+ITRI,"Itron, Inc.",4740720544,105.93,-0.18%,Scientific & Technical Instruments,83243,21.54,5027983544,Mid-Cap,Technology,1.35%,-2.66%,4.40%,2.88%,-2.27%,39.83%,21.32%
+AVT,"Avnet, Inc.",4730459810,53.98,-0.79%,Electronics & Computer Distribution,92217,14.24,7648591810,Mid-Cap,Technology,1.95%,1.53%,0.41%,-0.33%,2.98%,12.41%,29.93%
+CAMT,Camtek Ltd.,4669996628,103.29,-2.63%,Semiconductor Equipment & Materials,212468,47.01,4468166628,Mid-Cap,Technology,3.57%,22.94%,-9.02%,27.14%,26.87%,30.03%,659.07%
+PONY,Pony AI Inc.,1136211824,13.29,-0.19%,Electronic Components,123887,,667152824,Mid-Cap,Technology,-1.33%,1.14%,,,-7.25%,,
+SANM,Sanmina Corporation,4511043740,83.76,0.13%,Electronic Components,120108,21.39,4202506740,Mid-Cap,Technology,0.77%,9.18%,18.59%,27.15%,10.55%,63.57%,148.37%
+ST,Sensata Technologies Holding plc,4274596280,28.85,0.28%,Scientific & Technical Instruments,153587,,6966513280,Mid-Cap,Technology,2.13%,5.62%,-26.02%,-18.84%,5.00%,-16.49%,-45.06%
+PLXS,Plexus Corp.,4618216071,155.10,-9.02%,Electronic Components,126272,42.52,4550347071,Mid-Cap,Technology,2.04%,7.18%,47.83%,25.15%,8.95%,73.35%,117.24%
+ESE,ESCO Technologies Inc.,3477439224,135.40,0.43%,Scientific & Technical Instruments,29293,34.22,3568286224,Mid-Cap,Technology,1.50%,-0.36%,14.33%,5.94%,1.21%,32.02%,35.63%
+AMBA,"Ambarella, Inc.",3390581110,81.19,-0.45%,Semiconductor Equipment & Materials,145117,,3170017110,Mid-Cap,Technology,7.08%,14.98%,43.74%,42.43%,12.12%,46.34%,35.05%
+FORM,"FormFactor, Inc.",3423316520,43.07,-2.56%,Semiconductor Equipment & Materials,175038,25.40,3104695520,Mid-Cap,Technology,2.34%,3.08%,-20.43%,0.18%,0.45%,4.17%,61.70%
+IPGP,IPG Photonics Corporation,3364702180,76.28,-1.95%,Semiconductor Equipment & Materials,39330,,2345387180,Mid-Cap,Technology,5.89%,5.36%,-11.62%,4.07%,6.99%,-21.12%,-46.29%
+OSIS,"OSI Systems, Inc.",3145120847,191.75,13.45%,Electronic Components,292484,24.62,3795368847,Mid-Cap,Technology,12.38%,7.84%,27.08%,34.29%,12.76%,43.96%,91.70%
+VICR,Vicor Corporation,2735095372,60.11,-0.81%,Electronic Components,58480,673.33,2474834372,Mid-Cap,Technology,25.62%,23.25%,67.50%,35.63%,25.41%,63.21%,11.32%
+TTMI,"TTM Technologies, Inc.",2719513230,26.13,-2.02%,Electronic Components,93652,40.41,3250578230,Mid-Cap,Technology,4.10%,7.50%,26.40%,38.55%,7.76%,83.80%,73.07%
+KLIC,"Kulicke and Soffa Industries, Inc.",2467305540,45.64,-2.00%,Semiconductor Equipment & Materials,67229,,1931121540,Mid-Cap,Technology,0.47%,-0.81%,-2.51%,6.20%,-0.19%,-13.05%,70.09%
+ACLS,"Axcelis Technologies, Inc.",2294280538,69.72,-1.22%,Semiconductor Equipment & Materials,140685,10.44,1758943538,Mid-Cap,Technology,-1.66%,1.60%,-44.84%,-22.78%,1.02%,-46.38%,181.64%
+CNXN,"PC Connection, Inc.",1893369790,73.03,1.40%,Electronics & Computer Distribution,19668,21.12,1466285790,Small-Cap,Technology,1.70%,4.30%,8.08%,0.28%,3.90%,7.55%,38.40%
+ROG,Rogers Corporation,1838442312,97.10,-1.44%,Electronic Components,44414,36.76,1717842312,Small-Cap,Technology,2.71%,-1.43%,-21.46%,-3.78%,-3.04%,-15.56%,-24.99%
+KN,Knowles Corporation,1791321426,20.13,-1.03%,Electronic Components,99178,39.88,1931521426,Small-Cap,Technology,1.55%,4.85%,11.15%,16.16%,2.06%,20.78%,-0.88%
+BHE,"Benchmark Electronics, Inc.",1758808534,47.75,-2.28%,Electronic Components,51475,28.41,1827317534,Small-Cap,Technology,0.56%,6.12%,15.19%,12.07%,5.67%,80.36%,29.56%
+UCTT,"Ultra Clean Holdings, Inc.",1732110244,37.25,-3.10%,Semiconductor Equipment & Materials,71021,549.14,2080710244,Small-Cap,Technology,4.94%,9.83%,-18.04%,6.13%,6.93%,3.25%,51.88%
+CTS,CTS Corporation,1594615725,52.02,-1.76%,Electronic Components,21396,27.29,1629047725,Small-Cap,Technology,2.60%,1.44%,0.67%,12.16%,0.42%,26.04%,73.38%
+VECO,Veeco Instruments Inc.,1531308054,26.31,-2.45%,Semiconductor Equipment & Materials,435540,19.26,1520584054,Small-Cap,Technology,0.71%,0.48%,-32.79%,-10.84%,0.63%,-17.12%,64.55%
+PLAB,"Photronics, Inc.",1516249476,23.44,-2.09%,Semiconductor Equipment & Materials,123253,11.45,893577476,Small-Cap,Technology,-0.71%,-0.42%,-7.28%,2.05%,1.61%,-23.05%,59.18%
+SCSC,"ScanSource, Inc.",1223059435,51.34,-0.02%,Electronics & Computer Distribution,19371,16.41,1221664435,Small-Cap,Technology,3.42%,7.92%,10.67%,7.83%,8.22%,32.38%,45.59%
+ACMR,"ACM Research, Inc.",1155508909,18.52,-0.91%,Semiconductor Equipment & Materials,177500,14.02,954360909,Small-Cap,Technology,4.47%,25.35%,-7.06%,-2.40%,23.78%,-8.65%,31.41%
+DQ,Daqo New Energy Corp.,1149139453,17.40,-0.54%,Semiconductor Equipment & Materials,254085,,-1164408547,Small-Cap,Technology,-9.19%,-0.11%,8.77%,-11.22%,-10.03%,-14.18%,57.79%
+COHU,"Cohu, Inc.",1143434061,24.62,0.37%,Semiconductor Equipment & Materials,100440,,895145061,Small-Cap,Technology,1.28%,-2.97%,-22.52%,-2.58%,-8.13%,-27.90%,-1.84%
+BELFA,Bel Fuse Inc.,1046945901,88.59,-0.02%,Electronic Components,15825,21.50,966397901,Small-Cap,Technology,1.84%,-8.19%,10.21%,-14.81%,-1.65%,36.52%,427.01%
+BELFB,Bel Fuse Inc.,1052041164,81.28,-1.15%,Electronic Components,13767,19.96,1012278164,Small-Cap,Technology,2.61%,-1.85%,23.64%,-1.58%,-0.29%,26.55%,314.88%
+ICHR,"Ichor Holdings, Ltd.",1010649668,29.66,-1.02%,Semiconductor Equipment & Materials,175455,,1060813668,Small-Cap,Technology,-2.16%,0.54%,-15.82%,7.35%,-7.01%,-16.80%,-20.74%
+INDI,"indie Semiconductor, Inc.",783294720,4.21,-1.17%,Semiconductor Equipment & Materials,744975,,868256720,Small-Cap,Technology,-2.32%,2.68%,-34.32%,18.93%,3.95%,-41.04%,
+DAKT,"Daktronics, Inc.",829778058,17.57,-0.49%,Electronic Components,73822,70.64,760813058,Small-Cap,Technology,6.26%,5.75%,24.81%,30.24%,4.75%,130.55%,187.62%
+MLAB,"Mesa Laboratories, Inc.",754668652,142.35,-1.72%,Scientific & Technical Instruments,10635,,935313652,Small-Cap,Technology,7.23%,9.67%,33.97%,8.66%,9.84%,58.79%,-45.26%
+LYTS,LSI Industries Inc.,590201574,24.97,26.26%,Electronic Components,569523,25.04,642256574,Small-Cap,Technology,3.13%,5.38%,29.45%,20.17%,1.85%,45.87%,211.99%
+ITRN,Ituran Location and Control Ltd.,681476862,33.98,,Scientific & Technical Instruments,55179,12.94,618482862,Small-Cap,Technology,3.19%,13.80%,32.32%,21.40%,9.09%,34.47%,31.71%
+CLMB,"Climb Global Solutions, Inc.",623022280,134.32,-0.68%,Electronics & Computer Distribution,5072,36.65,602568280,Small-Cap,Technology,4.27%,8.54%,108.61%,25.52%,6.70%,156.57%,718.64%
+FARO,"FARO Technologies, Inc.",591922317,31.62,1.05%,Scientific & Technical Instruments,75924,,593162317,Small-Cap,Technology,7.16%,20.02%,82.56%,68.95%,23.38%,50.80%,-42.38%
+OUST,"Ouster, Inc.",557587671,10.57,-1.86%,Electronic Components,310417,,427652671,Small-Cap,Technology,-5.77%,-10.10%,-23.29%,30.55%,-11.87%,75.69%,
+KULR,"KULR Technology Group, Inc.",612554240,2.40,-6.45%,Electronic Components,89178,,614338028,Small-Cap,Technology,11.30%,-13.22%,726.07%,769.57%,-27.89%,1202.80%,76.55%
+MEI,"Methode Electronics, Inc.",464248932,13.26,1.84%,Electronic Components,54379,,736948932,Small-Cap,Technology,6.90%,7.16%,-3.05%,24.59%,10.43%,-37.58%,-65.97%
+ALNT,Allient Inc.,435958952,26.34,1.78%,Electronic Components,20462,29.41,649598952,Small-Cap,Technology,3.77%,10.22%,-5.51%,42.35%,6.59%,-7.31%,-20.69%
+MVIS,"MicroVision, Inc.",402993120,1.77,11.01%,Scientific & Technical Instruments,9903961,,373332120,Small-Cap,Technology,51.75%,87.90%,65.30%,66.79%,41.33%,-21.55%,153.62%
+AEHR,"Aehr Test Systems, Inc.",374071562,12.35,-1.91%,Semiconductor Equipment & Materials,300949,16.79,348286562,Small-Cap,Technology,0.66%,-14.04%,-34.14%,-23.91%,-26.34%,-25.26%,451.80%
+BKSY,BlackSky Technology Inc.,351802827,11.66,-0.26%,Scientific & Technical Instruments,307243,,393200827,Small-Cap,Technology,17.72%,9.56%,31.64%,82.37%,8.34%,14.16%,-85.25%
+VPG,"Vishay Precision Group, Inc.",305876790,23.44,0.60%,Scientific & Technical Instruments,14490,23.34,280880790,Small-Cap,Technology,-0.13%,0.65%,-27.68%,-2.02%,-0.72%,-24.74%,-34.26%
+ATOM,Atomera Incorporated,302170050,10.42,-2.71%,Semiconductor Equipment & Materials,194623,,287141050,Small-Cap,Technology,-4.12%,19.13%,184.09%,207.76%,-7.67%,53.00%,152.00%
+KOPN,Kopin Corporation,233437470,1.85,25.85%,Electronic Components,70899363,,198432570,Micro-Cap,Technology,15.75%,13.95%,37.38%,89.26%,8.09%,-26.87%,186.49%
+RELL,"Richardson Electronics, Ltd.",191888880,13.26,-1.85%,Electronic Components,15306,450.33,167574880,Micro-Cap,Technology,1.35%,-3.57%,17.27%,-1.82%,-3.71%,35.64%,139.54%
+MPTI,"M-tron Industries, Inc.",169916187,59.29,2.22%,Electronic Components,38400,29.65,161435187,Micro-Cap,Technology,8.49%,18.91%,86.39%,18.18%,22.42%,43.28%,
+NEON,Neonode Inc.,145004256,8.47,-1.97%,Electronic Components,33574,,127409256,Micro-Cap,Technology,9.51%,12.65%,175.16%,0.12%,4.98%,338.58%,197.93%
+GNSS,Genasys Inc.,138830610,3.04,-1.62%,Scientific & Technical Instruments,21456,,142145610,Micro-Cap,Technology,15.73%,21.65%,20.70%,-19.74%,18.85%,80.70%,-10.43%
+LPTH,"LightPath Technologies, Inc.",136050607,3.26,-4.96%,Electronic Components,85713,,144558961,Micro-Cap,Technology,10.29%,27.51%,165.89%,104.17%,-2.83%,150.37%,390.00%
+WBX,Wallbox N.V.,124901383,0.50,1.63%,Electronic Components,149755,,321540135,Micro-Cap,Technology,-12.14%,-7.10%,-66.07%,-49.69%,-1.74%,-66.30%,
+INTT,inTEST Corporation,115950002,9.29,-0.91%,Semiconductor Equipment & Materials,2560,42.59,125665002,Micro-Cap,Technology,6.48%,22.01%,-7.23%,35.01%,9.08%,-25.99%,59.08%
+WRAP,"Wrap Technologies, Inc.",101401209,2.25,1.81%,Scientific & Technical Instruments,182757,,98723209,Micro-Cap,Technology,9.68%,36.42%,24.16%,29.24%,4.25%,-31.58%,-68.65%
+AXTI,"AXT, Inc.",102031368,2.27,-0.44%,Semiconductor Equipment & Materials,48558,,119285368,Micro-Cap,Technology,1.33%,4.59%,-31.94%,-9.52%,5.07%,-13.96%,-49.22%
+LINK,"Interlink Electronics, Inc.",88975174,9.08,0.63%,Electronic Components,8700,,86386174,Micro-Cap,Technology,45.02%,44.09%,115.79%,172.51%,44.67%,5.17%,160.17%
+ELTK,Eltek Ltd.,75940446,11.40,1.78%,Electronic Components,2464,13.32,63901446,Micro-Cap,Technology,2.26%,4.72%,11.20%,7.20%,2.35%,-34.91%,204.30%
+ASYS,"Amtech Systems, Inc.",74597848,5.27,-1.40%,Semiconductor Equipment & Materials,13871,,81082848,Micro-Cap,Technology,1.52%,-4.64%,-6.81%,-4.81%,-2.02%,26.84%,-30.65%
+OPTX,"Syntec Optics Holdings, Inc.",65671998,2.00,11.73%,Electronic Components,263904,153.32,76491959,Micro-Cap,Technology,-12.68%,-48.86%,2.87%,31.62%,-28.97%,-54.10%,
+MIND,"MIND Technology, Inc.",63595972,8.23,3.13%,Scientific & Technical Instruments,262531,2.57,61616972,Micro-Cap,Technology,,5.00%,64.88%,124.16%,0.50%,36.18%,-74.75%
+SOTK,Sono-Tek Corporation,61587192,3.91,,Scientific & Technical Instruments,271,55.86,48906014,Micro-Cap,Technology,0.03%,-7.57%,-4.87%,-12.53%,-2.49%,-33.39%,64.29%
+SELX,Semilux International Ltd.,57639662,1.54,7.69%,Electronic Components,953,,54234435,Micro-Cap,Technology,-2.53%,10.00%,-4.05%,-14.44%,4.69%,,
+REFR,Research Frontiers Incorporated,53963658,1.65,2.17%,Electronic Components,17010,,52425639,Micro-Cap,Technology,-4.45%,-0.62%,-18.69%,-18.89%,-5.85%,62.95%,-49.84%
+FCUV,Focus Universal Inc.,50373230,0.57,-16.56%,Scientific & Technical Instruments,351287,,45034991,Micro-Cap,Technology,20.23%,200.27%,169.17%,148.54%,94.57%,-57.70%,-79.57%
+DSWL,"Deswell Industries, Inc.",37557673,2.36,0.40%,Electronic Components,1124,3.63,-28199327,Nano-Cap,Technology,0.29%,-3.88%,-4.58%,-11.39%,-0.97%,-4.96%,-20.37%
+LGL,"The LGL Group, Inc.",35569591,6.30,-4.83%,Electronic Components,2026,132.40,-6048409,Nano-Cap,Technology,,7.12%,20.36%,11.07%,10.89%,9.42%,-55.15%
+HOLO,MicroCloud Hologram Inc.,32870720,1.59,-4.52%,Electronic Components,6855679,,-63287776,Nano-Cap,Technology,-11.54%,21.97%,-82.74%,-62.90%,-67.34%,-96.34%,
+MTEK,Maris-Tech Ltd.,28914099,3.54,-3.54%,Electronic Components,31809,,26300500,Nano-Cap,Technology,-12.83%,-26.97%,125.57%,81.68%,-27.18%,239.81%,
+CPSH,CPS Technologies Corporation,28035180,1.92,-0.52%,Electronic Components,22784,,22409327,Nano-Cap,Technology,8.43%,17.68%,12.21%,35.06%,19.88%,-16.45%,89.22%
+EMKR,Emcore Corporation,27787340,3.07,0.16%,Electronic Components,68358,,38503340,Nano-Cap,Technology,2.34%,2.00%,163.79%,31.33%,2.00%,-43.44%,-90.95%
+DAIO,Data I/O Corporation,26415017,2.93,2.45%,Electronic Components,3122,,14929017,Nano-Cap,Technology,,2.14%,4.00%,18.18%,3.25%,-1.04%,-34.25%
+TRT,Trio-Tech International,24991823,5.92,0.61%,Semiconductor Equipment & Materials,4086,45.23,11352823,Nano-Cap,Technology,-2.33%,-5.01%,,-15.03%,1.21%,18.76%,12.00%
+ELSE,"Electro-Sensors, Inc.",17628593,5.12,1.56%,Scientific & Technical Instruments,662,39.56,7326593,Nano-Cap,Technology,-2.47%,-2.97%,31.19%,33.57%,-0.49%,27.29%,42.06%
+IZM,ICZOOM Group Inc.,15841954,1.43,-0.65%,Electronics & Computer Distribution,18981,,22516653,Nano-Cap,Technology,-3.67%,-28.82%,-31.52%,-32.16%,-14.50%,-86.50%,
+TAIT,Taitron Components Incorporated,15534642,2.60,0.78%,Electronics & Computer Distribution,1811,11.22,5914642,Nano-Cap,Technology,-0.42%,-1.15%,-11.34%,-10.26%,0.16%,-19.12%,-8.83%
+SMTK,"SmartKem, Inc.",12574460,3.42,-7.32%,Semiconductor Equipment & Materials,19607,,10987460,Nano-Cap,Technology,-9.88%,15.70%,-42.92%,16.09%,18.09%,,
+KNW,"Know Labs, Inc.",12128211,0.11,-10.07%,Scientific & Technical Instruments,1347706,,14099250,Nano-Cap,Technology,-9.72%,-9.15%,-67.82%,-33.33%,-24.46%,-69.65%,-93.93%
+ASTC,Astrotech Corporation,11946145,6.83,-2.71%,Scientific & Technical Instruments,3377,,-16145855,Nano-Cap,Technology,7.18%,-3.44%,-14.29%,-13.76%,4.46%,-2.64%,-88.96%
+SGMA,"SigmaTron International, Inc.",10219214,1.67,,Electronic Components,6340,,83347656,Nano-Cap,Technology,-5.11%,8.44%,-69.53%,-44.33%,-6.18%,-45.34%,-58.87%
+IMTE,Integrated Media Technology Limited,4906945,1.53,6.99%,Electronic Components,21638,,16685039,Nano-Cap,Technology,11.72%,15.32%,-23.12%,16.26%,14.40%,-47.43%,-98.36%
+OST,"Ostin Technology Group Co., Ltd.",4380200,2.43,0.41%,Electronic Components,23346,,29473025,Nano-Cap,Technology,-5.47%,36.03%,,-34.59%,-9.70%,,
+WATT,Energous Corporation,9578526,0.48,0.54%,Scientific & Technical Instruments,799637,,8894526,Nano-Cap,Technology,-16.84%,65.74%,-44.47%,-20.93%,-52.25%,-73.21%,-98.78%
+SVRE,SaverOne 2014 Ltd.,4154171,0.84,-1.76%,Scientific & Technical Instruments,16494,,2435500,Nano-Cap,Technology,-4.82%,-17.40%,-85.42%,-60.65%,-15.00%,-94.38%,
+SOBR,"SOBR Safe, Inc.",958827,0.99,-4.82%,Scientific & Technical Instruments,935000,,1121531,Nano-Cap,Technology,16.85%,8.33%,-93.78%,-88.44%,-10.34%,-97.57%,-99.79%

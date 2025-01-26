@@ -1,0 +1,391 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+MSFT,Microsoft Corporation,3317443456000,443.58,-0.59%,Software - Infrastructure,5021523,36.82,3300493456000,Mega-Cap,Technology,4.67%,2.20%,2.08%,6.55%,5.86%,11.92%,167.99%
+ORCL,Oracle Corporation,518556384000,184.82,0.33%,Software - Infrastructure,8194748,45.38,595869384000,Mega-Cap,Technology,16.37%,8.58%,32.95%,6.02%,10.55%,67.98%,233.61%
+CRM,"Salesforce, Inc.",318317340000,332.56,-0.02%,Software - Application,1619216,54.71,316984340000,Mega-Cap,Technology,3.57%,-3.21%,34.32%,14.19%,-0.51%,18.42%,79.53%
+SAP,SAP SE,313892874750,273.52,0.19%,Software - Application,434425,118.70,310145851321,Mega-Cap,Technology,4.28%,10.13%,38.43%,18.97%,10.88%,67.02%,95.64%
+NOW,"ServiceNow, Inc.",231785020000,1129.14,0.35%,Software - Application,293182,175.26,228735020000,Mega-Cap,Technology,6.74%,3.11%,49.78%,22.52%,6.14%,50.20%,259.50%
+ADBE,Adobe Inc.,188976343080,435.07,-0.51%,Software - Infrastructure,941945,35.09,187146343080,Large-Cap,Technology,4.80%,-2.20%,-20.63%,-12.13%,-1.66%,-28.49%,24.95%
+PLTR,Palantir Technologies Inc.,175111400398,77.28,0.53%,Software - Infrastructure,32768413,384.35,170801656398,Large-Cap,Technology,12.81%,-4.57%,168.96%,80.02%,1.64%,358.11%,
+INTU,Intuit Inc.,171219630560,601.20,-1.71%,Software - Application,503005,59.44,173675630560,Large-Cap,Technology,-1.57%,-4.93%,-3.91%,-0.37%,-2.68%,-1.69%,114.62%
+UBER,"Uber Technologies, Inc.",142809252200,67.96,0.20%,Software - Application,6104902,33.57,143553252200,Large-Cap,Technology,1.19%,11.68%,0.76%,-15.71%,12.43%,4.16%,80.37%
+SHOP,Shopify Inc.,137440487449,105.44,-0.87%,Software - Application,1349851,99.41,132532487449,Large-Cap,Technology,2.04%,-2.37%,68.41%,28.68%,0.04%,32.95%,128.54%
+PANW,"Palo Alto Networks, Inc.",123168740000,186.28,-0.76%,Software - Infrastructure,1248569,48.88,119998040000,Large-Cap,Technology,7.76%,0.49%,13.45%,-0.80%,3.15%,11.15%,363.02%
+APP,AppLovin Corporation,121390276748,359.94,-0.49%,Software - Application,1233823,109.95,124332699748,Large-Cap,Technology,7.97%,6.08%,342.20%,127.71%,11.70%,779.24%,
+ADP,"Automatic Data Processing, Inc.",120963796875,295.42,-0.32%,Software - Application,346257,31.59,122968996875,Large-Cap,Technology,1.02%,0.80%,20.00%,1.87%,1.24%,24.40%,68.19%
+MSTR,MicroStrategy Incorporated,93002643096,378.11,0.21%,Software - Application,12444247,,97224391096,Large-Cap,Technology,4.63%,3.60%,112.15%,72.25%,30.28%,684.43%,2485.20%
+CRWD,"CrowdStrike Holdings, Inc.",93100718337,373.24,-1.25%,Software - Infrastructure,809823,741.14,89632345337,Large-Cap,Technology,4.41%,4.33%,23.94%,22.11%,10.47%,30.10%,507.29%
+CDNS,"Cadence Design Systems, Inc.",88172811870,323.85,0.73%,Software - Application,394775,84.38,88211961870,Large-Cap,Technology,6.91%,6.64%,14.84%,27.00%,7.00%,10.05%,330.95%
+SNPS,"Synopsys, Inc.",84198636600,555.35,1.96%,Software - Infrastructure,573667,37.54,80832692600,Large-Cap,Technology,7.40%,10.67%,-3.27%,7.74%,12.23%,5.30%,254.67%
+FTNT,"Fortinet, Inc.",75296342720,96.41,-1.86%,Software - Infrastructure,997927,49.37,72589442720,Large-Cap,Technology,5.57%,1.08%,67.99%,19.73%,3.98%,61.31%,317.55%
+TEAM,Atlassian Corporation,68226722034,265.99,1.97%,Software - Application,643274,,67254698034,Large-Cap,Technology,4.33%,1.40%,47.79%,35.28%,7.18%,7.36%,98.64%
+WDAY,"Workday, Inc.",66843450250,250.50,-1.18%,Software - Application,562952,41.12,63049450250,Large-Cap,Technology,-0.11%,-8.28%,9.36%,1.48%,-2.95%,-13.61%,37.28%
+ADSK,"Autodesk, Inc.",64811750000,299.86,-0.53%,Software - Application,416639,59.93,65676750000,Large-Cap,Technology,3.61%,1.12%,24.34%,4.03%,1.99%,21.24%,53.93%
+TTD,"The Trade Desk, Inc.",58088723825,118.27,-2.01%,Software - Application,2137959,189.75,56650171825,Large-Cap,Technology,0.84%,-3.46%,25.71%,2.10%,2.69%,80.54%,331.01%
+SNOW,Snowflake Inc.,58213135000,176.11,-0.78%,Software - Application,1674592,,56651773000,Large-Cap,Technology,5.20%,6.05%,34.46%,52.68%,14.21%,-11.42%,
+ROP,"Roper Technologies, Inc.",57308539050,530.00,-0.83%,Software - Application,88882,39.07,65415539050,Large-Cap,Technology,3.18%,1.72%,-5.79%,-4.01%,2.81%,-2.56%,41.29%
+XYZ,"Block, Inc.",54203033678,87.95,0.54%,Software - Infrastructure,1802827,48.60,49367001678,Large-Cap,Technology,3.17%,-2.42%,28.46%,18.36%,2.93%,32.85%,28.06%
+PAYX,"Paychex, Inc.",52128120825,145.31,0.37%,Software - Application,388540,30.48,51687720825,Large-Cap,Technology,0.35%,3.75%,18.01%,2.61%,3.25%,18.58%,63.31%
+DDOG,"Datadog, Inc.",48400342649,140.88,0.54%,Software - Application,1295174,263.81,46170632649,Large-Cap,Technology,-0.59%,-6.25%,17.72%,11.37%,-1.94%,7.53%,240.68%
+FICO,Fair Isaac Corporation,44796483815,1847.75,-1.73%,Software - Application,103248,90.03,46876800815,Large-Cap,Technology,-7.39%,-10.07%,18.20%,-5.72%,-5.56%,49.21%,361.39%
+NET,"Cloudflare, Inc.",42243737028,123.29,0.16%,Software - Infrastructure,870217,,41867602028,Large-Cap,Technology,7.52%,9.23%,56.48%,35.65%,14.31%,51.31%,583.83%
+HUBS,"HubSpot, Inc.",37632571928,734.11,0.54%,Software - Application,61572,,36452593928,Large-Cap,Technology,2.96%,1.55%,52.17%,37.01%,4.79%,25.59%,301.54%
+ANSS,"ANSYS, Inc.",31187257837,360.08,0.97%,Software - Application,119375,54.95,30734946837,Large-Cap,Technology,3.95%,5.39%,13.38%,8.91%,5.72%,5.83%,30.24%
+ZS,"Zscaler, Inc.",29196372920,191.29,-0.85%,Software - Infrastructure,379258,,27725812920,Large-Cap,Technology,1.55%,2.96%,2.33%,2.64%,6.94%,-16.59%,218.84%
+GDDY,GoDaddy Inc.,28681881300,205.57,0.62%,Software - Infrastructure,169378,16.40,31798381300,Large-Cap,Technology,1.68%,-0.57%,38.76%,24.80%,3.48%,88.70%,183.81%
+IOT,Samsara Inc.,26328621669,47.24,-1.19%,Software - Infrastructure,603555,,25722422669,Large-Cap,Technology,4.69%,7.88%,33.81%,-2.71%,9.43%,48.20%,
+CPAY,"Corpay, Inc.",26030784510,375.45,0.55%,Software - Infrastructure,70860,26.63,28324517510,Large-Cap,Technology,1.49%,9.21%,29.33%,7.61%,10.96%,30.63%,17.97%
+TYL,"Tyler Technologies, Inc.",25081263558,587.63,0.27%,Software - Application,32923,106.94,25178811558,Large-Cap,Technology,1.51%,-3.52%,10.40%,-0.30%,1.29%,32.71%,87.52%
+ZM,Zoom Communications Inc.,24298919240,78.96,-0.40%,Software - Application,1423196,26.25,16634472240,Large-Cap,Technology,-1.22%,-7.38%,34.67%,9.85%,-2.85%,14.83%,3.32%
+PTC,PTC Inc.,22618503080,187.66,-0.14%,Software - Application,274726,60.23,24283021080,Large-Cap,Technology,1.38%,0.19%,6.83%,1.69%,2.21%,7.57%,138.28%
+TOST,"Toast, Inc.",21765760843,38.67,-0.27%,Software - Infrastructure,1477824,,20520760843,Large-Cap,Technology,5.99%,3.19%,42.73%,31.37%,6.39%,123.65%,
+CHKP,Check Point Software Technologies Ltd.,21367497240,196.03,0.90%,Software - Infrastructure,201326,26.58,19898097240,Large-Cap,Technology,5.93%,3.31%,13.95%,-5.36%,4.06%,23.17%,70.59%
+VRSN,"VeriSign, Inc.",19905193000,206.85,-0.14%,Software - Infrastructure,147100,24.14,20752493000,Large-Cap,Technology,-1.41%,4.17%,16.90%,10.66%,0.08%,0.86%,-3.41%
+SSNC,"SS&C Technologies Holdings, Inc.",19725633400,79.90,0.33%,Software - Application,174916,28.54,26405533400,Large-Cap,Technology,1.57%,5.04%,19.67%,4.61%,5.09%,31.59%,25.32%
+MDB,"MongoDB, Inc.",19414485420,259.02,-0.64%,Software - Infrastructure,389768,,18275539420,Large-Cap,Technology,3.50%,4.48%,1.63%,-2.95%,10.23%,-37.93%,71.13%
+GRAB,Grab Holdings Limited,17677042000,4.61,-1.18%,Software - Application,5375644,,11957042000,Large-Cap,Technology,4.48%,-4.90%,37.87%,15.63%,-1.27%,55.33%,
+KSPI,Joint Stock Company Kaspi.kz,18009716480,96.02,1.31%,Software - Infrastructure,114384,8.96,17081391301,Large-Cap,Technology,3.02%,-3.97%,-31.22%,-14.57%,0.07%,-1.24%,
+DOCU,"DocuSign, Inc.",18537630480,89.69,-2.26%,Software - Application,507952,18.92,17725893480,Large-Cap,Technology,0.46%,-2.81%,64.18%,27.83%,2.02%,45.19%,25.48%
+AFRM,"Affirm Holdings, Inc.",17698630783,56.24,-0.35%,Software - Infrastructure,1703507,,23398086783,Large-Cap,Technology,-3.47%,-14.70%,88.96%,27.28%,-8.06%,26.25%,
+CYBR,CyberArk Software Ltd.,17677446508,355.02,-1.01%,Software - Infrastructure,122785,1236.66,16737517508,Large-Cap,Technology,3.24%,12.37%,38.13%,19.52%,7.65%,54.24%,158.01%
+NTNX,"Nutanix, Inc.",17801136320,64.81,-2.45%,Software - Infrastructure,903175,,17420174320,Large-Cap,Technology,-2.52%,-0.31%,31.45%,5.65%,6.03%,15.84%,78.56%
+MANH,"Manhattan Associates, Inc.",17084899046,284.08,0.75%,Software - Application,65961,79.72,16919975046,Large-Cap,Technology,2.73%,0.60%,28.99%,-4.60%,4.33%,27.34%,234.70%
+TWLO,Twilio Inc.,17278707600,111.56,-0.97%,Software - Infrastructure,875378,,15703716600,Large-Cap,Technology,-2.07%,4.01%,93.51%,58.91%,3.86%,51.86%,-5.76%
+GEN,Gen Digital Inc.,16935814080,27.49,0.02%,Software - Infrastructure,803833,28.04,24726814080,Large-Cap,Technology,-0.33%,-1.26%,7.85%,2.54%,0.37%,17.04%,-2.03%
+GWRE,"Guidewire Software, Inc.",15324956357,200.38,9.20%,Software - Application,1248438,495.92,14969976357,Large-Cap,Technology,5.17%,4.24%,29.62%,-2.94%,8.84%,59.21%,62.54%
+DT,"Dynatrace, Inc.",16225590240,54.89,0.97%,Software - Application,605126,98.84,15301182240,Large-Cap,Technology,7.60%,-0.51%,23.49%,-0.04%,0.02%,-6.11%,107.01%
+AZPN,"Aspen Technology, Inc.",16175482881,255.50,-0.97%,Software - Application,123602,,16052237881,Large-Cap,Technology,2.89%,2.90%,34.58%,8.64%,3.35%,27.11%,83.30%
+FFIV,"F5, Inc.",15815765393,271.66,-0.15%,Software - Infrastructure,101589,28.26,14956948393,Large-Cap,Technology,3.73%,7.86%,55.50%,24.84%,8.20%,51.08%,101.48%
+OKTA,"Okta, Inc.",14218910550,87.19,-1.62%,Software - Infrastructure,669348,,12930910550,Large-Cap,Technology,5.25%,6.41%,-5.75%,19.69%,12.46%,9.03%,-29.25%
+DUOL,"Duolingo, Inc.",14780544323,336.00,-0.01%,Software - Application,156229,183.63,13951697323,Large-Cap,Technology,5.02%,-1.78%,91.76%,16.66%,3.64%,72.68%,
+BSY,"Bentley Systems, Incorporated",13378566240,46.08,-1.04%,Software - Application,168777,41.42,14765294240,Large-Cap,Technology,0.39%,-3.28%,-3.94%,-6.00%,-0.30%,-7.38%,
+AKAM,"Akamai Technologies, Inc.",14288089970,95.00,-0.12%,Software - Infrastructure,237261,28.22,17239130970,Large-Cap,Technology,5.07%,-0.81%,0.06%,-10.40%,-0.56%,-20.97%,0.17%
+WIX,Wix.com Ltd.,13076763000,233.00,-0.85%,Software - Infrastructure,112430,146.88,13085041000,Large-Cap,Technology,-2.83%,6.16%,43.91%,36.26%,9.53%,84.82%,67.40%
+RBRK,"Rubrik, Inc.",13217140350,70.39,-1.35%,Software - Infrastructure,565966,,12902154350,Large-Cap,Technology,6.92%,7.91%,110.72%,85.23%,9.16%,,
+MNDY,monday.com Ltd.,12651670500,246.42,-2.89%,Software - Application,238820,604.17,11354925500,Large-Cap,Technology,8.37%,4.64%,10.98%,-12.42%,7.78%,29.71%,
+YMM,Full Truck Alliance Co. Ltd.,11722907283,11.31,0.76%,Software - Application,696645,26.63,8319979416,Large-Cap,Technology,0.72%,-0.88%,42.03%,26.49%,3.70%,67.96%,
+PCOR,"Procore Technologies, Inc.",11742969360,78.18,-1.03%,Software - Application,143252,,11059944360,Large-Cap,Technology,2.89%,3.21%,15.74%,25.38%,5.42%,14.20%,
+KVYO,"Klaviyo, Inc.",11494480112,42.69,0.14%,Software - Infrastructure,256844,,10709780112,Large-Cap,Technology,6.10%,-3.29%,68.70%,12.16%,3.37%,68.77%,
+PAYC,"Paycom Software, Inc.",11600319291,205.21,-1.13%,Software - Application,145862,25.01,11355346291,Large-Cap,Technology,1.08%,0.16%,31.29%,23.69%,1.27%,7.22%,-30.76%
+PCTY,Paylocity Holding Corporation,11023372232,199.16,0.72%,Software - Application,283223,50.57,10615484232,Large-Cap,Technology,1.06%,0.46%,38.34%,15.33%,-0.87%,29.67%,40.26%
+DAY,Dayforce Inc.,11023230000,69.73,-0.24%,Software - Application,174209,211.82,11766330000,Large-Cap,Technology,-0.47%,-6.60%,31.05%,7.89%,-3.77%,5.49%,-3.21%
+ESTC,Elastic N.V.,10748711040,103.16,1.96%,Software - Application,692178,188.90,10137132040,Large-Cap,Technology,2.02%,-2.36%,-9.53%,25.77%,2.12%,-15.91%,43.87%
+NICE,NICE Ltd.,10372144118,161.89,-1.88%,Software - Application,299469,25.50,9412086118,Large-Cap,Technology,-1.29%,-6.27%,-6.74%,-7.37%,-2.86%,-22.26%,-6.85%
+FOUR,"Shift4 Payments, Inc.",7919821100,115.12,-0.47%,Software - Infrastructure,218878,63.03,9365521100,Large-Cap,Technology,13.57%,11.73%,74.37%,22.28%,11.45%,53.78%,
+DSGX,The Descartes Systems Group Inc.,10299799154,120.21,-0.17%,Software - Application,46196,75.73,10125459154,Large-Cap,Technology,4.73%,5.14%,21.13%,13.06%,6.00%,38.51%,159.67%
+GTLB,GitLab Inc.,10335263873,63.31,-0.58%,Software - Infrastructure,713161,,9418291873,Large-Cap,Technology,1.19%,6.43%,18.87%,14.88%,13.01%,-6.86%,
+DBX,"Dropbox, Inc.",9660484158,31.03,-0.51%,Software - Infrastructure,618426,18.03,10792784158,Mid-Cap,Technology,2.55%,3.12%,34.64%,18.70%,3.85%,-4.66%,77.95%
+DOX,Amdocs Limited,9524744075,85.00,-0.21%,Software - Infrastructure,155457,19.80,9800153075,Mid-Cap,Technology,1.09%,-2.10%,3.02%,-5.65%,0.05%,-8.07%,14.32%
+BILL,"BILL Holdings, Inc.",9510339330,91.38,-0.56%,Software - Application,559173,1312.71,8384392330,Mid-Cap,Technology,5.51%,2.65%,71.41%,61.13%,8.48%,26.75%,109.70%
+ALTR,Altair Engineering Inc.,9445790012,110.39,-0.01%,Software - Application,401369,269.20,9191927012,Mid-Cap,Technology,0.23%,1.26%,20.47%,7.16%,1.16%,25.25%,180.48%
+U,Unity Software Inc.,9426456000,23.19,0.56%,Software - Application,3923943,,10259263000,Mid-Cap,Technology,4.63%,2.44%,42.26%,5.44%,2.63%,-30.42%,
+PEGA,Pegasystems Inc.,9099764487,107.99,1.39%,Software - Application,183295,76.47,8964749487,Mid-Cap,Technology,3.71%,11.60%,77.21%,50.77%,14.05%,121.90%,20.17%
+APPF,"AppFolio, Inc.",9360189126,256.40,-0.47%,Software - Application,41829,71.36,9067223126,Mid-Cap,Technology,1.40%,1.59%,-5.18%,28.91%,3.68%,40.49%,104.08%
+CFLT,"Confluent, Inc.",9164177785,27.95,0.04%,Software - Infrastructure,1244459,,8418018785,Mid-Cap,Technology,0.47%,-6.80%,14.65%,26.03%,-0.07%,27.06%,
+VERX,"Vertex, Inc.",8832012705,56.46,-0.31%,Software - Application,96743,298.05,8871359705,Mid-Cap,Technology,1.85%,5.79%,49.34%,31.97%,6.15%,121.82%,
+TTAN,"ServiceTitan, Inc.",8544484965,97.80,2.77%,Software - Application,56233,,8647134965,Mid-Cap,Technology,-3.75%,-8.11%,,,-7.49%,,
+INFA,Informatica Inc.,8597475532,24.70,-0.92%,Software - Infrastructure,242257,106.89,9227472532,Mid-Cap,Technology,2.09%,-7.19%,1.55%,-7.05%,-3.86%,-17.70%,
+CCCS,CCC Intelligent Solutions Holdings Inc.,7678277100,11.49,-1.80%,Software - Application,1336788,167.14,8217957100,Mid-Cap,Technology,6.36%,-2.90%,4.56%,3.27%,-0.26%,6.95%,
+PATH,UiPath Inc.,7427829390,13.66,1.56%,Software - Infrastructure,1916742,,5935148390,Mid-Cap,Technology,1.31%,2.08%,10.50%,7.00%,6.41%,-42.42%,
+OTEX,Open Text Corporation,7550992000,28.52,0.42%,Software - Application,94749,16.42,13228612000,Mid-Cap,Technology,0.82%,2.90%,-8.21%,-15.15%,0.28%,-31.02%,-39.12%
+S,"SentinelOne, Inc.",7461549282,23.01,-0.90%,Software - Infrastructure,1019841,,6821385282,Mid-Cap,Technology,4.37%,3.34%,,-10.47%,4.41%,-11.83%,
+SPSC,"SPS Commerce, Inc.",7289338443,193.97,-0.03%,Software - Application,23255,92.84,7096735443,Mid-Cap,Technology,3.53%,3.03%,-4.06%,0.56%,5.46%,4.92%,240.17%
+OS,"OneStream, Inc.",6687407134,30.03,0.82%,Software - Infrastructure,569899,,6211805134,Mid-Cap,Technology,3.18%,0.15%,,-1.38%,4.16%,,
+WEX,WEX Inc.,7243345431,182.09,-0.40%,Software - Infrastructure,65530,23.10,6787645431,Mid-Cap,Technology,-0.94%,7.44%,-1.30%,-13.88%,3.80%,-10.76%,-17.99%
+CWAN,"Clearwater Analytics Holdings, Inc.",7464065227,28.54,0.22%,Software - Application,196093,2825.00,7231744227,Mid-Cap,Technology,5.64%,-0.77%,42.12%,5.33%,3.49%,52.71%,
+CVLT,"Commvault Systems, Inc.",7118592800,161.35,-0.89%,Software - Application,136942,41.32,6828026800,Mid-Cap,Technology,0.85%,2.56%,34.46%,17.17%,7.88%,106.02%,257.49%
+HCP,"HashiCorp, Inc.",7008456152,34.29,0.02%,Software - Infrastructure,300874,,5662055152,Mid-Cap,Technology,-0.06%,0.03%,2.39%,1.33%,0.20%,58.19%,
+SRAD,Sportradar Group AG,6103361340,20.53,0.51%,Software - Application,132972,102.28,5769000073,Mid-Cap,Technology,2.36%,22.86%,82.48%,60.09%,17.76%,81.03%,
+SOUN,"SoundHound AI, Inc.",6056508587,16.43,0.28%,Software - Application,33327833,,5964743587,Mid-Cap,Technology,17.93%,-24.71%,232.25%,203.90%,-17.44%,785.41%,
+QXO,"QXO, Inc.",5723831624,13.99,0.07%,Software - Application,455157,,687388624,Mid-Cap,Technology,-6.92%,-9.46%,-76.15%,-9.40%,-12.08%,-87.51%,-42.89%
+QTWO,"Q2 Holdings, Inc.",5680110040,93.68,-0.39%,Software - Application,103429,,5812496040,Mid-Cap,Technology,0.77%,-10.17%,41.56%,12.73%,-6.57%,116.18%,7.84%
+LYFT,"Lyft, Inc.",5452358120,13.42,,Software - Application,4280193,,4364856120,Mid-Cap,Technology,0.15%,-1.11%,8.75%,-4.42%,4.03%,6.09%,-72.03%
+ACIW,"ACI Worldwide, Inc.",5532370305,52.24,-1.22%,Software - Infrastructure,364181,25.01,6372408305,Mid-Cap,Technology,-1.12%,-0.30%,27.61%,7.87%,1.87%,76.21%,43.11%
+INTA,"Intapp, Inc.",5392221640,69.90,0.31%,Software - Application,122354,,5156800640,Mid-Cap,Technology,5.00%,6.92%,91.64%,41.12%,8.75%,60.08%,
+WK,Workiva Inc.,5263548300,97.44,-1.49%,Software - Application,855899,,5273723300,Mid-Cap,Technology,-16.54%,-17.33%,30.97%,19.09%,-13.34%,-1.78%,114.34%
+FRSH,Freshworks Inc.,5230297319,17.52,1.42%,Software - Application,741813,,4200844319,Mid-Cap,Technology,2.98%,12.66%,31.93%,53.10%,6.80%,-18.69%,
+TENB,"Tenable Holdings, Inc.",5176617150,43.16,2.13%,Software - Infrastructure,412464,,5035307150,Mid-Cap,Technology,1.17%,4.97%,-2.18%,3.63%,9.42%,-9.47%,60.90%
+QLYS,"Qualys, Inc.",5158514592,141.51,0.38%,Software - Infrastructure,77030,31.12,4819770592,Mid-Cap,Technology,3.11%,0.02%,-1.82%,14.03%,0.39%,-28.89%,63.49%
+CLBT,Cellebrite DI Ltd.,4966917340,23.68,-0.82%,Software - Infrastructure,219899,,4608427340,Mid-Cap,Technology,4.19%,6.00%,90.20%,31.51%,8.35%,179.84%,
+VRNS,"Varonis Systems, Inc.",5046573770,44.55,-0.72%,Software - Infrastructure,342973,,4912651770,Mid-Cap,Technology,-0.53%,-0.95%,-4.47%,-23.33%,0.99%,0.61%,58.57%
+BRZE,"Braze, Inc.",4586450945,44.55,0.04%,Software - Application,120215,,4185963945,Mid-Cap,Technology,0.22%,-0.28%,11.92%,41.62%,5.50%,-19.56%,
+RELY,"Remitly Global, Inc.",4508862307,23.15,0.13%,Software - Infrastructure,211733,,4198112307,Mid-Cap,Technology,-1.08%,1.15%,69.66%,57.62%,1.33%,38.61%,
+CORZ,"Core Scientific, Inc.",4504379138,16.25,1.72%,Software - Infrastructure,3669807,,4818319138,Mid-Cap,Technology,9.91%,13.02%,53.71%,24.47%,13.67%,,
+ASAN,"Asana, Inc.",4622495650,19.80,-2.03%,Software - Application,573216,,4435853650,Mid-Cap,Technology,2.75%,-6.78%,40.25%,66.47%,-0.30%,11.35%,
+ZETA,Zeta Global Holdings Corp.,4483017315,19.04,0.86%,Software - Infrastructure,1307203,,4260568315,Mid-Cap,Technology,5.53%,-2.68%,-8.13%,-29.79%,4.95%,93.44%,
+BOX,"Box, Inc.",4470631440,31.32,-0.35%,Software - Infrastructure,241473,38.99,4525973440,Mid-Cap,Technology,-0.88%,-1.87%,17.06%,-1.35%,-0.54%,19.83%,93.18%
+IDCC,"InterDigital, Inc.",4482350141,176.92,2.63%,Software - Application,58039,18.81,4141692141,Mid-Cap,Technology,2.77%,-6.86%,43.17%,15.31%,-8.92%,64.82%,200.78%
+EEFT,"Euronet Worldwide, Inc.",4311886540,97.27,-0.90%,Software - Infrastructure,80899,14.18,4385586540,Mid-Cap,Technology,-2.83%,-6.43%,-5.68%,-0.06%,-5.68%,-4.11%,-42.01%
+AI,"C3.ai, Inc.",4122361733,33.06,-1.69%,Software - Application,2232276,,3391987733,Mid-Cap,Technology,5.99%,-7.46%,20.84%,31.62%,-2.32%,35.55%,
+GBTG,"Global Business Travel Group, Inc.",4201582860,8.97,-0.06%,Software - Application,58834,,5142582860,Mid-Cap,Technology,,-4.88%,31.91%,16.19%,-3.34%,60.75%,
+PYCR,"Paycor HCM, Inc.",3980987010,22.10,,Software - Application,299546,,3896022010,Mid-Cap,Technology,0.14%,15.95%,72.52%,55.09%,19.01%,9.19%,
+PAY,"Paymentus Holdings, Inc.",3840652817,30.99,-0.82%,Software - Infrastructure,91380,96.66,3659111817,Mid-Cap,Technology,2.97%,-8.65%,57.06%,25.51%,-4.38%,91.19%,
+FROG,JFrog Ltd.,3826610900,34.36,0.17%,Software - Application,126657,,3374667900,Mid-Cap,Technology,3.22%,11.15%,-9.24%,10.97%,16.63%,1.06%,
+BLKB,"Blackbaud, Inc.",3898669599,76.67,-0.72%,Software - Application,28003,75.48,4472008599,Mid-Cap,Technology,0.95%,1.21%,-0.16%,-10.15%,4.48%,-5.60%,-5.71%
+ALIT,"Alight, Inc.",3735529590,7.03,-0.28%,Software - Application,1887558,,5466529590,Mid-Cap,Technology,3.83%,2.77%,-3.16%,-1.40%,1.88%,-17.16%,
+RUM,Rumble Inc.,3581076070,13.17,4.44%,Software - Application,4136757,,3451166964,Mid-Cap,Technology,15.90%,75.38%,94.30%,124.78%,-3.07%,251.25%,
+BL,"BlackLine, Inc.",3730384350,59.74,0.07%,Software - Application,58700,60.92,3801716350,Mid-Cap,Technology,1.76%,-5.88%,27.65%,4.59%,-1.74%,-0.18%,-4.11%
+NCNO,"nCino, Inc.",3764462940,32.16,-1.08%,Software - Application,289971,,3742465940,Mid-Cap,Technology,-2.55%,-7.69%,1.66%,-12.63%,-3.19%,1.47%,
+PAYO,Payoneer Global Inc.,3665981640,10.15,-1.22%,Software - Infrastructure,522052,29.37,9208955640,Mid-Cap,Technology,-2.10%,1.58%,86.23%,22.82%,2.39%,114.17%,
+ALKT,"Alkami Technology, Inc.",3548549070,35.35,0.13%,Software - Application,90226,,3466264070,Mid-Cap,Technology,1.61%,-9.76%,8.05%,-7.62%,-3.76%,45.33%,
+LIF,"Life360, Inc.",3443623592,46.75,1.37%,Software - Application,107487,,3284643592,Mid-Cap,Technology,13.51%,13.23%,37.88%,3.69%,11.75%,,
+DOCN,"DigitalOcean Holdings, Inc.",3471198715,37.90,-0.98%,Software - Infrastructure,170277,44.92,4654718715,Mid-Cap,Technology,11.77%,7.20%,16.61%,-10.37%,12.33%,10.42%,
+AVPT,"AvePoint, Inc.",3288942940,18.19,3.71%,Software - Infrastructure,531114,,3047952940,Mid-Cap,Technology,-0.34%,-1.96%,65.94%,45.44%,6.24%,119.52%,74.88%
+ZI,ZoomInfo Technologies Inc.,3395919410,9.86,-0.35%,Software - Application,1839342,329.67,4624219410,Mid-Cap,Technology,-4.17%,-9.59%,-15.25%,-7.01%,-7.18%,-38.14%,
+DLO,DLocal Limited,3423508093,11.87,-1.29%,Software - Infrastructure,93715,30.05,2771616093,Mid-Cap,Technology,3.62%,4.61%,53.12%,36.13%,6.75%,-30.48%,
+DV,"DoubleVerify Holdings, Inc.",3324092250,19.76,-0.70%,Software - Application,312766,53.14,3055687250,Mid-Cap,Technology,1.95%,-0.30%,-0.55%,14.17%,3.59%,-50.03%,
+YOU,"Clear Secure, Inc.",2313711611,23.94,-2.74%,Software - Application,878076,28.29,1765604611,Mid-Cap,Technology,-4.58%,-7.69%,23.48%,-32.69%,-7.62%,23.48%,
+RNG,"RingCentral, Inc.",3066967677,34.01,-0.21%,Software - Application,318515,,4417345677,Mid-Cap,Technology,1.88%,-9.00%,3.93%,-0.06%,-2.66%,-1.05%,-82.64%
+ALRM,"Alarm.com Holdings, Inc.",3050764052,61.81,0.15%,Software - Application,33753,26.60,2935692052,Mid-Cap,Technology,1.31%,-1.95%,-8.17%,15.04%,1.51%,0.23%,33.42%
+TDC,Teradata Corporation,3070056000,31.89,-0.59%,Software - Infrastructure,158256,37.74,3315056000,Mid-Cap,Technology,2.99%,-0.47%,3.92%,-0.56%,2.99%,-33.17%,20.92%
+BTDR,Bitdeer Technologies Group,3953942708,19.91,-3.07%,Software - Application,2965832,,3824905708,Mid-Cap,Technology,-1.44%,0.24%,86.98%,146.88%,-5.21%,220.94%,
+GRND,Grindr Inc.,2968847720,16.52,-1.73%,Software - Application,304109,,3224288720,Mid-Cap,Technology,-1.62%,-3.61%,43.96%,21.43%,-6.47%,88.53%,
+FIVN,"Five9, Inc.",2931623432,38.76,-2.45%,Software - Infrastructure,346794,,3201652432,Mid-Cap,Technology,6.20%,-8.82%,-10.87%,28.88%,-4.36%,-51.28%,-45.63%
+PAR,PAR Technology Corporation,2582200238,70.56,-2.01%,Software - Application,94878,,2923024238,Mid-Cap,Technology,-5.25%,-5.40%,35.18%,16.11%,-0.91%,61.35%,139.63%
+AGYS,"Agilysys, Inc.",2813776835,96.43,-4.21%,Software - Application,235505,132.46,2813915835,Mid-Cap,Technology,-24.17%,-27.40%,-6.71%,-14.28%,-23.57%,21.52%,251.56%
+CALX,"Calix, Inc.",2573060800,39.26,1.19%,Software - Infrastructure,116605,,2290271800,Mid-Cap,Technology,3.41%,9.73%,6.68%,0.44%,11.27%,-10.70%,347.52%
+STNE,StoneCo Ltd.,2467556520,8.62,0.41%,Software - Infrastructure,1271690,7.34,915261737,Mid-Cap,Technology,-1.83%,4.63%,-33.75%,-22.14%,7.65%,-49.62%,-79.69%
+ODD,Oddity Tech Ltd.,2540737632,44.10,-0.85%,Software - Infrastructure,341502,27.29,2416309632,Mid-Cap,Technology,2.47%,1.65%,10.87%,11.20%,5.85%,3.44%,
+SWI,SolarWinds Corporation,2493762640,14.63,0.07%,Software - Infrastructure,49174,69.62,3553806640,Mid-Cap,Technology,4.50%,1.18%,26.58%,13.25%,2.60%,23.17%,-26.51%
+RPD,"Rapid7, Inc.",2483387314,39.14,-0.39%,Software - Infrastructure,67764,56.13,3061276314,Mid-Cap,Technology,-1.28%,-0.18%,-1.77%,0.77%,-2.34%,-27.93%,-36.32%
+BB,BlackBerry Limited,2419574470,4.09,,Software - Infrastructure,7599904,,2402574470,Mid-Cap,Technology,-1.21%,10.84%,69.01%,58.53%,8.20%,19.24%,-37.84%
+PRGS,Progress Software Corporation,2456740300,55.13,-3.72%,Software - Infrastructure,558883,37.18,3900391300,Mid-Cap,Technology,-9.60%,-13.74%,3.10%,-12.42%,-12.11%,-1.11%,21.42%
+APPN,Appian Corporation,2426458439,32.58,-0.79%,Software - Infrastructure,152805,,2606030439,Mid-Cap,Technology,-1.82%,-6.92%,-6.97%,5.90%,-0.42%,1.96%,-33.72%
+NATL,NCR Atleos Corporation,2404415550,32.56,-1.84%,Software - Application,49486,,4826415550,Mid-Cap,Technology,1.25%,2.92%,-2.24%,21.86%,-2.21%,50.36%,
+FLYW,Flywire Corporation,2347943040,18.62,-2.82%,Software - Infrastructure,1191891,119.75,1666817040,Mid-Cap,Technology,-3.96%,-4.82%,5.33%,11.40%,-7.08%,-3.13%,
+SEMR,"Semrush Holdings, Inc.",2304680659,15.74,,Software - Application,205055,196.75,2083884659,Mid-Cap,Technology,6.71%,29.02%,13.73%,16.33%,32.49%,34.19%,
+LSPD,Lightspeed Commerce Inc.,2248475200,14.70,-0.68%,Software - Application,53899,,1611417200,Mid-Cap,Technology,-0.27%,-7.90%,9.23%,-6.15%,-2.82%,-20.47%,
+CXM,"Sprinklr, Inc.",2202955169,8.74,0.87%,Software - Application,427870,54.13,1777470169,Mid-Cap,Technology,0.58%,-4.84%,-7.68%,19.28%,2.49%,-28.96%,
+IBTA,"Ibotta, Inc.",1983416992,72.04,0.21%,Software - Application,34095,896.19,1642142992,Mid-Cap,Technology,-2.12%,19.19%,8.81%,0.19%,10.16%,,
+KC,Kingsoft Cloud Holdings Limited,2547753462,9.45,-0.74%,Software - Application,456059,,2652882793,Mid-Cap,Technology,-4.54%,-1.25%,258.33%,235.46%,-9.82%,258.33%,
+RAMP,"LiveRamp Holdings, Inc.",2160900973,33.25,0.42%,Software - Infrastructure,88962,662.20,1809829973,Mid-Cap,Technology,4.16%,8.72%,3.15%,35.48%,8.00%,-20.93%,-24.51%
+PLUS,ePlus inc.,2157641500,80.41,-0.11%,Software - Application,47063,20.02,1833756500,Mid-Cap,Technology,1.33%,8.78%,-2.31%,-17.41%,8.96%,4.74%,88.24%
+AVDX,"AvidXchange Holdings, Inc.",2121034751,10.34,-0.29%,Software - Infrastructure,181053,,1807637751,Mid-Cap,Technology,2.07%,-1.80%,-16.44%,19.88%,0.29%,-2.54%,
+PAGS,PagSeguro Digital Ltd.,2191896060,6.62,-0.53%,Software - Infrastructure,1342719,5.82,7492274459,Mid-Cap,Technology,-3.90%,3.91%,-48.69%,-20.55%,6.23%,-47.22%,-81.10%
+EVTC,"EVERTEC, Inc.",2049646302,32.21,-0.05%,Software - Infrastructure,51064,25.17,2715994302,Mid-Cap,Technology,-1.83%,-4.14%,-6.80%,-2.42%,-6.69%,-17.70%,-6.85%
+SPT,"Sprout Social, Inc.",1883346710,33.37,0.91%,Software - Application,139739,,1838583710,Small-Cap,Technology,4.59%,1.91%,-9.84%,16.65%,7.69%,-45.48%,65.35%
+DFIN,"Donnelley Financial Solutions, Inc.",1886171952,66.28,1.40%,Software - Application,72944,20.55,1994671952,Small-Cap,Technology,6.55%,6.42%,0.20%,1.15%,4.19%,5.85%,551.65%
+JAMF,Jamf Holding Corp.,1891994850,14.82,0.61%,Software - Application,172048,,2042451850,Small-Cap,Technology,4.03%,0.20%,-19.60%,-12.01%,4.84%,-23.16%,
+EVCM,EverCommerce Inc.,1877041320,10.30,0.29%,Software - Infrastructure,24276,,2304475320,Small-Cap,Technology,-0.10%,-8.06%,-12.89%,-3.20%,-6.72%,1.48%,
+DAVA,Endava plc,1872528114,31.71,0.48%,Software - Infrastructure,34591,199.88,2038055141,Small-Cap,Technology,0.16%,4.16%,1.12%,19.91%,2.14%,-60.01%,-30.83%
+MQ,"Marqeta, Inc.",1878955097,3.75,0.13%,Software - Infrastructure,1481393,187.00,768551097,Small-Cap,Technology,-1.84%,-0.27%,-27.66%,-27.94%,-1.32%,-37.67%,
+GB,Global Blue Group Holding AG,1499032500,7.54,0.47%,Software - Infrastructure,4606,35.53,2029210622,Small-Cap,Technology,-1.57%,20.77%,38.89%,47.35%,8.23%,60.26%,
+PD,"PagerDuty, Inc.",1659755391,18.68,0.81%,Software - Application,129291,,1577291391,Small-Cap,Technology,-1.39%,-0.49%,-11.75%,1.04%,0.77%,-28.98%,-27.50%
+DBD,"Diebold Nixdorf, Incorporated",1683059497,44.67,-0.28%,Software - Application,26606,77.22,4075459497,Small-Cap,Technology,4.14%,2.12%,5.84%,0.09%,4.07%,44.95%,
+NN,NextNav Inc.,1643939237,12.72,-3.12%,Software - Infrastructure,374542,,1628062237,Small-Cap,Technology,2.02%,-15.83%,64.13%,39.24%,-15.62%,238.40%,
+MTTR,"Matterport, Inc.",1659680300,5.17,0.49%,Software - Application,3706960,,1294322300,Small-Cap,Technology,1.78%,8.44%,19.81%,7.31%,8.44%,128.44%,
+NTCT,"NetScout Systems, Inc.",1616866529,22.87,1.15%,Software - Infrastructure,55702,,1336402529,Small-Cap,Technology,1.48%,5.21%,23.48%,6.20%,4.39%,4.05%,-11.16%
+UPBD,"Upbound Group, Inc.",1613638200,29.86,1.22%,Software - Application,53130,20.21,3041554200,Small-Cap,Technology,0.68%,-2.16%,-9.90%,2.36%,1.13%,-9.43%,-2.22%
+VRNT,Verint Systems Inc.,1582654227,25.17,0.08%,Software - Infrastructure,165327,27.06,1840941227,Small-Cap,Technology,0.28%,-6.40%,-25.77%,11.63%,-8.38%,-11.57%,-15.16%
+ZUO,"Zuora, Inc.",1454034770,9.97,,Software - Infrastructure,202664,,1303461770,Small-Cap,Technology,-0.10%,0.61%,7.90%,0.61%,0.50%,16.34%,-34.32%
+CSGS,"CSG Systems International, Inc.",1572751362,54.88,1.52%,Software - Infrastructure,59160,23.71,2032222362,Small-Cap,Technology,3.27%,5.00%,22.01%,11.47%,5.23%,1.75%,4.96%
+MLNK,"MeridianLink, Inc.",1518434146,20.06,0.35%,Software - Application,47582,,1906078146,Small-Cap,Technology,3.96%,-4.44%,-14.63%,-5.25%,-2.64%,-14.15%,
+SPNS,Sapiens International Corporation N.V.,1466603592,26.44,0.08%,Software - Application,43419,20.71,1343618592,Small-Cap,Technology,2.57%,-5.26%,-34.95%,-29.75%,-2.12%,-6.00%,1.94%
+ADEA,Adeia Inc.,1386764400,13.09,-3.75%,Software - Application,551071,35.38,1831184400,Small-Cap,Technology,1.39%,-4.17%,15.13%,7.12%,-6.37%,14.72%,165.46%
+ENFN,"Enfusion, Inc.",1045170675,11.12,0.09%,Software - Application,126221,276.50,1017999675,Small-Cap,Technology,1.74%,4.52%,20.11%,22.36%,7.86%,25.96%,
+AMPL,"Amplitude, Inc.",1410880790,11.15,0.98%,Software - Application,104581,,1090576790,Small-Cap,Technology,1.75%,0.27%,39.92%,23.35%,4.64%,-10.68%,
+ATEN,"A10 Networks, Inc.",1404393067,19.02,-0.05%,Software - Infrastructure,128243,28.40,1222287067,Small-Cap,Technology,1.01%,2.11%,37.03%,27.86%,2.77%,36.04%,169.76%
+KARO,Karooooo Ltd.,1393294526,44.86,-0.55%,Software - Application,41052,28.58,1374708744,Small-Cap,Technology,1.05%,-3.61%,31.82%,14.93%,-0.09%,80.15%,
+FSLY,"Fastly, Inc.",1359507000,9.78,0.93%,Software - Application,583110,,1465062000,Small-Cap,Technology,1.33%,-5.41%,24.64%,30.61%,1.00%,-53.08%,-61.34%
+SMWB,Similarweb Ltd.,1276402068,16.04,2.65%,Software - Application,116740,,1246896068,Small-Cap,Technology,-2.74%,7.35%,126.52%,70.63%,10.30%,185.74%,
+SABR,Sabre Corporation,1290681630,3.38,0.30%,Software - Infrastructure,1250069,,5636171630,Small-Cap,Technology,0.30%,-12.69%,3.37%,-6.13%,-7.67%,-22.35%,-85.09%
+DCBO,Docebo Inc.,1280479260,42.98,-0.19%,Software - Application,26165,74.21,1200408260,Small-Cap,Technology,0.89%,-6.78%,15.07%,-6.98%,-3.82%,-6.74%,
+DSP,Viant Technology Inc.,323367180,20.18,0.15%,Software - Application,56307,287.86,135600180,Small-Cap,Technology,7.52%,3.18%,84.69%,69.90%,6.11%,140.17%,
+TUYA,Tuya Inc.,1248590894,2.19,4.05%,Software - Infrastructure,756109,,457174894,Small-Cap,Technology,22.03%,19.99%,35.84%,34.16%,20.67%,17.39%,
+OLO,Olo Inc.,1214447442,7.37,-0.74%,Software - Application,280599,,879445442,Small-Cap,Technology,-1.98%,-5.24%,55.56%,48.10%,-3.39%,49.00%,
+DAVE,Dave Inc.,1213825600,91.45,-3.89%,Software - Application,155805,30.40,1212760600,Small-Cap,Technology,9.63%,8.32%,153.73%,117.34%,9.47%,673.58%,
+VTEX,VTEX,1164904251,6.27,-1.10%,Software - Application,63803,135.98,950683251,Small-Cap,Technology,4.42%,10.12%,-7.74%,-7.61%,6.20%,-21.91%,
+EXOD,"Exodus Movement, Inc.",1103088641,41.00,,Software - Infrastructure,26424,23.56,1033253641,Small-Cap,Technology,8.27%,,144.48%,86.36%,33.64%,1682.61%,
+PRO,"PROS Holdings, Inc.",1132032580,24.29,1.50%,Software - Application,107124,,1280713580,Small-Cap,Technology,7.55%,6.36%,1.44%,28.38%,8.97%,-33.01%,-63.55%
+PSFE,Paysafe Limited,1135847370,18.44,-1.34%,Software - Infrastructure,46103,,3368201370,Small-Cap,Technology,3.20%,8.16%,-8.83%,-15.58%,9.30%,31.43%,
+PDFS,"PDF Solutions, Inc.",1112782230,28.42,-0.99%,Software - Application,48089,260.91,998206230,Small-Cap,Technology,5.52%,2.32%,-18.86%,-2.68%,5.98%,-9.35%,65.90%
+TIXT,TELUS International (Cda) Inc.,1069750019,3.93,0.90%,Software - Infrastructure,187122,,2508750019,Small-Cap,Technology,16.12%,6.87%,-37.86%,2.37%,-0.77%,-55.85%,
+VMEO,"Vimeo, Inc.",1036568169,6.26,0.16%,Software - Application,312620,31.25,711787169,Small-Cap,Technology,-1.88%,-6.99%,73.61%,28.60%,-2.34%,69.38%,
+ML,MoneyLion Inc.,977384625,86.78,0.22%,Software - Application,14774,309.25,1032110625,Small-Cap,Technology,0.97%,0.29%,25.52%,84.48%,1.15%,71.67%,
+BLND,"Blend Labs, Inc.",953251740,3.68,-2.65%,Software - Application,524852,,837421740,Small-Cap,Technology,1.61%,-14.09%,21.15%,13.51%,-10.21%,56.85%,
+RDWR,Radware Ltd.,929760750,21.96,-1.30%,Software - Infrastructure,16410,,625528750,Small-Cap,Technology,2.96%,-1.46%,25.28%,-4.34%,-1.24%,30.96%,-13.63%
+BASE,"Couchbase, Inc.",888869040,17.08,0.47%,Software - Infrastructure,71003,,752758040,Small-Cap,Technology,6.25%,10.10%,-4.92%,-0.64%,9.04%,-28.99%,
+GCT,GigaCloud Technology Inc.,883348860,21.45,1.23%,Software - Infrastructure,403107,6.79,1127101860,Small-Cap,Technology,7.07%,18.18%,-25.88%,-18.41%,14.42%,6.48%,
+ETWO,"E2open Parent Holdings, Inc.",788832300,2.54,-0.59%,Software - Application,523967,,1689238300,Small-Cap,Technology,-1.54%,-3.04%,-42.31%,-16.12%,-4.14%,-29.95%,
+CINT,CI&T Inc.,865892697,6.36,-1.70%,Software - Infrastructure,113422,52.82,,Small-Cap,Technology,0.95%,3.07%,6.33%,-8.33%,5.11%,31.82%,
+RSKD,Riskified Ltd.,878282823,5.10,-1.07%,Software - Application,130298,,516856823,Small-Cap,Technology,2.18%,10.99%,-18.77%,13.69%,8.88%,17.85%,
+AIOT,"PowerFleet, Inc.",818268480,6.25,0.97%,Software - Infrastructure,650138,,885543480,Small-Cap,Technology,-0.96%,-5.21%,24.80%,11.73%,-7.06%,84.23%,-22.82%
+YEXT,"Yext, Inc.",804012300,6.44,2.14%,Software - Infrastructure,180039,,790530300,Small-Cap,Technology,-1.47%,0.08%,15.05%,-10.57%,0.39%,5.36%,-58.86%
+IIIV,"i3 Verticals, Inc.",570824875,24.35,,Software - Infrastructure,31432,5.17,517904875,Small-Cap,Technology,2.31%,4.33%,4.42%,5.92%,5.69%,24.49%,-24.40%
+SCWX,SecureWorks Corp.,751121015,8.46,0.18%,Software - Infrastructure,28967,,702866015,Small-Cap,Technology,,-0.35%,13.90%,0.96%,-0.24%,18.54%,-47.87%
+OSPN,OneSpan Inc.,725250099,19.11,0.08%,Software - Infrastructure,51464,25.80,654853099,Small-Cap,Technology,-0.37%,4.60%,44.51%,25.59%,2.97%,83.38%,0.63%
+PUBM,"PubMatic, Inc.",687602265,14.86,0.88%,Software - Application,86548,46.03,582579265,Small-Cap,Technology,2.29%,-4.60%,-30.78%,-3.41%,0.27%,-1.07%,
+PRTH,"Priority Technology Holdings, Inc.",708676722,9.05,-4.49%,Software - Infrastructure,209421,,1468070722,Small-Cap,Technology,17.49%,10.24%,82.12%,57.83%,-19.40%,166.76%,214.62%
+RPAY,Repay Holdings Corporation,649431400,7.39,-0.14%,Software - Infrastructure,67141,,989087400,Small-Cap,Technology,-0.40%,-4.88%,-24.10%,-2.37%,-3.01%,0.68%,-54.15%
+CGNT,Cognyte Software Ltd.,675813000,9.47,0.74%,Software - Infrastructure,141049,,599361000,Small-Cap,Technology,-1.98%,8.42%,27.89%,35.25%,8.67%,58.25%,
+PGY,Pagaya Technologies Ltd.,665846868,9.04,-0.88%,Software - Infrastructure,419515,,1176962868,Small-Cap,Technology,3.52%,1.90%,-37.79%,-23.49%,-1.83%,-29.63%,
+DJCO,Daily Journal Corporation,665491530,476.12,-1.45%,Software - Application,33416,8.52,320243530,Small-Cap,Technology,-6.79%,-13.59%,5.63%,-2.02%,-16.69%,39.47%,64.71%
+RZLV,Rezolve AI Limited,513965568,3.04,-3.80%,Software - Infrastructure,4460926,,559337300,Small-Cap,Technology,31.12%,6.76%,,-41.59%,-17.28%,,
+YALA,Yalla Group Limited,615038494,3.93,0.13%,Software - Application,50718,5.37,46012903,Small-Cap,Technology,-0.51%,-4.16%,-11.11%,-6.67%,-3.45%,-27.27%,
+IMXI,"International Money Express, Inc.",625394857,19.43,-3.38%,Software - Infrastructure,45135,11.23,626971857,Small-Cap,Technology,-4.65%,-2.76%,-3.04%,12.16%,-3.46%,-3.83%,64.36%
+CRNC,Cerence Inc.,628060524,13.94,-4.59%,Software - Application,2810068,,796310524,Small-Cap,Technology,9.07%,90.48%,387.00%,388.63%,86.12%,-24.92%,-32.67%
+RXT,"Rackspace Technology, Inc.",550716980,2.58,6.41%,Software - Infrastructure,305021,,3745816980,Small-Cap,Technology,1.68%,7.56%,-2.81%,-4.72%,9.50%,39.88%,
+HKD,AMTD Digital Inc.,518816910,2.74,0.58%,Software - Application,61553,8.10,247624910,Small-Cap,Technology,0.74%,4.22%,-15.79%,-24.02%,-8.11%,-32.17%,
+RDVT,"Red Violet, Inc.",494087653,35.72,-0.29%,Software - Application,8383,96.82,460489653,Small-Cap,Technology,1.14%,-6.27%,36.10%,19.81%,-2.10%,90.23%,63.70%
+CCSI,"Consensus Cloud Solutions, Inc.",490311389,25.51,0.43%,Software - Infrastructure,15646,5.56,1063119389,Small-Cap,Technology,1.52%,7.67%,24.21%,21.42%,6.45%,38.34%,
+BIGC,"BigCommerce Holdings, Inc.",485956000,6.13,-1.21%,Software - Application,165526,,537753000,Small-Cap,Technology,0.49%,0.32%,-22.01%,8.20%,1.31%,-24.94%,
+MTLS,Materialise NV,467221441,7.78,-1.64%,Software - Application,26244,37.47,401550700,Small-Cap,Technology,-1.80%,6.17%,43.30%,52.70%,12.36%,32.05%,-58.32%
+MITK,"Mitek Systems, Inc.",440190520,9.84,0.41%,Software - Application,111397,140.00,458486520,Small-Cap,Technology,-1.71%,-14.26%,-19.74%,8.41%,-11.95%,-21.79%,7.57%
+BAND,Bandwidth Inc.,447864558,16.03,-1.54%,Software - Infrastructure,41506,,896994558,Small-Cap,Technology,3.04%,-10.15%,-21.58%,-14.18%,-4.35%,19.71%,-76.89%
+PRCH,"Porch Group, Inc.",453394485,4.34,-4.19%,Software - Application,245955,,603905485,Small-Cap,Technology,-5.23%,-11.00%,143.55%,219.01%,-7.93%,104.98%,-54.43%
+API,"Agora, Inc.",451206749,4.53,-3.62%,Software - Application,177347,7.34,185593749,Small-Cap,Technology,17.50%,3.30%,88.76%,64.34%,12.98%,80.08%,
+BKKT,"Bakkt Holdings, Inc.",188851532,30.34,4.05%,Software - Infrastructure,175976,,117834532,Small-Cap,Technology,20.65%,5.81%,40.73%,154.23%,17.72%,-16.09%,
+XPER,Xperi Inc.,404368404,9.05,0.33%,Software - Application,57438,,402178404,Small-Cap,Technology,-0.11%,-11.48%,17.76%,-4.45%,-12.17%,-12.85%,
+TRAK,"ReposiTrak, Inc.",394620210,21.74,0.58%,Software - Application,5979,69.71,369431701,Small-Cap,Technology,0.16%,-6.06%,-65.76%,11.47%,-2.28%,-65.76%,-65.76%
+LSAK,"Lesaka Technologies, Inc.",405226668,5.13,0.29%,Software - Infrastructure,5957,,521400668,Small-Cap,Technology,-2.39%,1.89%,3.13%,0.49%,-6.15%,57.87%,38.24%
+LGTY,"Logility Supply Chain Solutions, Inc.",375196314,11.15,0.09%,Software - Application,21213,58.63,290976314,Small-Cap,Technology,0.81%,2.96%,,6.50%,0.54%,,
+OOMA,"Ooma, Inc.",378270000,13.99,-0.14%,Software - Application,14758,,376350000,Small-Cap,Technology,-0.28%,-2.51%,41.66%,15.12%,-0.36%,32.55%,-0.14%
+DGNX,Diginex Limited,168781418,15.62,108.27%,Software - Application,8327675,,181612928,Micro-Cap,Technology,,,,,,,
+EGHT,"8x8, Inc.",350171480,2.68,,Software - Application,156257,,693683480,Small-Cap,Technology,-1.47%,-1.47%,-3.60%,32.67%,0.37%,-22.99%,-87.05%
+ARQQ,Arqit Quantum Inc.,363991440,27.39,-5.91%,Software - Infrastructure,253611,,346276440,Small-Cap,Technology,-2.19%,-9.31%,195.36%,276.84%,-28.78%,140.52%,
+ASUR,"Asure Software, Inc.",335110218,12.66,0.32%,Software - Application,46570,,336800218,Small-Cap,Technology,4.13%,38.38%,28.78%,30.64%,34.11%,50.78%,42.12%
+KLTR,"Kaltura, Inc.",335316800,2.24,-0.22%,Software - Application,66313,,308683800,Small-Cap,Technology,-2.61%,-4.27%,86.67%,67.16%,1.82%,25.14%,
+EB,"Eventbrite, Inc.",329399738,3.44,1.03%,Software - Application,166153,,17138738,Small-Cap,Technology,-0.87%,2.10%,-34.11%,17.65%,1.19%,-56.35%,-83.49%
+BLZE,"Backblaze, Inc.",321627500,6.27,-1.26%,Software - Infrastructure,80693,,350124500,Small-Cap,Technology,2.92%,-1.09%,2.59%,-14.88%,5.48%,-12.29%,
+ALLT,Allot Ltd.,320220194,8.33,,Software - Infrastructure,481973,,312511194,Small-Cap,Technology,9.59%,64.27%,160.44%,137.86%,38.32%,386.98%,-16.70%
+DOMO,"Domo, Inc.",295653259,7.65,1.19%,Software - Application,51466,,383933259,Micro-Cap,Technology,11.34%,6.03%,-4.30%,-5.03%,6.78%,-21.00%,-68.88%
+NRDY,"Nerdy, Inc.",290403190,1.65,2.53%,Software - Application,487519,,225401190,Micro-Cap,Technology,-4.17%,-5.85%,-3.01%,61.00%,-0.62%,-48.56%,
+LAW,"CS Disco, Inc.",296548560,4.94,-0.20%,Software - Application,39954,,177563560,Micro-Cap,Technology,-2.75%,-4.81%,-9.34%,-17.22%,-0.80%,-37.81%,
+SMRT,"SmartRent, Inc.",296556260,1.53,-0.65%,Software - Application,135748,,132906260,Micro-Cap,Technology,-3.12%,-1.90%,-35.95%,-10.40%,-11.43%,-54.28%,
+ILLR,Triller Group Inc.,287934000,1.89,1.89%,Software - Application,522466,,289803399,Micro-Cap,Technology,-22.59%,-17.78%,-60.21%,-49.04%,-22.27%,148.10%,-91.13%
+EXFY,"Expensify, Inc.",293577504,3.26,-1.36%,Software - Application,88273,,260964504,Micro-Cap,Technology,-2.94%,-8.33%,75.53%,86.97%,-1.49%,76.47%,
+PDYN,Palladyne AI Corp.,288777916,9.24,-2.85%,Software - Infrastructure,6531564,,278838916,Micro-Cap,Technology,3.48%,169.41%,373.13%,352.86%,-22.49%,1627.52%,
+IMMR,Immersion Corporation,275634478,8.54,,Software - Application,96823,4.74,496857478,Micro-Cap,Technology,-2.95%,-6.05%,-29.65%,1.19%,-2.18%,25.77%,11.34%
+ONTF,"ON24, Inc.",270730200,6.52,0.31%,Software - Application,21208,,85250200,Micro-Cap,Technology,0.93%,0.46%,2.85%,3.34%,0.62%,-8.71%,
+SVCO,"Silvaco Group, Inc.",238235946,9.37,11.95%,Software - Application,385292,,144465946,Micro-Cap,Technology,1.83%,6.35%,-56.59%,29.17%,3.59%,,
+SANG,Sangoma Technologies Corporation,257234159,7.75,-0.90%,Software - Infrastructure,2366,,319639159,Micro-Cap,Technology,6.23%,9.18%,59.46%,33.95%,7.42%,167.62%,
+RMNI,"Rimini Street, Inc.",253666800,2.84,1.79%,Software - Application,41822,,215985800,Micro-Cap,Technology,,10.71%,-7.31%,60.35%,4.49%,-11.99%,-40.00%
+ATGL,Alpha Technology Group Limited,233516250,14.99,-2.14%,Software - Infrastructure,7202,,228077840,Micro-Cap,Technology,-3.16%,8.90%,313.51%,140.19%,8.20%,10.31%,
+PERF,Perfect Corp.,264809867,2.42,-13.99%,Software - Application,224645,46.38,102287867,Micro-Cap,Technology,-8.57%,14.91%,18.10%,32.87%,-9.86%,2.86%,
+ARBE,Arbe Robotics Ltd.,285720604,2.86,-5.02%,Software - Infrastructure,3685315,,299435604,Micro-Cap,Technology,-6.05%,72.51%,32.28%,51.67%,58.60%,51.28%,
+TLS,Telos Corporation,237408368,3.30,-0.30%,Software - Infrastructure,72517,,178288368,Micro-Cap,Technology,0.61%,-6.29%,-22.46%,-11.59%,-4.09%,-24.94%,
+AEVA,"Aeva Technologies, Inc.",240317288,4.37,-2.02%,Software - Infrastructure,58407,,106806288,Micro-Cap,Technology,0.45%,10.95%,35.56%,14.07%,-6.11%,-3.61%,
+APPS,"Digital Turbine, Inc.",220936380,2.26,5.87%,Software - Application,1564675,,595791380,Micro-Cap,Technology,10.36%,23.84%,-1.84%,-32.81%,26.04%,-60.19%,-71.90%
+MAPS,"WM Technology, Inc.",135356327,1.38,-0.36%,Software - Application,354147,,121313327,Micro-Cap,Technology,5.73%,-15.03%,34.47%,53.65%,0.36%,59.20%,-86.15%
+AEYE,"AudioEye, Inc.",222493887,18.20,0.39%,Software - Application,45586,,226622887,Micro-Cap,Technology,13.83%,4.70%,-14.35%,-26.24%,20.12%,250.67%,238.33%
+HPAI,Helport AI Limited,211583834,5.70,0.85%,Software - Infrastructure,5881,0.00,213891822,Micro-Cap,Technology,5.52%,-9.12%,,32.54%,2.67%,,
+MRT,"Marti Technologies, Inc.",204184868,3.59,0.70%,Software - Application,13464,,264824145,Micro-Cap,Technology,-3.52%,20.27%,106.98%,74.94%,5.01%,298.75%,
+BCOV,Brightcove Inc.,200735184,4.43,0.11%,Software - Application,30330,,196458184,Micro-Cap,Technology,,0.91%,76.10%,106.54%,1.61%,72.66%,-50.34%
+EGAN,eGain Corporation,184549633,6.52,0.77%,Software - Application,10817,34.05,120964633,Micro-Cap,Technology,1.09%,14.11%,-8.10%,31.50%,3.85%,-14.87%,-16.94%
+REKR,"Rekor Systems, Inc.",195156624,1.95,-6.20%,Software - Infrastructure,8228454,,216443624,Micro-Cap,Technology,35.07%,153.54%,23.81%,89.09%,33.33%,-40.23%,-48.00%
+PSQH,"PSQ Holdings, Inc.",184520104,4.29,-0.70%,Software - Application,713205,,207118549,Micro-Cap,Technology,4.60%,12.50%,32.92%,57.09%,-4.85%,-15.13%,
+TCX,Tucows Inc.,180697174,16.56,0.85%,Software - Infrastructure,3672,,613587174,Micro-Cap,Technology,-0.30%,4.79%,-25.30%,-16.01%,-4.20%,-27.25%,-74.15%
+TROO,"TROOPS, Inc.",182876400,1.77,-1.67%,Software - Application,3743,,172572400,Micro-Cap,Technology,3.63%,-0.55%,-50.95%,-14.29%,9.76%,-24.37%,97.39%
+CCRD,CoreCard Corporation,176906749,22.52,0.58%,Software - Application,13856,45.69,150941749,Micro-Cap,Technology,-1.58%,3.75%,88.47%,82.33%,-1.37%,90.07%,-43.24%
+GRRR,Gorilla Technology Group Inc.,283801671,14.89,-3.12%,Software - Infrastructure,790822,5.32,271452738,Micro-Cap,Technology,0.30%,11.71%,407.99%,190.56%,-17.30%,200.50%,
+AZ,A2Z Cust2Mate Solutions Corp.,191041221,6.52,0.31%,Software - Application,16499,,189621221,Micro-Cap,Technology,1.88%,-9.72%,205.88%,36.84%,-1.81%,152.43%,
+SSTI,"SoundThinking, Inc.",164028155,13.11,0.58%,Software - Application,6131,,152771155,Micro-Cap,Technology,-0.42%,5.07%,-6.26%,12.07%,-0.80%,-39.72%,-55.23%
+PAYS,"Paysign, Inc.",153148424,2.85,-0.35%,Software - Infrastructure,116363,19.07,45609218,Micro-Cap,Technology,-4.99%,-5.30%,-45.65%,-24.50%,-6.24%,7.25%,-71.02%
+AISP,"Airship AI Holdings, Inc.",152247510,5.31,-4.84%,Software - Infrastructure,872021,5.58,150261235,Micro-Cap,Technology,8.77%,27.69%,33.17%,169.57%,-10.86%,272.00%,
+XNET,Xunlei Limited,136292867,2.18,1.40%,Software - Infrastructure,31252,9.43,-121625133,Micro-Cap,Technology,3.87%,8.04%,28.74%,8.59%,8.04%,42.38%,-59.36%
+RDZN,"Roadzen, Inc.",145414331,1.77,-9.69%,Software - Application,107953,,163647135,Micro-Cap,Technology,24.84%,-20.33%,7.69%,117.78%,-10.09%,-53.11%,
+YAAS,Youxin Technology Ltd,129500000,3.78,-2.20%,Software - Application,3273,,129750273,Micro-Cap,Technology,2.93%,-2.28%,,,-4.12%,,
+NTCL,NetClass Technology Inc,129600000,7.15,-3.12%,Software - Application,28066,683.32,129317971,Micro-Cap,Technology,-2.64%,37.17%,,,26.15%,,
+ZENV,Zenvia Inc.,67365840,2.37,-1.25%,Software - Application,16638,,70314130,Micro-Cap,Technology,-7.69%,48.15%,25.00%,62.16%,3.00%,114.29%,
+LPSN,"LivePerson, Inc.",129914356,1.32,-7.41%,Software - Application,1490663,,458255356,Micro-Cap,Technology,5.93%,68.85%,44.44%,24.35%,-5.92%,-50.17%,-96.64%
+RSSS,"Research Solutions, Inc.",128655968,3.95,0.77%,Software - Application,54551,,121731195,Micro-Cap,Technology,-1.75%,-0.25%,49.05%,45.19%,-5.54%,52.53%,15.29%
+VERI,"Veritone, Inc.",141811146,3.12,-1.88%,Software - Infrastructure,463878,,271547146,Micro-Cap,Technology,11.19%,38.26%,17.34%,-22.82%,-3.05%,88.17%,28.74%
+QH,Quhuo Limited,133660447,1.33,,Software - Application,3600,,135424927,Micro-Cap,Technology,3.84%,-9.14%,197.50%,-9.74%,-5.41%,18.03%,
+YXT,YXT.COM Group Holding Limited,313893434,1.96,,Software - Application,1381,,291542099,Micro-Cap,Technology,-1.39%,-13.85%,,-11.95%,-15.68%,,
+OCFT,"OneConnect Financial Technology Co., Ltd.",110587189,2.79,0.54%,Software - Application,2088,,-212817789,Micro-Cap,Technology,1.28%,-3.48%,64.88%,17.87%,13.99%,0.91%,-98.02%
+UPLD,"Upland Software, Inc.",107843130,3.97,1.02%,Software - Application,62278,,347515130,Micro-Cap,Technology,-2.48%,-9.24%,67.59%,70.13%,-9.45%,-3.20%,-90.39%
+DHX,"DHI Group, Inc.",112614259,2.29,-1.72%,Software - Application,16669,58.25,153568259,Micro-Cap,Technology,,24.60%,4.02%,25.95%,31.64%,1.30%,-21.81%
+ZENA,"ZenaTech, Inc.",105234555,5.99,-1.48%,Software - Infrastructure,206976,,111774574,Micro-Cap,Technology,-3.49%,-21.24%,,200.99%,-20.94%,,
+SNCR,"Synchronoss Technologies, Inc.",101997813,9.68,2.92%,Software - Infrastructure,7225,,281587813,Micro-Cap,Technology,4.21%,0.53%,-0.63%,-15.15%,-1.98%,66.25%,-81.97%
+PHUN,"Phunware, Inc.",91373271,4.37,-3.53%,Software - Application,648206,,56856271,Micro-Cap,Technology,-19.96%,16.45%,-9.58%,-46.14%,-12.88%,-64.25%,-92.05%
+INUV,"Inuvo, Inc.",75870000,0.55,1.63%,Software - Application,4536,,74364129,Micro-Cap,Technology,14.89%,27.63%,57.43%,125.47%,-16.46%,35.37%,62.02%
+VTSI,"VirTra, Inc.",74484268,6.82,3.05%,Software - Application,26228,12.49,63176840,Micro-Cap,Technology,-3.07%,3.12%,-20.72%,5.75%,-1.93%,-47.79%,55.77%
+ALAR,Alarum Technologies Ltd.,69023418,9.94,-0.65%,Software - Infrastructure,106575,7.11,46639418,Micro-Cap,Technology,-3.54%,-10.88%,-63.88%,-45.96%,-6.18%,2.94%,-67.68%
+USIO,"Usio, Inc.",69996174,2.56,-0.97%,Software - Infrastructure,49358,28.67,63660746,Micro-Cap,Technology,14.92%,92.54%,62.26%,79.17%,76.71%,54.49%,44.94%
+ALTS,ALT5 Sigma Corporation,68096380,4.69,-3.10%,Software - Application,183249,,70709380,Micro-Cap,Technology,-20.53%,26.04%,140.80%,95.95%,4.09%,868.00%,38.68%
+AUID,authID Inc.,64651728,6.02,1.69%,Software - Infrastructure,53510,,53170105,Micro-Cap,Technology,6.67%,-15.79%,-38.33%,-15.19%,-1.66%,-29.61%,-51.48%
+BMR,Beamr Imaging Ltd.,62355884,3.95,-1.75%,Software - Application,68620,,45147884,Micro-Cap,Technology,0.50%,0.50%,-22.84%,24.07%,-18.29%,177.24%,
+BMTX,"BM Technologies, Inc.",60200730,4.99,0.20%,Software - Application,340252,,48976730,Micro-Cap,Technology,1.43%,3.75%,62.75%,52.76%,1.84%,155.39%,-51.65%
+WFCF,"Where Food Comes From, Inc.",65968000,11.33,-11.07%,Software - Application,2801,34.72,65842000,Micro-Cap,Technology,-3.70%,2.33%,12.74%,13.45%,-3.78%,-7.01%,76.94%
+NUKK,Nukkleus Inc.,85343186,26.92,1.66%,Software - Application,282460,,87278212,Micro-Cap,Technology,56.41%,-33.82%,934.38%,1160.35%,-27.79%,259.98%,
+DUOT,"Duos Technologies Group, Inc.",57192284,6.55,-3.68%,Software - Application,91780,,62918443,Micro-Cap,Technology,29.52%,19.30%,143.73%,71.29%,13.71%,100.00%,-2.86%
+IDN,"Intellicheck, Inc.",54939194,2.78,,Software - Application,1870,,49192194,Micro-Cap,Technology,2.58%,0.36%,-12.03%,21.93%,-0.71%,51.09%,-72.06%
+INLX,"Intellinetics, Inc.",55212071,12.84,-1.57%,Software - Application,3586,,56507955,Micro-Cap,Technology,-1.29%,-10.00%,77.55%,0.15%,-5.09%,118.23%,16212.50%
+SYT,"SYLA Technologies Co., Ltd.",48794224,1.88,2.17%,Software - Application,2225,25.22,251765815,Nano-Cap,Technology,15.00%,0.55%,-2.65%,11.52%,-8.00%,-59.65%,
+MSAI,"MultiSensor AI Holdings, Inc.",52013771,1.63,0.62%,Software - Infrastructure,135635,0.30,43553771,Nano-Cap,Technology,5.20%,-18.18%,4.52%,-22.49%,-11.96%,-36.47%,
+AIXI,Xiao-I Corporation,14289175,5.06,-2.50%,Software - Application,33344,,48651425,Micro-Cap,Technology,-2.81%,6.14%,-23.11%,6.57%,-10.05%,-64.18%,
+SWVL,Swvl Holdings Corp.,44167211,4.98,-0.31%,Software - Application,8821,,44307813,Nano-Cap,Technology,-5.29%,-24.88%,-31.10%,33.42%,-24.33%,38.00%,
+LGCL,Lucas GC Limited,43950767,0.58,4.98%,Software - Application,7467,4.01,44934041,Nano-Cap,Technology,7.26%,14.25%,-78.08%,-52.38%,-8.06%,,
+RTC,Baijiayun Group Ltd,34206660,1.70,3.27%,Software - Application,96478,,34110349,Nano-Cap,Technology,-20.91%,-46.45%,-72.47%,-77.07%,-51.80%,-88.92%,
+NVNI,Nvni Group Limited,49089675,1.49,1.36%,Software - Application,55601,,54397539,Nano-Cap,Technology,-13.02%,-82.87%,9.70%,110.00%,-40.00%,-45.35%,
+MNDO,MIND C.T.I. Ltd,42589928,2.11,0.48%,Software - Application,15250,9.17,27517928,Nano-Cap,Technology,3.43%,7.38%,12.23%,7.65%,6.83%,2.43%,-15.26%
+VRAR,"The Glimpse Group, Inc.",38603301,1.88,-1.31%,Software - Infrastructure,164840,,37559392,Nano-Cap,Technology,-8.41%,-45.42%,88.61%,174.10%,-22.87%,51.19%,
+HKIT,Hitek Global Inc.,29339286,1.34,-3.60%,Software - Application,57409,34.75,-1346341,Nano-Cap,Technology,-4.20%,4.98%,-12.18%,-2.14%,-4.20%,,
+FAAS,DigiAsia Corp.,7272588,0.67,1.46%,Software - Infrastructure,94743,,7340673,Nano-Cap,Technology,-6.77%,60.65%,-78.54%,-54.35%,-9.31%,,
+WCT,Wellchange Holdings Company Limited,38702300,1.81,-0.55%,Software - Application,1079435,41.28,39211234,Nano-Cap,Technology,6.29%,78.85%,,-76.60%,93.73%,,
+MTC,"MMTec, Inc.",38032219,1.52,0.64%,Software - Application,51836,2.40,66200892,Nano-Cap,Technology,3.42%,15.27%,-45.13%,-51.26%,-3.82%,-92.30%,-99.19%
+JG,Aurora Mobile Limited,38397593,6.32,6.85%,Software - Infrastructure,3625,,27887967,Nano-Cap,Technology,-0.79%,7.20%,134.20%,1.21%,-10.88%,85.84%,-87.40%
+KPLT,"Katapult Holdings, Inc.",38900007,8.57,-3.33%,Software - Infrastructure,20401,,105166007,Nano-Cap,Technology,26.93%,49.66%,-53.10%,-1.66%,30.97%,-16.34%,-96.42%
+ISDR,Issuer Direct Corporation,35349296,9.60,4.12%,Software - Application,3130,,48611296,Nano-Cap,Technology,4.06%,0.88%,1.43%,-14.63%,3.13%,-39.46%,-24.36%
+AWRE,"Aware, Inc.",35622552,1.71,1.80%,Software - Application,2485,,12540552,Nano-Cap,Technology,1.82%,10.16%,-14.29%,-15.58%,-13.85%,10.53%,-51.16%
+NXPL,NextPlat Corp,30636340,1.31,11.02%,Software - Application,226562,,12461340,Nano-Cap,Technology,12.84%,2.50%,-0.81%,10.31%,13.89%,-25.45%,-58.31%
+VHC,VirnetX Holding Corporation,33748536,9.00,1.24%,Software - Infrastructure,2955,,-10005464,Nano-Cap,Technology,6.72%,123.93%,63.72%,45.50%,13.25%,41.79%,-88.27%
+HTCR,"HeartCore Enterprises, Inc.",35378119,1.60,-5.27%,Software - Application,67095,7.04,31223382,Nano-Cap,Technology,3.05%,28.03%,115.56%,30.00%,-6.89%,252.08%,
+MASK,3 E Network Technology Group Limited,31696000,2.95,7.27%,Software - Application,85752,20.47,31644191,Nano-Cap,Technology,13.20%,,,,,,
+XBP,"XBP Europe Holdings, Inc.",31071083,1.07,3.88%,Software - Infrastructure,7040,,63238083,Nano-Cap,Technology,-10.08%,0.94%,-21.32%,-20.15%,-1.83%,-61.79%,
+NTWK,"NetSol Technologies, Inc.",30752464,2.75,2.61%,Software - Application,4959,40.61,13948255,Nano-Cap,Technology,3.15%,3.15%,-7.61%,-11.34%,4.73%,27.03%,-28.73%
+LDTC,LeddarTech Holdings Inc.,39096478,1.03,-0.96%,Software - Application,162282,,98995598,Nano-Cap,Technology,-16.80%,33.42%,38.65%,281.65%,-30.67%,-77.66%,
+SURG,"SurgePays, Inc.",31855170,1.56,-1.27%,Software - Application,20623,,12622267,Nano-Cap,Technology,-5.95%,-10.73%,-48.53%,-15.96%,-11.24%,-74.72%,-90.12%
+MOGO,Mogo Inc.,31201800,1.29,,Software - Infrastructure,14133,,82961295,Nano-Cap,Technology,5.37%,-5.56%,-18.27%,20.85%,-6.25%,-20.81%,-84.26%
+CXAI,CXApp Inc.,35418280,1.83,-3.68%,Software - Application,614749,0.83,37480280,Nano-Cap,Technology,4.40%,19.50%,-12.44%,17.28%,4.40%,66.67%,
+AIFF,"Firefly Neuroscience, Inc.",27729725,3.23,-7.39%,Software - Application,152512,,26499725,Nano-Cap,Technology,-5.68%,49.79%,-40.34%,-18.08%,31.70%,-26.60%,-44.60%
+CREX,"Creative Realities, Inc.",26221217,2.53,-0.98%,Software - Application,12796,17.23,37256217,Nano-Cap,Technology,-0.39%,-13.56%,-46.99%,-46.32%,4.08%,2.00%,-46.54%
+CNTM,"ConnectM Technology Solutions, Inc.",34330080,1.20,1.69%,Software - Application,6356,,34350618,Nano-Cap,Technology,13.46%,13.46%,-34.08%,12.38%,-2.48%,-89.21%,
+EZFL,EZFill Holdings Inc.,22411144,3.81,5.54%,Software - Application,1671,,22629873,Nano-Cap,Technology,-0.28%,5.56%,-23.60%,25.78%,16.45%,-3.73%,
+SMSI,"Smith Micro Software, Inc.",22702976,1.26,-1.56%,Software - Application,87920,,24127976,Nano-Cap,Technology,12.28%,32.04%,-44.35%,41.55%,-2.29%,-79.29%,-96.68%
+HUBC,HUB Cyber Security Ltd.,22844802,0.70,-6.53%,Software - Infrastructure,699520,,51425802,Nano-Cap,Technology,5.50%,61.17%,-4.44%,41.37%,0.39%,-59.25%,
+STEC,Santech Holdings Limited,21562800,0.73,-9.38%,Software - Application,15816,1.20,-11079460,Nano-Cap,Technology,-1.40%,8.59%,125.37%,-41.66%,-37.39%,-35.29%,
+NXTT,Next Technology Holding Inc.,19883466,2.92,4.66%,Software - Application,109214,0.12,-33822065,Nano-Cap,Technology,17.88%,53.86%,-49.60%,149.86%,19.81%,-18.34%,
+BNAI,"Brand Engagement Network, Inc.",19015211,0.51,-12.77%,Software - Infrastructure,499739,,21734307,Nano-Cap,Technology,-8.25%,-15.28%,-79.82%,-40.08%,-39.71%,,
+BLIN,"Bridgeline Digital, Inc.",17605744,1.78,5.25%,Software - Infrastructure,61512,,16904744,Nano-Cap,Technology,-6.11%,13.42%,72.45%,52.25%,6.96%,124.44%,3.68%
+INTZ,Intrusion Inc.,38233712,2.04,-6.41%,Software - Infrastructure,1202602,,40187712,Nano-Cap,Technology,-18.35%,438.40%,65.78%,172.50%,-29.11%,-56.31%,
+ORKT,Orangekloud Technology Inc.,16093189,0.69,-5.12%,Software - Application,842845,,16063980,Nano-Cap,Technology,-80.32%,-62.56%,,-90.27%,-75.83%,,
+DTSS,Datasea Inc.,14528350,2.14,3.38%,Software - Infrastructure,199906,,14962865,Nano-Cap,Technology,-5.96%,-3.30%,-25.99%,-13.87%,-10.48%,23.27%,-93.17%
+DATS,"DatChat, Inc.",20878272,4.91,-1.11%,Software - Application,766568,,16348929,Nano-Cap,Technology,16.43%,185.06%,220.00%,287.50%,178.65%,251.77%,
+MLGO,MicroAlgo Inc.,15956544,1.47,-8.13%,Software - Infrastructure,770475,,-26639665,Nano-Cap,Technology,-11.72%,-17.09%,-96.86%,-76.33%,-60.09%,-98.78%,
+BLBX,Blackboxstocks Inc.,15673163,4.00,-27.54%,Software - Application,4331503,,15029788,Nano-Cap,Technology,189.01%,177.39%,133.90%,83.39%,150.91%,106.74%,-31.00%
+RYDE,Ryde Group Ltd,13013463,0.49,-0.91%,Software - Application,44955,,10835918,Nano-Cap,Technology,3.71%,56.65%,-92.93%,-26.12%,7.61%,,
+PET,Wag! Group Co.,13055232,0.26,-1.64%,Software - Application,65334,,24582232,Nano-Cap,Technology,-1.76%,19.18%,-78.85%,-68.02%,10.03%,-85.98%,
+XTKG,"X3 Holdings Co., Ltd.",14168680,0.93,-9.90%,Software - Application,42190,0.00,19239656,Nano-Cap,Technology,4.05%,19.08%,-87.54%,-68.33%,10.75%,-94.75%,-99.99%
+CISO,CISO Global Inc.,11940119,1.05,3.96%,Software - Infrastructure,33735,,24065923,Nano-Cap,Technology,-12.93%,-38.41%,69.75%,15.19%,-70.89%,-32.67%,
+APCX,AppTech Payments Corp.,11945923,0.42,-3.61%,Software - Infrastructure,73190,,12629923,Nano-Cap,Technology,-9.08%,-27.62%,-60.54%,-44.60%,-16.92%,-71.76%,-49.16%
+CYN,Cyngn Inc.,15075042,0.53,-3.69%,Software - Application,1777566,,12793082,Nano-Cap,Technology,-9.52%,17.32%,-90.60%,-84.50%,-35.21%,-95.64%,
+RVYL,Ryvyl Inc.,11684384,1.50,-5.06%,Software - Infrastructure,74291,,-58127616,Nano-Cap,Technology,15.00%,19.60%,-14.57%,-27.43%,15.00%,-64.82%,
+BNZI,"Banzai International, Inc.",7927656,1.59,-3.64%,Software - Application,2134764,,14339671,Nano-Cap,Technology,22.22%,-3.51%,-76.65%,-49.39%,7.84%,-97.95%,
+UBXG,U-BX Technology Ltd.,9581250,2.97,2.06%,Software - Infrastructure,3501,,5463435,Nano-Cap,Technology,-13.61%,-9.03%,-97.83%,-52.60%,-13.35%,,
+LIDR,"AEye, Inc.",16244405,1.05,-3.72%,Software - Infrastructure,1025470,,-5507595,Nano-Cap,Technology,-20.55%,-6.83%,-32.57%,-12.40%,-19.30%,-20.55%,
+MFI,mF International Limited,9215209,0.72,3.58%,Software - Application,20064,,6273979,Nano-Cap,Technology,-6.78%,-0.66%,,-7.88%,3.56%,,
+ELWS,"Earlyworks Co., Ltd",9317524,3.10,0.28%,Software - Application,18365,,7442736,Nano-Cap,Technology,4.90%,4.53%,34.60%,37.74%,10.82%,37.10%,
+AMST,Amesite Inc.,13180563,3.30,,Software - Application,6758,,11645810,Nano-Cap,Technology,1.09%,-36.69%,27.87%,20.26%,-31.89%,48.74%,
+JNVR,Janover Inc.,8347562,5.83,-1.32%,Software - Infrastructure,16004,,5606823,Nano-Cap,Technology,11.72%,8.80%,-4.03%,34.26%,21.73%,-25.38%,
+IDAI,T Stamp Inc.,10258122,4.79,-4.81%,Software - Application,40737,,11478762,Nano-Cap,Technology,12.03%,-2.35%,-11.16%,54.63%,-62.03%,-77.03%,
+VS,Versus Systems Inc.,7635281,2.87,3.24%,Software - Application,108474,,7164033,Nano-Cap,Technology,36.28%,27.52%,69.51%,,26.36%,40.55%,
+GITS,"Global Interactive Technologies, Inc.",9003865,0.14,-17.30%,Software - Application,463674,,5713472,Nano-Cap,Technology,-17.43%,-32.37%,,,-31.00%,,
+MRIN,Marin Software Incorporated,6632680,2.07,-1.90%,Software - Application,6060,,1863680,Nano-Cap,Technology,-1.43%,3.50%,-11.16%,-6.33%,-6.33%,-11.12%,-77.15%
+FRGT,"Freight Technologies, Inc.",2927402,1.44,-1.28%,Software - Application,31125,,4442550,Nano-Cap,Technology,5.80%,-17.51%,-78.05%,-23.96%,-22.75%,-97.96%,-99.99%
+ULY,Urgent.ly Inc.,5939857,0.48,9.09%,Software - Application,19582,0.00,43353857,Nano-Cap,Technology,-8.03%,-12.52%,-70.47%,-32.45%,-13.73%,-83.70%,
+TGL,Treasure Global Inc.,6828678,0.21,-6.81%,Software - Application,1345343,0.10,6760416,Nano-Cap,Technology,14.90%,17.53%,-86.27%,-70.05%,29.99%,-97.06%,
+FTFT,Future FinTech Group Inc.,5643320,0.28,1.72%,Software - Application,242750,,-13669247,Nano-Cap,Technology,-3.70%,-9.75%,-40.06%,-17.92%,-12.23%,-70.47%,-93.67%
+VERB,"Verb Technology Company, Inc.",5869050,5.64,-4.45%,Software - Application,9626,0.04,-9422950,Nano-Cap,Technology,-0.68%,-3.82%,-71.62%,-45.32%,-11.46%,-78.03%,-99.95%
+CETX,"Cemtrex, Inc.",4729315,2.68,0.19%,Software - Infrastructure,18863,,17696139,Nano-Cap,Technology,-13.59%,-20.06%,-99.44%,-74.12%,-7.61%,-99.97%,-100.00%
+JTAI,Jet.AI Inc.,4490568,3.46,0.29%,Software - Application,66065,,5328959,Nano-Cap,Technology,-5.99%,-3.09%,-95.86%,-83.17%,-24.01%,-98.53%,
+OBLG,"Oblong, Inc.",4018704,3.81,8.39%,Software - Application,30348,0.42,-1600296,Nano-Cap,Technology,-0.31%,-0.28%,-47.09%,-15.42%,-9.54%,-43.39%,-99.54%
+IFBD,"Infobird Co., Ltd",4170650,2.10,-0.99%,Software - Application,3478,0.01,-5007494,Nano-Cap,Technology,-0.95%,-6.74%,-31.25%,8.29%,-7.52%,-44.41%,
+SOPA,Society Pass Incorporated,4338370,1.15,-3.36%,Software - Application,100913,,1406001,Nano-Cap,Technology,34.16%,50.70%,-19.24%,9.51%,36.70%,-61.51%,
+OLB,"The OLB Group, Inc.",3917295,1.90,4.40%,Software - Infrastructure,113791,,5256253,Nano-Cap,Technology,-4.21%,11.66%,-33.09%,-17.65%,-12.08%,-77.81%,-98.79%
+AUUD,Auddia Inc.,2780100,0.49,-0.76%,Software - Application,78953,,-906699,Nano-Cap,Technology,4.03%,2.86%,-64.75%,-28.77%,-3.90%,-91.98%,
+BCAN,Femto Technologies Inc.,2818087,4.20,-2.53%,Software - Application,10225,,-1221720,Nano-Cap,Technology,-2.05%,-45.57%,-56.23%,-46.91%,-45.91%,-99.49%,
+MYSZ,"My Size, Inc.",2608469,2.12,2.42%,Software - Application,147555,,565469,Nano-Cap,Technology,-18.82%,-51.29%,-35.51%,14.37%,-51.52%,-45.98%,-99.66%
+TAOP,Taoping Inc.,4265513,0.30,-5.84%,Software - Infrastructure,616249,0.29,12086822,Nano-Cap,Technology,2.74%,-21.85%,-52.50%,-36.53%,-24.53%,-61.79%,-99.33%
+SGN,"Signing Day Sports, Inc.",1508744,1.87,-4.10%,Software - Application,23622,,1954121,Nano-Cap,Technology,-17.37%,-32.99%,-81.72%,-84.52%,-25.86%,-94.35%,
+ATCH,"AtlasClear Holdings, Inc.",2455534,6.31,-0.32%,Software - Infrastructure,3588,,304131,Nano-Cap,Technology,-5.26%,-43.58%,-79.00%,-47.26%,-34.37%,-98.68%,
+LYT,Lytus Technologies Holdings PTV. Ltd.,16561574,0.69,-1.74%,Software - Application,189103,1.03,15075831,Nano-Cap,Technology,4.04%,-36.19%,-63.69%,-69.82%,-20.14%,-89.87%,

@@ -1,0 +1,67 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+NVDA,NVIDIA Corporation,3562653362000,145.69,-0.94%,Semiconductors,54381063,57.23,3534118362000,Mega-Cap,Technology,7.95%,9.18%,24.71%,2.34%,9.52%,147.21%,2272.48%
+AVGO,Broadcom Inc.,1129231897600,238.12,-1.16%,Semiconductors,6436116,195.86,1187449897600,Mega-Cap,Technology,5.66%,9.11%,53.11%,33.85%,3.91%,98.90%,682.00%
+TSM,Taiwan Semiconductor Manufacturing Company Limited,1157153609777,223.76,0.25%,Semiconductors,5545434,34.80,1119381977935,Mega-Cap,Technology,7.93%,13.18%,34.64%,10.52%,13.02%,95.45%,283.24%
+AMD,"Advanced Micro Devices, Inc.",199548831650,123.42,-0.27%,Semiconductors,12051211,109.78,197242831650,Mega-Cap,Technology,3.16%,3.81%,-18.36%,-21.63%,2.45%,-28.97%,142.41%
+QCOM,QUALCOMM Incorporated,189136640000,172.46,1.30%,Semiconductors,2264904,18.98,190470640000,Large-Cap,Technology,3.55%,11.35%,-8.58%,0.73%,10.82%,12.03%,80.07%
+TXN,Texas Instruments Incorporated,179752359850,198.55,0.76%,Semiconductors,2425932,36.63,184893359850,Large-Cap,Technology,-0.23%,5.45%,-1.03%,0.65%,5.09%,13.48%,50.58%
+ARM,Arm Holdings plc,189106430000,166.55,-7.44%,Semiconductors,11508902,299.88,187006430000,Large-Cap,Technology,22.07%,36.16%,10.12%,18.10%,45.86%,128.98%,
+MU,"Micron Technology, Inc.",121700789100,104.92,-3.95%,Semiconductors,12148284,31.39,128485789100,Large-Cap,Technology,5.85%,21.21%,-4.40%,0.14%,29.79%,24.82%,85.23%
+ADI,"Analog Devices, Inc.",111167656560,224.74,0.29%,Semiconductors,536329,68.32,116386179560,Large-Cap,Technology,2.69%,5.81%,-3.09%,-0.70%,5.47%,15.05%,87.81%
+MRVL,"Marvell Technology, Inc.",106665444470,126.82,1.29%,Semiconductors,4247872,,109892244470,Large-Cap,Technology,4.72%,10.03%,78.42%,47.72%,11.48%,75.62%,343.22%
+INTC,Intel Corporation,93247060000,21.45,-1.90%,Semiconductors,20031650,,119397060000,Large-Cap,Technology,10.85%,11.99%,-33.72%,-4.29%,9.03%,-54.60%,-63.90%
+NXPI,NXP Semiconductors N.V.,54925653160,216.41,0.15%,Semiconductors,582311,20.62,61959653160,Large-Cap,Technology,1.19%,2.78%,-19.76%,-6.11%,3.96%,-1.04%,61.31%
+MPWR,"Monolithic Power Systems, Inc.",33629907600,689.02,-0.06%,Semiconductors,226411,77.72,32167557600,Large-Cap,Technology,14.53%,15.20%,-20.30%,-22.06%,15.49%,7.15%,276.11%
+MCHP,Microchip Technology Incorporated,31404344800,58.56,0.14%,Semiconductors,1522147,40.61,37541144800,Large-Cap,Technology,2.60%,5.35%,-34.12%,-22.21%,1.97%,-34.62%,7.07%
+ON,ON Semiconductor Corporation,23857405910,55.57,-0.82%,Semiconductors,2306053,13.90,24453605910,Large-Cap,Technology,1.45%,-14.46%,-22.75%,-16.55%,-11.13%,-24.15%,126.02%
+ASX,"ASE Technology Holding Co., Ltd.",23908545690,10.87,-1.41%,Semiconductors,3043428,9.50,27780328952,Large-Cap,Technology,6.17%,10.20%,,6.89%,9.43%,18.88%,113.57%
+GFS,GlobalFoundries Inc.,23531202390,41.96,-0.94%,Semiconductors,832493,31.85,22464202390,Large-Cap,Technology,1.24%,1.53%,-23.68%,5.87%,-1.28%,-28.41%,
+STM,STMicroelectronics N.V.,22727860849,25.65,0.77%,Semiconductors,2189331,10.47,19546860849,Large-Cap,Technology,2.98%,3.31%,-39.48%,-8.15%,1.82%,-43.91%,-10.44%
+ALAB,"Astera Labs, Inc.",19501205237,116.48,-5.26%,Semiconductors,3393724,,18614404237,Large-Cap,Technology,-8.69%,-11.64%,120.51%,71.01%,-11.83%,,
+UMC,United Microelectronics Corporation,15658665011,5.91,3.29%,Semiconductors,6112347,9.08,14661277966,Large-Cap,Technology,-9.92%,-12.40%,-26.85%,-26.29%,-11.86%,-28.14%,115.85%
+SWKS,"Skyworks Solutions, Inc.",14712732000,92.60,0.65%,Semiconductors,537562,24.93,14330232000,Large-Cap,Technology,-0.30%,3.66%,-19.48%,-4.97%,3.74%,-13.24%,-25.69%
+CRDO,Credo Technology Group Holding Ltd,14298940485,84.31,-1.40%,Semiconductors,1405886,,13928932485,Large-Cap,Technology,11.77%,23.34%,186.24%,112.84%,25.72%,284.26%,
+MTSI,"MACOM Technology Solutions Holdings, Inc.",10955264745,146.85,-0.35%,Semiconductors,98389,141.70,10862439745,Large-Cap,Technology,4.60%,8.99%,41.34%,29.18%,13.44%,63.18%,402.28%
+QRVO,"Qorvo, Inc.",8304170595,89.69,2.99%,Semiconductors,1038146,,9169141595,Mid-Cap,Technology,17.43%,22.92%,-28.50%,-14.78%,24.54%,-17.50%,-24.18%
+LSCC,Lattice Semiconductor Corporation,8396915060,59.95,-1.50%,Semiconductors,522356,59.67,8283345060,Mid-Cap,Technology,6.25%,5.17%,8.23%,16.48%,7.43%,-11.10%,162.67%
+RMBS,Rambus Inc.,6874087500,63.25,-1.94%,Semiconductors,276109,40.06,6471581500,Mid-Cap,Technology,5.59%,19.83%,-0.42%,51.49%,19.19%,-14.85%,338.75%
+SMTC,Semtech Corporation,6549165506,75.86,-0.18%,Semiconductors,308256,,7602965506,Mid-Cap,Technology,4.81%,19.58%,140.04%,72.91%,22.87%,258.47%,39.70%
+TSEM,Tower Semiconductor Ltd.,6014988268,54.18,0.05%,Semiconductors,352239,29.27,5003281268,Mid-Cap,Technology,6.82%,6.15%,33.39%,19.65%,5.14%,81.24%,118.28%
+SITM,SiTime Corporation,5975298740,255.48,-0.11%,Semiconductors,25786,,5540502740,Mid-Cap,Technology,5.42%,18.06%,76.16%,38.89%,19.22%,110.94%,936.35%
+CRUS,"Cirrus Logic, Inc.",5329931970,100.39,0.09%,Semiconductors,110969,17.00,5004279970,Mid-Cap,Technology,-1.46%,-1.18%,-28.19%,-19.90%,-0.21%,21.46%,19.45%
+ALGM,"Allegro MicroSystems, Inc.",4603279680,24.55,-1.88%,Semiconductors,1597011,,4828985680,Mid-Cap,Technology,6.92%,15.89%,-13.09%,25.29%,14.46%,-10.87%,
+SLAB,Silicon Laboratories Inc.,4542395520,139.12,-0.62%,Semiconductors,63360,,4172717520,Mid-Cap,Technology,1.72%,11.99%,26.88%,23.01%,12.70%,10.81%,17.41%
+PI,"Impinj, Inc.",3924760364,137.77,-0.70%,Semiconductors,224706,155.89,4047780364,Mid-Cap,Technology,1.63%,-7.40%,-19.06%,-38.92%,-4.49%,44.51%,342.55%
+POWI,"Power Integrations, Inc.",3578489278,62.23,-1.11%,Semiconductors,91495,95.35,3274738278,Mid-Cap,Technology,1.35%,0.03%,-17.63%,-1.03%,0.03%,-25.07%,20.18%
+SYNA,Synaptics Incorporated,3344475816,84.38,1.07%,Semiconductors,100783,20.82,3462775816,Mid-Cap,Technology,2.07%,11.89%,-5.63%,17.02%,9.40%,-23.09%,17.11%
+DIOD,Diodes Incorporated,2912949423,60.99,-2.99%,Semiconductors,111017,47.63,2646269423,Mid-Cap,Technology,4.02%,2.13%,-20.78%,-1.23%,1.95%,-8.98%,7.29%
+VSH,"Vishay Intertechnology, Inc.",2336422424,17.22,0.12%,Semiconductors,324683,27.74,2628596424,Mid-Cap,Technology,4.50%,0.12%,-26.90%,-3.59%,1.54%,-22.90%,-24.56%
+HIMX,"Himax Technologies, Inc.",1733024000,11.77,18.60%,Semiconductors,9508742,22.55,2066250000,Small-Cap,Technology,20.10%,28.50%,34.42%,56.47%,23.38%,63.97%,165.95%
+MXL,"MaxLinear, Inc.",2043242796,24.28,0.21%,Semiconductors,298868,,2036046796,Mid-Cap,Technology,8.61%,27.06%,1.25%,70.15%,22.50%,9.39%,13.60%
+SIMO,Silicon Motion Technology Corporation,1805293570,53.97,-0.09%,Semiconductors,62575,33.76,1441335570,Small-Cap,Technology,6.91%,0.22%,-28.11%,-5.48%,-0.06%,-16.10%,8.50%
+AOSL,Alpha and Omega Semiconductor Limited,1222486988,41.41,-1.66%,Semiconductors,88595,,1110246988,Small-Cap,Technology,14.84%,9.92%,-2.18%,15.12%,13.72%,52.91%,202.51%
+WOLF,"Wolfspeed, Inc.",961033260,6.04,-2.35%,Semiconductors,6654811,,5452633260,Small-Cap,Technology,-7.48%,-12.22%,-70.53%,-59.84%,-7.21%,-80.92%,-88.18%
+CEVA,"CEVA, Inc.",803307800,33.67,-0.99%,Semiconductors,25874,,650393800,Small-Cap,Technology,0.68%,9.29%,71.89%,42.38%,7.77%,66.26%,16.12%
+IMOS,ChipMOS TECHNOLOGIES INC.,15226295702,20.71,-0.34%,Semiconductors,4634,11.91,15334255614,Small-Cap,Technology,13.12%,8.74%,-17.38%,-8.22%,10.36%,-24.71%,-5.55%
+NVTS,Navitas Semiconductor Corporation,610826190,3.26,-3.41%,Semiconductors,1167955,,520073190,Small-Cap,Technology,-4.26%,6.31%,-16.38%,31.64%,-5.60%,-46.34%,
+LASR,"nLIGHT, Inc.",553063748,11.70,1.12%,Semiconductors,199081,,458741748,Small-Cap,Technology,17.11%,14.67%,-2.69%,4.23%,10.30%,-11.81%,-45.66%
+SKYT,"SkyWater Technology, Inc.",550903360,11.20,-3.16%,Semiconductors,281551,,591049360,Small-Cap,Technology,-3.04%,-18.91%,48.67%,11.72%,-19.20%,19.12%,
+AIP,"Arteris, Inc.",487753575,12.07,-0.62%,Semiconductors,30351,,445205575,Small-Cap,Technology,5.28%,27.16%,38.72%,71.48%,18.30%,117.21%,
+POET,POET Technologies Inc.,371111492,5.16,-5.35%,Semiconductors,556221,,329695179,Small-Cap,Technology,6.16%,10.62%,66.10%,35.36%,-11.50%,365.97%,88.05%
+NVEC,NVE Corporation,396292960,72.82,-11.17%,Semiconductors,26561,26.45,376849828,Small-Cap,Technology,-4.43%,-1.65%,-7.01%,-3.54%,-6.39%,-3.56%,8.43%
+VLN,Valens Semiconductor Ltd.,320992780,2.85,-5.79%,Semiconductors,358976,,194317780,Small-Cap,Technology,-17.92%,54.35%,12.70%,48.69%,9.23%,39.90%,
+ICG,Intchains Group Limited,254183809,4.15,-1.89%,Semiconductors,9669,5.29,176868215,Micro-Cap,Technology,0.71%,-51.77%,-47.12%,1.68%,28.18%,-62.23%,
+MX,Magnachip Semiconductor Corporation,148818641,4.04,-0.74%,Semiconductors,20312,,31980641,Micro-Cap,Technology,-0.75%,2.84%,-18.61%,-16.56%,-1.00%,-43.30%,-74.44%
+MRAM,"Everspin Technologies, Inc.",149849722,6.65,-2.49%,Semiconductors,48563,113.67,115219722,Micro-Cap,Technology,4.60%,9.47%,11.80%,12.73%,6.73%,-21.88%,36.13%
+QUIK,QuickLogic Corporation,142038000,9.29,-0.75%,Semiconductors,44864,,143590000,Micro-Cap,Technology,2.41%,19.39%,-18.32%,15.27%,-17.17%,-34.08%,34.68%
+NA,Nano Labs Ltd,121712344,8.11,5.93%,Semiconductors,9971,,144509040,Micro-Cap,Technology,-4.61%,-12.16%,107.03%,25.57%,-14.43%,-46.27%,
+LAES,SEALSQ Corp,438710518,4.12,-8.21%,Semiconductors,14184000,,439486518,Micro-Cap,Technology,-1.54%,63.27%,540.51%,907.18%,-26.99%,159.54%,
+GCTS,"GCT Semiconductor Holding, Inc.",118864692,2.46,-1.20%,Semiconductors,16424,,159791692,Micro-Cap,Technology,3.32%,8.73%,-48.55%,-7.78%,6.87%,,
+GSIT,"GSI Technology, Inc.",88995366,3.47,-2.25%,Semiconductors,254788,,80527366,Micro-Cap,Technology,26.79%,28.16%,30.52%,-1.39%,17.16%,61.36%,-58.14%
+SQNS,Sequans Communications S.A.,84975755,3.48,2.35%,Semiconductors,103665,0.54,9466755,Micro-Cap,Technology,13.29%,17.99%,193.97%,42.68%,-2.29%,-52.31%,-69.28%
+WKEY,WISeKey International Holding AG,87672706,8.35,-5.44%,Semiconductors,326643,11.50,78368706,Micro-Cap,Technology,12.20%,26.32%,309.75%,318.48%,-2.48%,308.80%,-81.66%
+MOBX,"Mobix Labs, Inc.",59653677,1.52,-8.43%,Semiconductors,1037965,,64262677,Micro-Cap,Technology,50.91%,-11.23%,22.96%,123.66%,-2.35%,-43.73%,
+PXLW,"Pixelworks, Inc.",47928707,0.83,2.04%,Semiconductors,60535,,21163707,Nano-Cap,Technology,11.73%,17.29%,-17.60%,-2.02%,11.47%,-37.92%,-80.73%
+LEDS,SemiLEDs Corporation,12909015,1.71,-1.16%,Semiconductors,115788,,16216015,Nano-Cap,Technology,13.07%,31.06%,16.89%,39.85%,34.11%,36.22%,-24.78%
+WISA,"WiSA Technologies, Inc.",64738884,1.36,-1.09%,Semiconductors,269758,,60817884,Nano-Cap,Technology,-13.14%,-20.29%,-43.54%,-25.55%,-33.90%,-90.80%,-100.00%
+PRSO,Peraso Inc.,3831200,1.01,1.00%,Semiconductors,27747,,2925200,Nano-Cap,Technology,-12.28%,15.59%,-32.89%,-43.18%,-13.79%,-82.88%,-98.69%

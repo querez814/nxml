@@ -1,0 +1,25 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+FSLR,"First Solar, Inc.",18403270200,168.70,-1.86%,Solar,1812604,14.81,17715031200,Large-Cap,Technology,-11.78%,-7.66%,-23.53%,-16.38%,-4.44%,12.34%,233.09%
+ENPH,"Enphase Energy, Inc.",8240175930,61.50,0.84%,Solar,2520695,135.53,7773743930,Mid-Cap,Technology,-7.35%,-14.64%,-42.17%,-32.55%,-11.20%,-41.12%,95.11%
+NXT,Nextracker Inc.,5917953580,40.92,-0.69%,Solar,895709,10.27,5502197580,Mid-Cap,Technology,-3.58%,17.21%,-13.92%,26.38%,12.78%,-5.35%,
+RUN,Sunrun Inc.,1897907940,8.56,1.13%,Solar,4019432,,13441658940,Small-Cap,Technology,-12.15%,-14.29%,-50.09%,-38.47%,-8.54%,-35.76%,-51.30%
+JKS,"JinkoSolar Holding Co., Ltd.",1032465935,19.90,-0.60%,Solar,289400,33.62,3684192491,Small-Cap,Technology,-15.46%,-15.88%,-4.39%,-1.96%,-19.60%,-27.52%,-9.86%
+ARRY,"Array Technologies, Inc.",991428075,6.68,4.62%,Solar,1149961,,1335429075,Small-Cap,Technology,-4.56%,13.41%,-39.31%,-5.27%,5.71%,-50.81%,
+SEDG,"SolarEdge Technologies, Inc.",756248805,12.92,-1.00%,Solar,2110590,,823479805,Small-Cap,Technology,-10.00%,-11.65%,-49.20%,-23.28%,-4.04%,-81.12%,-87.86%
+SHLS,"Shoals Technologies Group, Inc.",715138710,4.45,3.73%,Solar,3241815,21.45,845782710,Small-Cap,Technology,-5.51%,-16.21%,-34.90%,-15.05%,-22.42%,-67.45%,
+CSIQ,Canadian Solar Inc.,680608836,10.53,1.54%,Solar,624485,,3810298836,Small-Cap,Technology,-8.55%,-9.83%,-34.33%,-17.89%,-6.74%,-47.73%,-52.89%
+NOVA,Sunnova Energy International Inc.,363613230,2.78,-4.47%,Solar,7614349,,8388308230,Small-Cap,Technology,-7.91%,-21.35%,-60.57%,-44.25%,-15.16%,-70.87%,-77.10%
+TOYO,"TOYO Co., Ltd.",163178920,3.47,-1.98%,Solar,10368,6.21,178062418,Micro-Cap,Technology,-1.12%,4.73%,66.98%,39.37%,4.73%,,
+CSLR,"Complete Solaria, Inc.",138682524,1.89,0.54%,Solar,188320,0.24,259564524,Micro-Cap,Technology,16.77%,22.08%,29.66%,-20.68%,5.03%,63.48%,
+ZEO,Zeo Energy Corp.,120847353,2.68,-13.55%,Solar,123140,1.08,117954236,Micro-Cap,Technology,20.09%,37.74%,-16.12%,103.48%,-18.08%,-75.18%,
+MAXN,"Maxeon Solar Technologies, Ltd.",99537900,6.16,-5.38%,Solar,147342,,365419900,Micro-Cap,Technology,2.17%,-14.26%,-71.67%,10.35%,-15.85%,-98.67%,
+SOL,Emeren Group Ltd,104962779,1.96,-1.38%,Solar,109377,,133827779,Micro-Cap,Technology,-6.20%,7.20%,7.20%,-22.58%,-3.89%,-5.29%,39.36%
+SMXT,"SolarMax Technology, Inc.",74265776,1.79,9.15%,Solar,382848,,99633603,Micro-Cap,Technology,5.81%,29.13%,-58.69%,91.39%,1.24%,,
+TYGO,"Tigo Energy, Inc.",61350854,1.01,,Solar,71494,,82027854,Micro-Cap,Technology,18.82%,7.62%,-34.84%,-19.84%,2.55%,-30.82%,
+FTCI,"FTC Solar, Inc.",52443504,4.03,-1.31%,Solar,19886,,45071504,Micro-Cap,Technology,0.74%,31.19%,4.62%,-38.18%,-25.95%,-22.43%,
+SPRU,Spruce Power Holding Corporation,50785098,2.74,0.37%,Solar,5498,,512177098,Micro-Cap,Technology,-2.50%,-6.83%,-22.66%,8.33%,-8.08%,-29.46%,-96.59%
+BEEM,Beam Global,41662398,2.78,-1.42%,Solar,473234,,38845398,Nano-Cap,Technology,-16.67%,-6.25%,-55.15%,-45.89%,-14.83%,-58.14%,-56.08%
+VSTE,Vast Renewables Limited,31472178,1.03,-1.90%,Solar,92937,,33645178,Nano-Cap,Technology,-6.25%,-17.97%,-59.62%,3.96%,-5.41%,-66.88%,
+TURB,"Turbo Energy, S.A.",26044564,2.68,3.86%,Solar,46939,,26903601,Nano-Cap,Technology,5.69%,55.04%,113.11%,59.51%,20.37%,188.89%,
+VVPR,VivoPower International PLC,4794908,1.10,1.85%,Solar,50978,,33389908,Nano-Cap,Technology,-10.00%,-23.40%,-60.73%,21.36%,-18.80%,-2.70%,-90.18%
+ASTI,"Ascent Solar Technologies, Inc.",3934656,2.86,-3.70%,Solar,8044,0.00,2700294,Nano-Cap,Technology,12.07%,11.64%,-68.97%,12.94%,-10.89%,-95.65%,-99.99%

@@ -1,0 +1,47 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+VRT,Vertiv Holdings Co,57399308741,152.92,2.91%,Electrical Equipment & Parts,3910439,101.98,59576708741,Large-Cap,Industrials,15.37%,27.44%,74.13%,36.01%,34.65%,186.20%,1219.88%
+HUBB,Hubbell Incorporated,24519904630,454.56,-0.50%,Electrical Equipment & Parts,134772,32.91,26005804630,Large-Cap,Industrials,6.51%,7.04%,23.40%,0.04%,9.06%,38.60%,207.75%
+NVT,nVent Electric plc,12427126400,75.11,-0.38%,Electrical Equipment & Parts,365985,22.11,14548226400,Large-Cap,Industrials,7.29%,8.41%,0.90%,0.95%,10.62%,29.91%,196.27%
+AYI,"Acuity Brands, Inc.",10358981780,339.53,0.80%,Electrical Equipment & Parts,47137,24.80,9992981780,Large-Cap,Industrials,3.27%,11.28%,32.39%,11.31%,15.31%,46.13%,174.71%
+BE,Bloom Energy Corporation,5883546240,26.80,4.97%,Electrical Equipment & Parts,3547718,,7028645240,Mid-Cap,Industrials,9.13%,6.59%,80.42%,164.23%,15.76%,113.18%,177.05%
+AEIS,"Advanced Energy Industries, Inc.",4744926945,125.07,-0.70%,Electrical Equipment & Parts,60632,110.48,4750262945,Mid-Cap,Industrials,3.98%,11.46%,15.96%,15.88%,8.93%,19.26%,65.48%
+ENS,EnerSys,3976445172,100.01,0.15%,Electrical Equipment & Parts,36528,14.14,4801189172,Mid-Cap,Industrials,6.47%,8.00%,-5.35%,-0.01%,8.04%,2.21%,35.07%
+POWL,"Powell Industries, Inc.",3577604784,299.00,-3.98%,Electrical Equipment & Parts,211999,24.00,3220428784,Mid-Cap,Industrials,24.93%,26.68%,132.37%,11.22%,40.48%,288.21%,575.30%
+HAYW,"Hayward Holdings, Inc.",3267997250,15.19,0.13%,Electrical Equipment & Parts,160993,36.12,3967798250,Mid-Cap,Industrials,1.95%,-1.75%,26.00%,-0.98%,-0.78%,22.04%,
+ATKR,Atkore Inc.,3033115195,88.00,0.74%,Electrical Equipment & Parts,64723,6.88,3632934195,Mid-Cap,Industrials,4.29%,4.74%,-38.41%,0.13%,4.67%,-42.92%,107.43%
+ENR,"Energizer Holdings, Inc.",2479330425,34.34,-0.12%,Electrical Equipment & Parts,70950,66.08,5570730425,Mid-Cap,Industrials,-1.63%,-2.72%,13.09%,5.79%,-1.46%,8.32%,-29.64%
+ENVX,Enovix Corporation,2062914300,10.98,-4.05%,Electrical Equipment & Parts,1786022,,2056647300,Mid-Cap,Industrials,6.12%,17.58%,-26.57%,-0.17%,5.24%,19.17%,
+PLUG,Plug Power Inc.,1849729910,2.03,,Electrical Equipment & Parts,29794594,,1778159910,Small-Cap,Industrials,-25.09%,-20.70%,-19.28%,-14.35%,-4.69%,-24.25%,-53.01%
+EOSE,"Eos Energy Enterprises, Inc.",1272606080,5.89,0.86%,Electrical Equipment & Parts,4684653,,1438124080,Small-Cap,Industrials,12.31%,27.79%,207.37%,81.93%,20.17%,533.41%,
+ADSE,ADS-TEC Energy PLC,799214816,15.48,-0.26%,Electrical Equipment & Parts,32385,,794268329,Small-Cap,Industrials,1.26%,9.08%,22.49%,5.90%,-1.68%,122.63%,
+MVST,"Microvast Holdings, Inc.",670026240,1.99,-4.33%,Electrical Equipment & Parts,2543454,,814937240,Small-Cap,Industrials,0.97%,35.95%,426.58%,882.99%,0.48%,121.21%,-79.29%
+PLPC,Preformed Line Products Company,631006784,130.38,1.20%,Electrical Equipment & Parts,3057,19.35,627317784,Small-Cap,Industrials,3.42%,4.98%,0.39%,5.49%,2.03%,3.65%,119.09%
+KE,"Kimball Electronics, Inc.",471894984,19.24,0.63%,Electrical Equipment & Parts,27922,37.49,641245984,Small-Cap,Industrials,0.95%,4.08%,-16.80%,5.99%,2.08%,-19.36%,10.78%
+EAF,GrafTech International Ltd.,426897218,1.66,-0.30%,Electrical Equipment & Parts,309169,,1214943218,Small-Cap,Industrials,6.41%,5.06%,96.92%,-5.68%,-4.05%,10.67%,-86.59%
+AMPX,"Amprius Technologies, Inc.",382588116,3.29,-5.06%,Electrical Equipment & Parts,1272280,,384804116,Small-Cap,Industrials,4.22%,90.11%,170.31%,124.68%,23.57%,-19.91%,
+FREY,"FREYR Battery, Inc.",295029000,2.08,-1.19%,Electrical Equipment & Parts,495406,,127751000,Small-Cap,Industrials,-9.09%,-2.78%,24.26%,94.44%,-18.60%,59.09%,
+NVX,NOVONIX Limited,244326148,1.59,1.27%,Electrical Equipment & Parts,67137,,268928100,Micro-Cap,Industrials,-13.26%,-4.85%,-9.51%,-28.64%,-12.78%,-0.63%,
+SKYX,SKYX Platforms Corp.,153753000,1.80,20.10%,Electrical Equipment & Parts,1345876,,179992457,Micro-Cap,Industrials,17.19%,45.63%,38.89%,17.19%,29.31%,-9.64%,
+FCEL,"FuelCell Energy, Inc.",183024815,8.58,-4.10%,Electrical Equipment & Parts,479148,,70082815,Micro-Cap,Industrials,-8.58%,-14.11%,-42.23%,-7.98%,-1.00%,-74.39%,-89.64%
+LTBR,Lightbridge Corporation,113521680,8.64,20.00%,Electrical Equipment & Parts,7150611,,86886729,Micro-Cap,Industrials,34.08%,54.51%,133.01%,-18.46%,52.22%,135.29%,54.77%
+ULBI,Ultralife Corporation,135176697,8.11,-0.25%,Electrical Equipment & Parts,10985,14.78,136290697,Micro-Cap,Industrials,3.04%,11.52%,-25.69%,-8.14%,9.13%,14.67%,11.83%
+NEOV,NeoVolta Inc.,128442545,3.69,-4.29%,Electrical Equipment & Parts,76275,,128049149,Micro-Cap,Industrials,-12.50%,-18.26%,56.50%,25.82%,-26.10%,151.63%,
+ELVA,Electrovaya Inc.,86027004,2.63,4.10%,Electrical Equipment & Parts,158767,,106172004,Micro-Cap,Industrials,7.03%,22.25%,6.60%,25.71%,7.46%,-22.98%,213.53%
+CBAT,"CBAK Energy Technology, Inc.",83391626,0.90,-2.92%,Electrical Equipment & Parts,131805,7.73,52758688,Micro-Cap,Industrials,1.41%,18.87%,-27.28%,-14.94%,-1.36%,-11.70%,13.07%
+ESP,Espey Mfg. & Electronics Corp.,80101700,28.90,0.70%,Electrical Equipment & Parts,1322,11.67,56627060,Micro-Cap,Industrials,0.74%,3.39%,31.05%,-5.34%,-4.81%,41.03%,36.99%
+SDST,Stardust Power Inc.,92629771,1.55,-19.94%,Electrical Equipment & Parts,780221,,90931085,Micro-Cap,Industrials,-24.90%,-57.11%,-87.86%,-74.27%,-46.09%,,
+GWH,"ESS Tech, Inc.",63217028,5.41,1.69%,Electrical Equipment & Parts,14194,,9279028,Micro-Cap,Industrials,3.30%,14.16%,-55.45%,-32.49%,-9.52%,-63.74%,
+IPWR,Ideal Power Inc.,60456520,7.46,0.54%,Electrical Equipment & Parts,35645,,42305819,Micro-Cap,Industrials,-1.07%,8.64%,-1.98%,0.14%,-1.72%,-4.87%,201.01%
+STI,Solidion Technology Inc.,53566575,0.47,8.38%,Electrical Equipment & Parts,477388,,54858753,Micro-Cap,Industrials,-12.02%,15.34%,2.21%,21.70%,-37.62%,,
+RFIL,"RF Industries, Ltd.",42813480,4.34,6.37%,Electrical Equipment & Parts,23850,,70699480,Nano-Cap,Industrials,-0.75%,11.48%,-2.39%,1.24%,4.35%,32.90%,-36.74%
+PPSI,"Pioneer Power Solutions, Inc.",44050000,3.97,-0.75%,Electrical Equipment & Parts,3909,,44832000,Nano-Cap,Industrials,-1.12%,-1.36%,-12.44%,-35.37%,-3.75%,-22.97%,66.95%
+RAYA,Erayak Power Solution Group Inc.,36450000,1.35,3.05%,Electrical Equipment & Parts,2501,,38297854,Nano-Cap,Industrials,6.30%,13.45%,58.82%,26.17%,-0.74%,51.69%,
+APWC,Asia Pacific Wire & Cable Corporation Limited,30511976,1.60,5.96%,Electrical Equipment & Parts,16452,7.79,48054976,Nano-Cap,Industrials,-2.63%,-1.00%,2.78%,-1.99%,0.61%,2.78%,-4.52%
+FLUX,"Flux Power Holdings, Inc.",30195325,1.86,2.76%,Electrical Equipment & Parts,14669,,42896325,Nano-Cap,Industrials,2.84%,5.85%,-54.06%,-42.54%,14.56%,-62.21%,-79.89%
+EPOW,"Sunrise New Energy Co., Ltd.",23273688,0.85,-4.16%,Electrical Equipment & Parts,4712,,44972052,Nano-Cap,Industrials,1.42%,13.41%,14.29%,-15.21%,3.10%,,
+CCTG,CCSC Technology International Holdings Limited,18703719,1.63,1.88%,Electrical Equipment & Parts,10058,,16200662,Nano-Cap,Industrials,-5.00%,9.12%,,-7.71%,4.19%,,
+DFLI,Dragonfly Energy Holdings Corp.,17114738,2.60,-4.76%,Electrical Equipment & Parts,83667,,59765738,Nano-Cap,Industrials,-11.56%,-16.67%,-64.99%,-52.26%,-6.47%,-34.36%,
+LNKS,Linkers Industries Limited,11892662,0.89,-1.64%,Electrical Equipment & Parts,69945,,11556382,Nano-Cap,Industrials,-1.88%,-88.99%,,,-34.43%,,
+NXU,"Nxu, Inc.",8820004,0.52,-0.25%,Electrical Equipment & Parts,371035,0.01,3300004,Nano-Cap,Industrials,-6.85%,133.24%,28.04%,85.77%,-50.75%,-58.57%,
+POLA,"Polar Power, Inc.",7952896,3.18,2.25%,Electrical Equipment & Parts,13749,,14434896,Nano-Cap,Industrials,-3.06%,10.45%,-2.10%,-3.65%,-0.94%,19.80%,-85.34%
+XPON,Expion360 Inc.,5094038,1.60,-1.25%,Electrical Equipment & Parts,51234,,2848313,Nano-Cap,Industrials,-6.36%,-24.65%,-98.20%,-55.37%,-32.22%,-99.64%,

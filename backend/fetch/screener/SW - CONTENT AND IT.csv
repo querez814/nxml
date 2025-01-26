@@ -1,0 +1,137 @@
+﻿Symbol,Company Name,Market Cap,Stock Price,% Change,Industry,Volume,PE Ratio,Ent. Value,MC Group,Sector,Change 1W,Change 1M,Change 6M,Change 3M,Change YTD,Change 1Y,Change 5Y
+GOOGL,Alphabet Inc.,2437005065252,199.76,0.70%,Internet Content & Information,7118852,26.31,2367726065252,Mega-Cap,Communication Services,1.44%,3.64%,11.66%,20.91%,4.79%,35.52%,167.66%
+GOOG,Alphabet Inc.,2438040889686,201.34,0.65%,Internet Content & Information,5323065,26.53,2368761889686,Mega-Cap,Communication Services,1.55%,3.66%,11.51%,20.65%,5.04%,35.18%,169.51%
+META,"Meta Platforms, Inc.",1586990756841,629.37,0.94%,Internet Content & Information,3451988,29.64,1565137756841,Mega-Cap,Communication Services,1.03%,6.54%,30.77%,8.40%,6.49%,62.60%,181.57%
+ACN,Accenture plc,224616122800,362.63,0.98%,Information Technology Services,509120,30.10,224451314800,Mega-Cap,Technology,2.68%,-1.98%,9.09%,-4.50%,2.08%,-1.32%,71.70%
+IBM,International Business Machines Corporation,206436242700,225.20,0.87%,Information Technology Services,912101,32.45,247587242700,Mega-Cap,Technology,1.47%,-0.04%,21.83%,-3.66%,1.56%,30.20%,67.80%
+FI,"Fiserv, Inc.",119160084550,206.04,-1.63%,Information Technology Services,1133462,40.36,143217084550,Large-Cap,Technology,2.55%,1.65%,34.23%,6.23%,1.96%,50.66%,73.66%
+SPOT,Spotify Technology S.A.,96618077623,495.00,0.29%,Internet Content & Information,368593,130.65,92147577820,Large-Cap,Communication Services,1.10%,7.56%,67.78%,27.88%,10.80%,141.02%,234.67%
+INFY,Infosys Limited,89730554700,21.65,0.16%,Information Technology Services,2566435,28.43,87411554700,Large-Cap,Technology,-5.59%,-4.93%,-0.32%,-2.66%,-1.41%,8.10%,99.17%
+DASH,"DoorDash, Inc.",74110845319,179.55,1.05%,Internet Content & Information,452116,,69678845319,Large-Cap,Communication Services,3.79%,3.91%,67.47%,16.21%,5.92%,67.10%,
+FIS,"Fidelity National Information Services, Inc.",42271556080,78.83,0.40%,Information Technology Services,383687,31.41,51868556080,Large-Cap,Technology,-0.09%,-3.46%,4.41%,-12.14%,-2.64%,27.19%,-47.08%
+IT,"Gartner, Inc.",40481623326,521.64,-0.61%,Information Technology Services,55387,38.70,41624531326,Large-Cap,Technology,3.05%,6.83%,14.45%,-1.23%,8.33%,12.89%,225.51%
+CTSH,Cognizant Technology Solutions Corporation,38981682880,79.91,1.09%,Information Technology Services,638997,17.36,38819682880,Large-Cap,Technology,1.63%,-0.23%,6.35%,2.84%,2.80%,2.82%,26.91%
+WIT,Wipro Limited,38275893943,3.75,2.32%,Information Technology Services,920317,26.14,34025938765,Large-Cap,Technology,6.40%,0.27%,20.20%,10.74%,3.39%,26.64%,93.65%
+RDDT,"Reddit, Inc.",32260751146,184.14,0.22%,Internet Content & Information,1740080,,30542749146,Large-Cap,Communication Services,5.51%,8.08%,170.82%,138.72%,12.89%,,
+BIDU,"Baidu, Inc.",29551094406,82.21,-0.96%,Internet Content & Information,878692,10.13,20341308322,Large-Cap,Communication Services,1.84%,-3.26%,-8.16%,-9.41%,-1.55%,-19.14%,-39.46%
+BR,"Broadridge Financial Solutions, Inc.",27463070550,236.54,0.68%,Information Technology Services,123500,40.65,30756170550,Large-Cap,Technology,1.88%,4.14%,14.97%,8.52%,4.11%,14.05%,77.60%
+CDW,CDW Corporation,25815902080,195.48,0.61%,Information Technology Services,210642,23.67,30846902080,Large-Cap,Technology,3.65%,11.33%,-15.09%,-11.82%,11.64%,-14.20%,42.78%
+GIB,CGI Inc.,25032321393,111.93,0.50%,Information Technology Services,45093,20.72,26309991671,Large-Cap,Technology,2.76%,1.76%,5.20%,-2.73%,1.88%,2.66%,29.44%
+PINS,"Pinterest, Inc.",21950835496,32.29,2.05%,Internet Content & Information,4566630,104.90,19662679496,Large-Cap,Communication Services,7.01%,10.28%,-20.88%,1.82%,12.14%,-12.49%,45.05%
+LDOS,"Leidos Holdings, Inc.",21497390630,152.09,-5.60%,Information Technology Services,1002724,18.35,25452390630,Large-Cap,Technology,3.78%,11.26%,7.45%,-5.05%,11.84%,46.62%,56.01%
+Z,"Zillow Group, Inc.",18333894819,79.11,0.03%,Internet Content & Information,288763,,17132894819,Large-Cap,Communication Services,5.01%,2.59%,56.89%,25.66%,6.81%,45.41%,64.26%
+SNAP,Snap Inc.,17761784640,10.60,1.34%,Internet Content & Information,7204460,,18810206640,Large-Cap,Communication Services,-11.66%,-8.25%,-27.36%,1.26%,-2.88%,-36.30%,-44.95%
+ZG,"Zillow Group, Inc.",18313343135,75.90,-0.17%,Internet Content & Information,67657,,17137343135,Large-Cap,Communication Services,5.07%,3.06%,54.85%,24.95%,7.31%,43.43%,58.83%
+TME,Tencent Music Entertainment Group,17792394151,11.09,-0.58%,Internet Content & Information,979170,22.74,15250718909,Large-Cap,Communication Services,6.19%,-6.69%,-21.81%,-5.27%,-1.76%,31.02%,-19.55%
+EPAM,"EPAM Systems, Inc.",13353351988,242.90,3.18%,Information Technology Services,136726,30.57,11460084988,Large-Cap,Technology,4.76%,-3.33%,13.15%,21.24%,2.64%,-19.69%,3.22%
+JKHY,"Jack Henry & Associates, Inc.",12661356922,173.93,0.23%,Information Technology Services,114790,31.78,12758144922,Large-Cap,Technology,0.91%,-1.81%,4.48%,-6.18%,-1.00%,4.30%,15.99%
+AUR,"Aurora Innovation, Inc.",11977421818,6.92,-0.72%,Information Technology Services,4949930,,10853421818,Large-Cap,Technology,6.74%,-2.02%,67.74%,17.61%,11.83%,114.79%,
+CACI,CACI International Inc,9865658214,438.28,-5.77%,Information Technology Services,742596,21.64,11628305214,Large-Cap,Technology,4.10%,15.49%,4.40%,-12.60%,15.11%,38.50%,72.29%
+PSN,Parsons Corporation,9264015600,87.01,-8.28%,Information Technology Services,2964737,131.55,10103409600,Large-Cap,Technology,-0.56%,-0.86%,22.43%,-11.70%,2.83%,43.60%,120.04%
+KD,"Kyndryl Holdings, Inc.",9039984985,38.85,-0.18%,Information Technology Services,545591,,11808984985,Mid-Cap,Technology,1.65%,12.78%,42.67%,59.44%,12.49%,86.40%,
+NBIS,Nebius Group N.V.,7952286360,38.02,-3.80%,Internet Content & Information,3829989,,4067886360,Mid-Cap,Communication Services,6.75%,47.96%,108.66%,97.60%,42.67%,108.66%,-12.28%
+GLOB,Globant S.A.,8966953670,205.54,-0.75%,Information Technology Services,140858,54.07,9279976670,Mid-Cap,Technology,-5.89%,-7.85%,4.57%,-6.75%,-4.81%,-14.62%,69.24%
+G,Genpact Limited,8140823760,46.25,0.96%,Information Technology Services,127629,12.71,8957553760,Mid-Cap,Technology,3.36%,8.58%,37.69%,18.59%,6.66%,29.55%,2.90%
+MTCH,"Match Group, Inc.",8180544780,32.39,-0.58%,Internet Content & Information,507231,14.61,11166961780,Mid-Cap,Communication Services,1.59%,-3.50%,-6.03%,-13.92%,-0.40%,-9.65%,-63.70%
+EXLS,"ExlService Holdings, Inc.",8007097140,49.62,-0.30%,Information Technology Services,185743,43.66,8092144140,Mid-Cap,Technology,7.38%,11.34%,46.56%,24.96%,12.15%,53.14%,244.33%
+DJT,Trump Media & Technology Group Corp.,7290830765,33.65,0.12%,Internet Content & Information,5806757,,6630295165,Mid-Cap,Communication Services,-17.68%,-3.17%,-3.94%,7.38%,-1.44%,27.41%,
+BZ,Kanzhun Limited,6421119480,14.25,-2.46%,Internet Content & Information,356863,31.51,4466963048,Mid-Cap,Communication Services,4.28%,7.27%,-6.94%,-2.40%,5.87%,8.87%,
+SAIC,Science Applications International Corporation,5854048440,112.52,-6.05%,Information Technology Services,436792,20.09,8157048440,Mid-Cap,Technology,3.18%,7.49%,-0.94%,-18.54%,7.14%,-7.52%,30.60%
+INGM,Ingram Micro Holding Corporation,5236610434,22.51,2.30%,Information Technology Services,432471,15.18,8689091434,Mid-Cap,Technology,6.23%,10.66%,,,13.46%,,
+WRD,WeRide Inc.,10692101996,15.08,8.38%,Information Technology Services,132087,,10232110916,Mid-Cap,Technology,11.64%,-5.37%,,,-1.90%,,
+ASGN,ASGN Incorporated,4062864000,91.78,0.14%,Information Technology Services,71799,23.19,4996964000,Mid-Cap,Technology,2.81%,9.47%,-10.42%,-0.91%,10.17%,-3.23%,31.37%
+GDS,GDS Holdings Limited,4646611762,20.74,4.12%,Information Technology Services,1486409,,10323246914,Mid-Cap,Technology,-6.92%,0.61%,71.13%,-10.31%,-16.16%,250.09%,-63.07%
+CLVT,Clarivate Plc,3882357860,5.45,0.18%,Information Technology Services,922385,,8206357860,Mid-Cap,Technology,7.09%,9.24%,-17.45%,-18.07%,7.09%,-41.00%,-71.92%
+DXC,DXC Technology Company,3747196800,21.04,1.62%,Information Technology Services,73541,98.57,7223196800,Mid-Cap,Technology,-0.43%,0.49%,5.24%,-0.05%,3.60%,-10.00%,-40.82%
+IAC,IAC Inc.,3555538629,41.75,0.55%,Internet Content & Information,203130,,3814039629,Mid-Cap,Communication Services,-3.82%,-2.52%,-21.81%,-21.94%,-4.46%,-19.91%,-30.40%
+CNXC,Concentrix Corporation,3261676984,51.95,3.24%,Information Technology Services,294867,16.66,7927158984,Mid-Cap,Technology,6.00%,24.31%,-24.75%,6.79%,16.29%,-49.24%,
+ATHM,Autohome Inc.,3269998836,27.03,-0.65%,Internet Content & Information,94786,12.68,34008469,Mid-Cap,Communication Services,1.96%,2.54%,8.21%,-11.35%,4.16%,11.51%,-67.70%
+WNS,WNS (Holdings) Limited,2147097150,58.97,19.12%,Information Technology Services,414328,18.97,2357732150,Mid-Cap,Technology,22.65%,22.14%,-0.71%,20.90%,18.51%,,
+YELP,Yelp Inc.,2556688557,38.80,0.75%,Internet Content & Information,105497,23.25,2213601557,Mid-Cap,Communication Services,-3.70%,1.13%,3.22%,13.94%,-0.49%,-12.48%,9.00%
+YY,JOYY Inc.,2337789222,43.92,-0.54%,Internet Content & Information,82444,13.40,-480754778,Mid-Cap,Communication Services,9.25%,8.29%,31.16%,32.41%,5.52%,47.94%,-32.09%
+WB,Weibo Corporation,2350963930,9.35,-2.66%,Internet Content & Information,163546,6.58,2012200930,Mid-Cap,Communication Services,1.80%,-1.64%,25.49%,6.55%,0.52%,18.23%,-78.25%
+APLD,Applied Digital Corporation,2148789441,9.58,-0.63%,Information Technology Services,8150026,,2640620441,Mid-Cap,Technology,15.17%,20.35%,68.53%,10.68%,26.18%,98.35%,19589.54%
+UPWK,Upwork Inc.,2142682010,15.85,-1.12%,Internet Content & Information,716985,25.85,,Mid-Cap,Communication Services,-5.87%,-2.49%,40.12%,59.50%,-1.96%,10.40%,60.62%
+GENI,Genius Sports Limited,1996717574,8.77,0.91%,Internet Content & Information,574581,,1935799574,Mid-Cap,Communication Services,-0.34%,-0.23%,48.04%,17.59%,0.46%,42.93%,
+VYX,NCR Voyix Corporation,1820220960,12.49,-0.72%,Information Technology Services,277355,2.95,2350220960,Small-Cap,Technology,-6.12%,-9.69%,-14.07%,-3.16%,-9.10%,-14.71%,-41.40%
+VNET,"VNET Group, Inc.",1709631293,6.73,5.82%,Information Technology Services,2159752,,3683997005,Small-Cap,Technology,15.34%,82.73%,201.16%,89.10%,37.24%,238.80%,-37.03%
+GDYN,"Grid Dynamics Holdings, Inc.",1759513425,21.41,0.45%,Information Technology Services,151350,710.33,1541080425,Small-Cap,Technology,2.35%,3.10%,76.86%,35.05%,-4.97%,63.58%,91.09%
+NABL,"N-able, Inc.",1758774959,9.56,0.21%,Information Technology Services,68509,47.40,1956203959,Small-Cap,Technology,4.72%,-1.24%,-32.58%,-24.70%,2.14%,-28.22%,
+WBTN,WEBTOON Entertainment Inc.,1684109963,13.13,-0.30%,Internet Content & Information,38333,,1115895963,Small-Cap,Communication Services,0.77%,0.31%,-45.12%,16.25%,-3.61%,,
+OPRA,Opera Limited,1616532414,18.08,-1.04%,Internet Content & Information,89092,10.15,1519488414,Small-Cap,Communication Services,1.22%,-2.82%,54.18%,18.64%,-3.54%,65.49%,160.63%
+TASK,"TaskUs, Inc.",1511976906,17.30,2.19%,Information Technology Services,91797,28.69,1640835906,Small-Cap,Technology,1.56%,3.48%,4.83%,39.69%,-0.06%,27.58%,
+FORTY,Formula Systems (1985) Ltd.,1361237106,88.78,1.19%,Information Technology Services,305,18.38,1527105106,Small-Cap,Technology,0.66%,-4.90%,10.68%,13.82%,-0.25%,39.13%,21.40%
+TTGT,"TechTarget, Inc.",1259737546,18.10,2.67%,Internet Content & Information,127327,,1333551546,Small-Cap,Communication Services,1.09%,-9.82%,,,-11.05%,,
+MOMO,Hello Group Inc.,1239197228,7.07,-2.01%,Internet Content & Information,220811,7.44,470123207,Small-Cap,Communication Services,4.95%,-1.90%,9.74%,7.13%,-6.49%,18.59%,-79.88%
+NYAX,Nayax Ltd.,1206278740,33.10,-2.68%,Information Technology Services,6284,,1110662740,Small-Cap,Technology,-1.17%,25.68%,43.94%,29.00%,17.23%,49.54%,
+TBLA,Taboola.com Ltd.,1198582301,3.58,-1.52%,Internet Content & Information,236821,,1192953301,Small-Cap,Communication Services,1.40%,-5.47%,8.36%,-3.46%,-0.55%,-12.32%,
+XRX,Xerox Holdings Corporation,1174712430,9.53,1.55%,Information Technology Services,475355,,3210712430,Small-Cap,Technology,4.83%,12.46%,-20.58%,-9.37%,11.92%,-43.27%,-74.02%
+BMBL,Bumble Inc.,804874080,7.39,0.75%,Internet Content & Information,703269,,1170798080,Small-Cap,Communication Services,-6.39%,-5.42%,-16.89%,0.83%,-9.95%,-46.77%,
+PENG,"Penguin Solutions, Inc.",1121238432,21.03,-1.47%,Information Technology Services,212376,,1444194432,Small-Cap,Technology,6.91%,15.29%,-10.56%,36.62%,11.20%,-6.77%,25.53%
+INOD,Innodata Inc.,1129851688,38.63,-2.95%,Information Technology Services,275237,63.87,1115666688,Small-Cap,Technology,8.09%,-7.46%,125.50%,102.65%,0.71%,359.58%,3216.67%
+FVRR,Fiverr International Ltd.,1131269160,31.50,-1.76%,Internet Content & Information,351297,123.31,1093352160,Small-Cap,Communication Services,-6.71%,-1.39%,40.28%,47.84%,0.32%,12.12%,18.20%
+GETY,"Getty Images Holdings, Inc.",1109006300,2.61,-3.16%,Internet Content & Information,851950,20.69,2375800300,Small-Cap,Communication Services,-3.58%,17.98%,-27.10%,-30.31%,24.54%,-35.65%,
+BBAI,"BigBear.ai Holdings, Inc.",1061155394,4.21,-5.18%,Information Technology Services,14470575,,1201711394,Small-Cap,Technology,30.97%,42.77%,200.00%,156.65%,-0.22%,150.85%,
+SSTK,"Shutterstock, Inc.",1061954504,29.84,-2.15%,Internet Content & Information,180881,29.60,1234526504,Small-Cap,Communication Services,-3.02%,1.30%,-24.94%,3.36%,0.46%,-38.93%,-31.54%
+NRDS,"NerdWallet, Inc.",1040628774,13.97,-1.41%,Internet Content & Information,38050,,968928774,Small-Cap,Communication Services,-0.42%,9.00%,-5.72%,16.91%,6.54%,-5.66%,
+SEAT,Vivid Seats Inc.,602361600,4.57,-0.22%,Internet Content & Information,196006,,799383600,Small-Cap,Communication Services,-3.17%,30.11%,-13.26%,17.44%,-1.08%,-20.07%,
+KIND,"Nextdoor Holdings, Inc.",913322042,2.42,1.05%,Internet Content & Information,403807,,531317042,Small-Cap,Communication Services,1.05%,0.21%,-16.72%,0.21%,1.90%,46.36%,
+ANGI,Angi Inc.,910001899,1.80,-1.91%,Internet Content & Information,563363,20.33,1011410899,Small-Cap,Communication Services,0.55%,9.58%,-18.67%,-26.21%,10.24%,-15.67%,-79.89%
+DMRC,Digimarc Corporation,860002662,40.22,0.33%,Information Technology Services,30429,,831734662,Small-Cap,Technology,-8.53%,8.59%,22.94%,24.97%,7.05%,10.99%,18.19%
+HCKT,"The Hackett Group, Inc.",832771830,30.31,0.43%,Information Technology Services,10659,24.54,845760830,Small-Cap,Technology,0.60%,-2.04%,26.75%,18.31%,-1.76%,28.92%,79.11%
+MAX,"MediaAlpha, Inc.",710640756,10.87,1.97%,Internet Content & Information,127633,62.71,842986756,Small-Cap,Communication Services,-3.81%,-3.21%,-25.33%,-43.84%,-3.90%,-3.98%,
+THRY,"Thryv Holdings, Inc.",680705312,16.13,-0.37%,Internet Content & Information,59262,,976056312,Small-Cap,Communication Services,4.86%,13.69%,-10.30%,-5.10%,9.39%,-14.74%,
+EVER,"EverQuote, Inc.",644787052,18.01,-1.15%,Internet Content & Information,62799,52.06,566038052,Small-Cap,Communication Services,-3.03%,4.06%,-27.55%,-4.05%,-8.85%,65.94%,-45.60%
+CNDT,Conduent Incorporated,637961100,3.98,-0.25%,Information Technology Services,120203,1.77,1129961100,Small-Cap,Technology,-1.48%,-9.52%,-2.21%,7.84%,-1.24%,7.84%,-24.29%
+MGIC,Magic Software Enterprises Ltd.,625525082,12.93,1.49%,Information Technology Services,17274,18.20,618182082,Small-Cap,Technology,5.20%,7.48%,12.62%,14.31%,7.56%,20.82%,17.00%
+CTLP,"Cantaloupe, Inc.",602866012,8.24,-0.24%,Information Technology Services,89908,48.59,600919012,Small-Cap,Technology,1.85%,-13.78%,18.51%,-10.61%,-13.14%,25.34%,15.52%
+DOYU,DouYu International Holdings Limited,502688894,15.68,-0.44%,Internet Content & Information,48701,,-37543559,Small-Cap,Communication Services,28.15%,36.96%,-2.72%,69.90%,40.50%,96.63%,-81.66%
+UIS,Unisys Corporation,462649209,6.73,0.15%,Information Technology Services,46135,,606549209,Small-Cap,Technology,1.06%,1.83%,41.40%,6.56%,5.21%,-9.76%,-43.61%
+PERI,Perion Network Ltd.,423870720,8.96,0.02%,Internet Content & Information,46822,9.74,61816720,Small-Cap,Communication Services,0.34%,9.14%,7.82%,10.07%,5.79%,-68.80%,-4.38%
+JFIN,Jiayin Group Inc.,431093903,7.95,-2.33%,Internet Content & Information,86967,2.68,336837159,Small-Cap,Communication Services,13.21%,30.03%,36.81%,19.18%,27.79%,40.10%,91.98%
+GRPN,"Groupon, Inc.",410006018,10.38,0.29%,Internet Content & Information,235835,15.68,478879018,Small-Cap,Communication Services,-5.39%,-0.48%,-40.48%,4.23%,-14.81%,-10.47%,-82.89%
+TSSI,"TSS, Inc.",341809767,15.64,2.76%,Information Technology Services,565115,90.12,299231767,Small-Cap,Technology,29.94%,52.28%,437.54%,143.60%,29.17%,4702.48%,1043.28%
+OB,Outbrain Inc.,321976359,6.41,-1.16%,Internet Content & Information,27527,,204082359,Small-Cap,Communication Services,1.01%,-11.77%,39.16%,40.98%,-9.68%,62.53%,
+TRUE,"TrueCar, Inc.",300005445,3.47,0.58%,Internet Content & Information,22719,,197043445,Micro-Cap,Communication Services,-0.58%,-9.69%,-5.22%,-6.50%,-7.51%,9.18%,-19.95%
+IBEX,IBEX Limited,443130780,21.83,0.13%,Information Technology Services,22777,11.60,447552780,Micro-Cap,Technology,-2.65%,6.95%,31.69%,17.82%,0.93%,21.65%,
+ZH,Zhihu Inc.,295599859,3.37,-0.88%,Internet Content & Information,28256,,-387406302,Micro-Cap,Communication Services,3.03%,-5.56%,1.80%,-6.34%,-3.95%,-29.85%,
+NOTE,"FiscalNote Holdings, Inc.",215515160,1.44,-9.18%,Information Technology Services,2827270,,361906160,Micro-Cap,Technology,17.04%,42.34%,-14.13%,35.04%,47.66%,75.61%,
+TTEC,"TTEC Holdings, Inc.",186619999,3.83,-2.17%,Information Technology Services,127641,,1229816999,Micro-Cap,Technology,-2.49%,-13.88%,-47.38%,-28.65%,-21.64%,-80.49%,-90.37%
+TRVG,trivago N.V.,174906203,2.59,1.57%,Internet Content & Information,11710,,103277251,Micro-Cap,Communication Services,-5.90%,12.83%,20.85%,51.79%,16.97%,3.24%,-82.47%
+CSPI,CSP Inc.,169387935,16.94,-1.17%,Information Technology Services,4804,,138704935,Micro-Cap,Technology,10.01%,14.88%,16.84%,33.59%,6.66%,51.61%,129.14%
+III,"Information Services Group, Inc.",157522083,3.22,0.31%,Information Technology Services,23613,,217864083,Micro-Cap,Technology,-0.93%,-4.18%,-4.46%,4.56%,-3.89%,-27.38%,7.00%
+CMCM,Cheetah Mobile Inc.,138305697,4.76,6.97%,Internet Content & Information,13968,,-138354155,Micro-Cap,Communication Services,0.91%,-5.42%,22.59%,-0.67%,-3.26%,106.98%,-75.95%
+TDTH,Trident Digital Tech Holdings Ltd,1282501000,2.13,-23.01%,Information Technology Services,496795,,1283795484,Micro-Cap,Technology,33.49%,11.34%,,3.77%,24.77%,,
+VEEA,Veea Inc.,126347772,3.38,-3.24%,Information Technology Services,8289,,136501795,Micro-Cap,Technology,-8.40%,-7.92%,,-17.69%,-8.40%,,
+BZFD,"BuzzFeed, Inc.",94576866,2.59,0.78%,Internet Content & Information,108637,,186946866,Micro-Cap,Communication Services,-10.10%,-11.34%,-6.18%,3.20%,-3.37%,199.86%,
+CCG,Cheche Group Inc.,65933589,0.87,0.01%,Internet Content & Information,70094,1.46,42417220,Micro-Cap,Communication Services,-2.44%,5.26%,-2.26%,2.41%,-2.18%,-85.32%,
+AREN,"The Arena Group Holdings, Inc.",61705410,1.34,3.26%,Internet Content & Information,7498,,169594410,Micro-Cap,Communication Services,6.35%,-4.96%,46.45%,91.43%,,61.23%,-92.83%
+CTM,"Castellum, Inc.",76538088,0.97,-9.35%,Information Technology Services,2420263,,85168971,Micro-Cap,Technology,6.50%,77.65%,412.02%,537.73%,-46.75%,173.78%,-37.35%
+PODC,"PodcastOne, Inc.",59383852,2.33,-2.51%,Internet Content & Information,1892,,58028852,Micro-Cap,Communication Services,-2.05%,6.22%,74.45%,86.72%,10.65%,51.27%,
+BODI,"The Beachbody Company, Inc.",46457363,6.90,2.83%,Internet Content & Information,7601,,34561363,Nano-Cap,Communication Services,17.72%,7.88%,-14.85%,3.87%,9.11%,,
+MNY,MoneyHero Limited,45466475,1.09,-1.58%,Internet Content & Information,1348,,-2146525,Nano-Cap,Communication Services,1.83%,2.78%,-34.32%,0.91%,-0.89%,-17.16%,
+IZEA,"IZEA Worldwide, Inc.",41568415,2.51,2.45%,Internet Content & Information,14034,,-12790056,Nano-Cap,Communication Services,5.15%,,-2.78%,-9.26%,-10.91%,19.80%,110.48%
+ZDGE,"Zedge, Inc.",39630708,2.92,0.34%,Internet Content & Information,300,,19434708,Nano-Cap,Communication Services,3.56%,23.31%,-20.92%,-7.03%,8.18%,24.36%,91.45%
+GLE,Global Engine Group Holding Limited,32220000,2.10,17.98%,Information Technology Services,544008,86.30,31140612,Nano-Cap,Technology,19.33%,5.92%,,-59.99%,3.47%,,
+WYY,WidePoint Corporation,38618580,3.96,0.49%,Information Technology Services,13864,,37275259,Nano-Cap,Technology,-2.04%,-16.85%,2.12%,3.50%,-20.45%,42.07%,-10.40%
+CLPS,CLPS Incorporation,35622176,1.27,,Information Technology Services,4010,,30614691,Nano-Cap,Technology,12.24%,9.36%,38.32%,-7.95%,9.36%,27.95%,-65.88%
+SCOR,"comScore, Inc.",29538982,7.11,17.65%,Internet Content & Information,23855,,44375982,Nano-Cap,Communication Services,-0.31%,-0.31%,-54.62%,4.52%,10.96%,-63.98%,-94.02%
+BTCM,BIT Mining Limited,31114502,2.93,4.68%,Information Technology Services,83025,,15498502,Nano-Cap,Technology,4.00%,,-15.38%,10.00%,13.49%,-25.91%,-96.31%
+DTST,Data Storage Corporation,32967539,4.69,-0.28%,Information Technology Services,47754,235.00,21877223,Nano-Cap,Technology,8.80%,11.91%,-22.31%,36.63%,11.11%,62.07%,-2.08%
+FENG,Phoenix New Media Limited,26837960,2.36,6.31%,Internet Content & Information,1314,,-99446831,Nano-Cap,Communication Services,-5.77%,-6.33%,-38.50%,-22.38%,-6.33%,50.00%,-81.50%
+GIFT,"Giftify, Inc.",26782540,0.96,-3.60%,Internet Content & Information,29318,,33752587,Nano-Cap,Communication Services,-4.23%,-7.78%,-75.41%,-32.24%,-8.62%,-76.17%,-10.11%
+SAIH,SAIHEAT Limited,17737164,0.86,18.15%,Information Technology Services,399451,,11025164,Nano-Cap,Technology,20.00%,-9.50%,-19.66%,-24.21%,-6.49%,-20.88%,
+STBX,Starbox Group Holdings Ltd.,30056993,0.46,-25.94%,Internet Content & Information,594757,,32017857,Nano-Cap,Communication Services,-46.34%,-71.79%,-79.76%,-74.54%,-65.41%,,
+JFU,9F Inc.,354093783,1.50,0.25%,Information Technology Services,227,9.10,190248020,Nano-Cap,Technology,2.75%,0.01%,-25.74%,-11.76%,-0.66%,-45.05%,-99.21%
+JDZG,JIADE Limited,16674005,0.68,,Information Technology Services,15730,12.12,8366226,Nano-Cap,Technology,-11.81%,29.73%,-17.14%,-55.34%,-18.82%,,
+JZ,Jianzhi Education Technology Group Company Limited,95398347,0.79,0.99%,Information Technology Services,1192,,93343001,Nano-Cap,Technology,-1.54%,-10.52%,-15.30%,-21.23%,-9.80%,-60.34%,
+ARBB,ARB IOT Group Limited,13921987,0.51,-1.33%,Information Technology Services,8626,,6446216,Nano-Cap,Technology,-3.93%,26.92%,4.71%,38.16%,5.41%,-55.34%,
+LCFY,Locafy Limited,11748573,8.30,-2.35%,Internet Content & Information,26997,,11851185,Nano-Cap,Communication Services,-2.86%,30.17%,25.55%,48.99%,23.73%,3.28%,
+GMM,Global Mofy AI Limited,10288631,3.51,,Information Technology Services,18582,0.55,5196350,Nano-Cap,Technology,-10.69%,5.09%,,-42.29%,-9.54%,,
+SOGP,Sound Group Inc.,8085970,2.02,-0.49%,Internet Content & Information,11740,,-51921851,Nano-Cap,Communication Services,9.95%,-3.45%,-7.08%,6.06%,-3.23%,-24.68%,-98.07%
+SLE,"Super League Enterprise, Inc.",8059046,0.56,-6.51%,Internet Content & Information,70287,,9535046,Nano-Cap,Communication Services,0.32%,8.67%,-46.26%,-36.93%,-2.53%,-63.52%,-99.14%
+ASST,Asset Entities Inc.,12186413,1.10,-19.49%,Internet Content & Information,18944940,,10088007,Nano-Cap,Communication Services,186.02%,273.63%,-28.04%,32.04%,177.27%,-27.23%,
+ONFO,"Onfolio Holdings, Inc.",6409245,1.22,-2.64%,Internet Content & Information,5309,,7396578,Nano-Cap,Communication Services,0.81%,-21.87%,23.76%,20.19%,-6.72%,127.03%,
+UPXI,"Upexi, Inc.",3507900,5.30,57.27%,Internet Content & Information,986484,,12399389,Nano-Cap,Communication Services,-6.39%,-23.76%,-58.95%,-13.37%,-3.99%,-85.84%,
+DGLY,"Digital Ally, Inc.",3236846,0.39,-3.00%,Internet Content & Information,137321,,9718111,Nano-Cap,Communication Services,-7.74%,-15.54%,-81.14%,-60.25%,-22.83%,-80.42%,-97.97%
+TC,TuanChe Limited,346901751,1.00,1.01%,Internet Content & Information,11159,,350422541,Nano-Cap,Communication Services,0.83%,-6.21%,-38.49%,-35.99%,-16.17%,-63.00%,-98.99%
