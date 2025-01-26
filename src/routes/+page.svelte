@@ -98,7 +98,7 @@
 			<div class="mx-auto flex flex-col items-center">
 				<div class="flex flex-col items-center gap-4 md:flex-row">
 					<SignedOut>
-						<a href={siteMetaData.urls.auth.sign}>
+						<a href={siteMetaData.urls.auth.signin}>
 							<Button size="sm" class="px-6 hover:text-foreground">
 								Start Making Data-Driven Decisions Today
 							</Button>
