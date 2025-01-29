@@ -21,7 +21,10 @@
 	import LandingTutorial from '$lib/components/welcome/LandingTutorial.svelte';
 	import CommandList from '$lib/components/welcome/CommandList.svelte';
 	import type { PageData } from './$types';
+	import MarketGauge from '$lib/components/technicals/Market/MarketGauge.svelte';
+	import MarketGaugeExplanation from '$lib/components/technicals/Market/MarketGaugeExplanation.svelte';
 
+	let showGaugeExplanation = $state(false);
 	let showTutorial = $state(false);
 	let showCommands = $state(false);
 
@@ -81,7 +84,6 @@
 					Fundamental, Essential Financial Data and Metrics used by the pros, at your fingertips
 				</p>
 			</div>
-
 			<div class="mb-12">
 				<Card.Root
 					class="mx-auto w-full max-w-3xl border-2 bg-background/95 backdrop-blur transition-all duration-300 hover:border-primary/50 supports-[backdrop-filter]:bg-background/80"
@@ -107,54 +109,81 @@
 									<span>Press <kbd class="rounded bg-muted px-1 py-0.5">/ </kbd> to start</span>
 								</div>
 							</div>
-
-							<div class="relative w-full">
-								<div class="absolute -top-6 left-1/2 -translate-x-1/2 transform">
-									<TrendingUp class="h-5 w-5 animate-bounce text-primary" />
+							<div class="w-full">
+								<div class="relative z-10">
+									<div class="mb-4 flex justify-end">
+										{#if !showGaugeExplanation}
+											<button
+												class="rounded border border-green-400/20 px-3 py-1 font-mono text-xs text-green-400 hover:text-green-300"
+												onclick={() => (showGaugeExplanation = true)}
+											>
+												Click here to learn how this is calculated
+											</button>
+										{/if}
+									</div>
+									<div class="top-2"><MarketGauge /></div>
 								</div>
-								<CommandLine />
-							</div>
+								{#if showGaugeExplanation}
+									<div class="mb-5">
+										<div class="relative">
+											<MarketGaugeExplanation />
+											<button
+												class="absolute right-4 top-4 font-mono text-xs text-gray-400 hover:text-gray-300"
+												onclick={() => (showGaugeExplanation = false)}
+											>
+												✕ Close
+											</button>
+										</div>
+									</div>
+								{/if}
+								<div class="relative w-full">
+									<div class="absolute -top-6 left-1/2 -translate-x-1/2 transform">
+										<TrendingUp class="h-5 w-5 animate-bounce text-primary" />
+									</div>
+									<CommandLine />
+								</div>
 
-							<div class="w-full space-y-4">
-								<Separator.Root />
-								<div class="flex justify-center gap-4 text-sm">
-									<Dialog.Root bind:open={showTutorial}>
-										<Dialog.Trigger>
-											<Button.Root variant="ghost" size="sm">Quick Tutorial</Button.Root>
-										</Dialog.Trigger>
-										<Dialog.Portal>
-											<Dialog.Overlay />
-											<Dialog.Content class="sm:max-w-2xl">
-												<LandingTutorial />
-												<Dialog.Close>
-													<Button.Root variant="outline" size="sm" class="mt-4"
-														>Close Tutorial</Button.Root
-													>
-												</Dialog.Close>
-											</Dialog.Content>
-										</Dialog.Portal>
-									</Dialog.Root>
+								<div class="w-full space-y-4">
+									<Separator.Root />
+									<div class="flex justify-center gap-4 text-sm">
+										<Dialog.Root bind:open={showTutorial}>
+											<Dialog.Trigger>
+												<Button.Root variant="ghost" size="sm">Quick Tutorial</Button.Root>
+											</Dialog.Trigger>
+											<Dialog.Portal>
+												<Dialog.Overlay />
+												<Dialog.Content class="sm:max-w-2xl">
+													<LandingTutorial />
+													<Dialog.Close>
+														<Button.Root variant="outline" size="sm" class="mt-4"
+															>Close Tutorial</Button.Root
+														>
+													</Dialog.Close>
+												</Dialog.Content>
+											</Dialog.Portal>
+										</Dialog.Root>
 
-									<Dialog.Root bind:open={showCommands}>
-										<Dialog.Trigger>
-											<Button.Root variant="ghost" size="sm">Command List</Button.Root>
-										</Dialog.Trigger>
-										<Dialog.Portal>
-											<Dialog.Overlay />
-											<Dialog.Content class="sm:max-w-2xl">
-												<CommandList />
-												<Dialog.Close>
-													<Button.Root variant="outline" size="sm" class="mt-4"
-														>Close Commands</Button.Root
-													>
-												</Dialog.Close>
-											</Dialog.Content>
-										</Dialog.Portal>
-									</Dialog.Root>
+										<Dialog.Root bind:open={showCommands}>
+											<Dialog.Trigger>
+												<Button.Root variant="ghost" size="sm">Command List</Button.Root>
+											</Dialog.Trigger>
+											<Dialog.Portal>
+												<Dialog.Overlay />
+												<Dialog.Content class="sm:max-w-2xl">
+													<CommandList />
+													<Dialog.Close>
+														<Button.Root variant="outline" size="sm" class="mt-4"
+															>Close Commands</Button.Root
+														>
+													</Dialog.Close>
+												</Dialog.Content>
+											</Dialog.Portal>
+										</Dialog.Root>
+									</div>
 								</div>
 							</div>
-						</div>
-					</Card.Content>
+						</div></Card.Content
+					>
 				</Card.Root>
 			</div>
 

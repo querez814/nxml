@@ -91,6 +91,7 @@ def get_env_for_symbol(symbol):
         }
     }
 
+
 @router.get("/marketenv")
 def get_market_env():
     symbols = ["SPY", "QQQ", "DIA"]
@@ -100,3 +101,4 @@ def get_market_env():
     return results
 
 
+print(get_market_env())

@@ -74,3 +74,69 @@ export interface Mover {
 	changePercentage: string;
 	volume: string;
 }
+
+// Base trend metrics interface
+interface TrendMetrics {
+	consistency: number;
+	strength: number;
+	direction: 'up' | 'down';
+}
+
+interface TrendAnalysis {
+	consistency: number;
+	macd_trend: TrendMetrics;
+	aroon_trend: TrendMetrics;
+	momentum_trend: TrendMetrics;
+	stochastic_trend: TrendMetrics;
+}
+
+interface ComponentScores {
+	macd: number;
+	aroon: number;
+	momentum: number;
+	stochastic: number;
+}
+
+type MarketCondition =
+	| 'STRONG_UPTREND'
+	| 'STRONG_DOWNTREND'
+	| 'MODERATE_UPTREND'
+	| 'MODERATE_DOWNTREND'
+	| 'CONSOLIDATION';
+
+interface SymbolMomentum {
+	symbol: string;
+	date: string;
+	momentum_score: number;
+	market_condition: MarketCondition;
+	trend_analysis: TrendAnalysis;
+	component_scores: ComponentScores;
+	period: string;
+}
+
+export interface MarketMomentum {
+	[symbol: string]: SymbolMomentum;
+}
+
+/* Example of how to fetch and use these types:
+async function fetchMarketMomentum(): Promise<MarketMomentum> {
+  const response = await fetch('your-api-endpoint/marketmomentum');
+  const data = await response.json();
+  return data;
+}
+
+// Example usage with type safety
+async function analyzeMomentum() {
+  try {
+    const marketData = await fetchMarketMomentum();
+    
+    // Access data with full type safety
+    const spyMomentum = marketData.SPY.momentum_score;
+    const qqQCondition = marketData.QQQ.market_condition;
+    const diaTrend = marketData.DIA.trend_analysis.consistency;
+    
+    // TypeScript will ensure all properties exist and are of correct type
+  } catch (error) {
+    console.error('Failed to fetch market momentum:', error);
+  }
+}*/
