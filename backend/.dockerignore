@@ -1,0 +1,5 @@
+temp_latex/
+*.aux
+*.log
+*.pdf
+*.png

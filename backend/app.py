@@ -13,6 +13,7 @@ from packages import router as pkg_router
 from filteringtickers import router as ticker_router
 from newssearch import router as news_router
 from earningscalendar import router as calendar_router
+from fetch.latextobinaryimg import router as latex_router
 app = FastAPI()
 
 app.add_middleware(
@@ -23,6 +24,7 @@ app.add_middleware(
         "https://www.yourduediligence.app",  
         "https://yourduediligence.app",  
         "https://investorterminal-production.up.railway.app",
+        "https://n8n.simplicitytechsolutions.com",
     ],
     allow_credentials=True,
     allow_methods=["*"],
@@ -46,3 +48,4 @@ app.include_router(ticker_router, prefix="/current", tags=["Technicals"])
 app.include_router(pkg_router, prefix="/current", tags=["Current"])
 app.include_router(news_router, prefix="/news", tags=["Current"])
 app.include_router(calendar_router, prefix="/news", tags=["Current"])
+app.include_router(latex_router, tags=["latex"])
