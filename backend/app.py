@@ -14,6 +14,7 @@ from filteringtickers import router as ticker_router
 from newssearch import router as news_router
 from earningscalendar import router as calendar_router
 from fetch.latextobinaryimg import router as latex_router
+from entry import router as init_router
 app = FastAPI()
 
 app.add_middleware(
@@ -49,3 +50,4 @@ app.include_router(pkg_router, prefix="/current", tags=["Current"])
 app.include_router(news_router, prefix="/news", tags=["Current"])
 app.include_router(calendar_router, prefix="/news", tags=["Current"])
 app.include_router(latex_router, tags=["latex"])
+app.include_router(init_router, prefix="/technicals", tags = ["Technicals"] )
