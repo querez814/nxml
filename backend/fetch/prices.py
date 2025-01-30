@@ -37,7 +37,20 @@ def get_prices(ticker: str):
     return prices_df.to_dict(orient="records")
 
 
+@router.get("/close/{ticker}")
+def get_closing_prices(ticker:str):
+    prices = get_prices(ticker)
+    prices_df = pd.DataFrame(prices)
+    closing_prices = prices_df["4. close"]
+    closing_prices.to_list()
+    closing_list = []
+    for key in closing_prices:
+        closing_list.append(
+           key 
+            
+        )
 
-
+        
+    return closing_list 
 def candlesticks():
     return  

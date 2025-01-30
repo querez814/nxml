@@ -118,6 +118,29 @@ export interface MarketMomentum {
 	[symbol: string]: SymbolMomentum;
 }
 
+export interface Stock {
+	symbol: string;
+	company_name: string;
+	market_cap: number;
+	stock_price: number;
+	percent_change: string;
+	industry: string;
+	volume: number;
+	pe_ratio: number | null;
+	ent_value: number | null;
+	mc_group: string;
+	sector: string;
+	change_1w: string | null;
+	change_1m: string | null;
+	change_3m: string | null;
+	change_6m: string | null;
+	change_ytd: string | null;
+	change_1y: string | null;
+	change_5y: string | null;
+	source_file: string;
+	loaded_at: string;
+}
+
 /* Example of how to fetch and use these types:
 async function fetchMarketMomentum(): Promise<MarketMomentum> {
   const response = await fetch('your-api-endpoint/marketmomentum');
