@@ -5,8 +5,24 @@
 	import { redirect } from '@sveltejs/kit';
 	import siteMetaData from '$lib/config/site-metadata';
 	import { goto } from '$app/navigation';
+	import posthog from 'posthog-js';
+	import AppAnalyticsWrapper from '$lib/components/analytics/AppAnalyticsWrapper.svelte';
+	import type { UserResource } from '@clerk/types';
 
 	const alwaysRedirect = false;
+
+	// NOT CURRENTLY USED AND NEEDS TO BE USED
+	function shouldRedirect(user: UserResource | null | undefined): boolean {
+		// Ensure user exists and the hasFreeTrial field exists and is true
+		return (
+			!user || 
+			!user.publicMetadata || 
+			typeof user.publicMetadata.hasAppAccess !== 'boolean' || 
+			!user.publicMetadata.hasAppAccess
+		);
+	}
+
+
 </script>
 
 <svelte:head>
@@ -20,12 +36,14 @@
 			<!-- This will never actually render, as the redirect will happen first -->
 		{/await}
 	{/if}
-	<div class="flex min-h-screen w-full flex-col">
-		<AppHeader />
-		<main class="flex flex-1 flex-col">
-			<slot />
-		</main>
-	</div>
+	<AppAnalyticsWrapper user={user as UserResource}>
+		<div class="flex min-h-screen w-full flex-col">
+			<AppHeader />
+			<main class="flex flex-1 flex-col">
+				<slot />
+			</main>
+		</div>
+	</AppAnalyticsWrapper>
 </SignedIn>
 
 <style>

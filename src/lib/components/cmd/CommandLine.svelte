@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { goto } from '$app/navigation';
+	import posthog from 'posthog-js';
 	import { onMount } from 'svelte';
 
 	let { onTickerChange } = $props<{
@@ -61,6 +62,13 @@
 			history = [...history, inputValue];
 			historyIndex = history.length;
 			parseCommand(inputValue);
+
+			// Posthog tracking
+			posthog.capture("used-terminal-cmd", { 
+                cmd: inputValue,
+            });
+			// End Posthog tracking
+
 			inputValue = '';
 		}
 	}
