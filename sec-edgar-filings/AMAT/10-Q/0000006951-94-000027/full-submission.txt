@@ -1,0 +1,2056 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: keymaster@town.hall.org
+Originator-Key-Asymmetric:
+ MFkwCgYEVQgBAQICAgADSwAwSAJBALeWW4xDV4i7+b6+UyPn5RtObb1cJ7VkACDq
+ pKb9/DClgTKIm08lCfoilvi9Wl4SODbR1+1waHhiGmeZO8OdgLUCAwEAAQ==
+MIC-Info: RSA-MD5,RSA,
+ ml0eUeKoSLLT9RuAYLV/mvtP77Lws46uj8GKJjTX9LG5ftsq8Pbxk23l99dmo348
+ wIltAumr73LarlfwtwWL6w==
+
+<IMS-DOCUMENT>0000006951-94-000027.txt : 19940914
+<IMS-HEADER>0000006951-94-000027.hdr.sgml : 19940914
+ACCESSION NUMBER:		0000006951-94-000027
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		6
+CONFORMED PERIOD OF REPORT:	19940731
+FILED AS OF DATE:		19940912
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			APPLIED MATERIALS INC /DE
+		CENTRAL INDEX KEY:			0000006951
+		STANDARD INDUSTRIAL CLASSIFICATION:	3559
+		IRS NUMBER:				941655526
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1026
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-06920
+		FILM NUMBER:		94548659
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3050 BOWERS AVE
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95054
+		BUSINESS PHONE:		4087275555
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	APPLIED MATERIALS TECHNOLOGY INC
+		DATE OF NAME CHANGE:	19730319
+</IMS-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<TEXT>
+
+
+
+                             
+                             UNITED STATES
+                  SECURITIES AND EXCHANGE COMMISSION
+                         Washington, DC 20549
+                                   
+                               FORM 10-Q
+                                   
+            (MARK ONE)
+  [  X  ]   QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15 (d) OF THE
+            SECURITIES EXCHANGE ACT OF 1934
+  
+  For the quarterly period ended July 31, 1994   or
+  
+  [       ] TRANSITION REPORT PURSUANT TO SECTION 13 OR 15 (d) OF
+            THE SECURITIES EXCHANGE ACT OF 1934
+  
+  For the transition period from _______________  to  _______________
+  
+  Commission file number   0-6920
+  
+  
+                        APPLIED MATERIALS, INC.
+        (Exact name of registrant as specified in its charter)
+                                   
+  Delaware                             94-1655526
+  (State or other jurisdiction         (I.R.S. Employer
+  of incorporation or organization)    Identification No.)
+  
+  3050 Bowers Avenue, Santa Clara, California               95054-
+  3299
+  Address of principal executive offices  (Zip Code)
+  
+  Registrant's telephone number, including area code     (408) 727-
+  5555
+  
+     Indicate  by check mark whether the registrant (1)  has  filed
+  all  reports required to be filed by Section 13 or 15(d)  of  the
+  Securities  Exchange Act of 1934 during the preceding  12  months
+  (or  for such shorter period that the registrant was required  to
+  file  such  reports),  and (2) has been subject  to  such  filing
+  requirements for the past 90 days.  Yes  X    No      .
+  
+  Number of shares outstanding of the issuer's common stock as of
+  July 31, 1994: 83,734,000
+  
+<PAGE>  2
+                    PART I.  FINANCIAL INFORMATION
+                                   
+                        APPLIED MATERIALS, INC.
+            CONSOLIDATED CONDENSED STATEMENTS OF OPERATIONS
+                              (UNAUDITED)
+<TABLE>
+<CAPTION>
+
+                                Three Months Ended    Nine Months Ended
+                                July 31,   Aug. 1,    July 31,  Aug. 1,
+(In thousands, except            1994      1993         1994     1993
+  per share data)
+<S>                            <C>        <C>       <C>       <C>
+Net sales                      $ 440,228  $ 281,370 $1,192,009 $752,636                           
+
+Costs and expenses:
+  Cost of products sold          234,656    155,398    641,067  424,541
+  Research, development
+   and engineering                52,494     37,058    135,386  101,072
+  Marketing and selling           39,851     27,056    113,254   75,652
+  General and administrative      20,279     16,585     60,500   45,151
+  Other, net                         701      1,365        815    3,443
+Income from operations            92,247     43,908    240,987  102,777
+
+Interest expense                   3,659      3,373     10,779   10,318
+Interest income                    2,946      1,514      7,214    4,835
+Income from consolidated companies
+  before taxes and cumulative 
+  effect of accounting change     91,534     42,049    237,422   97,294
+Provision for income taxes        32,036     13,876     83,097   32,107
+Income from consolidated companies
+  before cumulative effect of
+  accounting change               59,498     28,173    154,325   65,187
+Equity in net loss of joint
+  venture                          1,362          -      3,727        -
+Income before cumulative effect of
+  accounting change               58,136     28,173    150,598   65,187
+Cumulative effect of a change in
+  accounting for income taxes          -          -      7,000        -
+
+Net income                     $  58,136  $  28,173  $ 157,598   $65,187
+Earnings per share*
+  Before cumulative effect of
+    accounting change          $    0.68  $    0.34  $    1.78   $  0.79
+  Net income                   $    0.68  $    0.34  $    1.86   $  0.79
+
+Average common shares and
+  equivalents*                    86,033     82,532    84,654    82,056
+
+     *    Retroactively restated for a two-for-one stock split in the
+          form of a 100% stock dividend effective October 5, 1993.
+
+              See accompanying notes to consolidated condensed
+              financial statements.
+</TABLE>
+<PAGE>  3
+                             APPLIED MATERIALS, INC.
+                      CONSOLIDATED CONDENSED BALANCE SHEETS*
+<TABLE>
+<CAPTION>
+                                            July 31,       Oct. 31,
+(In thousands)                                1994           1993
+
+<S>                                          <C>          <C>
+                                   ASSETS
+Current assets:
+                 Cash and cash equivalents   $73,509       $119,597
+                 Short-term investments      214,503        146,583
+                 Accounts receivable, net    394,214        256,020
+                 Inventories                 243,956        154,597
+                 Deferred income taxes        67,894         62,413
+                 Other current assets         43,783         36,706
+               Total current assets        1,037,859        775,916
+
+               Property, plant and
+                 equipment, net              411,211        327,704
+               Other assets                   17,606         16,532
+               Total assets               $1,466,676     $1,120,152
+
+                  LIABILITIES AND STOCKHOLDERS EQUITY
+Current liabilities:
+                 Notes payable               $44,737        $41,645
+                 Current portion of
+                   long-term debt             15,392          7,017
+                 Accounts payable and
+                   accrued expenses          352,359        282,699
+                 Income taxes payable         43,276         49,167
+               Total current liabilities     455,764        380,528
+
+                 Long-term debt              112,295        121,076
+                 Deferred income taxes and
+                  other non-current
+                  obligations                 25,124         19,786
+               Total liabilities             593,183        521,390
+
+Stockholders' equity:
+                 Common stock                    837            804
+                 Additional paid-in capital  363,257        256,429
+                 Retained earnings           482,827        325,230
+                 Cumulative translation 
+                   adjustments                26,572         16,299                        
+               Total stockholders' equity    873,493        598,762
+               Total liabilities and
+                 stockholders' equity     $1,466,676     $1,120,152
+                
+                *Amounts as of July 31, 1994 are unaudited.
+                Amounts as of October 31, 1993 were obtained
+                from the October 31, 1993 audited financial
+                statements.
+                                   
+                See accompanying notes to consolidated condensed
+                financial statements.
+</TABLE>
+
+<PAGE>  4
+                        APPLIED MATERIALS, INC.
+            CONSOLIDATED CONDENSED STATEMENTS OF CASH FLOWS
+                              (UNAUDITED)
+<TABLE>
+<CAPTION>
+                                               Nine Months Ended
+                                              July 31,      Aug.1,
+          (In thousands)                        1994         1993
+
+<S>                                          <C>            <C>
+       Cash flows from operating activities:
+       Net income                            $157,598       $65,187
+       Adjustments required to reconcile
+        net income to cash flows
+        provided by operations:
+        Depreciation and amortization          42,223        27,459
+        Cumulative effect of a change in
+           accounting for income taxes         (7,000)            -
+        Equity in net loss of joint venture     3,727             -
+        Changes in assets and liabilities:
+          Accounts receivable                (125,005)      (40,613)
+          Inventories                         (81,181)      (35,827)
+          Other current assets                 (6,353)       (8,751)
+          Other assets                         (3,399)         (908)
+          Accounts payable and
+            accrued expenses                   57,860        41,976
+          Income taxes payable                 (3,799)        4,211
+          Other long-term liabilities           4,441         1,409
+                                             (118,486)      (11,044)
+       Cash provided by operations             39,112        54,143
+
+       Cash flows from investing activities:
+        Capital expenditures                 (121,363)      (56,435)
+        Proceeds from short-term investments  115,114       114,180
+        Purchases of short-term investments  (183,034)     (189,755)
+       Cash used for investing               (189,283)     (132,010)
+
+       Cash flows from financing activities:
+        Short-term borrowing (repayments), net    236        (3,989)
+        Long-term debt borrowing                    -         5,505
+        Long-term debt repayments              (3,863)       (5,835)
+        Sales of common stock, net            106,861         1,107
+       Cash provided by financing             103,234        (3,212)
+       Effect of exchange rate changes
+        on cash                                   849          (310)
+       Decrease in cash and cash equivalents  (46,088)      (81,389)
+       Cash and cash equivalents
+        at beginning of period                119,597       159,453
+       Cash and cash equivalents
+        at end of period                      $73,509       $78,064
+
+         Cash payments for interest expense were $8,355 and $8,006 for the
+         nine months ended July 31, 1994 and August 1, 1993, respectively.
+         Cash payments for income taxes were $63,264 and $27,039 for the
+         nine months ended July 31, 1994 and August 1, 1993, respectively.
+     
+               See accompanying notes to consolidated condensed
+               financial statements.
+</TABLE>
+
+<PAGE>  5
+                        APPLIED MATERIALS, INC.
+   NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS (Unaudited)
+                    NINE MONTHS ENDED JULY 31, 1994
+                            (In thousands)
+
+
+1) Basis of Presentation
+  In the opinion of management, the unaudited consolidated
+  interim financial statements included herein have been
+  prepared on the same basis as the October 31, 1993 audited
+  consolidated financial statements and include all
+  adjustments, consisting of only normal recurring adjustments,
+  necessary to fairly state the information set forth therein.
+  Certain amounts in the consolidated statement of cash flows
+  for the nine months ended August 1, 1993 have been
+  reclassified to conform with the current year's presentation.
+
+2) Earnings Per Share
+  Earnings per share is computed on the basis of the weighted
+  average number of common shares and common equivalent shares
+  from dilutive stock options.
+
+3) Inventories
+  Inventories are stated at the lower of cost or market, with
+  cost determined on the basis of  first-in,
+  first-out (FIFO).
+
+  The components of inventories are as follows:
+
+<TABLE>
+                               July 31, 1994    October 31, 1993
+<S>                            <C>                 <C>
+  Customer service spares      $61,174             $45,584
+  Systems raw materials         60,614              32,294
+  Work-in-process               90,429              57,526
+  Finished goods                31,739              19,193
+                              $243,956            $154,597
+</TABLE>
+
+4)   Income Taxes
+    Effective November 1, 1993, the Company adopted the provisions
+    of Statement of Financial Accounting Standards No. 109 (SFAS
+    109), "Accounting for Income Taxes."  The Company adopted SFAS
+    109 prospectively.
+                                   
+<PAGE>  6
+                        APPLIED MATERIALS, INC.
+   NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS (Unaudited)
+                    NINE MONTHS ENDED JULY 31, 1994
+                            (In thousands)
+4) Income Taxes, continued,
+  The adoption of SFAS 109 changes the Company's method of
+  accounting for income taxes from the deferred method, pursuant to
+  APB 11, to an asset and liability approach.  Under APB 11,
+  deferred taxes are recognized for income and expense items that
+  are reported in different years for financial reporting purposes.
+  Under the asset and liability approach of SFAS 109, deferred
+  assets and liabilities are recognized for the future consequences
+  attributable to differences between the financial statement
+  carrying amounts of existing assets and liabilities and their
+  existing tax bases.
+
+  The cumulative effect of adopting SFAS 109 resulted in a one-time
+  credit of $7,000, or $0.08 per share, and is reported separately
+  in the Consolidated Condensed Statement of Operations for the
+  nine month period ended July 31, 1994.
+  
+  Deferred tax assets (liabilities) at November 1, 1993 relate
+  to the following:
+  <TABLE>
+  Deferred tax assets:
+  <S>                                             <C>
+    Financial accruals not currently tax deductible:
+      Inventory                                   $13,454
+      Warranty and installation                    21,022
+      Other                                        19,458
+    State income taxes                              8,135
+    Other                                           4,344
+    Total deferred tax assets                      66,413
+  
+  Deferred tax liabilities:
+  
+      Depreciation and other                       (7,193)
+  
+  
+  Net deferred tax assets                         $59,220
+  </TABLE>
+  
+  
+5)   Notes Payable
+     On August 1, 1994, the Company's $50,000 revolving credit
+     agreement expired and was extended through the completion of
+     a new agreement.  On September 8,1994, the Company completed
+     a new $125,000 revolving credit agreement in the U.S. with a
+     group of eight banks.  The agreement includes facility fees,
+     allows for borrowings at rates including the lead bank's prime
+     reference rate, requires compliance with certain financial
+     covenants and expires in September 1998.
+     
+<PAGE>  7
+                                   
+                        APPLIED MATERIALS, INC.
+   NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS (Unaudited)
+                    NINE MONTHS ENDED JULY 31, 1994
+                                   
+
+6)   Long-Term Debt
+     On September 1,1994, the Company issued $100 million in ten year
+     non-callable Senior Notes bearing interest at 8% and maturing on
+     September 1, 2004.  The notes were priced at 99.269 percent to
+     yield 8.108%.  The notes contain certain financial covenants that
+     include limitations on additional borrowings by U.S.
+     subsidiaries, liens placed on assets, and sale and leaseback
+     transactions.
+     
+<PAGE>  8
+      MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION
+                       AND RESULTS OF OPERATIONS
+
+
+ 
+For  the third quarter of fiscal 1994 Applied Materials, Inc. reported
+record  net  sales of  $440.2 million.  New orders of  $503.7  million
+were  received during the quarter, driven by increased demand for  the
+Company's  Physical  Vapor Deposition (PVD)  systems,  Chemical  Vapor
+Deposition  (CVD) systems and High Temperature Film (HTF) systems  and
+continued  strong  demand for Metal Chemical Vapor Depositions  (MCVD)
+systems  and customer support and spares.   Backlog at July  31,  1994
+was  $560.9 million.
+
+Results of Operations
+
+The Company's worldwide net sales for the three and nine month periods
+ended   July  31,  1994  increased  by  56  percent  and  58  percent,
+respectively,  from the corresponding periods in  fiscal  1993.   This
+growth  can  be primarily attributed to increased unit  sales  of  the
+Company's   single-wafer,  multi-chamber  systems  and  increases   in
+customer  support  revenues  for all of  the  regions  served  by  the
+Company.  Compared with the nine months ended August 1, 1993,  Implant
+systems, PVD systems, Etch systems, MCVD systems and customer  support
+and spares sales were all up significantly.  Regionally, 61 percent of
+the  Company's net sales for the third quarter of fiscal 1994 were  to
+customers located outside North America compared to 63 percent in  the
+comparable  1993  period.  Sales to customers  located  outside  North
+America represented 62 percent in the first three quarters of 1994 and
+1993.   Fiscal  1994  year  to  date sales  to  customers  located  in
+Asia/Pacific  (excluding Japan) increased 65 percent  from  the  prior
+year  and  accounted for 16 percent of the Company's fiscal  1994  and
+1993  year  to  date sales.  This increase in year to date  sales  was
+driven  primarily by sales to Korean DRAM manufacturers and  sales  to
+companies  in  Taiwan and Singapore making investments  in  logic  and
+foundry facilities.  Sales to customers in Japan during the three  and
+nine  month periods ended July 31, 1994 showed increases of 47 percent
+and  61  percent, respectively, over the comparable periods in  fiscal
+1993  as DRAM manufacturers began expansions of new eight-inch  lines.
+Sales  in  Japan represented 27 percent of total fiscal 1994  year  to
+date  sales compared to 26 percent of fiscal 1993 year to date  sales.
+Fiscal  1994  year to date sales to customers in Europe  increased  47
+percent  over fiscal 1993 year to date sales due to increasing  demand
+for   capacity  to  produce  advanced  telecommunication  devices  and
+consumer  products.  Although the Company has experienced high  growth
+rates for more than two years, the Company's expectation is that  such
+rates  will moderate due to projected slower growth in capacity driven
+demand for semiconductor production equipment.
+
+
+Gross  margin  as a percentage of sales for the three and  nine  month
+periods  ended  July 31, 1994 increased approximately  two  and  three
+percentage  points,  respectively, from the corresponding  periods  in
+fiscal  1993.   The  continued improvement in gross margin  percentage
+primarily reflects economies of scale in manufacturing and service and
+support operations as net sales reached record levels.  However,  past
+margin   trends  are  not  necessarily  indicative  of  future  margin
+performance.
+
+<PAGE>  9
+
+Operating expenses for the three and nine month periods ended July 31,
+1994   decreased  approximately  three  and  four  percentage  points,
+respectively,  as a percentage of sales compared to the  corresponding
+periods in fiscal 1993.  This improvement was driven primarily by  the
+Company's  record  sales  levels.  The  Company  intends  to  continue
+investing   funds   for  facilities  expansion,  information   systems
+technology  and  personnel to support higher volumes of  business  and
+thus  the  Company's  expectation is  that  operating  expenses  as  a
+percentage  of  sales will increase in the fourth  quarter  of  fiscal
+1994.
+
+The Company's effective tax rate for the third quarter and first three
+quarters  of fiscal 1994 was 35 percent, up from 33 percent in  fiscal
+1993.   This  increase is due to recently enacted U.S. tax legislation
+as  well  as  variations  in the Company's worldwide  income  mix  and
+foreign  taxes.  Management anticipates the 35 percent  effective  tax
+rate will continue through the end of fiscal 1994.
+
+Net  income of $157.6 million for the nine month period ended July 31,
+1994  includes  the favorable impact of an accounting change  of  $7.0
+million,  or   $0.08  per  share, from the cumulative  effect  of  the
+adoption  of  Statement  of Financial Accounting  Standards  No.  109,
+"Accounting for Income Taxes"(SFAS 109).  The Company adopted SFAS 109
+prospectively  and  the  cumulative  accounting  change  is   reported
+separately in the Consolidated Condensed Statements of Operations.
+
+The   market  served  by  the  Company  is  characterized   by   rapid
+technological change, increasingly precise customer specifications and
+global  service requirements.  The Company's future operating  results
+may  be  affected  by  inherent uncertainties  characteristic  of  the
+worldwide   semiconductor  equipment  industry.   Such   uncertainties
+include,  but are not limited to, the development of new technologies,
+the  anticipated  transition to a new generation  of  microprocessors,
+competitive  pricing  pressures, global economic conditions,  and  the
+availability  of  needed components.  Accordingly,  recent  historical
+operating  results should be only one factor in evaluating the  future
+financial performance of the Company.
+
+Financial Condition, Liquidity and Capital Resources
+
+The  Company's  financial condition at July 31, 1994 remained  strong.
+Total  current  assets at July 31, 1994 were 2.3 times  total  current
+liabilities,  compared to 2.0 at October 31, 1993.  During  the  first
+three  quarters of fiscal 1994, cash, cash equivalents, and short-term
+investments increased  $22 million.  Cash provided by operations since
+October  31, 1993 totaled $39.1 million, resulting primarily from  net
+income  and increases in accounts payable and accrued expenses, offset
+by increased inventory and accounts receivable levels. The increase in
+accounts  receivable  was due to increased net sales  over  the  prior
+period.   Inventory levels have increased in order to fulfill customer
+orders  scheduled for delivery in the fourth quarter of  fiscal  1994.
+Other uses of cash include
+
+<PAGE>  10
+
+investments in facilities and capital equipment of $121.4 million  and
+net  borrowing  reductions of $3.6 million.  Capital expenditures  are
+expected to be approximately $180 million for fiscal year 1994.   This
+amount  is  higher  than  originally  planned  due  to  greater   than
+anticipated   growth   requiring  additional  funds   for   facilities
+expansion,   investments   in  demonstration   and   test   equipment,
+information  systems and other capital expenditures.  The  Company  is
+continuing  to  manage  its  manufacturing  capacity  to  ensure  that
+customer  demands will be met.  Cash provided by financing  activities
+included proceeds from the sale of 2.3 million shares of the Company's
+common stock in the second quarter of fiscal 1994.
+
+At  July  31,  1994,  the  Company's principal  sources  of  liquidity
+consisted  of  $288  million  of cash and short-term  investments  and
+$128.7  million  in available U.S. and foreign credit facilities.   In
+addition,  the Company filed a shelf registration with the  Securities
+and  Exchange Commission during the second quarter of fiscal 1994  for
+the sale of common stock and issuance of debt securities.  The Company
+received $111.0 million from the sale of 2.3 million shares of  common
+stock in the second quarter of fiscal 1994 and $98.6 million from  the
+issuance  of  Senior  notes  on  September  1,  1994.   The  Company's
+liquidity  is  affected by many factors, some based  on  the  on-going
+operations of the business and others related to the uncertainties  of
+the  industry  and  global  economies.  Although  the  Company's  cash
+requirements  will fluctuate based on the timing and extent  of  these
+factors,  management  believes that cash  generated  from  operations,
+together  with  the liquidity provided by existing cash  balances  and
+current   borrowing  arrangements,  will  be  sufficient  to   satisfy
+commitments  for capital expenditures and other cash requirements  for
+the balance of fiscal 1994 and throughout fiscal 1995.
+ 
+
+ 
+<PAGE>  11
+
+PART II.  OTHER INFORMATION
+
+Item 1.   Legal Proceedings
+
+       In  the  first  of  two  lawsuits filed  by  the  Company
+       against  Advanced Semiconductor Materials, Inc.,  Epsilon
+       Technology,  Inc.  (doing business as  ASM  Epitaxy)  and
+       Advanced  Semiconductor   Materials  International   N.V.
+       (the  defendants,  together,  hereafter  referred  to  as
+       "ASM"), described in the Company's Annual Report on  Form
+       10-K  for its fiscal year ended October 31, 1993  and  in
+       the  Company's  Form 10-Q for the quarter  ended  May  1,
+       1994,  Judge William Ingram of the United States District
+       Court   for  the Northern District of California  in  San
+       Jose  issued an injunction against ASM's sale and use  of
+       the  ASM  Epsilon  I  epitaxial  reactor  in  the  United
+       States,  but  also  granted  a  stay  of  the  injunction
+       pending  an appeal by ASM of the Court's earlier decision
+       that  the  Epsilon I infringes certain of  the  Company's
+       patents.  The stay order requires that ASM pay a fee,  as
+       a  security for the Company's interests, for each Epsilon
+       I  sold  by  ASM  in  the  U.S  after  the  date  of  the
+       injunction.   ASM  has filed a Notice of  Appeal.   Judge
+       Whyte  of  the  same  Court  separately  ruled  that  the
+       proceedings to resolve the issues of damages and  willful
+       infringement,  which  had  been bifurcated  for  separate
+       trial,  will  be  stayed  pending  ASM's  appeal  of  the
+       infringement issue.
+
+Item 6.   Exhibits and Reports on Form 8-K.
+
+        a)  Exhibits are numbered in accordance with the Exhibit
+   Table of Item 601 of Regulation S-K:
+
+       10.18     Applied Komatsu Technology, Inc. 1994 Executive
+   Incentive Stock Purchase Plan, together  with forms of Promissory Note, 
+   1994 Executive Incentive Stock Purchase Agreement, and Loan and Security
+   Agreement.
+
+       b) No reports on Form 8-K were filed by the Company during
+   the quarter ended July 31, 1994.
+
+<PAGE>  12
+                              SIGNATURES
+
+    Pursuant to the requirements of the Securities Exchange
+Act of 1934, the registrant has duly caused this report to be
+signed on its behalf by the undersigned thereunto duly
+authorized.
+
+
+
+
+                                             APPLIED MATERIALS, INC.
+
+<TABLE>
+<S>                                      <C>
+
+
+September 12, 1994                       By: \ s\Gerald F.Taylor
+                                         Gerald F. Taylor
+                                         Senior Vice President
+                                          and Chief Financial Officer
+                                         (Principal Financial Officer)
+
+
+
+                                         By: \ s\Michael K. O'Farrell
+                                         Michael K. O'Farrell
+                                         Corporate Controller
+                                         (Principal Accounting Officer)
+</TABLE>
+
+<PAGE> 13
+                           INDEX TO EXHIBITS
+
+
+ Exhibits are numbered in accordance with the Exhibit Table  of
+ Item 601 of Regulation S-K:
+
+<TABLE>
+<S>                                                                <C>
+
+
+                                                                    Page
+
+10.18      Applied   Komatsu  Technology,  Inc.  1994  Executive      14
+           Incentive Stock Purchase Plan, together with forms of 
+           Promissory Note, 1994 Executive Incentive Stock
+           Purchase Agreement, and Loan and Security Agreement.
+</TABLE>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-10
+<SEQUENCE>2
+<TEXT>
+
+                Applied Komatsu Technology, Inc.
+
+          1994 Executive Incentive Stock Purchase Plan
+
+
+
+SECTION 1.  PURPOSE.
+
+     The purpose of the Plan is to offer selected employees,
+directors, statutory auditors and advisors an opportunity to
+acquire a participation interest in the success of Applied
+Komatsu Technology, Inc. (the "Company"), or to increase such
+interest, by purchasing Shares of the Company's Preferred Stock. 
+The Plan provides for the direct sale of Shares.
+
+SECTION 2.  DEFINITIONS.
+
+     (a)  "Shareholders Committee" shall mean the Shareholders
+Committee of the Company, as constituted from time to time.
+
+     (b)  "Code" shall mean the United States Internal Revenue
+Code of 1986, as amended.
+
+     (c)  "Committee" shall mean a committee of the Shareholders
+Committee, as described in Section 3(a).
+
+     (d)  "Company" shall mean Applied Komatsu Technology, Inc.,
+a Japanese corporation.
+
+     (e)  "Employee" shall mean (i) any individual who is an
+employee of the Company or of a Subsidiary, (ii) a member of the
+Shareholders Committee or (iii) an advisor who performs services
+for the Company or a Subsidiary.  Employee shall also include
+those full-time personnel on a seconded basis, as designated by
+the Committee.
+
+     (f)  "Fair Market Value" shall mean the fair market value
+of a Share, as determined by the Committee in good faith.  Such
+determination shall be conclusive and binding on all persons.
+
+     (g)  "Offeree" shall mean an individual to whom the
+Committee has offered the right to acquire Shares under the
+Plan.
+
+     (h)  "Plan" shall mean this Applied Komatsu Technology,
+Inc. 1994 Executive Incentive Stock Purchase Plan.
+
+     (i)  "Purchase Price" shall mean the consideration for
+which one Share may be acquired under the Plan, as specified by
+the Committee.
+
+     (j)  "Service" shall mean service as an Employee.
+
+     (k)  "Share" shall mean one share of Stock, as adjusted in
+accordance with Section 8 (if applicable).
+
+     (l)  "Stock" shall mean the nonvoting Preferred Stock of
+the Company and the Common Stock of the Company into which the
+Preferred Stock may convert in accordance with the Articles of
+Incorporation of the Company and the Stock Purchase Agreement.
+
+     (m)  "Stock Purchase Agreement" shall mean the agreement
+which contains the terms, conditions and restrictions pertaining
+to the acquisition of such Shares.
+
+     (n)  "Subsidiary" shall mean any corporation, if the
+Company and/or one or more other Subsidiaries own not less than
+50 percent of the total combined voting power of all classes of
+outstanding stock of such corporation.  A corporation that
+attains the status of a Subsidiary on a date after the adoption
+of the Plan shall be considered a Subsidiary commencing as of
+such date.
+
+SECTION 3.  ADMINISTRATION.
+
+     (a)  Committee Membership.  The Plan shall be administered
+by the Committee, which shall consist of two or more members of
+the Shareholders Committee.  The members of the Committee shall
+be appointed by the Shareholders Committee.  If no Committee has
+been appointed, the entire Shareholders Committee shall consti-
+tute the Committee.
+
+     (b)  Committee Procedures.  The Shareholders Committee
+shall designate one of the members of the Committee as chairman. 
+The Committee may hold meetings at such times and places as it
+shall determine.  The Committee may only act by unanimous
+agreement of all of its members.
+
+     (c)  Committee Responsibilities.  Subject to the provisions
+of the Plan, the Committee shall have full authority and discre-
+tion to take the following actions:
+
+          (i)    To interpret the Plan and to apply its
+          provisions;
+
+          (ii)   To adopt, amend or rescind rules, proce-
+          dures and forms relating to the Plan;
+
+          (iii)  To authorize any person to execute, on
+          behalf of the Company, any instrument required to
+          carry out the purposes of the Plan;
+
+          (iv)   To determine when Shares are to be offered
+          for sale under the Plan;
+
+          (v)    To select the Offerees;
+
+          (vi)   To determine the number of Shares to be
+          offered to each Offeree;
+
+          (vii)  To prescribe the terms and conditions of
+          each sale of Shares, including (without limita-
+          tion) the Purchase Price, and to specify the
+          provisions of the Stock Purchase Agreement relat-
+          ing to such sale;
+
+          (viii) To amend any outstanding Stock Purchase
+          Agreement, subject to applicable legal
+          restrictions and to the consent of the Offeree
+          who entered into such agreement; and
+
+          (ix)   To take any other actions deemed necessary
+          or advisable for the administration of the Plan.
+
+All decisions, interpretations and other actions of the
+Committee shall be final and binding on all Offerees and all
+persons deriving their rights from an Offeree.  No member of the
+Committee shall be liable for any action that he or she has
+taken or has failed to take in good faith with respect to the
+Plan or Shares purchased thereunder or any right to participate
+or purchase Shares under the Plan.
+
+SECTION 4.  ELIGIBILITY.
+
+     Only Employees, as defined in Section 2(e), shall be eligi-
+ble for designation as Offerees by the Committee.
+
+SECTION 5.  STOCK SUBJECT TO PLAN.
+
+     Shares offered under the Plan shall be authorized but
+unissued Shares.  The aggregate number of Shares which may be
+issued under the Plan shall not exceed 976 Shares, subject to
+adjustment pursuant to Section 8.  The Company, during the term
+of the Plan, shall at all times reserve and keep available
+sufficient Shares to satisfy the requirements of the Plan. 
+Shares acquired by Applied Materials, Inc. and Komatsu Ltd.
+pursuant to the exercise of the put, call and loan foreclosure
+rights that are set forth in a Stock Purchase Agreement shall be
+available again for sale under the Plan.
+
+SECTION 6.  TERMS AND CONDITIONS OF AWARDS OR SALES.
+
+     (a)  Stock Purchase Agreement.  Each sale of Shares under
+the Plan shall be evidenced by a Stock Purchase Agreement
+between the Offeree and the Company, or Applied Materials, Inc.
+and Komatsu Ltd. in the case of Shares that have been acquired
+by Applied Materials, Inc. and Komatsu Ltd. pursuant to the
+terms of a Stock Purchase Agreement.  Such sale shall be subject
+to all applicable terms and conditions of the Plan and may be
+subject to any other terms and conditions which are not incon-
+sistent with the Plan and which the Committee deems appropriate
+for inclusion in a Stock Purchase Agreement.  The provisions of
+the various Stock Purchase Agreements entered into under the
+Plan need not be identical.
+
+     (b)  Duration of Offers and Nontransferability of Rights. 
+Any right to acquire Shares under the Plan shall automatically
+expire on the day after the date specified in the Stock Purchase
+Agreement unless said right is exercised by the Offeree no later
+than the date specified in the Stock Purchase Agreement.  The
+Board of Directors of the Company must approve each grant by the
+Committee before the time it is communicated to the Offeree. 
+The right to acquire shares under the Plan shall not be
+transferable and shall be exercisable only by the Offeree to
+whom such right was granted.
+
+     (c)  Purchase Price.  The Purchase Price of Shares to be
+offered under the Plan shall not be less than 100 percent of the
+Fair Market Value of such Shares.  The Purchase Price shall be
+payable in a form described in Section 7.
+
+     (d)  Withholding Taxes.  As a condition to the purchase of
+Shares, the Offeree shall make or enter into such arrangements
+as the Committee may require for the satisfaction of any
+national, federal, state, local or foreign withholding tax
+obligations that may arise in connection with such purchase or
+the payment of any dividends with respect to the Shares.
+
+     (e)  Restrictions on Transfer of Shares.  Any Shares
+awarded or sold under the Plan shall be subject to such special
+forfeiture conditions, rights of repurchase, rights of first
+refusal, put and call rights and other transfer restrictions as
+the Committee may determine.  Such restrictions shall be set
+forth in the applicable Stock Purchase Agreement and shall apply
+in addition to any restrictions that may apply to holders of
+Shares generally.
+
+SECTION 7.  PAYMENT FOR SHARES.
+
+     (a)  General Rule.  The entire Purchase Price of Shares
+issued under the Plan shall be payable in cash.
+
+     (b)  Promissory Note.  To the extent that a Stock Purchase
+Agreement so provides, and subject to the approval of the
+Committee, payment must be made all or in part with the proceeds
+of a loan from a lender approved by the Committee (a "Lender"). 
+Such loan shall be evidenced by a full recourse promissory note
+with the Lender executed by the Offeree.  The interest rate and
+other terms and conditions of such note shall be determined by
+the Lender, but approved by the Committee.  The Lender must
+require that the Offeree pledge or assign as security his or her
+Shares to the Lender, pursuant to agreement(s) in form satis-
+factory to the Lender and the Committee, for the purpose of
+securing the payment of such note.  In no event shall the stock
+certificate(s) representing such Shares be released to the
+Offeree until such note is paid in full.
+
+SECTION 8.  ADJUSTMENT OF SHARES.
+
+     (a)  General.  In the event of a subdivision of the out-
+standing Stock, a declaration of a dividend payable in Shares, a
+combination or consolidation of the outstanding Stock into a
+lesser number of Shares, a recapitalization, a reclassification
+or a similar occurrence, the Committee shall make appropriate
+adjustments in the number of Shares available for future grants
+under Section 5 to reflect such event.  In the case of any such
+event, appropriate adjustments will be effected in the number of
+Shares outstanding under the Plan.
+
+     (b)  Reservation of Rights.  Except as provided in this
+Section 8, an Offeree shall have no rights by reason of (i) any
+subdivision or consolidation of shares of stock of any class,
+(ii) the payment of any dividend or (iii) any other increase or
+decrease in the number of shares of stock of any class.
+
+SECTION 9.  LEGAL REQUIREMENTS.
+
+     Shares shall not be issued under the Plan unless the issu-
+ance and delivery of such Shares complies with (or is exempt
+from) all applicable requirements of law, including (without
+limitation) the Securities Act of 1933, as amended, the rules
+and regulations promulgated thereunder, foreign and state secur-
+ities laws and regulations, and the regulations of any stock
+exchange on which the Company's securities may then be listed.
+
+SECTION 10.  NO EMPLOYMENT RIGHTS.
+
+     No provision of the Plan, nor any right granted under the
+Plan, shall be construed to give any person any right to become,
+to be treated as, or to remain an Employee.  The Company and its
+Subsidiaries reserve the right to terminate any person's Service
+at any time and for any reason.
+
+SECTION 11.  DURATION AND AMENDMENTS.
+
+     (a)  Term of the Plan.  The Plan, as set forth herein,
+shall become effective on the date of its adoption by the Share-
+holders Committee.  The Plan shall terminate on January 31, 2004
+and may be terminated on any earlier date pursuant to Subsection
+(b) below.
+
+     (b)  Right to Amend or Terminate the Plan.  The Share-
+holders Committee may amend, suspend or terminate the Plan at
+any time and for any reason.
+
+     (c)  Effect of Amendment or Termination.  No Shares shall
+be issued or sold under the Plan after the termination thereof. 
+The termination of the Plan, or any amendment thereof, shall not
+affect any Share previously issued under the Plan.
+
+SECTION 12.  EXECUTION.
+
+     To record the adoption of the Plan by the Shareholders
+Committee on the ____ day of __________, 199_, the Company has
+caused its authorized officer to execute the same.
+
+                               APPLIED KOMATSU TECHNOLOGY, INC.
+
+
+
+                               By                               
+                                  Tetsuo Iwasaki, President
+
+
+
+                               APPLIED MATERIALS, INC.
+
+
+
+                               By                               
+                                  James C. Morgan, Chairman and
+                                  Chief Executive Officer
+
+
+
+
+                               KOMATSU LTD.
+
+
+
+                               By                               
+                                  Tetsuya Katada, President
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-10
+<SEQUENCE>3
+<TEXT>
+
+                                       For use with loans to
+                               AKT & AKTA "EIP Participants"
+
+
+                       PROMISSORY NOTE
+
+                                   [__________________]
+                                         date signed
+
+                                                            
+
+          FOR VALUE RECEIVED, the undersigned, _____________
+("Borrower"), promises to pay to the order of _____________
+("Lender"), the principal sum of _____________ (________),
+with interest on the principal from the date of disbursement
+hereof at the rate of _______________________ (___%) percent
+per year. 
+
+          This Note shall be repaid as follows:  
+1) commencing on January 31, 199__, and on each January 31
+thereafter, all accrued and unpaid interest on the unpaid
+principal under this Note shall be due and payable and 2) on
+January 31, 2004, the entire unpaid balance of principal and
+interest hereunder shall be due and payable.  Any interest
+not paid when due shall continue to be due and shall bear
+interest until paid at the interest rate set forth in the
+first paragraph.  All payments hereunder shall be in lawful
+money of ______ and shall be applied first to outstanding
+interest obligations and then to principal.
+
+          Borrower shall not have the right to, and shall
+not, prepay all or any part of the unpaid principal balance
+of this Note prior to the effective date of an initial
+public offering of the Common Stock of Applied Komatsu
+Technology, Inc., a Japanese corporation ("AKT"), on any
+stock exchange or stock quotation system (a "Company IPO"),
+except as may be permitted by the next sentence or as may be
+consented to in writing by Lender.  On each date an interest
+payment is due under this Note, the Borrower may make a
+partial principal prepayment on this Note in an amount not
+to exceed the outstanding principal balance of this Note as
+of that date, divided by the number which is equal to ___
+(___) minus the number of installment payments of interest
+previously due as provided above.  Borrower also may prepay
+this Note, in whole or part, without penalty or limitation
+at any time on or after the effective date of a Company IPO.
+
+          If Borrower resigns or is removed, or is
+terminated voluntarily or involuntarily, as an officer,
+employee or advisor of AKT and its subsidiaries or dies
+prior to January 31, 2004, then the entire outstanding
+principal balance of this Note, together with all accrued
+unpaid interest thereon, shall become immediately due and
+payable at the option of Lender, upon written notice to
+Borrower.   This Note, however, is not an employment
+agreement, and neither this Note nor any failure to give
+such notice shall give Borrower the right to be employed or
+retained by AKT and its subsidiaries in any capacity or for
+any length of time.
+
+          If default shall be made in the payment of
+principal and/or interest when due, then the entire
+outstanding principal balance of this Note, together with
+all accrued unpaid interest thereon, shall become
+immediately due and payable at the option of Lender, upon
+written notice to Borrower.  The Lender will not accelerate
+payment of the Note prior to maturity for nonpayment of
+interest.  If this Note remains unpaid ten (10) days after
+written demand for payment in full and if action thereafter
+is instituted to collect on this Note, then Borrower agrees
+to pay Lender reasonable attorneys' fees and costs of suit,
+as fixed by Japanese law.
+
+          This Note is a full-recourse note secured by
+shares of nonvoting preferred stock of AKT pursuant to the
+terms of a Loan and Security Agreement by and between
+Borrower and Lender that create a security interest in the
+shares ("Joto-Tampo"), the terms of which are incorporated
+herein by reference.  In accordance with the Joto-Tampo,
+Lender shall receive any dividends paid on the shares on
+Borrower's behalf and apply the same to the payment of
+interest hereunder as it comes due.  Prior to the due date
+of each interest installment under this Note, Lender shall
+notify Borrower of the net amount of interest (including any
+late interest) due on the next scheduled payment date, after
+application of any dividends paid on the shares against
+accrued interest hereunder.  Said preferred shares are
+convertible into AKT's common stock in accordance with AKT's
+Articles of Incorporation and the terms of the Joto-Tampo.
+
+          This Note shall be governed by and construed in
+accordance with the laws of Japan; provided, however, the
+English language version of this Note will prevail and
+control.  Borrower hereby irrevocably submits to the
+jurisdiction of the Tokyo District Court in connection with
+enforcement of this Agreement and/or any disputes hereunder.
+
+          IN WITNESS WHEREOF,  Borrower has executed this
+Note as of the date and year first above written.
+
+
+
+                            ________________________________
+                                            
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-10
+<SEQUENCE>4
+<TEXT>
+
+                APPLIED KOMATSU TECHNOLOGY, INC.
+
+        1994 EXECUTIVE INCENTIVE STOCK PURCHASE AGREEMENT
+
+
+Description of Shares
+The shares you purchase will be the nonvoting
+Preferred Stock of Applied Komatsu Technology,
+Inc. ("Company") with rights and privileges,
+including conversion into the Common Stock of
+the Company, as set forth in the Company's
+Articles of Incorporation.
+Payment for Shares
+You must pay to the Company the fair market
+value of the shares of Preferred Stock you
+receive (taking into account the fact that the
+Preferred Stock is convertible into Common
+Stock) ("Shares"), as determined by the
+Committee.  The number of Shares you are
+purchasing and the fair market value per share
+are shown on the cover sheet of this Agreement. 
+The purchase price must be paid in full, in
+cash, using the proceeds of the mandatory loan
+described below.
+
+Funds necessary to purchase your Shares will be
+loaned to you by Applied Materials, Inc. and
+Komatsu Ltd. (the "Lenders"), in equal amounts
+unless they agree among themselves to a
+different lending ratio.  Your indebtedness
+must be evidenced by a full recourse promissory
+note with each of the Lenders in the form
+attached ("Note"), secured by an assignment for
+security to each Lender under Japanese law
+("Joto-Tampo"), in the form attached, of all
+the Shares purchased by you.  You must sign the
+attached Note(s) and the attached Loan and
+Security Agreement(s) when you sign this
+Agreement.  You must make use of this secured
+loan to purchase your Shares, and you may not
+purchase your Shares if you do not sign your
+Note and Loan and Security Agreement with the
+Lender(s).
+
+The Notes are payable interest only, annually,
+with a balloon payment of all outstanding
+principal and interest on January 31, 2004. 
+The interest rate on your notes will be the
+lowest rate required by U.S. tax law to prevent
+a U.S. taxpayer from incurring imputed
+compensation income from a "below market inter-
+est rate loan."  Any dividends paid on your
+Shares will automatically be applied to your
+annual and accrued interest obligations, any
+partial principal repayments you elect to make
+under your Notes and the remainder (if any)
+will be distributed to you in cash so long as a
+default has not occurred.
+
+As a condition to your right to purchase your
+Shares, you agree to make or enter into such
+arrangements as the Company may require from
+time-to-time for the satisfaction of any
+national, federal, state, local or foreign
+withholding tax obligations that may arise in
+connection with such purchase and/or the
+payment of dividends on your Shares.
+Note Prepayment
+The Notes will not permit prepayment of your
+loans to purchase your Shares prior to the
+closing of an initial public offering of the
+Company's Common Stock on any stock exchange or
+stock quotation system approved for listing by
+the Shareholders Committee of the Company (a
+"Company IPO"), except with the written
+approval of the Lenders or as described in the
+next sentence.  Each Note provides that on each
+date an interest payment is due, you may make a
+partial principal prepayment in an amount not
+to exceed the outstanding principal balance of
+your Note as of that date, divided by the
+number which is equal to ________  minus the
+number of installment payments of interest
+previously due under your Note.  Each Note also
+permits you to prepay your Note, in whole or
+part, without penalty or limitation at any time
+on or after the closing of a Company IPO.
+Stock Certificates
+Unless the Lenders agree to a different lending
+ratio, your Shares will be held one-half by
+each Lender, the assignee under the Loan and
+Security Agreement, as collateral for the
+repayment of your Notes.  You acknowledge and
+agree that a default under either Note is a
+default under both Notes and that a default
+under either Loan and Security Agreement is a
+default under both such Agreements.  Until the
+Notes are paid in full, the Lenders will have
+all of the rights pertaining to your Shares,
+including the sole right to vote the Shares and
+to exercise the conversion privilege.  Any
+dividends and other distributions paid will be
+received on your behalf, and will be applied
+against your Notes as described above with any
+dividends remaining paid to you.  Until the
+loans are paid in full, the shareholders'
+registry of the Company will reflect the
+transfer and assignment of the Shares to the
+Lenders pursuant to the Loan and Security
+Agreements.  After your Notes have been paid in
+full, your Shares will be re-assigned to you
+and a stock certificate for those Shares will
+be provided.
+
+The stock certificate for your Shares will
+contain certain legends which restrict your
+ability to sell the Shares (see "Stock Legends"
+below).
+Voting Rights
+Until both of your Notes are paid in full, the
+Lenders under the Loan and Security Agreements
+will have the sole right to vote your Shares.
+Conversion to
+Common Stock
+The nonvoting shares of Preferred Stock that
+you purchase are convertible one for one into
+shares of the Company's Common Stock in
+accordance with the Company's Articles of
+Incorporation; provided, however, the Lenders,
+as assignees under the Loan and Security
+Agreements, shall have the sole right to
+exercise the conversion privilege and to vote
+the Shares during any period in which your
+Notes are not fully paid.
+Repurchase Rights (Call Option)
+The Lenders may (but are not obligated to) repurchase
+some or all of your Shares if any of
+the following events occur:
+
+*                   You resign or are removed, or are terminated
+                    voluntarily or involuntarily, as an officer,
+                    employee or advisor of the Company and its
+                    subsidiaries or die, prior to a Company IPO;
+                    or
+
+*                   you attempt to prepay either or both Notes
+                    other than as specifically permitted therein
+                    prior to a Company IPO; or
+
+*                   you attempt to transfer your Shares in
+                    violation of the provisions set forth below
+                    in "Restrictions on Resale."
+
+*                   You repay either or both Notes in full upon
+                    maturity but there is no Company IPO.
+
+[Add this paragraph for a seconded employee. 
+If you are seconded to AKT or AKTA by AMAT or
+Komatsu, your Shares will automatically be
+called if you do not become a direct employee
+of AKT or AKTA on or before the earlier of the
+day before the commencement of a "restricted
+period" with respect to AKT as that term is
+defined under Japanese IPO regulations or the
+date two years from when you first became
+assigned to AKT or AKTA.]
+
+Except in the case where a Note is repaid in
+full but there has not been a Company IPO, this
+repurchase right (call option) shall be
+exercised by written notice to you within one
+hundred twenty (120) days after the occurrence
+of the event triggering the right to exercise
+(the time period for the repurchase rights is
+unlimited in the case of your death).  In the
+case where a Note is repaid in full but there
+has not been a Company IPO, the call option
+shall be deemed to be automatically exercised
+without further notice, and all the Shares must
+be repurchased, unless the Lender in question
+notifies you in writing, within thirty (30)
+days after repayment of the Note, that it has
+elected to decline to exercise the call option
+by reason of that triggering event.  The
+purchase price (see below) for any Shares so
+repurchased will be first applied against any
+amounts that remain due under your Notes and
+the remainder (if any) payable in cash within
+thirty (30) days after option exercise.
+
+Executive Put Option
+The Loan and Security Agreements provide that
+you may (but are not obligated to) require the
+Lender to purchase all, but not a portion, of
+your Shares if any of the following events
+occur:
+
+*                   the Company notifies you in writing on or
+                    before January 1, 1999 that its Shareholders
+                    Committee has determined (without prejudice
+                    to reconsideration of the issue) that the
+                    Company does not intend to commence, at any
+                    time prior to the end of its FY1999, the
+                    process for a Company IPO; or 
+
+*                   the Company does not so notify you, but all
+                    outstanding Shares of Preferred Stock are
+                    not converted to the Company's Common Stock
+                    on or before April 30, 1999, or
+
+*                   the Company does not so notify you and said
+                    conversion occurs on or before April 30,
+                    1999, but the Company subsequently abandons
+                    and withdraws entirely (without prejudice to
+                    reconsideration of the issue) all intention
+                    and all then pending applications and good
+                    faith efforts to achieve a Company IPO on
+                    any stock exchange or stock quotation
+                    system.
+
+The Company has an affirmative obligation to
+notify you of the foregoing events.
+
+This right (put option) shall be exercised by
+you with respect to all of the Shares only by
+simultaneous written notice to both Lenders at
+any time during the term of the Loan and
+Security Agreements and during the period which
+is (1) after the occurrence of the event trig-
+gering the right to exercise the put option and
+(2) prior to the date (if any) on which the
+Company subsequently has commenced, or re-
+commenced, the process for a Company IPO.  This
+put option shall be reinstated if said Company
+IPO is later withdrawn or abandoned prior to
+completion.  The purchase price (see below) for
+any Shares so repurchased will be first applied
+against any amounts that remain due under your
+Notes and the remainder (if any) payable in
+cash within thirty (30) days after option
+exercise.
+
+You acknowledge and agree that the Company
+and/or its parents reserve all rights not to
+commence a Company IPO, to abandon any Company
+IPO at any time prior to completion and to
+make, in their sole and unfettered discretion,
+any and all decisions and determinations
+regarding a Company IPO (including, without
+limitation, all decisions regarding timing,
+pricing and all other terms and conditions and
+considerations) and that there shall be no
+liability or obligation to you by either the
+Company or either parent (other than your right
+to exercise this put option on these specific
+terms) as a result of any decision or
+determination made regarding a Company IPO; if
+a Company IPO is not commenced, is commenced
+but is withdrawn or otherwise does not occur;
+or if a Company IPO occurs at any time after an
+exercise of this put option by you.
+Purchase Price for Put/Call Options
+The purchase price payable for Shares subject
+to an exercise of the put option or call option
+shall be: 1) if a certain price is required by
+applicable Japanese (or other) law and, with
+respect to the call option, IPO regulations,
+then the lowest price permitted by such
+Japanese (or other) law or IPO regulations and
+2) if said certain price is not required, then
+the fair market value for the Company's Shares
+(on an as-converted into Common Stock basis) as
+determined by the Committee in its sole
+discretion, based on the performance and degree
+of success of the Company and its subsidiaries. 
+The Committee may make reference to at least
+three companies that trade during the relevant
+time on the U.S. Nasdaq National Market and are
+selected by the Committee as being reasonably
+comparable to the Company.  The valuation
+process may also take into account relative,
+historical and projected growth rates, capital
+structures, industry attractiveness and such
+other or alternate factors the Committee deems
+relevant.  The price/earnings ratio of such
+companies may also be among the factors
+utilized by the Committee to determine fair
+market value.
+Restrictions on Resale
+By signing this Agreement, you agree not to
+sell any of your Shares (or any options or
+other rights to acquire the same):
+
+*                   to a third party other than the Lenders, and
+                    then only pursuant to this Agreement and the
+                    Loan and Security Agreements, at any time
+                    prior to the effective date of a Company
+                    IPO, and
+
+*                   in any event, at any time when applicable
+                    securities or other laws or IPO regulations
+                    prohibit or restrict the sale of your
+                    Shares.
+
+You also agree, so long as your Notes remain
+unpaid, to sell your Shares only as and to the
+extent permitted by the Loan and Security
+Agreements.
+Stock Legends
+All certificates representing Shares purchased
+under this Agreement shall be endorsed with the
+following legends:
+
+"THE SHARES REPRESENTED HEREBY MAY NOT BE SOLD,
+ASSIGNED, TRANSFERRED, ENCUMBERED OR IN ANY
+MANNER DISPOSED OF, EXCEPT IN COMPLIANCE WITH
+THE TERMS OF WRITTEN "LOAN AND SECURITY AGREE-
+MENTS" BETWEEN THE LENDERS UNDER SAID
+AGREEMENTS, AND THE REGISTERED HOLDER OF THE
+SHARES (OR THE PREDECESSOR IN INTEREST TO THE
+SHARES).  SUCH AGREEMENTS ASSIGN TO THE LENDERS
+ALL RIGHTS PERTAINING TO THE SHARES, AS
+COLLATERAL FOR THE REPAYMENT OF LOANS TO
+PURCHASE THE SAME, GRANTS CERTAIN REPURCHASE
+RIGHTS TO THE LENDERS, AND IMPOSES CERTAIN
+RESTRICTIONS ON THE RESALE OF THE SHARES.  THE
+COMPANY WILL UPON WRITTEN REQUEST FURNISH A
+COPY OF SUCH AGREEMENTS TO THE HOLDER HEREOF
+WITHOUT CHARGE."
+
+"THE SHARES REPRESENTED HEREBY HAVE NOT BEEN
+REGISTERED UNDER THE SECURITIES LAWS AND
+REGULATIONS OF EITHER THE UNITED STATES OR
+JAPAN AND MAY NOT BE SOLD, PLEDGED, OR OTHER-
+WISE TRANSFERRED WITHOUT AN EFFECTIVE REGIS-
+TRATION THEREOF UNDER ALL APPLICABLE SECURITIES
+LAWS AND REGULATIONS OR AN OPINION OF COUNSEL,
+SATISFACTORY TO THE CORPORATION AND ITS COUN-
+SEL, THAT SUCH REGISTRATION IS NOT REQUIRED."
+
+"ANY TRANSFER OF THE SHARES OF THE COMPANY
+SHALL REQUIRE THE WRITTEN APPROVAL OF THE BOARD
+OF DIRECTORS."
+U.S. Purchaser Representations
+If you are a resident or a citizen of the
+United States, you hereby represent and warrant
+to the Company as follows, in connection with
+the issuance and acquisition of Shares under
+this Agreement:
+
+                    You are acquiring and will hold the Shares
+                    for investment for your account only and not
+                    with a view to, or for resale in connection
+                    with, any "distribution" thereof within the
+                    meaning of the U.S. Securities Act of 1933.
+
+                    You understand that the Shares have not been
+                    registered under the Securities Act of 1933
+                    by reason of a specific exemption therefrom
+                    and that the Shares must be held
+                    indefinitely, unless they are subsequently
+                    registered under the Securities Act of 1933
+                    or you obtain an opinion of counsel, in form
+                    and substance satisfactory to the Company
+                    and its counsel, that such registration is
+                    not required.  You further acknowledge and
+                    understand that the Company is under no
+                    obligation to register the Shares on any
+                    exchange or stock quotation system.
+
+                    You are aware of the adoption of Rule 144 by
+                    the Securities and Exchange Commission under
+                    the Securities Act of 1933, which permits
+                    limited public resales of securities
+                    acquired in a non-public offering, subject
+                    to the satisfaction of certain conditions,
+                    including (without limitation) the
+                    availability of certain current public in-
+                    formation about the issuer, the resale
+                    occurring not less than two years after the
+                    securities to be sold have been purchased
+                    and paid for, the sale being through an
+                    unsolicited "broker's transaction," and the
+                    amount of securities being sold during any
+                    three-month period not exceeding specified
+                    limitations.  You acknowledge and understand
+                    that the conditions for resale set forth in
+                    Rule 144 have not been satisfied and that
+                    the Company has no plans to satisfy these
+                    conditions in the foreseeable future.
+
+                    You will not sell, transfer or otherwise
+                    dispose of the Shares in violation of the
+                    Securities Act of 1933, the Securities
+                    Exchange Act of 1934, or the rules
+                    promulgated thereunder, including Rule 144
+                    under the Securities Act of 1933.
+
+                    You have had the opportunity to ask ques-
+                    tions of the Company concerning the
+                    Company's business and financial condition
+                    and to obtain any information which you
+                    consider necessary to make an informed
+                    investment decision with respect to the
+                    acquisition of the Shares.  You have
+                    personally discussed the Company's business,
+                    financial condition and future plans, as
+                    well as the terms and conditions of the
+                    issuance and sale of the Shares, with an
+                    officer of the Company and have received
+                    satisfactory answers to all questions.
+
+                    You are aware that your investment in the
+                    Company is a speculative investment which
+                    has limited liquidity and is subject to the
+                    risk of complete loss.  You are able, with-
+                    out impairing your financial condition, to
+                    hold the Shares for an indefinite period and
+                    to suffer a complete loss of your investment
+                    in the Shares.
+No Retention Rights
+This Agreement is not an employment agreement
+and does not give you the right to be retained
+by Company or any of its subsidiaries in any
+capacity.  The Company (and its subsidiaries)
+reserve the right to, and may, terminate your
+Service at any time and for any reason without
+liability or obligation.
+Applicable Law
+This Agreement will be interpreted and enforced
+under the laws of Japan; provided, however, the
+English language version of this Agreement, the
+Plan, your Note(s), and the Loan and Security
+Agreement(s) will prevail and control.
+The Plan and Other Agreements
+This Agreement, the Plan, your Note(s), and the
+Loan and Security Agreement(s) collectively
+constitute the entire understanding between you
+and the Company regarding this purchase of
+Shares and are incorporated herein by
+reference.  Any prior agreements, commitments
+or negotiations are superseded.
+
+ By signing the cover sheet of this Agreement, you agree to all
+  of the terms and conditions described above and in the Plan.
+
+In order to purchase the Shares and participate in the Plan, you
+must sign the attached cover sheet, your Loan and Security
+Agreement(s) and Note(s) and return them all to AKT or AKTA on
+or before _____, 199_.
+<PAGE>
+                Applied Komatsu Technology, Inc.
+        1994 Executive Incentive Stock Purchase Agreement
+
+
+
+
+                           Cover Sheet
+
+
+
+
+Name of Participant:          _________________________________
+
+Number of Shares Purchased:   _________________________________
+
+Purchase Price per Share:     _________________________________
+
+Total Purchase Price:         _________________________________
+
+
+
+
+
+
+                                   _____________________________
+                                   Signature
+
+                                   Date: ______________________  
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-10
+<SEQUENCE>5
+<TEXT>
+
+                                        For use with loans
+                                        to both AKT and 
+                                        AKTA "EIP Participants"
+
+
+                APPLIED KOMATSU TECHNOLOGY, INC.
+          1994 EXECUTIVE INCENTIVE STOCK PURCHASE PLAN
+
+           LOAN AND SECURITY AGREEMENT ("Joto-Tampo")
+
+
+
+     THIS AGREEMENT, dated _________, 199_, by and between
+___________________ ("Lender"), and ___________ ("Borrower").
+
+                           WITNESSETH:
+
+     WHEREAS, Lender wishes to extend a loan to Borrower, and
+Borrower wishes to obtain such loan from Lender so that Borrower
+can purchase with the loan proceeds _____________ shares of
+nonvoting preferred stock ("Preferred Stock") from Applied
+Komatsu Technology, Inc. ("AKT");
+
+     WHEREAS, the parties desire that Borrower enter into this
+Agreement and transfer to Lender the shares of Preferred Stock
+Borrower purchases from AKT, as security for the obligations of
+Borrower to Lender under the loan to be extended hereunder:
+
+     NOW, THEREFORE, in consideration of the agreements
+contained herein and intending to be legally bound hereby, the
+parties agree as follows:
+
+     1.   Extension of Loan  Subject to the terms and conditions
+hereinafter set forth, Lender shall extend to Borrower a loan
+(the "Loan") in the principal sum equal to the initial principal
+balance of that promissory note executed by Borrower in favor of
+Lender, a copy of which is attached hereto as Exhibit A (the
+"Note").
+
+     2.   Method of Borrowing  On the date hereof, Borrower
+shall cause the aggregate principal amount of the Loan to be
+paid to AKT, in accordance with procedures to be mutually agreed
+between Lender and Borrower.
+
+     3.   Note  The Loan shall be evidenced by the Note.  The
+Note is denominated in Japanese yen if Borrower is not a U.S.
+taxpayer and U.S. Dollars if Borrower is a U.S. taxpayer.  For
+U.S. Dollar denominated Notes, the initial principal balance of
+the Note is the appropriate yen amount, converted into U.S.
+Dollars based on the average daily Bank of Tokyo - "OPN" rate as
+published on Reuter's for the three Japanese banking days
+preceding the date the issue price for the Preferred Stock was
+determined by a Committee of the Shareholders Committee of AKT
+responsible for administering the 1994 Executive Incentive Stock
+Purchase Plan (the "Committee").
+
+     4.   Principal Loan Terms    The Loan shall be full
+recourse and bear interest as set forth in the Note, which is
+incorporated into this Agreement.  The terms of the Note shall
+prevail if there is any discrepancy, conflict or ambiguity of
+interpretation between this Agreement and the Note.  Subject to
+the terms and conditions contained in the Note, the Loan shall
+be repayable by Borrower to Lender as follows:
+
+          Interest on the Note shall be payable annually as set
+     forth therein,
+
+          The principal amount evidenced by the Note shall
+     become due on January 31, 2004, and
+
+          The Note may not be prepaid without the prior written
+     consent of Lender or as specifically provided in the Note.
+
+     5.   Stock Assignment and Transfer For Security Purposes;
+          Appointment as Attorney-in-Fact
+
+     A.   In order to secure Borrower's obligations to Lender
+under the Loan evidenced by the Note, promptly after the date
+hereof Borrower hereby assigns and transfers to Lender the
+shares of Preferred Stock, which shares are convertible into
+AKT's common stock in accordance with AKT's Articles of
+Incorporation ("Conversion Shares"), represented by stock
+certificates ("Share Certificates") as shown in Exhibit B
+attached hereto, the originals of which are herewith delivered
+to Lender or its agents.
+
+     B.   Lender shall itself or through its agent hold all
+Share Certificates delivered as security for the full and prompt
+repayment of any and all sums due to Lender from Borrower under
+the Loan evidenced by the Note ("Joto-Tampo").  Such Joto-Tampo
+shall continue to exist and be valid with respect to all of the
+Preferred Stock and any Conversion Shares until the loan
+evidenced by the Note is paid in full in accordance with the
+Note and this Agreement.  Lender shall not in any manner
+encumber, transfer or dispose of the Preferred Stock and any
+Conversion Shares except in accordance with the provisions of
+this Agreement.
+
+     C.   Lender and Borrower shall cause AKT to, pursuant to
+instructions from Borrower and Lender which are hereby given,
+make all necessary and appropriate entries into the shareholders
+registry of AKT to reflect the transfer and assignment to Lender
+of the Preferred Shares and any Conversion Shares based on the
+Joto-Tampo and in accordance with the provisions of this
+Agreement.
+
+     D.   Borrower hereby irrevocably appoints Lender as
+Borrower's attorney-in-fact with full power and authority
+throughout the term of this Agreement to take such actions as
+Lender deems necessary or desirable to arrange for such transfer
+and registry, to exercise the conversion privilege and right to
+vote as contemplated by Section 7.B, and to otherwise carry out
+the provisions and intentions of this Agreement.
+
+     6.   Representations and Warranties  Borrower hereby
+represents and warrants to Lender as follows:
+
+          As of the date Borrower assigns and transfers the
+     shares of Preferred Stock to Lender pursuant to Section
+     5.A, Borrower owns all of the Preferred Stock beneficially
+     and of record, free and clear of any lien, security
+     interest, pledge, prior assignment, encumbrance, or other
+     restriction, other than the Joto-Tampo created by this
+     Agreement in favor of Lender.
+
+          As of the date Borrower assigns and transfers the
+     shares of Preferred Stock to Lender pursuant to Section
+     5.A, Borrower has the full and unqualified legal right,
+     power and authority to sell, transfer and convey complete
+     and absolute legal and equitable title to the Preferred
+     Stock, free and clear of any lien, security interest,
+     pledge, prior assignment, encumbrance, or other restriction
+     other than the Joto-Tampo created by this Agreement in
+     favor of Lender.
+
+          As of the date hereof, Borrower is not a party to or
+     bound by any contract or agreement of any nature whatsoever
+     relating to the ownership, sale, exchange, disposition or
+     purchase of any of the Preferred Stock, other than the
+     agreement with AKT pursuant to which the Preferred Stock
+     was acquired.
+
+     7.   Rights of Borrower and Lender
+
+     A.   During the term of this Agreement:
+
+          All regular dividends with respect to the Preferred
+     Stock and any Conversion Shares shall be paid or
+     distributed by AKT to Lender, which shall receive the same
+     on behalf of Borrower.  Borrower irrevocably instructs, and
+     Lender agrees, that all such dividends shall be applied by
+     Lender to the payment of interest and any other sums then
+     due under the Note; the remainder of such dividends (if
+     any) shall be distributed by Lender to Borrower so long as
+     Borrower is not in Default (as defined in Section 8)
+     hereunder.  
+
+          Any special dividends, distributions and other amounts
+     or shares payable or distributable with respect to the
+     Preferred Stock and Conversion Shares as a result of stock
+     redemption, consolidation, split, conversion or purchase
+     shall be paid or distributed by AKT to Lender, which shall
+     receive the same on behalf of Borrower. Such special
+     dividends, distributions and other amounts shall be
+     retained and held by Lender, together with the Share
+     Certificates, as security for the full and prompt repayment
+     of any and all sums due to Lender from Borrower under the
+     Note so long as Borrower is not in Default (as defined in
+     Section 8) hereunder.  
+
+     B.   During the term of this Agreement, Lender shall have
+the sole and exclusive rights pertaining to the Preferred Stock
+and the Conversion Shares, including without limitation the sole
+and exclusive right to exercise the privilege to convert some or
+all of the Preferred Stock into Conversion Shares and the sole
+and exclusive right to vote the Preferred Stock and any
+Conversion Shares on all corporate questions of AKT on which
+such shares are entitled to vote as if it were the outright
+owner thereof.  Borrower hereby irrevocably authorizes and
+instructs Lender to exercise such conversion privilege and right
+to vote as and when Lender, in its sole discretion, determines.
+
+     C.   Lender may (but is not obligated to, except as
+provided below) repurchase some or all of the Preferred Stock
+and any Conversion Shares, if any of the following events occur:
+
+          The Borrower resigns or is removed, or is terminated
+     voluntarily or involuntarily, as an officer, employee or
+     advisor of AKT and its subsidiaries or dies prior to an
+     initial public offering of AKT's Common Stock on any stock
+     exchange or stock quotation system approved for listing by
+     the Shareholders Committee of AKT (an "IPO of AKT"); or
+
+          The Borrower attempts to prepay the Note other than as
+     specifically permitted therein prior to an IPO of AKT; or
+
+          The Borrower repays the balance of the Note on its
+     maturity but there has been no IPO of AKT; or
+
+          The Borrower attempts to transfer any Preferred Stock
+     or Conversion Shares in violation of the provisions set
+     forth below in Article 7.F.
+
+     [IF APPLICABLE, ADD:  The Preferred Stock and any
+     Conversion Shares of a Borrower who is a seconded employee
+     of AKT or Applied Komatsu Technology America, Inc. ("AKTA")
+     shall be automatically called if such Borrower does not
+     decide to become a direct employee of AKT or AKTA on or
+     before the earlier of the day before the commencement of a
+     "restricted period" with respect to AKT, as that term is
+     defined in Japanese IPO regulations or the date two years
+     from when the Borrower first became assigned to AKT or
+     AKTA.]
+
+Except in the case of death or where the Note is repaid in full
+but there has not been an IPO of AKT, this repurchase right
+(call option) shall be exercised by written notice to Borrower
+within one hundred twenty (120) days after the occurrence of the
+above event.  The repurchase period shall be unlimited in the
+case of death.  In the case where the Note is repaid in full but
+there has not been an IPO of AKT, the call option shall be
+deemed to be automatically exercised without further notice, and
+all the Preferred Stock and any Conversion Shares must be
+repurchased, unless Lender notifies Borrower in writing, within
+thirty (30) days after repayment of the Note, that Lender has
+elected to decline to exercise the call option by reason of that
+triggering event.  The purchase price (see below) for any
+Preferred Stock or Conversion Shares so repurchased will be
+first applied against any amounts that remain due under the Note
+and the remainder (if any) payable in cash within thirty (30)
+days after option exercise.
+
+     D.   Borrower may require Lender to purchase all, but not a
+portion, of the Preferred Stock or Conversion Shares if any of
+the following events occur:
+
+          AKT notifies Borrower in writing on or before
+     January 1, 1999 that its Shareholders Committee has
+     determined (without prejudice to reconsideration of the
+     issue) that AKT does not intend to commence, at any time
+     prior to the end of its FY1999, the process for an IPO of
+     AKT, or 
+
+          AKT does not so notify Borrower, but all outstanding
+     shares of Preferred Stock are not converted to Conversion
+     Shares on or before April 30, 1999, or
+
+          AKT does not so notify Borrower and said conversion
+     occurs on or before April 30, 1999, but AKT subsequently
+     abandons and withdraws entirely (without prejudice to
+     reconsideration of the issue) all intention and all then
+     pending applications and good faith efforts to achieve an
+     IPO of AKT on any stock exchange or stock quotation system.
+
+AKT has an affirmative obligation to notify the Borrower of the
+foregoing events.
+
+This right (put option) shall be exercised by Borrower by
+written notice to Lender at any time during the term of this
+Agreement and during the period which is (1) after the
+occurrence of the event triggering the right to exercise the put
+option and (2) prior to the date (if any) on which AKT
+subsequently has commenced, or re-commenced, the process for an
+IPO of AKT.  This put option shall be reinstated if said IPO is
+later withdrawn or abandoned by AKT prior to completion.  The
+purchase price (see below) for any shares so repurchased will be
+first applied against any amounts that remain due under the Note
+and the remainder (if any) payable in cash within thirty (30)
+days after option exercise.
+
+     E.   The purchase price under Subsections C and D shall be:
+1) if a certain price is required by applicable Japanese law (or
+other applicable law) and, with respect to Subsection C, IPO
+regulations, then the lowest price permitted by such Japanese
+law (or other applicable law) or IPO regulations and 2) if said
+certain price is not required, then the fair market value for
+the Preferred Stock and Conversion Shares (on an as-converted
+into common stock basis) as determined by the Committee in its
+sole discretion, based on the performance and degree of success
+of AKT and its subsidiaries.  The Committee may make reference
+to at least three companies that trade during the relevant time
+on the U.S. Nasdaq National Market and are selected by the
+Committee as being reasonably comparable to AKT.  The valuation
+process may also take into account relative, historical and
+projected growth rates, capital structures, industry
+attractiveness and such other or alternate factors the Committee
+deems relevant.  The price/earnings ratio of such companies may
+also be among the factors utilized by the Committee to determine
+fair market value.
+
+     F.   Borrower agrees not to sell any of the Preferred Stock
+or Conversion Shares (or any options or other rights to acquire
+the same) 1) to a third party at any time prior to the closing
+date of an IPO of AKT and 2) in any event at any time when
+applicable securities or other laws or IPO regulations prohibit
+or restrict the sale of Preferred Stock or Conversion Shares.  
+
+     G.   Borrower agrees that, if required by applicable IPO
+regulations, Conversion Shares may be submitted to the lead
+manager of the IPO of AKT and kept in its custody until up to
+one year following the effective date of the IPO (or longer, if
+such regulations so require), regardless of whether the Note has
+been paid in full and regardless of whether this Agreement
+remains in effect.
+
+     8.   Default
+
+     A.   The occurrence of the following events with respect to
+Borrower shall constitute a default hereunder ("Default"):
+
+          If Borrower fails to perform any of its obligations
+     hereunder and such failure continues for more than 10 days
+     after Borrower receives written notice of such failure from
+     Lender.
+
+          If Borrower fails to perform any of its obligations
+     under the Note for more than 10 days after Borrower
+     receives written notice of Lender's election to accelerate
+     payment of the Note by reason of such failure.
+
+          The Lender will not accelerate payment of the Note
+     prior to maturity for nonpayment of interest.
+
+     B.   If Borrower is in Default hereunder, then Lender may
+declare that all sums lawfully owed by Borrower under the Loan
+evidenced by the Note shall be immediately due and payable, and
+Lender shall have, in addition to all other rights and remedies
+which it may have under Japanese law, all of the following
+rights and remedies:
+
+          Lender may continue to receive dividends and other
+     distributions regarding Preferred Stock and Conversion
+     Shares on behalf of Borrower and exercise all voting and
+     other rights and give all consents, waivers and
+     ratifications in respect thereof and otherwise act with
+     respect thereto as though it were the outright owner
+     thereof; and/or
+
+          Lender may foreclose its security interest hereunder
+     and obtain outright ownership to all or any Preferred Stock
+     and Conversion Shares (if the then price of the same
+     determined in accordance with Article 7.E hereof is greater
+     than all of the sums owed by Borrower under the Loan, then
+     Lender shall pay such balance to Borrower within thirty
+     (30) days thereafter); and/or
+
+          Lender may sell, transfer or otherwise dispose of the
+     Preferred Stock and Conversion Shares and other property
+     held by Lender or its agent hereunder and apply the
+     proceeds thereof to any outstanding amount payable by
+     Borrower hereunder, ten (10) days after prior written
+     notice to Borrower of Lender's intention to do so.
+
+     C.   The failure to give any such notice and/or to exercise
+any such right or remedy shall not constitute a waiver of any
+Default or right associated with any Default and shall be
+without prejudice to giving such notice and/or exercise such
+right or remedy at any later date.
+
+
+     9.   Duration and Termination
+
+     A.   This Agreement shall continue in effect from the date
+hereof until the occurrence of the events prescribed in Section
+9B, at which time this Agreement and all of the rights and
+obligations of the parties hereto shall terminate.
+
+     B.   Upon the full payment by Borrower of all sums due
+under the Note to Lender, this Agreement shall terminate except
+for Sections 7C, 7D, 7E and 7F (which Sections shall survive
+such termination until the effective date of an IPO of AKT) and
+Section 7G (which Section shall survive such termination until
+the end of the period specified therein).  Upon such termination
+(except as provided in Section 7G), Lender shall return, or have
+them returned, to Borrower all of the Preferred Stock and
+Conversion Shares and other property held by Lender or its agent
+hereunder for security purpose.
+
+     10.  Miscellaneous
+
+     A.   This Agreement may only be modified, supplemented or
+amended by a written instrument signed by the parties hereto.
+
+     B.   This Agreement shall inure to the benefit of and be
+legally binding upon the parties and their respective heirs,
+personal representatives, successors and assigns.
+
+     C.   This Agreement shall be governed by and construed in
+accordance with the laws of Japan; provided, however, the
+English language version of this Agreement will prevail and
+control.  Borrower and Lender acknowledge and agree that the
+choice of Japanese law to govern this Agreement is reasonable
+and binding, and elected based upon mutually acceptable factors
+including the fact that the rights, duties and privileges of a
+shareholder of AKT are governed by Japanese law.  Borrower
+hereby irrevocably submits to the jurisdiction of the Tokyo
+District Court in connection with enforcement of this Agreement
+and/or any disputes hereunder.
+
+     D.   If any provision of this Agreement is construed to be
+invalid or unenforceable, then the remainder of this Agreement
+shall not be affected thereby and shall be enforceable without
+regard to the invalid or unenforceable provision. 
+
+     E.   Any heading preceding the text of the Sections hereof
+are inserted solely for the convenience of reference and shall
+not constitute a part of this Agreement.
+
+     F.   All notices required or permitted hereunder shall be
+given in writing, and either hand delivered, delivered by
+courier, or mailed by certified mail, postage prepaid, return
+receipt requested, to the parties at their respective addresses
+for notice herein.  The address for notice for Lender shall be:
+to the attention of its General Counsel, at the address of
+Lender's corporate headquarters.  The address for notice for
+Borrower shall be as set forth below on the last page of this
+Agreement.  Either party may change its address for notices
+hereunder by written notice to the other party as provided for
+in this Section.
+
+     G.   Neither party shall, directly or indirectly, assign or
+transfer this Agreement or any of the rights and/or obligations
+hereunder, in whole or in part, without the prior written
+consent of the other party to this Agreement.
+
+     IN WITNESS WHEREOF, the parties hereto have caused this
+Agreement to be duly executed the day and year first above 
+written.
+
+Lender:
+
+                              
+
+
+By:                           
+
+As Its:                       
+
+
+
+Borrower:
+
+
+                              
+
+Address:
+
+                              
+
+                              
+
+                              
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27
+<SEQUENCE>6
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE> 5
+<MULTIPLIER> 1000
+       
+<S>                             <C>
+<PERIOD-TYPE>                   9-MOS
+<FISCAL-YEAR-END>                          OCT-31-1994
+<PERIOD-END>                               JUL-31-1994
+<CASH>                                          73,509
+<SECURITIES>                                   214,503
+<RECEIVABLES>                                  395,474
+<ALLOWANCES>                                     1,260
+<INVENTORY>                                    243,956
+<CURRENT-ASSETS>                             1,037,859
+<PP&E>                                         411,211
+<DEPRECIATION>                                 159,395
+<TOTAL-ASSETS>                               1,466,676
+<CURRENT-LIABILITIES>                          455,764
+<BONDS>                                        172,424
+<COMMON>                                           837
+<PREFERRED-MANDATORY>                                0
+<PREFERRED>                                          0
+<OTHER-SE>                                     872,656
+<TOTAL-LIABILITY-AND-EQUITY>                 1,466,676
+<SALES>                                      1,192,009
+<TOTAL-REVENUES>                             1,192,009
+<CGS>                                          641,067
+<TOTAL-COSTS>                                  641,067
+<OTHER-EXPENSES>                               309,955
+<LOSS-PROVISION>                                     0
+<INTEREST-EXPENSE>                              10,779
+<INCOME-PRETAX>                                237,422
+<INCOME-TAX>                                    83,097
+<INCOME-CONTINUING>                            150,598
+<DISCONTINUED>                                       0
+<EXTRAORDINARY>                                      0
+<CHANGES>                                        7,000
+<NET-INCOME>                                   157,598
+<EPS-PRIMARY>                                     1.86
+<EPS-DILUTED>                                     1.86
+       
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</IMS-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

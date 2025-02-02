@@ -1,0 +1,753 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ GJ/zuKr486+zxIrqy+vsT3OjSl4C3e7bCeLroaEKPSLbBP2pENVckDRri+REviCF
+ +xZAZdY+4JE+SYihDJPQMw==
+
+<SEC-DOCUMENT>0000891618-96-000809.txt : 19960613
+<SEC-HEADER>0000891618-96-000809.hdr.sgml : 19960613
+ACCESSION NUMBER:		0000891618-96-000809
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		2
+CONFORMED PERIOD OF REPORT:	19960428
+FILED AS OF DATE:		19960610
+SROS:			NASD
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			APPLIED MATERIALS INC /DE
+		CENTRAL INDEX KEY:			0000006951
+		STANDARD INDUSTRIAL CLASSIFICATION:	SPECIAL INDUSTRY MACHINERY, NEC [3559]
+		IRS NUMBER:				941655526
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1026
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-06920
+		FILM NUMBER:		96578546
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3050 BOWERS AVE
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95054
+		BUSINESS PHONE:		4087275555
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	APPLIED MATERIALS TECHNOLOGY INC
+		DATE OF NAME CHANGE:	19730319
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<DESCRIPTION>QUARTERLY REPORT ENDING 4-28-96
+<TEXT>
+
+<PAGE>   1
+                                  UNITED STATES
+                       SECURITIES AND EXCHANGE COMMISSION
+
+                              WASHINGTON, DC 20549
+
+                                    FORM 10-Q
+
+                  (MARK ONE)
+
+    [X]           QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15 (d) OF THE
+                  SECURITIES EXCHANGE ACT OF 1934
+
+    For the quarterly period ended APRIL 28, 1996   or
+
+    [ ]           TRANSITION REPORT PURSUANT TO SECTION 13 OR 15 (d) OF
+                  THE SECURITIES EXCHANGE ACT OF 1934
+
+    For the transition period from _______________  to  _______________
+
+    Commission file number   0-6920
+
+                             APPLIED MATERIALS, INC.
+
+             (Exact name of registrant as specified in its charter)
+
+DELAWARE                                                     94-1655526
+(State or other jurisdiction                                 (I.R.S. Employer
+of incorporation or organization)                            Identification No.)
+
+3050 BOWERS AVENUE, SANTA CLARA, CALIFORNIA                  95054-3299
+Address of principal executive offices                       (Zip Code)
+
+Registrant's telephone number, including area code           (408) 727-5555
+                                                              
+
+     Indicate by check mark whether the registrant (1) has filed all reports
+required to be filed by Section 13 or 15(d) of the Securities Exchange Act
+of 1934 during the preceding 12 months (or for such shorter period that the
+registrant was required to file such reports), and (2) has been subject to
+such filing requirements for the past 90 days. Yes X No .
+
+Number of shares outstanding of the issuer's common stock as of April 28, 1996:
+179,377,000
+
+                                       1
+<PAGE>   2
+ PART I.  FINANCIAL INFORMATION
+
+                             APPLIED MATERIALS, INC.
+                 CONSOLIDATED CONDENSED STATEMENTS OF OPERATIONS
+                                   (UNAUDITED)
+
+<TABLE>
+<CAPTION>
+                                                              Three Months Ended                        Six Months Ended
+- ------------------------------------------------------------------------------------------------------------------------------
+                                                              April 28,          April 30,          April 28,        April 30,
+(In thousands, except per share data)                           1996               1995               1996             1995
+- ------------------------------------------------------------------------------------------------------------------------------
+<S>                                                          <C>                <C>               <C>               <C>
+Net sales                                                    $1,127,855         $675,439          $2,168,435        $1,181,547
+
+Costs and expenses:
+
+     Cost of products sold                                      586,564          370,429           1,130,344           638,525
+     Research, development
+       and engineering                                          124,918           73,393             235,270           133,389
+     Marketing and selling                                       80,587           51,901             157,869            96,046
+     General and administrative                                  54,820           34,822             104,375            66,640
+                                                             ----------         --------          ----------        ----------
+
+Income from operations                                          280,966          144,894             540,577           246,947
+
+Interest expense                                                  4,917            5,881              10,085            11,634
+Interest income                                                   9,829            5,040              19,426             9,983
+                                                             ----------         --------          ----------        ----------
+Income from consolidated companies before
+     taxes                                                      285,878          144,053             549,918           245,296
+
+Provision for income taxes                                      100,057           50,418             192,471            85,853
+                                                             ----------         --------          ----------        ----------
+
+Income from consolidated companies                              185,821           93,635             357,447           159,443
+
+Equity in net income/loss of joint venture                            -                -                   -                 -
+                                                             ----------         --------          ----------        ----------
+
+Net income                                                   $  185,821         $ 93,635          $  357,447        $  159,443
+                                                             ----------         --------          ----------        ----------
+
+
+Earnings per share                                           $     1.01         $   0.54          $     1.94        $     0.92
+                                                             ----------         --------          ----------        ----------
+
+Average common shares and
+     equivalents                                                183,699          173,406             183,921           173,010
+- ------------------------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+     See accompanying notes to consolidated condensed financial statements.
+
+                                       2
+<PAGE>   3
+                            APPLIED MATERIALS, INC.
+                     CONSOLIDATED CONDENSED BALANCE SHEETS*
+
+<TABLE>
+<CAPTION>
+- -----------------------------------------------------------------------------------------------------------------------
+                                                                                  April 28,                  Oct. 29,
+                           (In thousands)                                           1996                       1995
+- -----------------------------------------------------------------------------------------------------------------------
+<S>                        <C>                                                    <C>                       <C>
+              ASSETS       Current assets:
+                               Cash and cash equivalents                           $  199,993                $  285,845
+                               Short-term investments                                 442,405                   483,487
+                               Accounts receivable, net                             1,020,737                   817,730
+                               Inventories                                            556,584                   427,413
+                               Deferred income taxes                                  196,277                   198,888
+                               Other current assets                                    84,227                    98,250
+                                                                                   ----------                ----------
+                           Total current assets                                     2,500,223                 2,311,613
+
+                           Property, plant and equipment, net                         808,547                   630,746
+                           Other assets                                                25,047                    23,020
+                                                                                   ----------                ----------
+                           Total assets                                            $3,333,817                $2,965,379
+                                                                                   ----------                ----------
+
+        LIABILITIES        Current liabilities:
+                AND            Notes payable                                       $   48,465                $   61,748
+       STOCKHOLDERS'           Current portion of long-term debt                       22,497                    21,064
+              EQUITY           Accounts payable and
+                                 accrued expenses                                     778,886                   659,572
+                               Income taxes payable                                    36,099                   119,347
+                                                                                   ----------                ----------
+                           Total current liabilities                                  885,947                   861,731
+
+                           Long-term debt                                             282,156                   279,807
+                           Deferred income taxes and
+                                other non-current obligations                          49,611                    40,338
+                                                                                   ----------                ----------
+                           Total liabilities                                        1,217,714                 1,181,876
+                                                                                   ----------                ----------
+
+                           Stockholders' equity:
+                               Common stock                                             1,794                     1,792
+                               Additional paid-in capital                             747,338                   760,057
+                               Retained earnings                                    1,357,426                   999,979
+                               Cumulative translation adjustments                       9,545                    21,675
+                                                                                   ----------                ----------
+                           Total stockholders' equity                               2,116,103                 1,783,503
+                                                                                   ----------                ----------
+                           Total liabilities and
+                               stockholders' equity                                $3,333,817                $2,965,379
+- -----------------------------------------------------------------------------------------------------------------------
+</TABLE>
+  *   Amounts as of April 28, 1996 are unaudited. Amounts as
+      of October 29, 1995 were obtained from the October 29,
+      1995 audited financial statements.
+
+     See accompanying notes to consolidated condensed financial statements.
+
+                                       3
+<PAGE>   4
+                            APPLIED MATERIALS, INC.
+                CONSOLIDATED CONDENSED STATEMENTS OF CASH FLOWS
+                                  (UNAUDITED)
+
+<TABLE>
+<CAPTION>
+- ----------------------------------------------------------------------------------------------------------------
+                                                                                        Six Months Ended
+                                                                                 April 28,             April 30,
+                  (In thousands)                                                   1996                 1995
+- ----------------------------------------------------------------------------------------------------------------
+<S>                                                                             <C>                   <C>
+                  Cash flows from operating activities:
+                  Net income                                                    $ 357,447             $ 159,443
+                  Adjustments required to reconcile
+                    net income to cash provided by operations:
+                    Deferred taxes                                                  1,404                (2,437)
+                    Depreciation and amortization                                  63,143                35,570
+                    Equity in net income/loss of joint venture                          -                     -
+                    Changes in assets and liabilities:
+                      Accounts receivable                                        (228,277)             (143,272)
+                      Inventories                                                (136,132)              (82,565)
+                      Other current assets                                         12,963                (8,274)
+                      Other assets                                                 (2,047)                 (677)
+                      Accounts payable and accrued expenses                       139,295               101,914
+                      Income taxes payable                                        (81,332)              (27,028)
+                      Other long-term liabilities                                  10,325                 4,772
+                                                                                ---------             ---------
+                  Cash provided by operations                                     136,789                37,446
+                                                                                ---------             ---------
+
+                  Cash flows from investing activities:
+                    Capital expenditures, net                                    (249,206)              (81,309)
+                    Proceeds from sales of short-term investments                 328,489               133,769
+                    Purchases of short-term investments                          (287,407)             (105,370)
+                                                                                ---------             ---------
+                  Cash used for investing                                        (208,124)              (52,910)
+                                                                                ---------             ---------
+
+                  Cash flows from financing activities:
+                    Short-term debt activity, net                                  (9,568)               (5,531)
+                    Long-term debt activity, net                                    8,506                29,110
+                    Common stock transactions, net                                (12,717)                4,460
+                                                                                ---------             ---------
+                  Cash provided by (used for) financing                           (13,779)               28,039
+                                                                                ---------             ---------
+
+                  Effect of exchange rate changes on cash                            (738)               (2,141)
+                                                                                ---------             ---------
+
+                  Increase (decrease) in cash and cash equivalents                (85,852)               10,434
+                  Cash and cash equivalents
+                    at beginning of period                                        285,845               160,320
+                                                                                ---------             ---------
+                  Cash and cash equivalents
+                    at end of period                                            $ 199,993             $ 170,754
+- ---------------------------------------------------------------------------------------------------------------
+</TABLE>
+
+                  For the six months ended April 28, 1996, cash payments for
+                  interest and income taxes were $12,053 and $253,118,
+                  respectively, and for the six months ended April 30, 1995,
+                  cash payments for interest and income taxes were $11,746 and
+                  $105,700, respectively.
+
+     See accompanying notes to consolidated condensed financial statements.
+
+                                       4
+<PAGE>   5
+                             APPLIED MATERIALS, INC.
+        NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS (UNAUDITED)
+                         SIX MONTHS ENDED APRIL 28, 1996
+                                 (IN THOUSANDS)
+
+1)   Basis of Presentation
+
+     In the opinion of management, the unaudited consolidated condensed
+     financial statements included herein have been prepared on a consistent
+     basis with the October 29, 1995 audited consolidated financial statements
+     and include all material adjustments, consisting of normal recurring
+     adjustments, necessary to fairly present the information set forth therein.
+     Certain amounts in the consolidated condensed financial statements for the
+     periods ended April 30, 1995 have been reclassified to conform to the
+     current presentation.
+
+2)   Earnings Per Share
+
+     Earnings per share has been computed using the weighted average number of
+     common shares outstanding and common equivalent shares from dilutive stock
+     options.
+
+3)   Inventories
+
+     Inventories are stated at the lower of cost or market, with cost determined
+     on a first-in, first-out (FIFO) basis. The components of inventories are
+     as follows:
+
+<TABLE>
+<CAPTION>
+                                                      April 28, 1996                      October 29, 1995
+                                                      --------------                      ----------------
+<S>                                                   <C>                                 <C>
+     Customer service spares                            $180,551                               $131,411
+     Systems raw materials                               148,155                                118,627
+     Work-in-process                                     174,309                                139,537
+     Finished goods                                       53,569                                 37,838
+                                                        --------                               --------
+                                                        $556,584                               $427,413
+                                                        ========                               ========
+</TABLE>
+
+4)   Accounts Payable and Accrued Expenses
+
+     The components of accounts payable and accrued expenses are as follows:
+
+<TABLE>
+<CAPTION>
+                                                       April 28, 1996                      October 29, 1995
+                                                       --------------                      ----------------
+<S>                                                    <C>                                 <C>           
+     Accounts payable                                    $229,659                               $244,014
+     Compensation and benefits                            132,627                                109,388
+     Installation and warranty                            176,357                                133,035
+     Other                                                240,243                                173,135
+                                                         --------                               --------
+                                                         $778,886                               $659,572
+                                                         ========                               ========
+</TABLE>
+
+5)   Stockholders' Equity
+
+     During the second quarter of fiscal 1996, the Board of Directors authorized
+     a plan which allows the Company to repurchase up to 5 million shares of its
+     Common Stock in the open market during the next three years. The purpose of
+     this plan is to acquire shares to fund the Company's stock-based employee
+     benefit and incentive programs, including the employee stock purchase plan
+     and the stock option plan. The Company repurchased 230,000 shares of its
+     common stock during the second quarter of fiscal 1996 at an average price
+     of $35.35 per share.
+
+                                       5
+<PAGE>   6
+                             APPLIED MATERIALS, INC.
+           MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION
+                            AND RESULTS OF OPERATIONS
+
+ 
+
+   RESULTS OF OPERATIONS
+
+   The Company's net sales for the three and six month periods ended April 28,
+   1996 increased 67 and 84 percent, respectively, over the corresponding
+   periods of fiscal 1995. Record net sales resulted from increased demand for
+   the Company's advanced wafer process technology, multi-chamber equipment and
+   installed base support services. The increased demand for the Company's
+   advanced wafer processing technology and multi-chamber equipment reflects the
+   semiconductor industry's need for the technical capability to fabricate
+   advanced device structures and the continued investment in systems capable of
+   performing processes required for smaller device geometries. The increase in
+   installed base support services revenue is attributable to a larger installed
+   systems base and our global customers' requirements for high reliability and
+   uptime.
+
+   Sales increased in the second quarter and first half of fiscal 1996 in all
+   regions and across all of the Company's product groups when compared to sales
+   in the corresponding periods of fiscal 1995, with the exception of second
+   quarter sales in Korea. Sales by region as a percentage of total sales were
+   as follows:
+
+<TABLE>
+<CAPTION>
+                        Three Months Ended                      Six Months Ended
+                   April 28,         April 30,            April 28,           April 30,
+                     1996               1995                 1996                1995
+                -----------------------------------------------------------------------
+<S>             <C>                  <C>                  <C>                 <C>    
+North America         32%               33%                  35%                 37%
+Europe                15%               10%                  18%                 12%
+Japan                 23%               20%                  22%                 22%
+Korea                 14%               25%                  11%                 18%
+Asia-Pacific          16%               12%                  14%                 11%
+</TABLE>
+
+   New orders of $1,323 million were received during the second quarter of
+   fiscal 1996, versus $1,329 million in the first quarter of fiscal 1996. North
+   American orders decreased to $250 million from $490 million; Europe increased
+   to $203 million from $127 million; Japan decreased to $319 million from $393
+   million; Korea increased to $337 million from $81
+
+                                       6
+<PAGE>   7
+   million; and Asia-Pacific decreased to $214 million from $238 million. North
+   American orders decreased as customers reduced capital investment in response
+   to changing market conditions, including price declines on memory devices, 
+   while Korean orders increased significantly as customers in that region 
+   continued to make strategic investments in leading-edge 0.35-micron and 
+   below device technologies. Each region in the global semiconductor equipment 
+   market exhibits unique investment patterns which cause regional order growth 
+   rates to vary from quarter to quarter. Backlog at April 28, 1996 was $1,901 
+   million, versus $1,768 million at January 28, 1996 and $1,509 million at 
+   October 29, 1995.
+
+   For the three and six months ended April 28, 1996, the Company's gross margin
+   as a percentage of sales was 48.0 and 47.9 percent, respectively, up from
+   45.2 and 46.0 percent for the corresponding periods of fiscal 1995. These
+   improvements resulted primarily from reduced cycle times, improved
+   manufacturing efficiencies and increased unit volume.
+
+   Operating expenses as a percentage of sales for the three and six months
+   ended April 28, 1996 were 23.1 and 22.9 percent, respectively, which compare
+   favorably to 23.7 and 25.1 percent for the three and six months ended April
+   30, 1995. These improvements resulted primarily from the Company's
+   accelerated revenue growth coupled with its management of the growth of
+   operating expenses.
+
+   Significant operations of the Company are conducted in Japanese yen, British
+   pounds sterling and other foreign currencies. Forward exchange contracts and
+   options are purchased to hedge certain existing firm commitments and foreign
+   currency denominated transactions expected to occur during the next year.
+   Gains and losses on hedge contracts are reported as a component of the
+   related transaction. Because the impact of movements in currency exchange
+   rates on foreign exchange contracts offsets the related impact on the
+   underlying items being hedged, these financial instruments do not subject the
+   Company to speculative risk that would otherwise result from changes in
+   currency exchange rates. To date, exchange gains and losses have not had a
+   significant effect on the Company's results of operations.
+
+   The Company's effective tax rate for the second quarter and first half of
+   fiscal 1996 was 35 percent, consistent with the corresponding periods of
+   fiscal 1995. Management anticipates that a 35 percent effective tax rate will
+   continue throughout fiscal 1996.
+
+                                       7
+<PAGE>   8
+   FINANCIAL CONDITION, LIQUIDITY AND CAPITAL RESOURCES
+
+   The Company's financial condition at April 28, 1996 remained strong. The
+   ratio of current assets to current liabilities was 2.8:1, compared to 2.7:1
+   at October 29, 1995. During the first half of fiscal 1996, cash, cash
+   equivalents and short-term investments decreased $127 million. The principal
+   use of cash was for net property, plant and equipment acquisitions of $249
+   million, the majority of which relate to facilities expansion. Cash provided
+   by operations of $137 million resulted primarily from net income of $357
+   million and increases in accounts payable and accrued expenses of $139
+   million, offset by increases in accounts receivable and inventories of $364
+   million and a decrease in income taxes payable of $81 million.
+
+   At April 28, 1996, the Company's principal sources of liquidity consisted of
+   $642 million of cash, cash equivalents and short-term investments, $194
+   million of unissued notes registered under the Company's medium-term note
+   program and $309 million of available credit facilities. The Company's
+   liquidity is affected by many factors, some of which are based on the normal
+   on-going operations of the business and others of which relate to the
+   uncertainties of the industry and global economies. Although the Company's
+   cash requirements will fluctuate based on the timing and extent of these
+   factors, management believes that cash generated from operations, together
+   with its existing sources of liquidity, will be sufficient to satisfy its
+   liquidity requirements for the remainder of the fiscal year.
+
+   Capital expenditures are expected to approximate $600 million for fiscal
+   1996. This amount includes funds for the continuation and completion of
+   facilities expansion and investments in demonstration and test equipment,
+   information systems and other capital equipment.
+
+   DISCLOSURE PURSUANT TO THE PRIVATE SECURITIES LITIGATION REFORM ACT OF 1995
+
+   When used in this Management's Discussion and Analysis, the words
+   "anticipate," "estimate" and similar expressions are intended to identify
+   forward-looking statements. These statements are subject to certain risks and
+   uncertainties, including slowing growth in the demand for semiconductors and
+   challenges from the Company's competition, that could cause actual results to
+   differ materially from those projected. Additional risks and uncertainties
+   are discussed in a Form 8-K filed with the SEC on February 13, 1996.
+
+                                       8
+<PAGE>   9
+   PART II  OTHER INFORMATION
+
+   Item 1.        Legal Proceedings
+
+   In the first of two lawsuits filed by the Company, captioned Applied
+   Materials, Inc. v. Advanced Semiconductor Materials America, Inc., Epsilon
+   Technology, Inc. (doing business as ASM Epitaxy) and Advanced Semiconductor
+   Materials International N.V. (collectively "ASM") (case no. C-91-20061-RMW),
+   Judge William Ingram of the United States District Court for the Northern
+   District of California ruled on April 26, 1994 that ASM's Epsilon I epitaxial
+   reactor infringed three of the Company's United States patents and issued an
+   injunction against ASM's use and sale of the ASM Epsilon I in the United
+   States. ASM has appealed the decision and the injunction has been stayed
+   pending the appeal only as to ASM products offered for sale as of April 1994.
+   The Court recently ruled that ASM's announced redesign of its reduced
+   pressure epitaxial reactors is not subject to the stay order. The stay order
+   further requires that ASM pay a fee, as security for the Company's interest,
+   for each Epsilon I system sold by ASM in the United States after the date of
+   the injunction. Judge Ronald M. Whyte of the same Court ruled that
+   proceedings to resolve the issues of damages, willful infringement and ASM's
+   counterclaims, which had been bifurcated for separate trial, will also be
+   stayed, pending the appeal of Judge Ingram's decision. Oral arguments
+   regarding this appeal were completed on June 5, 1995 before the Court of
+   Appeals for the Federal Circuit. The Company is awaiting the decision of the
+   Court of Appeals. The trial of the Company's second patent infringement
+   lawsuit against ASM, captioned Applied Materials, Inc. v. ASM (case no.
+   C-92-20643-RMW), was concluded before Judge Whyte in May 1995. On November 1,
+   1995, the Court issued its judgment holding that two of the Company's United
+   States patents were valid and infringed by ASM's reduced pressure epitaxial
+   reactors. A permanent injunction was entered on March 7, 1996 prohibiting
+   ASM's use or sale of its ribbed quartz epitaxial reactors within the United
+   States effective June 15, 1996. ASM is allowed to continue service and
+   maintenance of its installed base, including the sale of replacement chambers
+   upon payment of a fee to the Company.
+
+   A separate lawsuit filed by ASM against the Company involving one patent
+   relating to the Company's single wafer epitaxial product line, captioned ASM
+   America, Inc. v. Applied Materials, Inc. (case no. C-93-20853-RMW), has been
+   scheduled for trial in July 1996. The Court recently granted three motions
+   for summary judgment filed by the Company, thus eliminating the Company's
+   liability on this patent, and leaving only the Company's claims against ASM
+   for trial in July. ASM has not indicated whether it intends to appeal this
+   matter. A separate action severed from ASM's case, captioned ASM America,
+   Inc. v. Applied
+
+                                       9
+<PAGE>   10
+   Materials, Inc. (case no. C-95-20169-RMW), involves one United States patent
+   which relates to the Company's Precision 5000 product line. Trial has been
+   scheduled for October 1996, and discovery is proceeding. In these cases, ASM
+   seeks injunctive relief, damages and such other relief as the Court may find
+   appropriate.
+
+   Further, the Company has filed a Declaratory Judgment action against ASM,
+   captioned Applied Materials, Inc. v. ASM (case no. C-95-20003-RMW),
+   requesting that an ASM United States patent be held invalid and not infringed
+   by the Company's single wafer epitaxial product line. Discovery is
+   proceeding, and no trial date has been set. On July 7, 1995, ASM filed a
+   lawsuit, captioned ASM America, Inc. v. Applied Materials, Inc. (case no.
+   C95-20586-RMW), concerning alleged infringement of a United States patent by
+   susceptors in chemical vapor deposition chambers. Discovery has commenced and
+   no trial date has been set. On April 10, 1996, the Court denied ASM's motion
+   for summary judgment and granted the Company's motion for summary judgment,
+   finding, on several independent grounds, that the Company's reactors do not
+   literally infringe this patent. With this ruling, the Company's potential
+   liability has been substantially reduced on this patent. ASM has not
+   indicated whether it intends to appeal this decision.
+
+   In September 1994, General Signal Corporation filed a lawsuit against the
+   Company (case no. 94-461-JJF) in the United States District Court, District
+   of Delaware. General Signal alleges that the Company infringes five of
+   General Signal's United States patents by making, using, selling or offering
+   for sale multi-chamber wafer fabrication equipment, including for example,
+   the Precision 5000 series machines. General Signal seeks an injunction,
+   multiple damages and costs, including reasonable attorneys' fees and
+   interest, and such other relief as the Court may deem appropriate. This
+   lawsuit is currently in active discovery, and a trial has been set for
+   January 20, 1997.
+
+   In January 1995, the Company filed a lawsuit against Novellus Systems, Inc.
+   in the United States District Court, Northern District of California (case
+   no. C-95-0243-MMC). This lawsuit alleges that Novellus' Concept One, Concept
+   Two, and Maxxus F TEOS systems infringe the Company's United States patent
+   relating to the TEOS-based, plasma enhanced CVD process for silicon oxide
+   deposition. The lawsuit seeks an injunction, damages and costs, including
+   reasonable attorneys' fees and interest, and such other relief as the court
+   may deem appropriate. Damages and counterclaims have been bifurcated for
+   separate trial. A jury trial has been scheduled for November 1996, before
+   Judge Charles A. Legge. On September 15, 1995, the Company filed another
+   lawsuit against Novellus alleging that Novellus' then newly announced blanket
+   tungsten interconnect process infringes the Company's United States patent
+   relating to a tungsten CVD process. The Company also sought a declaration
+   that a Novellus United States
+
+                                       10
+<PAGE>   11
+   patent for a gas purge mechanism is not infringed by the Company and/or is
+   invalid. Novellus answered by denying the allegations and counterclaimed by
+   alleging that the Company's CVD systems infringe Novellus' United States
+   patents concerning gas purge and gas debubbler mechanisms. Novellus also
+   filed a new lawsuit as a plaintiff before the same Court which contains the
+   same claims and patents as those stated in the Company's September 15, 1995
+   lawsuit. Both cases have been assigned to the same judge. Discovery has
+   commenced, and trial has been set for August 1997.
+
+   In the normal course of business, the Company from time to time receives and
+   makes inquiries with regard to possible patent infringement. Management
+   believes that it is unlikely that the outcome of these lawsuits or of the
+   patent infringement inquiries will have a material adverse affect on the
+   Company's financial position or results of operations.
+
+   Item 4. Submission of Matters to a Vote of Security-Holders
+
+   The Annual Meeting of Stockholders was held on March 14, 1996 in Santa Clara,
+   California. Ten incumbent directors were re-elected without opposition to
+   serve another one-year term in office. The results of this election were as
+   follows:
+
+<TABLE>
+<CAPTION>
+              Name of Director                        Votes For             Votes Withheld
+              ----------------------------------------------------------------------------
+              <S>                                    <C>                       <C>     
+              James C. Morgan                        147,065,457                 1,019,089
+              James W. Bagley                        147,023,029                 1,061,517
+              Dan Maydan                             147,050,315                 1,034,231
+              Michael H. Armacost                    147,040,189                 1,044,357
+              Herbert M. Dwight, Jr.                 147,068,162                 1,016,384
+              George B. Farnsworth                   147,066,460                 1,018,086
+              Philip V. Gerdine                      147,077,297                 1,007,249
+              Tsuyoshi Kawanishi                     147,056,091                 1,028,455
+              Paul R. Low                            147,081,928                 1,002,618
+              Alfred J. Stein                        147,064,785                 1,019,761
+</TABLE>
+
+   On a proposal to amend the Company's Certificate of Incorporation to increase
+   the number of shares of Common Stock authorized to be issued from 200,000,000
+   to 500,000,000, there were 133,729,973 votes cast in favor, 12,452,196 votes
+   cast against, 1,902,377 abstentions and zero broker non-votes.
+
+                                       11
+<PAGE>   12
+   Item 5. Other Information
+
+   The ratio of earnings to fixed charges for the six months ended April 28,
+   1996 and April 30, 1995, and for each of the five years in the period ended
+   October 30, 1995 was as follows:
+
+<TABLE>
+<CAPTION>
+                 Six Months Ended
+                 ----------------                                    Fiscal Year
+              April 28,       April 30,        ------------------------------------------------------                             
+                1996            1995           1995         1994       1993         1992         1991
+                ----            ----           ----         ----       ----         ----         ----
+<S>             <C>           <C>              <C>          <C>        <C>          <C>          <C> 
+                24.66x           14.16 x       21.25x       13.37x     7.61x        3.63x        3.02x
+                ======           =======       ======       ======     =====        =====        =====
+</TABLE>
+
+   Item 6.    Exhibits and Reports on Form 8-K
+
+              a)  Exhibits are numbered in accordance with the Exhibit Table of
+                  Item 601 of Regulation S-K:
+
+                  27.0     Financial Data Schedule:   filed electronically
+
+              b)  Report on Form 8-K was filed on February 13, 1996. The report
+                  contains the Company's press release, dated February 13, 1996,
+                  with respect to its financial results for the period ended
+                  January 28, 1996, as well as information with respect to risks
+                  and uncertainties pursuant to the Private Securities
+                  Litigation Reform Act of 1995.
+
+                                       12
+<PAGE>   13
+                                 SIGNATURE
+
+Pursuant to the requirements of the Securities Exchange Act of 1934, the
+registrant has duly caused this report to be signed on its behalf by the
+undersigned thereunto duly authorized.
+
+                                                APPLIED MATERIALS, INC.
+
+June 4, 1996                                 By:\s\Gerald F. Taylor
+                                                --------------------------------
+                                                  Gerald F. Taylor
+                                                  Senior Vice President and
+                                                  Chief Financial Officer
+                                                  (Principal Financial Officer)
+
+                                             By: \s\Michael K. O'Farrell
+                                                --------------------------------
+                                                  Michael K. O'Farrell
+                                                  Corporate Controller
+                                                  (Principal Accounting Officer)
+
+
+                                       13
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27
+<SEQUENCE>2
+<DESCRIPTION>FINANCIAL DATA SCHEDULE
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE> 5
+<LEGEND>
+This schedule contains summary financial information extracted from the
+consolidated financial statements for the quarter ended April 28, 1996.
+</LEGEND>
+<MULTIPLIER> 1000
+       
+<S>                             <C>
+<PERIOD-TYPE>                   YEAR
+<FISCAL-YEAR-END>                          OCT-27-1996
+<PERIOD-END>                               APR-28-1996
+<CASH>                                         199,993
+<SECURITIES>                                   442,405
+<RECEIVABLES>                                1,020,737
+<ALLOWANCES>                                         0
+<INVENTORY>                                    556,584
+<CURRENT-ASSETS>                             2,500,223
+<PP&E>                                       1,085,980
+<DEPRECIATION>                                 277,433
+<TOTAL-ASSETS>                               3,333,817
+<CURRENT-LIABILITIES>                          885,947
+<BONDS>                                        282,156
+<PREFERRED-MANDATORY>                                0
+<PREFERRED>                                          0
+<COMMON>                                         1,794
+<OTHER-SE>                                   2,114,309
+<TOTAL-LIABILITY-AND-EQUITY>                 3,333,817
+<SALES>                                      1,127,855
+<TOTAL-REVENUES>                             1,127,855
+<CGS>                                          586,564
+<TOTAL-COSTS>                                  586,564
+<OTHER-EXPENSES>                               124,918
+<LOSS-PROVISION>                                     0
+<INTEREST-EXPENSE>                               4,917
+<INCOME-PRETAX>                                285,878
+<INCOME-TAX>                                   100,057
+<INCOME-CONTINUING>                            185,821
+<DISCONTINUED>                                       0
+<EXTRAORDINARY>                                      0
+<CHANGES>                                            0
+<NET-INCOME>                                   185,821
+<EPS-PRIMARY>                                     1.01
+<EPS-DILUTED>                                     1.01
+        
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

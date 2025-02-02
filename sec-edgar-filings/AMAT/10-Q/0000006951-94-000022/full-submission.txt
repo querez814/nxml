@@ -1,0 +1,974 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: keymaster@town.hall.org
+Originator-Key-Asymmetric:
+ MFkwCgYEVQgBAQICAgADSwAwSAJBALeWW4xDV4i7+b6+UyPn5RtObb1cJ7VkACDq
+ pKb9/DClgTKIm08lCfoilvi9Wl4SODbR1+1waHhiGmeZO8OdgLUCAwEAAQ==
+MIC-Info: RSA-MD5,RSA,
+ tB0mfe9qsI5AQGrNOo34S/c02gqpLpIveviHJQ3bGy2n3RY8pBtcWU8yju+A39nq
+ XHzuPbbXC2GZwegl8tO2ww==
+
+<IMS-DOCUMENT>0000006951-94-000022.txt : 19940610
+<IMS-HEADER>0000006951-94-000022.hdr.sgml : 19940610
+ACCESSION NUMBER:		0000006951-94-000022
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		3
+CONFORMED PERIOD OF REPORT:	19940501
+FILED AS OF DATE:		19940603
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			APPLIED MATERIALS INC /DE
+		CENTRAL INDEX KEY:			0000006951
+		STANDARD INDUSTRIAL CLASSIFICATION:	3559
+		IRS NUMBER:				941655526
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1026
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-06920
+		FILM NUMBER:		94532819
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3050 BOWERS AVE
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95054
+		BUSINESS PHONE:		4087275555
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	APPLIED MATERIALS TECHNOLOGY INC
+		DATE OF NAME CHANGE:	19730319
+</IMS-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<DESCRIPTION>BODY OF 10-Q Q2 1994
+<TEXT>
+
+
+
+                                 UNITED STATES
+                         SECURITIES AND EXCHANGE COMMISSION
+                              Washington, DC 20549
+
+                                  FORM 10-Q
+
+	(MARK ONE)
+[  X  ]	QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15 (d) OF THE
+	SECURITIES EXCHANGE ACT OF 1934
+
+For the quarterly period ended May 1, 1994   or
+
+
+[       ]	TRANSITION REPORT PURSUANT TO SECTION 13 OR 15 (d) OF 
+		THE SECURITIES EXCHANGE ACT OF 1934
+
+For the transition period from _______________  to  _______________
+
+Commission file number   0-6920                                       
+
+
+APPLIED MATERIALS, INC.
+(Exact name of registrant as specified in its charter)
+
+Delaware	94-1655526	
+(State or other jurisdiction 	(I.R.S. Employer
+of incorporation or organization)	Identification No.)
+
+3050 Bowers Avenue, Santa Clara, California	95054-3299	
+Address of principal executive offices	(Zip Code)
+
+Registrant's telephone number, including area code	(408) 727-5555	
+
+
+	Indicate by check mark whether the registrant (1) has filed all reports
+ required to be filed by Section 13 or 15(d) of the Securities Exchange Act 
+ of 1934 during the preceding 12 months (or for such shorter period that the
+ registrant was required to file such reports), and (2) 
+ subject to such filing requirements for the past 90 days.  Yes  X    No      .
+
+ Number of shares outstanding of the issuer's common stock as of 
+ May 1, 1994: 83,402,000
+
+
+
+
+PART I.  FINANCIAL INFORMATION
+
+                            	APPLIED MATERIALS, INC.
+                 	CONSOLIDATED CONDENSED STATEMENTS OF OPERATIONS
+                                	(UNAUDITED)
+<TABLE>
+<CAPTION>
+                                     	Three Months Ended     	Six Months Ended
+                                      	May 1,	    May 2,	      May 1,	   May 2,
+(In thousands, except per share data)	 1994	       1993	        1994	     1993
+<S>                                   <C>         <C>         <C>        <C>
+
+Net sales                           	$ 411,332  $	255,692   	$	751,781 	$	471,266
+
+Costs and expenses:
+	Cost of products sold		               221,941		  145,176		    406,411		  269,143
+	Research, development 
+ 	and engineering		                     43,654	   	33,829      	82,892	   	64,014
+	Marketing and selling		                39,370   		25,212	     	73,403		   48,596
+	General and administrative		           20,489	   	15,110	     	40,221   		28,566
+	Other, net	                             	(541)	   	1,175	        	114	    	2,078
+
+Income from operations	 	               86,419	   	35,190		    148,740	   	58,869
+
+Interest expense		                       3,472		    3,347		      7,120		    6,945
+Interest income		                        2,261		    1,483		      4,268	    	3,321
+Income from consolidated companies
+ before taxes and cumulative effect
+ of accounting change		                 85,208		   33,326	    	145,888   		55,245
+Provision for income taxes	            	29,823	   	10,998		     51,061	   	18,231
+
+Income from consolidated companies
+ before cumulative effect of
+ accounting change		                    55,385		   22,328	     	94,827		   37,014
+Equity in net loss of joint venture	      	314	        	-	      	2,365	        	-
+
+Income before cumulative effect of 
+	accounting change	                    	55,071		   22,328		     92,462		   37,014
+Cumulative effect of a change in 
+ accounting for income taxes	               	-		        -		      7,000		        -
+
+Net income                           	$	55,071	  $	22,328	    $	99,462	  $	37,014
+Earnings per share*
+	Before cumulative effect of 
+ accounting change	                   $  	0.65	  $  	0.27	    $  	1.10  	$  	0.45
+	Net income                          	$  	0.65  	$  	0.27	    $  	1.18	  $  	0.45
+
+Average common shares and
+	equivalents*		                         84,761	   	82,034		     83,979	   	81,814
+<FN>
+	* 	Retroactively restated for a two-for-one stock split in the form
+ 		 of a 100% stock dividend effective October 5, 1993.
+</FN>
+</TABLE>
+See accompanying notes to consolidated condensed financial statements.
+
+
+
+
+
+
+                           	APPLIED MATERIALS, INC.
+                    	CONSOLIDATED CONDENSED BALANCE SHEETS
+	
+<TABLE>
+<CAPTION>
+                                        		  May 1,	           Oct. 31,
+(In thousands)		                            	1994	              1993
+<S>                                         <C>               <C>				
+	ASSETS	 
+ Current assets:
+	  Cash and cash equivalents             $   	96,606        $  	119,597
+  	Short-term investments                   	232,517           	146,583
+  	Accounts receivable, net	                 337,291	           256,020
+  	Inventories	                              207,189           	154,597
+  	Deferred income taxes                     	66,674	            62,413
+  	Other current assets		                     47,748	           	36,706
+		Total current assets                      	988,025           	775,916
+
+	Property, plant and equipment, net         	357,495	           327,704
+	Other assets		                               15,492	           	16,532
+	Total assets	                           $	1,361,012	       $	1,120,152
+
+
+	LIABILITIES 
+ AND
+	STOCKHOLDERS'
+ EQUITY 
+ Current liabilities:
+		Notes payable	                         $    35,671	       $   	41,645
+		Current portion of long-term debt	          14,941	             7,017
+		Accounts payable and
+   	accrued expenses                        	331,625           	282,699
+ 	Income taxes payable	                       38,022	           	49,167
+	Total current liabilities                  	420,259	           380,528
+
+	Long-term debt                             	110,730	           121,076
+	Deferred income taxes and
+ 		other non-current obligations             	24,796		           19,786
+	Total liabilities	                         	555,785		          521,390
+
+	Stockholders' equity:
+ 	Common stock	                                  834               	804
+ 	Additional paid-in capital	                362,720	           256,429
+	 Retained earnings                         	424,692	           325,230
+ 	Cumulative translation adjustments		        16,981	            16,299
+	Total stockholders' equity		                805,227	          	598,762
+	Total liabilities and
+  	stockholders' equity	                 $	1,361,012	       $	1,120,152
+<FN>
+Amounts as of May 1, 1994 are unaudited. Amounts as of October 31, 1993 were 
+obtained from the October 31, 1993 audited financial statements.
+</FN>
+</TABLE>
+See accompanying notes to consolidated condensed financial statements.
+
+
+                                  APPLIED MATERIALS, INC.
+                     CONSOLIDATED CONDENSED STATEMENTS OF CASH FLOWS
+                                       (UNAUDITED)
+<TABLE>
+<CAPTION>
+                                                   	Six Months Ended
+                                         	       May 1,           	May 2,
+ 	(In thousands)                                 	1994             	1993
+ <S>                                           <C>                <C>
+	Cash flows from operating activities:
+	Net income                                   	$	99,462          	$	37,014
+	Adjustments required to reconcile
+	net income to cash flows 
+	provided by operations: 
+	Depreciation and amortization	                  23,878	            18,011
+	Cumulative effect of a change in 
+	   accounting for income taxes	                 (7,000)               		-
+	Equity in net loss of joint venture             	2,365	                	-
+	Changes in assets and liabilities:
+ 	Accounts receivable	                          (79,577)	          (13,779)
+ 	Inventories                                  	(52,813)           (16,978)
+ 	Other current assets                         	(11,722)		          (3,596)
+ 	Other assets	                                  (1,541)	            	(761)
+ 	Accounts payable and accrued expenses         	48,450		            1,934
+ 	Income taxes payable	                          (8,054)	             	(77)
+ 	Other long-term liabilities		                   4,827		           	1,023
+                                             			(81,187)	        		(14,223)
+	Cash provided by operations	                   	18,275		           22,791
+
+	Cash flows from investing activities:
+ 	Capital expenditures	                         (59,592)	          (33,912)
+	 Disposition of property, plant  & equipment	    7,365	             1,742
+ 	Proceeds from short-term investments          	69,917	            56,076
+ 	Purchases of short-term investments	        	(155,851)		        (109,469)
+	Cash used for investing	                     	(138,161)         		(85,563)
+
+	Cash flows from financing activities:
+ 	Short-term borrowing (repayments), net        	(6,487)            	4,677
+	 Long-term debt repayments                     	(2,850)           	(2,848)
+	 Sales (repurchases) of common stock, net		    106,321	             	(256)
+	Cash provided by financing	                    	96,984             	1,573
+
+	Effect of exchange rate changes on cash	          	(89)	            	(215)
+	Decrease in cash and cash equivalents		        (22,991)		         (61,414)
+	Cash and cash equivalents
+ 	at beginning of period	                      	119,597	          	159,453
+	Cash and cash equivalents
+ 	at end of period	                            $	96,606	          $	98,039
+<FN>
+Cash payments for interest expense were $6,759 and $6,720 for the six months ended 
+May 1, 1994 and May 2, 1993, respectively. Cash payments for income taxes were 
+$39,092 and $17,116 for the six months ended May 1, 1994 and May 2, 1993, 
+respectively.
+</FN>
+</TABLE>
+See accompanying notes to consolidated condensed financial statements.
+
+
+                              APPLIED MATERIALS, INC.
+              NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS (Unaudited)
+                           SIX MONTHS ENDED MAY 1, 1994
+                                (In thousands)
+
+
+1)	Basis of Presentation
+In the opinion of management, the unaudited consolidated condensed interim 
+financial statements included herein have been prepared on the same basis as 
+the October 31, 1993 audited consolidated financial statements and include all
+adjustments, consisting of only normal recurring adjustments,necessary to fairly
+state the information set forth therein. Certain amounts in the consolidated 
+statement of cash flows for the six months ended May 2, 1993 have been
+reclassified to conform with the current period's presentation.
+
+2)	Earnings Per Share
+Earnings per share is computed on the basis of the weighted average number of
+common shares and common equivalent shares from dilutive stock options.  
+
+3)	Inventories
+	Inventories are stated at the lower of cost or market, with cost determined on
+ the basis of first-in,	first-out (FIFO).
+
+	The components of inventories are as follows:
+
+	                                          May 1, 1994    	October 31, 1993
+	Customer service spares                    	$	53,345         	$	45,584
+	Systems raw materials                        	42,998           	32,294
+	Work-in-process	                              68,768	           57,526
+	Finished goods 	                             	42,078          		19,193
+                                             $207,189	         $154,597
+
+4)	Income Taxes
+Effective November 1, 1993, the Company adopted the provisions of Statement of
+Financial Accounting Standards No. 109 (SFAS 109), "Accounting for Income
+Taxes."  The Company adopted SFAS 109 prospectively. 
+
+The adoption of SFAS 109 changes the Company's method of accounting for income
+taxes from the deferred method, pursuant to APB 11, to an asset and liability
+approach.  Under APB 11, deferred taxes are recognized for income
+and expense items that are reported in different years for financial 
+reporting purposes.  Under the asset and liability approach of SFAS 109,
+deferred assets and liabilities are recognized for the future consequences
+attributable to differences between the financial statement carrying amounts
+of existing assets and liabilities and their existing tax bases.
+The cumulative effect of adopting SFAS 109 resulted in a one-time credit of
+$7,000, or $0.08 per share, and is reported separately in the
+ Consolidated Condensed Statement of Operations for the six 
+month period ended May 1, 1994.
+
+Deferred tax assets (liabilities) at November 1, 1993 relate to the following:
+
+Deferred tax assets:
+
+	Financial accruals not currently tax deductible:
+  	Inventory                                   	$	13,454
+  	Warranty and installation           	          21,022
+  	Other                                        		19,458
+	State income taxes                              		8,135
+	Other	                                           	4,344
+	Total deferred tax assets                      		66,413
+
+ Deferred tax liabilities:
+	
+	 Depreciation and other	                        	(7,193)
+
+ Net deferred tax assets                       	$	59,220
+
+
+
+APPLIED MATERIALS, INC.
+MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION 
+AND RESULTS OF OPERATIONS
+
+
+
+During the second quarter of fiscal 1994 Applied Materials, Inc. reported
+record net sales of  $411.3 million.  New orders of $456.5 million were received
+during the quarter, driven by increased demand for the Company's Physical 
+Vapor Deposition (PVD) systems, Ion Implant systems and customer support and
+spares and continued strong demand for Etch and Chemical Vapor Depositions
+(CVD) systems.   Backlog at May 1, 1994 was  $498.8 million.
+
+Results of Operations
+
+The Company's worldwide net sales for the three and six month periods ended May
+1, 1994 increased by 61 percent and 60 percent, respectively, from the
+corresponding periods in fiscal 1993.  This growth can be primarily 
+attributed to increased unit sales of the Company's single-wafer,
+multi-chamber systems and increases in customer support revenues for all
+of the regions served by the Company.   Compared with the six months ended
+May 2, 1993, PVD, metal Chemical Vapor Deposition (MCVD), Etch and Ion Implant
+sales were all up significantly.  Regionally, 66 percent of the Company's net
+sales for the second quarter of fiscal 1994 were to customers located 
+outside North America compared to  57 percent in the first quarter of 1994 and
+67 percent in the comparable 1993 period.  Sales to customers located outside
+North America represented 62 percent in the first half of 1994 
+compared to 61 percent in the first half of 1993.  Fiscal 1994 year to date
+sales to customers located in Asia/Pacific (excluding Japan) increased 82
+percent from the prior year and accounted for 18 percent of the Company's
+fiscal 1994 year to date sales, an increase from 15 percent in the 
+comparable fiscal period in 1993.  This increase was driven primarily by
+revenue from systems shipped in the first half of fiscal 1994 in response to a
+$80 million Hyundai Electronics Co., Ltd. order.  Sales to customers in Japan
+during the three and six month periods ended May 1, 1994 showed significant
+increases over the comparable periods in fiscal 1993 as DRAM manufacturers 
+began expansions of new eight-inch lines.  Sales in Japan represented
+27 percent of total 1994 year to date sales compared to 25 percent of
+fiscal 1993 year to date sales.  Fiscal 1994 year to date sales to customers in
+Europe increased 36 percent over fiscal 1993 year to date sales due to
+increasing demand for capacity to produce advanced telecommunication devices.  
+The bookings to net sales ratio in the second quarter of fiscal 1994 has
+declined from the first quarter of fiscal 1994, which was unusually high
+due to the $80 million order from Hyundai.  The Company anticipates that
+the bookings to net sales ratio will remain positive during the remainder
+of fiscal 1994.     
+
+Gross margin as a percentage of sales for the three and six month periods ended
+May 1, 1994 increased approximately three percentage points from the
+corresponding periods in fiscal 1993.  The continued improvement 
+in gross margin percentage primarily reflects economies of scale in
+manufacturing and service and support operations as net sales have reached
+record levels.  Past margin trends are not necessarily indicative of future 
+margin performance.
+
+Operating expenses for the three and six month periods ended May 1, 1994
+decreased 4.5 and 4.2 percentage points as a percentage of sales,
+respectively, compared to the corresponding periods in fiscal 1993.  This
+improvement is driven primarily by the Company's record sales levels. 
+The Company intends to invest significant funds for facilities expansion,
+information systems technology and personnel to support higher volumes of
+business and thus there can be no assurance that the Company will be
+successful in maintaining or improving future operating expenses as a
+percentage of sales.
+
+The Company's effective tax rate for the first quarter and first half of fiscal
+1994 was 35 percent, up from 33 percent in fiscal 1993.  This increase
+is due to recently enacted U.S. tax legislation as well as variations in the 
+Company's worldwide income mix and foreign taxes.  Management anticipates the
+35 percent effective tax rate will continue through the end of fiscal 1994.
+
+Net income for the first half of fiscal 1994 of $99.5 million includes the
+favorable impact of an accounting change of $7.0 million, or  $0.08
+per share, from the cumulative effect of the adoption of Statement of Financial 
+Accounting Standards No. 109, "Accounting for Income Taxes"(SFAS 109). 
+The Company adopted SFAS 109 prospectively and the cumulative accounting
+change is reported separately in the Consolidated Condensed Statement of
+Operations.
+
+The market served by the Company is characterized by rapid technological change,
+increasingly precise customer specifications and global service requirements. 
+The Company's future operating results may be affected inherent uncertainties
+characteristic of the worldwide semiconductor equipment include, but are not
+limited to, the development of new technologies, the anticipated transition to
+a new generation of microprocessors, competitive pricing pressures,
+global economic conditions, and the availability of needed components. 
+Accordingly, recent historical operating results should be only one factor
+in evaluating the future financial performance of the Company.
+
+Financial Condition, Liquidity and Capital Resources
+
+The Company's financial condition at May 1, 1994 remained strong.  Total current
+assets exceeded total current liabilities by 2.4 times, compared to 2.0
+at October 31, 1993.  During the first two quarters of fiscal 1994, cash, 
+cash equivalents, and short-term investments increased  $62.9 million, due
+primarily to the Company's sale of 2.3 million shares of common stock in
+the second quarter of fiscal 1994.  Cash provided by operations since October 
+31, 1993 totaled $18.3 million, resulting primarily from net income and
+increases in accounts payable and accrued expenses, partially offset by
+increased inventory and accounts receivable levels. The increase in accounts 
+receivable was due to increased net sales over the prior period.  Inventory 
+levels have increased in order to fulfill customer orders scheduled for
+delivery in the third quarter of fiscal 1994.  Other uses of cash include
+investments in facilities and capital equipment of $59.6 million and
+borrowing reductions of $9.3 million.  Capital expenditures are expected to be
+approximately $180 million for fiscal year 1994.  This amount has increased
+due to greater than anticipated growth requiring additional funds for
+facilities expansion, investments in demonstration and test equipment,
+information systems and other capital expenditures.  The Company must continue
+to manage its manufacturing capacity to ensure that customer demands will be
+met.
+
+At May 1, 1994, the Company's principal sources of liquidity consisted of
+$329.1 million of cash and short-term investments and  $130.4 million 
+in available U.S. and foreign credit facilities.  In addition, the Company
+filed a shelf registration with the Securities and Exchange
+Commission during the second quarter of fiscal 1994 for the 
+sale of common stock and issuance of debt securities.  The sale of 2.3 million
+shares of common stock occurred in the second quarter of fiscal 1994
+and no assurances can be given that the sale of debt securities will occur.
+The Company's liquidity is affected by many factors, some based on the typical
+on-going operations of the business and others related to the uncertainties
+of the industry and global economies.  Although the Company's cash 
+requirements will fluctuate based on the timing and extent of these factors,
+management believes that cash generated from operations, together
+with the liquidity provided by existing cash balances and current borrowing 
+arrangements, will be sufficient to support operations through fiscal year
+1994.
+
+
+
+
+	
+
+
+
+PART II  OTHER INFORMATION
+
+Item 1. 	Legal Proceedings
+
+	In the first of two lawsuits filed by the Company against Advanced
+ Semiconductor Materials, Inc., Epsilon Technology, Inc. (doing business as ASM
+ Epitaxy) and Advanced Semiconductor  Materials International
+ N.V. (the defendants, together, hereafter referred to  as "ASM"), described
+ in the Company's Annual Report on Form 10-K for its fiscal year 
+ ended October 31, 1993, Judge William Ingram of the United States District
+ Court  for the Northern District of California in San Jose
+ issued his decision from the trial which had concluded in August 1993. 
+ Judge Ingram found that, of the five patents which the Company
+ had asserted against the ASM Epsilon One epitaxial reactor, three patents are
+ infringed, one  is not infringed, and one is invalid.  Of the patents
+ which the court found are infringed, two remain effective until 2002
+ and 2005, respectively, and one is expired.  The Company is seeking an
+ injunction against further sales of the Epsilon One by ASM.  ASM is expected
+ to appeal the Court's decision and seek a stay of any injunction which
+ may be issued.  The damages to which the Company is entitled
+ as a result of ASM's infringement, as well as ASM's counterclaims,
+ will be decided at a later date in separate proceedings.  The Company 
+ believes that ASM's counterclaims are not meritorious in view of the Court's
+ decision that the Company's patents are infringed.
+
+	In the second of the two suits filed by the Company against ASM described
+ in the Company's 10-K for fiscal  year 1993, the Company was successful in
+ obtaining an order of the Court dismissing, striking,
+ or eliminating from the suit, certain affirmative defenses and 
+ counterclaims asserted by ASM.  The dismissed defenses and counter claims
+ alleged that the Company obtained the patent which it is asserting against ASM
+ in this suit by "inequitable  conduct."  The Court ruled as a matter of law
+ that the Company did not engage in  inequitable conduct.
+
+Item 4.	Submission of Matters to a Vote of Security-Holders.
+
+The Annual Meeting of Stockholders was held March 3, 1994 in Santa Clara, 
+California.  All nine incumbent directors were re-elected without
+opposition to serve another one year term in office.  In addition, 
+Michael Armacost was elected to the Board of Directors.  The result 
+of this election was as follows:
+
+	Name of Director 			         	Votes For	       	Votes Withheld
+
+	James C. Morgan	             56,627,066	          279,874
+	James W. Bagley             	56,627,282          	279,658
+	Dan Maydan                  	56,627,262	          279,678
+	Michael Armacost	            56,627,282          	279,658
+	Herbert M. Dwight, Jr.	      56,627,282          	279,658
+	George B. Farnsworth         56,626,694          	280,246
+	Philip V. Gerdine           	56,627,282          	279,658
+	Paul R. Low	                 56,624,682	          282,258
+	Alfred J. Stein             	56,627,182          	279,758
+	Hiroo Toyoda	                56,627,282          	279,658
+
+On a proposal to amend the Company's Certificate of Incorporation to increase 
+the number of authorized Common Shares to 200,000,000, 
+there were 53,917,924 votes cast in favor of this measure and 2,725,660
+votes cast against it.  There were 263,356 abstentions and no 
+broker non-votes.
+
+Item 6.	Exhibits and Reports on Form 8-K
+
+	a)   Exhibits are numbered in accordance with the Exhibit Table of Item 601 of 
+      Regulation 	S-K:
+		
+		10.16		The 1985 Stock Option Plan for Non-Employee Directors, as amended 
+				to December 8, 1993.
+
+		10. 17		Amendment No. 2 to the Applied Materials, Inc. Executive Deferred 
+				Compensation Plan, dated May 9, 1994.
+
+	b)   No reports on Form 8-K were filed by the Company during the quarter
+    ended May 1, 1994.
+
+
+
+
+
+SIGNATURE
+	Pursuant to the requirements of the Securities Exchange Act of 1934, the
+ registrant has duly caused this report to be signed on its behalf
+ by the undersigned thereunto duly authorized.
+
+
+
+
+			       APPLIED MATERIALS, INC.
+
+
+
+
+June 2, 1994		                    By:/s/Gerald F. Taylor____ 
+                                     	Gerald F. Taylor
+                                     	Senior Vice President and 
+                                     	Chief Financial Officer
+                                     	(Principal Financial Officer)
+
+
+		
+                               			By:/s/Michael K O'Farrell___ 
+                                     Michael K. O'Farrell
+                                    	Corporate Controller
+                                    	(Principal Accounting Officer)
+
+
+
+
+INDEX TO EXHIBITS
+
+Exhibits are numbered in accordance with the Exhibit Table of Item 601 of 
+Regulation S-K:
+
+10.16	The 1985 Stock Option Plan for Non-Employee Directors, as
+	amended to December 8, 1993.	                                      14
+
+10.17	Amendment No. 2 to the Applied Materials, Inc. Executive Deferred
+	Compensation Plan, dated May 9, 1994.	                             30
+
+
+
+
+
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-16
+<SEQUENCE>2
+<TEXT>
+
+                     APPLIED MATERIALS, INC.
+        1985 STOCK OPTION PLAN FOR NON-EMPLOYEE DIRECTORS
+                (as amended to December 8, 1993)
+
+                            ARTICLE I
+                             GENERAL
+          1.   PURPOSE.
+          This 1985 Stock Option Plan for Non-Employee Directors
+(the "Plan") is intended to attract and retain the services of
+experienced and knowledgeable independent directors of Applied
+Materials, Inc., a California corporation (the "Company"), for
+the benefit of the Company and its shareholders and to provide
+additional incentive for such directors to continue to work for
+the best interests of the Company and its shareholders.
+          2.   ADMINISTRATION.
+          The Plan shall be administered by the Board of
+Directors of the Company (the "Board").  The Board shall have the
+power to construe the Plan, to determine all questions arising
+thereunder and to adopt and amend such rules and regulations for
+the administration of the Plan as it may deem desirable.
+          The interpretation and construction by the Board of any
+provisions of the Plan or of any option granted under it shall be
+final.  No member of the Board shall be liable for any action or
+determination made in good faith with respect to the Plan or any
+option granted under it.
+          3.   ELIGIBILITY.
+          Only directors who are not employees of the Company or
+any subsidiary are eligible participants in the Plan.  Each such
+person who shall have been elected or appointed a director of the
+Company shall automatically be granted options to purchase
+20,000 shares of the Company's Common Stock (the "Appointment
+Grant") (subject to further adjustment as provided in Article III
+hereof) on the date that any such person is for the first time
+either appointed by the Board of Directors or elected by the
+shareholders of the Company to the Board of Directors.
+          In addition, each such director of the Company shall
+automatically be granted options to purchase 6,0001/ shares of the
+Company's Common Stock (subject to further adjustment as provided
+in Article III hereof) on the last business day of fiscal years
+1986 through and including 1994, provided, that such automatic
+option grants shall only be made if the recipient director (i) is
+not otherwise an employee of the Company or any subsidiary on the
+date of grant, (ii) has not been an employee of the Company or
+any subsidiary for all or any part of the preceding fiscal year,
+and (iii) has served on the Board of Directors for the entire
+preceding fiscal year.
+          The dates on which options are granted hereunder are
+referred to herein as the "Grant Date."
+          In the event that the number of shares of the Company's
+Common Stock subject to future grants under the Plan is
+insufficient to make all automatic grants required to be made on
+the Grant Date, then all non-employee directors entitled to a
+grant on such date shall share ratably in the number of options
+on shares of the Company's Common Stock available for grant under
+the Plan.
+          4.   SHARES OF STOCK SUBJECT TO THE PLAN.
+          The shares that may be issued under the Plan shall be
+authorized and unissued or reacquired shares of the Company's
+common stock (the "Common Stock").  The aggregate number of
+shares which may be issued under the Plan shall not  exceed
+800,000 shares of Common Stock, unless an adjustment is
+required in accordance with Article III.
+          5.   AMENDMENT OF THE PLAN.
+          The Board of Directors may, insofar as permitted by
+law, from time to time, suspend or discontinue the Plan or revise
+or amend it in any respect whatsoever, except that no such
+amendment shall alter or impair or diminish any rights or
+obligations under any option theretofore granted under the Plan
+without the consent of the person to whom such option was
+granted.  In addition, without further shareholder approval, no
+such amendment shall increase the number of shares subject to the
+Plan (except as authorized by Article III), increase the number
+of shares for which an option may be granted to any optionee
+(except as authorized by Article III), change the designation in
+Section 3 of Article I of the class of persons eligible to
+receive options under the Plan, provide for the grant of options
+having an option price per share less than fair market value (as
+defined in Section 11 of this Article I) on the date of grant,
+extend the term during which options may be exercised, extend the
+final date upon which options under the Plan may be granted, or
+otherwise amend the Plan in a way that would require shareholder
+approval under Rule 16b-3.
+          The Company's shareholders shall approve amendments by
+the affirmative votes of the holders of a majority of the
+securities of the Company present, or represented, and entitled
+to vote at a meeting (with the shares held by the interested
+director or directors not being entitled to vote thereon), or any
+adjournment thereof, duly held in accordance with the applicable
+laws of the state or other jurisdiction in which the Company is
+incorporated.
+          6.   APPROVAL OF SHAREHOLDERS.
+          The Plan is effective September 5, 1985, subject to
+approval by the affirmative votes of the holders of a majority of
+the securities of the Company present, or represented, and
+entitled to vote at the next annual meeting of shareholders (with
+the shares held by the interested director or directors not being
+entitled to vote thereon), or any adjournment thereof, duly held
+in accordance with California law.  No option granted hereunder
+may become exercisable unless and until such approval is
+obtained.
+          7.   TERM OF PLAN.
+          Options may be granted under the Plan until October 30,
+1994, the date of termination of the Plan.  Notwithstanding the
+foregoing, each option granted under the Plan shall remain in
+effect until such option has been satisfied by the issuance of
+shares or terminated in accordance with its terms and the terms
+of the Plan.
+          8.   RESTRICTIONS.
+          All options granted under the Plan shall be subject to
+the requirement that, if at any time the Board shall determine,
+in its discretion, that the listing, registration or
+qualification of the shares subject to options granted under the
+Plan upon any securities exchange or under any state or federal
+law, or the consent or approval of any government regulatory
+body, is necessary or desirable as a condition of, or in
+connection with, the granting of such option or the issuance, if
+any, or purchase of shares in connection therewith, such option
+may not be exercised in whole or in part unless such listing,
+registration, qualification, consent or approval shall have been
+effected or obtained free of any conditions not acceptable to the
+Board.
+          9.   NONASSIGNABILITY.
+          No option shall be assignable or transferable by the
+grantee except by will or by the laws of descent and
+distribution.  During the lifetime of the optionee, the option
+shall be exercisable only by him, and no other person shall
+acquire any rights therein.
+          10.  WITHHOLDING TAXES.
+          Whenever shares of Common Stock are to be issued under
+the Plan, the Company shall have the right to require the
+optionee to remit to the Company an amount sufficient to satisfy
+federal, state and local withholding tax requirements  prior to
+the delivery of any certificate or certificates for such shares.
+          11.  DEFINITION OF "FAIR MARKET VALUE".
+          For the purposes of this Plan, the term "fair market
+value," when used in reference to the date of grant of an option
+or the date of surrender of Common Stock in payment for the
+purchase of shares pursuant to the exercise of an option, as the
+case may be, shall be the last reported sale price in the NASDAQ
+National Market System on such date as published in The Wall
+Street Journal or, if no report is available for such date, the
+next preceding date for which a report is available.
+                           ARTICLE II
+                          STOCK OPTIONS
+          1.   AWARD OF STOCK OPTIONS.
+          Awards of stock options shall be made under the Plan
+under all the terms and conditions contained herein.  Each option
+granted under the Plan shall be evidenced by an option agreement
+duly executed on behalf of the Company and by the director to
+whom such option is granted, which option agreements may but need
+not be identical and shall comply with and be subject to the
+terms and conditions of the Plan.  Any option agreement may
+contain such other terms, provisions and conditions not
+inconsistent with the Plan as may be determined by the Board.
+          2.   TERM OF OPTIONS AND EFFECT OF TERMINATION.
+          Notwithstanding any other provision of the Plan, no
+option granted under the Plan shall be exercisable after the
+expiration of five years from the date of its grant.
+          In the event that any outstanding option under the Plan
+expires by reason of lapse of time or otherwise is terminated for
+any reason, then the shares of Common Stock subject to any such
+option which have not been issued pursuant to the exercise of the
+option shall again become available in the pool of shares of
+Common Stock for which options may be granted under the Plan.
+          3.   TERMS AND CONDITIONS OF OPTIONS.
+          Options granted pursuant to the Plan shall be evidenced
+by agreements in such form as the Board shall from time to time
+determine, which agreements shall comply with the following terms
+and conditions.
+               A.   Number of Shares
+               Each option agreement shall state the number of
+shares to which the option pertains.
+               B.   Option Price
+               Each option agreement shall state the option price
+per share (or the method by which such price shall be computed),
+which shall be equal to 100% of the fair market value of a share
+of the Common Stock on the date such option is granted.
+               C.   Medium and Time of Payment
+               The option price shall be payable upon the
+exercise of an option in the legal tender of the United States or
+in shares of the Common Stock or in a combination of such legal
+tender and such shares.  Upon receipt of payment, the Company
+shall deliver to the optionee (or person entitled to exercise the
+option) a certificate or certificates for the shares of Common
+Stock to which the option pertains.
+               D.   Exercise of Options
+               Options granted to directors other than the
+Appointment Grant shall become exercisable in installments to the
+extent of one-fourth, excluding fractional shares, of the shares
+covered by the option on the date one year after the Grant Date,
+an additional one-fourth, excluding fractional shares, of the
+shares covered by the option on the date two years after the
+Grant Date, an additional one-fourth, excluding fractional
+shares, of the shares covered by the option on the date three
+years after the Grant Date, and the remaining shares covered by
+the option on the date four years after the Grant Date.
+               Options granted pursuant to the Appointment Grant
+shall become exercisable with respect to 6,000 shares on the
+date one year after the Grant Date; an additional 5,5003/ shares
+on the date two years after the Grant Date; an additional 5,0003/
+shares on the date three years after the  Grant Date; and the
+final 3,5003/ shares on the date four years after the Grant Date.
+               To the extent that an option has become
+exercisable and subject to the restrictions and limitations set
+forth in this Plan and any option agreement, it may be exercised
+in whole or such lesser amount as may be authorized by the option
+agreement, provided, however, that no option shall be exercised
+for fewer than ten shares.  If exercised in part, the unexercised
+portion of an option shall continue to be held by the optionee
+and may thereafter be exercised as provided herein.
+               E.   Termination of Directorship Except by Death
+               In the event that an optionee shall cease to be a
+director of the Company for any reason other than his death, his
+option shall be exercisable, to the extent it was exercisable at
+the date he ceased to be a director, for a period of seven months
+after such date, and shall then terminate.  Such option may be
+exercised at any time within such seven-month period and prior to
+the date on which the option expires by its terms.
+               F.   Death of Optionee and Transfer of Option
+               If an optionee dies while a director of the
+Company, or within the seven-month period after termination of
+such status during which he is permitted to exercise an option in
+accordance with Subsection 3(E) of this Article II, such option
+may be exercised at any time within one year after the 
+optionee's death, but only to the extent the option was
+exercisable at the time of death.  Such option may be exercised
+at any time within such one year period and prior to the date on
+which the option expires by its terms.  During such period, such
+option may be exercised by any person or persons designated by
+the optionee on a Beneficiary Designation Form adopted by the
+Board for such purpose, or, if there is no effective Beneficiary
+Designation Form on file with the Board, by the executors or
+administrators of the optionee's estate or by any person or
+persons who shall have acquired the option directly from the
+optionee by his will or the applicable law of descent and
+distribution.
+                           ARTICLE III
+              RECAPITALIZATIONS AND REORGANIZATIONS
+          The number of shares of Common Stock covered by the
+Plan, the number of shares and price per share of each
+outstanding option, and the number of shares subject to each
+grant provided for in Article I, Section 3 hereof shall be
+proportionately adjusted for any increase or decrease in the
+number of issued and outstanding shares of Common Stock resulting
+from a subdivision or consolidation of shares or the payment of a
+stock dividend or any other increase or decrease in the number of
+issued and outstanding shares of Common Stock effected without
+receipt of consideration by the Company.
+          If the Company shall be the surviving corporation in
+any merger or consolidation, each outstanding option shall 
+pertain to and apply to the securities to which a holder of the
+same number of shares of Common Stock that are subject to that
+option would have been entitled.  A dissolution or liquidation of
+the Company, or a merger or consolidation in which the Company is
+not the surviving corporation, shall cause each outstanding
+option to terminate, unless the agreement of merger or
+consolidation shall otherwise provide; provided that, in the
+event such dissolution, liquidation, merger or consolidation will
+cause outstanding options to terminate, each optionee shall have
+the right immediately prior to such dissolution, liquidation,
+merger or consolidation to exercise his option in whole or in
+part without regard to any limitations on the exercisability of
+such option other than (i) the expiration date of the option,
+(ii) the limitation set forth in Section 9 of Article I, and
+(iii) the ten share limitation set forth in Section 3(D) of
+Article II.
+          To the extent that the foregoing adjustments relate to
+stock or securities of the Company, such adjustments shall be
+made by the Board, whose determination in that respect shall be
+final, binding and conclusive.
+          The grant of an option pursuant to the Plan shall not
+affect in any way the right or power of the Company to make
+adjustments, reclassifications, reorganizations or changes of its
+capital or business structure or to merge or to  consolidate or
+to dissolve, liquidate or sell, or transfer all or any part of
+its business or assets.
+                           ARTICLE IV
+                    MISCELLANEOUS PROVISIONS
+          1.   RIGHTS AS A SHAREHOLDER.
+          An optionee or a transferee of an option shall have no
+rights as a shareholder with respect to any shares covered by an
+option until the date of the receipt of payment (including any
+amounts required by the Company pursuant to Section 10 of
+Article I) by the Company.  No adjustment shall be made as to any
+option for dividends (ordinary or extraordinary, whether in cash,
+securities or other property) or distributions or other rights
+for which the record date is prior to such date, except as
+provided in Article III.
+          2.   PURCHASE FOR INVESTMENT.
+          Unless the shares of Common Stock to be issued upon
+exercise of an option granted under the Plan have been
+effectively registered under the Securities Act of 1933 as now in
+force or hereafter amended, the Company shall be under no
+obligation to issue any shares of Common Stock covered by any
+option unless the person who exercises such option, in whole or
+in part, shall give a written representation and undertaking to
+the Company which is satisfactory in form and scope to counsel to
+the Company and upon which, in the opinion of such counsel, the
+Company may reasonably rely, that he is acquiring the shares of
+Common Stock issued to him pursuant to  such exercise of the
+option for his own account as an investment and not with a view
+to, or for sale in connection with, the distribution of any such
+shares of Common Stock, and that he will make no transfer of the
+same except in compliance with any rules and regulations in force
+at the time of such transfer under the Securities Act of 1933, or
+any other applicable law, and that if shares of Common Stock are
+issued without such registration, a legend to this effect may be
+endorsed upon the securities so issued.
+          3.   OTHER PROVISIONS.
+          The option agreements authorized under the Plan shall
+contain such other provisions, including, without limitation,
+restrictions upon the exercise of the option or restrictions
+required by any applicable securities laws, as the Board shall
+deem advisable.
+          4.   APPLICATION OF FUNDS.
+          The proceeds received by the Company from the sale of
+Common Stock pursuant to the exercise of options will be used for
+general corporate purposes.
+          5.   NO OBLIGATION TO EXERCISE OPTION.
+          The granting of an option shall impose no obligation
+upon the optionee to exercise such option.
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-17
+<SEQUENCE>3
+<DESCRIPTION>DEFERRED COMP PLAN AMENDMENT
+<TEXT>
+
+                     AMENDMENT NO. 2 TO THE
+                     APPLIED MATERIALS, INC.
+              EXECUTIVE DEFERRED COMPENSATION PLAN
+
+
+          APPLIED MATERIALS, INC., having adopted the
+Applied Materials, Inc. Executive Deferred Compensation Plan
+effective as of July 1, 1993 (the "Plan"), hereby amends
+Section 2.1.2 of the Plan, effective as of January 1, 1994, to
+read in its entirety as follows:
+               2.1.2  Initial Elections by Other Employees.  Each
+     individual who becomes an Eligible Employee after July 1,
+     1993 (whether by hire or promotion) may elect to become a
+     Participant in the Plan by electing, within thirty days of
+     the date of his or her hire or promotion (as the case may
+     be), to make Compensation Deferrals under the Plan.  An
+     election under this Section 2.1.2 to make Compensation
+     Deferrals shall be effective only for the Plan Year with
+     respect to which the election is made.
+
+          IN WITNESS WHEREOF, Applied Materials, Inc., by its
+duly authorized officer, has executed this Amendment No. 2 on the
+date indicated below.
+                                   APPLIED MATERIALS, INC.
+
+
+Dated:  ____________________       By ___________________________
+                                      Title:
+
+</TEXT>
+</DOCUMENT>
+</IMS-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

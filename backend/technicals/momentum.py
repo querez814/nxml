@@ -12,7 +12,7 @@ av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
 @router.get("/macd/{symbol}")
-def fetch_macd(symbol: str, limit=30) -> List[Dict[str, Any]]:
+def fetch_macd(symbol: str, limit=365) -> List[Dict[str, Any]]:
     url = f"https://www.alphavantage.co/query?function=MACD&symbol={symbol}&interval=daily&series_type=close&apikey={av_api}"
     data = r.get(url).json()
     macd = data["Technical Analysis: MACD"]
@@ -83,7 +83,7 @@ def calculate_momentum_components(data: List[Dict], field: str) -> Tuple[float, 
     return max(min(momentum, 100), -100), trend
 
 def calculate_comprehensive_score(macd_data: List[Dict], aroon_data: List[Dict], 
-                                mom_data: List[Dict], stoch_data: List[Dict]) -> Dict[str, Any]:
+    mom_data: List[Dict], stoch_data: List[Dict]) -> Dict[str, Any]:
     macd_score, macd_trend = calculate_momentum_components(macd_data, "macd")
     aroon_score, aroon_trend = calculate_momentum_components(aroon_data, "aroonosc")
     mom_score, mom_trend = calculate_momentum_components(mom_data, "mom")

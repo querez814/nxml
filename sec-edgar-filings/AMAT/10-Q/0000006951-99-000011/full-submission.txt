@@ -1,0 +1,2763 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ UXsmPPPW+nVkx2vDMSxZB0htmkbxeJ5VuAWD19grFW80CMqv5sgn0/yAIAVTbaOO
+ Zg7vEcrGT3fk4snFRjm8Mw==
+
+<SEC-DOCUMENT>0000006951-99-000011.txt : 19990915
+<SEC-HEADER>0000006951-99-000011.hdr.sgml : 19990915
+ACCESSION NUMBER:		0000006951-99-000011
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		6
+CONFORMED PERIOD OF REPORT:	19990801
+FILED AS OF DATE:		19990914
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			APPLIED MATERIALS INC /DE
+		CENTRAL INDEX KEY:			0000006951
+		STANDARD INDUSTRIAL CLASSIFICATION:	SPECIAL INDUSTRY MACHINERY, NEC [3559]
+		IRS NUMBER:				941655526
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1026
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		
+		SEC FILE NUMBER:	002-45028
+		FILM NUMBER:		99711238
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3050 BOWERS AVE
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95054
+		BUSINESS PHONE:		4085632682
+
+	MAIL ADDRESS:	
+		STREET 1:		3050 BOWERS AVE
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95054
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	APPLIED MATERIALS TECHNOLOGY INC
+		DATE OF NAME CHANGE:	19730319
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<DESCRIPTION>FORM 10-Q FOR PERIOD ENDED AUGUST 1, 1999
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>10Q doc</TITLE>
+</head>
+
+<body bgcolor=white>
+
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+
+<p align="center"><font size="4"><strong>UNITED STATES</br>
+SECURITIES AND EXCHANGE COMMISSION</br>
+Washington, D.C. 20549</strong></font></p>
+
+
+<HR align=center SIZE=2 width="25%">
+
+<p align="center"><font size="5"><strong>FORM 10-Q</strong></center></font></p>
+
+<HR align=center SIZE=2 width="25%">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(MARK ONE)</i>
+
+<p align="center"><font size="4"><strong>
+   [X]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE
+             SECURITIES EXCHANGE ACT OF 1934
+</strong></font></p>
+
+<p align="center"><font size="3" color="FF0000"><strong>
+             For the quarterly period ended <u><strong>AUGUST 1, 1999</strong></u> or
+</strong></font></p>
+ <br>
+
+<p align="center"><font size="4"><strong>
+[&nbsp;&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES
+     EXCHANGE ACT OF 1934
+</strong></font></p>
+
+<p align="center"><font size="3"><strong>
+ For the transition period from ________to _________
+</strong></font></p>
+<p align="center"><font size="3"><strong>
+             Commission file number&nbsp;&nbsp;&nbsp; <u>0-6920</u>
+</strong></font></p>
+<p align="center"><font size="6" color="#0000FF"><strong>
+                             APPLIED MATERIALS, INC.
+</strong></font></br>
+<font size="2">
+            <i>(Exact name of registrant as specified in its charter)</i>
+</font></p>
+
+<P>&nbsp;
+<TABLE COLS=2 WIDTH="100%" >
+<TR>
+<TD>
+<font size="3"><strong>
+<CENTER><u>Delaware</u></CENTER>
+</font></strong>
+</TD>
+<TD>
+<font size="3"><strong>
+<CENTER><u>94-1655526</u></CENTER>
+</font></strong>
+</TD>
+</TR>
+<TR>
+<TD>
+<font size="2">
+<CENTER>&nbsp;<i>(State or other jurisdiction of incorporation or organization)&nbsp;</i></CENTER>
+</font>
+</TD>
+
+<TD>
+<font size="2">
+<CENTER><i>(IRS Employer Identification Number)</i></CENTER>
+</font>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+
+
+<p align="center"><font size="3"><strong>
+                              3050 Bowers Avenue<br>
+                   <u>Santa Clara, California &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;95054-3299
+</strong></font></u><br>
+
+<font size="2">
+       <i> (Address of principal executive offices, including zip code)</i>
+</font></p>
+
+<p align="center"><font size="3"><strong><u>
+                                   (408) 727-5555
+</strong></font></u><br>
+
+<font size="2">
+               <i>  (Registrant's telephone number, including area code)</i>
+</font></p>
+
+
+
+
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+
+<p>&nbsp;&nbsp;&nbsp;
+<font size="3">
+Indicate by check mark whether the registrant (1) has filed all reports required
+to be filed by Section 13 or 15 (d) of the Securities Exchange Act of 1934
+during the preceding 12 months (or for such shorter period that the registrant
+was required to file reports), and (2) has been subject to such filing
+requirements for the past 90 days. YES [X] NO [&nbsp;&nbsp;].</p>
+
+
+<p>  Number of shares outstanding of the issuer's common stock as of
+August 1, 1999: 378,415,371
+
+
+
+
+
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</strong></p>
+<p align="center"><strong>
+
+                            APPLIED MATERIALS, INC.<br>
+                                    FORM 10-Q<br>
+                                     INDEX
+</strong></p>
+<p align="center"><strong>
+PART I.  FINANCIAL INFORMATION
+</strong></p>
+
+<p>Item 1.   Financial Statements (Unaudited):
+
+<BLOCKQUOTE>
+
+<p><A HREF="#ops">
+          Consolidated Statements of Operations for the three and nine months
+            ended July 26, 1998 and August 1, 1999, respectively</A>
+
+
+
+<p><A HREF="#bs"> Consolidated Condensed Balance Sheets as of
+            October 25, 1998 and August 1, 1999</A>
+
+
+<p><A HREF="#flows">
+          Consolidated Condensed Statements of Cash Flows for the nine months
+            ended July 26, 1998 and August 1, 1999</A>
+
+
+
+<p><A HREF="#notes">
+         Notes to Consolidated Condensed Financial
+         Statements</A>
+
+</BLOCKQUOTE>
+
+<p><A HREF="#item2">
+<p>Item 2.   Management's Discussion and Analysis of Financial Condition and Results of
+          Operations
+
+<BLOCKQUOTE>
+
+<p><A HREF="#results">
+         Results of Operations</A>
+
+<p><A HREF="#liquid">
+         Financial Condition, Liquidity and Capital Resources</A>
+
+<p><A HREF="#risks">
+         Trends, Risks and Uncertainties</A>
+
+</BLOCKQUOTE>
+
+<A HREF="#Item3">
+<p>Item 3.   Quantitative and Qualitative Disclosures about Market Risk</A>
+
+
+
+
+<p align="center"><strong>
+PART II.  OTHER INFORMATION
+</strong></p></A>
+
+<A HREF="#legal">
+<p>Item 1:  Legal Proceedings
+
+<A HREF="#EFC">
+<p>Item 5:  Other Information
+
+<A HREF="#exhibit">
+<p>Item 6:  Exhibits and Reports on Form 8-K
+
+<p align="left">
+<A HREF="#sign">
+Signatures</A>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p align="center"><strong>
+PART I.  FINANCIAL INFORMATION
+</strong></p>
+<p>Item 1.  Financial Statements
+
+
+<br>
+<br>
+<HR WIDTH="85%">
+<br>
+<br>
+
+<A NAME="ops"></A>
+<p align="center"><strong>
+                                   APPLIED MATERIALS, INC.
+</strong><br>
+<strong>
+                            CONSOLIDATED STATEMENTS OF OPERATIONS<br>
+ <i>                                    (UNAUDITED)</i>
+</strong>
+<pre>
+
+                                        Three Months Ended      Nine Months Ended
+                                    ----------------------- -----------------------
+(In thousands, except per              July 26,    Aug. 1,     July 26,    Aug. 1,
+ share amounts)                         1998        1999        1998        1999
+- ----------------------------------  ----------- ----------- ----------- -----------
+Net sales..........................   $884,491  $1,433,510  $3,368,492  $3,293,613
+Cost of products sold..............    490,102     734,895   1,790,373   1,756,654
+                                    ----------- ----------- ----------- -----------
+Gross margin.......................    394,389     698,615   1,578,119   1,536,959
+
+Operating expenses:
+   Research, development and
+     engineering...................    154,044     171,195     518,310     478,546
+   Marketing and selling...........     79,896      87,627     250,974     235,560
+   General and administrative......     69,667      99,634     212,180     242,113
+   Non-recurring items.............     35,000          --      67,227       5,000
+                                    ----------- ----------- ----------- -----------
+Income from operations.............     55,782     340,159     529,428     575,740
+
+Non-recurring income...............         --          --      80,000      20,000
+
+Interest expense...................     11,282      11,883      35,031      34,947
+Interest income....................     18,868      25,950      58,377      75,352
+                                    ----------- ----------- ----------- -----------
+Income before taxes................     63,368     354,226     632,774     636,145
+Provision for income taxes.........     15,851     109,810     215,143     197,205
+                                    ----------- ----------- ----------- -----------
+Net income.........................    $47,517    $244,416    $417,631    $438,940
+                                    =========== =========== =========== ===========
+Earnings per share:
+   Basic...........................      $0.13       $0.65       $1.14       $1.17
+   Diluted.........................      $0.13       $0.61       $1.10       $1.11
+
+Weighted average number of shares:
+   Basic...........................    366,942     376,901     366,584     373,815
+   Diluted.........................    378,072     397,877     378,808     394,196
+
+</pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+See accompanying notes to consolidated condensed financial statements.
+
+
+
+<br>
+<br>
+<HR WIDTH="85%">
+<br>
+<br>
+
+<A NAME="bs"></A>
+<p align="center"><strong>
+                             APPLIED MATERIALS, INC.
+</strong><br>
+<strong>
+                     CONSOLIDATED CONDENSED BALANCE SHEETS*<br>
+</strong>
+<pre>
+                                                   Oct. 25,      Aug. 1,
+(In thousands)                                       1998         1999
+- ----------------------------------------------  ------------  ------------
+ASSETS
+
+Current assets:
+   Cash and cash equivalents....................   $575,205      $577,999
+   Short-term investments.......................  1,188,351     1,680,616
+   Accounts receivable, net.....................    764,472     1,107,712
+   Inventories..................................    555,881       575,333
+   Deferred income taxes........................    337,906       335,213
+   Other current assets.........................     97,140       127,003
+                                                ------------  ------------
+Total current assets............................  3,518,955     4,403,876
+
+Property, plant and equipment, net..............  1,261,520     1,195,337
+Other assets....................................    149,217       167,658
+                                                ------------  ------------
+Total assets.................................... $4,929,692    $5,766,871
+                                                ============  ============
+LIABILITIES AND STOCKHOLDERS' EQUITY
+
+Current liabilities:
+   Notes payable................................       $644          $876
+   Current portion of long-term debt............      7,367         6,361
+   Accounts payable and accrued expenses........  1,041,341     1,118,863
+   Income taxes payable.........................     68,974       275,927
+                                                ------------  ------------
+Total current liabilities.......................  1,118,326     1,402,027
+
+Long-term debt..................................    616,572       611,920
+Deferred income taxes and other liabilities.....     74,173        85,041
+                                                ------------  ------------
+Total liabilities...............................  1,809,071     2,098,988
+                                                ------------  ------------
+Stockholders' equity:
+   Common stock.................................      3,679         3,784
+   Additional paid-in capital...................    792,145       918,883
+   Retained earnings............................  2,328,940     2,767,880
+   Accumulated other comprehensive
+    income/(loss)...............................     (4,143)      (22,664)
+                                                ------------  ------------
+Total stockholders' equity......................  3,120,621     3,667,883
+                                                ------------  ------------
+Total liabilities and stockholders' equity...... $4,929,692    $5,766,871
+                                                ============  ============
+
+</pre>
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp; Amounts as of August 1, 1999 are
+  unaudited. Amounts as of October 25, 1998
+  are from the October 25, 1998 audited financial statements.<br>
+</font size="2">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ See accompanying notes to consolidated condensed financial statements.
+
+
+
+<br>
+<br>
+<HR WIDTH="85%">
+<br>
+<br>
+
+<A NAME="flows"></A>
+<p align="center"><strong>
+                             APPLIED MATERIALS, INC.
+</strong><br>
+<strong>
+                 CONSOLIDATED CONDENSED STATEMENTS OF CASH FLOWS<br>
+                          <i>      (UNAUDITED)</i>
+</strong>
+<pre>
+
+                                                        Nine Months Ended
+                                                    --------------------------
+                                                       July 26,      Aug. 1,
+(In thousands)                                           1998         1999
+- --------------------------------------------------- ------------  ------------
+Cash flows from operating activities:
+  Net income......................................     $417,631      $438,940
+  Adjustments required to reconcile net income
+    to cash provided by operations:
+    Acquired in-process research and
+     development expense..........................       32,227           --
+    Depreciation and amortization.................      211,133       208,575
+    Deferred income taxes.........................       (2,363)        2,541
+    Changes in assets and liabilities, net of
+     amounts acquired:
+       Accounts receivable, net...................      244,892      (345,711)
+       Inventories................................       43,603       (25,680)
+       Other current assets.......................     (105,076)      (27,336)
+       Other assets...............................       (8,844)      (31,538)
+       Accounts payable and accrued expenses......     (175,530)       84,639
+       Income taxes payable.......................      (56,169)      205,361
+       Other liabilities..........................       11,441         9,706
+                                                    ------------  ------------
+Cash provided by operations.......................      612,945       519,497
+                                                    ------------  ------------
+Cash flows from investing activities:
+  Capital expenditures, net of retirements........     (375,435)     (145,800)
+  Cash paid for licensed technology...............      (32,227)          --
+  Proceeds from sales of short-term investments...      618,324       703,979
+  Purchases of short-term investments.............     (739,122)   (1,196,244)
+                                                    ------------  ------------
+Cash used for investing...........................     (528,460)     (638,065)
+                                                    ------------  ------------
+Cash flows from financing activities:
+  Short-term debt activity, net...................      (55,239)        1,338
+  Long-term debt activity, net....................       (7,117)       (6,620)
+  Common stock transactions, net..................      (81,635)      128,402
+                                                    ------------  ------------
+Cash provided by/(used for) financing.............     (143,991)      123,120
+                                                    ------------  ------------
+Effect of exchange rate changes on cash...........       (1,480)       (1,758)
+                                                    ------------  ------------
+Increase/(decrease) in cash and cash equivalents..      (60,986)        2,794
+Cash and cash equivalents - beginning of period...      448,043       575,205
+                                                    ------------  ------------
+Cash and cash equivalents - end of period.........     $387,057      $577,999
+                                                    ============  ============
+
+</pre>
+<font size="2">
+For the nine months ended July 26, 1998, cash payments for interest and
+income taxes were $23,524 and $257,417, respectively.  For the nine months ended
+August 1, 1999, cash payments for interest were $24,261 and net income tax
+refunds were $21,470.
+</font size="2">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ See accompanying notes to consolidated condensed financial statements.
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<A NAME="notes"></A>
+<p align="center"><strong>
+                               APPLIED MATERIALS, INC.<br>
+           NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS <i>(Unaudited)</i><br>
+                             NINE MONTHS ENDED AUGUST 1, 1999
+</strong></p>
+<p>
+<p>1) &nbsp;&nbsp;&nbsp;&nbsp;<u>Basis of Presentation</u><br>
+
+In the opinion of management, the unaudited consolidated condensed financial
+statements of Applied Materials, Inc. (Applied Materials) included herein
+have been prepared on a consistent basis with the October 25, 1998 audited
+consolidated financial statements and include all material adjustments,
+consisting of normal recurring adjustments, necessary to fairly present the
+information set forth therein.  These interim consolidated condensed
+financial statements should be read in conjunction with the October 25, 1998
+audited consolidated financial statements and notes thereto included in
+Applied Materials' 1998 Annual Report, which is incorporated by reference in
+Applied Materials' Form 10-K for the fiscal year ended October 25, 1998.
+Applied Materials' results of operations for the three and nine months ended
+August 1, 1999 are not necessarily indicative of future operating results.
+
+<p>Applied Materials' fiscal year ends on the last Sunday in October of each
+year.  Fiscal 1998 contained 52 weeks, whereas fiscal 1999 will contain 53
+weeks.  For fiscal 1999, the first quarter contained 14 weeks, and all other
+quarters will contain 13 weeks.
+
+<p>The preparation of financial statements in conformity with generally
+accepted accounting principles requires management to make estimates and
+assumptions that affect the amounts reported in the financial statements and
+accompanying notes.  Actual results could differ materially from those
+estimates.
+
+<p>2) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Earnings Per Share </u><br>
+
+Basic earnings per share is determined using the weighted average number of
+common shares outstanding during the period.  Diluted earnings per share is
+determined using the weighted average number of common shares and
+equivalents (representing the dilutive effect of stock options) outstanding
+during the period.  Applied Materials' net income has not been adjusted for
+any period presented for purposes of computing basic and diluted earnings
+per share.
+
+<p>For purposes of computing diluted earnings per share, weighted average
+common share equivalents do not include stock options with an exercise price
+that exceeded the average fair market value of Applied Materials' common
+stock for the period.  For the three months ended
+August 1, 1999, options to purchase approximately 78,000 shares of common
+stock at an average exercise price of $70.50 were excluded from the
+computation, and for the nine months ended August 1, 1999, options to
+purchase approximately 1,095,000 shares of common stock at an average
+exercise price of $61.63 were excluded from the computation.
+
+
+<p>3) &nbsp;&nbsp;&nbsp;&nbsp;<u>    Accounts Receivable, Net</u><br>
+
+Applied Materials has numerous agreements that allow it to sell certain
+accounts receivable at a discount to various financial institutions.
+Receivable sales have the effect of increasing cash and reducing accounts
+receivable and days sales outstanding.  During the nine months ended August
+1, 1999, Applied Materials sold $637 million of accounts receivable under
+these agreements.  At August 1, 1999, $258 million of these receivables
+remained outstanding and subject to certain recourse provisions.  Applied
+Materials does not expect these recourse provisions to have a material
+effect on its financial condition or results of operations.  Discounting
+fees were not material for the nine months ended August 1, 1999, and were
+recorded as interest expense.
+
+
+
+<p>4) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Inventories</u><br>
+
+Inventories are stated at the lower of cost or market, with cost determined
+on a first-in, first-out (FIFO) basis.  The components of inventories are as
+follows (in thousands):
+
+<pre>
+
+                                      October 25,    August 1,
+                                         1998          1999
+                                     ------------  ------------
+ Customer service spares............    $239,139      $224,865
+ Raw materials......................      98,180       114,398
+ Work-in-process....................     126,533       154,257
+ Finished goods.....................      92,029        81,813
+                                     ------------  ------------
+                                        $555,881      $575,333
+                                     ============  ============
+</pre>
+
+
+<p>5) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Other Assets</u><br>
+
+The components of other assets are as follows (in thousands):
+
+<pre>
+
+                                      October 25,    August 1,
+                                         1998          1999
+                                     ------------  ------------
+ Purchased technology, net..........     $91,218       $80,121
+ Goodwill, net......................      11,614        10,173
+ Other..............................      46,385        77,364
+                                     ------------  ------------
+                                        $149,217      $167,658
+                                     ============  ============
+</pre>
+
+<p>Purchased technology and goodwill are presented at cost, net of accumulated
+amortization, and are being amortized over their estimated useful lives of
+eight years using the straight-line method.  Applied Materials periodically
+analyzes these assets to determine whether an impairment in carrying value
+has occurred.
+
+<p>6) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Accounts Payable and Accrued Expenses</u><br>
+
+The components of accounts payable and accrued expenses are as follows (in
+thousands):
+
+<pre>
+
+                                      October 25,    August 1,
+                                         1998          1999
+                                     ------------  ------------
+ Accounts payable...................    $182,616      $311,061
+ Compensation and benefits..........     185,391       214,684
+ Installation and warranty..........     179,742       189,318
+ Restructuring......................      91,781        17,683
+ Other..............................     401,811       386,117
+                                     ------------  ------------
+                                      $1,041,341    $1,118,863
+                                     ============  ============
+</pre>
+
+
+
+
+<p>7) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Accrued Restructuring Costs </u><br>
+
+Restructuring activity was as follows (in thousands):
+
+<pre>
+
+                                       Severance
+                                          and
+                                       Benefits     Facilities      Total
+                                     ------------  ------------ ------------
+ Balance, October 25, 1998..........     $35,286       $56,495      $91,781
+ Amount utilized....................     (30,132)      (43,966)     (74,098)
+                                     ------------  ------------ ------------
+ Balance, August 1, 1999............      $5,154       $12,529      $17,683
+                                     ============  ============ ============
+</pre>
+
+
+<p>During the third fiscal quarter of 1999, $9 million of cash was used for
+restructuring costs.  The majority of the remaining cash outlays of $18
+million is expected to occur before the end of fiscal 1999.
+
+<p>8) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Non-recurring Items (Operating Expenses)</u>
+
+<p><i>Fiscal 1999</i><br>
+
+During the first fiscal quarter of 1999, Applied Materials recorded $5
+million of pre-tax operating expenses in connection with its acquisition of
+Consilium, Inc., which was completed on December 11, 1998.
+
+<p><i>Fiscal 1998</i><br>
+
+Non-recurring items for the nine months ended July 26, 1998 consisted of a
+restructuring charge ($35 million) and in-process research and development
+expense ($32 million).
+
+<p>During the third fiscal quarter of 1998, in response to continued reductions
+in capital spending by semiconductor manufacturers, Applied Materials
+completed a voluntary separation plan and developed plans to consolidate
+certain facilities.  In connection with these actions, Applied Materials
+recorded a pre-tax restructuring charge of $35 million.
+
+<p>During the first fiscal quarter of 1998, Applied Materials entered into an
+agreement with Trikon Technologies, Inc. for a non-exclusive, worldwide,
+perpetual license of MORI(TM) plasma source and Forcefill(TM) deposition
+technology.  Because the development of this technology had not yet reached
+technological feasibility at the time of its acquisition and had no
+alternative future use for Applied Materials, Applied Materials recognized
+$32 million, including transaction costs, of acquired in-process research
+and development expense at the time of its acquisition.
+
+<p>9) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Non-recurring Income</u><br>
+
+During the first fiscal quarter of 1998, Applied Materials settled all
+outstanding litigation with ASM International, N.V. (ASMI).  As a result of
+this settlement, Applied Materials received a convertible note for $80
+million and recorded the amount as non-recurring income.  Applied Materials
+collected $15 million against the note in November 1997.
+
+<p>During the fourth fiscal quarter of 1998, Applied Materials determined,
+based on facts and circumstances known at the time, that collection of the
+remaining note balance was doubtful.  Based on this determination, Applied
+Materials recorded a $65 million pre-tax, non-operating charge to fully
+reserve the outstanding note balance.
+
+<p>During the first fiscal quarter of 1999, and subsequent to the original
+maturity date of the note, Applied Materials received a $20 million payment
+from ASMI and recorded the amount as non-recurring income.  ASMI's payment
+was made in accordance with a restructuring of ASMI's obligations under the
+November 1997 litigation settlement agreement.  Pursuant to the new
+agreement, ASMI agreed to pay $20 million upon completion of the
+restructuring, $10 million on November 2, 1999 and $35 million no later than
+November 2, 2000.  Applied Materials will recognize non-recurring income
+related to the remaining balance of the note receivable upon receipt of
+cash.  Certain other obligations of ASMI were also modified under the new
+agreement; however, these modifications are not expected to be material to
+Applied Materials' financial condition or results of operations.  Royalties
+received from ASMI pursuant to the settlement agreement have not been, and
+are not expected to be, material.
+
+<p>10) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Stockholders' Equity</u>
+
+<p><i>Comprehensive Income</i><br>
+
+Applied Materials adopted Statement of Financial Accounting Standards No.
+130 (SFAS 130), "Reporting Comprehensive Income," in the first fiscal
+quarter of 1999.  SFAS 130 establishes new rules for the reporting and
+display of comprehensive income and its components, but does not impact net
+income or total stockholders' equity.  Components of comprehensive income,
+on an after-tax basis, are as follows (in thousands):
+
+<pre>
+
+                                     Three Months Ended      Nine Months Ended
+                                 ----------------------- -----------------------
+                                    July 26,    Aug. 1,     July 26,    Aug. 1,
+                                     1998        1999        1998        1999
+                                 ----------- ----------- ----------- -----------
+Net income......................    $47,517    $244,416    $417,631    $438,940
+Foreign currency translation
+  adjustments....................   (11,212)     (4,533)    (17,964)    (18,521)
+                                 ----------- ----------- ----------- -----------
+Comprehensive income.............   $36,305    $239,883    $399,667    $420,419
+                                 =========== =========== =========== ===========
+
+</pre>
+
+
+<p>Accumulated other comprehensive income/(loss) presented in the accompanying
+consolidated condensed balance sheets consists entirely of foreign currency
+translation adjustments.
+
+<p><i>        Stock Repurchase Program</i><br>
+
+Applied Materials is authorized to systematically repurchase shares of its
+common stock in the open market to reduce dilution resulting from its stock-based
+employee benefit and incentive plans.  This authorization is effective
+until the March 2001 Annual Meeting of Stockholders.  During the nine months
+ended August 1, 1999, Applied Materials repurchased 275,000 shares of its
+common stock at an average price of $72.80 per share, for a total cash
+outlay of $20 million, compared to 4,453,000 shares of common stock at an
+average price of $32.11 per share, for a total cash outlay of $143 million,
+during the nine months ended July 26, 1998.
+
+<p><i>Stockholder Rights Plan</i><br>
+
+In July 1999, the Board of Directors of Applied Materials adopted a
+stockholder rights plan.  Applied Materials' prior stockholder rights plan
+expired in June 1999.  Under the new plan, the Board declared and
+distributed a dividend of one preferred stock purchase right (a "Right")
+for each share of Applied Materials' common stock outstanding on July 18,
+1999 and authorized the distribution of one Right for each subsequently
+issued common share.  Each Right entitles the registered holder to purchase
+one ten-thousandth of a share of Applied Materials' Series A Junior
+Participating Preferred Stock at a price of $375.  The Rights are attached
+to the common stock and are not represented by separate certificates.  The
+Rights are not exercisable until ten business days following the earliest of
+either (i) a public announcement that a person or group of affiliated or
+associated persons has acquired, or has obtained the right to acquire (an
+"Acquiring Person"), beneficial ownership of 20 percent or more of Applied
+Materials' outstanding common stock (the "Stock Acquisition Date"), or (ii)
+the commencement of (or public announcement of an intention to make) a
+tender or exchange offer that would result, if successful, in the bidder
+becoming an Acquiring Person.  In the event that any person or group becomes
+an Acquiring Person (other than as a result of a Permitted Offer; i.e., a
+tender offer or exchange offer for all outstanding common stock at a price
+determined by the Board to be fair and adequate to the stockholders, and
+otherwise in the best interests of Applied Materials and its stockholders),
+then each Right will entitle its holder to purchase, for $375, a number of
+shares of Applied Materials' common stock having a market value of $750.
+Any Rights held by the Acquiring Person will immediately become null and
+void.  If after the Stock Acquisition Date, Applied Materials is acquired in
+a merger or other business combination or 50 percent or more of Applied
+Materials' assets or earning power (on a consolidated basis) is sold or
+transferred, each Right (except Rights which previously have been voided or
+exercised) will entitle its holder to purchase, for $375, common stock of
+the acquiring company having a market value of $750.  Applied Materials may
+redeem the Rights at $.01 per Right, and may amend the Rights (other than
+with respect to principal economic terms) or extend the time during which
+the Rights may be redeemed, only prior to the tenth business day following
+the Stock Acquisition Date.  Unless earlier redeemed, the Rights will expire
+on July 6, 2009.
+
+<p>11)    &nbsp;&nbsp;&nbsp;&nbsp;  <U>New Accounting Pronouncements</u><br>
+
+In June 1999, the Financial Accounting Standards Board (FASB) issued
+Statement of Financial Accounting Standards No. 137 (SFAS 137), "Accounting
+for Derivative Instruments and Hedging Activities - Deferral of the
+Effective Date of FASB Statement No. 133."  SFAS 137 amends Statement of
+Financial Accounting Standards No. 133 (SFAS 133), "Accounting for
+Derivative Instruments and Hedging Activities," to defer its effective date
+to all fiscal quarters of all fiscal years beginning after June 15, 2000.
+Applied Materials is in the process of determining the effect of adopting
+SFAS 133, which will be effective for the first fiscal quarter of 2001.
+
+<p>12)     &nbsp;&nbsp;&nbsp;&nbsp;    <u>Pending Acquisition</u><br>
+
+On May 28, 1999, Applied Materials announced that it had entered into an
+agreement to acquire Obsidian, Inc. (Obsidian), a developer of fixed-abrasive
+chemical mechanical polishing solutions to the semiconductor
+industry, in a stock-for-stock merger.  The acquisition is subject to
+regulatory approval and certain other conditions, and will be accounted for
+as a purchase business combination.  Applied Materials expects to issue a
+number of shares of its common stock, having a value up to approximately
+$150 million, to complete this transaction.  The purchase price in excess of
+the fair value of Obsidian's net tangible assets will be allocated between
+intangible assets and in-process research and development expense.
+
+<br>
+<br>
+<A NAME="item2"></A>
+<p><strong>Item 2.  Management's Discussion and Analysis of Financial Condition and
+Results of Operations </strong>
+
+<p>In addition to historical statements, this Quarterly Report on Form 10-Q
+contains forward-looking statements.  Forward-looking statements are those
+that use words such as "expects," "anticipates," "believes," "may,"
+"will," "estimates" or similar expressions.  These forward-looking
+statements reflect management's opinions only as of the date hereof, and
+Applied Materials, Inc. (Applied Materials) assumes no obligation to update
+this information.  These forward-looking statements are subject to certain
+risks and uncertainties that could cause actual results to differ materially
+from those stated or implied.  Risks and uncertainties include, but are not
+limited to, those discussed below, particularly in the section entitled
+"Trends, Risks and Uncertainties".  Other risks and uncertainties are
+disclosed in Applied Materials' prior SEC filings, including its Annual Report
+on Form 10-K for the fiscal year ended October 25, 1998 and its Quarterly
+Reports on Form 10-Q for subsequent interim periods.
+
+<A NAME="results"></A>
+<p><u><strong>Results of Operations</u></strong></p>
+
+<p>Demand for Applied Materials' products can change significantly from period to
+period as a result of numerous factors, including, but not limited to: 1)
+changes in global economic conditions, 2) changes in demand for
+semiconductors, 3) memory device price fluctuations, and 4) the advanced
+technology requirements of semiconductor manufacturers.  For this and other
+reasons, Applied Materials' results of operations for the three and nine
+months ended August 1, 1999 may not necessarily be indicative of future
+operating results.
+
+<p>A severe semiconductor equipment industry downturn began during the first half
+of Applied Materials' fiscal 1998 as a result of the convergence of several
+factors: an economic crisis in Asia; semiconductor industry overcapacity
+(particularly DRAM devices); and reduced profitability for semiconductor
+manufacturers resulting from a movement among end users to sub-$1,000 personal
+computers (PCs).  These factors caused semiconductor manufacturers to
+significantly reduce and delay investment in manufacturing equipment during
+the last half of fiscal 1998.  During Applied Materials' fiscal 1999, the
+industry began to recover from this downturn, and Applied Materials was able
+to achieve a record level of quarterly new orders and net sales for its third
+fiscal quarter of 1999.
+
+
+<p><strong>New Orders and Backlog</strong><br>
+
+Applied Materials received record new orders of $1.5 billion for the third
+fiscal quarter of 1999, versus $1.4 billion for the second fiscal quarter of
+1999 and $1.0 billion for the first fiscal quarter of 1999.
+
+<p>New orders by region were as follows (dollars in millions):
+
+<pre>
+
+                                              Three Months Ended
+                                     -----------------------------------
+                                         May 2, 1999      August 1, 1999
+                                     ----------------   ----------------
+                                        ($)      (%)       ($)      (%)
+                                     -------  -------   -------  -------
+ North America*.....................    417       30       408       28
+ Europe.............................    199       14       230       16
+ Japan..............................    237       17       236       16
+ Korea..............................    104        8       111        8
+ Taiwan.............................    347       25       380       26
+ Asia-Pacific.......................     85        6        94        6
+                                     -------  -------   -------  -------
+   Total............................  1,389      100     1,459      100
+                                     =======  =======   =======  =======
+</pre>
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp;
+Primarily the United States
+</font size="2">
+
+<p>The increase in new orders from the second fiscal quarter of 1999 is primarily
+the result of the early stages of a broad-based recovery in the semiconductor
+industry that Applied Materials serves.  This recovery was primarily fueled by
+strong consumer demand for communications and electronic products.  In
+response to the recovery, semiconductor manufacturers placed significant
+orders for manufacturing equipment to enable them to increase manufacturing
+capacity, obtain advanced technology, and perform research and development for
+their next-generation products with design features below 0.18 micron.
+Applied Materials' backlog at August 1, 1999 was $1.3 billion, versus $1.4
+billion at May 2, 1999 and $1.2 billion at January 31, 1999.
+
+<p><strong>Net Sales</strong><br>
+
+Applied Materials' net sales for the third fiscal quarter of 1999 increased 28
+percent from the second fiscal quarter of 1999 primarily as a result of the
+broad-based recovery in the semiconductor industry discussed above.  Applied
+Materials benefited from this recovery because of its strong product position
+in advanced applications for 0.18 micron and below device requirements.  Net
+sales for the third fiscal quarter of 1999 increased 62 percent from the third
+fiscal quarter of 1998 due to the low level of business volume in the third
+fiscal quarter of 1998, as semiconductor manufacturers limited capital
+spending because of difficult industry conditions that began in early-to-mid
+1998.  Net sales for the nine months ended August 1, 1999 were comparable to
+those for the nine months ended July 26, 1998.
+
+<p>Net sales by region were as follows (dollars in millions):
+
+<pre>
+
+                         Three Months Ended              Nine Months Ended
+                 ------------------------------  -----------------------------
+                     July 26,        August 1,       July 26,        August 1,
+                       1998            1999            1998           1999
+                 --------------  --------------  -------------- --------------
+                    ($)    (%)      ($)    (%)      ($)    (%)     ($)    (%)
+                 ------- ------  ------- ------  ------- ------ ------- ------
+
+ North America*.    332     38      483     34    1,268     38   1,225     37
+ Europe.........    193     22      201     14      548     16     468     14
+ Japan..........    129     14      237     16      555     17     569     17
+ Korea..........     47      5       57      4      129      4     207      6
+ Taiwan.........    156     18      366     26      717     21     643     20
+ Asia-Pacific...     27      3       90      6      151      4     182      6
+                 ------- ------  ------- ------  ------- ------ ------- ------
+  Total.........    884    100    1,434    100    3,368    100   3,294    100
+                 ======= ======  ======= ======  ======= ====== ======= ======
+</pre>
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp;
+Primarily the United States
+</font size="2">
+
+
+
+
+<p><strong>Gross Margin</strong><br>
+
+Applied Materials' gross margin was 48.7 percent for the third fiscal quarter
+of 1999, compared to 46.3 percent for the second fiscal quarter of 1999 and
+44.6 percent for the third fiscal quarter of 1998.  The increases were caused
+primarily by higher business volume and the favorable effects of Applied
+Materials' restructuring and other operational programs established within the
+last year.  These programs emphasize cost control and productivity
+improvements.  Applied Materials' gross margin was 46.7 percent for the nine
+months ended August 1, 1999, consistent with 46.8 percent for the nine months
+ended July 26, 1998.
+
+<p><strong>Operating Expenses (Excluding Non-Recurring Items)</strong><br>
+
+Excluding non-recurring items, operating expenses as a percentage of net sales
+were 25 percent for the three months ended August 1, 1999, compared to 34
+percent for the third fiscal quarter of 1998.  In terms of absolute dollars,
+operating expenses for the three months ended August 1, 1999 were higher than
+those for the comparable period of fiscal 1998 due primarily to increased
+research and development (R&D) and general and administrative (G&A) spending.
+R&D spending was increased to support development efforts for 0.18 micron and
+below technology, applications incorporating new materials such as copper and
+low-k dielectrics, and equipment capable of processing 300mm wafers.  G&A
+spending increased as a result of investments in various information
+technology programs, including the implementation of a new enterprise
+computing system and Year 2000 compliance, and higher costs of incentive and
+benefit programs linked to Applied Materials' operating performance.
+Operating expenses, excluding non-recurring items, were 29 percent of net
+sales for both the nine months ended July 26, 1998 and August 1, 1999.
+
+<p><strong>Non-Recurring Items (Operating Expenses)</strong><br>
+
+Non-recurring items for the nine months ended July 26, 1998 consisted of a $35
+million restructuring charge incurred during the third fiscal quarter of 1998,
+for costs associated with an employee voluntary separation plan and
+consolidation of certain facilities to address the adverse implications of the
+semiconductor industry downturn, and $32 million of in-process research and
+development expense recorded during the first fiscal quarter of 1998 for the
+acquisition of perpetual rights to certain licensed technology.  Applied
+Materials recorded a $5 million charge in the first fiscal quarter of 1999 for
+expenses in connection with an acquisition.
+
+<p><strong>Non-Recurring Income</strong><br>
+
+Non-recurring income for both the nine months ended July 26, 1998 and August
+1, 1999 related to Applied Materials' settlement of all outstanding
+litigation with ASM International, N.V.  See Note 9 of Notes to Consolidated
+Condensed Financial Statements, incorporated herein by reference.
+
+<p><strong>Interest Expense</strong><br>
+
+Interest expense was $12 million for the three months ended August 1, 1999,
+$11 million for the three months ended July 26, 1998, and $35 million for both
+the nine months ended July 26, 1998 and August 1, 1999.  Applied Materials'
+outstanding interest-bearing obligations and interest rates did not change
+significantly from period to period.
+
+<p><strong>Interest Income</strong><br>
+
+Interest income was $26 million for the three months ended August 1, 1999, an
+increase from $19 million for the three months ended July 26, 1998.  For the
+nine months ended August 1, 1999, interest income was $75 million, an increase
+from $58 million for the nine months ended July 26, 1998.  The increases
+resulted primarily from higher average cash, cash equivalents and short-term
+investment balances.
+
+<p><strong>Provision for Income Taxes</strong><br>
+
+Applied Materials' effective income tax rate for the three and nine months
+ended August 1, 1999 was 31 percent, versus 25 percent and 34 percent for the
+three and nine months, respectively, ended July 26, 1998.  The 25 percent
+effective income tax rate for the three months ended July 26, 1998 was the
+result of the cumulative effect of a change in Applied Materials' fiscal 1998
+effective income tax rate from 35 percent to 34 percent during the third
+fiscal quarter of 1998.  The decrease from 34 percent for the nine months
+ended July 26, 1998 to 31 percent for the nine months ended August 1, 1999 is
+due primarily to the reinstatement of the federal research and development
+(R&D) tax credit and favorable California income tax legislation with respect
+to R&D and manufacturers investment tax credits.
+
+
+<p><strong>Pending Acquisition</strong><br>
+
+See Note 12 of Notes to Consolidated Condensed Financial Statements,
+incorporated herein by reference.
+
+
+<A NAME="liquid"></A>
+<p><u><strong>Financial Condition, Liquidity and Capital Resources</u></strong></p>
+
+<p>Applied Materials had cash, cash equivalents and short-term investments of
+$2.3 billion, representing 39 percent of total assets, at August 1, 1999.
+Applied Materials' ratio of current assets to current liabilities was 3.1:1 at
+both August 1, 1999 and October 25, 1998.
+
+<p>For the nine months ended August 1, 1999, Applied Materials generated $519
+million of cash from operations.  Operating cash flow was favorably impacted
+by Applied Materials' ability to manage its working capital in a period of
+significant revenue growth.  Receivables turnover was favorable due to the
+sale of certain accounts receivable and improved collections.  In addition,
+inventory turnover improved as a result of reductions in factory cycle
+times during a period of rapid revenue growth.  For further details, see the
+Consolidated Condensed Statements of Cash Flows.
+
+<p>During the nine months ended August 1, 1999, Applied Materials sold $637
+million of accounts receivable, which has the effect of increasing cash and
+reducing accounts receivable and days sales outstanding.  See Note 3 of Notes
+to Consolidated Condensed Financial Statements, incorporated herein by
+reference.
+
+<p>As of August 1, 1999, Applied Materials' principal sources of liquidity
+consisted of $2.3 billion of cash, cash equivalents and short-term investments
+and approximately $600 million of existing credit facilities.  Applied
+Materials' liquidity is affected by many factors, some of which are based on
+the normal ongoing operations of the business, and others of which relate to
+the uncertainties of global economies and the semiconductor and semiconductor
+equipment industries.  Although Applied Materials' cash requirements will
+fluctuate based on the timing and extent of these factors, management believes
+that cash generated from operations, together with the liquidity provided by
+existing cash balances and borrowing capability, will be sufficient to satisfy
+Applied Materials' liquidity requirements for the next 12 months.
+
+<A NAME="risks"></A>
+<p><u><strong>Trends, Risks and Uncertainties</u></strong></p>
+
+<p><strong>Industry Volatility</strong><br>
+
+The semiconductor equipment industry has historically been cyclical and
+subject to sudden changes in supply and demand.  The variability of overall
+semiconductor unit volume demand contributes significantly to the volatility
+of the semiconductor equipment industry.  Although semiconductors are used in
+many different products, the markets for the products are interrelated to
+various degrees.  The timing, length and severity of these cycles are
+difficult to predict. During periods of reduced and declining demand, Applied
+Materials must be able to quickly and effectively align its cost structure
+with prevailing market conditions, and motivate and retain key employees.
+During periods of rapid growth, Applied Materials must be able to acquire
+and/or develop sufficient manufacturing capacity to meet customer demand, and
+hire and assimilate a sufficient number of qualified people.  There can be no
+assurance that Applied Materials will be able to achieve these objectives in
+a timely manner during these industry cycles.
+
+<p><strong>DRAM Prices </strong><br>
+
+DRAM device prices improved during early fiscal 1999 to levels that enabled
+DRAM manufacturers to operate profitably and invest in new equipment, but then
+fluctuated significantly during the second and third fiscal quarters of 1999.
+If DRAM prices decline to levels that do not allow manufacturers to operate
+profitably, these manufacturers may cancel or delay orders for Applied
+Materials' products, which could materially and adversely affect Applied
+Materials' financial condition and results of operations.
+
+<p><strong>PC Demand</strong><br>
+
+Further shifts in demand from more expensive, high-performance products to
+lower-priced products (sub-$1,000 PCs), or lower overall demand for PCs, could
+result in reduced profitability for, and lower capital spending by,
+semiconductor manufacturers.  This could materially and adversely affect
+demand for Applied Materials' products.
+
+<p><strong>Highly Competitive Industry and Rapid Technological Change</strong><br>
+
+Applied Materials operates in a highly competitive industry characterized by
+increasingly rapid technological changes.  Applied Materials' competitive
+advantage and future success depend on its ability to develop new products and
+technologies, develop new markets in the semiconductor industry for its
+products and services, introduce new products to the marketplace in a timely
+manner, qualify new products with its customers and commence and change
+production to meet customer demands.
+
+<p>New products and technologies include those for new materials (including
+copper and low-k dielectrics), 300mm wafers, and 0.18 micron and below
+devices.  The introduction of new products and technologies grows increasingly
+complex over time.  If Applied Materials does not develop and introduce new
+products and technologies in a timely manner in response to changing market
+conditions or customer requirements, its financial condition and results of
+operations could be materially and adversely affected.
+
+<p>Applied Materials seeks to develop new technologies from both internal and
+external sources.  As part of this effort, Applied Materials may make
+acquisitions of, or significant investments in, businesses with complementary
+products, services and/or technologies.  Acquisitions involve numerous risks,
+including, but not limited to: 1) difficulties and increased costs in
+connection with integration of the operations, technologies and products of
+the acquired companies; 2) possible write-downs of impaired assets; 3) diversion of
+management's attention from other operational matters; and 4) the potential loss of key
+employees of the acquired companies.  The inability to effectively manage
+these risks could materially and adversely affect Applied Materials' business,
+financial condition and results of operations.
+
+<p><strong>Asian Economies </strong><br>
+
+Although Asian economies have stabilized to some degree compared to early-to-
+mid fiscal 1998, and certain countries such as Taiwan have relatively healthy
+economies, Applied Materials remains cautious about general macroeconomic
+developments in Asia, particularly in Japan.  Japan's economy is important to
+the overall financial health of the region and if it remains stagnant or
+deteriorates, the economies of other countries, particularly those in Asia,
+could also be negatively affected.  Negative economic developments in Asia
+could have a material adverse effect on demand for Applied Materials'
+products.
+
+<p><strong>Global Business</strong><br>
+
+Applied Materials sells systems and provides services to customers located
+throughout the world.  Managing global operations and sites located throughout
+the world presents challenges associated with, among other things, cultural
+diversities and organizational alignment.  Moreover, each region in the global
+semiconductor equipment market exhibits unique characteristics that can cause
+capital equipment investment patterns to vary significantly from period to
+period.  Periodic economic downturns, trade balance issues, political
+instability and fluctuations in interest and currency exchange rates are all
+risks that could materially and adversely affect demand for Applied Materials'
+products and services.
+
+<p><strong>Dependence Upon Key Suppliers</strong><br>
+
+Applied Materials uses numerous vendors to supply parts, components and
+subassemblies (collectively "parts") for the manufacture and support of its
+products.  Although Applied Materials makes reasonable efforts to ensure that
+parts are available from multiple suppliers, this is not always possible;
+accordingly, certain key parts may be obtained only from a single supplier or
+a limited group of suppliers.  These suppliers are, in some cases, thinly
+capitalized, independent companies that generate significant portions of their
+business from Applied Materials and/or a small group of other companies in the
+semiconductor and/or semiconductor equipment industry.  Applied Materials has
+sought, and will continue to seek, to minimize the risk of production and
+service interruptions and/or shortages of key parts by: 1) selecting and
+qualifying alternative suppliers for key parts; 2) monitoring the financial
+stability of key suppliers; and 3) maintaining appropriate inventories of key
+parts.  There can be no assurance that Applied Materials' results of
+operations will not be materially and adversely affected if, in the future,
+Applied Materials does not receive sufficient parts to meet its requirements
+in a timely and cost-effective manner.
+
+<p><strong>Backlog</strong><br>
+
+Applied Materials' backlog increased from $917 million at October 25, 1998 to $1.3
+billion at August 1, 1999.  Applied Materials schedules production of its systems based
+upon order backlog and customer commitments.  Backlog includes only orders for
+which written authorizations have been accepted and shipment dates within 12
+months have been assigned.  However, customers generally may delay delivery of
+products or cancel orders.  Due to possible customer changes in delivery
+schedules and cancellation of orders, Applied Materials' backlog at any
+particular date is not necessarily indicative of actual sales for any
+succeeding period.  A reduction of backlog during any particular period could
+have a material adverse effect on Applied Materials' business, financial
+condition and results of operations.
+
+<p><strong>Year 2000 Readiness</strong><br>
+
+Applied Materials has established a Year 2000 Program Office to address
+certain Year 2000 issues.  This office focuses on four key readiness programs:
+1) Internal Infrastructure Readiness, addressing internal hardware and
+software, including both information technology and non-information technology
+systems; 2) Supplier Readiness, addressing the preparedness of suppliers
+providing material incorporated into Applied Materials' products; 3) Product
+Readiness, addressing product functionality; and 4) Customer Readiness,
+addressing customer support and transactional activity.  For each readiness
+area, Applied Materials is systematically performing a global risk assessment,
+conducting testing and remediation (renovation and implementation), developing
+contingency plans to mitigate unknown and anticipated risks, and communicating
+Year 2000 information to employees, suppliers, customers and other third
+parties.  The information provided herein is a "Year 2000 Readiness
+Disclosure" for purposes of the Year 2000 Information and Readiness
+Disclosure Act.
+
+<p><strong><i>Internal Infrastructure Readiness Program  </strong></i><br>
+
+This program is intended to encompass all major categories of hardware and
+applications in use by Applied Materials, including those used for
+manufacturing, engineering, sales, finance and human resources.  Applied
+Materials, assisted by a third party, completed an inventory of applications
+and information technology hardware and categorized them as either "mission
+critical" or "non-mission critical" based upon certain factors, such as
+whether a failure of the application or hardware could cause personal injury
+or significant disruption to any portion of Applied Materials' business.  All
+mission critical applications have been remediated, tested as appropriate, and
+determined to be Year 2000 ready.  Substantially all mission critical
+hardware, including hubs, routers, telecommunication equipment, workstations
+and other items, has also been remediated, tested as appropriate, and
+determined to be Year 2000 ready, with any remaining items to be completed by
+September 30, 1999.  Applied Materials has also completed its evaluation of
+desktop computers and is in the process of replacing computers that are not
+Year 2000 ready.
+
+<p>In addition to applications and information technology hardware, Applied
+Materials has assessed its non-information technology systems, including
+embedded systems, facilities and other operations, such as financial, banking,
+security and utility systems.  Substantially all mission critical items have
+been remediated, tested as appropriate, and determined to be Year 2000 ready,
+with any remaining activity to be completed by September 30, 1999.
+
+<p>Applied Materials has adopted Year 2000 change control procedures to validate
+that any replacement, modification or upgrade of mission critical
+applications, information technology hardware and non-information technology
+systems is Year 2000 ready.  A contingency plan to address the impact of
+unknown and anticipated risks related to Applied Materials' internal
+infrastructure is in the process of being developed and will continue to be
+revised and tested during the remainder of calendar 1999.
+
+
+<p><strong><i>Supplier Readiness Program  </strong></i><br>
+
+This program focuses on minimizing two areas of risk associated with
+suppliers: 1) a supplier's product integrity; and 2) a supplier's ability to
+continue providing products and services in accordance with Applied Materials'
+standards and requirements.  Applied Materials has identified and contacted
+key suppliers regarding their relative risks in these two areas.  To date,
+Applied Materials has received responses from over 95 percent of its
+suppliers, most of which indicate that the suppliers, and the products they
+provide to Applied Materials, are either Year 2000 ready or will be made Year
+2000 ready before the year 2000.  Applied Materials engaged an external
+consultant to conduct on-site audits of 220 key suppliers.  Based on the
+results of these audits, Applied Materials is in the process of developing a
+supplier action list and contingency plan for those suppliers that do not
+appear to be making sufficient progress towards Year 2000 readiness.  The
+contingency plan may include the identification of alternate suppliers or
+increasing Applied Materials' inventory levels for critical parts.
+
+<p>In addition to these activities, Applied Materials relies on commercial or
+governmental suppliers for infrastructure-related services, including
+utilities, transportation, financial, governmental, communications and other
+services.  These suppliers pose an undetermined risk to Applied Materials'
+facilities and operations worldwide.  Applied Materials is developing a
+readiness plan based on the geographic location of Applied Materials'
+facilities and the infrastructure suppliers used to support these facilities.
+This plan will include information on current suppliers, and alternate
+suppliers, if available, to better enable continuation of services in these
+worldwide locations.  In some cases, alternate suppliers of these services,
+such as electrical utilities, are unavailable, and failure by a supplier could
+impact Applied Materials.  The severity of the impact would be greatest if
+Applied Materials' manufacturing facilities in the United States were
+affected.  This readiness plan will incorporate a contingency plan focused on
+those countries in which Applied Materials believes that the Year 2000 issue
+may most severely affect suppliers of infrastructure services.
+
+
+<p><strong><i>Product Readiness Program  </strong></i><br>
+
+This program focuses on identifying and resolving Year 2000 issues existing in
+Applied Materials' products.  The program encompasses a number of activities,
+including testing, evaluation, engineering and manufacturing implementation.
+Applied Materials has completed a Year 2000 readiness evaluation for its
+current generation of released products based on a series of industry-recognized
+ esting scenarios.  In connection with Applied Materials' Year 2000
+readiness evaluation, Applied Materials identified Year 2000 issues in the two
+major categories of machine control software and product embedded processors,
+and performed impact studies for each product based on a representative
+configuration.  In addition, by focusing on Applied Materials' parts most
+likely to include embedded processors with date-related functions, Applied
+Materials narrowed the number of parts requiring further evaluation from
+several thousand to approximately 600.  These 600 parts were evaluated further
+and tested as required.
+
+<p>Applied Materials' evaluation indicated that no human or equipment safety
+impacts or product process control impacts are expected due to the Year 2000
+problem, but that certain screen displays, log files and interface programs
+may be affected.  Applied Materials has taken corrective action to address
+these affected displays, files and programs, and has remediated any affected
+embedded processors.  In addition, Applied Materials has informed customers of
+certain potential product-specific impacts of the Year 2000 on Applied
+Materials' products.  Testing and engineering activity for Applied Materials'
+current generation of products is complete, and unless otherwise requested by
+a customer, all products that shipped on or after January 1, 1999 were Year
+2000 ready.
+
+<p><strong><i>Customer Readiness Program  </strong></i><br>
+
+This program focuses on customer support issues, including the coordination of
+retrofit activity for older generation products, testing existing customer
+electronic transaction capability and providing other services to Applied
+Materials' customers.  Applied Materials, in cooperation with its customers,
+has completed an inventory and assessment of products in use at substantially
+all of its customers' sites.  Applied Materials is offering different upgrade
+packages for its products, including various parts, software and services in
+the form of "Year 2000 ready kits."  As of July 31, 1999, installation of
+upgrades for systems that shipped after January 1, 1997 were approximately 90
+percent complete.  Substantially all remaining upgrades for products shipped
+before or after January 1, 1997 are dependent upon specific customer
+requirements and schedules.  In particular, many of Applied Materials'
+customers located in Japan have elected not to implement Applied Materials'
+upgrade packages.  In addition to other activities under the Customer
+Readiness Program, Applied Materials plans to make a customer support team
+available to customers experiencing difficulty with Applied Materials'
+products at the time of the year 2000 transition.
+
+<p><strong><i>Consilium  </strong></i><br>
+
+In conjunction with Applied Materials' due diligence examination of Consilium Inc.
+(Consilium), which was acquired in December 1998, Applied Materials conducted a limited
+evaluation of Consilium's Year 2000 readiness.  Since then, Applied Materials
+has further evaluated certain areas related to Consilium's internal
+information technology, suppliers and products.  Most of Consilium's Year 2000
+programs related to internal infrastructure and suppliers are either modeled
+after, or fully integrated into, Applied Materials' Internal Infrastructure
+and Supplier Readiness Programs.  Consilium's internal applications and
+hardware are in the process of being upgraded and/or converted to Applied
+Materials' Year 2000 standards.  This process is expected to be complete by
+September 30, 1999, and the estimated costs have been included in Applied
+Materials' overall Year 2000 Program projection.  Consilium's products are
+"Year 2000 Compliant" as defined by agreements with its customers, provided
+that the products are used in accordance with related documentation and the
+underlying operating system of the host machine and any other software used in
+conjunction with Consilium's products are also Year 2000 Compliant.  Certain
+prior versions of Consilium's products require an upgrade to become Year 2000
+Compliant.  These upgrades are available to Consilium customers as a standard
+component of Consilium's maintenance program.  Consilium has contacted or
+attempted to contact all customers that are believed to have received a non-Year
+2000 Compliant version of its product, and has personnel available to
+assist its customers in their Year 2000 remediation efforts.
+
+<p>Consilium has received information from its suppliers regarding Year 2000
+issues, but has not specifically tested software obtained from its suppliers
+or software that is incorporated into Consilium's products at the specific
+request of its customers.  Consilium is in the process of evaluating
+situations in which it installed such software, testing certain software it
+believes may be affected by the Year 2000 issue and communicating with
+customers regarding these activities, as applicable.  Despite Consilium's
+testing, and whatever assurances Consilium may receive from developers of
+products incorporated into its products, Consilium's products may contain
+undetected errors or defects associated with the Year 2000 issue.  Further,
+prior versions of its products, and certain software provided by third parties
+or its customers and incorporated into Consilium's products, may not be Year
+2000 compliant.
+
+<p><strong><i>Estimated Costs </strong></i><br>
+
+Applied Materials estimates that total Year 2000 costs will range from $30
+million to $40 million, with $22 million spent as of August 1, 1999.  This
+amount includes costs to support customer satisfaction programs and services
+and other internal costs, but does not include the cost of internal hardware
+and software that was to be replaced in the normal course of business but has
+been accelerated because of Year 2000 capability concerns.  The remaining
+costs are expected to be incurred for remediation of non-mission critical
+internal systems, contingency planning, customer support programs and program
+office management.  There can be no assurance, however, that there will not be
+a delay in, or increased costs associated with, the programs described in this
+section.
+
+<p><strong><i>Most Likely Worst Case Scenario  </strong></i><br>
+
+Applied Materials believes that the most likely worst-case scenario for Year
+2000 problems relates to problems with the systems of third party suppliers,
+rather than with Applied Materials' products.  The greatest risks are with
+suppliers of Applied Materials' facilities and infrastructure services, such
+as electrical utilities, transportation, financial services, governmental
+services, and communication services, as well as with suppliers of critical
+materials for which there is no reasonable business alternative.  There can be
+no assurance as to whether suppliers will sufficiently address Year 2000
+issues and be able to continue to provide products and services to Applied
+Materials in a timely manner, or whether Applied Materials' contingency plans
+will effectively address such issues.  As a result, Applied Materials' ability
+to fulfill customer orders or meet other requirements could be affected, and
+Applied Materials' financial condition and results of operations could
+therefore also be materially and adversely affected.
+
+<p><strong><i>Risks Associated with the Year 2000 Problem  </strong></i><br>
+
+This discussion broadly addresses Applied Materials' efforts to identify and
+address its and applicable third parties' Year 2000 issues with respect to
+Applied Materials' four readiness programs.  Applied Materials believes it has
+taken steps to identify and remediate Year 2000 issues under its various
+readiness programs.  However, there can be no assurance that product testing
+has identified all Year 2000-related issues or that Applied Materials will
+effectively address every failure of its products resulting from Year 2000
+issues.  Among other risks, such failures could result in claims against
+Applied Materials, increased warranty or service costs, or delay or loss of
+revenue, any of which could materially and adversely affect Applied Materials'
+financial condition and results of operations.  Furthermore, if efforts to
+identify and address Year 2000 issues in Applied Materials' customer and
+supply base and infrastructure are not successful, Applied Materials may
+experience significant unanticipated problems that could materially and
+adversely affect Applied Materials' financial condition and results of
+operations.  In particular, the effects of the Year 2000 issue on Applied
+Materials' customers, including those of a customer's failure to install
+Applied Materials upgrade packages, are unknown, and could result in the
+customer delaying orders for Applied Materials' products and could otherwise
+materially and adversely affect Applied Materials' financial condition and
+results of operations.  Finally, significant litigation regarding Year 2000
+issues is possible, especially as it relates to software companies such as
+Consilium.  It is uncertain whether, or to what extent, Applied Materials may
+be affected by such litigation.
+
+<p><strong>Foreign Currency</strong><br>
+
+Significant operations of Applied Materials are conducted in foreign
+currencies, primarily Japanese yen.  Applied Materials actively manages its
+exposure to changes in currency exchange rates, but there can be no assurance
+that future changes in currency exchange rates will not have a material and
+adverse effect on Applied Materials' financial condition or results of
+operations.
+
+<p><strong>Euro Conversion</strong><br>
+
+On January 1, 1999, 11 of the 15 member countries of the European Union
+established fixed conversion rates between each of their existing sovereign
+currencies and the Single European Currency (the "euro").  The participating
+countries adopted the euro as their common legal currency on that date, with a
+transition period through January 1, 2002 regarding certain elements of the
+euro change.  In early January, Applied Materials implemented changes to its
+internal systems to make them euro capable.  The cost of systems modifications
+to date has not been material, nor are future systems modifications expected
+to be material.  Applied Materials does not expect the transition to, or use
+of, the euro to materially and adversely affect its business, financial
+condition or results of operations.
+
+<p><strong>Litigation </strong><br>
+
+Applied Materials is currently involved in litigation regarding patent
+infringement, intellectual property rights, antitrust and other matters (see
+Part II, Item 1 of this report), and could become involved in additional
+litigation in the future.  Applied Materials from time to time receives and
+makes inquiries regarding possible patent infringement, and is subject to
+various other legal proceedings and claims, either asserted or unasserted.
+Any such claims, whether with or without merit, could be time-consuming and
+expensive to defend and could divert management's attention and resources.
+There can be no assurance regarding the outcome of current or future
+litigation or patent infringement inquiries.
+
+
+<A NAME="Item3"></A>
+<p><strong>Item 3.  Quantitative and Qualitative Disclosures About
+Market Risk</strong></p>
+
+<p>Significant operations of Applied Materials are conducted in foreign
+currencies, primarily Japanese yen.  Forward exchange and currency option
+contracts are purchased to hedge certain existing firm commitments and foreign
+currency denominated transactions expected to occur during the next year.
+Gains and losses on these contracts are recognized in income when the related
+transactions being hedged are recognized.  Because the effect of movements in
+currency exchange rates on forward exchange and currency option contracts
+generally offsets the related effect on the underlying items being hedged,
+these financial instruments are not expected to subject Applied Materials to
+risks that would otherwise result from changes in currency exchange rates.
+Net foreign currency gains and losses were not material for the three or nine
+months ended July 26, 1998 or August 1, 1999.
+
+<p>Applied Materials has performed an analysis to assess the potential effect of
+reasonably possible near-term changes in interest and foreign currency
+exchange rates.  The effect of such rate changes is not expected to be
+material to Applied Materials' cash flows, financial condition or results of
+operations.
+
+
+
+
+
+
+
+
+<p align="center"><strong>
+PART II. OTHER INFORMATION
+</strong></p>
+
+<A NAME="legal"></A>
+<p><b>Item 1.  Legal Proceedings</b></p>
+
+<p><strong>AG</strong><br>
+
+In April 1997, Applied Materials initiated a lawsuit against AG Associates,
+Inc. (AG) (case no. C-97-20375-RMW) in the United States District Court for
+the Northern District of California, alleging infringement of certain patents
+concerning rapid thermal processing (RTP) technology.  In October 1997, AG
+filed counterclaims against Applied Materials alleging patent infringement
+concerning related technology.
+
+<p>Discovery in Applied Materials' case against AG has commenced, and trial has
+been set for March 2000.  In addition, in August 1998, AG filed two separate
+patent infringement lawsuits against Applied Materials, one in the United
+States District Court for the Northern District of California (case no.
+C-98-03044-WHO) and one in the United States District Court for the District of
+Delaware (civil action no. 98-479).  On February 2, 1999, the Delaware
+District Court issued an order transferring their case to the Northern
+District of California (case no. C-98-20883-RMW).  No trial dates have been
+set in these actions.  Applied Materials continues to believe it has
+meritorious claims and defenses against AG and intends to pursue them
+vigorously.
+
+<p><strong>KLA</strong><br>
+
+As a result of Applied Materials' acquisition of Orbot Instruments, Ltd.
+(Orbot), Applied Materials is involved in a lawsuit captioned KLA Instruments
+Corporation (KLA) v. Orbot (case no. C-93-20886-JW) in the United States
+District Court for the Northern District of California.  KLA alleges that
+Orbot infringes a patent regarding equipment for the inspection of masks and
+reticles, and seeks an injunction, damages and such other relief as the Court
+may find appropriate.  There has been limited discovery, but no trial date has
+been set.  Management believes it has meritorious defenses and intends to
+pursue them vigorously.
+
+<p><strong>Varian and Novellus</strong><br>
+
+On June 13, 1997, Applied Materials filed a lawsuit against Varian Associates,
+Inc. (Varian) captioned Applied Materials, Inc. v. Varian Associates, Inc.
+(case no. C-97-20523-RMW), alleging infringement of several of Applied
+Materials' patents concerning physical vapor deposition (PVD) technology.  The
+complaint was later amended on July 7, 1997 to include Novellus Systems, Inc.
+(Novellus) as a defendant as a result of Novellus' acquisition of Varian's
+thin film systems PVD business.  Applied Materials seeks damages for past
+infringement, a permanent injunction, treble damages for willful infringement,
+pre-judgment interest and attorneys' fees.  Varian answered the complaint by
+denying all allegations, counterclaiming for declaratory judgment of
+invalidity and unenforceability and alleging conduct by Applied Materials in
+violation of antitrust laws.  On June 23, 1997, Novellus filed a separate
+lawsuit against Applied Materials captioned Novellus Systems, Inc. v. Applied
+Materials, Inc. (case no. C-97-20551-EAI), alleging infringement by Applied
+Materials of three patents concerning PVD technology that were formerly owned
+by Varian.  On July 8, 1997, Varian filed a separate lawsuit against Applied
+Materials captioned Varian Associates, Inc. v. Applied Materials, Inc. (case
+no. C-97-20597-PVT).  On July 16, 1999, Varian was granted leave to file a
+First Amended Complaint alleging a broad range of conduct in violation of
+federal antitrust laws and state unfair competition and business practice
+laws.  Discovery has commenced in these actions, but no trial dates have been
+set.  Management believes it has meritorious claims and defenses and intends
+to pursue them vigorously.
+
+<p><strong>OKI</strong><br>
+
+In November 1997, OKI Electric Industry Co., Ltd. (OKI) filed suit against one
+of Applied Materials' wholly-owned subsidiaries, Applied Materials Japan
+(AMJ), in Tokyo District Court in Japan, alleging that AMJ is obligated to
+indemnify OKI for a portion of patent license royalties paid by OKI to Texas
+Instruments, Inc.  Several hearings have been held, but no trial date has been
+set.  Management believes that it has meritorious defenses and intends to
+pursue them vigorously.
+
+<p>Applied Materials is subject to various other legal proceedings and claims,
+either asserted or unasserted, that arise in the ordinary course of business.
+Although the outcome of these claims cannot be predicted with certainty,
+management does not believe that any of these legal matters will have a
+material adverse effect on Applied Materials' financial condition or results
+of operations.
+
+
+<A NAME="EFC"></A>
+<p><b>Item 5.  Other Information</b></p>
+
+<p>The ratio of earnings to fixed charges for the nine months ended July 26, 1998
+and August 1, 1999, and for each of the last five fiscal years, was as
+follows:
+
+<pre>
+
+                                                         Nine Months Ended
+                      Fiscal Year                     ----------------------
+    ------------------------------------------------   July 26,    Aug. 1,
+      1994      1995      1996      1997      1998       1998        1999
+    --------  --------  --------  --------  --------  ----------  ----------
+     13.37x    21.25x    20.14x    18.96x    6.92x      12.39x      12.63x
+    ========  ========  ========  ========  ========  ==========  ==========
+</pre>
+
+<A NAME="exhibit"></A>
+<p><b>Item 6.  Exhibits and Reports on Form 8-K</b></p>
+
+<p>a)  Exhibits are numbered in accordance with the Exhibit Table of Item 601
+of Regulation S-K:
+
+<BLOCKQUOTE>
+<p>3(i)(a) Certificate of Designation, Preferences and Rights of the Terms
+of the Series A Junior Participating Preferred Stock of Applied
+Materials, Inc., dated as of July 7, 1999.
+
+<p>3(i)(b) Certificate of Incorporation of Applied Materials, Inc., as
+amended to July 12, 1999.
+
+<p>3(ii)(a) Amendment to the Bylaws of Applied Materials, Inc.,
+dated as of June 23, 1999.
+
+<p>3(ii)(b) Amendment to the Bylaws of Applied Materials, Inc.,
+dated as of July 7, 1999.
+
+<p>3(ii)(c)   Bylaws of Applied Materials, Inc., as amended and restated
+through July 7, 1999 (incorporated herein by reference to
+Exhibit 3.1 to the Company's Current Report on Form 8-K dated
+July 7, 1999).
+
+<p>4.1     Rights Agreement, dated as of July 7, 1999, between Applied
+Materials, Inc. and Harris Trust and Savings Bank, as Rights
+Agent (incorporated herein by reference to Exhibit 1 to the
+Company's Registration Statement on Form 8-A, dated July 9,
+1999).
+
+<p>27.0  Financial Data Schedule for the nine months ended August 1,
+1999:  filed electronically.
+
+
+</BLOCKQUOTE>
+
+<p>b)      A Current Report on Form 8-K, dated July 7, 1999, was filed during the
+quarter ended August 1, 1999, reporting a dividend distribution of
+preferred stock purchase rights to Applied Materials' common
+stockholders.  This item was reported under Item 5 of such Form 8-K.
+
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<A NAME="sign"></A>
+<p align="center"><strong>
+                                   SIGNATURES
+</strong></p>
+<p>     Pursuant to the requirement of the Security Exchange Act of 1934, the
+registrant has duly caused this report to be signed on its behalf by the
+undersigned thereunto duly authorized.
+
+<P>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="62%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+                        APPLIED MATERIALS, INC.
+</TD></TR></TABLE>
+
+
+
+<p>September 14, 1999
+
+
+<P>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="2%"></TD>
+    <TD width="60%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD>By:&nbsp;</TD>
+    <TD align=left>
+/s/ Joseph R. Bronson
+</TD></TR></TABLE>
+
+
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="62%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+      <HR align=left SIZE=1>
+    </TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+Joseph R. Bronson
+</TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left><I>
+        Senior Vice President,
+        Chief Financial Officer,<br>
+        Chief Administrative Officer,
+        and Member, Office of the
+        President
+  </I></TD></TR></TABLE></P>
+
+<P>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="2%"></TD>
+    <TD width="60%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD>By:&nbsp;</TD>
+    <TD align=left>
+/s/ Michael K. O'Farrell
+</TD></TR></TABLE>
+
+
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="62%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+      <HR align=left SIZE=1>
+    </TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+        Michael K. O'Farrell
+</TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left><I>
+        Vice President,
+        Global Controller and
+        Principal Accounting Officer
+  </I></TD></TR></TABLE></P>
+
+
+<pre>
+
+
+
+
+
+
+</pre>
+
+
+
+
+
+
+
+
+<pre>
+
+
+                                        EXHIBIT INDEX
+
+
+
+ EXHIBIT
+ NUMBER                                DESCRIPTION
+- ----------                             -----------
+
+3(i)(a)      Certificate of Designation, Preferences and Rights of the Terms
+             of the Series A Junior Participating Preferred Stock of Applied
+             Materials, Inc., dated as of July 7, 1999.
+
+3(i)(b)      Certificate of Incorporation of Applied Materials, Inc., as
+             amended to July 12, 1999.
+
+3(ii)(a)     Amendment to the Bylaws of Applied Materials, Inc.,
+             dated as of June 23, 1999.
+
+3(ii)(b)     Amendment to the Bylaws of Applied Materials, Inc.,
+             dated as of July 7, 1999.
+
+27.0         Financial Data Schedule for the nine months ended August 1, 1999:
+             filed electronically.
+
+</pre>
+</body>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-3.I.A
+<SEQUENCE>2
+<DESCRIPTION>CERTIFICATE OF DESIGNATION, DATED JULY 7, 1999.
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>EX-3.i.a</TITLE>
+</head>
+<body bgcolor=white>
+<pre>
+
+
+                          APPLIED MATERIALS, INC.
+                               CERTIFICATE
+                   OF DESIGNATION, PREFERENCES AND RIGHTS
+                            OF THE TERMS OF THE
+                 SERIES A JUNIOR PARTICIPATING PREFERRED STOCK
+
+Pursuant to Section 151 of the General Corporation Law of the State of
+Delaware
+
+We, Joseph J. Sweeney, Vice President, Legal Affairs and
+Intellectual Property, and Barry Quan, Assistant Secretary, of Applied
+Materials, Inc., organized and existing under the General Corporation
+Law of the State of Delaware, in accordance with the provisions of
+Section 103 thereof, DO HEREBY CERTIFY:
+
+That pursuant to the authority conferred upon the Board of
+Directors by the Certificate of Incorporation of the Corporation, the
+Board of Directors on July 7, 1999, adopted the following resolution
+creating a series of One Hundred Ten Thousand (110,000) shares of
+Preferred Stock designated as Series A Junior Participating Preferred
+Stock:
+
+RESOLVED, that pursuant to the authority vested in the Board of
+Directors of the Corporation in accordance with the provisions of its
+Certificate of Incorporation, a series of Preferred Stock of the
+Corporation be and it hereby is created, and that the designation and
+amount thereof and the voting powers, preferences and relative,
+participating, optional and other special rights of the shares of such
+series, and the qualifications, limitations or restrictions thereof are
+as follows:
+
+Section 1.  Designation and Amount.  The shares of such series
+shall be designated as "Series A Junior Participating Preferred Stock"
+(the "Series A Preferred Stock") and the number of shares constituting
+such series shall be One Hundred Ten Thousand (110,000).
+
+Section 2.  Dividends and Distributions.
+
+(A)     The dividend rate on the shares of Series A Preferred Stock
+shall be for each quarterly dividend (hereinafter referred to as a
+"quarterly dividend period"), which quarterly dividend periods shall
+commence on February 1, May 1, August 1 and November 1, in each year
+(each such date being referred to herein as a "Quarterly Dividend
+Payment Date") (or in the case of original issuance, from the date of
+original issuance) and shall end on and include the day next preceding
+the first date of the next quarterly dividend period, at a rate per
+quarterly dividend period (rounded to the nearest cent) equal to the
+greater of (a) $1.00 or (b) subject to the provisions for adjustment
+hereinafter set forth, 10,000 times the aggregate per share amount of
+all cash dividends, and 10,000 times the aggregate per share amount
+(payable in cash, based upon the fair market value at the time the non-
+cash dividend or other distribution is declared as determined in good
+faith by the Board of Directors) of all non-cash dividends or other
+distributions other than a dividend payable in shares of Common Stock,
+par value $0.01 per share, of the Corporation (the "Common Stock"), or
+a subdivision of the outstanding shares of Common Stock (by
+reclassification or otherwise), declared (but not withdrawn) on the
+Common Stock during the immediately preceding quarterly dividend period,
+or, with respect to the first quarterly dividend period, since the first
+issuance of any share or fraction of a share of Series A Preferred
+Stock.  In the event the Corporation shall at any time after July 7,
+1999 (the "Rights Declaration Date") (i) declare any dividend on
+Common Stock payable in shares of Common Stock, (ii) subdivide the
+outstanding Common Stock, or (iii) combine the outstanding Common Stock
+into a smaller number of shares, then in each such case the amount to
+which holders of shares of Series A Preferred Stock were entitled
+immediately prior to such event under clause (b) of the preceding
+sentence shall be adjusted by multiplying such amount by a fraction the
+numerator of which is the number of shares of Common Stock outstanding
+immediately after such event and the denominator of which is the number
+of shares of Common Stock that were outstanding immediately prior to
+such event.
+
+(B)     Dividends shall begin to accrue and be cumulative on
+outstanding shares of Series A Preferred Stock from the Quarterly
+Dividend Payment Date next preceding the date of issue of such shares of
+Series A Preferred Stock, unless the date of issue of such shares is
+prior to the record date for the first quarterly Dividend Payment Date,
+in which case dividends on such shares shall begin to accrue from the
+date of issue of such shares, or unless the date of issue is a Quarterly
+Dividend Payment Date or is a date after the record date for the
+determination of holders of shares of Series A Preferred Stock entitled
+to receive a quarterly dividend and before such Quarterly Dividend
+Payment Date, in either of which events such dividends shall begin to
+accrue and be cumulative from such Quarterly Dividend Payment Date.
+Accrued but unpaid dividends shall not bear interest.  Dividends paid on
+the shares of Series A Preferred Stock in an amount less than the total
+amount of such dividends at the time accrued and payable on such shares
+shall be allocated pro rata on a share-by-share basis among all such
+shares at the time outstanding.  The Board of Directors may fix a record
+date for the determination of holders of shares of Series A Preferred
+Stock entitled to receive payment of a dividend or distribution declared
+thereon, which record date shall be no more than 45 days prior to the
+date fixed for the payment thereof.
+
+Section 3.  Voting Rights.  The holders of shares of Series A
+Preferred Stock shall have the following voting rights:
+
+(A)     Subject to the provision for adjustment hereinafter set
+forth, each share of Series A Preferred Stock shall entitle the holder
+thereof to 10,000 votes on all matters submitted to a vote of the
+stockholders of the Corporation.  In the event the Corporation shall at
+any time after the Rights Declaration Date (i) declare any dividend on
+Common Stock payable in shares of Common Stock, (ii) subdivide the
+outstanding Common Stock, or (iii) combine the outstanding Common Stock
+into a smaller number of shares, then in each such case the number of
+votes per share to which holders of shares of Series A Preferred Stock
+were entitled immediately prior to such event shall be adjusted by
+multiplying such number by a fraction the numerator of which is the
+number of shares of Common Stock outstanding immediately after such
+event and the denominator of which is the number of shares of Common
+Stock that were outstanding immediately prior to such event.
+
+(B)     Except as otherwise provided herein, in the Certificate of
+Incorporation or by law, the holders of shares of Series A Preferred
+Stock and the holders of shares of Common Stock shall vote together as
+one class on all matters submitted to a vote of stockholders of the
+Corporation.
+
+(C)     Except as set forth herein, in the Certificate of
+Incorporation and in the Bylaws, holders of Series A Preferred Stock
+shall have no special voting rights and their consent shall not be
+required (except to the extent they are entitled to vote with holders of
+Common Stock as set forth herein) for taking any corporate action.
+Section 4.  Reacquired Shares.  Any shares of Series A Preferred
+Stock purchased or otherwise acquired by the Corporation in any manner
+whatsoever shall be retired and cancelled promptly after the acquisition
+thereof.  All such shares shall upon their cancellation become
+authorized but unissued shares of Preferred Stock and may be reissued as
+part of a new series of Preferred Stock to be created by resolution or
+resolutions of the Board of Directors, subject to the conditions and
+restrictions on issuance set forth herein.
+
+Section 5.  Liquidation, Dissolution or Winding Up.
+
+(A)     In the event of any voluntary or involuntary liquidation,
+dissolution or winding up of the Corporation, the holders of the
+Series A Preferred Stock shall be entitled to receive, prior to any
+distribution (either as dividends or upon liquidation, dissolution or
+winding up) to the holders of stock ranking junior to the Series A
+Preferred Stock, the greater of (a) $1.00 per share, plus accrued
+dividends to the date of distribution, whether or not earned or
+declared, or (b) an amount per share, subject to the provision for
+adjustment hereinafter set forth, equal to 10,000 times the aggregate
+amount to be distributed per share to holders of Common Stock.  In the
+event the Corporation shall at any time after the Rights Declaration
+Date (i) declare any dividend on Common Stock payable in shares of
+Common Stock, (ii) subdivide the outstanding Common Stock, or
+(iii) combine the outstanding Common Stock into a smaller number of
+shares, then in each such case the amount to which holders of shares of
+Series A Preferred Stock were entitled immediately prior to such event
+pursuant to clause (b) of the preceding sentence shall be adjusted by
+multiplying such amount by a fraction the numerator of which is the
+number of shares of Common Stock outstanding immediately after such
+event and the denominator of which is the number of shares of Common
+Stock that were outstanding immediately prior to such event.
+
+Section 6.  Consolidation, Merger, etc.  In case the Corporation
+shall enter into any consolidation, merger, combination or other
+transaction in which the shares of Common Stock are exchanged for or
+changed into other stock or securities, cash and/or any other property,
+then in any such case the shares of Series A Preferred Stock shall at
+the same time be similarly exchanged or changed in an amount per share
+(subject to the provision for adjustment hereinafter set forth) equal to
+10,000 times the aggregate amount of stock, securities, cash and/or any
+other property (payable in kind), as the case may be, into which or for
+which each share of Common Stock is changed or exchanged.  In the event
+the Corporation shall at any time after the Rights Declaration Date
+(i) declare any dividend on Common Stock payable in shares of Common
+Stock, (ii) subdivide the outstanding Common Stock, or (iii) combine the
+outstanding Common Stock into a smaller number of shares, then in each
+such case the amount set forth in the preceding sentence with respect to
+the exchange or change of shares of Series A Preferred Stock shall be
+adjusted by multiplying such amount by a fraction the numerator of which
+is the number of shares of Common Stock outstanding immediately after
+such event and the denominator of which is the number of shares of
+Common Stock that were outstanding immediately prior to such event.
+
+Section 7.  No Redemption.  The shares of Series A Preferred Stock
+shall not be redeemable.
+
+Section 8.  Fractional Shares.  Series A Preferred Stock may be
+issued in fractions of a share which shall entitle the holder, in
+proportion to such holder's fractional shares, to exercise voting
+rights, receive dividends, participate in distributions and have the
+benefit of all other rights of holders of Series A Preferred Stock.  All
+payments made with respect to fractional shares hereunder shall be
+rounded to the nearest whole cent.
+
+Section 9.  Certain Restrictions.
+
+(A)     Whenever quarterly dividends or other dividends or
+distributions payable on the Series A Preferred Stock as provided in
+Section 2 are in arrears, thereafter and until all accrued and unpaid
+dividends and distributions, whether or not declared, on shares of
+Series A Preferred Stock outstanding shall have been paid in full, the
+Corporation shall not:
+(i)     declare or pay dividends on, make any other
+distributions on, or redeem or purchase or otherwise acquire for
+consideration any shares of stock ranking junior (either as to
+dividends or upon liquidation, dissolution or winding up) to the
+Series A Preferred Stock;
+(ii)    declare or pay dividends on or make any other
+distributions on any shares of stock ranking on a parity (either
+as to dividends or upon liquidation, dissolution or winding up)
+with the Series A Preferred Stock, except dividends paid ratably
+on the Series A Preferred Stock and all such parity stock on which
+dividends are payable or in arrears in proportion to the total
+amounts to which the holders of all such shares are then entitled;
+(iii)   redeem or purchase or otherwise acquire for
+consideration shares of any stock ranking on a parity (either as
+to dividends or upon liquidation, dissolution or winding up) with
+the Series A Preferred Stock, provided that the Corporation may at
+any time redeem, purchase or otherwise acquire shares of any such
+parity stock in exchange for shares of any stock of the
+Corporation ranking junior (either as to dividends or upon
+dissolution, liquidation or winding up) to the Series A Preferred
+Stock; or
+(iv)    purchase or otherwise acquire for consideration any
+shares of Series A Preferred Stock, or any shares of stock ranking
+on a parity with the Series A Preferred Stock, except in
+accordance with a purchase offer made in writing or by publication
+(as determined by the Board of Directors) to all holders of such
+shares upon such terms as the Board of Directors, after
+consideration of the respective annual dividend rates and other
+relative rights and preferences of the respective series and
+classes shall determine in good faith will result in fair and
+equitable treatment among the respective series or classes.
+
+(B)     The Corporation shall not permit any subsidiary of the
+Corporation to purchase or otherwise acquire for consideration any
+shares of stock of the Corporation unless the Corporation could, under
+paragraph (A) of this Section 9, purchase or otherwise acquire such
+shares at such time and in such manner.
+
+Section 10.  Ranking.  The Series A Preferred Stock shall be
+junior to all other Series of the Corporation's preferred stock as to
+the payment of dividends and the distribution of assets, except to the
+extent a series is made pari passu with the Series A Preferred Stock.
+
+Section 11.  Amendment.  The Certificate of Incorporation of the
+Corporation shall not be amended in any manner which would materially
+alter or change the powers, preferences or special rights of the Series
+A Preferred Stock so as to affect them adversely without the affirmative
+vote of the holders of two-thirds or more of the outstanding shares of
+Series A Preferred Stock voting together as a single class.
+
+IN WITNESS WHEREOF, we have executed and subscribed this
+Certificate and do affirm the foregoing as true under the penalties of
+perjury this 9th day of July, 1999.
+
+
+                                                  /s/ Joseph J. Sweeney
+                                                  Vice President, Legal Affairs
+                                                  and Intellectual Property
+
+Attest:
+
+   /s/ Barry Quan
+   Assistant Secretary
+
+</pre>
+</body>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-3.I.B
+<SEQUENCE>3
+<DESCRIPTION>CERTIFICATE OF INCORPORATION, AS AMENDED TO JULY 12, 1999.
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>EX-3.i.b</TITLE>
+</head>
+<body bgcolor=white>
+<pre>
+
+
+                          CERTIFICATE OF INCORPORATION
+                                      OF
+                            APPLIED MATERIALS, INC.
+                         (as amended to July 12, 1999)
+
+FIRST:  The name of the corporation is Applied Materials, Inc.
+
+SECOND:  The address of the corporation's registered office in the
+State of Delaware is Corporation Trust Center, 1209 Orange Street, in
+the City of Wilmington, County of New Castle.  The name of its
+registered agent at that address is The Corporation Trust Company.
+
+THIRD:  The name and mailing address of the incorporator of the
+corporation is:
+Donald A. Slichter
+Orrick, Herrington & Sutcliffe
+55 Almaden Boulevard
+San Jose, California  95113
+
+FOURTH:  The nature of the business or purposes to be conducted or
+promoted by the corporation is to engage in any lawful act or activity
+for which corporations may be organized under the General Corporation
+Law of Delaware.
+
+FIFTH:
+1.      The corporation is authorized to issue two classes of shares to
+be designated, respectively, "Preferred Stock" and "Common Stock."  The
+number of shares of Preferred Stock authorized to be issued is One
+Million (1,000,000) and the number of shares of Common Stock authorized
+to be issued is One Billion One Hundred Million (1,100,000,000).  The
+stock, whether Preferred Stock or Common Stock, shall have a par value
+of $.01 per share.
+
+2.      The shares of Preferred Stock may be issued from time to time
+in one or more series. The Board of Directors is authorized, by filing a
+certificate pursuant to the applicable law of the State of Delaware, to
+establish from time to time the number of shares to be included in each
+such series, and to fix the designation, powers, preferences and rights
+of the shares of each such series and the qualifications, limitations or
+restrictions thereof, including but not limited to the fixing or
+alteration of the dividend rights, dividend rate, conversion rights,
+voting rights, rights and terms of redemption (including sinking fund
+provisions), the redemption price or prices, and the liquidation
+preferences of any wholly unissued series of shares of Preferred Stock;
+and to increase or decrease the number of shares of any series
+subsequent to the issue of shares of that series, but not below the
+number of shares of such series then outstanding.  In case the number of
+shares of any series shall be so decreased, the shares constituting such
+decrease shall resume the status which they had prior to the adoption of
+the resolution originally fixing the number of shares of such series.
+
+SIXTH:  In furtherance and not in limitation of the powers
+conferred by statute, the Board of Directors is expressly authorized to
+adopt, amend and repeal from time to time any or all of the bylaws of
+the corporation, including bylaw amendments increasing or reducing the
+authorized number of directors.
+
+SEVENTH:  No action shall be taken by the stockholders except at
+an annual or special meeting of stockholders.  No action shall be taken
+by stockholders by written consent.
+
+EIGHTH:  Elections of directors need not be by written ballot
+unless the bylaws of the corporation shall so provide.
+
+NINTH:
+1.      The affirmative vote of the holders of not less than sixty-six
+and sixty-seven hundredths percent (66.67%) of the outstanding shares of
+"Voting Stock" (as hereinafter defined) shall be required for the
+approval or authorization of any "Business Combination" (as hereinafter
+defined) of this corporation or any subsidiary of this corporation with
+any "Related Person" (as hereinafter defined), notwithstanding the fact
+that no vote may be required or that a lesser percentage may be
+specified by law, in any agreement with any national securities exchange
+or otherwise; provided, however, that the sixty-six and sixty-seven
+hundredths percent (66.67%) voting requirement shall not be applicable
+and such Business Combination shall require only such affirmative vote
+as is required by law, any agreement with any national securities
+exchange or otherwise if:
+
+(a)     The "Continuing Directors" (as hereinafter defined) of
+this corporation by at least a majority vote have expressly approved
+such Business Combination either in advance of or subsequent to such
+Related Person becoming a Related Person; or
+
+(b)     All of the following conditions are met:
+
+(i)     The cash or "Fair Market Value" (as hereinafter
+defined) as of the date of the consummation of the Business
+Combination (the "Combination Date") of the property,
+securities or other consideration to be received per share
+by holders of a particular class or series of capital stock,
+as the case may be, of this corporation in the Business
+Combination is not less than the highest of:
+
+(A)     the highest per share price (including brokerage
+commissions, transfer taxes and soliciting dealers' fees)
+paid by or on behalf of the Related Person in acquiring
+beneficial ownership of any of its holdings of such class or
+series of capital stock of this corporation (i) within the
+two-year period immediately prior to the Combination Date or
+(ii) in the transaction or series of transactions in which
+the Related Person became a Related Person, whichever is
+higher; or
+(B)     the Fair Market Value per share of the shares of
+capital stock being acquired in the Business Combination (i)
+as of the Combination Date or (ii) the date on which the
+Related Person became a Related Person, whichever is higher;
+or
+(C)     in the case of Common Stock, the per share book
+value of the Common Stock as reported at the end of the
+fiscal quarter immediately prior to the Combination Date,
+and in the case of Preferred Stock, the highest preferential
+amount per share to which the holders of shares of such
+class or series of Preferred Stock would be entitled in the
+event of any voluntary or involuntary liquidation,
+dissolution or winding up of the affairs of the corporation,
+regardless of whether the Business Combination to be
+consummated constitutes such an event.
+The provision of this paragraph l(b)(i) shall be required to be
+met with respect to every class or series of outstanding capital stock,
+whether or not the Related Person has previously acquired any shares of
+a particular class or series of capital stock.  In all of the above
+instances, appropriate adjustments shall be made for recapitalizations
+and for stock dividends, stock splits and like distributions; and
+
+(ii)    The consideration to be received by holders of a
+particular class or series of capital stock shall be in cash
+or in the same form as previously has been paid by or on
+behalf of the Related Person in connection with its direct
+or indirect acquisition of beneficial ownership of shares of
+such class or series of stock.  If the consideration so paid
+for any such shares varied as to form, the form of
+consideration for such shares shall be either cash or the
+form used to acquire beneficial ownership of the largest
+number of shares of such class or series of capital stock
+previously acquired by the Related Person; and
+
+(iii)   After such Related Person has become a Related
+Person and prior to the consummation of such Business
+Combination:  (a) except as approved by a majority of the
+Continuing Directors, there shall have been no failure to
+declare and pay at the regular date therefor any full
+quarterly dividends (whether or not cumulative) on the
+outstanding Preferred Stock; (b) there shall have been (1)
+no reduction in the annual rate of dividends paid on the
+Common Stock (except as necessary to reflect any subdivision
+of the Common Stock), except as approved by a majority of
+the Continuing Directors, and (2) an increase in such annual
+rate of dividends as necessary to reflect any
+reclassification (including any reverse stock split),
+recapitalization, reorganization or any similar transaction
+which has the effect of reducing the number of outstanding
+shares of the Common Stock, unless the failure so to
+increase such annual rate is approved by a majority of the
+Continuing Directors; and (c) such Related Person shall have
+not become the beneficial owner of any additional shares of
+Voting Stock except as part of the transaction which results
+in such Related Person becoming a Related Person; and
+
+(iv)    After such Related Person has become a Related Person,
+such Related Person shall not have received the benefit,
+directly or indirectly (except as proportionately as a
+stockholder), of any loans, advances, guarantees, pledges or
+other financial assistance or any tax credits or other tax
+advantages provided by the corporation, whether in
+anticipation of or in connection with such Business
+Combination or otherwise; and
+
+(v)     A proxy or information statement describing the
+proposed Business Combination and complying with the
+requirements of the Securities Exchange Act of 1934 and the
+rules and regulations thereunder (or any subsequent
+provisions replacing such Act, rules or regulations) shall
+be mailed to public stockholders of the corporation at least
+30 days prior to the consummation of such Business
+Combination (whether or not such proxy or information
+statement is required to be mailed pursuant to such Act or
+subsequent provisions).
+
+2.      For purposes of this Article NINTH:
+
+(a)     The term "Business Combination" shall mean any (i)
+merger or consolidation of this corporation or a Subsidiary (as
+hereinafter defined) of this corporation with a Related Person or any
+other corporation which is or after such merger or consolidation would
+be an "Affiliate" or "Associate" (as hereinafter defined) of a Related
+Person, (ii) sale, lease, exchange, mortgage, pledge, transfer or other
+disposition (in one transaction or a series of transactions) with any
+Related Person or any Affiliate or Associate of any Related Person, of
+all or any "Substantial Part" (as hereinafter defined) of the assets of
+this corporation or of a Subsidiary of this corporation to a Related
+Person or any Affiliate or Associate of any Related Person, (iii)
+adoption of any plan or proposal for the liquidation or dissolution of
+this corporation proposed by or on behalf of a Related Person or any
+Affiliate or Associate of any Related Person, (iv) sale, lease, exchange
+or other disposition, including without limitation a mortgage or other
+security device, of all or any Substantial Part of the assets of a
+Related Person or any Affiliate or Associate of any Related Person to
+this corporation or a Subsidiary of this corporation, (v) issuance or
+pledge of securities of this corporation or a Subsidiary of this
+corporation to or with a Related Person or any Affiliate or Associate of
+any Related Person, (vi) reclassification of securities (including any
+reverse stock split) or recapitalization of this corporation or any
+other transaction that would have the effect, either directly or
+indirectly, of increasing the proportionate share of any class of equity
+or convertible securities of this corporation or any Subsidiary of this
+corporation which is directly or indirectly beneficially owned by any
+Related Person or any Affiliate or Associate of any Related Person, and
+(vii) agreement, contract or other arrangement providing for any of the
+transactions described in this definition of Business Combination.
+
+(b)     The term "person" shall mean any individual, firm,
+corporation or other entity and shall include any group comprised of any
+person and any other person with whom such person or any Affiliate or
+Associate of such person has any agreement, arrangement or
+understanding, directly or indirectly, for the purpose of acquiring,
+holding, voting or disposing of Voting Stock of this corporation.
+
+(c)     The term "Related Person" shall mean any person (other
+than this corporation, or any Subsidiary and other than any profit-
+sharing, employee stock ownership or other employee benefit plan of this
+corporation or any Subsidiary or any trustee of or fiduciary with
+respect to any such plan when acting in such capacity) who or which:
+
+(i)     is the beneficial owner (as hereinafter defined) of
+fifteen percent (15%) or more of the Voting Stock;
+(ii)    is an Affiliate or Associate of this corporation and
+at any time within the two-year period immediately prior to
+the date in question was the beneficial owner of fifteen
+percent (15%) or more of the Voting Stock; or
+(iii)   is an assignee of or has otherwise succeeded to the
+beneficial ownership of any shares of Voting Stock which
+were at any time within the two-year period immediately
+prior to such time beneficially owned by any Related Person,
+if such assignment or succession shall have occurred in the
+course of a transaction or series of transactions not
+involving a public offering within the meaning of the
+Securities Act of 1933.
+
+(d)     A person shall be a "beneficial owner" of any Voting
+Stock:
+
+(i)     which such person or any of its Affiliates or Associates
+beneficially owns, directly or indirectly,
+(ii)    which such person or any of its Affiliates or
+Associates has, directly or indirectly, (a) the right to
+acquire (whether such right is exercisable immediately or
+only after the passage of time), pursuant to any agreement,
+arrangement or understanding or upon the exercise of
+conversion rights, exchange rights, warrants or options, or
+otherwise, or (b) the right to vote pursuant to any
+agreement, arrangement or understanding; or
+(iii)   which are beneficially owned, directly or indirectly,
+by any other person with which such person or any of its
+Affiliates or Associates has any agreement, arrangement or
+understanding for the purpose of acquiring, holding, voting
+or disposing of any shares of Voting Stock.
+
+(e)     For the purposes of determining whether a person is a
+Related Person pursuant to subparagraph (c) of this paragraph 2, the
+number of shares of Voting Stock deemed to be outstanding shall include
+shares deemed owned through application of subparagraph (d) of this
+paragraph 2 but shall not include any other shares of Voting Stock which
+may be issuable pursuant to any agreement, arrangement or understanding,
+or upon exercise of conversion rights, warrants or options, or
+otherwise.
+
+(f)     The terms "Affiliate" or "Associate" shall have the
+respective meanings ascribed to such terms in Rule 12b-2 of the General
+Rules and Regulations under the Securities Exchange Act of 1934, as in
+effect on January 12, 1987.
+
+(g)     The term "Subsidiary" means any corporation of which a
+majority of any class of equity securities is owned, directly or
+indirectly, by this corporation; provided, however, that for the
+purposes of the definition of Related Person set forth in subparagraph
+(c) of this paragraph 2, the term "Subsidiary" shall mean only a
+corporation of which a majority of each class of equity securities is
+owned, directly or indirectly, by this corporation.
+
+(h)     The term "Continuing Director" means any member of the
+Board of Directors, while such person is a member of the Board of
+Directors, who is not an Affiliate, Associate or a representative of the
+Related Person involved in a proposed Business Combination and was a
+member of the Board of Directors prior to the time that the Related
+Person became a Related Person, and any successor of a Continuing
+Director, while such successor is a member of the Board of Directors,
+who is not an Affiliate, Associate or a representative of the Related
+Person and is recommended or elected to succeed a Continuing Director by
+a majority of Continuing Directors.  Each initial director of this
+corporation elected by the incorporator of this corporation shall be a
+Continuing Director for purposes of this Article NINTH.
+
+(i)     The term "Substantial Part" shall mean more than twenty
+percent (20%) of the Fair Market Value, as determined by a
+majority of the Continuing Directors, of the total
+consolidated assets of this corporation and its Subsidiaries
+taken as a whole as of the end of its most recent fiscal
+year ended prior to the time the determination is being
+made.
+
+(j)     For the purposes of paragraph l(b)(i) of this Article
+NINTH, the term "other consideration to be received" shall include,
+without limitation, capital stock retained by the shareholders.
+
+(k)     The term "Voting Stock" shall mean all of the
+outstanding shares of Common Stock and the outstanding shares of
+Preferred Stock entitled to vote on each matter on which the holders of
+record of Common Stock shall be entitled to vote, and each reference to
+a proportion of shares of Voting Stock shall refer to such proportion of
+the votes entitled to be cast by such shares voting as one class.
+
+(l)     The term "Fair Market Value" means (i) in case of
+capital stock, the highest closing sale price during the 30-day period
+immediately preceding the date in question of a share of such stock on
+the Composite Tape for the New York Stock Exchange Listed Stocks, or, if
+such stock is not quoted on the Composite Tape, on the New York Stock
+Exchange, or if such stock is not listed on such Exchange, on the
+principal United States securities exchange registered under the
+Securities Act of 1934 on which such stock is listed, or, if such stock
+is not listed on any such stock exchange, the highest closing sale price
+with respect to a share of such stock during the 30-day period preceding
+the date in question on the National Association of Securities Dealers,
+Inc. Automated Quotations System or any successor system then in use, or
+if no such quotations are available, the fair market value on the date
+in question of a share of such stock as determined in good faith by a
+majority of the Continuing Directors; and (ii) in the case of property
+other than cash or stock, the fair market value of such property on the
+date in question as determined in good faith by a majority of the
+Continuing Directors.
+
+(m)     A Related Person shall be deemed to have acquired a
+share of the Voting Stock of this corporation at the time when such
+Related Person became the beneficial owner thereof.  If a majority of
+the Continuing Directors is not able to determine the price at which a
+Related Person has acquired a share of Voting Stock of this corporation,
+such price shall be deemed to be the Fair Market Value of the shares in
+question at the time when the Related Person became the beneficial owner
+thereof.  With respect to shares owned by Affiliates, Associates or
+other persons whose ownership is attributed to a Related Person under
+the foregoing definition of Related Person, the price deemed to be paid
+therefor by such Related Person shall be the price paid upon the
+acquisition thereof by such Affiliate, Associate or other person, or, if
+such price is not determinable by a majority of the Continuing
+Directors, the Fair Market Value of the shares in question at the time
+when the Affiliate, Associate or other such person became the beneficial
+owner thereof.
+
+3.      The fact that any Business Combination complies with the
+provisions of paragraph l(b) of this Article NINTH shall not be
+construed to impose any fiduciary duty, obligation or responsibility on
+the Board of Directors, or any member thereof, to approve such Business
+Combination or recommend its adoption or approval to the shareholders of
+this corporation, nor shall such compliance limit, prohibit or otherwise
+restrict in any manner the Board of Directors, or any member thereof,
+with respect to evaluations of or actions and responses taken with
+respect to such Business Combination.
+
+4.      A majority of the Continuing Directors of the corporation shall
+have the power and duty to determine for the purposes of this Article
+NINTH, on the basis of information known to them after reasonable
+inquiry, (A) whether a person is a Related Person, (B) the number of
+shares of Voting Stock beneficially owned by any person, and (C) whether
+a person is an Affiliate or Associate of another.  A majority of the
+Continuing Directors of the corporation shall have the further power to
+interpret all of the terms and provisions of this Article NINTH.
+
+        TENTH:  A director of the corporation shall not be personally
+liable to the corporation or its stockholders for monetary damages for
+breach of fiduciary duty as a director, except for liability (i) for any
+breach of the director's duty of loyalty to the corporation or its
+stockholders, (ii) for acts or omissions not in good faith or which
+involve intentional misconduct or a knowing violation of law, (iii)
+under Section 174 of the Delaware General Corporation Law, or (iv) for
+any transaction from which the director derived an improper personal
+benefit.
+
+        ELEVENTH:
+1.      Each person who was or is made a party or is threatened to be
+made a party to or is involved in any action, suit or proceeding,
+whether civil, criminal, administrative or investigative (hereinafter a
+"proceeding"), by reason of the fact that he or she, or a person of whom
+he or she is the legal representative, is or was a director, officer,
+employee or agent, of the corporation or is or was serving at the
+request of the corporation as a director, officer, employee or agent of
+another corporation or of a partnership, joint venture, trust or other
+enterprise, including service with respect to employee benefit plans,
+whether the basis of such proceeding is alleged action in an official
+capacity as a director, officer, employee or agent or in any other
+capacity while serving as a director, officer, employee or agent, shall
+be indemnified and held harmless by the corporation to the fullest
+extent authorized by the Delaware General Corporation Law, against all
+expense, liability and loss (including attorneys' fees, judgments,
+fines, ERISA excise taxes or penalties and amounts paid or to be paid in
+settlement) reasonably incurred or suffered by such person in connection
+therewith and such indemnification shall continue as to a person who has
+ceased to be a director, officer, employee or agent and shall inure to
+the benefit of his or her heirs, executors and administrators; provided,
+however, that, except as provided in paragraph 2 hereof, the corporation
+shall indemnify any such person seeking indemnification in connection
+with a proceeding (or part thereof) initiated by such person only if
+such proceeding (or part thereof) was authorized by the Board of
+Directors of the corporation. The right to indemnification conferred in
+this Article shall be a contract right.
+
+2.      If a claim under paragraph 1 of this Article is not paid in
+full by the corporation within 30 days after a written claim has been
+received by the corporation, the claimant may at any time thereafter
+bring suit against the corporation to recover the unpaid amount of the
+claim and, if successful in whole or in part, the claimant shall be
+entitled to be paid also the expense of prosecuting such claim.  It
+shall be a defense to any such action (other than an action brought to
+enforce a claim for expenses incurred in defending any proceeding in
+advance of its final disposition where the required undertaking, if any
+is required, has been tendered to the corporation) that the claimant has
+not met the standards of conduct which make it permissible under the
+Delaware General Corporation Law for the corporation to indemnify the
+claimant for the amount claimed.
+
+3.      The right to indemnification conferred in this Article shall
+not be exclusive of any other right which any person may have or
+hereafter acquire under any statute, provision of the Certificate of
+Incorporation, bylaw, agreement, vote of stockholders or disinterested
+directors or otherwise.
+
+4.      The corporation may maintain insurance, at its expense, to
+protect itself and any director, officer, employee or agent of the
+corporation or another corporation, partnership, joint venture, trust or
+other enterprise against any such expense, liability or loss, whether or
+not the corporation would have the power to indemnify such person
+against such expense, liability or loss under the Delaware General
+Corporation Law.
+
+        TWELFTH:  The corporation reserves the right to amend, alter,
+change or repeal any provision contained in this Certificate of
+Incorporation, in the manner now or hereafter prescribed by statute, and
+all rights conferred on stockholders herein are granted subject to this
+reservation.  Notwithstanding the foregoing, the provisions set forth in
+Articles NINTH, TENTH, ELEVENTH and TWELFTH may not be amended or
+repealed in any respect unless such amendment or repeal is approved by
+the affirmative vote of not less than sixty-six and sixty-seven
+hundredths percent (66.67%) of the total voting power of all outstanding
+shares of stock in this corporation entitled to vote thereon.
+
+        THE UNDERSIGNED, being the incorporator hereinbefore named, for
+the purpose of forming a corporation to do business both within and
+without the State of Delaware, and in pursuance of the Delaware
+Corporation Law, does hereby make and file this Certificate.
+
+
+
+                                     /s/ Donald A. Slichter
+                                     Donald A. Slichter
+
+
+</pre>
+</body>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-3.II.A
+<SEQUENCE>4
+<DESCRIPTION>AMENDMENT TO BYLAWS, DATED JUNE 23, 1999.
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>EX-3.ii.a</TITLE>
+</head>
+<body bgcolor=white>
+<pre>
+
+
+                                  RESOLUTIONS OF THE
+                                BOARD OF DIRECTORS OF
+                                APPLIED MATERIALS, INC.
+
+                                Adopted on June 23, 1999
+
+                                AMENDMENT TO BYLAWS
+
+RESOLVED, that Article III, Section 3.1, of the bylaws of the
+corporation be amended to read as follows:
+
+"3.1    Powers.  The business and affairs of the
+corporation shall be managed by or under the direction of the
+board of directors, except as otherwise provided in the General
+Corporation Law of the State of Delaware or in the certificate of
+incorporation."
+
+RESOLVED FURTHER, that the Secretary of the corporation hereby is
+directed to include in the corporate minute books copies of the
+foregoing amendment to the bylaws of the corporation; and
+
+RESOLVED FURTHER, that the proper officers of the corporation are,
+and each hereby is, authorized and directed, jointly and severally, for
+and on behalf and in the name of the corporation, to do or cause to be
+done any and all acts, including but not limited to the execution and
+delivery of any and all papers, agreements, documents, instruments and
+certificates, as such officers may deem necessary or appropriate to
+carry out the purposes and intent of the foregoing resolutions, and the
+performance of any such acts, including but not limited to the execution
+and delivery by such officers of any such papers, agreements, documents,
+instruments and certificates, shall conclusively establish the authority
+of such officers therefor; and
+
+RESOLVED FURTHER, that any actions taken by such officers prior to
+this action by the Board of Directors approving the foregoing
+resolutions that are within the authority conferred hereby are hereby
+ratified, confirmed and approved as the acts and deeds of the
+corporation.
+
+
+
+
+</pre>
+</body>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-3.II.B
+<SEQUENCE>5
+<DESCRIPTION>AMENDMENT TO BYLAWS, DATED JULY 7, 1999.
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>EX-3.ii.b</TITLE>
+</head>
+<body bgcolor=white>
+<pre>
+
+
+                              RESOLUTIONS OF THE
+                             BOARD OF DIRECTORS OF
+                            APPLIED MATERIALS, INC.
+
+                             AMENDMENT OF BYLAWS
+
+                           Adopted on July 7, 1999
+
+
+                RESOLVED, that Article VIII, Section 8.1, of the bylaws of
+the Corporation be amended to read as follows:
+
+                "8.1    Amendment.  The bylaws of the corporation may be
+altered, amended or repealed or new bylaws may be adopted by
+either the (i) board of directors or (ii) stockholders upon the
+affirmative vote of the holders of not less than a majority of the
+total voting power of all issued and outstanding shares of stock
+in this corporation entitled to vote thereon."
+
+                RESOLVED FURTHER, that the Secretary of the Corporation
+hereby is directed to include in the corporate minute books copies of
+the foregoing amendment to the bylaws of the Corporation; and
+
+                RESOLVED FURTHER, that the proper officers of the
+Corporation are, and each hereby is, authorized and directed, jointly
+and severally, for and on behalf and in the name of the Corporation, to
+do or cause to be done any and all acts, including but not limited to
+the execution and delivery of any and all papers, agreements, documents,
+instruments and certificates, as such officers may deem necessary or
+appropriate to carry out the purposes and intent of the foregoing
+resolution, and the performance of any such acts, including but not
+limited to the execution and delivery by such officers of any such
+papers, agreements, documents, instruments and certificates, shall
+conclusively establish the authority of such officers therefor; and
+
+                RESOLVED FURTHER, that any actions taken by such officers
+prior to this action by the Board of Directors approving the foregoing
+resolutions that are within the authority conferred hereby are hereby
+ratified, confirmed and approved as the acts and deeds of the
+Corporation.
+
+
+</pre>
+</body>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27.0
+<SEQUENCE>6
+<DESCRIPTION>ART. 5 FINANCIAL DATA SCHEDULE FOR Q3 1999 FORM 10-Q
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE>      5
+<LEGEND>       THIS SCHEDULE CONTAINS SUMMARY FINANCIAL INFORMATION EXTRACTED
+               FROM THE CONSOLIDATED FINANCIAL STATEMENTS FOR THE NINE MONTHS
+               ENDED AUGUST 1, 1999.
+</LEGEND>
+<MULTIPLIER> 1,000
+
+<S>                                <C>
+<PERIOD-TYPE>                      9-MOS
+<FISCAL-YEAR-END>                  OCT-31-1999
+<PERIOD-START>                     OCT-26-1998
+<PERIOD-END>                       AUG-1-1999
+<CASH>                                 577,999
+<SECURITIES>                         1,680,616
+<RECEIVABLES>                        1,107,712  <F1>
+<ALLOWANCES>                                 0
+<INVENTORY>                            575,333
+<CURRENT-ASSETS>                     4,403,876
+<PP&E>                               2,060,736
+<DEPRECIATION>                         865,399
+<TOTAL-ASSETS>                       5,766,871
+<CURRENT-LIABILITIES>                1,402,027
+<BONDS>                                611,920  <F2>
+<PREFERRED-MANDATORY>                        0
+<PREFERRED>                                  0
+<COMMON>                                 3,784
+<OTHER-SE>                           3,664,099
+<TOTAL-LIABILITY-AND-EQUITY>         5,766,871
+<SALES>                              3,293,613
+<TOTAL-REVENUES>                     3,293,613
+<CGS>                                1,756,654
+<TOTAL-COSTS>                        1,756,654
+<OTHER-EXPENSES>                       478,546  <F3>
+<LOSS-PROVISION>                             0
+<INTEREST-EXPENSE>                      34,947
+<INCOME-PRETAX>                        636,145
+<INCOME-TAX>                           197,205
+<INCOME-CONTINUING>                    438,940
+<DISCONTINUED>                               0
+<EXTRAORDINARY>                              0
+<CHANGES>                                    0
+<NET-INCOME>                           438,940
+<EPS-BASIC>                             1.17  <F4>
+<EPS-DILUTED>                             1.11
+<FN>
+<F1>ITEM IS SHOWN NET OF ALLOWANCE, CONSISTENT WITH BALANCE SHEET PRESENTATION.
+<F2>ITEM CONSISTS OF LONG TERM DEBT.
+<F3>ITEM CONSISTS OF RESEARCH, DEVELOPMENT AND ENGINEERING EXPENSES.
+<F4>ITEM CONSISTS OF BASIC EARNINGS PER SHARE.
+</FN>
+
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----

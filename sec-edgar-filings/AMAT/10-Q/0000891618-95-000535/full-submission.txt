@@ -1,0 +1,1200 @@
+<SEC-DOCUMENT>0000891618-95-000535.txt : 19950914
+<SEC-HEADER>0000891618-95-000535.hdr.sgml : 19950914
+ACCESSION NUMBER:		0000891618-95-000535
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		4
+CONFORMED PERIOD OF REPORT:	19950730
+FILED AS OF DATE:		19950912
+SROS:			NASD
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			APPLIED MATERIALS INC /DE
+		CENTRAL INDEX KEY:			0000006951
+		STANDARD INDUSTRIAL CLASSIFICATION:	SPECIAL INDUSTRY MACHINERY, NEC [3559]
+		IRS NUMBER:				941655526
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1026
+
+	FILING VALUES:
+		FORM TYPE:		10-Q
+		SEC ACT:		1934 Act
+		SEC FILE NUMBER:	000-06920
+		FILM NUMBER:		95573322
+
+	BUSINESS ADDRESS:	
+		STREET 1:		3050 BOWERS AVE
+		CITY:			SANTA CLARA
+		STATE:			CA
+		ZIP:			95054
+		BUSINESS PHONE:		4087275555
+
+	FORMER COMPANY:	
+		FORMER CONFORMED NAME:	APPLIED MATERIALS TECHNOLOGY INC
+		DATE OF NAME CHANGE:	19730319
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<DESCRIPTION>FORM 10-Q FOR THEQUARTER ENDING JULY 30, 1995
+<TEXT>
+
+<PAGE>   1
+ 
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+ 
+                UNITED STATES SECURITIES AND EXCHANGE COMMISSION
+                              WASHINGTON, DC 20549
+ 
+                                   FORM 10-Q
+ 
+(MARK ONE)
+ 
+/X/ QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE
+     SECURITIES EXCHANGE ACT OF 1934
+
+     FOR THE QUARTERLY PERIOD ENDED JULY 30, 1995
+ 
+                                         OR
+ 
+/  / TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF
+     THE SECURITIES EXCHANGE ACT OF 1934
+
+     FOR THE TRANSITION PERIOD FROM___________TO____________
+     COMMISSION FILE NUMBER 0-6920
+ 
+                            APPLIED MATERIALS, INC.
+             (EXACT NAME OF REGISTRANT AS SPECIFIED IN ITS CHARTER)
+ 
+
+                   DELAWARE                                     94-1655526
+         (STATE OR OTHER JURISDICTION                        (I.R.S. EMPLOYER
+      OF INCORPORATION OR ORGANIZATION)                    IDENTIFICATION NO.)
+
+              3050 BOWERS AVENUE, SANTA CLARA, CALIFORNIA  95054-3299
+               (ADDRESS OF PRINCIPAL EXECUTIVE OFFICES)   (ZIP CODE)
+
+ 
+       REGISTRANT'S TELEPHONE NUMBER, INCLUDING AREA CODE (408) 727-5555
+ 
+     INDICATE BY CHECK MARK WHETHER THE REGISTRANT (1) HAS FILED ALL REPORTS
+REQUIRED TO BE FILED BY SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF
+1934 DURING THE PRECEDING 12 MONTHS (OR FOR SUCH SHORTER PERIOD THAT THE
+REGISTRANT WAS REQUIRED TO FILE SUCH REPORTS), AND (2) HAS BEEN SUBJECT TO SUCH
+FILING REQUIREMENTS FOR THE PAST 90 DAYS.
+ 
+                                YES  X   NO
+                                   -----     ----- 
+
+     NUMBER OF SHARES OUTSTANDING OF THE ISSUER'S COMMON STOCK AS OF JULY 30,
+1995: 89,171,379
+--------------------------------------------------------------------------------
+--------------------------------------------------------------------------------
+<PAGE>   2
+ 
+                                     PART I
+ 
+ITEM 1.  FINANCIAL INFORMATION
+ 
+                            APPLIED MATERIALS, INC.
+ 
+                CONSOLIDATED CONDENSED STATEMENTS OF OPERATIONS
+                                  (UNAUDITED)
+                     (IN THOUSANDS, EXCEPT PER SHARE DATA)
+ 
+<TABLE>
+<CAPTION>
+                                                 THREE MONTHS ENDED          NINE MONTHS ENDED
+                                               ----------------------    --------------------------
+                                               JULY 30,     JULY 31,      JULY 30,       JULY 31,
+                                                 1995         1994          1995           1994
+                                               ---------    ---------    -----------    -----------
+<S>                                            <C>          <C>          <C>            <C>
+Net sales....................................  $ 897,684    $ 440,228    $ 2,079,231    $ 1,192,009
+                                                --------     --------     ----------     ----------
+Costs and expenses:
+  Cost of products sold......................    489,256      234,656      1,127,781        641,067
+  Research, development and engineering......     85,789       52,494        219,178        135,386
+  Marketing and selling......................     62,520       39,851        158,566        113,254
+  General and administrative.................     44,109       20,279        109,096         60,500
+  Other, net.................................      2,633          701          4,286            815
+                                                --------     --------     ----------     ----------
+Income from operations.......................    213,377       92,247        460,324        240,987
+Interest expense.............................      5,527        3,659         17,161         10,779
+Interest income..............................      6,323        2,946         16,306          7,214
+                                                --------     --------     ----------     ----------
+Income from consolidated companies before
+  taxes and cumulative effect of accounting
+  change.....................................    214,173       91,534        459,469        237,422
+Provision for income taxes...................     74,961       32,036        160,814         83,097
+                                                --------     --------     ----------     ----------
+Income from consolidated companies before
+  cumulative effect of accounting change.....    139,212       59,498        298,655        154,325
+Equity in net loss of joint venture..........         --        1,362             --          3,727
+                                                --------     --------     ----------     ----------
+Income before cumulative effect of accounting
+  change.....................................    139,212       58,136        298,655        150,598
+Cumulative effect of a change in accounting
+  for income taxes...........................         --           --             --          7,000
+                                                --------     --------     ----------     ----------
+Net income...................................  $ 139,212    $  58,136    $   298,655    $   157,598
+                                                --------     --------     ----------     ----------
+Earnings per share:
+  Before cumulative effect of accounting
+     change..................................  $    1.57    $    0.68    $      3.42    $      1.78
+                                                --------     --------     ----------     ----------
+  Net income.................................  $    1.57    $    0.68    $      3.42    $      1.86
+                                                --------     --------     ----------     ----------
+Average common shares and equivalents........     88,877       86,033         87,399         84,654
+                                                ========     ========     ==========     ==========
+</TABLE>
+ 
+     See accompanying notes to consolidated condensed financial statements.
+ 
+                                        2
+<PAGE>   3
+ 
+                            APPLIED MATERIALS, INC.
+ 
+                     CONSOLIDATED CONDENSED BALANCE SHEETS*
+                                 (IN THOUSANDS)
+ 
+<TABLE>
+<CAPTION>
+                                                                       JULY 30,       OCT. 30,
+                                                                         1995           1994
+                                                                      -----------    -----------
+<S>                                                                   <C>            <C>
+                                 ASSETS
+Current assets:
+  Cash and cash equivalents.........................................  $   262,363    $   160,320
+  Short-term investments............................................      437,382        262,005
+  Accounts receivable, net..........................................      778,113        405,813
+  Inventories.......................................................      391,229        245,710
+  Deferred income taxes.............................................      104,646         99,766
+  Other current assets..............................................       84,470         56,923
+                                                                       ----------     ----------
+Total current assets................................................    2,058,203      1,230,537
+Property, plant and equipment, net..................................      557,718        452,454
+Other assets........................................................       22,210         19,674
+                                                                       ----------     ----------
+          Total assets..............................................  $ 2,638,131    $ 1,702,665
+                                                                       ==========     ==========
+                 LIABILITIES AND STOCKHOLDERS' EQUITY
+Current liabilities:
+  Notes payable.....................................................  $    73,607    $    43,081
+  Current portion of long-term debt.................................       25,428         15,432
+  Accounts payable and accrued expenses.............................      595,303        378,238
+  Income taxes payable..............................................       65,625         59,682
+                                                                       ----------     ----------
+Total current liabilities...........................................      759,963        496,433
+Long-term debt......................................................      231,103        209,114
+Deferred income taxes and other non-current obligations.............       39,748         30,854
+                                                                       ----------     ----------
+Total liabilities...................................................    1,030,814        736,401
+                                                                       ----------     ----------
+Stockholders' equity:
+  Common stock......................................................          893            841
+  Additional paid-in capital........................................      720,644        390,655
+  Retained earnings.................................................      844,581        545,926
+  Cumulative translation adjustments................................       41,199         28,842
+                                                                       ----------     ----------
+Total stockholders' equity..........................................    1,607,317        966,264
+                                                                       ----------     ----------
+          Total liabilities and stockholders' equity................  $ 2,638,131    $ 1,702,665
+                                                                       ==========     ==========
+</TABLE>
+ 
+---------------
+* Amounts as of July 30, 1995 are unaudited. Amounts as of October 30, 1994 were
+  obtained from the October 30, 1994 audited financial statements.
+ 
+     See accompanying notes to consolidated condensed financial statements.
+ 
+                                        3
+<PAGE>   4
+ 
+                            APPLIED MATERIALS, INC.
+ 
+                CONSOLIDATED CONDENSED STATEMENTS OF CASH FLOWS
+                                  (UNAUDITED)
+                                 (IN THOUSANDS)
+ 
+<TABLE>
+<CAPTION>
+                                                                          NINE MONTHS ENDED
+                                                                       -----------------------
+                                                                       JULY 30,      JULY 31,
+                                                                         1995          1994
+                                                                       ---------     ---------
+<S>                                                                    <C>           <C>
+Cash from operating activities:
+Net income...........................................................  $ 298,655     $ 157,598
+                                                                       ---------     ---------
+Adjustments required to reconcile net income to net cash flow
+  provided by operations:
+  Depreciation and amortization......................................     54,047        42,223
+  Cumulative effect of a change in accounting for income taxes.......         --        (7,000)
+  Equity in net loss of joint venture................................         --         3,727
+  Changes in assets and liabilities:
+     Accounts receivable.............................................   (354,523)     (125,005)
+     Inventories.....................................................   (136,241)      (81,181)
+     Deferred income taxes...........................................     (3,111)           --
+     Other current assets............................................    (26,282)       (6,353)
+     Other assets....................................................     (1,380)       (3,399)
+     Accounts payable and accrued expenses...........................    195,272        57,860
+     Income taxes payable............................................      7,015        (3,799)
+     Deferred income taxes and other long-term liabilities...........      7,185         4,441
+                                                                       ---------     ---------
+Cash provided by operations..........................................     40,637        39,112
+                                                                       ---------     ---------
+Cash flows from investing activities:
+  Capital expenditures...............................................   (144,569)     (121,363)
+  Proceeds from sales of short-term investments......................    165,244       115,114
+  Purchases of short-term investments................................   (340,620)     (183,034)
+                                                                       ---------     ---------
+Cash used for investing..............................................   (319,945)     (189,283)
+                                                                       ---------     ---------
+Cash flows from financing activities:
+  Short-term debt borrowings (repayments), net.......................     25,401           236
+  Long-term borrowings, including current portion....................     33,040            --
+  Long-term debt repayments..........................................     (5,130)       (3,863)
+  Sales of common stock, net.........................................    330,041       106,861
+                                                                       ---------     ---------
+Cash provided by financing...........................................    383,352       103,234
+                                                                       ---------     ---------
+Effect of exchange rate changes on cash..............................     (2,001)          849
+                                                                       ---------     ---------
+Increase (decrease) in cash and cash equivalents.....................    102,043       (46,088)
+Cash and cash equivalents at beginning of period.....................    160,320       119,597
+                                                                       ---------     ---------
+Cash and cash equivalents at end of period...........................  $ 262,363     $  73,509
+                                                                       =========     =========
+</TABLE>
+ 
+     Cash payments for interest expense were $13,696 and $8,355 for the nine
+months ended July 30, 1995 and July 31, 1994, respectively. Cash payments for
+income taxes were $145,573 and $63,264 for the nine months ended July 30, 1995
+and July 31, 1994, respectively.
+ 
+     See accompanying notes to consolidated condensed financial statements.
+ 
+                                        4
+<PAGE>   5
+ 
+                            APPLIED MATERIALS, INC.
+ 
+        NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS (UNAUDITED)
+                        NINE MONTHS ENDED JULY 30, 1995
+                                 (IN THOUSANDS)
+ 
+1) BASIS OF PRESENTATION
+ 
+     In the opinion of management, the unaudited consolidated condensed interim
+financial statements included herein have been prepared on the same basis as the
+October 30, 1994 audited consolidated financial statements and include all
+adjustments, consisting of only normal recurring adjustments, necessary to
+fairly state the information set forth therein. Certain amounts in the
+consolidated statement of cash flows for the nine months ended July 31, 1994
+have been reclassified to conform with the current period's presentation.
+ 
+2) EARNINGS PER SHARE
+ 
+     Earnings per share is computed on the basis of the weighted average number
+of common shares and common equivalent shares from dilutive stock options.
+ 
+3) INVENTORIES
+ 
+     Inventories are stated at the lower of cost or market, with cost determined
+on the basis of first-in, first-out (FIFO).
+ 
+     The components of inventories are as follows:
+ 
+<TABLE>
+<CAPTION>
+                                                               JULY 30, 1995     OCTOBER 30, 1994
+                                                               -------------     ----------------
+    <S>                                                        <C>               <C>
+    Customer service spares..................................    $ 126,747           $ 75,860
+    Systems raw materials....................................       93,669             56,309
+    Work-in-process..........................................      127,324             81,389
+    Finished goods...........................................       43,489             32,152
+                                                                  --------           --------
+                                                                 $ 391,229           $245,710
+                                                                  ========           ========
+</TABLE>
+ 
+4) SHORT-TERM INVESTMENTS
+ 
+     Effective October 31, 1994, the Company adopted Statement of Financial
+Accounting Standards No. 115 (SFAS 115), Accounting for Certain Investments in
+Debt and Equity Securities. In accordance with SFAS 115, prior year financial
+statements have not been restated to reflect the change in accounting method.
+There was no cumulative effect as a result of adopting SFAS 115 in fiscal 1995.
+ 
+     SFAS 115 requires investment securities to be classified as either held to
+maturity, trading or available for sale. Management determines the appropriate
+classification of its investments in debt securities at the time of purchase and
+reevaluates such determination at each balance sheet date. The Company reviewed
+its portfolio as of July 30, 1995 and determined its short-term investment
+portfolio to be available for sale. Under SFAS 115, investments classified as
+available for sale are required to be recorded at fair value and any temporary
+difference between an investment's cost and its fair value is required to be
+recorded as a separate component of stockholders' equity. At July 30, 1995, the
+fair value of the Company's short-term investments approximated cost.
+ 
+                                        5
+<PAGE>   6
+ 
+                            APPLIED MATERIALS, INC.
+ 
+                        NOTES TO CONSOLIDATED CONDENSED
+                FINANCIAL STATEMENTS (UNAUDITED) -- (CONTINUED)
+ 
+     Short-term investments at July 30, 1995 are comprised of the following:
+ 
+<TABLE>
+    <S>                                                                         <C>
+    Obligations of States and Political Subdivisions..........................  $ 97,025
+    U.S. Commercial Paper, Corporate Bonds, and Medium Term Notes.............    92,238
+    Bank Certificates of Deposit..............................................   105,017
+    U.S. Treasury Securities..................................................   125,688
+    Other Debt Securities.....................................................    17,414
+                                                                                --------
+                                                                                $437,382
+                                                                                ========
+</TABLE>
+ 
+     Gross unrealized holding gains and losses and gross realized gains and
+losses on sales of short-term investments were not significant as of or for the
+three or nine month periods ended July 30, 1995.
+ 
+     Information about the contractual maturities of short-term investments at
+July 30, 1995 is as follows:
+ 
+<TABLE>
+    <S>                                                                         <C>
+    Due in one year or less...................................................  $319,572
+    Due after one year through three years....................................    38,169
+    Due after three years.....................................................    79,641
+                                                                                --------
+                                                                                $437,382
+                                                                                ========
+</TABLE>
+ 
+5) DERIVATIVE FINANCIAL INSTRUMENTS
+ 
+     The Company enters into forward exchange contracts to hedge certain firm
+commitments denominated in foreign currencies and purchases currency option
+contracts to hedge certain anticipated, but not yet committed, transactions
+expected to be denominated in foreign currencies. The purpose of the Company's
+foreign currency management activity is to protect the Company from the risk
+that the eventual cash flows from foreign currency denominated transactions may
+be adversely affected by changes in exchange rates. The term of the currency
+instruments used is consistent with the timing of the committed or anticipated
+transactions being hedged. The Company does not hold or issue financial
+instruments for trading or speculative purposes.
+ 
+     Deferred results of option and forward contracts are recognized in income
+when the related transactions being hedged are recognized. At July 30, 1995,
+premiums on purchased option contracts which have been deferred were $5,410.
+Deferred gains and losses on forward contracts were not material. At July 30,
+1995, the Company had forward exchange contracts to sell U.S. dollars for
+foreign currency with notional amounts of $261,758 and forward exchange
+contracts to buy U.S. dollars for foreign currency with notional amounts of
+$500,160. At July 30, 1995, the Company had purchased currency option contracts,
+with gross notional amounts of $447,619. All currency forward and option
+contracts have maturities of less than two years and are primarily to buy or
+sell Japanese yen in exchange for U.S. dollars. Management believes that these
+forward contracts and purchased option contracts should not subject the Company
+to undue risk due to foreign exchange movements because gains and losses on
+these contracts should offset gains and losses on the assets, liabilities and
+transactions being hedged. The Company is exposed to credit-related losses in
+the event of nonperformance by counterparties to financial instruments, but it
+does not expect any counterparties to fail to meet their obligations, given
+their credit ratings.
+ 
+6) STOCKHOLDERS' EQUITY
+ 
+     In July 1995, the Company sold 4,025 shares of common stock in a public
+offering at a price of $82.75 per share prior to underwriters' commission.
+Proceeds after underwriters' commission and other estimated offering costs were
+$321,242.
+ 
+                                        6
+<PAGE>   7
+ 
+                            APPLIED MATERIALS, INC.
+ 
+                        NOTES TO CONSOLIDATED CONDENSED
+                FINANCIAL STATEMENTS (UNAUDITED) -- (CONTINUED)
+ 
+7) LONG-TERM DEBT
+ 
+     On August 24, 1995, the Company commenced a program to offer from time to
+time up to $266,931 in medium-term notes. On September 5, 1995, the Company
+issued $53 million in medium-term notes due in five and ten years at interest
+rates ranging from 6.65 to 7.0 percent. The remaining notes may be issued at
+fixed or floating interest rates, as determined at the time of issuance. The
+notes contain certain financial covenants that include limitations on additional
+borrowings by U.S. subsidiaries, liens placed on assets, and sale and leaseback
+transactions.
+ 
+                                        7
+<PAGE>   8
+ 
+                                     PART I
+ 
+ITEM 2.
+ 
+                            APPLIED MATERIALS, INC.
+ 
+          MANAGEMENT'S DISCUSSION AND ANALYSIS OF FINANCIAL CONDITION
+                           AND RESULTS OF OPERATIONS
+ 
+     For the third quarter of fiscal 1995 Applied Materials, Inc. reported net
+sales of $898 million. New orders of $1.01 billion were received during the
+third quarter of fiscal 1995, and backlog at July 30, 1995 was $1.35 billion, up
+from $1.22 billion at the end of the second quarter.
+ 
+RESULTS OF OPERATIONS
+ 
+     The Company's worldwide net sales for the three and nine month periods
+ended July 30, 1995 increased by 104 percent and 74 percent, respectively, from
+the corresponding periods in fiscal 1994. This growth can be primarily
+attributed to increased unit sales of the Company's single-wafer, multi-chamber
+systems for all the regions served by the Company and increases in customer
+support revenues. Compared with the nine months ended July 31, 1994, sales for
+fiscal 1995 for each of the Company's product lines and customer support were up
+significantly. Regionally, 70 percent of the Company's net sales for the third
+quarter of fiscal 1995 were to customers located outside North America compared
+to 61 percent in the comparable 1994 period. Sales to customers located outside
+North America represented 66 percent for the nine months ended July 30, 1995
+compared to 62 percent in the comparable period in fiscal 1994. Fiscal 1995 year
+to date sales to customers located in Asia-Pacific increased 197 percent from
+the prior year and accounted for 28 percent of the Company's fiscal 1995 year to
+date sales, an increase from 16 percent in the comparable fiscal period in 1994.
+This increase was driven primarily by revenue from systems shipped in response
+to large orders placed by Korean customers. As a percentage of the Company's
+fiscal 1995 year to date sales, both Europe and Japan decreased to 14 percent
+and 24 percent, respectively, compared to 19 percent and 27 percent for the
+comparable fiscal 1994 period. While sales in all regions increased for the nine
+month period ended July 30, 1995 from the comparable period in the previous
+year, the percentage of total sales in each region was impacted by the
+significant sales growth in Asia-Pacific.
+ 
+     Year to date fiscal 1995 new orders increased in all geographic regions
+when compared to the comparable period in fiscal 1994. New orders received from
+Asia-Pacific customers represented 27 percent of the total orders received in
+the nine months ended July 30, 1995, as compared to 21 percent in the comparable
+fiscal period in 1994, as dynamic random access memory (DRAM) manufacturers
+continued placing large orders for new eight-inch equipment to be used for 16
+Mbit production and 64 Mbit pilot lines. Asia-Pacific customers are expected to
+continue to account for a high share of the Company's sales in the near term
+driven by the high 1995 order levels. New orders received during the nine months
+ended July 30, 1995 in North America, Europe and Japan were 32, 16 and 25
+percent of total orders received, respectively, compared to 37, 17 and 25
+percent in the comparable period of fiscal 1994. The global semiconductor
+equipment market remains strong, yet each region exhibits unique investment
+patterns causing regional order rates to vary from quarter to quarter. The
+combined orders from North America, Europe, Japan and Asia-Pacific appear to be
+sustainable at current levels during the remainder of fiscal 1995.
+ 
+     Gross margin as a percentage of sales for the three and nine month periods
+ended July 30, 1995 was 46 percent, and has remained consistent when compared to
+the gross margins of 47 percent and 46 percent for the respective three and nine
+month periods ended July 31, 1994. The ramp in shipments during the second and
+third quarters of fiscal 1995 resulted in slight production inefficiencies and
+costs which reduced the gross margin by one percentage point when comparing the
+three month period ended July 30, 1995 to the corresponding period in 1994. Past
+margin trends are not necessarily indicative of future margin performance.
+ 
+     Operating expenses as a percentage of sales for the three and nine month
+periods ended July 30, 1995 improved to 22 percent and 24 percent, respectively,
+compared to 26 percent for both corresponding periods in fiscal 1994. This
+improvement is driven primarily by the Company's record sales levels and the
+Company's efforts to grow operating expenses at a lower rate than revenues. The
+Company intends to continue to invest
+ 
+                                        8
+<PAGE>   9
+ 
+significant funds for facilities expansion, information systems technology and
+personnel to support higher volumes of business. Thus there can be no
+assurance that the Company will be successful in maintaining or improving future
+operating expenses as a percentage of sales.
+ 
+     Significant operations of the Company are conducted in Japanese yen,
+British pounds sterling and other European currencies. Forward exchange
+contracts and options are purchased to hedge certain existing firm commitments
+and anticipated foreign currency denominated transactions over the next two
+years. Gains and losses on hedge contracts are reported as a component of the
+related transaction. Because the impact of movements in currency exchange rates
+on foreign exchange contracts offsets the related impact on the underlying items
+being hedged, these financial instruments do not subject the Company to
+speculative risk that would otherwise result from changes in currency exchange
+rates. While not significant, the continued strength of the Japanese yen
+relative to the U.S. dollar has resulted in a favorable impact to the Company's
+results of operations after the effects of the foreign currency hedging
+activities. To date, exchange gains and losses resulting from translation of
+foreign currencies into U.S. dollars have not had a significant effect on the
+Company's results of operations.
+ 
+     The Company's effective tax rate for the three and nine month periods ended
+July 30, 1995 was 35 percent, consistent with fiscal 1994. Management
+anticipates that the 35 percent effective tax rate will continue through the end
+of fiscal 1995.
+ 
+     The market served by the Company is characterized by rapid technological
+change, increasingly precise customer specifications and global service
+requirements. The Company's future operating results may be affected by inherent
+uncertainties characteristic of the worldwide semiconductor equipment industry.
+Such uncertainties include, but are not limited to, the development of new
+technologies, the anticipated transition to a new generation of semiconductor
+devices, competitive pricing pressures, global economic conditions, and the
+availability of needed components. Accordingly, recent historical operating
+results should be only one factor in evaluating the future financial performance
+of the Company.
+ 
+     On August 15, 1995, the Company announced that James W. Bagley, Vice
+Chairman and Chief Operating Officer, will transition out of his role as Chief
+Operating Officer. This transition will take place at the end of fiscal 1995. He
+will continue to serve as Vice Chairman of the Board of Directors and will
+remain an active executive of the Company focusing on long-term global
+initiatives and strategies.
+ 
+FINANCIAL CONDITION, LIQUIDITY AND CAPITAL RESOURCES
+ 
+     The Company's financial condition at July 30, 1995 remained strong. Total
+current assets exceeded total current liabilities by 2.7 times, compared to 2.5
+at October 30, 1994. During the nine month period ended July 30, 1995, cash,
+cash equivalents, and short-term investments increased by $277 million. This
+increase is primarily attributable to the sale of 4,025,000 shares of common
+stock in July 1995. The Company raised $321 million, net of underwriters'
+commissions and other estimated offering costs. Cash provided by operations
+since October 30, 1994 totaled $41 million resulting primarily from net income
+and increases in accounts payable and accrued expenses offset by increases in
+accounts receivable and inventory. The increase in accounts receivable was due
+to increased sales volumes over the prior period. Inventory levels have
+increased primarily to fulfill customer orders scheduled for delivery in the
+last quarter of fiscal 1995 and early fiscal 1996. Other sources of cash include
+short and long-term borrowings of $25 and $33 million, respectively, offset by
+$5 million of borrowing reductions. Uses of cash include investments in
+facilities and capital equipment of $145 million. Capital expenditures are
+expected to be approximately $265 million for fiscal year 1995. This amount
+includes funds for global facilities expansion, investments in demonstration and
+test equipment, information systems and other capital expenditures.
+ 
+     At July 30, 1995, the Company's principal sources of liquidity consisted of
+$700 million of cash, cash equivalents and short-term investments and $189
+million in available U.S. and foreign credit facilities. In addition, the
+Company filed a shelf registration with the Securities and Exchange Commission
+during the third quarter of fiscal 1995 for the sale of common stock and
+issuance of debt securities. The sale of 4,025,000 shares of common stock
+occurred in July 1995 raising approximately $333 million before underwriters'
+commission and other estimated offering costs. Additionally, the Company
+registered approximately $267 million in medium-term notes on August 24,
+ 
+                                        9
+<PAGE>   10
+ 
+1995. These notes may be issued from time to time, at fixed or floating interest
+rates, as determined at the time of issuance (see also footnote 7 of the notes
+to consolidated condensed financial statements). The Company's liquidity is
+affected by many factors, some based on the typical on-going operations of the
+business and others related to the uncertainties of the industry and global
+economies. Management believes that cash generated from operations, together
+with the liquidity provided by existing cash balances and current borrowing
+arrangements, will be sufficient to support operations through the fiscal year.
+ 
+                           PART II OTHER INFORMATION
+ 
+ITEM 1.  LEGAL PROCEEDINGS
+ 
+     In the first of two lawsuits filed by the Company, captioned Applied
+Materials Inc. v. Advanced Semiconductor Materials America, Inc., Epsilon
+Technology, Inc. (doing business as ASM Epitaxy) and Advanced Semiconductor
+Materials International N.V. (collectively "ASM") (case no. C-91-20061-RMW),
+Judge William Ingram of the United States District Court for the Northern
+District of California on April 26, 1994, ruled that ASM's Epsilon I infringes
+certain of the Company's United States patents and issued an injunction against
+ASM's use and sale of the ASM Epsilon I epitaxial reactor in the United States.
+ASM has appealed the decision and the injunction has been stayed, as it concerns
+ASM products other than those offered for sale as of April 1994, pending the
+appeal. The stay order requires that ASM pay a fee, as security for the
+Company's interest, for each Epsilon I system sold by ASM in the United States
+after the date of the injunction. Judge Ronald M. Whyte of the same Court ruled
+that proceedings to resolve the issues of damages, willful infringement and
+ASM's counterclaims, which had been bifurcated for separate trial, will also be
+stayed pending the appeal of Judge Ingram's decision. Oral arguments regarding
+this appeal were completed on June 5, 1995, before the Court of Appeals for the
+Federal Circuit. The trial of the Company's second patent infringement lawsuit
+against ASM, captioned Applied Materials Inc. v. ASM (case no. C-92-20643-RMW),
+was concluded before Judge Whyte in May 1995. Although the matter is under
+consideration based on the evidence at trial, the Court has no scheduled date
+for a decision.
+ 
+     ASM's separate lawsuit against the Company, involving one patent relating
+to the Company's single wafer epitaxial product line, captioned ASM America Inc.
+v. Applied Materials Inc. (case no. C-93-20853-RMW), is currently scheduled for
+trial in February 1996. ASM has requested a stay of these proceedings pending
+its separate request for further proceedings regarding this patent in the U.S.
+Patent and Trademark Office. The Court tentatively denied this request for stay,
+and the case is proceeding through discovery and pretrial preparation. A
+separate action severed from ASM's case, captioned ASM America Inc. v. Applied
+Materials Inc. (case no. C-95-20169-RWM), involves one patent which relates to
+the Company's Precision 5000 product line. No trial date has been set. Discovery
+and pretrial investigation is proceeding.
+ 
+     Further, the Company has filed a Declaratory Judgment action against ASM,
+captioned Applied Materials, Inc. v. ASM (case no. C-95-20003-RMW), requesting
+that an ASM patent be held invalid and not infringed by the Company's single
+wafer epitaxial product line. Discovery and pretrial investigation is
+proceeding. No trial date has been set. Finally, on July 7, 1995, ASM filed a
+lawsuit, captioned ASM America Inc. v. Applied Materials Inc. (case no.
+C95-02458-VRW), concerning susceptors in chemical vapor deposition chambers.
+Investigation has just commenced. No discovery has been pursued as yet. And no
+trial date has been set.
+ 
+     In September, 1994, General Signal Corporation filed a lawsuit against the
+Company (case no. 94-461-JJF) in the United States District Court, District of
+Delaware. General Signal alleges that the Company infringes five of General
+Signal's United States patents by making, using, selling or offering for sale
+multichamber wafer fabrication equipment, including for example, the Precision
+5000 series machines. General Signal seeks an injunction, multiple damages and
+costs, including reasonable attorneys' fees and interest, and such other relief
+as the court may deem just and proper. This lawsuit is currently in discovery
+and no trial date has been set.
+ 
+     In January, 1995, the Company filed a lawsuit against Novellus Systems,
+Inc. in the United States District Court, Northern District of California (case
+no. C-95-0243-MMC). This lawsuit alleges that
+ 
+                                       10
+<PAGE>   11
+ 
+Novellus' Concept One and Concept Two systems infringe the Company's U.S. patent
+relating to TEOS-based, plasma enhanced CVD process for silicon oxide
+deposition. The lawsuit seeks an injunction, multiple damages and costs,
+including reasonable attorneys' fees and interest, and such other relief as the
+court may deem just and proper. Damages have been bifurcated for separate trial.
+A jury trial has been set for May 6, 1996, before the Honorable Maxine M.
+Chesney.
+ 
+     In the normal course of business, the Company from time to time receives
+and makes inquiries with regard to possible patent infringement. Management
+believes that it is unlikely that the outcome of these lawsuits or of the patent
+infringement inquiries will have a material adverse effect on the Company's
+financial position or results of operations.
+ 
+ITEM 5.  OTHER INFORMATION
+ 
+     The ratio of earnings to fixed charges for the nine months ended July 30,
+1995 and July 31, 1994 and each of the five years in the period ended October
+30, 1994 are as follows:
+ 
+<TABLE>
+<CAPTION>
+  NINE MONTHS ENDED
+----------------------                      FISCAL YEAR
+JULY 30,     JULY 31,     -----------------------------------------------
+  1995         1994        1994       1993      1992      1991      1990
+---------    ---------    -------    ------    ------    ------    ------
+<S>          <C>          <C>        <C>       <C>       <C>       <C>
+ 16.43x       13.04x      13.37x     7.61x     3.63x     3.02x     5.89x
+=========     ======      ======     ======    =====     =====     =====
+</TABLE>
+ 
+ITEM 6.  EXHIBITS AND REPORTS ON FORM 8-K
+ 
+     a) Exhibits are numbered in accordance with the Exhibit Table of Item 601
+of Regulation S-K:
+ 
+     10.25 -- Employment Agreement with James Bagley, dated August 15, 1995
+ 
+     12.1  -- Ratio of Earnings to Fixed Charges
+ 
+     27.0  -- Financial Data Schedule: filed electronically
+ 
+     b) No reports on Form 8-K were filed by the Company during the quarter
+ended July 30, 1995.
+ 
+                                       11
+<PAGE>   12
+ 
+                                   SIGNATURE
+ 
+     Pursuant to the requirements of the Securities Exchange Act of 1934, the
+registrant has duly caused this report to be signed on its behalf by the
+undersigned thereunto duly authorized.
+ 
+                                          APPLIED MATERIALS, INC.
+ 
+                                          By:     /s/  GERALD F. TAYLOR
+ 
+                                            ------------------------------------
+                                                      Gerald F. Taylor
+                                                 Senior Vice President and
+                                                  Chief Financial Officer
+                                               (Principal Financial Officer)
+ 
+
+                                          By:   /s/  MICHAEL K. O'FARRELL
+ 
+                                            ------------------------------------
+                                                    Michael K. O'Farrell
+                                                    Corporate Controller
+                                               (Principal Accounting Officer)
+ 
+September 11, 1995
+ 
+                                       12
+<PAGE>   13
+ 
+                               INDEX TO EXHIBITS
+ 
+     Exhibits are number in accordance with the Exhibit Table of Item 601 of
+Regulation S-K:
+ 
+<TABLE>
+<S>    <C>  <C>
+10.25    -- Employment Agreement with James Bagley, dated August 15, 1995
+ 12.1    -- Ratio of Earnings to Fixed Charges
+ 27.0    -- Financial Data Schedule: filed electronically
+</TABLE>
+ 
+                                       13
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-10.25
+<SEQUENCE>2
+<DESCRIPTION>EMPLOYMENT AGREEMENT
+<TEXT>
+
+<PAGE>   1
+                                                                EXHIBIT 10.25
+CONFIDENTIAL
+
+                              EMPLOYMENT AGREEMENT
+
+                 This AGREEMENT, made effective as of August 15, 1995, between
+Applied Materials, Inc., a Delaware corporation (the "Company"), a corporation
+having its principal office at 3050 Bowers Avenue, Santa Clara, California, and
+James W. Bagley ("Executive").
+
+                                    RECITALS
+
+                 The Company desires to retain the services and employment of
+Executive for the period provided in this Agreement, and Executive is willing to
+continue employment by the Company on a full-time basis for such period, upon
+the terms and conditions hereinafter set forth.
+
+                 The execution of this Agreement has been duly authorized by the
+Board of Directors of the Company ("Board"), and the terms of compensation
+contained herein have been approved by the Stock Option And Compensation
+Committee ("Committee") of the Board.
+
+                 NOW, THEREFORE, in consideration of the foregoing premises and
+the mutual covenants herein contained, the parties hereto agree as follows:
+
+                 1. Employment. The Company agrees to employ Executive and
+Executive agrees to accept employment by the Company, for the period stated in
+paragraph 3 hereof and upon the other terms and conditions herein provided.
+
+                 2. Position and Responsibilities. Until October 30, 1995,
+Executive agrees to serve the Company and the Company shall employ Executive as
+a member of and Vice Chairman of the Board, Chief Operating Officer of the
+Company and member of the Office of the Chief Executive Officer ("OCEO") of the
+Company. From October 30, 1995, through July 31, 1996, Executive agrees to serve
+the Company, and the Company shall employ Executive as a member of and Vice
+Chairman of the Board, and as an advisor to the Board and its Chairman on
+business, management and performance issues related to the Company.
+
+                 3. Terms and Duties.
+
+                          (a) Terms of Employment. The initial period of
+Executive's employment under this Agreement shall commence on the date of this
+Agreement, and shall continue through October 29, 1995 (the "Initial Term") and
+the second period of Executive's employment under this agreement shall commence
+October 30, 1995 and continue through July 31, 1996 (the "Second Term").
+
+                          (b) Duties. During the period of his employment
+hereunder and except for illness and reasonable vacation periods, Executive
+shall devote his best efforts and
+
+
+<PAGE>   2
+
+
+skills to the business and affairs of the Company and its affiliated companies,
+as such business and affairs now exist and as they may be hereafter changed or
+added to, under and pursuant to the general direction of the Chairman of the
+Company; provided, however, that Executive may serve, or continue to serve, on
+the boards of directors of and hold any other offices or positions in, companies
+or organizations which will not present any conflict of interest with the
+Company or any of its subsidiaries or affiliates or divisions, or materially
+affect the performance of Executive's duties pursuant to this Agreement. The
+Company shall retain full direction and control of the means and methods by
+which Executive performs the services for which he is employed hereunder.
+Executive's services are to be rendered in the State of Texas, or in such other
+place or places in the United States or elsewhere as may be determined from time
+to time by the Board. Executive shall not be required to perform duties or
+represent the Company in a manner which he reasonably believes would impair or
+jeopardize his position or reputation within the semiconductor and semiconductor
+equipment industries or the financial community.
+
+                 4. Compensation and Reimbursement of Expenses; Other Benefits.
+
+                           (a) Compensation. The Company shall compensate
+Executive during the period of employment under this Agreement as follows:
+
+                           (i) Base Salary.  An annualized base salary 
+                 ("Base Salary"), of not less than $439,950;
+
+                          (ii) Bonuses. As a member of OCEO, the Executive's
+                 bonus for fiscal year 1995 shall be determined using the same
+                 formula and parameters as the other members of the OCEO and
+                 will be deferred pursuant to Executive's election under the
+                 Executive Deferred Compensation Plan. An additional bonus (not
+                 payable under the Senior Executive Bonus Plan) shall be awarded
+                 to Executive in December 1996 using the same formula and
+                 parameters as were used to compute the fiscal year 1996 OCEO
+                 bonuses. The bonus for fiscal year 1996 will be computed on the
+                 salary earned (both paid and deferred) for fiscal 1996 and, if
+                 the Executive elects in accordance with the Executive Deferred
+                 Compensation Plan, will be deferred in accordance with the
+                 Executive's election;
+
+                          (iii) Other Benefits. During the period of employment
+                 under this Agreement, Executive shall be entitled to receive
+                 all other benefits of employment generally available to other
+                 members of the Company's management and those benefits for
+                 which key executives are or shall become eligible;
+
+                          (iv) Administrative Assistant. During both the Initial
+                 Term and Second Term of this Agreement, the Company will retain
+                 a person selected by Executive as his administrative assistant,
+                 and will provide such person with compensation and other
+                 benefits no less than those compensation and benefits in effect
+                 for the Executive's administrative assistant on July 10, 1995.
+                 Travel expenses for Executive and his administrative assistant,
+                 as Executive deems
+
+
+                                  Page 2 of 7
+<PAGE>   3
+
+
+
+         appropriate for the fulfillment of his duties, will be authorized in a
+         manner consistent with the Company's current practices.
+
+                          (b) Reimbursement of Expenses. The Company shall pay
+or reimburse Executive for all reasonable expenses incurred by Executive in
+performing his duties under this Agreement. The Company furthers agrees to
+furnish Executive with his current or equivalent office and conference room
+facilities, together with such assistance and accommodations as shall be
+suitable to the character of Executive's position with the Company and adequate
+for the performance of his duties hereunder.
+
+                 5.       Obligations of Executive During and After Employment.
+
+                          (a) Executive agrees that during the term of his 
+employment under this Agreement, he will engage in no other business activities,
+directly or indirectly, which are or may be competitive with or which might 
+place him in a competing position to that of the Company, or any affiliated 
+company, without the written consent of the Board.
+
+                          (b) Executive realizes that during the course of his 
+employment he will have produced and/or have access to confidential information,
+records, notebooks, data, formulae, specifications, trade secrets, customer
+lists, inventions and processes of Company and its affiliated companies.
+Therefore, during and subsequent to his employment by the Company, or by an
+affiliated company, Executive agrees to hold in confidence and not directly or
+indirectly to disclose or use or copy or make lists of any such information,
+except to the extent authorized by the Company in writing. All records, files,
+drawings, documents, equipment, and the like, or copies thereof, relating to the
+Company's business, or the business of an affiliated company, which Executive
+shall prepare, or use, or come into contact with, shall be and remain the sole
+property of Company, or of an affiliated company, and shall not be removed from
+the Company's or the affiliated Company's premises without its written consent,
+and shall be promptly returned to the Company upon termination of the
+Executive's employment with the Company and its affiliated companies.
+
+                 6.       Termination By Company.
+
+                          (a) Termination For Cause.  The Company may terminate
+the employment of Executive "for Cause" at any time upon written notice to
+Executive specifying the cause of termination. If terminated pursuant to this
+Section 6(a), the then current Base Salary shall be paid on a prorated basis to
+the date of termination. For purposes of this Agreement, "for Cause" shall mean
+the discharge resulting from a determination by the Company that Executive (i)
+has been convicted of a crime involving moral turpitude, including fraud, theft
+or embezzlement, (ii) has failed or refused (in a material respect) to follow
+reasonable policies or directives established by the Board which failure or
+refusal continues for thirty (30) days following written notice thereof to
+Executive, or (iii) has willfully and persistently failed to attend to material
+duties or obligations imposed on him under this Agreement. A termination by the
+Company under this Section 6(a) shall not prejudice any remedy to which the
+Company may be entitled either at law, in equity, or under this Agreement.
+
+                                   Page 3 of 7
+<PAGE>   4
+
+
+
+
+                 (b) Termination Without Cause. The Company may terminate the
+employment of Executive without cause at any time after October 29, 1995, upon
+written notice to Executive; provided, however, that the Company shall be
+obligated to pay Executive, as severance, an amount equal to the Base Salary for
+the balance of the Second Term. Executive shall also be paid a cash bonus for
+fiscal 1996, by action of the Committee, equivalent to the bonus which he would
+have received had his term of employment continued through July 31, 1996. In
+addition, the Company, by action of the Committee, shall accelerate the exercise
+dates of all stock options held by Executive which would have become exercisable
+by July 31, 1996, to the date of his termination.
+
+                 7.       Termination by Executive.
+
+                          (a) Termination For Good Reason.  If Executive 
+terminates his employment hereunder for Good Reason (as hereinafter defined), he
+shall be entitled to the benefits set forth herein applicable to termination
+without Cause as set forth in Section 6(b) hereof. For the purposes of this
+Agreement, "Good Reason" shall mean:
+
+                          (i) reduction by the Company in the Executive's Base
+                 Salary;
+
+                          (ii) assignment to the Executive of duties
+                 inconsistent with his responsibilities as set forth in this
+                 Agreement, a substantial alteration in the title of Executive
+                 (so long as the existing corporate structure of the Company is
+                 maintained), or substantial alteration in the status of
+                 Executive in the Company organization;
+
+                          (iii) failure by the Company to continue in effect,
+                 without substantial change, any benefit plan or arrangement in
+                 which Executive was participating or the taking of any action
+                 by the Company which would adversely affect the Executive's
+                 participation in or materially reduce his benefits under any
+                 benefit plan, unless all other key executives are similarly
+                 affected;
+
+                          (iv) relocation of the Company's principal executive
+                 offices or the Executive's relocation to any place other than
+                 the principal executive offices of the Company except for
+                 required travel on Company business; or
+
+                          (v) any material breach by the Company of any
+                 provision of this Agreement without the Executive having
+                 committed any material breach of his obligations hereunder.
+
+                          (b) Termination Without Good Reason.  If Executive 
+terminates his employment hereunder without Good Reason his then current Base
+Salary shall be paid on a prorated basis to the date of termination, but no
+bonus not earned and payable under the terms of the Company's Senior Executive
+Bonus Plan shall be payable for the year in which such termination takes place.
+
+                 8.       Arbitration.  Any dispute, controversy or claim 
+arising under or in connection with this Agreement, or the breach hereof, shall
+be settled exclusively by
+
+                                   Page 4 of 7
+<PAGE>   5
+
+
+
+arbitration in accordance with the Commercial Arbitration Rules of the American
+Arbitration Association then in effect. Judgment upon the award rendered by the
+Arbitrator(s) may be entered in any court having jurisdiction thereof. Any
+arbitration held pursuant to this Section 8 shall take place in Santa Clara
+County, California.
+
+                 9. Notice. For purposes of this Agreement, notices and all
+other communications provided for in this Agreement shall be in writing and
+shall be deemed to have been duly given when delivered or mailed by United
+States registered mail, return receipt requested, postage prepaid, as follows:
+
+                 If to the Company:
+                 Applied Materials, Inc.
+                 3050 Bowers Avenue
+                 Santa Clara, CA 95054
+                 Attention:  James C. Morgan, Chairman
+
+                 If to the Executive:
+                 James W. Bagley
+                 101 Firebird Cove
+                 Austin, TX 78734
+
+or such other address as either party may have furnished to the other in writing
+in accordance herewith, except that notices of change of address shall be
+effective only upon receipt.
+
+                 10. Non-Waiver. Complete Agreement, Governing Law. No
+provisions of this Agreement may be modified, waived or discharged except in
+writing signed by both parties. No waiver by either party at any time of any
+breach by the other party of, or compliance with, any condition or provision of
+this Agreement shall be deemed a waiver of similar or dissimilar provisions or
+conditions at the same or at any prior or subsequent time. No agreements or
+representations, oral or otherwise, express or implied, with respect to the
+subject matter hereof have been made by either party which are not set forth
+expressly in this Agreement. This Agreement shall be governed by and construed
+in accordance with the laws of the State of California.
+
+                 11. Severability. The invalidity or unenforceability of any
+provisions of this Agreement shall not affect the validity or enforceability of
+any other provision of this Agreement, which shall remain in full force and
+effect.
+
+                 12. Counterparts. This Agreement may be executed in one or more
+counterparts, each of which shall be deemed to by an original but all of which
+together shall constitute one and the same instrument.
+
+                                   Page 5 of 7
+<PAGE>   6
+
+
+
+                 13. Publicity. A press release containing text satisfactory to
+both parties hereto will be issued concurrently with the execution of this
+Agreement.
+
+                 IN WITNESS WHEREOF, the Executive and the Company (pursuant to
+a resolution of its Board adopted at a duly constituted meeting) have executed
+this Agreement, effective as of the date first above written.
+
+                                       APPLIED MATERIALS, INC.,
+                                       a Delaware corporation
+
+
+
+                                       By      /s/James C. Morgan
+                                               -----------------------------
+                                               James C. Morgan
+                                               Chairman of the Board
+
+                                       THE EXECUTIVE
+
+                                               /s/James W. Bagley
+                                               -----------------------------
+                                               James W. Bagley
+
+
+                                   Page 6 of 7
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-12.1
+<SEQUENCE>3
+<DESCRIPTION>RATIO OF EARNINGS TO FIXED CHARGES
+<TEXT>
+
+<PAGE>   1
+
+
+
+
+EXHIBIT 12.1  RATIO OF EARNINGS TO FIXED CHARGES
+
+<TABLE>
+<CAPTION>
+                                              Nine Months Ended
+                                             July 30,    July 31,                        Fiscal Year
+                                             --------    -------     ---------------------------------------------------
+                                               1995        1994        1994        1993       1992      1991      1990
+                                             --------    --------    --------    --------    -------   -------   -------
+<S>                                          <C>         <C>         <C>         <C>         <C>       <C>       <C>         
+Income from consolidated companies
+   before provision for income taxes
+   and cumulative effect of accounting
+   change                                    $459,469    $237,422    $334,497    $153,558    $58,925   $40,355   $54,084
+
+Fixed charges:
+   Interest expense                            17,161      10,779      15,962      14,206     15,207    13,969     6,717
+   Interest component of rent expense (1)      12,622       8,943      11,070       9,021      7,197     5,968     4,344
+                                             --------    --------    --------    --------    -------   -------   -------
+        Total fixed charges                    29,783      19,722      27,032      23,227     22,404    19,937    11,061
+
+Earnings from consolidated companies
+   before income taxes, cumulative effect
+   of accounting change and fixed charges    $489,252    $257,144    $361,529    $176,785    $81,329   $60,292   $65,145
+                                             --------    --------    --------    --------    -------   -------   -------
+
+Ratio of earnings to fixed charges             16.43x      13.04x      13.37x       7.61x      3.63x     3.02x     5.89x
+                                             ========    ========    ========    ========    =======   =======   =======
+</TABLE>
+
+
+(1)  For leases where the interest factor can be specifically identified, the
+     actual interest factor was used. For all other leases, the interest factor
+     is estimated at one-third of total rent expense for the applicable period,
+     which management believes represents a reasonable approximation of the
+     interest factor. Amounts exclude the Company's proportional share of the
+     earnings and fixed charges of the joint venture, which are insignificant.
+
+
+
+                                     7 of 7
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27
+<SEQUENCE>4
+<DESCRIPTION>FINANCIAL DATA SCHEDULE
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE> 5
+<LEGEND>
+THIS SCHEDULE CONTAINS SUMMARY FINANCIAL INFORMATION EXTRACTED FROM THE
+CONSOLIDATED FINANCIAL STATEMENTS FOR THE QUARTER ENDED JULY 30, 1995.
+</LEGEND>
+<MULTIPLIER> 1000
+       
+<S>                             <C>
+<PERIOD-TYPE>                   YEAR
+<FISCAL-YEAR-END>                          OCT-29-1995
+<PERIOD-END>                               JUL-30-1995
+<CASH>                                         262,363
+<SECURITIES>                                   437,382
+<RECEIVABLES>                                  779,383
+<ALLOWANCES>                                     1,270
+<INVENTORY>                                    391,229
+<CURRENT-ASSETS>                             2,058,203
+<PP&E>                                         783,126
+<DEPRECIATION>                                 225,408
+<TOTAL-ASSETS>                               2,638,131
+<CURRENT-LIABILITIES>                          759,963
+<BONDS>                                        256,531
+<COMMON>                                           893
+<PREFERRED-MANDATORY>                                0
+<PREFERRED>                                          0
+<OTHER-SE>                                   1,606,424
+<TOTAL-LIABILITY-AND-EQUITY>                 2,638,131
+<SALES>                                        897,684
+<TOTAL-REVENUES>                               897,684
+<CGS>                                          489,256
+<TOTAL-COSTS>                                  489,256
+<OTHER-EXPENSES>                                85,789
+<LOSS-PROVISION>                                     0
+<INTEREST-EXPENSE>                               5,527
+<INCOME-PRETAX>                                214,173
+<INCOME-TAX>                                    74,961
+<INCOME-CONTINUING>                            139,212
+<DISCONTINUED>                                       0
+<EXTRAORDINARY>                                      0
+<CHANGES>                                            0
+<NET-INCOME>                                   139,212
+<EPS-PRIMARY>                                     1.57
+<EPS-DILUTED>                                     1.57
+        
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>

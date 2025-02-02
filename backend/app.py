@@ -12,6 +12,7 @@ from fetch.technicals import router as entry_router
 from packages import router as pkg_router
 from newssearch import router as news_router
 from earningscalendar import router as calendar_router
+from competitors import router as competitors_router
 from fetch.latextobinaryimg import router as latex_router
 from entry import router as init_router
 from technicals.momentum import router as momentum_router
@@ -20,6 +21,7 @@ from technicals.sma import router as setup_router
 from technicals.rsi import router as rsi_router
 from technicals.dmi import router as dmi_router
 from technicals.oscillators import router as oscillator_router
+from technicals.macd import router as macd_router
 app = FastAPI()
 
 app.add_middleware(
@@ -59,6 +61,8 @@ app.include_router(momentum_router, prefix="/technicals", tags = ["Technicals"] 
 app.include_router(setup_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(rsi_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(dmi_router, prefix="/technicals", tags = ["Technicals"] )
+app.include_router(macd_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(oscillator_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(movers_router, prefix="/current", tags=["Current"])
+app.include_router(competitors_router, prefix="/current", tags=["Current"])
 #app.include_router(screener_router, prefix="/screen", tags=["Current"])

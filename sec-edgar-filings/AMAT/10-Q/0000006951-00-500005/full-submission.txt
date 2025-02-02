@@ -1,0 +1,2145 @@
+-----BEGIN PRIVACY-ENHANCED MESSAGE-----
+Proc-Type: 2001,MIC-CLEAR
+Originator-Name: webmaster@www.sec.gov
+Originator-Key-Asymmetric:
+ MFgwCgYEVQgBAQICAf8DSgAwRwJAW2sNKK9AVtBzYZmr6aGjlWyK3XmZv3dTINen
+ TWSM7vrzLADbmYQaionwg5sDW3P6oaM5D3tdezXMm7z1T+B+twIDAQAB
+MIC-Info: RSA-MD5,RSA,
+ OppBmYOa5Kp2yEKxyXsZhR4H3cRZx6QFM2XzTKQXHUCj3At0oVyFF1voAU5B1+YT
+ RIKVk9sEYx0jL7dmlbnK2w==
+
+<SEC-DOCUMENT>/in/edgar/work/20000907/0000006951-00-500005/0000006951-00-500005.txt : 20000922
+<SEC-HEADER>0000006951-00-500005.hdr.sgml : 20000922
+ACCESSION NUMBER:		0000006951-00-500005
+CONFORMED SUBMISSION TYPE:	10-Q
+PUBLIC DOCUMENT COUNT:		4
+CONFORMED PERIOD OF REPORT:	20000730
+FILED AS OF DATE:		20000907
+
+FILER:
+
+	COMPANY DATA:	
+		COMPANY CONFORMED NAME:			APPLIED MATERIALS INC /DE
+		CENTRAL INDEX KEY:			0000006951
+		STANDARD INDUSTRIAL CLASSIFICATION:	 [3559
+]		IRS NUMBER:				941655526
+		STATE OF INCORPORATION:			DE
+		FISCAL YEAR END:			1026
+</COMPANY-DATA>
+
+		FILING VALUES:
+			FORM TYPE:		10-Q
+			SEC ACT:		
+			SEC FILE NUMBER:	002-45028
+			FILM NUMBER:		717720
+</FILING-VALUES>
+
+			BUSINESS ADDRESS:	
+				STREET 1:		3050 BOWERS AVE
+				CITY:			SANTA CLARA
+				STATE:			CA
+				ZIP:			95054
+				BUSINESS PHONE:		4085632682
+</BUSINESS-ADDRESS>
+
+				MAIL ADDRESS:	
+					STREET 1:		3050 BOWERS AVE
+					CITY:			SANTA CLARA
+					STATE:			CA
+					ZIP:			95054
+</MAIL-ADDRESS>
+
+					FORMER COMPANY:	
+						FORMER CONFORMED NAME:	APPLIED MATERIALS TECHNOLOGY INC
+						DATE OF NAME CHANGE:	19730319
+</FORMER-COMPANY>
+</FILER>
+</SEC-HEADER>
+<DOCUMENT>
+<TYPE>10-Q
+<SEQUENCE>1
+<FILENAME>form10q.htm
+<DESCRIPTION>MAIN 10-Q FILING
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>10Q doc</TITLE>
+</head>
+
+<body bgcolor=white>
+
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+
+<p align="center"><font size="4"><strong>UNITED STATES</br>
+SECURITIES AND EXCHANGE COMMISSION</br>
+Washington, D.C. 20549</strong></font></p>
+
+
+<HR align=center SIZE=2 width="25%">
+
+<p align="center"><font size="5"><strong>FORM 10-Q</strong></center></font></p>
+
+<HR align=center SIZE=2 width="25%">
+
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<i>(MARK ONE)</i>
+
+<p align="center"><font size="4"><strong>
+   [X]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; QUARTERLY REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE
+             SECURITIES EXCHANGE ACT OF 1934
+</strong></font></p>
+
+<p align="center"><font size="3" color="FF0000"><strong>
+             For the quarterly period ended <u><strong>July 30, 2000</strong></u> or
+</strong></font></p>
+ <br>
+
+<p align="center"><font size="4"><strong>
+[&nbsp;&nbsp;]&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  TRANSITION REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES
+     EXCHANGE ACT OF 1934
+</strong></font></p>
+
+<p align="center"><font size="3"><strong>
+ For the transition period from ________to _________
+</strong></font></p>
+<p align="center"><font size="3"><strong>
+             Commission file number&nbsp;&nbsp;&nbsp; <u>0-6920</u>
+</strong></font></p>
+<p align="center"><font size="6" color="#0000FF"><strong>
+                             APPLIED MATERIALS, INC.
+</strong></font></br>
+<font size="2">
+            <i>(Exact name of registrant as specified in its charter)</i>
+</font></p>
+
+<P>&nbsp;
+<TABLE COLS=2 WIDTH="100%" >
+<TR>
+<TD>
+<font size="3"><strong>
+<CENTER><u>Delaware</u></CENTER>
+</font></strong>
+</TD>
+<TD>
+<font size="3"><strong>
+<CENTER><u>94-1655526</u></CENTER>
+</font></strong>
+</TD>
+</TR>
+<TR>
+<TD>
+<font size="2">
+<CENTER>&nbsp;<i>(State or other jurisdiction of incorporation or organization)&nbsp;</i></CENTER>
+</font>
+</TD>
+
+<TD>
+<font size="2">
+<CENTER><i>(I.R.S. Employer Identification Number)</i></CENTER>
+</font>
+</TD>
+</TR>
+</TABLE>
+<BR>
+
+
+
+<p align="center"><font size="3"><strong>
+                              3050 Bowers Avenue<br>
+                   <u>Santa Clara, California &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;95054-3299
+</strong></font></u><br>
+
+<font size="2">
+       <i> (Address of principal executive offices, including zip code)</i>
+</font></p>
+
+<p align="center"><font size="3"><strong><u>
+                                   (408) 727-5555
+</strong></font></u><br>
+
+<font size="2">
+               <i>  (Registrant's telephone number, including area code)</i>
+</font></p>
+
+
+
+
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+
+<p>&nbsp;&nbsp;&nbsp;
+<font size="3">
+Indicate by check mark whether the registrant (1) has filed all reports required
+to be filed by Section 13 or 15 (d) of the Securities Exchange Act of 1934
+during the preceding 12 months (or for such shorter period that the registrant
+was required to file such reports), and (2) has been subject to such filing
+requirements for the past 90 days. YES [X] NO [&nbsp;&nbsp;].</p>
+
+
+<p>  Number of shares outstanding of the issuer's common stock as of
+July 30, 2000: 811,134,656
+
+
+
+
+
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+<DIV align=left>
+<HR align=left SIZE=2 width="100%">
+</DIV>
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</strong></p>
+<p align="center"><strong>
+
+                            APPLIED MATERIALS, INC.<br>
+                                    FORM 10-Q<br>
+                                     INDEX
+</strong></p>
+<p align="center"><strong>
+PART I.  FINANCIAL INFORMATION
+</strong></p>
+
+<p>Item 1.   Financial Statements:
+
+<BLOCKQUOTE>
+
+<p><A HREF="#ops">
+          Consolidated Statements of Operations for the three and nine months
+            ended August 1, 1999 and July 30, 2000</A>
+
+
+
+<p><A HREF="#bs"> Consolidated Condensed Balance Sheets as of
+            October 31, 1999 and July 30, 2000</A>
+
+
+<p><A HREF="#flows">
+          Consolidated Condensed Statements of Cash Flows for the nine months
+            ended August 1, 1999 and July 30, 2000</A>
+
+
+
+<p><A HREF="#notes">
+         Notes to Consolidated Condensed Financial Statements</A>
+
+
+</BLOCKQUOTE>
+
+<p><A HREF="#item2">
+<p>Item 2.   Management's Discussion and Analysis of Financial Condition and Results of
+          Operations
+
+<BLOCKQUOTE>
+
+<p><A HREF="#results">
+         Results of Operations</A>
+
+<p><A HREF="#liquid">
+         Financial Condition, Liquidity and Capital Resources</A>
+
+<p><A HREF="#risks">
+         Trends, Risks and Uncertainties</A>
+
+</BLOCKQUOTE>
+
+<A HREF="#Item3">
+<p>Item 3.   Quantitative and Qualitative Disclosures About Market Risk</A>
+
+
+
+
+<p align="center"><strong>
+PART II.  OTHER INFORMATION
+</strong></p></A>
+
+<A HREF="#legal">
+<p>Item 1:  Legal Proceedings
+
+<A HREF="#EFC">
+<p>Item 5:  Other Information
+
+<A HREF="#exhibit">
+<p>Item 6:  Exhibits and Reports on Form 8-K
+
+<p align="left">
+<A HREF="#sign">
+Signatures</A>
+</p>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<p align="center"><strong>
+PART I.  FINANCIAL INFORMATION</strong></p>
+<p><strong>Item 1.  Financial Statements</strong></p>
+
+
+
+
+<br>
+<br>
+<HR WIDTH="85%">
+<br>
+<br>
+
+<A NAME="ops"></A>
+<p align="center"><strong>
+                                   APPLIED MATERIALS, INC.
+</strong><br>
+<strong>
+                            CONSOLIDATED STATEMENTS OF OPERATIONS<br>
+   <i>                                    (UNAUDITED)</i>
+</strong>
+<pre>
+
+                                       Three Months Ended       Nine Months Ended
+                                    -----------------------  -----------------------
+(In thousands, except per              August 1,   July 30,     August 1,   July 30
+ share amounts)                         1999        2000         1999        2000
+- ----------------------------------  ----------- -----------  ----------- -----------
+Net sales.......................... $1,490,695  $2,732,028   $3,482,732  $6,644,249
+Cost of products sold..............    775,025   1,340,126    1,863,973   3,297,428
+                                    ----------- -----------  ----------- -----------
+Gross margin.......................    715,670   1,391,902    1,618,759   3,346,821
+
+Operating expenses:
+   Research, development and
+     engineering...................    185,796     303,946      523,991     780,509
+   Marketing and selling...........     91,561     128,426      247,597     340,718
+   General and administrative......    105,689     133,291      258,105     343,998
+   Non-recurring items.............      2,515          --        7,515      40,000
+                                    ----------- -----------  ----------- -----------
+Income from operations.............    330,109     826,239      581,551   1,841,596
+
+Non-recurring income...............         --          --       20,000      68,158
+
+Interest expense...................     11,952      12,665       35,328      38,154
+Interest income....................     26,736      48,970       77,440     127,962
+                                    ----------- -----------  ----------- -----------
+Income before taxes and equity
+   in net income/(loss)
+   of joint venture................    344,893     862,544      643,663   1,999,562
+Provision for income taxes.........    106,637     258,763      199,761     599,807
+                                    ----------- -----------  ----------- -----------
+Income before equity in net
+   income/(loss) of joint venture..    238,256     603,781      443,902   1,399,755
+
+Equity in net income/(loss) of
+   joint venture...................      9,773          --       12,048          --
+                                    ----------- -----------  ----------- -----------
+Income from continuing operations..    248,029     603,781      455,950   1,399,755
+
+Provision for discontinuance of
+   joint venture...................     (9,773)         --      (12,048)         --
+                                    ----------- -----------  ----------- -----------
+Net income.........................   $238,256    $603,781     $443,902  $1,399,755
+                                    =========== ===========  =========== ===========
+Earnings per share:
+   Basic - continuing operations...      $0.31       $0.75        $0.59       $1.74
+   Basic - discontinued operations.      (0.01)         --        (0.02)         --
+                                    ----------- -----------  ----------- -----------
+     Total basic...................      $0.30       $0.75        $0.57       $1.74
+
+   Diluted - continuing operations.      $0.30       $0.70        $0.56       $1.63
+   Diluted - discontinued operations     (0.01)         --        (0.02)         --
+                                    ----------- -----------  ----------- -----------
+     Total diluted.................      $0.29       $0.70        $0.54       $1.63
+
+Weighted average number of shares:
+   Basic...........................    781,554     809,345      775,444     804,532
+   Diluted.........................    824,248     862,071      816,946     858,585
+
+</pre>
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ See accompanying notes to consolidated condensed financial statements.
+
+
+<br>
+<br>
+<HR WIDTH="85%">
+<br>
+<br>
+
+<A NAME="bs"></A>
+<p align="center"><strong>
+                             APPLIED MATERIALS, INC.
+</strong><br>
+<strong>
+                     CONSOLIDATED CONDENSED BALANCE SHEETS*<br>
+</strong>
+<pre>
+                                                  October 31,    July 30,
+(In thousands)                                       1999          2000
+- ----------------------------------------------  ------------  ------------
+ASSETS
+
+Current assets:
+   Cash and cash equivalents....................   $868,121    $1,342,835
+   Short-term investments.......................  1,951,254     2,404,493
+   Accounts receivable, net.....................  1,268,146     2,162,251
+   Inventories..................................    727,107     1,132,625
+   Deferred income taxes........................    341,668       330,889
+   Other current assets.........................    154,424       179,270
+                                                ------------  ------------
+Total current assets............................  5,310,720     7,552,363
+
+Property, plant and equipment, net..............  1,278,269     1,280,137
+Other assets....................................    425,521       386,323
+                                                ------------  ------------
+Total assets.................................... $7,014,510    $9,218,823
+                                                ============  ============
+LIABILITIES AND STOCKHOLDERS' EQUITY
+
+Current liabilities:
+   Notes payable................................     $5,789       $40,409
+   Current portion of long-term debt............     36,484        41,512
+   Accounts payable and accrued expenses........  1,442,718     1,899,550
+   Income taxes payable.........................    246,506       397,153
+                                                ------------  ------------
+Total current liabilities.......................  1,731,497     2,378,624
+
+Long-term debt..................................    584,357       574,336
+Deferred income taxes and other liabilities.....    123,398       135,879
+                                                ------------  ------------
+Total liabilities...............................  2,439,252     3,088,839
+                                                ------------  ------------
+Stockholders' equity:
+   Common stock.................................      7,932         8,111
+   Additional paid-in capital...................  1,443,723     1,614,615
+   Retained earnings............................  3,122,337     4,521,384
+   Accumulated other comprehensive
+    income/(loss)...............................      1,266       (14,126)
+                                                ------------  ------------
+Total stockholders' equity......................  4,575,258     6,129,984
+                                                ------------  ------------
+Total liabilities and stockholders' equity...... $7,014,510    $9,218,823
+                                                ============  ============
+
+</pre>
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp; Amounts as of July 30, 2000 are
+  unaudited. Amounts as of October 31, 1999
+  are audited.<br>
+</font size="2">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ See accompanying notes to consolidated condensed financial statements.
+
+
+
+
+
+
+<br>
+<br>
+<HR WIDTH="85%">
+<br>
+<br>
+
+<A NAME="flows"></A>
+<p align="center"><strong>
+                             APPLIED MATERIALS, INC.
+</strong><br>
+<strong>
+                 CONSOLIDATED CONDENSED STATEMENTS OF CASH FLOWS<br>
+           <i>                    (UNAUDITED)</i>
+</strong>
+<pre>
+
+                                                        Nine Months Ended
+                                                    --------------------------
+                                                      August 1,      July 30,
+(In thousands)                                          1999           2000
+- --------------------------------------------------- ------------  ------------
+Cash flows from operating activities:
+  Net income......................................     $443,902    $1,399,755
+  Adjustments required to reconcile net income
+    to cash provided by operations:
+      Depreciation and amortization...............      218,851       269,602
+      Deferred income taxes.......................        2,541         9,483
+      Adjustment to conform Etec's fiscal year....          --           (708)
+      Changes in assets and liabilities, net of
+        amounts acquired:
+           Accounts receivable, net...............     (339,290)     (905,950)
+           Inventories............................      (31,204)     (415,573)
+           Other current assets...................      (29,983)      (28,171)
+           Other assets...........................      (31,003)       (9,708)
+           Accounts payable and accrued expenses..       61,565       475,211
+           Income taxes payable...................      197,369       150,647
+           Other liabilities......................       12,422        14,003
+                                                    ------------  ------------
+Cash provided by operations.......................      505,170       958,591
+                                                    ------------  ------------
+Cash flows from investing activities:
+  Capital expenditures, net of retirements........     (157,645)     (225,532)
+  Proceeds from sales of short-term investments...      721,010     1,415,241
+  Purchases of short-term investments.............   (1,196,244)   (1,868,480)
+                                                    ------------  ------------
+Cash used for investing...........................     (632,879)     (678,771)
+                                                    ------------  ------------
+Cash flows from financing activities:
+  Short-term debt activity, net...................        1,338        32,327
+  Long-term debt activity, net....................       (6,620)       (4,177)
+  Common stock transactions, net..................      114,471       171,071
+                                                    ------------  ------------
+Cash provided by financing........................      109,189       199,221
+                                                    ------------  ------------
+Effect of exchange rate changes on cash...........       (1,682)       (4,327)
+                                                    ------------  ------------
+Increase/(decrease) in cash and cash equivalents..      (20,202)      474,714
+Cash and cash equivalents - beginning of period...      638,805       868,121
+                                                    ------------  ------------
+Cash and cash equivalents - end of period.........     $618,603    $1,342,835
+                                                    ============  ============
+
+</pre>
+<font size="2">
+For the nine months ended August 1, 1999, cash payments for interest were
+$24,796 and net income tax refunds were $10,960. For the nine months ended
+July 30, 2000, cash payments for interest and income taxes were
+$22,336 and $445,779, respectively.
+</font size="2">
+<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+ See accompanying notes to consolidated condensed financial statements.
+
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<A NAME="notes"></A>
+<p align="center"><strong>
+                               APPLIED MATERIALS, INC.<br>
+           NOTES TO CONSOLIDATED CONDENSED FINANCIAL STATEMENTS <i>(Unaudited)</i><br>
+                             NINE MONTHS ENDED JULY 30, 2000<br>
+</strong></p>
+<br>
+<p>1) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Basis of Presentation</u><br>
+
+In the opinion of management, the unaudited interim consolidated condensed financial
+statements of Applied Materials, Inc. (Applied) included herein have been prepared on a
+basis consistent with the October 31, 1999 audited consolidated financial statements (as
+restated) and include all material adjustments, consisting of normal recurring adjustments,
+necessary to fairly present the information set forth therein. These unaudited interim
+consolidated condensed financial statements should be read in conjunction with the October
+31, 1999 audited consolidated financial statements and notes thereto included in Applied's
+1999 Annual Report, which is incorporated by reference in Applied's Form 10-K for the
+fiscal year ended October 31, 1999. Applied's results of operations for the three and nine
+months ended July 30, 2000 are not necessarily indicative of future operating results.
+
+<p>The preparation of financial statements in conformity with generally accepted accounting
+principles requires management to make estimates and assumptions that affect the amounts
+reported in the financial statements and accompanying notes. Actual results could differ
+materially from those estimates.
+
+<p>All historical financial information presented herein has been restated to reflect: 1) a
+two-for-one stock split in the form of a 100 percent stock dividend, effective March 15,
+2000; and 2) the acquisition of Etec Systems, Inc. (Etec), which was completed on March 29,
+2000 and accounted for as a pooling-of-interests.
+
+<p>During the fourth fiscal quarter of 1999, Applied Komatsu Technology, Inc. (AKT) became a
+wholly-owned subsidiary of Applied. Previously, AKT was a joint venture, in which Applied
+had a 50 percent ownership interest, that was accounted for as a discontinued operation. As
+a result of Applied's acquisition of AKT, certain prior year amounts were reclassified from
+discontinued operations to continuing operations. These reclassifications had no effect on
+net income for any affected prior period.
+
+<p>2) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Business Combination </u><br>
+
+On March 29, 2000, Applied acquired Etec, a supplier of mask pattern generating equipment
+for the semiconductor and electronics industries, in a stock-for-stock merger accounted for
+as a pooling-of-interests. Applied issued approximately 29 million shares of its common
+stock in conjunction with this transaction, and recorded a one-time, pre-tax operating
+expense of $40 million for costs associated with the merger. Additionally, Applied recorded
+a one-time, pre-tax operating expense of $14 million ($6.5 million in cost of products sold
+and $7.5 million in general and administrative expenses) to conform Etec's accounting
+policies to those of Applied.</P>
+
+<p>Prior to the merger, Etec's fiscal year end (July 31) was different than Applied's (last
+Sunday in October). Fiscal 1999 amounts included herein for Etec have not been conformed to
+Applied's fiscal year. Therefore, the three- and nine-month periods ended August 1, 1999
+include Etec's three- and nine-month periods ended April 30, 1999, and the October 31, 1999
+consolidated condensed balance sheet includes Etec's balances as of July 31, 1999. Fiscal
+2000 amounts included herein for Etec have been conformed to Applied's fiscal year. As a
+result, Etec's net loss for the three months ended October 31, 1999 has been reflected as
+an adjustment to retained earnings in the first fiscal quarter of 2000. Etec's net sales
+and net loss for the three months ended October 31, 1999 were $43 million and $708,000,
+respectively.
+
+<p>Net sales and net income for each company from the beginning of the periods presented to
+the date of consummation of the merger (March 29, 2000) were as follows (in thousands):
+
+<pre>
+                         Three Months Ended            Nine Months Ended
+                    --------------------------   --------------------------
+                       August 1,    July 30,        August 1,    July 30,
+                         1999         2000            1999         2000
+                    ------------  ------------   ------------  ------------
+
+Net sales:
+  Applied........    $1,433,510    $2,732,028     $3,293,613    $6,567,598
+  Etec...........        57,185            --        189,119        76,651 *
+                    ------------  ------------   ------------  ------------
+  Combined.......    $1,490,695    $2,732,028     $3,482,732    $6,644,249
+                    ============  ============   ============  ============
+
+
+Net income:
+  Applied........      $244,416      $603,781       $438,940    $1,408,173
+  Etec...........        (6,160)           --          4,962        (8,418)*
+                    ------------  ------------   ------------  ------------
+  Combined.......      $238,256      $603,781       $443,902    $1,399,755
+                    ============  ============   ============  ============
+</pre>
+
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp;
+Does not include amounts subsequent to March 29, 2000.
+Such amounts have been included in the numbers presented for Applied.
+</font size="2">
+
+<p>3) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Earnings Per Share </u><br>
+
+Basic earnings per share has been determined using the weighted average number of common
+shares outstanding during the period. Diluted earnings per share has been determined using
+the weighted average number of common shares and equivalents (representing the dilutive
+effect of stock options) outstanding during the period. Applied's net income has not been
+adjusted for any period presented for purposes of computing basic or diluted earnings per
+share.
+
+<P>For purposes of computing diluted earnings per share, weighted average common share
+equivalents do not include stock options with an exercise price that exceeded the average
+fair market value of Applied's common stock for the period. For the three months ended July
+30, 2000, options to purchase approximately 1,195,000 shares of common stock at an average
+exercise price of $90.79 were excluded from the computation, and for the nine months ended
+July 30, 2000, options to purchase approximately 2,627,000 shares of common stock at an
+average exercise price of $85.12 were excluded from the computation.
+
+<p>4) &nbsp;&nbsp;&nbsp;&nbsp;<u>      Accounts Receivable, Net</u><br>
+
+Applied has agreements with various financial institutions to sell accounts
+receivable from selected customers. During the nine months ended August 1, 1999 and July
+30, 2000, Applied sold $645 million and $1.1 billion, respectively, of accounts receivable
+under these agreements. At July 30, 2000, $389 million of sold receivables remained
+outstanding and subject to certain recourse provisions. Applied does not expect these
+recourse provisions to have a material effect on its financial condition or results of
+operations. Discounting fees were not material for the three- and nine-month periods ended
+August 1, 1999 or July 30, 2000, and were recorded as interest expense.</P>
+
+<p>5) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Inventories</u><br>
+
+Inventories are stated at the lower of cost or market, with cost determined on a
+first-in, first-out (FIFO) basis. Components of inventories were as follows (in
+thousands):
+
+<pre>
+                                     October 31,     July 30,
+                                         1999          2000
+                                     ------------  ------------
+ Customer service spares............    $267,623      $369,277
+ Raw materials......................     124,051       294,188
+ Work-in-process....................     246,953       293,191
+ Finished goods.....................      88,480       175,969
+                                     ------------  ------------
+                                        $727,107    $1,132,625
+                                     ============  ============
+</pre>
+
+<p>6) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Other Assets</u><br>
+
+Components of other assets were as follows (in thousands):
+
+<pre>
+                                     October 31,     July 30,
+                                         1999          2000
+                                     ------------  ------------
+ Purchased technology, net..........    $205,667      $186,845
+ Goodwill, net......................     162,015       145,410
+ Other..............................      57,839        54,068
+                                     ------------  ------------
+                                        $425,521      $386,323
+                                     ============  ============
+</pre>
+
+<P>Purchased technology and goodwill are presented at cost, net of accumulated
+amortization, and are being amortized over their estimated useful lives of five to ten
+years using the straight-line method.
+
+<p>7) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Accounts Payable and Accrued Expenses</u><br>
+
+Components of accounts payable and accrued expenses were as follows (in
+thousands):
+
+<pre>
+                                     October 31,     July 30,
+                                         1999          2000
+                                     ------------  ------------
+ Accounts payable...................    $382,915      $665,839
+ Compensation and benefits..........     302,433       317,167
+ Installation and warranty..........     236,272       325,812
+ Customer deposits..................      89,689        82,208
+ Other..............................     431,409       508,524
+                                     ------------  ------------
+                                      $1,442,718    $1,899,550
+                                     ============  ============
+</pre>
+
+<P>An accrual of $5 million for restructuring actions taken in prior years, primarily in
+fiscal 1998, remains as of July 30, 2000, compared to $16 million as of October 31, 1999,
+and is included above in Other. This balance is expected to be utilized in fiscal 2000 in
+accordance with the restructuring plan.
+
+<p>8) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Non-recurring Items</u><br>
+
+During the first fiscal quarter of 1999, Applied recorded $5 million of pre-tax,
+non-recurring operating expenses for costs incurred in connection with its December 1998
+acquisition of Consilium, Inc. During the third fiscal quarter of 1999, Applied recorded $3
+million of pre-tax, non-recurring operating expenses in connection with a restructuring.
+During the second fiscal quarter of 2000, Applied recorded $40 million of pre-tax, non-
+recurring operating expenses for costs incurred in connection with the Etec acquisition.
+See Note 2 of Notes to Consolidated Condensed Financial Statements in this Form 10-Q.
+
+<p>9) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Non-recurring Income</u><br>
+
+During the first fiscal quarter of 1999, Applied received a $20 million payment from
+ASM International, N.V. (ASMI) related to a prior litigation settlement and recorded the
+amount as non-recurring income. During the second fiscal quarter of 2000, Applied recorded
+an additional $68 million of pre-tax, non-operating income related to the ASMI litigation
+settlement. This amount consisted of: 1) the final cash payment from ASMI of $35 million
+related to an outstanding note receivable; and 2) a net gain of $33 million on the exercise
+of ASMI warrants and subsequent sale of the resulting shares.
+
+<p>10) &nbsp;&nbsp;&nbsp;&nbsp;<u>     Stockholders' Equity</u><br>
+
+<p><i>Comprehensive Income<br></i>
+
+Components of comprehensive income, on an after-tax basis, are as follows (in
+thousands):
+
+<pre>
+                                        Three Months Ended       Nine Months Ended
+                                    -----------------------  -----------------------
+                                      August 1,    July 30,    August 1,    July 30,
+                                        1999        2000         1999        2000
+                                    ----------- -----------  ----------- -----------
+Net income.........................   $238,256    $603,781     $443,902  $1,399,755
+Foreign currency translation
+  adjustments......................     (4,971)     (8,674)     (16,393)    (15,392)
+                                    ----------- -----------  ----------- -----------
+Comprehensive income...............   $233,285    $595,107     $427,509  $1,384,363
+                                    =========== ===========  =========== ===========
+</pre>
+
+<p><i>Stock Repurchase Program</i><br>
+
+Since March 1996, Applied has systematically repurchased shares of its common stock
+in the open market to partially fund its stock-based employee benefit and incentive plans.
+During the nine months ended August 1, 1999, Applied repurchased 1,640,000 shares of its
+common stock at an average price of $24.27, for a total cash outlay of $40 million. During
+the nine months ended July 30, 2000, Applied repurchased 751,000 shares at an average price
+of $80.06, for a total cash outlay of $60 million.
+
+<p><i>Stock Dividend</i><br>
+
+On February 15, 2000, Applied's Board of Directors approved a two-for-one stock
+split in the form of a 100 percent stock dividend. Shares issuable pursuant to the stock
+dividend were distributed on March 15, 2000 to stockholders of record as of February 25,
+2000. All historical share and per share amounts presented herein have been restated to
+reflect the stock split.
+
+<p>11)&nbsp;&nbsp;&nbsp;&nbsp;<u>     Segment Information</u><br>
+
+In fiscal 1999, Applied adopted Statement of Financial Accounting Standards No. 131
+(SFAS 131), &quot;Disclosures About Segments of an Enterprise and Related
+Information.&quot; Applied operates in one segment for the manufacture, marketing and
+servicing of semiconductor wafer fabrication equipment. All material operating units
+qualify for aggregation under SFAS 131 due to their similar: economic characteristics;
+nature of products and services; procurement, manufacturing and distribution processes; and
+customer base. Since Applied operates in one segment, all required information regarding
+segment revenues, profit and total assets can be obtained from the consolidated condensed
+financial statements.
+
+
+<p>12)&nbsp;&nbsp;&nbsp;&nbsp;<u>     Recent Accounting Pronouncements</u><br>
+
+In June 1998, the Financial Accounting Standards Board issued Statement of Financial
+Accounting Standards No. 133 (SFAS 133), &quot;Accounting for Derivative Instruments and
+Hedging Activities.&quot; Applied will adopt SFAS 133 in the first fiscal quarter of 2001,
+and does not expect the adoption to have a material effect on its financial condition or
+results of operations.
+
+<P>In December 1999, the Securities and Exchange Commission issued Staff Accounting
+Bulletin No. 101 (SAB 101), &quot;Revenue Recognition in Financial Statements.&quot; SAB
+101 provides guidance on the recognition, presentation and disclosure of revenue in
+financial statements. Applied is required to adopt SAB 101 in the fourth fiscal quarter of
+2001. Management has not yet determined the potential effect of the implementation of SAB
+101 on Applied's financial condition or results of operations. However, since the
+implementation of SAB 101 could result in changes to the timing of Applied's revenue
+recognition, its effect could be material and adverse to Applied's financial condition and
+results of operations in the period of implementation.
+
+
+
+
+
+
+<br>
+<br>
+<br>
+<A NAME="item2"></A>
+<p><strong>Item 2.  Management's Discussion and Analysis of Financial Condition and
+Results of Operations </strong>
+
+<P>Certain information contained in this Quarterly Report on Form 10-Q is forward-looking
+in nature. All statements included in this Quarterly Report on Form 10-Q or made by
+management of Applied Materials, Inc. and its subsidiaries (Applied), other than statements
+of historical fact, are forward-looking statements. Examples of forward-looking statements
+include statements regarding Applied's future financial results, operating results,
+business strategies, projected costs, products, competitive positions and plans and
+objectives of management for future operations. In some cases, forward-looking statements
+can be identified by terminology such as &quot;may,&quot; &quot;will,&quot; &quot;should,
+&quot; &quot;would,&quot; &quot;expects,&quot; &quot;plans,&quot; &quot;anticipates,&quot;
+&quot;believes,&quot; &quot;estimates,&quot; &quot;predicts,&quot; &quot;potential,&quot;
+&quot;continue,&quot; or the negative of these terms or other comparable terminology. Any
+expectations based on these forward-looking statements are subject to risks and
+uncertainties and other important factors, including those discussed in the section below
+entitled &quot;Trends, Risks and Uncertainties&quot; and in Note 12 of Notes to
+Consolidated Condensed Financial Statements in this Form 10-Q. Other risks and
+uncertainties are disclosed in Applied's prior SEC filings, including its Annual Report on
+Form 10-K for the fiscal year ended October 31, 1999. These and many other factors could
+affect Applied's future financial and operating results, and could cause actual results to
+differ materially from expectations based on forward-looking statements made in this
+document or elsewhere by Applied or on its behalf.
+
+<P>All historical financial information presented herein has been restated to reflect the
+acquisition of Etec Systems, Inc. (Etec), which was completed on March 29, 2000 and
+accounted for as a pooling-of-interests.
+
+<A NAME="results"></A>
+<p><u><strong>Results of Operations</u></strong></p>
+
+<P>Applied is a supplier of semiconductor manufacturing equipment and services to the
+global semiconductor industry. Historically, the semiconductor and semiconductor
+manufacturing equipment industries have been cyclical; for this and other reasons,
+Applied's results of operations for the three and nine months ended July 30, 2000 may not
+necessarily be indicative of future operating results.
+
+<P>During the last fiscal quarter of 1998 and first fiscal quarter of 1999, the
+semiconductor and semiconductor manufacturing equipment industries began to emerge from a
+severe downturn and entered a period of expansion.   As a result of the industry expansion,
+new orders and net sales have increased sequentially each quarter since the beginning of
+fiscal 1999.  Strong demand for Applied's products has been driven by semiconductor
+manufacturers' needs for additional capacity and new technology to meet strong consumer
+demand for Internet, communications and digital devices.  In addition, the semiconductor
+industry has been transitioning to smaller device sizes, new materials, such as copper, and
+300mm wafer processing, all of which require new manufacturing equipment.
+
+<P>Applied received record new orders of $3.3 billion for the third fiscal quarter of 2000
+versus $2.9 billion for the second fiscal quarter of 2000 and $1.5 billion for the third
+fiscal quarter of 1999. New orders by region were as follows (dollars in millions):
+
+<pre>
+
+                                              Three Months Ended
+                                     -----------------------------------
+                                      April 30, 2000      July 30, 2000
+                                     ----------------   ----------------
+                                       ($)      (%)       ($)      (%)
+                                     -------  -------   -------  -------
+ North America*.....................    735       25       985       30
+ Taiwan.............................    741       25       505       15
+ Japan..............................    425       15       773       24
+ Europe.............................    410       14       485       15
+ Korea..............................    290       10       230        7
+ Asia-Pacific.......................    327       11       297        9
+                                     -------  -------   -------  -------
+   Total............................  2,928      100     3,275      100
+                                     =======  =======   =======  =======
+</pre>
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp;
+Primarily the United States.
+</font size="2">
+
+<P>New orders for the third fiscal quarter of 2000 represented the sixth consecutive
+quarter of sequential growth.  The increase in new orders was primarily due to the factors
+mentioned above.  Applied's backlog at July 30, 2000 was $3.7 billion, compared to $3.2
+billion at April 30, 2000 and $2.4 billion at January 30, 2000.
+
+<P>Net sales for the third fiscal quarter of 2000 increased 25 percent from the second
+fiscal quarter of 2000, and increased 83 percent from the third fiscal quarter of 1999.
+Net sales for the third fiscal quarter of 2000 achieved a record for the fifth consecutive
+quarter.  Net sales for the nine months ended July 30, 2000 increased 91 percent from the
+comparable period in 1999.  The increase in net sales was due primarily to the factors
+mentioned above. Net sales by region were as follows (dollars in millions):
+
+<pre>
+
+                              Three Months Ended              Nine Months Ended
+                      ------------------------------  -----------------------------
+                      August 1, 1999   July 30, 2000  August 1, 1999  July 30, 2000
+                      --------------  --------------  -------------- --------------
+                         ($)    (%)      ($)    (%)      ($)    (%)     ($)    (%)
+                      ------- ------  ------- ------  ------- ------ ------- ------
+ North America*......    498     33      720     26    1,299     37   1,666     25
+ Taiwan..............    366     25      673     25      659     19   1,743     26
+ Japan...............    261     17      366     13      620     18   1,047     16
+ Europe..............    217     15      399     15      500     15     964     14
+ Korea...............     58      4      251      9      222      6     643     10
+ Asia-Pacific........     91      6      323     12      183      5     581      9
+                      ------- ------  ------- ------  ------- ------ ------- ------
+   Total.............  1,491    100    2,732    100    3,483    100   6,644    100
+                      ======= ======  ======= ======  ======= ====== ======= ======
+</pre>
+<font size="2">
+<sup><p>*</sup>&nbsp;&nbsp;
+Primarily the United States.
+</font size="2">
+
+<P>Applied's gross margin was 50.9 percent for the third fiscal quarter of 2000, compared
+to 50.1 percent for the second fiscal quarter of 2000 and 48.0 percent for the third fiscal
+quarter of 1999. Gross margin for the nine months ended July 30, 2000 was 50.4 percent,
+compared to 46.5 percent for the comparable period of fiscal 1999. Increases from prior
+year periods were caused primarily by higher business volume. During the second fiscal
+quarter of 2000, Applied recorded a one-time, pre-tax expense of $6.5 million in cost of
+products sold to conform Etec's accounting policies to those of Applied.
+
+<P>Excluding non-recurring items, operating expenses were 21 percent of net sales for the
+three months ended July 30, 2000, compared to 26 percent for the third fiscal quarter of
+1999, and 22 percent of sales for the first nine months of fiscal 2000, compared to 30
+percent for the nine months ended August 1, 1999. The decreases can be attributed primarily
+to increased business volume in fiscal 2000. In terms of absolute dollars, operating
+expenses for the three and nine months ended July 30, 2000 were significantly higher than
+those for the comparable periods of fiscal 1999. Research and development spending
+increased primarily to support the semiconductor industry's transition to 300mm wafer
+processing, new materials (including copper) and smaller chip features.  Marketing,
+selling, general and administrative expenses increased to support Applied's increased
+business volume. During the second fiscal quarter of 2000, Applied recorded a one-time,
+pre-tax operating expense of $7.5 million in general and administrative expenses to conform
+Etec's accounting policies to those of Applied.
+
+<P>There were no non-recurring items or income for the third fiscal quarter of 2000.  For
+prior periods, see Notes 8 and 9 of Notes to Consolidated Condensed Financial Statements in
+this Form 10-Q.
+
+<P>Net interest income for the three and nine months ended July 30, 2000 was $36 million
+and $90 million, respectively, compared to $15 million and $42 million for the comparable
+periods of fiscal 1999. The increases can be attributed primarily to higher average cash
+and investment balances.
+
+<P>Applied's effective income tax rate for the three months ended July 30, 2000 was 30
+percent, compared to 31 percent for the three months ended August 1, 1999. The lower rate
+resulted primarily from a shift in the geographic composition of pre-tax income to entities
+operating in countries with lower tax rates.
+
+<A NAME="liquid"></A>
+<p><u><strong>Financial Condition, Liquidity and Capital Resources</u></strong></p>
+
+<P>Applied's financial condition at July 30, 2000 remained strong, with a ratio of
+current assets to current liabilities of 3.2:1, compared to 3.1:1 at October 31, 1999.
+Applied had cash, cash equivalents and short-term investments of $3.7 billion at July 30,
+2000.
+
+<P>For the nine months ended July 30, 2000, cash, cash equivalents and short-term
+investments increased by $928 million. Significant sources of cash were net income
+(excluding depreciation and amortization expense), proceeds from stock issuances, and
+increases in income taxes payable and accounts payable and accrued expenses. These sources
+of cash were partially offset by uses of working capital, particularly increases in
+accounts receivable and inventories, and capital expenditures required to support Applied's
+increased business volume. For further details, see the Consolidated Condensed Statements
+of Cash Flows in this Form 10-Q.
+
+<P>Applied utilized programs to sell accounts receivable of $1.1 billion during the nine
+months ended July 30, 2000.  Receivable sales have the effect of increasing cash and
+reducing accounts receivable and days sales outstanding. For further details regarding
+accounts receivable sales, see Note 4 of Notes to Consolidated Condensed Financial
+Statements in this Form 10-Q.
+
+<P>As of July 30, 2000, Applied's principal sources of liquidity consisted of $3.7 billion
+of cash, cash equivalents and short-term investments and approximately $600 million of
+existing credit facilities. Applied's liquidity is affected by many factors, some of which
+are based on the normal ongoing operations of the business, and others of which relate to
+the uncertainties of global economies and the semiconductor and semiconductor equipment
+industries. Although Applied's cash requirements fluctuate based on the timing and extent
+of these factors, Applied believes that cash generated from operations, together with the
+liquidity provided by existing cash balances and borrowing capability, will be sufficient
+to satisfy liquidity requirements for the next 12 months.
+
+<A NAME="risks"></A>
+<p><u><strong>Trends, Risks and Uncertainties</u></strong></p>
+
+<p><strong>The industry that Applied serves is highly volatile and unpredictable.</strong><br>
+
+The semiconductor industry has historically been cyclical because of sudden changes
+in customer capacity requirements and demand for semiconductors, which may affect the
+timing and amounts of capital equipment purchases by customers. The health of the
+semiconductor manufacturing equipment industry is affected by these semiconductor industry
+cycles, the timing, length and severity of which are difficult to predict. Although
+semiconductors are used in many different products, the markets for those products are
+interrelated to various degrees. During periods of rapid growth, Applied must be able to
+acquire and/or develop sufficient manufacturing capacity and inventory to meet customer
+demand, and to attract, hire, assimilate and retain a sufficient number of qualified
+people. During periods of declining demand for semiconductor manufacturing equipment,
+customers may reduce purchases, delay delivery of products and/or cancel orders. Therefore,
+Applied must be able to quickly and effectively align its cost structure with prevailing
+market conditions, to manage its inventory levels in order to reduce the possibility of
+future inventory write-downs resulting from obsolescence, and to motivate and retain key
+employees. If Applied is unable to achieve its objectives in a timely manner during these
+industry cycles, there could be a material adverse effect on its financial condition and
+results of operations.
+
+<p><strong>Applied operates in a highly competitive industry characterized by
+increasingly rapid technological changes.</strong><br>
+
+Applied's competitive advantage and future success depend on its ability to
+successfully: develop new products and technologies; develop new markets in the
+semiconductor industry for its products and services; introduce new products to the
+marketplace in a timely manner; qualify new products with its customers; and commence and
+adjust production to meet customer demands. The introduction of new products and
+technologies, including those to support the transition to 300mm systems, grows
+increasingly complex over time. If Applied does not develop and introduce new products and
+technologies in a timely manner in response to changing market conditions or customer
+requirements, its financial condition and results of operations could be materially and
+adversely affected.
+
+<p><strong>Applied is exposed to the risks of operating a global business.</strong><br>
+
+Managing Applied's global operations presents challenges that could materially and
+adversely affect demand for Applied's systems and related services. These challenges
+include cultural diversities, periodic economic downturns, trade balance issues, political
+instability and fluctuations in interest and currency exchange rates, among other risks.
+
+<p><strong>Failure of critical suppliers to deliver sufficient quantities of product in a
+timely and cost-effective manner could negatively affect Applied's business.</strong><br>
+
+Applied uses numerous vendors to supply parts, components and subassemblies
+(collectively &quot;parts&quot;) for the manufacture and support of its products. In
+addition, some key parts may be obtained only from a single supplier or a limited group of
+suppliers.  If Applied does not receive a sufficient quantity of parts in a timely and
+cost-effective manner to meet its production requirements, Applied's results of operations
+may be materially and adversely affected.
+
+<p><strong>Applied is exposed to risks associated with acquisitions.</strong><br>
+
+Applied has made, and may in the future make, acquisitions of, or significant
+investments in, businesses with complementary products, services and/or technologies.
+Acquisitions involve numerous risks, including, but not limited to: 1) difficulties and
+increased costs in connection with integration of the personnel, operations, technologies
+and products of acquired companies; 2) diversion of management's attention from other
+operational matters; 3) the potential loss of key employees of acquired companies; 4) lack
+of synergy, or the inability to realize expected synergies, resulting from the acquisition;
+and 5) acquired intangible assets becoming impaired as a result of technological
+advancements or worse-than-expected performance of the acquired company. In addition, the
+Financial Accounting Standards Board has indicated that it plans to rescind the pooling-of-
+interests method of acquisition accounting. This could result in significant charges from
+amortization of intangible assets recorded in connection with future acquisitions, and may
+alter Applied's acquisition strategy. Mergers and acquisitions, including Applied's
+acquisition of Etec, are inherently risky and the inability to effectively manage these
+risks could materially and adversely affect Applied's business, financial condition and
+results of operations.
+
+<p><strong>Applied is subject to risks of non-compliance with environmental
+regulations.</strong><br>
+
+Applied is subject to environmental regulations in connection with its business
+operations, including but not limited to regulations related to the development,
+manufacturing and use of its products. From time to time, Applied receives notices alleging
+violations of these regulations. It is Applied's policy to respond promptly to these
+notices and to take any necessary corrective actions. Failure or inability to comply with
+existing or future environmental regulations could result in significant remediation
+liabilities, the imposition of fines and/or the suspension or termination of development,
+manufacturing or use, each of which could have a material adverse effect on Applied's
+financial condition and results of operations.
+
+<p><strong>Applied is exposed to various risks related to legal proceedings
+or claims.</strong><br>
+
+Applied currently is, and in the future may be, involved in legal proceedings or
+claims regarding patent infringement, intellectual property rights, antitrust,
+environmental regulations, contracts and other matters (see Part II below). These legal
+proceedings and claims, whether with or without merit, could be time-consuming and
+expensive to defend, and could divert management's attention and resources. There can be no
+assurance regarding the outcome of current or future legal proceedings or claims. If
+Applied is not able to resolve a claim, negotiate a settlement of the matter, obtain
+necessary licenses on commercially reasonable terms, and/or successfully prosecute or
+defend its position, Applied's financial condition and results of operations could be
+materially and adversely affected.
+
+<p><strong>Manufacturing interruptions or delays could affect Applied's ability to meet
+customer demand.</strong><br>
+
+Applied's business depends on its ability to manufacture products that meet the
+rapidly changing demands of its customers. Significant interruptions of manufacturing
+operations as a result of natural disasters, software issues, infrastructure failure, or
+other cause, could result in delayed product deliveries or manufacturing inefficiencies,
+any or all of which could materially and adversely affect Applied's financial condition and
+results of operations.
+
+
+<br>
+<br>
+<br>
+<A NAME="Item3"></A>
+<p><strong>Item 3.  Quantitative and Qualitative Disclosures About
+Market Risk</strong></p>
+
+<P>Applied purchases forward exchange and currency option contracts to hedge certain
+existing firm commitments and foreign currency denominated transactions expected to occur
+during the next year. Gains and losses on these contracts are recognized in income when the
+related transactions being hedged are recognized. Because the effect of movements in
+currency exchange rates on forward exchange and currency option contracts generally offsets
+the related effect on the underlying items being hedged, these financial instruments are
+not expected to subject Applied to risks that would otherwise result from changes in
+currency exchange rates. Net foreign currency gains and losses were not material for the
+three or nine months ended July 30, 2000.
+
+<P>Applied has performed an analysis to assess the potential financial effect of reasonably
+possible near-term changes in interest and foreign currency exchange rates. Based upon
+Applied's analysis, the effect of such rate changes is not expected to be material to
+Applied's cash flows, financial condition or results of operations.
+
+
+
+<br>
+<br>
+<br>
+<p align="center"><strong>
+PART II. OTHER INFORMATION
+</strong></p>
+
+<A NAME="legal"></A>
+<p><b>Item 1.  Legal Proceedings</b></p>
+
+<p><strong>Varian and Novellus</strong><br>
+
+On June 13, 1997, Applied filed a lawsuit against Varian Associates, Inc. (Varian)
+captioned Applied Materials, Inc. v. Varian Associates, Inc. (case no. C-97-20523-RMW) in
+the United States District Court for the Northern District of California.  This lawsuit
+alleges infringement of several of Applied's patents for physical vapor deposition (PVD)
+technology. The complaint was later amended on July 7, 1997 to include Novellus Systems,
+Inc. (Novellus) as a defendant as a result of Novellus' acquisition of Varian's thin film
+systems PVD business. Applied seeks damages for past infringement, a permanent injunction,
+treble damages for willful infringement, pre-judgment interest and attorneys' fees. Varian
+answered the complaint by denying all allegations, counterclaiming for declaratory judgment
+of invalidity and unenforceability and alleging conduct by Applied in violation of
+antitrust laws. On June 23, 1997, Novellus filed a separate lawsuit against Applied
+captioned Novellus Systems, Inc. v. Applied Materials, Inc. (case no. C-97-20551-EAI) in
+the United States District Court for the Northern District of California.  Novellus'
+lawsuit alleges infringement by Applied of three PVD technology patents that were formerly
+owned by Varian. On July 8, 1997, Varian filed a separate lawsuit against Applied captioned
+Varian Associates, Inc. v. Applied Materials, Inc. (case no. C-97-20597-PVT) in the United
+States District Court for the Northern District of California.  Varian's lawsuit alleges a
+broad range of conduct by Applied in violation of federal antitrust laws and state unfair
+competition and business practice laws. On July 16, 1999, Varian was granted permission to
+file a First Amended Complaint in that action. On November 8, 1999, the Court granted in
+part Applied's partial motion to dismiss the First Amended Complaint. On December 10, 1999,
+Varian filed its Second Amended Complaint and Applied has answered. Discovery has commenced
+in these actions. The Court has scheduled trial of all patent claims for April 2001. No
+other trial dates have been set. Applied believes it has meritorious claims and defenses
+and intends to pursue them vigorously.
+
+<p><strong>Plasma Physics</strong><br>
+
+On April 17, 2000, Applied filed a lawsuit in the United States District Court for
+the Eastern District of New York captioned Applied Materials, Inc. v. Plasma Physics Corp.
+(&quot;PPC&quot;) and Solar Physics Corp. (&quot;SPC&quot;) (case no. CV-00-2199). The
+lawsuit seeks a judicial declaration that Applied's chemical vapor deposition equipment
+does not infringe two patents owned by PPC and exclusively licensed to SPC (&quot;the two
+patents&quot;) and/or that those patents are invalid or unenforceable. On July 31, 2000,
+PPC and SPC answered the complaint and filed a conditional counterclaim alleging
+infringement by Applied of the two patents.  PPC and SPC seek an injunction prohibiting
+future infringement and an award of costs, expenses and attorneys' fees.  The counterclaim
+is conditional because PPC and SPC have stated that they will not sue Applied for
+infringement of the two patents if the Court dismisses the lawsuit initiated by Applied for
+lack of subject matter jurisdiction. No trial date has been set.
+
+<P>Applied is subject to various other legal proceedings and claims, either asserted or
+unasserted, that arise in the ordinary course of business. Although the outcome of these
+claims cannot be predicted with certainty, Applied does not believe that any of these other
+legal matters will have a material adverse effect on its financial condition or results of
+operations.
+
+
+
+<br>
+<br>
+<br>
+<A NAME="EFC"></A>
+<p><b>Item 5.  Other Information</b></p>
+
+<P>The ratio of earnings to fixed charges for the nine months ended August 1, 1999 and July
+30, 2000, and for each of the last five fiscal years, was as follows:
+
+
+<pre>
+                                                          Nine Months Ended
+                      Fiscal Year                     ----------------------
+    ------------------------------------------------   August 1,   July 30,
+      1995      1996      1997      1998      1999       1999        2000
+    --------  --------  --------  --------  --------  ----------  ----------
+     18.81x    19.44x    19.01x    7.56x     14.03x     12.10x      22.01x
+    ========  ========  ========  ========  ========  ==========  ==========
+
+</pre>
+
+<br>
+<A NAME="exhibit"></A>
+<p><b>Item 6.  Exhibits and Reports on Form 8-K</b></p>
+
+<p>a)  Exhibits are numbered in accordance with the Exhibit Table of Item 601
+of Regulation S-K:
+
+<BLOCKQUOTE>
+
+<p>3(ii)(a) &nbsp;&nbsp Amendment to the Bylaws of Applied Materials, Inc. dated as of June 22,
+2000.
+
+<p>3(ii)(b) &nbsp;&nbsp Bylaws of Applied Materials, Inc., as amended and restated through June 22,
+2000.
+
+<p>27.0 &nbsp;&nbsp  Financial Data Schedule for the nine months ended July 30, 2000:
+filed electronically.
+
+
+</BLOCKQUOTE>
+
+<p>b)      Applied did not file any reports on Form 8-K during its third fiscal quarter of 2000.
+
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+
+
+
+<A NAME="sign"></A>
+<p align="center"><strong>
+                                   SIGNATURES
+</strong></p>
+<p>     Pursuant to the requirements of the Securities Exchange Act of 1934, the registrant
+has duly caused this report to be signed on its behalf by the undersigned thereunto duly
+authorized.
+
+<P>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="62%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+                        APPLIED MATERIALS, INC.
+</TD></TR></TABLE>
+
+
+
+<p>September 7, 2000
+
+
+<P>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="2%"></TD>
+    <TD width="60%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD>By:&nbsp;</TD>
+    <TD align=left>
+/s/ Joseph R. Bronson
+</TD></TR></TABLE>
+
+
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="62%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+      <HR align=left SIZE=1>
+    </TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+Joseph R. Bronson
+</TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left><I>
+        Senior Vice President,
+        Office of the President,<br>
+        Chief Financial Officer and
+        Chief Administrative Officer
+
+  </I></TD></TR></TABLE></P>
+
+<br>
+<br>
+<br>
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="2%"></TD>
+    <TD width="60%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD>By:&nbsp;</TD>
+    <TD align=left>
+/s/ Patrick Crom
+</TD></TR></TABLE>
+
+
+<TABLE border=0 cellPadding=0 cellSpacing=0 width="100%">
+  <TR>
+    <TD width="38%"></TD>
+    <TD width="62%"></TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+      <HR align=left SIZE=1>
+    </TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left>
+        Patrick Crom
+</TD></TR>
+  <TR vAlign=top>
+    <TD>&nbsp;</TD>
+    <TD align=left><I>
+        Vice President,
+        Global Controller and <br>
+        Chief Accounting Officer
+  </I></TD></TR></TABLE></P>
+
+
+<pre>
+
+
+
+
+
+
+</pre>
+
+
+
+
+
+
+
+
+<pre>
+
+
+                                        EXHIBIT INDEX
+
+
+
+ EXHIBIT
+ NUMBER                                DESCRIPTION
+- ----------                             -----------
+
+3(ii)(a)     Amendment to the Bylaws of Applied Materials, Inc. dated as of June 22,
+             2000.
+
+3(ii)(b)     Bylaws of Applied Materials, Inc., as amended and restated through June
+             22, 2000.
+
+27.0         Financial Data Schedule for the nine months ended July 30, 2000:
+             filed electronically.
+
+
+</pre>
+</body>
+</HTML>
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-3.II.A
+<SEQUENCE>2
+<FILENAME>amend.htm
+<DESCRIPTION>AMENDMENT TO THE BYLAWS DATED JUNE 22, 2000
+<TEXT>
+
+
+<HTML>
+<head>
+<TITLE>EX-3.i.a</TITLE>
+</head>
+<body bgcolor=white>
+
+
+<P ALIGN="CENTER">RESOLUTIONS OF THE </P>
+<P ALIGN="CENTER">BOARD OF DIRECTORS OF</P>
+<P ALIGN="CENTER">APPLIED MATERIALS, INC.</P>
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER">Adopted on June 22, 2000</P>
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER">&nbsp;</P>
+<P ALIGN="CENTER">AMENDMENT TO BYLAWS</P>
+<P ALIGN="CENTER"></P>
+
+<P>RESOLVED that Section 2.13 of the Bylaws of this Company be amended to read in full as follows:
+
+<P>&quot;2.13  Proxies.  Each stockholder entitled to vote at a meeting of stockholders may
+authorize another person or persons to act for such stockholder by a proxy, but no such proxy shall
+be voted or acted upon after one year from its date, unless the proxy provides for a longer period.
+A duly executed proxy shall be irrevocable if it states that it is irrevocable and if, and only so
+long as, it is coupled with an interest sufficient in law to support an irrevocable power.  A proxy
+may be made irrevocable regardless of whether the interest with which it is coupled is an interest
+in the stock itself or an interest in the corporation generally.&quot;
+
+<P>RESOLVED, FURTHER, that Section&nbsp;4.1 of the Bylaws of this Company be amended to read in
+full as follows:
+
+<P>&quot;4.1  <U>Committees of Directors</U>.  To the fullest extent provided by law, the board of
+directors may, by resolution passed by a majority of the whole board, designate one or more
+committees, each committee to consist of one or more of the directors of the corporation.  The
+board may designate one or more directors as alternate members of any committee, who may replace
+any absent or disqualified member at any meeting of the committee.  In the absence or
+disqualification of a member of a committee, the member or members present at any meeting and not
+disqualified from voting, whether or not  he or they constitute a quorum, may unanimously appoint
+another member of the board of directors to act at the meeting in the place of any such absent or
+disqualified member.  Any such committee, to the extent provided in the resolution of the board of
+directors, or in the bylaws of the corporation, shall have and may exercise all the powers and
+authority of the board of directors in the management of the business and affairs of the
+corporation, and may authorize the seal of the corporation to be affixed to all papers which may
+require it.&quot;</P>
+<P ALIGN="CENTER"></P>
+<P ALIGN="CENTER">&nbsp;</P>
+
+
+
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-3.II.B
+<SEQUENCE>3
+<FILENAME>bylaws.htm
+<DESCRIPTION>BYLAWS AS AMENDED AND RESTATED TO JUNE 22, 2000
+<TEXT>
+
+<HTML>
+<head>
+<TITLE>EX-3.i.b</TITLE>
+</head>
+<body bgcolor=white>
+
+<pre>
+
+<P ALIGN="CENTER">BYLAWS</P>
+<P ALIGN="CENTER">OF</P>
+<P ALIGN="CENTER">APPLIED MATERIALS, INC.
+(a Delaware corporation)</P>
+<P ALIGN="CENTER">(Amended to June  22,  2000)</P>
+
+<P ALIGN="CENTER"> </P>
+
+<P><A NAME="mpTableOfContents">ARTICLE I&#9;OFFICES&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1
+
+<P>1.1&#9;Registered Office&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1</P>
+<P>1.2&#9;Other Offices&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1</P>
+
+<P>ARTICLE II&#9;STOCKHOLDERS&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1</P>
+
+<P>2.1&#9;Place of Meetings&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1</P>
+<P>2.2&#9;Annual Meeting&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1</P>
+<P>2.3&#9;Special Meeting&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;1</P>
+<P>2.4&#9;Notice of Stockholders' Meetings&#9;&#9;&#9;&#9;&#9;&#9;&#9;2</P>
+<P>2.5&#9;Advance Notice of Stockholder Nominees&#9;&#9;&#9;&#9;&#9;&#9;&#9;2</P>
+<P>2.6&#9;Manner of Giving Notice; Affidavit of Notice&#9;&#9;&#9;&#9;&#9;&#9;2</P>
+<P>2.7&#9;Quorum&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;2</P>
+<P>2.8&#9;Adjourned Meeting; Notice&#9&#9;&#9;&#9;&#9;&#9;&#9;&#9;3</P>
+<P>2.9&#9;Conduct of Business&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;3</P>
+<P>2.10&#9;Voting&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;3</P>
+<P>2.11&#9;Waiver of Notice&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;3</P>
+<P>2.12&#9;Record Date for Stockholder Notice; Voting; Giving Consents&#9;&#9;&#9;&#9;3</P>
+<P>2.13&#9;Proxies&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;4</P>
+
+<P>ARTICLE III&#9;DIRECTORS&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;4</P>
+
+<P>3.1&#9;Powers&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;4</P>
+<P>3.2&#9;Number of Directors&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;4</P>
+<P>3.3&#9;Election, Qualification and Term of Office of Directors&#9;&#9;&#9;&#9;&#9;4</P>
+<P>3.4&#9;Resignation and Vacancies&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;4</P>
+<P>3.5&#9;Place of Meetings; Meetings by Telephone&#9;&#9;&#9;&#9;&#9;&#9;5</P>
+<P>3.6&#9;Regular Meetings&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;5</P>
+<P>3.7&#9;Special Meetings; Notice&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;6</P>
+<P>3.8&#9;Quorum&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;6</P>
+<P>3.9&#9;Waiver of Notice&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;6</P>
+<P>3.10&#9;Board Action by Written Consent Without a Meeting&#9&#9;&#9;&#9;&#9;6</P>
+<P>3.11&#9;Fees and Compensation of Directors&#9;&#9;&#9;&#9;&#9;&#9;&#9;6</P>
+<P>3.12&#9;Approval of Loans to Officers&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+<P>3.13&#9;Removal of Directors&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+<P>3.14&#9;Chairman of the Board of Directors&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+<P>3.15&#9;Retirement of Directors.&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+
+<P>ARTICLE IV&#9;COMMITTEES&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+
+<P>4.1&#9;Committees of Directors&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+<P>4.2&#9;Committee Minutes&#9&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;7</P>
+<P>4.3&#9;Meetings and Action of Committees&#9&#9;&#9;&#9;&#9;&#9;&#9;8</P>
+
+<P>ARTICLE V&#9;OFFICERS&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;8</P>
+
+<P>5.1&#9;Officers&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;8</P>
+<P>5.2&#9;Election of Officers&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;8</P>
+<P>5.3&#9;Appointed Officers&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;8</P>
+<P>5.4&#9;Removal and Resignation of Officers&#9;&#9;&#9;&#9;&#9;&#9;&#9;8</P>
+<P>5.5&#9;Vacancies in Offices&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;9</P>
+<P>5.6&#9;Chairman of the Board&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;9</P>
+<P>5.7&#9;President&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;9</P>
+<P>5.8&#9;Senior Vice Presidents and Vice Presidents&#9;&#9;&#9;&#9;&#9;&#9;9</P>
+<P>5.9&#9;Secretary&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;9</P>
+<P>5.10&#9;Chief Financial Officer&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;9</P>
+<P>5.11&#9;Representation of Shares of Other Corporations&#9;&#9;&#9;&#9;&#9;&#9;10</P>
+<P>5.12&#9;Authority and Duties of Officers&#9;&#9;&#9;&#9;&#9;&#9;&#9;10</P>
+
+<P>ARTICLE VI&#9;RECORDS AND REPORTS&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;10</P>
+
+<P>6.1&#9;Maintenance and Inspection of Records&#9;&#9;&#9;&#9;&#9;&#9;&#9;10</P>
+<P>6.2&#9;Inspection by Directors&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;11</P>
+
+<P>ARTICLE VII&#9;GENERAL MATTERS&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;11</P>
+
+<P>7.1&#9;Execution of Corporate Contracts and Instruments&#9;&#9;&#9;&#9;&#9;11</P>
+<P>7.2&#9;Stock Certificates; Partly Paid Shares&#9;&#9;&#9;&#9;&#9;&#9;&#9;11</P>
+<P>7.3&#9;Special Designation on Certificates&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+<P>7.4&#9;Lost Certificates&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+<P>7.5&#9;Construction; Definitions&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+<P>7.6&#9;Dividends&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+<P>7.7&#9;Fiscal Year&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+<P>7.8&#9;Seal&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+
+<P>ARTICLE VIII&#9;AMENDMENTS&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+
+<P>8.1&#9;Amendments&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;&#9;12</P>
+
+
+<P ALIGN="CENTER"></A></P>
+<P ALIGN="CENTER">BYLAWS<BR>
+OF<BR>
+APPLIED MATERIALS, INC.<BR>
+<BR>
+<FONT COLOR="#0000ff"><P ALIGN="CENTER">
+ARTICLE I<BR>
+<U>OFFICES</P></U>
+
+&#9;1.1&#9;<U>Registered Office</U></FONT>.  The registered office of the corporation in the State of
+Delaware shall be Corporation Trust Center, 1209&nbsp;Orange Street, in the City of Wilmington,
+County of New Castle.  The name of the registered agent of the corporation at such location is
+The Corporation Trust Company. <BR>
+<FONT COLOR="#0000ff">&#9;1.2&#9;<U>Other Offices</U></FONT>.  The corporation may also have offices
+at such other places both within and without the State of Delaware as the board of directors
+may from time to time determine or the business of the corporation may require.
+<FONT COLOR="#0000ff"><P ALIGN="CENTER"><BR>
+<P ALIGN="CENTER">ARTICLE II<BR>
+<U>STOCKHOLDERS</U></P></FONT>
+<FONT COLOR="#0000ff">
+&#9;2.1&#9;<U>Place of Meetings</U></FONT>.  Meetings of stockholders shall be held at such place,
+either, within or without the State of Delaware, as may be designated by the board of
+directors.  In the absence of any such designation, stockholders' meetings shall be held at the
+corporation's principal executive offices.<BR>
+<FONT COLOR="#0000ff">&#9;2.2&#9;<U>Annual Meeting</U></FONT>.  The annual meeting of stockholders
+shall be held each year on a date and at a time designated by the board of directors.  At the
+meeting, directors shall be elected and any other proper business may be transacted.<BR>
+<FONT COLOR="#0000ff">&#9;2.3&#9;<U>Special Meeting</U></FONT>.  Special meetings of the stockholders
+may be called at any time by the board of directors, or by the chairman of the board, or by the
+president of the corporation.<BR>
+<P>&#9;If a special meeting is called by any person or persons other than the board of directors,
+the request shall be in writing, specifying the time of such meeting and the general nature of
+the business proposed to be transacted, and shall be delivered personally or sent by registered
+mail or by telegraphic or other facsimile transmission to the chairman of the board, the
+president, any vice president, or the secretary of the corporation.  No business may be
+transacted at such special meeting otherwise than specified in such notice.  The officer
+receiving the request shall cause notice to be promptly given to the stockholders entitled to
+vote, in accordance with the provisions of Sections&nbsp;4 and 5 of this Article&nbsp;II, that
+a meeting will be held at the time requested by the person or persons calling the meeting, not
+less than 35 nor more than 60 days after the receipt of the request.  If the notice is not
+given within 20 days after the receipt of the request, the person or persons requesting the
+meeting may give the notice.  Nothing contained in this paragraph of this Section&nbsp;3 shall
+be construed as limiting, fixing, or affecting the time when a meeting of stockholders called
+by action of the board of directors may be held.</P>
+<FONT COLOR="#0000ff">&#9;2.4&#9;<U>Notice of Stockholders' Meetings</U></FONT>.  All notices of
+meetings with stockholders shall be in writing and shall be sent or otherwise given in
+accordance with Section&nbsp;2.5 of these bylaws not less than 10 nor more than 60 days before
+the date of the meeting to each stockholder entitled to vote at such meeting.  The notice shall
+specify the place, date, and hour of the meeting, and, in the case of a special meeting, the
+purpose or purposes for which the meeting is called.<BR>
+<FONT COLOR="#0000ff">&#9;2.5&#9;<U>Advance Notice of Stockholder Nominees</U></FONT>.  No nominations
+for director of the corporation by any person other than the board of directors shall be
+presented to any meeting of stockholders unless the person making the nomination is a record
+stockholder and shall have delivered a written notice to the secretary of the corporation no
+later than the close of business forty-five days prior to the month and day of mailing the
+prior year's proxy statement.  Such notice shall (i)&nbsp;set forth the name and address of the
+person advancing such nomination and the nominee, together with such information concerning the
+person making the nomination and the nominee as would be required by the appropriate Rules and
+Regulations of the Securities and Exchange Commission to be included in a proxy statement
+soliciting proxies for the election of such nominee, and (ii)&nbsp;shall include the duly
+executed written consent of such nominee to serve as director if elected.<BR>
+<P>&#9;No proposal by any person other than the board of directors shall be submitted for the
+approval of the stockholders at any regular or special meeting of the stockholders of the
+corporation unless the person advancing such proposal shall have delivered a written notice to
+the secretary of the corporation no later than the close of business forty-five days prior to
+the month and day of mailing the prior year's proxy statement.  Such notice shall set forth the
+name and address of the person advancing the proposal, any material interest of such person in
+the proposal, and such other information concerning the person making such  proposal and the
+proposal itself as would be required by the appropriate Rules and Regulations of the Securities
+and Exchange Commission to be included in a proxy statement soliciting proxies for the
+proposal.</P>
+<FONT COLOR="#0000ff">&#9;2.6&#9;<U>Manner of Giving Notice; Affidavit of Notice</U></FONT>.  Written
+notice of any meeting of stockholders, if mailed, is given when deposited in the United States
+mail, postage prepaid, directed to the stockholder at his address as it appears on the records
+of the corporation.  An affidavit of the secretary or an assistant secretary or of the transfer
+agent of the corporation that the notice has been given shall, in the absence of fraud, be
+prima facie evidence of the facts stated therein.<BR>
+<FONT COLOR="#0000ff">&#9;2.7&#9;<U>Quorum</U></FONT>.  The holders of a majority of the stock issued
+and outstanding and entitled to vote thereat, present in person or represented by proxy, shall
+constitute a quorum at all meetings of the stockholders for the transaction of business except
+as otherwise provided by statute or by the certificate of incorporation.  Except as otherwise
+required by law, the certificate of incorporation or these bylaws, the affirmative vote of the
+majority of such quorum shall be deemed the act of the stockholders.  If, however, such quorum
+is not present or represented at any meeting of the stockholders, then either (i)&nbsp;the
+chairman of the meeting or (ii)&nbsp;the stockholders entitled to vote thereat, present in
+person or represented by proxy, shall have power to adjourn the meeting from time to time,
+without notice other than announcement at the meeting, until a quorum is present or
+represented.  At such adjourned meeting at which a quorum is present or represented, any
+business may be transacted that might have been transacted at the meeting as originally
+noticed. <BR>
+<FONT COLOR="#0000ff">&#9;2.8&#9;<U>Adjourned Meeting; Notice</U></FONT>.  When a meeting is adjourned
+to another time or place, notice need not be given of the adjourned meeting if the time and
+place thereof are announced at the meeting at which the adjournment is taken.  At the adjourned
+meeting the corporation may transact any business that might have been transacted at the
+original meeting.  If the adjournment is for more than 30 days, or if after the adjournment a
+new record date is fixed for the adjourned meeting, a notice of the adjourned meeting shall be
+given to each stockholder of record entitled to vote at the meeting. <BR>
+<FONT COLOR="#0000ff">&#9;2.9&#9;<U>Conduct of Business</U></FONT>.  The chairman of any meeting of
+stockholders shall determine the order of business and the procedure at the meeting, including
+such regulation of the manner of voting and the conduct of business. <BR>
+<FONT COLOR="#0000ff">&#9;2.10&#9;<U>Voting</U></FONT>.  Except as may be otherwise provided in the
+certificate of incorporation, each stockholder shall be entitled to one vote for each share of
+capital stock held by such stockholder.  Voting may be by voice or by ballot as the presiding
+officer of the meeting of the stockholders shall determine.  On a vote by ballot, each ballot
+shall be signed by the stockholder voting, or by such stockholder's proxy, and shall state the
+number of shares voted.<BR>
+<FONT COLOR="#0000ff">&#9;2.11&#9;<U>Waiver of Notice</U></FONT>.  Whenever notice is required to be
+given under any provision of the General Corporation Law of Delaware or of the certificate of
+incorporation or these bylaws, a written waiver thereof, signed by the person entitled to
+notice, whether before or after the time stated therein, shall be deemed equivalent to notice.
+Attendance of a person at a meeting shall constitute a waiver of notice of such meeting, except
+when the person attends a meeting for the express purpose of objecting, at the beginning of the
+meeting, to the transaction of any business because the meeting is not lawfully called or
+convened.  Neither the business to be transacted at, nor the purpose of, any regular or special
+meeting of the stockholders need be specified in any written waiver of notice unless so
+required by the certificate of incorporation or these bylaws.<BR>
+<FONT COLOR="#0000ff">&#9;2.12&#9;<U>Record Date for Stockholder Notice; Voting; Giving
+Consents</U></FONT>.  In order that the corporation may determine the stockholders entitled to
+notice of or to vote at any meeting of stockholders or any adjournment thereof, or entitled to
+receive payment of any dividend or other distribution or allotment of any rights, or entitled
+to exercise any rights in respect of any change, conversion or exchange of stock or for the
+purpose of any other lawful action, the board of directors may fix, in advance, a record date,
+which shall not be more than 60 nor less than 10 days before the date of such meeting, nor more
+than 60 days prior to any other action.<BR>
+<P>&#9;If the board of directors does not so fix a record date:</P>
+
+&#9;(i)&#9;The record date for determining stockholders entitled to notice of or to vote at a meeting
+of stockholders shall be at the close of business on the day next preceding the day on which
+notice is given, or, if notice is waived, at the close of business on the day next preceding
+the day on which the meeting is held.<BR>
+&#9;(ii)&#9;The record date for determining stockholders for any other purpose shall be at the close of
+business on the day on which the board of directors adopts the resolution relating
+thereto.<BR>
+<P>&#9;A determination of stockholders of record entitled to notice of or to vote at a meeting of
+<P>A determination of stockholders of record entitled to notice of or to vote at a meeting of
+stockholders shall apply to any adjournment of the meeting; provided, however, that the board
+of directors may fix a new record date for the adjourned meeting.</P>
+<FONT COLOR="#0000ff">&#9;2.13&#9;<U>Proxies</U></FONT>.  Each stockholder entitled to vote at a
+meeting of stockholders may authorize another person or persons to act for such stockholder by
+a proxy, but no such proxy shall be voted or acted upon after one year from its date, unless
+the proxy provides for a longer period.  A duly executed proxy shall be irrevocable if it
+states that it is irrevocable and if, and only as long as, it is coupled with an interest
+sufficient in law to support an irrevocable power.  A proxy may be made irrevocable regardless
+of whether the interest with which it is coupled is an interest in the stock itself or an
+interest in the corporation generally.<BR>
+<FONT COLOR="#0000ff"><P ALIGN="CENTER"><BR>
+<P ALIGN="CENTER">ARTICLE III<BR>
+<U>DIRECTORS</U></P>
+&#9;3.1&#9;<U>Powers</U></FONT>.  The business and affairs of the corporation shall be managed by or
+under the direction of the board of directors, except as otherwise provided in the General
+Corporation Law of the State of Delaware or in the certificate of incorporation.<BR>
+<FONT COLOR="#0000ff">&#9;3.2&#9;<U>Number of Directors</U></FONT>.  The board of directors shall
+consist of ten (10) persons until changed by a proper amendment of this Section&nbsp;3.2.<BR>
+<P>&#9;No reduction of the authorized number of directors shall have the effect of removing any
+director before that director's term of office expires.</P>
+<FONT COLOR="#0000ff">&#9;3.3&#9;<U>Election, Qualification and Term of Office of
+Directors</U></FONT>.  Except as provided in Section&nbsp;3.4 of these bylaws, directors shall
+be elected at each annual meeting of stockholders.  Directors need not be stockholders.  Each
+director, including a director elected to fill a vacancy, shall hold office until his successor
+is elected and qualified or until his earlier resignation or removal.<BR>
+<P>&#9;Elections of directors need not be by written ballot.</P>
+<FONT COLOR="#0000ff">&#9;3.4&#9;<U>Resignation and Vacancies</U></FONT>.  Any director may resign at
+any time upon written notice to the attention of the secretary of the corporation.  When one or
+more directors so resigns and the resignation is effective at a future date, a majority of the
+directors then in office, including those who have so resigned, shall have power to fill such
+vacancy or vacancies, the vote thereon to take effect when such resignation or resignations
+shall become effective, and each director so chosen shall hold office as provided in this
+section in the filling of other vacancies.<BR>
+<P>&#9;Vacancies and newly created directorships resulting from any increase in the authorized
+number of directors elected by all of the stockholders having the right to vote as a single
+class may be filled by a majority of the directors then in office, although less than a quorum,
+or by a sole remaining director.</P>
+<P>&#9;Whenever the holders of any class or classes of stock or series thereof are entitled to
+elect one or more directors by the provisions of the certificate of incorporation, vacancies
+and newly created directorships of such class or classes or series may be filled by a majority
+of the directors elected by such class or classes or series thereof then in office, or by a
+sole remaining director so elected.</P>
+<P>&#9;If at any time, by reason of death or resignation or other cause, the corporation should
+have no directors in office, then any officer or any stockholder or an executor, administrator,
+trustee or guardian of a stockholder, or other fiduciary entrusted with like responsibility for
+the person or estate of a stockholder, may call a special meeting of stockholders in accordance
+with the provisions of the certificate of incorporation or these bylaws, or may apply to the
+Court of Chancery for a decree summarily ordering an election as provided in Section&nbsp;211
+of the General Corporation Law of Delaware.</P>
+<P>&#9;If, at the time of filling any vacancy or any newly created directorship, the directors then
+in office constitute less than a majority of the whole board (as constituted immediately prior
+to any such increase), then the Court of Chancery may, upon application of any stockholder or
+stockholders holding at least ten percent (10%) of the total number of the shares at the time
+outstanding having the right to vote for such directors, summarily order an election to be held
+to fill any such vacancies or newly created directorships, or to replace the directors chosen
+by the directors then in office as aforesaid, which election shall be governed by the
+provisions of Section&nbsp;211 of the General Corporation Law of Delaware as far as
+applicable.</P>
+<P>&#9;The stockholders may elect a director at any time to fill any vacancy not filled by the
+directors.</P>
+<P>&#9;If a vacancy is the result of action taken by the shareholders under Section&nbsp;3.13 of
+these bylaws, then the vacancy shall be filled by the holders of a majority of the shares then
+entitled to vote at an election of directors.</P>
+<FONT COLOR="#0000ff">&#9;3.5&#9;<U>Place of Meetings; Meetings by Telephone</U></FONT>.  The board of
+directors of the corporation may hold meetings, both regular and special, either within or
+outside the State of Delaware.<BR>
+<P>&#9;Members of the board of directors, or any committee designated by the board of directors,
+may participate in a meeting of the board of directors, or any committee, by means of
+conference telephone or similar communications equipment by means of which all persons
+participating in the meeting can hear each other, and participation in a meeting pursuant to
+this bylaw shall constitute presence in person at the meeting.</P>
+<FONT COLOR="#0000ff">&#9;3.6&#9;<U>Regular Meetings</U></FONT>.  Regular meetings of the board of
+directors may be held without notice at such time and at such place as shall from time to time
+be determined by the board.<BR>
+<FONT COLOR="#0000ff">&#9;3.7&#9;<U>Special Meetings; Notice</U></FONT>.  Special meetings of the
+board of directors for any purpose or purposes may be called at any time by the chairman of the
+board, the president, any vice president, the secretary or any two directors.<BR>
+<P>&#9;Notice of the time and place of special meetings shall be delivered personally or by
+telephone to each director or sent by first-class mail or telegram, charges prepaid, addressed
+to each director at that director's address as it is shown on the records of the corporation.
+If the notice is mailed, it shall be deposited in the United States mail at least four days
+before the time of the holding of the meeting.  If the notice is delivered personally or by
+telephone or by telegram, it shall be delivered personally or by telephone or to the telegraph
+company at least 48 hours before the time of the holding of the meeting.  Any oral notice given
+personally or by telephone may be communicated either to the director or to a person at the
+office of the director who the person giving the notice has reason to believe will promptly
+communicate it to the director.  The notice need not specify the purpose or the place of the
+meeting, if the meeting is to be held at the principal executive office of the corporation.</P>
+<FONT COLOR="#0000ff">&#9;3.8&#9;<U>Quorum</U></FONT>.  At all meetings of the board of directors, a
+majority of the authorized number of directors shall constitute a quorum for the transaction of
+business and the act of a majority of the directors present at any meeting at which there is a
+quorum shall be the act of the board of directors, except as may be otherwise specifically
+provided by statute or by the certificate of incorporation.  If a quorum is not present at any
+meeting of the board of directors, then the directors present thereat may adjourn the meeting
+from time to time, without notice other than the announcement at the meeting, until a quorum is
+present.<BR>
+<P>&#9;A meeting at which a quorum is initially present may continue to transact business
+notwithstanding the withdrawal of directors, if any action taken is approved by at least a
+majority of the required quorum for that meeting.</P>
+<FONT COLOR="#0000ff">&#9;3.9&#9;<U>Waiver of Notice</U></FONT>.  Whenever notice is required to be
+given under any provision of the General Corporation Law of Delaware or of the certificate of
+incorporation or these bylaws, a written waiver thereof, signed by the person entitled to
+notice, whether before or after the time stated therein, shall be deemed equivalent to notice.
+Attendance of a person at a meeting shall constitute a waiver of notice of such meeting, except
+when the person attends a meeting for the express purpose of objecting, at the beginning of the
+meeting, to the transaction of any business because the meeting is not lawfully called or
+convened.  Neither the business to be transacted at, nor the purpose of, any regular or special
+meeting of the directors, or members of a committee of directors, need be specified in any
+written waiver of notice unless so required by the certificate of incorporation or these
+bylaws.<BR>
+<FONT COLOR="#0000ff">&#9;3.10&#9;<U>Board Action by Written Consent Without a Meeting</U></FONT>.  Any
+action required or permitted to be taken at any meeting of the board of directors, or of any
+committee thereof, may be taken without a meeting if all members of the board or committee, as
+the case may be, consent thereto in writing and the writing or writings are filed with the
+minutes of proceedings of the board or committee.<BR>
+<FONT COLOR="#0000ff">&#9;3.11&#9;<U>Fees and Compensation of Directors</U></FONT>.  The board of
+directors shall have the authority to fix the compensation of directors.<BR>
+<FONT COLOR="#0000ff">&#9;3.12&#9;<U>Approval of Loans to Officers</U></FONT>.  The corporation may
+lend money to, or guarantee any obligations of, or otherwise assist any officer or other
+employee of the corporation or any of its subsidiaries, including any officer or employee who
+is a director of the corporation or any of its subsidiaries, whenever, in the judgment of the
+directors, such loan, guaranty or assistance, or an employee benefit or employee financial
+assistance plan adopted by the board of directors or any committee thereof authorizing any such
+loan, guaranty or assistance, may reasonably be expected to benefit the corporation.  The loan,
+guaranty or other assistance may be with or without interest and may be unsecured, or secured
+in such a manner as the board of directors shall approve, including, without limitation, a
+pledge of shares of stock of the corporation.  Nothing in this section contained shall be
+deemed to deny, limit or restrict the powers of guaranty or warranty of the corporation at
+common law or under any statute.<BR>
+<FONT COLOR="#0000ff">&#9;3.13&#9;<U>Removal of Directors</U></FONT>.  Any director or the entire board
+of directors may be removed, with or without cause, by the holders of a majority of the shares
+then entitled to vote at an election of directors.<BR>
+<P>&#9;No reduction of the authorized number of directors shall have the effect of removing any
+director prior to the expiration of such director's term of office.</P>
+<FONT COLOR="#0000ff">&#9;3.14&#9;<U>Chairman of the Board of Directors</U></FONT>.  The corporation
+may also have, at the discretion of the board of directors, a chairman of the board of
+directors who may be considered an officer of the corporation.<BR>
+<FONT COLOR="#0000ff">&#9;3.15&#9;<U>Retirement of Directors</U>.</FONT>  No member of the board of
+directors shall stand for reelection to membership on the board of directors after attaining
+age 70.  The provisions of Section 3.15 of these bylaws may be waived under extraordinary
+circumstances as to specific members by action of the board of directors.<BR>
+<FONT COLOR="#0000ff"><P ALIGN="CENTER">
+<P ALIGN="CENTER">ARTICLE IV<BR>
+<U>COMMITTEES</U></P><BR>
+&#9;4.1&#9;<U>Committees of Directors</U></FONT>.  To the fullest extent provided by law, the board of
+directors may, by resolution passed by a majority of the whole board, designate one or more
+committees, each committee to consist of one or more of the directors of the corporation.  The
+board may designate one or more directors as alternate members of any committee, who may
+replace any absent or disqualified member at any meeting of the committee.  In the absence or
+disqualification of a member of a committee, the member or members present at any meeting and
+not disqualified from voting, whether or not  he or they constitute a quorum, may unanimously
+appoint another member of the board of directors to act at the meeting in the place of any such
+absent or disqualified member.  Any such committee, to the extent provided in the resolution of
+the board of directors, or in the bylaws of the corporation, shall have and may exercise all
+the powers and authority of the board of directors in the management of the business and
+affairs of the corporation, and may authorize the seal of the corporation to be affixed to all
+papers which may require it.<BR>
+<FONT COLOR="#0000ff">&#9;4.2&#9;<U>Committee Minutes</U></FONT>.  Each committee shall keep regular
+minutes of its meetings and report the same to the board of directors when required.<BR>
+<FONT COLOR="#0000ff">&#9;4.3&#9;<U>Meetings and Action of Committees</U></FONT>.  Meetings and
+actions of committees shall be governed by, and held and taken in accordance with, the
+provisions of Article&nbsp;III of these bylaws, Section&nbsp;3.5 (place of meetings and
+meetings by telephone), Section&nbsp;3.6 (regular meetings), Section&nbsp;3.7 (special meetings
+and notice), Section&nbsp;3.8 (quorum), Section&nbsp;3.9 (waiver of notice), and
+Section&nbsp;3.10 (action without a meeting), with such changes in the context of those bylaws
+as are necessary to substitute the committee and its members for the board of directors and its
+members; provided, however, that the time of regular meetings of committees may be determined
+either by resolution of the board of directors or by resolution of the committee, that special
+meetings of committees may also be called by resolution of the board of directors and that
+notice of special meetings of committees shall also be given to all alternate members, who
+shall have the right to attend all meetings of the committee.  The board of directors may adopt
+rules for the government of any committee not inconsistent with the provisions of these
+bylaws.<BR>
+<FONT COLOR="#0000ff"><P ALIGN="CENTER">
+<P ALIGN="CENTER">ARTICLE V<BR>
+<U>OFFICERS</U></P>
+
+&#9;5.1&#9;<U>Officers</U></FONT>.  The officers of the corporation shall be a president, a chief
+financial officer (who may be a vice president or treasurer of the corporation) and a
+secretary.  The corporation may also have, at the discretion of the board of directors, a
+chairman of the board of directors, one or more senior vice presidents and one or more other
+officers.  One or more officers may be appointed in accordance with the provisions of
+Section&nbsp;5.3 of these bylaws.  Any number of offices may be held by the same person.<BR>
+<FONT COLOR="#0000ff">&#9;5.2&#9;<U>Election of Officers</U></FONT>.  The officers of the corporation,
+except such officers as may be appointed in accordance with the provisions of Sections&nbsp;5.3
+or 5.5 of these bylaws, shall be elected by the board of directors.<BR>
+<FONT COLOR="#0000ff">&#9;5.3&#9;<U>Appointed Officers</U></FONT>.  The chief executive officer of the
+corporation, or such other officer as the board of directors shall select, may appoint, or the
+board of directors may appoint, such officers and agents of the corporation as, in his or their
+judgment, are necessary to conduct the business of the corporation.  Each such officer shall
+hold office for such period, have such authority, and perform such duties as are provided in
+these bylaws or as the board of directors or the chief executive officer may from time to time
+determine.<BR>
+<FONT COLOR="#0000ff">&#9;5.4&#9;<U>Removal and Resignation of Officers</U></FONT>.  Any officer may
+be removed, either with or without cause, by an affirmative vote of the majority of the board
+of directors at any regular or special meeting of the board or, except in the case of an
+officer elected by the board of directors, by the chief executive officer or such other officer
+upon whom such power of removal may be conferred by the board of directors.<BR>
+<P>&#9;Any officer may resign at any time by giving written notice to the corporation.  Any
+resignation shall take effect at the date of the receipt of that notice or at any later time
+specified in that notice; and, unless otherwise specified in that notice, the acceptance of the
+resignation shall not be necessary to make it effective.  Any resignation is without prejudice
+to the rights, if any, of the corporation under any contract to which the officer is a
+party.</P>
+<FONT COLOR="#0000ff">&#9;5.5&#9;<U>Vacancies in Offices</U></FONT>.  Any vacancy occurring in any
+office of the corporation shall be filled by the board of directors, except for vacancies in
+the offices of subordinate officers which may be filled pursuant to Section&nbsp;5.3
+hereof.<BR>
+<FONT COLOR="#0000ff">&#9;5.6&#9;<U>Chairman of the Board</U></FONT>.  The chairman of the board, if
+such an officer be elected, shall, if present, preside at meetings of the board of directors
+and the stockholders and exercise and perform such other powers and duties as may be from time
+to time assigned by the board of directors or prescribed by the bylaws.<BR>
+<FONT COLOR="#0000ff">&#9;5.7&#9;<U>President</U></FONT>.  Subject to such supervisory powers, if any,
+as may be given by the board of directors to the chairman of the board, the president shall be
+the chief executive officer of the corporation and shall, subject to the control of the board
+of directors, have general supervision, direction, and control of the business and the officers
+of the corporation.  In the absence or nonexistence of a chairman of the board, he shall
+preside at all meetings of the stockholders and at all meetings of the board of directors.  He
+shall have the general powers and duties of management usually vested in the office of
+president of a corporation and shall have such other powers and duties as may be prescribed by
+the board of directors or these bylaws.<BR>
+<FONT COLOR="#0000ff">&#9;5.8&#9;<U>Senior Vice Presidents and Vice Presidents</U></FONT>.  In the
+absence or disability of the president, the vice presidents, if any, in order of their rank as
+fixed by the board of directors or, if not ranked, a vice president designated by the board of
+directors, shall perform all the duties of the president and when so acting shall have all the
+powers of, and be subject to all the restrictions upon, the president.  The vice presidents
+shall have such other powers and perform such other duties as from time to time may be
+prescribed for them respectively by the board of directors, these bylaws, the president or the
+chairman of the board.<BR>
+<FONT COLOR="#0000ff">&#9;5.9&#9;<U>Secretary</U></FONT>.  The secretary shall keep or cause to be
+kept, at the principal executive office of the corporation or such other place as the board of
+directors may direct, a book of minutes of all meetings and actions of directors, committees of
+directors, and stockholders.  The minutes shall show the time and place of each meeting, the
+names of those present at directors' meetings or committee meetings, the number of shares
+present or represented at stockholders' meetings, and the proceedings thereof.<BR>
+<P>&#9;The secretary shall keep, or cause to be kept, at the principal executive office of the
+corporation or at the office of the corporation's transfer agent or registrar, as determined by
+resolution of the board of directors, a share register, or a duplicate share register, showing
+the names of all stockholders and their addresses, the number and classes of shares held by
+each, the number and date of certificates evidencing such shares, and the number and date of
+cancellation of every certificate surrendered for cancellation.</P><BR>
+<P>&#9;The secretary shall give, or cause to be given, notice of all meetings of the stockholders
+and of the board of directors required to be given by law or by these bylaws.  He shall keep
+the seal of the corporation, if one be adopted, in safe custody and shall have such other
+powers and perform such other duties as may be prescribed by the board of directors or by these
+bylaws.</P>
+<FONT COLOR="#0000ff">&#9;5.10&#9;<U>Chief Financial Officer</U></FONT>.  The chief financial officer
+shall keep and maintain, or cause to be kept and maintained, adequate and correct books and
+records of accounts of the properties and business transactions of the corporation, including
+accounts of its assets,  liabilities, receipts, disbursements, gains, losses, capital retained
+earnings, and shares.  The books of account shall at all reasonable times be open to inspection
+by any director.<BR>
+<P>&#9;The chief financial officer shall deposit all moneys and other valuables in the name and to
+the credit of the corporation with such depositories as may be designated by the board of
+directors.  He shall disburse the funds of the corporation as may be ordered by the board of
+directors, shall render to the president and directors, whenever they request it, an account of
+all his transactions as chief financial officer and of the financial condition of the
+corporation, and shall have other powers and perform such other duties as may be prescribed by
+the board of directors or the bylaws.</P>
+<FONT COLOR="#0000ff">&#9;5.11&#9;<U>Representation of Shares of Other Corporations</U></FONT>.  The
+chairman of the board, the president, any vice president, the treasurer, the secretary or
+assistant secretary of this corporation, or any other person authorized by the board of
+directors or the president or a vice president, is authorized to vote, represent, and exercise
+on behalf of this corporation all rights incident to any and all shares of any other
+corporation or corporations standing in the name of this corporation.  The authority granted
+herein may be exercised either by such person directly or by any other person authorized to do
+so by proxy or power of attorney duly executed by such person having the authority.<BR>
+<FONT COLOR="#0000ff">&#9;5.12&#9;<U>Authority and Duties of Officers</U></FONT>.  In addition to the
+foregoing authority and duties, all officers of the corporation shall respectively have such
+authority and perform such duties in the management of the business of the corporation as may
+be designated from time to time by the board of directors.<BR>
+<FONT COLOR="#0000ff"><P ALIGN="CENTER">
+<P ALIGN="CENTER">ARTICLE VI<BR>
+<U>RECORDS AND REPORTS</U></P>
+
+&#9;6.1&#9;<U>Maintenance and Inspection of Records</U></FONT>.  The corporation shall, either at its
+principal executive offices or at such place or places as designated by the board of directors,
+keep a record of its stockholders listing their names and addresses and the number and class of
+shares held by each stockholder, a copy of these bylaws as amended to date, accounting books,
+and other records.<BR>
+<P>&#9;Any stockholder of record, in person or by attorney or other agent, shall, upon written
+demand under oath stating the purpose thereof, have the right during the usual hours for
+business to inspect for any proper purpose the corporation's stock ledger, a list of its
+stockholders, and its other books and records and to make copies or extracts therefrom.  A
+proper purpose shall mean a purpose reasonably related to such person's interest as a
+stockholder.  In every instance where an attorney or other agent is the person who seeks the
+right to  inspection, the demand under oath shall be accompanied by a power of attorney or such
+other writing that authorizes the attorney or other agent to so act on behalf of the
+stockholder.  The demand under oath shall be directed to the corporation at its registered
+office in Delaware or at its principal place of business.</P>
+<FONT COLOR="#0000ff">&#9;6.2&#9;<U>Inspection by Directors</U></FONT>.  Any director shall have the
+right to examine the corporation's stock ledger, a list of its stockholders, and its other
+books and records for a purpose reasonably related to his position as a director.  The Court of
+Chancery is hereby vested with the exclusive jurisdiction to determine whether a director is
+entitled to the inspection sought.  The Court may summarily order the corporation to permit the
+director to inspect any and all books and records, the stock ledger, and the stock list and to
+make copies or extracts therefrom.  The Court may, in its discretion, prescribe any limitations
+or conditions with reference to the inspection, or award such other and further relief as the
+Court may deem just and proper.<BR>
+
+<FONT COLOR="#0000ff"><P ALIGN="CENTER">
+<P ALIGN="CENTER">ARTICLE VII<BR>
+<U>GENERAL MATTERS</U></P>
+
+&#9;7.1&#9;<U>Execution of Corporate Contracts and Instruments</U></FONT>.  The board of directors,
+except as otherwise provided in these bylaws, may authorize any officer or officers, or agent
+or agents, to enter into any contract or execute any instrument in the name of and on behalf of
+the corporation; such authority may be general or confined to specific instances.  Unless so
+authorized or ratified by the board of directors or within the agency power of an officer, no
+officer, agent or employee shall have any power or authority to bind the corporation by any
+contract or engagement or to pledge its credit or to render it liable for any purpose or for
+any amount.<BR>
+<FONT COLOR="#0000ff">&#9;7.2&#9;<U>Stock Certificates; Partly Paid Shares</U></FONT>.  The shares of
+a corporation shall be represented by certificates, provided that the board of directors of the
+corporation may provide by resolution or resolutions that some or all of any or all classes or
+series of its stock shall be uncertificated shares.  Any such resolution shall not apply to
+shares represented by a certificate until such certificate is surrendered to the corporation.
+Notwithstanding the adoption of such a resolution by the board of directors, every holder of
+stock represented by certificates and upon request every holder of uncertificated shares shall
+be entitled to have a certificate signed by, or in the name of the corporation by the chairman
+or vice-chairman of the board of directors, or the president or vice president, and by the
+chief financial officer, the treasurer, or an assistant treasurer, or the secretary or an
+assistant secretary of such corporation representing the number of shares registered in
+certificate form.  Any or all of the signatures on the certificate may be a facsimile.  In case
+any officer, transfer agent or registrar who has signed or whose facsimile signature has been
+placed upon a certificate shall have ceased to be such officer, transfer agent or registrar
+before  such certificate is issued, it may be issued by the corporation with the same effect as
+if he were such officer, transfer agent or registrar at the date of issue.<BR>
+<P>&#9;The corporation may issue the whole or any part of its shares as partly paid and subject to
+call for the remainder of the consideration to be paid therefor.  Upon the face or back of each
+stock certificate issued to represent any such partly paid shares, or upon the books and
+records of the corporation in the case of uncertificated partly paid shares, the total amount
+of the consideration to be paid therefor and the amount paid thereon shall be stated.  Upon the
+declaration of any dividend on fully paid shares, the corporation shall declare a dividend upon
+partly paid shares of the same class, but only upon the basis of the percentage of the
+consideration actually paid thereon.</P><BR>
+<FONT COLOR="#0000ff">&#9;7.3&#9;<U>Special Designation on Certificates</U></FONT>.  If the
+corporation is authorized to issue more than one class of stock or more than one series of any
+class, then the powers, the designations, the preferences, and the relative, participating,
+optional or other special rights of each class of stock or series thereof and the
+qualifications, limitations or restrictions of such preferences and/or rights shall be set
+forth in full or summarized on the face or back of the certificate that the corporation shall
+issue to represent such class or series of stock; provided, however, that, except as otherwise
+provided in Section&nbsp;202 of the General Corporation Law of Delaware, in lieu of the
+foregoing requirements there may be set forth on the face or back of the certificate that the
+corporation shall issue to represent such class or series of stock a statement that the
+corporation will furnish without charge to each stockholder who so requests the powers, the
+designations, the preferences, and the relative, participating, optional or other special
+rights of each class of stock or series thereof and the qualifications, limitations or
+restrictions of such preferences and/or rights.<BR>
+<FONT COLOR="#0000ff">&#9;7.4&#9;<U>Lost Certificates</U></FONT>.  The corporation may issue a new
+certificate of stock or uncertificated shares in the place of any certificate theretofore
+issued by it, alleged to have been lost, stolen or destroyed, and the corporation may require
+the owner of the lost, stolen or destroyed certificate, or his legal representative to give the
+corporation a bond sufficient to indemnify it against any claim that may be made against it on
+account of the alleged loss, theft or destruction of any such certificate or the issuance of
+such new certificate or uncertified shares.<BR>
+<FONT COLOR="#0000ff">&#9;7.5&#9;<U>Construction; Definitions</U></FONT>.  Unless the context requires
+otherwise, the general provisions, rules of construction, and definitions in the Delaware
+General Corporation Law shall govern the construction of these bylaws.  Without limiting the
+generality of this provision, the singular number includes the plural, the plural number
+includes the singular, and the term &quot;person&quot; includes both a corporation and a
+natural person.<BR>
+<FONT COLOR="#0000ff">&#9;7.6&#9;<U>Dividends</U></FONT>.  The directors of the corporation, subject
+to any restrictions contained in the General Corporation Law of Delaware or the certificate of
+incorporation, may declare and pay dividends upon the shares of its capital stock.  Dividends
+may be paid in cash, in property, or in shares of the corporation's capital stock.<BR>
+<P>&#9;The directors of the corporation may set apart out of any of the funds of the corporation
+available for dividends a reserve or reserves for any proper purpose and may abolish any such
+reserve.</P><BR>
+<FONT COLOR="#0000ff">&#9;7.7&#9;<U>Fiscal Year</U></FONT>.  The fiscal year of the corporation shall
+be fixed by resolution of the board of directors and may be changed by the board of
+directors.<BR>
+<FONT COLOR="#0000ff">&#9;7.8&#9;<U>Seal</U></FONT>.  The board of directors may adopt a corporate
+seal, and may use the same by causing it or a facsimile thereof, to be impressed or affixed or
+in any other manner reproduced.<BR>
+
+<FONT COLOR="#0000ff"><P ALIGN="CENTER">
+<P ALIGN="CENTER">ARTICLE VIII<BR>
+<U>AMENDMENTS</P></U>
+&#9;8.1&#9;<U>Amendments</U></FONT>.  The bylaws of the corporation may be altered, amended or repealed
+or new bylaws may be adopted by either the (i) board of directors or (ii) stockholders upon the
+affirmative vote of the holders of not less than a majority of the total voting power of all
+issued and outstanding shares of stock in this corporation entitled to vote thereon. <BR>
+
+
+</TEXT>
+</DOCUMENT>
+<DOCUMENT>
+<TYPE>EX-27.0
+<SEQUENCE>4
+<FILENAME>amatfds.xfd
+<DESCRIPTION>FINANCIAL DATA SCHEDULE
+<TEXT>
+
+<TABLE> <S> <C>
+
+<ARTICLE>    5
+<LEGEND>    THIS SCHEDULE CONTAINS SUMMARY FINANCIAL INFORMATION EXTRACTED FROM
+THE CONSOLIDATED FINANCIAL STATEMENTS FOR THE NINE MONTHS ENDED JULY 30, 2000.
+<MULTIPLIER>    1,000
+
+<S>                                                      <C>
+<PERIOD-TYPE>                                          9-MOS
+<PERIOD-START>                                   Nov-01-1999
+<FISCAL-YEAR-END>                                Oct-29-2000
+<PERIOD-END>                                     Jul-30-2000
+<CASH>                                             1,342,835
+<SECURITIES>                                       2,404,493
+<RECEIVABLES>                                      2,162,251<F1>
+<ALLOWANCES>                                               0
+<INVENTORY>                                        1,132,625
+<CURRENT-ASSETS>                                   7,552,363
+<PP&E>                                             2,375,090
+<DEPRECIATION>                                     1,094,953
+<TOTAL-ASSETS>                                     9,218,823
+<CURRENT-LIABILITIES>                              2,378,624
+<BONDS>                                              574,336<F2>
+<PREFERRED-MANDATORY>                                      0
+<PREFERRED>                                                0
+<COMMON>                                               8,111
+<OTHER-SE>                                         6,121,873
+<TOTAL-LIABILITY-AND-EQUITY>                       9,218,823
+<SALES>                                            6,644,249
+<TOTAL-REVENUES>                                   6,644,249
+<CGS>                                              3,297,428
+<TOTAL-COSTS>                                      3,297,428
+<OTHER-EXPENSES>                                     780,509<F3>
+<LOSS-PROVISION>                                           0
+<INTEREST-EXPENSE>                                    38,154
+<INCOME-PRETAX>                                    1,999,562
+<INCOME-TAX>                                         599,807
+<INCOME-CONTINUING>                                1,399,755
+<DISCONTINUED>                                             0
+<EXTRAORDINARY>                                            0
+<CHANGES>                                                  0
+<NET-INCOME>                                       1,399,755
+<EPS-BASIC>                                             1.74
+<EPS-DILUTED>                                           1.63
+<FN>
+<F1> ITEM IS SHOWN NET OF ALLOWANCE, CONSISTENT WITH BALANCE SHEET
+PRESENTATION.
+
+<F2> ITEM CONSISTS OF LONG-TERM DEBT.
+
+<F3> ITEM CONSISTS OF RESEARCH, DEVELOPMENT AND ENGINEERING EXPENSES.
+
+</FN>
+
+
+</TABLE>
+</TEXT>
+</DOCUMENT>
+</SEC-DOCUMENT>
+-----END PRIVACY-ENHANCED MESSAGE-----
