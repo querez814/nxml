@@ -55,15 +55,7 @@ async def get_ticker_news(ticker:str):
         formatted_item = metric.copy()
         valuation_results.append(formatted_item)
 
-    #Get technical data for the entrypoint algo    
-    """
-    technicals = await technical_analysis("daily", ticker)
-    technicals_results = [] 
-    for indicator in technicals:
-        formatted_item = indicator.copy()
-        technicals_results.append(formatted_item)
-"""
-        
+
         
 
     return  {

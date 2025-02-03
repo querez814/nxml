@@ -49,7 +49,7 @@ def get_rival_stocks_scrape(ticker):
     
 
     return shortened_competitors_df
-
+"""
 @router.get("/q/is/{ticker}") 
 def related_tickers_is(ticker: str):
     rivals = get_rival_stocks_scrape(ticker)
@@ -64,6 +64,5 @@ def related_tickers_is(ticker: str):
         
     return rivals_metrics.to_dict(orient="records")
 
+   """ 
     
-    
-print(related_tickers_is("AMD"))
