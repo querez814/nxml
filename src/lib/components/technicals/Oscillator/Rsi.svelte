@@ -3,14 +3,27 @@
 	import { Chart } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
 	import * as Card from '$lib/components/ui/card';
+	import { GripVertical, ArrowUpCircle, ArrowDownCircle } from 'lucide-svelte';
 	import type { ApexOptions } from 'apexcharts';
-	import { GripVertical } from 'lucide-svelte';
 
 	let { ticker }: { ticker: string } = $props();
-	let data = $state([]);
+	let data = $state<Array<{ date: string; rsi: number }>>([]);
 	let error = $state<string | null>(null);
 	let loading = $state(true);
 	let chartInstance = $state<any>(null);
+	let selectedInterval = $state('daily');
+	let currentRSI = $state<number | null>(null);
+
+	const intervals = [
+		{ value: '1min', label: '1 Minute' },
+		{ value: '5min', label: '5 Minutes' },
+		{ value: '15min', label: '15 Minutes' },
+		{ value: '30min', label: '30 Minutes' },
+		{ value: '60min', label: '1 Hour' },
+		{ value: 'daily', label: 'Daily' },
+		{ value: 'weekly', label: 'Weekly' },
+		{ value: 'monthly', label: 'Monthly' }
+	];
 
 	// Drag and resize state
 	let position = $state({ x: 20, y: 20 });
@@ -43,6 +56,14 @@
 			redrawOnParentResize: true,
 			zoom: {
 				enabled: false
+			},
+			events: {
+				updated: function (chartContext: any) {
+					const series = chartContext.series[0];
+					if (series?.data?.length > 0) {
+						currentRSI = series.data[series.data.length - 1].y;
+					}
+				}
 			}
 		},
 		stroke: {
@@ -75,7 +96,8 @@
 				datetimeFormatter: {
 					year: 'yyyy',
 					month: "MMM 'yy",
-					day: 'dd MMM'
+					day: 'dd MMM',
+					hour: 'HH:mm'
 				},
 				trim: true
 			},
@@ -131,7 +153,7 @@
 		},
 		tooltip: {
 			x: {
-				format: 'dd MMM yyyy'
+				format: 'dd MMM yyyy HH:mm'
 			},
 			y: {
 				formatter: (value: number) => `RSI: ${value.toFixed(2)}`
@@ -188,7 +210,6 @@
 				height: Math.max(300, size.height + delta.y)
 			};
 
-			// Check if we have room to grow
 			const maxWidth = window.innerWidth - position.x - 20;
 			const maxHeight = window.innerHeight - position.y - 20;
 
@@ -219,42 +240,82 @@
 		isResizing = false;
 	}
 
-	onMount(() => {
-		const fetchData = async () => {
-			try {
-				const response = await fetch(`${api_url}/technicals/rsi/${ticker}`);
-				const jsonData = await response.json();
+	async function fetchData() {
+		loading = true;
+		error = null;
 
-				const today = new Date();
-				const sixMonthsAgo = new Date(today.setMonth(today.getMonth() - 6));
+		try {
+			const response = await fetch(`${api_url}/technicals/rsi/${selectedInterval}/${ticker}`);
+			const jsonData = await response.json();
 
-				const recentData = jsonData.filter(
-					(item: { date: string }) => new Date(item.date) >= sixMonthsAgo
-				);
-				data = recentData;
-
-				options.series = [
-					{
-						name: 'RSI',
-						data: recentData.map((item: { date: string; rsi: number }) => ({
-							x: new Date(item.date).getTime(),
-							y: item.rsi,
-							marker: {
-								size: item.rsi <= 30 || item.rsi >= 70 ? 6 : 4,
-								fillColor: item.rsi <= 30 ? '#48BB78' : item.rsi >= 70 ? '#F56565' : '#4299E1',
-								strokeColor: '#1a1a1a',
-								strokeWidth: 2
-							}
-						}))
-					}
-				];
-			} catch (err) {
-				error = err instanceof Error ? err.message : 'Failed to fetch market data';
-			} finally {
-				loading = false;
+			if (!Array.isArray(jsonData)) {
+				throw new Error('Invalid data format received from server');
 			}
-		};
 
+			// Filter data based on interval
+			const today = new Date();
+			let filterDate = new Date();
+
+			switch (selectedInterval) {
+				case '1min':
+				case '5min':
+					filterDate = new Date(today.getTime() - 24 * 60 * 60 * 1000); // 24 hours
+					break;
+				case '15min':
+				case '30min':
+				case '60min':
+					filterDate = new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000); // 7 days
+					break;
+				case 'daily':
+					filterDate = new Date(today.setMonth(today.getMonth() - 6)); // 6 months
+					break;
+				case 'weekly':
+					filterDate = new Date(today.setMonth(today.getMonth() - 12)); // 1 year
+					break;
+				case 'monthly':
+					filterDate = new Date(today.setMonth(today.getMonth() - 24)); // 2 years
+					break;
+			}
+
+			const recentData = jsonData.filter(
+				(item: { date: string }) => new Date(item.date) >= filterDate
+			);
+			data = recentData;
+
+			if (recentData.length > 0) {
+				currentRSI = recentData[recentData.length - 1].rsi;
+			}
+
+			options.series = [
+				{
+					name: 'RSI',
+					data: recentData.map((item: { date: string; rsi: number }) => ({
+						x: new Date(item.date).getTime(),
+						y: item.rsi,
+						marker: {
+							size: item.rsi <= 30 || item.rsi >= 70 ? 6 : 4,
+							fillColor: item.rsi <= 30 ? '#48BB78' : item.rsi >= 70 ? '#F56565' : '#4299E1',
+							strokeColor: '#1a1a1a',
+							strokeWidth: 2
+						}
+					}))
+				}
+			];
+		} catch (err) {
+			error = err instanceof Error ? err.message : 'Failed to fetch market data';
+			console.error('Fetch error:', error, err);
+		} finally {
+			loading = false;
+		}
+	}
+
+	$effect(() => {
+		if (selectedInterval) {
+			fetchData();
+		}
+	});
+
+	onMount(() => {
 		fetchData();
 	});
 </script>
@@ -271,11 +332,56 @@
 >
 	<Card.Root class="relative h-full w-full border-solid border-border bg-background font-mono">
 		<div
-			class="drag-handle flex cursor-move items-center border-b border-border bg-muted px-4 py-2"
+			class="drag-handle flex cursor-move items-center justify-between border-b border-border bg-muted px-4 py-2"
 		>
-			<GripVertical class="mr-2 h-4 w-4 text-muted-foreground" />
-			<h3 class="flex-1 text-lg font-semibold text-foreground">RSI (14) - {ticker}</h3>
+			<div class="flex items-center">
+				<GripVertical class="mr-2 h-4 w-4 text-muted-foreground" />
+				<h3 class="text-lg font-semibold text-foreground">RSI (14) - {ticker}</h3>
+			</div>
+
+			<div class="flex items-center space-x-4">
+				{#if currentRSI !== null}
+					<div class="flex items-center space-x-2">
+						<span class="text-sm font-medium text-muted-foreground">RSI:</span>
+						<span
+							class="text-lg font-bold"
+							class:text-red-500={currentRSI >= 70}
+							class:text-green-500={currentRSI <= 30}
+							class:text-blue-500={currentRSI > 30 && currentRSI < 70}
+						>
+							{currentRSI.toFixed(2)}
+						</span>
+
+						{#if currentRSI >= 70}
+							<div class="flex items-center text-red-500">
+								<ArrowDownCircle class="h-5 w-5" />
+								<span class="ml-1 text-sm font-medium">Sell</span>
+							</div>
+						{:else if currentRSI <= 30}
+							<div class="flex items-center text-green-500">
+								<ArrowUpCircle class="h-5 w-5" />
+								<span class="ml-1 text-sm font-medium">Buy</span>
+							</div>
+						{/if}
+					</div>
+				{/if}
+
+				<div class="relative w-32">
+					<select
+						value={selectedInterval}
+						onchange={(e) => (selectedInterval = e.currentTarget.value)}
+						class="h-8 w-full rounded-md border border-border bg-background px-3 py-1 text-sm text-foreground hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
+					>
+						{#each intervals as interval}
+							<option value={interval.value}>
+								{interval.label}
+							</option>
+						{/each}
+					</select>
+				</div>
+			</div>
 		</div>
+
 		<Card.Content class="h-[calc(100%-3rem)]">
 			{#if loading}
 				<p class="text-muted-foreground">Loading...</p>
@@ -287,6 +393,7 @@
 				</div>
 			{/if}
 		</Card.Content>
+
 		<div
 			class="resize-handle absolute bottom-0 right-0 flex h-6 w-6 cursor-se-resize items-center justify-center border-l border-t border-border bg-muted hover:bg-muted/80"
 			onpointerdown={handleResizeStart}
@@ -296,7 +403,7 @@
 			<div
 				class="h-3 w-3"
 				style="background: repeating-linear-gradient(135deg, currentColor 0px, currentColor 1px, transparent 1px, transparent 4px);"
-			></div>
+			/>
 		</div>
 	</Card.Root>
 </div>

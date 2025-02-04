@@ -3,8 +3,8 @@
 	import { Chart } from 'flowbite-svelte';
 	import { onMount } from 'svelte';
 	import * as Card from '$lib/components/ui/card';
+	import { GripVertical, ArrowUpCircle, ArrowDownCircle } from 'lucide-svelte';
 	import type { ApexOptions } from 'apexcharts';
-	import { GripVertical } from 'lucide-svelte';
 
 	interface StochasticData {
 		date: string;
@@ -18,6 +18,21 @@
 	let error = $state<string | null>(null);
 	let loading = $state(true);
 	let chartInstance = $state<any>(null);
+	let selectedInterval = $state('daily');
+	let currentK = $state<number | null>(null);
+	let currentD = $state<number | null>(null);
+	let currentSignal = $state<string>('');
+
+	const intervals = [
+		{ value: '1min', label: '1 Min (5,3,3)' },
+		{ value: '5min', label: '5 Min (10,3,3)' },
+		{ value: '15min', label: '15 Min (14,3,3)' },
+		{ value: '30min', label: '30 Min (14,3,3)' },
+		{ value: '60min', label: '1 Hour (14,3,3)' },
+		{ value: 'daily', label: 'Daily (14,3,3)' },
+		{ value: 'weekly', label: 'Weekly (14,3,3)' },
+		{ value: 'monthly', label: 'Monthly (14,3,3)' }
+	];
 
 	// Drag and resize state
 	let position = $state({ x: 20, y: 20 });
@@ -49,7 +64,18 @@
 			animations: {
 				enabled: false
 			},
-			background: '#1a1a1a'
+			background: '#1a1a1a',
+			events: {
+				updated: function (chartContext: any) {
+					const series = chartContext.series;
+					if (series?.[0]?.data?.length > 0) {
+						const lastIndex = series[0].data.length - 1;
+						currentK = series[0].data[lastIndex].y;
+						currentD = series[1].data[lastIndex].y;
+						currentSignal = data[0]?.signal || '';
+					}
+				}
+			}
 		},
 		stroke: {
 			curve: 'smooth',
@@ -82,8 +108,10 @@
 				datetimeFormatter: {
 					year: 'yyyy',
 					month: "MMM 'yy",
-					day: 'dd MMM'
-				}
+					day: 'dd MMM',
+					hour: 'HH:mm'
+				},
+				trim: true
 			},
 			axisBorder: {
 				show: false
@@ -142,15 +170,14 @@
 			shared: true,
 			intersect: false,
 			x: {
-				format: 'dd MMM yyyy'
+				format: 'dd MMM yyyy HH:mm'
 			},
 			y: {
 				formatter: (value: number) => `${value.toFixed(2)}%`
 			},
 			theme: 'dark',
-			custom: function ({ seriesIndex, dataPointIndex, w }) {
+			custom: function ({ dataPointIndex }: { dataPointIndex: number }) {
 				if (!data[dataPointIndex]?.signal) return '';
-
 				return `
 					<div class="px-2 py-1">
 						<span class="text-white">${data[dataPointIndex].signal}</span>
@@ -167,6 +194,92 @@
 			}
 		}
 	};
+
+	// ... existing drag and resize handlers ...
+
+	async function fetchData() {
+		loading = true;
+		error = null;
+
+		try {
+			const response = await fetch(
+				`${api_url}/technicals/stochastic/${selectedInterval}/${ticker}`
+			);
+			const jsonData = await response.json();
+
+			if ('error' in jsonData) {
+				throw new Error(jsonData.error);
+			}
+
+			// Filter data based on interval
+			const today = new Date();
+			let filterDate = new Date();
+
+			switch (selectedInterval) {
+				case '1min':
+				case '5min':
+					filterDate = new Date(today.getTime() - 24 * 60 * 60 * 1000); // 24 hours
+					break;
+				case '15min':
+				case '30min':
+				case '60min':
+					filterDate = new Date(today.getTime() - 7 * 24 * 60 * 60 * 1000); // 7 days
+					break;
+				case 'daily':
+					filterDate = new Date(today.setMonth(today.getMonth() - 6)); // 6 months
+					break;
+				case 'weekly':
+					filterDate = new Date(today.setMonth(today.getMonth() - 12)); // 1 year
+					break;
+				case 'monthly':
+					filterDate = new Date(today.setMonth(today.getMonth() - 24)); // 2 years
+					break;
+			}
+
+			const recentData = jsonData.filter(
+				(item: StochasticData) => new Date(item.date) >= filterDate
+			);
+			data = recentData;
+
+			if (recentData.length > 0) {
+				currentK = recentData[0].slowk;
+				currentD = recentData[0].slowd;
+				currentSignal = recentData[0].signal;
+			}
+
+			options.series = [
+				{
+					name: '%K',
+					data: recentData.map((item: StochasticData) => ({
+						x: new Date(item.date).getTime(),
+						y: item.slowk
+					}))
+				},
+				{
+					name: '%D',
+					data: recentData.map((item: StochasticData) => ({
+						x: new Date(item.date).getTime(),
+						y: item.slowd
+					}))
+				}
+			];
+		} catch (err) {
+			error = err instanceof Error ? err.message : 'Failed to fetch market data';
+			console.error('Fetch error:', error, err);
+		} finally {
+			loading = false;
+		}
+	}
+
+	$effect(() => {
+		if (selectedInterval) {
+			fetchData();
+		}
+	});
+
+	onMount(() => {
+		fetchData();
+	});
 
 	function handleDragStart(event: PointerEvent) {
 		if (event.target instanceof HTMLElement && !event.target.closest('.drag-handle')) {
@@ -230,46 +343,6 @@
 	function handleResizeEnd() {
 		isResizing = false;
 	}
-
-	onMount(() => {
-		const fetchData = async () => {
-			try {
-				const response = await fetch(`${api_url}/technicals/stoch/${ticker}`);
-				const jsonData = await response.json();
-
-				const today = new Date();
-				const sixMonthsAgo = new Date(today.setMonth(today.getMonth() - 6));
-
-				const recentData = jsonData.filter(
-					(item: StochasticData) => new Date(item.date) >= sixMonthsAgo
-				);
-				data = recentData;
-
-				options.series = [
-					{
-						name: '%K',
-						data: recentData.map((item: any) => ({
-							x: new Date(item.date).getTime(),
-							y: item.slowk
-						}))
-					},
-					{
-						name: '%D',
-						data: recentData.map((item: any) => ({
-							x: new Date(item.date).getTime(),
-							y: item.slowd
-						}))
-					}
-				];
-			} catch (err) {
-				error = err instanceof Error ? err.message : 'Failed to fetch market data';
-			} finally {
-				loading = false;
-			}
-		};
-
-		fetchData();
-	});
 </script>
 
 <div
@@ -284,11 +357,66 @@
 >
 	<Card.Root class="relative h-full w-full border-solid border-border bg-background font-mono">
 		<div
-			class="drag-handle flex cursor-move items-center border-b border-border bg-muted px-4 py-2"
+			class="drag-handle flex cursor-move items-center justify-between border-b border-border bg-muted px-4 py-2"
 		>
-			<GripVertical class="mr-2 h-4 w-4 text-muted-foreground" />
-			<h3 class="flex-1 text-lg font-semibold text-foreground">Stochastic (14,3,3) - {ticker}</h3>
+			<div class="flex items-center">
+				<GripVertical class="mr-2 h-4 w-4 text-muted-foreground" />
+				<h3 class="text-lg font-semibold text-foreground">
+					Stochastic - {ticker}
+				</h3>
+			</div>
+
+			<div class="flex items-center space-x-4">
+				{#if currentK !== null && currentD !== null}
+					<div class="flex items-center space-x-2">
+						<span class="text-sm font-medium text-muted-foreground">%K:</span>
+						<span
+							class="text-lg font-bold"
+							class:text-red-500={currentK >= 80}
+							class:text-green-500={currentK <= 20}
+							class:text-blue-500={currentK > 20 && currentK < 80}
+						>
+							{currentK.toFixed(2)}
+						</span>
+						<span class="text-sm font-medium text-muted-foreground">%D:</span>
+						<span class="text-lg font-bold text-red-500">
+							{currentD.toFixed(2)}
+						</span>
+
+						{#if currentSignal}
+							<div class="ml-2 flex items-center">
+								{#if currentSignal.includes('Buy')}
+									<div class="flex items-center text-green-500">
+										<ArrowUpCircle class="h-5 w-5" />
+										<span class="ml-1 text-sm font-medium">{currentSignal}</span>
+									</div>
+								{:else if currentSignal.includes('Sell')}
+									<div class="flex items-center text-red-500">
+										<ArrowDownCircle class="h-5 w-5" />
+										<span class="ml-1 text-sm font-medium">{currentSignal}</span>
+									</div>
+								{/if}
+							</div>
+						{/if}
+					</div>
+				{/if}
+
+				<div class="relative w-40">
+					<select
+						value={selectedInterval}
+						onchange={(e) => (selectedInterval = e.currentTarget.value)}
+						class="h-8 w-full rounded-md border border-border bg-background px-3 py-1 text-sm text-foreground hover:bg-muted focus:outline-none focus:ring-2 focus:ring-ring"
+					>
+						{#each intervals as interval}
+							<option value={interval.value}>
+								{interval.label}
+							</option>
+						{/each}
+					</select>
+				</div>
+			</div>
 		</div>
+
 		<Card.Content class="h-[calc(100%-3rem)]">
 			{#if loading}
 				<p class="text-muted-foreground">Loading...</p>
@@ -300,6 +428,7 @@
 				</div>
 			{/if}
 		</Card.Content>
+
 		<div
 			class="resize-handle absolute bottom-0 right-0 flex h-6 w-6 cursor-se-resize items-center justify-center border-l border-t border-border bg-muted hover:bg-muted/80"
 			onpointerdown={handleResizeStart}
@@ -309,7 +438,7 @@
 			<div
 				class="h-3 w-3"
 				style="background: repeating-linear-gradient(135deg, currentColor 0px, currentColor 1px, transparent 1px, transparent 4px);"
-			></div>
+			/>
 		</div>
 	</Card.Root>
 </div>

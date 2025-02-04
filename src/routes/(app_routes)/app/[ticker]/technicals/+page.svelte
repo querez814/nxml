@@ -3,6 +3,7 @@
 	import Rsi from '$lib/components/technicals/Oscillator/Rsi.svelte';
 	import Stochastic from '$lib/components/technicals/Oscillator/Stochastic.svelte';
 	import Momentum from '$lib/components/technicals/Momentum/Momentum.svelte';
+	import DailyPrice from '$lib/components/technicals/General/DailyPrice.svelte';
 
 	let { data }: { data: PageData } = $props();
 	console.log('Page Data', data);
@@ -12,5 +13,5 @@
 
 <Rsi {ticker} />
 <Stochastic {ticker} />
-
+<DailyPrice {ticker} />
 <Momentum {ticker} />
