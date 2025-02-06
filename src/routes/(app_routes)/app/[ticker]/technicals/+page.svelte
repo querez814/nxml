@@ -1,9 +1,11 @@
 <script lang="ts">
 	import type { PageData } from '../$types';
-	import Rsi from '$lib/components/technicals/Oscillator/Rsi.svelte';
-	import Stochastic from '$lib/components/technicals/Oscillator/Stochastic.svelte';
+	import Rsi from '$lib/components/technicals/Indicators/Rsi.svelte';
+	import Stochastic from '$lib/components/technicals/Indicators/Stochastic.svelte';
 	import Momentum from '$lib/components/technicals/Momentum/Momentum.svelte';
 	import DailyPrice from '$lib/components/technicals/General/DailyPrice.svelte';
+	import Sma from '$lib/components/technicals/Indicators/Sma.svelte';
+	import Others from '$lib/components/technicals/Indicators/Others.svelte';
 
 	let { data }: { data: PageData } = $props();
 	console.log('Page Data', data);
@@ -15,3 +17,5 @@
 <Stochastic {ticker} />
 <DailyPrice {ticker} />
 <Momentum {ticker} />
+<Sma {ticker} />
+<Others {ticker} />

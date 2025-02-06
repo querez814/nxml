@@ -11,9 +11,49 @@ env.load_dotenv()
 av_api = os.getenv("ALPHA_VANTAGE")
 router = APIRouter()
 
-@router.get("/macd/{symbol}")
-def fetch_macd(symbol: str, limit=365) -> List[Dict[str, Any]]:
-    url = f"https://www.alphavantage.co/query?function=MACD&symbol={symbol}&interval=daily&series_type=close&apikey={av_api}"
+from typing import List, Dict, Any
+from fastapi import Path
+
+VALID_INTERVALS = ['1min', '5min', '15min', '30min', '60min', 'daily', 'weekly', 'monthly']
+
+def get_default_limit(interval: str) -> int:
+    """Returns appropriate data limit based on the interval"""
+    interval_limits = {
+        '1min': 100,   
+        '5min': 100,    
+        '15min': 100,   
+        '30min': 100,   
+        '60min': 168,   
+        'daily': 252,   
+        'weekly': 104,  
+        'monthly': 60   
+    }
+    return interval_limits[interval]
+
+def get_time_period(interval: str) -> int:
+    """Returns appropriate time period based on the interval"""
+    time_periods = {
+        '1min': 7,      
+        '5min': 9,      
+        '15min': 9,     
+        '30min': 12,    
+        '60min': 14,   
+        'daily': 25,    
+        'weekly': 14,   
+        'monthly': 6    
+    }
+    return time_periods[interval]
+
+@router.get("/macd/{interval}/{symbol}")
+def fetch_macd(
+    interval: str = Path(..., enum=VALID_INTERVALS),
+    symbol: str = Path(...),
+    limit: int = None
+) -> List[Dict[str, Any]]:
+    default_limit = get_default_limit(interval)
+    limit = limit if limit is not None else default_limit
+    
+    url = f"https://www.alphavantage.co/query?function=MACD&symbol={symbol}&interval={interval}&series_type=close&fastperiod=12&slowperiod=26&signalperiod=9&apikey={av_api}"
     data = r.get(url).json()
     macd = data["Technical Analysis: MACD"]
     items = sorted(list(macd.items()), key=lambda x: x[0], reverse=True)
@@ -22,23 +62,40 @@ def fetch_macd(symbol: str, limit=365) -> List[Dict[str, Any]]:
              "macd_hist": float(vals["MACD_Hist"])} 
             for date, vals in items[:limit]]
 
-@router.get("/ao/{symbol}")
-def fetch_aroon_oscillator(symbol: str, limit=30) -> List[Dict[str, Any]]:
-    url = f"https://www.alphavantage.co/query?function=AROONOSC&symbol={symbol}&interval=daily&time_period=25&apikey={av_api}"
+@router.get("/ao/{interval}/{symbol}")
+def fetch_aroon_oscillator(
+    interval: str = Path(..., enum=VALID_INTERVALS),
+    symbol: str = Path(...),
+    limit: int = None
+) -> List[Dict[str, Any]]:
+    default_limit = get_default_limit(interval)
+    limit = limit if limit is not None else default_limit
+    time_period = get_time_period(interval)
+    
+    url = f"https://www.alphavantage.co/query?function=AROONOSC&symbol={symbol}&interval={interval}&time_period={time_period}&apikey={av_api}"
     data = r.get(url).json()
     ao = data["Technical Analysis: AROONOSC"]
     items = sorted(list(ao.items()), key=lambda x: x[0], reverse=True)
     return [{"date": date, "aroonosc": float(vals["AROONOSC"])} 
             for date, vals in items[:limit]]
 
-@router.get("/mom/{symbol}")
-def fetch_mom(symbol: str, limit=30) -> List[Dict[str, Any]]:
-    url = f"https://www.alphavantage.co/query?function=MOM&symbol={symbol}&interval=daily&time_period=25&series_type=close&apikey={av_api}"
+@router.get("/mom/{interval}/{symbol}")
+def fetch_mom(
+    interval: str = Path(..., enum=VALID_INTERVALS),
+    symbol: str = Path(...),
+    limit: int = None
+) -> List[Dict[str, Any]]:
+    default_limit = get_default_limit(interval)
+    limit = limit if limit is not None else default_limit
+    time_period = get_time_period(interval)
+    
+    url = f"https://www.alphavantage.co/query?function=MOM&symbol={symbol}&interval={interval}&time_period={time_period}&series_type=close&apikey={av_api}"
     data = r.get(url).json()
     mom = data["Technical Analysis: MOM"]
     items = sorted(list(mom.items()), key=lambda x: x[0], reverse=True)
     return [{"date": date, "mom": float(vals["MOM"])} 
             for date, vals in items[:limit]]
+
 
 @router.get("/stoch/{symbol}")
 def fetch_stoch(symbol: str, limit=30) -> List[Dict[str, Any]]:

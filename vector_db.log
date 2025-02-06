@@ -1,0 +1,1464 @@
+2025-02-05 19:54:14,753 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 19:54:14,754 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 19:54:14,777 - INFO - Installing plugin inference into Pinecone
+2025-02-05 19:54:16,239 - INFO - Processing 1286 tickers...
+2025-02-05 19:54:40,866 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 19:54:40,866 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 19:54:40,881 - INFO - Installing plugin inference into Pinecone
+2025-02-05 19:54:42,895 - INFO - Processing 1286 tickers...
+2025-02-05 19:59:22,088 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 19:59:22,088 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 19:59:22,102 - INFO - Installing plugin inference into Pinecone
+2025-02-05 19:59:24,221 - INFO - Processing 1286 tickers...
+2025-02-05 19:59:52,965 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 19:59:52,965 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 19:59:52,977 - INFO - Installing plugin inference into Pinecone
+2025-02-05 19:59:54,336 - INFO - Processing 1286 tickers...
+2025-02-05 20:06:49,570 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:06:49,571 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:06:49,593 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:06:49,949 - DEBUG - response body: b'{"indexes":[{"name":"sec-filings-index","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"sec-filings-index-4lbg4ox.svc.aped-4627-b74a.pinecone.io","spec":{"serverless":{"region":"us-east-1","cloud":"aws"}},"deletion_protection":"disabled"}]}'
+2025-02-05 20:06:51,622 - DEBUG - response body: b'{"name":"sec-filings-index","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"sec-filings-index-4lbg4ox.svc.aped-4627-b74a.pinecone.io","spec":{"serverless":{"region":"us-east-1","cloud":"aws"}},"deletion_protection":"disabled"}'
+2025-02-05 20:06:52,638 - ERROR - \u274c Error fetching ticker list: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+2025-02-05 20:07:29,033 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:07:29,033 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:07:29,078 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:07:29,429 - DEBUG - response body: b'{"indexes":[{"name":"sec-filings-index","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"sec-filings-index-4lbg4ox.svc.aped-4627-b74a.pinecone.io","spec":{"serverless":{"region":"us-east-1","cloud":"aws"}},"deletion_protection":"disabled"}]}'
+2025-02-05 20:07:31,167 - DEBUG - response body: b'{"name":"sec-filings-index","metric":"cosine","dimension":1536,"status":{"ready":true,"state":"Ready"},"host":"sec-filings-index-4lbg4ox.svc.aped-4627-b74a.pinecone.io","spec":{"serverless":{"region":"us-east-1","cloud":"aws"}},"deletion_protection":"disabled"}'
+2025-02-05 20:07:32,126 - INFO - \u2705 Found 1286 tickers.
+2025-02-05 20:07:32,126 - INFO - \U0001f504 Processing ticker: GE
+2025-02-05 20:07:32,126 - INFO - \U0001f4e1 Fetching data for GE...
+2025-02-05 20:07:37,606 - INFO - \U0001f504 Processing ticker: RTX
+2025-02-05 20:07:37,606 - INFO - \U0001f4e1 Fetching data for RTX...
+2025-02-05 20:07:42,599 - INFO - \U0001f504 Processing ticker: BA
+2025-02-05 20:07:42,599 - INFO - \U0001f4e1 Fetching data for BA...
+2025-02-05 20:07:47,668 - INFO - \U0001f504 Processing ticker: LMT
+2025-02-05 20:07:47,668 - INFO - \U0001f4e1 Fetching data for LMT...
+2025-02-05 20:07:52,287 - INFO - \U0001f504 Processing ticker: TDG
+2025-02-05 20:07:52,287 - INFO - \U0001f4e1 Fetching data for TDG...
+2025-02-05 20:10:21,791 - WARNING - \u274c Attempt 1 failed for TDG: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777277) and data type object
+2025-02-05 20:13:27,699 - WARNING - \u274c Attempt 2 failed for TDG: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777277) and data type object
+2025-02-05 20:18:13,473 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:18:13,473 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:18:13,496 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:19:54,066 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:19:54,067 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:19:54,078 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:19:55,542 - ERROR - Error fetching ticker list: 'charmap' codec can't encode character '\u2705' in position 0: character maps to <undefined>
+2025-02-05 20:20:35,334 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:20:35,334 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:20:35,345 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:20:38,327 - ERROR - Error fetching ticker list: 'charmap' codec can't encode character '\u2714' in position 1: character maps to <undefined>
+2025-02-05 20:20:55,704 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:20:55,704 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:20:55,716 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:20:58,397 - ERROR - Error fetching ticker list: 'charmap' codec can't encode character '\u2714' in position 1: character maps to <undefined>
+2025-02-05 20:21:37,118 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:21:37,118 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:21:37,131 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:22:14,790 - INFO - Discovering subpackages in _NamespacePath(['C:\\Users\\quere\\DEV\\Lib\\site-packages\\pinecone_plugins'])
+2025-02-05 20:22:14,790 - INFO - Looking for plugins in pinecone_plugins.inference
+2025-02-05 20:22:14,802 - INFO - Installing plugin inference into Pinecone
+2025-02-05 20:22:23,597 - ERROR - Vector dimension mismatch for GE. Expected 180, got 260.
+2025-02-05 20:22:28,424 - ERROR - Vector dimension mismatch for RTX. Expected 180, got 260.
+2025-02-05 20:22:33,816 - ERROR - Vector dimension mismatch for BA. Expected 180, got 257.
+2025-02-05 20:22:39,553 - ERROR - Vector dimension mismatch for LMT. Expected 180, got 252.
+2025-02-05 20:24:56,083 - WARNING - [WARN] Failed to fetch data for TDG: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777277) and data type object
+2025-02-05 20:25:30,600 - WARNING - Skipping TDG due to incomplete data.
+2025-02-05 20:25:35,965 - ERROR - Vector dimension mismatch for GD. Expected 180, got 255.
+2025-02-05 20:25:40,915 - ERROR - Vector dimension mismatch for NOC. Expected 180, got 256.
+2025-02-05 20:25:46,053 - ERROR - Vector dimension mismatch for HWM. Expected 180, got 252.
+2025-02-05 20:25:50,845 - ERROR - Vector dimension mismatch for AXON. Expected 180, got 220.
+2025-02-05 20:28:01,836 - WARNING - [WARN] Failed to fetch data for LHX: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777279) and data type object
+2025-02-05 20:28:45,921 - WARNING - Skipping LHX due to incomplete data.
+2025-02-05 20:28:51,228 - ERROR - Vector dimension mismatch for HEI. Expected 180, got 240.
+2025-02-05 20:28:51,363 - WARNING - [WARN] Failed to fetch data for HEI.A: 500: 404: No quarterly reports found
+2025-02-05 20:28:51,364 - WARNING - Skipping HEI.A due to incomplete data.
+2025-02-05 20:30:57,888 - WARNING - [WARN] Failed to fetch data for TXT: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 20:31:30,753 - WARNING - Skipping TXT due to incomplete data.
+2025-02-05 20:31:35,917 - ERROR - Vector dimension mismatch for CW. Expected 180, got 236.
+2025-02-05 20:31:40,184 - ERROR - Vector dimension mismatch for RKLB. Expected 180, got 70.
+2025-02-05 20:31:45,315 - ERROR - Vector dimension mismatch for ESLT. Expected 180, got 324.
+2025-02-05 20:31:49,891 - ERROR - Vector dimension mismatch for BWXT. Expected 180, got 225.
+2025-02-05 20:31:56,326 - ERROR - Vector dimension mismatch for WWD. Expected 180, got 244.
+2025-02-05 20:32:05,443 - ERROR - Vector dimension mismatch for DRS. Expected 180, got 60.
+2025-02-05 20:32:10,595 - ERROR - Vector dimension mismatch for SARO. Expected 180, got 12.
+2025-02-05 20:32:15,638 - ERROR - Vector dimension mismatch for HII. Expected 180, got 220.
+2025-02-05 20:32:20,577 - ERROR - Vector dimension mismatch for CAE. Expected 180, got 324.
+2025-02-05 20:32:24,511 - ERROR - Vector dimension mismatch for LOAR. Expected 180, got 44.
+2025-02-05 20:32:29,374 - ERROR - Vector dimension mismatch for ERJ. Expected 180, got 324.
+2025-02-05 20:32:29,488 - WARNING - [WARN] Failed to fetch data for MOG.B: 500: 404: No quarterly reports found
+2025-02-05 20:32:29,489 - WARNING - Skipping MOG.B due to incomplete data.
+2025-02-05 20:32:29,628 - WARNING - [WARN] Failed to fetch data for MOG.A: 500: 404: No quarterly reports found
+2025-02-05 20:32:29,628 - WARNING - Skipping MOG.A due to incomplete data.
+2025-02-05 20:32:34,589 - ERROR - Vector dimension mismatch for HXL. Expected 180, got 237.
+2025-02-05 20:32:39,218 - ERROR - Vector dimension mismatch for KTOS. Expected 180, got 217.
+2025-02-05 20:32:43,788 - ERROR - Vector dimension mismatch for AVAV. Expected 180, got 215.
+2025-02-05 20:32:47,807 - ERROR - Vector dimension mismatch for ACHR. Expected 180, got 70.
+2025-02-05 20:32:52,561 - ERROR - Vector dimension mismatch for SPR. Expected 180, got 236.
+2025-02-05 20:32:56,639 - ERROR - Vector dimension mismatch for LUNR. Expected 180, got 56.
+2025-02-05 20:33:02,371 - ERROR - Vector dimension mismatch for MRCY. Expected 180, got 220.
+2025-02-05 20:33:12,858 - ERROR - Vector dimension mismatch for AIR. Expected 180, got 240.
+2025-02-05 20:33:19,428 - ERROR - Vector dimension mismatch for VSEC. Expected 180, got 220.
+2025-02-05 20:33:24,913 - ERROR - Vector dimension mismatch for VVX. Expected 180, got 170.
+2025-02-05 20:33:28,937 - ERROR - Vector dimension mismatch for CDRE. Expected 180, got 61.
+2025-02-05 20:33:35,322 - ERROR - Vector dimension mismatch for TGI. Expected 180, got 236.
+2025-02-05 20:33:40,001 - ERROR - Vector dimension mismatch for EVEX. Expected 180, got 68.
+2025-02-05 20:33:44,558 - ERROR - Vector dimension mismatch for RDW. Expected 180, got 68.
+2025-02-05 20:33:48,594 - ERROR - Vector dimension mismatch for PL. Expected 180, got 66.
+2025-02-05 20:33:52,815 - ERROR - Vector dimension mismatch for EH. Expected 180, got 108.
+2025-02-05 20:33:57,403 - ERROR - Vector dimension mismatch for DCO. Expected 180, got 223.
+2025-02-05 20:34:03,380 - ERROR - Vector dimension mismatch for SKYH. Expected 180, got 66.
+2025-02-05 20:36:08,548 - WARNING - [WARN] Failed to fetch data for NPK: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777273) and data type object
+2025-02-05 20:36:42,334 - WARNING - Skipping NPK due to incomplete data.
+2025-02-05 20:36:47,115 - ERROR - Vector dimension mismatch for BYRN. Expected 180, got 216.
+2025-02-05 20:36:51,829 - ERROR - Vector dimension mismatch for ATRO. Expected 180, got 223.
+2025-02-05 20:38:55,099 - WARNING - [WARN] Failed to fetch data for RGR: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 20:39:29,659 - WARNING - Skipping RGR due to incomplete data.
+2025-02-05 20:39:36,458 - ERROR - Vector dimension mismatch for SWBI. Expected 180, got 220.
+2025-02-05 20:39:40,571 - ERROR - Vector dimension mismatch for EVTL. Expected 180, got 92.
+2025-02-05 20:39:47,238 - ERROR - Vector dimension mismatch for TATT. Expected 180, got 324.
+2025-02-05 20:39:52,011 - ERROR - Vector dimension mismatch for PKE. Expected 180, got 220.
+2025-02-05 20:39:56,073 - ERROR - Vector dimension mismatch for SATL. Expected 180, got 85.
+2025-02-05 20:39:59,865 - ERROR - Vector dimension mismatch for GAUZ. Expected 180, got 26.
+2025-02-05 20:40:09,218 - ERROR - Vector dimension mismatch for POWW. Expected 180, got 324.
+2025-02-05 20:40:14,116 - ERROR - Vector dimension mismatch for ISSC. Expected 180, got 216.
+2025-02-05 20:40:18,462 - ERROR - Vector dimension mismatch for SPCE. Expected 180, got 117.
+2025-02-05 20:40:23,060 - ERROR - Vector dimension mismatch for CODA. Expected 180, got 300.
+2025-02-05 20:40:30,848 - ERROR - Vector dimension mismatch for CVU. Expected 180, got 220.
+2025-02-05 20:40:35,671 - ERROR - Vector dimension mismatch for SPAI. Expected 180, got 22.
+2025-02-05 20:42:39,771 - WARNING - [WARN] Failed to fetch data for OPXS: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 20:43:12,580 - WARNING - Skipping OPXS due to incomplete data.
+2025-02-05 20:43:17,157 - ERROR - Vector dimension mismatch for SIDU. Expected 180, got 50.
+2025-02-05 20:43:21,958 - ERROR - Vector dimension mismatch for SVT. Expected 180, got 218.
+2025-02-05 20:43:25,979 - ERROR - Vector dimension mismatch for HOVR. Expected 180, got 39.
+2025-02-05 20:43:35,470 - ERROR - Vector dimension mismatch for SIF. Expected 180, got 218.
+2025-02-05 20:43:39,512 - ERROR - Vector dimension mismatch for MNTS. Expected 180, got 80.
+2025-02-05 20:43:39,702 - WARNING - [WARN] Failed to fetch data for PRZO: 500: 404: No quarterly earnings data found
+2025-02-05 20:43:39,704 - WARNING - Skipping PRZO due to incomplete data.
+2025-02-05 20:43:44,919 - ERROR - Vector dimension mismatch for DPRO. Expected 180, got 99.
+2025-02-05 20:43:49,414 - ERROR - Vector dimension mismatch for AIRI. Expected 180, got 194.
+2025-02-05 20:43:55,472 - ERROR - Error uploading vector for XTIA: Invalid type for variable '0'. Required value type is float and passed type was dict at ['values'][0]
+2025-02-05 20:43:59,601 - ERROR - Vector dimension mismatch for KITT. Expected 180, got 59.
+2025-02-05 20:44:09,002 - ERROR - Vector dimension mismatch for GPUS. Expected 180, got 222.
+2025-02-05 20:44:13,261 - ERROR - Vector dimension mismatch for KWE. Expected 180, got 74.
+2025-02-05 20:44:17,877 - ERROR - Vector dimension mismatch for CSCO. Expected 180, got 248.
+2025-02-05 20:44:22,469 - ERROR - Vector dimension mismatch for MSI. Expected 180, got 256.
+2025-02-05 20:44:26,608 - ERROR - Vector dimension mismatch for HPE. Expected 180, got 150.
+2025-02-05 20:44:32,321 - ERROR - Vector dimension mismatch for ERIC. Expected 180, got 324.
+2025-02-05 20:44:36,733 - ERROR - Vector dimension mismatch for UI. Expected 180, got 216.
+2025-02-05 20:44:42,227 - ERROR - Vector dimension mismatch for NOK. Expected 180, got 324.
+2025-02-05 20:44:48,552 - ERROR - Vector dimension mismatch for ZBRA. Expected 180, got 240.
+2025-02-05 20:44:53,119 - ERROR - Vector dimension mismatch for CIEN. Expected 180, got 236.
+2025-02-05 20:44:57,645 - ERROR - Vector dimension mismatch for JNPR. Expected 180, got 253.
+2025-02-05 20:44:59,906 - WARNING - [WARN] Failed to fetch data for SATS: 500: 404: No quarterly reports found
+2025-02-05 20:44:59,908 - WARNING - Skipping SATS due to incomplete data.
+2025-02-05 20:45:09,431 - ERROR - Vector dimension mismatch for LITE. Expected 180, got 154.
+2025-02-05 20:45:13,451 - ERROR - Vector dimension mismatch for ASTS. Expected 180, got 84.
+2025-02-05 20:45:18,016 - ERROR - Vector dimension mismatch for BDC. Expected 180, got 236.
+2025-02-05 20:47:19,523 - WARNING - [WARN] Failed to fetch data for VIAV: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 20:47:54,310 - WARNING - Skipping VIAV due to incomplete data.
+2025-02-05 20:49:57,522 - WARNING - [WARN] Failed to fetch data for EXTR: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 20:50:30,579 - WARNING - Skipping EXTR due to incomplete data.
+2025-02-05 20:50:36,533 - ERROR - Vector dimension mismatch for AAOI. Expected 180, got 190.
+2025-02-05 20:50:41,237 - ERROR - Vector dimension mismatch for INFN. Expected 180, got 219.
+2025-02-05 20:50:45,945 - ERROR - Vector dimension mismatch for HLIT. Expected 180, got 236.
+2025-02-05 20:52:47,300 - WARNING - [WARN] Failed to fetch data for VSAT: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 20:53:19,371 - WARNING - Skipping VSAT due to incomplete data.
+2025-02-05 20:53:25,228 - ERROR - Vector dimension mismatch for COMM. Expected 180, got 184.
+2025-02-05 20:53:29,901 - ERROR - Vector dimension mismatch for DGII. Expected 180, got 220.
+2025-02-05 20:53:34,677 - ERROR - Vector dimension mismatch for ADTN. Expected 180, got 236.
+2025-02-05 20:53:39,448 - ERROR - Vector dimension mismatch for NTGR. Expected 180, got 221.
+2025-02-05 20:53:44,409 - ERROR - Vector dimension mismatch for CLFD. Expected 180, got 220.
+2025-02-05 20:53:49,093 - ERROR - Vector dimension mismatch for CRNT. Expected 180, got 324.
+2025-02-05 20:53:54,039 - ERROR - Vector dimension mismatch for GILT. Expected 180, got 324.
+2025-02-05 20:53:58,582 - ERROR - Vector dimension mismatch for AUDC. Expected 180, got 324.
+2025-02-05 20:54:03,667 - ERROR - Vector dimension mismatch for AVNW. Expected 180, got 220.
+2025-02-05 20:54:10,138 - ERROR - Vector dimension mismatch for TSAT. Expected 180, got 92.
+2025-02-05 20:54:14,779 - ERROR - Vector dimension mismatch for FEIM. Expected 180, got 220.
+2025-02-05 20:54:18,983 - ERROR - Vector dimension mismatch for ONDS. Expected 180, got 137.
+2025-02-05 20:54:23,484 - ERROR - Vector dimension mismatch for INSG. Expected 180, got 220.
+2025-02-05 20:54:27,928 - ERROR - Vector dimension mismatch for LTRX. Expected 180, got 216.
+2025-02-05 20:54:32,451 - ERROR - Vector dimension mismatch for KVHI. Expected 180, got 220.
+2025-02-05 20:54:37,823 - ERROR - Vector dimension mismatch for SATX. Expected 180, got 76.
+2025-02-05 20:54:43,432 - ERROR - Vector dimension mismatch for BKTI. Expected 180, got 220.
+2025-02-05 20:55:09,646 - ERROR - Vector dimension mismatch for SILC. Expected 180, got 324.
+2025-02-05 20:55:13,848 - ERROR - Vector dimension mismatch for AIRG. Expected 180, got 141.
+2025-02-05 20:55:13,937 - WARNING - [WARN] Failed to fetch data for PCLA: 500: 404: No quarterly reports found
+2025-02-05 20:55:13,938 - WARNING - Skipping PCLA due to incomplete data.
+2025-02-05 20:55:18,630 - ERROR - Vector dimension mismatch for CMTL. Expected 180, got 236.
+2025-02-05 20:55:22,993 - ERROR - Vector dimension mismatch for FKWL. Expected 180, got 220.
+2025-02-05 20:55:27,600 - ERROR - Vector dimension mismatch for OCC. Expected 180, got 220.
+2025-02-05 20:55:35,251 - ERROR - Vector dimension mismatch for AMPG. Expected 180, got 204.
+2025-02-05 20:55:40,307 - ERROR - Vector dimension mismatch for CMBM. Expected 180, got 97.
+2025-02-05 20:55:46,486 - ERROR - Vector dimension mismatch for UTSI. Expected 180, got 324.
+2025-02-05 20:55:46,721 - WARNING - [WARN] Failed to fetch data for SYNX: 500: 404: No quarterly earnings data found
+2025-02-05 20:55:46,722 - WARNING - Skipping SYNX due to incomplete data.
+2025-02-05 20:55:51,346 - ERROR - Vector dimension mismatch for BOSC. Expected 180, got 324.
+2025-02-05 20:55:51,618 - WARNING - [WARN] Failed to fetch data for MOB: 500: 404: No quarterly earnings data found
+2025-02-05 20:55:51,619 - WARNING - Skipping MOB due to incomplete data.
+2025-02-05 20:55:55,723 - ERROR - Vector dimension mismatch for SONM. Expected 180, got 96.
+2025-02-05 20:56:00,248 - ERROR - Vector dimension mismatch for MYNA. Expected 180, got 112.
+2025-02-05 20:56:28,291 - ERROR - Vector dimension mismatch for CLRO. Expected 180, got 219.
+2025-02-05 20:56:32,712 - ERROR - Vector dimension mismatch for ASNS. Expected 180, got 48.
+2025-02-05 20:56:37,037 - ERROR - Vector dimension mismatch for BOXL. Expected 180, got 134.
+2025-02-05 20:56:44,033 - ERROR - Vector dimension mismatch for VISL. Expected 180, got 188.
+2025-02-05 20:56:47,884 - ERROR - Vector dimension mismatch for MITQ. Expected 180, got 60.
+2025-02-05 20:56:52,390 - ERROR - Vector dimension mismatch for SYTA. Expected 180, got 324.
+2025-02-05 20:56:56,862 - ERROR - Vector dimension mismatch for ZTS. Expected 180, got 196.
+2025-02-05 20:57:00,836 - ERROR - Vector dimension mismatch for HLN. Expected 180, got 54.
+2025-02-05 20:57:07,899 - ERROR - Vector dimension mismatch for TAK. Expected 180, got 257.
+2025-02-05 20:57:12,643 - ERROR - Vector dimension mismatch for TEVA. Expected 180, got 260.
+2025-02-05 20:57:17,316 - ERROR - Vector dimension mismatch for NBIX. Expected 180, got 220.
+2025-02-05 20:57:21,592 - ERROR - Vector dimension mismatch for ITCI. Expected 180, got 189.
+2025-02-05 20:57:26,849 - ERROR - Vector dimension mismatch for VTRS. Expected 180, got 80.
+2025-02-05 20:57:31,539 - ERROR - Vector dimension mismatch for RDY. Expected 180, got 324.
+2025-02-05 20:57:35,586 - ERROR - Vector dimension mismatch for LNTH. Expected 180, got 159.
+2025-02-05 20:57:39,515 - ERROR - Vector dimension mismatch for ELAN. Expected 180, got 106.
+2025-02-05 20:57:46,196 - ERROR - Vector dimension mismatch for ALKS. Expected 180, got 212.
+2025-02-05 20:57:51,889 - ERROR - Vector dimension mismatch for ALVO. Expected 180, got 92.
+2025-02-05 20:57:56,276 - ERROR - Vector dimension mismatch for PBH. Expected 180, got 220.
+2025-02-05 20:58:00,199 - ERROR - Vector dimension mismatch for AKAN. Expected 180, got 50.
+2025-02-05 20:58:06,285 - ERROR - Vector dimension mismatch for PRGO. Expected 180, got 250.
+2025-02-05 20:58:10,924 - ERROR - Vector dimension mismatch for BHC. Expected 180, got 238.
+2025-02-05 20:58:15,372 - ERROR - Vector dimension mismatch for AMRX. Expected 180, got 119.
+2025-02-05 20:58:19,604 - ERROR - Vector dimension mismatch for HCM. Expected 180, got 168.
+2025-02-05 20:58:24,011 - ERROR - Vector dimension mismatch for SUPN. Expected 180, got 208.
+2025-02-05 20:58:28,362 - ERROR - Vector dimension mismatch for AMPH. Expected 180, got 173.
+2025-02-05 20:58:32,857 - ERROR - Vector dimension mismatch for DVAX. Expected 180, got 220.
+2025-02-05 20:58:36,929 - ERROR - Vector dimension mismatch for INDV. Expected 180, got 44.
+2025-02-05 20:58:41,397 - ERROR - Vector dimension mismatch for EVO. Expected 180, got 323.
+2025-02-05 20:58:45,573 - ERROR - Vector dimension mismatch for KNSA. Expected 180, got 111.
+2025-02-05 20:58:50,543 - ERROR - Vector dimension mismatch for HROW. Expected 180, got 220.
+2025-02-05 20:58:54,956 - ERROR - Vector dimension mismatch for ANIP. Expected 180, got 217.
+2025-02-05 20:58:59,221 - ERROR - Vector dimension mismatch for PCRX. Expected 180, got 216.
+2025-02-05 20:59:05,394 - ERROR - Vector dimension mismatch for TLRY. Expected 180, got 104.
+2025-02-05 20:59:09,809 - ERROR - Vector dimension mismatch for COLL. Expected 180, got 160.
+2025-02-05 20:59:10,526 - WARNING - [WARN] Failed to fetch data for BGM: 500: 404: No quarterly reports found
+2025-02-05 20:59:10,527 - WARNING - Skipping BGM due to incomplete data.
+2025-02-05 20:59:14,621 - ERROR - Vector dimension mismatch for EOLS. Expected 180, got 112.
+2025-02-05 20:59:19,106 - ERROR - Vector dimension mismatch for PAHC. Expected 180, got 178.
+2025-02-05 20:59:23,614 - ERROR - Vector dimension mismatch for AVDL. Expected 180, got 201.
+2025-02-05 20:59:27,656 - ERROR - Vector dimension mismatch for CRON. Expected 180, got 98.
+2025-02-05 20:59:32,085 - ERROR - Vector dimension mismatch for EBS. Expected 180, got 224.
+2025-02-05 20:59:36,310 - ERROR - Vector dimension mismatch for IRWD. Expected 180, got 221.
+2025-02-05 20:59:41,748 - ERROR - Vector dimension mismatch for AKBA. Expected 180, got 176.
+2025-02-05 20:59:46,106 - ERROR - Vector dimension mismatch for SIGA. Expected 180, got 220.
+2025-02-05 20:59:49,894 - ERROR - Vector dimension mismatch for TKNO. Expected 180, got 60.
+2025-02-05 20:59:53,967 - ERROR - Vector dimension mismatch for ORGO. Expected 180, got 134.
+2025-02-05 20:59:58,172 - ERROR - Vector dimension mismatch for KMDA. Expected 180, got 211.
+2025-02-05 21:00:08,967 - ERROR - Vector dimension mismatch for ESPR. Expected 180, got 189.
+2025-02-05 21:00:13,777 - ERROR - Vector dimension mismatch for ETON. Expected 180, got 108.
+2025-02-05 21:00:18,908 - ERROR - Vector dimension mismatch for AQST. Expected 180, got 109.
+2025-02-05 21:00:23,373 - ERROR - Vector dimension mismatch for CGC. Expected 180, got 94.
+2025-02-05 21:00:28,188 - ERROR - Vector dimension mismatch for ANIK. Expected 180, got 220.
+2025-02-05 21:00:32,981 - ERROR - Vector dimension mismatch for LFCR. Expected 180, got 226.
+2025-02-05 21:00:38,049 - ERROR - Vector dimension mismatch for ACB. Expected 180, got 280.
+2025-02-05 21:00:38,801 - WARNING - [WARN] Failed to fetch data for ZYBT: 500: 404: No quarterly reports found
+2025-02-05 21:00:38,801 - WARNING - Skipping ZYBT due to incomplete data.
+2025-02-05 21:00:43,194 - ERROR - Vector dimension mismatch for OGI. Expected 180, got 204.
+2025-02-05 21:00:47,221 - ERROR - Vector dimension mismatch for PROC. Expected 180, got 76.
+2025-02-05 21:00:51,257 - ERROR - Vector dimension mismatch for BIOA. Expected 180, got 102.
+2025-02-05 21:00:55,473 - ERROR - Vector dimension mismatch for CRDL. Expected 180, got 117.
+2025-02-05 21:01:00,742 - ERROR - Vector dimension mismatch for CTOR. Expected 180, got 34.
+2025-02-05 21:01:08,322 - ERROR - Vector dimension mismatch for INCR. Expected 180, got 225.
+2025-02-05 21:01:13,036 - ERROR - Vector dimension mismatch for DERM. Expected 180, got 59.
+2025-02-05 21:01:17,832 - ERROR - Vector dimension mismatch for ASRT. Expected 180, got 77.
+2025-02-05 21:01:22,437 - ERROR - Vector dimension mismatch for RMTI. Expected 180, got 220.
+2025-02-05 21:01:26,548 - ERROR - Vector dimension mismatch for OPTN. Expected 180, got 122.
+2025-02-05 21:01:31,159 - ERROR - Vector dimension mismatch for RGC. Expected 180, got 324.
+2025-02-05 21:01:35,732 - ERROR - Vector dimension mismatch for SCYX. Expected 180, got 176.
+2025-02-05 21:01:40,079 - ERROR - Vector dimension mismatch for CPIX. Expected 180, got 224.
+2025-02-05 21:01:44,005 - ERROR - Vector dimension mismatch for IXHL. Expected 180, got 30.
+2025-02-05 21:01:48,512 - ERROR - Vector dimension mismatch for DRRX. Expected 180, got 220.
+2025-02-05 21:01:49,360 - WARNING - [WARN] Failed to fetch data for GELS: 500: 404: No quarterly earnings data found
+2025-02-05 21:01:49,361 - WARNING - Skipping GELS due to incomplete data.
+2025-02-05 21:01:56,051 - ERROR - Vector dimension mismatch for CYTH. Expected 180, got 220.
+2025-02-05 21:01:59,980 - ERROR - Vector dimension mismatch for FLGC. Expected 180, got 42.
+2025-02-05 21:02:07,444 - ERROR - Vector dimension mismatch for TXMD. Expected 180, got 220.
+2025-02-05 21:02:11,893 - ERROR - Vector dimension mismatch for TLPH. Expected 180, got 220.
+2025-02-05 21:02:16,185 - ERROR - Vector dimension mismatch for AYTU. Expected 180, got 214.
+2025-02-05 21:02:41,975 - ERROR - Vector dimension mismatch for EVOK. Expected 180, got 186.
+2025-02-05 21:02:46,356 - ERROR - Vector dimension mismatch for RDHL. Expected 180, got 201.
+2025-02-05 21:02:52,156 - ERROR - Vector dimension mismatch for BFRI. Expected 180, got 56.
+2025-02-05 21:02:56,101 - ERROR - Vector dimension mismatch for QNTM. Expected 180, got 27.
+2025-02-05 21:03:00,643 - ERROR - Vector dimension mismatch for IMCC. Expected 180, got 324.
+2025-02-05 21:03:08,439 - ERROR - Vector dimension mismatch for SBFM. Expected 180, got 225.
+2025-02-05 21:03:13,042 - ERROR - Vector dimension mismatch for CPHI. Expected 180, got 223.
+2025-02-05 21:03:17,505 - ERROR - Vector dimension mismatch for SNOA. Expected 180, got 220.
+2025-02-05 21:03:21,813 - ERROR - Vector dimension mismatch for SHPH. Expected 180, got 42.
+2025-02-05 21:03:25,815 - ERROR - Vector dimension mismatch for PTPI. Expected 180, got 68.
+2025-02-05 21:03:30,061 - ERROR - Vector dimension mismatch for YCBD. Expected 180, got 119.
+2025-02-05 21:03:34,109 - ERROR - Vector dimension mismatch for PRFX. Expected 180, got 104.
+2025-02-05 21:03:38,689 - ERROR - Vector dimension mismatch for SXTC. Expected 180, got 115.
+2025-02-05 21:03:43,532 - ERROR - Vector dimension mismatch for ASML. Expected 180, got 324.
+2025-02-05 21:03:48,119 - ERROR - Vector dimension mismatch for AMAT. Expected 180, got 251.
+2025-02-05 21:03:52,749 - ERROR - Vector dimension mismatch for LRCX. Expected 180, got 235.
+2025-02-05 21:03:57,419 - ERROR - Vector dimension mismatch for KLAC. Expected 180, got 236.
+2025-02-05 21:04:04,269 - ERROR - Vector dimension mismatch for APH. Expected 180, got 256.
+2025-02-05 21:04:09,699 - ERROR - Vector dimension mismatch for GLW. Expected 180, got 252.
+2025-02-05 21:04:14,081 - ERROR - Vector dimension mismatch for TEL. Expected 180, got 258.
+2025-02-05 21:04:18,585 - ERROR - Vector dimension mismatch for GRMN. Expected 180, got 251.
+2025-02-05 21:04:23,028 - ERROR - Vector dimension mismatch for KEYS. Expected 180, got 164.
+2025-02-05 21:04:27,231 - ERROR - Vector dimension mismatch for FTV. Expected 180, got 141.
+2025-02-05 21:06:32,809 - WARNING - [WARN] Failed to fetch data for TDY: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777271) and data type object
+2025-02-05 21:07:07,162 - WARNING - Skipping TDY due to incomplete data.
+2025-02-05 21:07:12,584 - ERROR - Vector dimension mismatch for TER. Expected 180, got 236.
+2025-02-05 21:09:11,842 - WARNING - [WARN] Failed to fetch data for TRMB: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 21:09:45,188 - WARNING - Skipping TRMB due to incomplete data.
+2025-02-05 21:09:50,396 - ERROR - Vector dimension mismatch for JBL. Expected 180, got 236.
+2025-02-05 21:09:55,065 - ERROR - Vector dimension mismatch for FLEX. Expected 180, got 256.
+2025-02-05 21:09:59,880 - ERROR - Vector dimension mismatch for COHR. Expected 180, got 236.
+2025-02-05 21:10:10,752 - ERROR - Vector dimension mismatch for ENTG. Expected 180, got 225.
+2025-02-05 21:10:15,455 - ERROR - Vector dimension mismatch for CLS. Expected 180, got 324.
+2025-02-05 21:10:20,033 - ERROR - Vector dimension mismatch for SNX. Expected 180, got 222.
+2025-02-05 21:12:18,317 - WARNING - [WARN] Failed to fetch data for ONTO: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 21:12:51,988 - WARNING - Skipping ONTO due to incomplete data.
+2025-02-05 21:12:56,980 - ERROR - Vector dimension mismatch for FN. Expected 180, got 220.
+2025-02-05 21:13:01,841 - ERROR - Vector dimension mismatch for MKSI. Expected 180, got 236.
+2025-02-05 21:13:08,516 - ERROR - Vector dimension mismatch for NVMI. Expected 180, got 324.
+2025-02-05 21:13:13,406 - ERROR - Vector dimension mismatch for OLED. Expected 180, got 221.
+2025-02-05 21:13:18,292 - ERROR - Vector dimension mismatch for CGNX. Expected 180, got 239.
+2025-02-05 21:13:22,962 - ERROR - Vector dimension mismatch for AMKR. Expected 180, got 236.
+2025-02-05 21:13:27,658 - ERROR - Vector dimension mismatch for BMI. Expected 180, got 220.
+2025-02-05 21:13:32,248 - ERROR - Vector dimension mismatch for ARW. Expected 180, got 240.
+2025-02-05 21:13:37,069 - ERROR - Vector dimension mismatch for LFUS. Expected 180, got 232.
+2025-02-05 21:13:41,074 - ERROR - Vector dimension mismatch for VNT. Expected 180, got 70.
+2025-02-05 21:13:45,795 - ERROR - Vector dimension mismatch for NSIT. Expected 180, got 221.
+2025-02-05 21:13:50,187 - ERROR - Vector dimension mismatch for NOVT. Expected 180, got 224.
+2025-02-05 21:13:54,691 - ERROR - Vector dimension mismatch for ITRI. Expected 180, got 236.
+2025-02-05 21:15:54,237 - WARNING - [WARN] Failed to fetch data for AVT: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777280) and data type object
+2025-02-05 21:16:28,216 - WARNING - Skipping AVT due to incomplete data.
+2025-02-05 21:16:33,465 - ERROR - Vector dimension mismatch for CAMT. Expected 180, got 324.
+2025-02-05 21:16:33,560 - WARNING - [WARN] Failed to fetch data for PONY: 500: 404: No quarterly reports found
+2025-02-05 21:16:33,561 - WARNING - Skipping PONY due to incomplete data.
+2025-02-05 21:18:32,914 - WARNING - [WARN] Failed to fetch data for SANM: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777274) and data type object
+2025-02-05 21:19:06,583 - WARNING - Skipping SANM due to incomplete data.
+2025-02-05 21:19:12,803 - ERROR - Vector dimension mismatch for ST. Expected 180, got 221.
+2025-02-05 21:21:16,455 - WARNING - [WARN] Failed to fetch data for PLXS: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777277) and data type object
+2025-02-05 21:21:50,543 - WARNING - Skipping PLXS due to incomplete data.
+2025-02-05 21:21:55,804 - ERROR - Vector dimension mismatch for ESE. Expected 180, got 236.
+2025-02-05 21:22:03,080 - ERROR - Vector dimension mismatch for AMBA. Expected 180, got 200.
+2025-02-05 21:22:09,175 - ERROR - Vector dimension mismatch for FORM. Expected 180, got 220.
+2025-02-05 21:22:13,818 - ERROR - Vector dimension mismatch for IPGP. Expected 180, got 222.
+2025-02-05 21:22:18,481 - ERROR - Vector dimension mismatch for OSIS. Expected 180, got 216.
+2025-02-05 21:22:23,224 - ERROR - Vector dimension mismatch for VICR. Expected 180, got 224.
+2025-02-05 21:22:27,884 - ERROR - Vector dimension mismatch for TTMI. Expected 180, got 224.
+2025-02-05 21:24:31,499 - WARNING - [WARN] Failed to fetch data for KLIC: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 21:25:05,096 - WARNING - Skipping KLIC due to incomplete data.
+2025-02-05 21:25:11,152 - ERROR - Vector dimension mismatch for ACLS. Expected 180, got 216.
+2025-02-05 21:25:16,005 - ERROR - Vector dimension mismatch for CNXN. Expected 180, got 220.
+2025-02-05 21:25:20,834 - ERROR - Vector dimension mismatch for ROG. Expected 180, got 220.
+2025-02-05 21:25:25,236 - ERROR - Vector dimension mismatch for KN. Expected 180, got 176.
+2025-02-05 21:25:50,943 - ERROR - Vector dimension mismatch for BHE. Expected 180, got 237.
+2025-02-05 21:25:55,441 - ERROR - Vector dimension mismatch for UCTT. Expected 180, got 220.
+2025-02-05 21:26:00,046 - ERROR - Vector dimension mismatch for CTS. Expected 180, got 217.
+2025-02-05 21:26:07,591 - ERROR - Vector dimension mismatch for VECO. Expected 180, got 223.
+2025-02-05 21:26:12,626 - ERROR - Vector dimension mismatch for PLAB. Expected 180, got 224.
+2025-02-05 21:26:17,456 - ERROR - Vector dimension mismatch for SCSC. Expected 180, got 236.
+2025-02-05 21:26:21,822 - ERROR - Vector dimension mismatch for ACMR. Expected 180, got 124.
+2025-02-05 21:26:26,606 - ERROR - Vector dimension mismatch for DQ. Expected 180, got 255.
+2025-02-05 21:26:31,243 - ERROR - Vector dimension mismatch for COHU. Expected 180, got 222.
+2025-02-05 21:26:35,767 - ERROR - Vector dimension mismatch for BELFA. Expected 180, got 220.
+2025-02-05 21:26:40,344 - ERROR - Vector dimension mismatch for BELFB. Expected 180, got 220.
+2025-02-05 21:26:44,463 - ERROR - Vector dimension mismatch for ICHR. Expected 180, got 128.
+2025-02-05 21:26:48,436 - ERROR - Vector dimension mismatch for INDI. Expected 180, got 65.
+2025-02-05 21:26:52,909 - ERROR - Vector dimension mismatch for DAKT. Expected 180, got 219.
+2025-02-05 21:26:57,430 - ERROR - Vector dimension mismatch for MLAB. Expected 180, got 220.
+2025-02-05 21:27:05,899 - ERROR - Vector dimension mismatch for LYTS. Expected 180, got 216.
+2025-02-05 21:27:11,346 - ERROR - Vector dimension mismatch for ITRN. Expected 180, got 324.
+2025-02-05 21:27:15,810 - ERROR - Vector dimension mismatch for CLMB. Expected 180, got 216.
+2025-02-05 21:27:20,427 - ERROR - Vector dimension mismatch for FARO. Expected 180, got 224.
+2025-02-05 21:27:24,429 - ERROR - Vector dimension mismatch for OUST. Expected 180, got 70.
+2025-02-05 21:27:28,646 - ERROR - Vector dimension mismatch for KULR. Expected 180, got 134.
+2025-02-05 21:27:33,137 - ERROR - Vector dimension mismatch for MEI. Expected 180, got 224.
+2025-02-05 21:27:39,769 - ERROR - Vector dimension mismatch for ALNT. Expected 180, got 216.
+2025-02-05 21:27:44,201 - ERROR - Vector dimension mismatch for MVIS. Expected 180, got 220.
+2025-02-05 21:27:48,757 - ERROR - Vector dimension mismatch for AEHR. Expected 180, got 216.
+2025-02-05 21:27:52,649 - ERROR - Vector dimension mismatch for BKSY. Expected 180, got 88.
+2025-02-05 21:27:57,063 - ERROR - Vector dimension mismatch for VPG. Expected 180, got 224.
+2025-02-05 21:28:01,652 - ERROR - Vector dimension mismatch for ATOM. Expected 180, got 137.
+2025-02-05 21:28:06,896 - ERROR - Vector dimension mismatch for KOPN. Expected 180, got 224.
+2025-02-05 21:28:12,421 - ERROR - Vector dimension mismatch for RELL. Expected 180, got 220.
+2025-02-05 21:28:17,040 - ERROR - Vector dimension mismatch for MPTI. Expected 180, got 43.
+2025-02-05 21:28:21,695 - ERROR - Vector dimension mismatch for NEON. Expected 180, got 222.
+2025-02-05 21:28:26,200 - ERROR - Vector dimension mismatch for GNSS. Expected 180, got 220.
+2025-02-05 21:28:31,086 - ERROR - Vector dimension mismatch for LPTH. Expected 180, got 216.
+2025-02-05 21:28:35,273 - ERROR - Vector dimension mismatch for WBX. Expected 180, got 88.
+2025-02-05 21:28:39,648 - ERROR - Vector dimension mismatch for INTT. Expected 180, got 220.
+2025-02-05 21:28:43,955 - ERROR - Vector dimension mismatch for WRAP. Expected 180, got 124.
+2025-02-05 21:28:48,397 - ERROR - Vector dimension mismatch for AXTI. Expected 180, got 224.
+2025-02-05 21:28:52,768 - ERROR - Vector dimension mismatch for LINK. Expected 180, got 218.
+2025-02-05 21:28:57,446 - ERROR - Vector dimension mismatch for ELTK. Expected 180, got 324.
+2025-02-05 21:29:03,172 - ERROR - Vector dimension mismatch for ASYS. Expected 180, got 224.
+2025-02-05 21:29:08,139 - ERROR - Vector dimension mismatch for OPTX. Expected 180, got 52.
+2025-02-05 21:29:12,601 - ERROR - Vector dimension mismatch for MIND. Expected 180, got 222.
+2025-02-05 21:29:17,293 - ERROR - Vector dimension mismatch for SOTK. Expected 180, got 220.
+2025-02-05 21:29:21,370 - ERROR - Vector dimension mismatch for SELX. Expected 180, got 14.
+2025-02-05 21:29:26,109 - ERROR - Vector dimension mismatch for REFR. Expected 180, got 220.
+2025-02-05 21:29:30,400 - ERROR - Vector dimension mismatch for FCUV. Expected 180, got 173.
+2025-02-05 21:29:34,937 - ERROR - Vector dimension mismatch for DSWL. Expected 180, got 324.
+2025-02-05 21:29:39,354 - ERROR - Vector dimension mismatch for LGL. Expected 180, got 220.
+2025-02-05 21:29:43,166 - ERROR - Vector dimension mismatch for HOLO. Expected 180, got 50.
+2025-02-05 21:29:47,260 - ERROR - Vector dimension mismatch for MTEK. Expected 180, got 64.
+2025-02-05 21:31:56,852 - WARNING - [WARN] Failed to fetch data for CPSH: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777270) and data type object
+2025-02-05 21:32:31,048 - WARNING - Skipping CPSH due to incomplete data.
+2025-02-05 21:32:36,362 - ERROR - Vector dimension mismatch for EMKR. Expected 180, got 220.
+2025-02-05 21:32:41,350 - ERROR - Vector dimension mismatch for DAIO. Expected 180, got 220.
+2025-02-05 21:32:46,093 - ERROR - Vector dimension mismatch for TRT. Expected 180, got 220.
+2025-02-05 21:32:50,760 - ERROR - Vector dimension mismatch for ELSE. Expected 180, got 220.
+2025-02-05 21:32:54,870 - ERROR - Vector dimension mismatch for IZM. Expected 180, got 61.
+2025-02-05 21:32:59,262 - ERROR - Vector dimension mismatch for TAIT. Expected 180, got 221.
+2025-02-05 21:32:59,351 - WARNING - [WARN] Failed to fetch data for SMTK: 500: 404: No quarterly reports found
+2025-02-05 21:32:59,352 - WARNING - Skipping SMTK due to incomplete data.
+2025-02-05 21:33:06,056 - ERROR - Vector dimension mismatch for KNW. Expected 180, got 224.
+2025-02-05 21:33:10,641 - ERROR - Vector dimension mismatch for ASTC. Expected 180, got 220.
+2025-02-05 21:33:15,359 - ERROR - Vector dimension mismatch for SGMA. Expected 180, got 220.
+2025-02-05 21:33:19,592 - ERROR - Vector dimension mismatch for IMTE. Expected 180, got 133.
+2025-02-05 21:33:23,498 - ERROR - Vector dimension mismatch for OST. Expected 180, got 57.
+2025-02-05 21:33:27,900 - ERROR - Vector dimension mismatch for WATT. Expected 180, got 177.
+2025-02-05 21:33:28,141 - WARNING - [WARN] Failed to fetch data for SVRE: 500: 404: No quarterly earnings data found
+2025-02-05 21:33:28,143 - WARNING - Skipping SVRE due to incomplete data.
+2025-02-05 21:33:32,511 - ERROR - Vector dimension mismatch for SOBR. Expected 180, got 204.
+2025-02-05 21:33:36,643 - ERROR - Vector dimension mismatch for VRT. Expected 180, got 107.
+2025-02-05 21:33:41,066 - ERROR - Vector dimension mismatch for HUBB. Expected 180, got 240.
+2025-02-05 21:33:45,205 - ERROR - Vector dimension mismatch for NVT. Expected 180, got 116.
+2025-02-05 21:33:57,688 - ERROR - Vector dimension mismatch for AYI. Expected 180, got 234.
+2025-02-05 21:34:12,666 - ERROR - Vector dimension mismatch for BE. Expected 180, got 114.
+2025-02-05 21:34:25,625 - ERROR - Vector dimension mismatch for AEIS. Expected 180, got 218.
+2025-02-05 21:36:34,402 - WARNING - [WARN] Failed to fetch data for ENS: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 21:37:09,349 - WARNING - Skipping ENS due to incomplete data.
+2025-02-05 21:37:17,037 - ERROR - Vector dimension mismatch for POWL. Expected 180, got 224.
+2025-02-05 21:37:25,513 - ERROR - Vector dimension mismatch for HAYW. Expected 180, got 64.
+2025-02-05 21:37:34,801 - ERROR - Vector dimension mismatch for ATKR. Expected 180, got 145.
+2025-02-05 21:37:43,924 - ERROR - Vector dimension mismatch for ENR. Expected 180, got 162.
+2025-02-05 21:37:51,721 - ERROR - Vector dimension mismatch for ENVX. Expected 180, got 68.
+2025-02-05 21:37:59,018 - WARNING - [WARN] Failed to fetch data for PLUG: 500: Error calculating valuations: 'Symbol'
+2025-02-05 21:37:59,018 - WARNING - Skipping PLUG due to incomplete data.
+2025-02-05 21:38:00,335 - WARNING - [WARN] Failed to fetch data for EOSE: 500: 404: No quarterly earnings data found
+2025-02-05 21:38:00,336 - WARNING - Skipping EOSE due to incomplete data.
+2025-02-05 21:38:01,427 - WARNING - [WARN] Failed to fetch data for ADSE: 500: 404: No quarterly reports found
+2025-02-05 21:38:01,427 - WARNING - Skipping ADSE due to incomplete data.
+2025-02-05 21:38:44,090 - WARNING - [WARN] Failed to fetch data for MVST: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:38:44,090 - WARNING - Skipping MVST due to incomplete data.
+2025-02-05 21:39:05,705 - WARNING - [WARN] Failed to fetch data for PLPC: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:39:05,705 - WARNING - Skipping PLPC due to incomplete data.
+2025-02-05 21:39:24,891 - WARNING - [WARN] Failed to fetch data for KE: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:39:24,891 - WARNING - Skipping KE due to incomplete data.
+2025-02-05 21:39:44,089 - WARNING - [WARN] Failed to fetch data for EAF: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:39:44,089 - WARNING - Skipping EAF due to incomplete data.
+2025-02-05 21:40:03,281 - WARNING - [WARN] Failed to fetch data for AMPX: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:40:03,281 - WARNING - Skipping AMPX due to incomplete data.
+2025-02-05 21:40:22,471 - WARNING - [WARN] Failed to fetch data for FREY: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:40:22,471 - WARNING - Skipping FREY due to incomplete data.
+2025-02-05 21:40:41,654 - WARNING - [WARN] Failed to fetch data for NVX: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:40:41,654 - WARNING - Skipping NVX due to incomplete data.
+2025-02-05 21:41:00,832 - WARNING - [WARN] Failed to fetch data for SKYX: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:41:00,832 - WARNING - Skipping SKYX due to incomplete data.
+2025-02-05 21:41:20,015 - WARNING - [WARN] Failed to fetch data for FCEL: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:41:20,015 - WARNING - Skipping FCEL due to incomplete data.
+2025-02-05 21:41:39,221 - WARNING - [WARN] Failed to fetch data for LTBR: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:41:39,221 - WARNING - Skipping LTBR due to incomplete data.
+2025-02-05 21:41:58,391 - WARNING - [WARN] Failed to fetch data for ULBI: 500: HTTPSConnectionPool(host='www.alphavantage.co', port=443): Read timed out. (read timeout=None)
+2025-02-05 21:41:58,391 - WARNING - Skipping ULBI due to incomplete data.
+2025-02-05 21:42:08,200 - ERROR - Vector dimension mismatch for NEOV. Expected 180, got 43.
+2025-02-05 21:42:16,920 - ERROR - Vector dimension mismatch for ELVA. Expected 180, got 324.
+2025-02-05 21:42:27,839 - ERROR - Vector dimension mismatch for CBAT. Expected 180, got 222.
+2025-02-05 21:42:41,878 - ERROR - Vector dimension mismatch for ESP. Expected 180, got 216.
+2025-02-05 21:42:48,342 - ERROR - Vector dimension mismatch for SDST. Expected 180, got 68.
+2025-02-05 21:42:56,024 - ERROR - Vector dimension mismatch for GWH. Expected 180, got 68.
+2025-02-05 21:43:00,606 - ERROR - Vector dimension mismatch for IPWR. Expected 180, got 178.
+2025-02-05 21:43:14,302 - ERROR - Vector dimension mismatch for STI. Expected 180, got 46.
+2025-02-05 21:43:25,867 - ERROR - Vector dimension mismatch for RFIL. Expected 180, got 224.
+2025-02-05 21:43:31,612 - ERROR - Vector dimension mismatch for PPSI. Expected 180, got 220.
+2025-02-05 21:43:35,630 - ERROR - Vector dimension mismatch for RAYA. Expected 180, got 86.
+2025-02-05 21:43:44,440 - ERROR - Vector dimension mismatch for APWC. Expected 180, got 324.
+2025-02-05 21:43:53,765 - ERROR - Vector dimension mismatch for FLUX. Expected 180, got 212.
+2025-02-05 21:44:01,818 - ERROR - Vector dimension mismatch for EPOW. Expected 180, got 105.
+2025-02-05 21:44:05,015 - WARNING - [WARN] Failed to fetch data for CCTG: 500: 404: No quarterly earnings data found
+2025-02-05 21:44:05,015 - WARNING - Skipping CCTG due to incomplete data.
+2025-02-05 21:44:11,929 - ERROR - Vector dimension mismatch for DFLI. Expected 180, got 62.
+2025-02-05 21:44:12,710 - WARNING - [WARN] Failed to fetch data for LNKS: 500: 404: No quarterly reports found
+2025-02-05 21:44:12,711 - WARNING - Skipping LNKS due to incomplete data.
+2025-02-05 21:44:19,438 - ERROR - Vector dimension mismatch for NXU. Expected 180, got 47.
+2025-02-05 21:44:25,477 - ERROR - Vector dimension mismatch for POLA. Expected 180, got 126.
+2025-02-05 21:44:29,542 - ERROR - Vector dimension mismatch for XPON. Expected 180, got 50.
+2025-02-05 21:44:40,961 - ERROR - Vector dimension mismatch for NFLX. Expected 180, got 256.
+2025-02-05 21:44:51,659 - ERROR - Vector dimension mismatch for TMUS. Expected 180, got 240.
+2025-02-05 21:44:56,325 - ERROR - Vector dimension mismatch for MCD. Expected 180, got 252.
+2025-02-05 21:45:11,097 - ERROR - Vector dimension mismatch for DIS. Expected 180, got 101.
+2025-02-05 21:45:16,066 - ERROR - Vector dimension mismatch for VZ. Expected 180, got 256.
+2025-02-05 21:45:27,484 - ERROR - Vector dimension mismatch for T. Expected 180, got 256.
+2025-02-05 21:45:39,094 - ERROR - Vector dimension mismatch for CMCSA. Expected 180, got 260.
+2025-02-05 21:47:48,881 - WARNING - [WARN] Failed to fetch data for SBUX: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777279) and data type object
+2025-02-05 21:48:24,964 - WARNING - Skipping SBUX due to incomplete data.
+2025-02-05 21:48:36,343 - ERROR - Vector dimension mismatch for CMG. Expected 180, got 236.
+2025-02-05 21:48:40,906 - ERROR - Vector dimension mismatch for CHTR. Expected 180, got 230.
+2025-02-05 21:48:48,436 - ERROR - Vector dimension mismatch for AMX. Expected 180, got 324.
+2025-02-05 21:48:57,851 - ERROR - Vector dimension mismatch for YUM. Expected 180, got 252.
+2025-02-05 21:49:08,772 - ERROR - Vector dimension mismatch for LYV. Expected 180, got 224.
+2025-02-05 21:49:13,564 - ERROR - Vector dimension mismatch for CHT. Expected 180, got 324.
+2025-02-05 21:49:19,550 - ERROR - Vector dimension mismatch for QSR. Expected 180, got 170.
+2025-02-05 21:49:26,927 - ERROR - Vector dimension mismatch for TKO. Expected 180, got 24.
+2025-02-05 21:49:31,667 - ERROR - Vector dimension mismatch for WBD. Expected 180, got 256.
+2025-02-05 21:49:37,915 - ERROR - Vector dimension mismatch for FWONK. Expected 180, got 198.
+2025-02-05 21:49:43,022 - ERROR - Vector dimension mismatch for FWONA. Expected 180, got 198.
+2025-02-05 21:49:52,030 - ERROR - Vector dimension mismatch for TEF. Expected 180, got 324.
+2025-02-05 21:49:56,403 - ERROR - Vector dimension mismatch for FOXA. Expected 180, got 104.
+2025-02-05 21:50:12,052 - ERROR - Vector dimension mismatch for DRI. Expected 180, got 244.
+2025-02-05 21:50:16,610 - ERROR - Vector dimension mismatch for FOX. Expected 180, got 104.
+2025-02-05 21:50:23,862 - ERROR - Vector dimension mismatch for VOD. Expected 180, got 308.
+2025-02-05 21:50:31,261 - ERROR - Vector dimension mismatch for TU. Expected 180, got 324.
+2025-02-05 21:50:40,293 - ERROR - Vector dimension mismatch for BCE. Expected 180, got 324.
+2025-02-05 21:50:46,484 - ERROR - Vector dimension mismatch for YUMC. Expected 180, got 136.
+2025-02-05 21:50:53,962 - ERROR - Vector dimension mismatch for TLK. Expected 180, got 324.
+2025-02-05 21:51:01,817 - ERROR - Vector dimension mismatch for NWS. Expected 180, got 188.
+2025-02-05 21:51:10,465 - ERROR - Vector dimension mismatch for NWSA. Expected 180, got 188.
+2025-02-05 21:51:14,783 - ERROR - Vector dimension mismatch for WMG. Expected 180, got 220.
+2025-02-05 21:51:19,877 - ERROR - Vector dimension mismatch for RCI. Expected 180, got 324.
+2025-02-05 21:53:32,310 - WARNING - [WARN] Failed to fetch data for DPZ: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777273) and data type object
+2025-02-05 21:54:07,009 - WARNING - Skipping DPZ due to incomplete data.
+2025-02-05 21:54:15,166 - ERROR - Vector dimension mismatch for EDR. Expected 180, got 68.
+2025-02-05 21:54:22,422 - ERROR - Vector dimension mismatch for CAVA. Expected 180, got 28.
+2025-02-05 21:54:29,651 - ERROR - Vector dimension mismatch for VIV. Expected 180, got 308.
+2025-02-05 21:54:39,792 - ERROR - Vector dimension mismatch for TXRH. Expected 180, got 225.
+2025-02-05 21:54:44,346 - ERROR - Vector dimension mismatch for ROKU. Expected 180, got 122.
+2025-02-05 21:54:54,027 - ERROR - Vector dimension mismatch for LBRDK. Expected 180, got 164.
+2025-02-05 21:55:05,924 - ERROR - Vector dimension mismatch for LBRDA. Expected 180, got 164.
+2025-02-05 21:55:13,505 - ERROR - Vector dimension mismatch for BROS. Expected 180, got 60.
+2025-02-05 21:55:17,917 - ERROR - Vector dimension mismatch for FYBR. Expected 180, got 236.
+2025-02-05 21:55:22,447 - ERROR - Vector dimension mismatch for WING. Expected 180, got 159.
+2025-02-05 21:55:28,956 - ERROR - Vector dimension mismatch for SKM. Expected 180, got 324.
+2025-02-05 21:55:36,522 - ERROR - Vector dimension mismatch for KT. Expected 180, got 324.
+2025-02-05 21:55:41,957 - ERROR - Vector dimension mismatch for PARAA. Expected 180, got 252.
+2025-02-05 21:55:49,184 - ERROR - Vector dimension mismatch for SIRI. Expected 180, got 240.
+2025-02-05 21:55:53,873 - ERROR - Vector dimension mismatch for PARA. Expected 180, got 252.
+2025-02-05 21:56:06,454 - ERROR - Vector dimension mismatch for EAT. Expected 180, got 235.
+2025-02-05 21:56:14,462 - ERROR - Vector dimension mismatch for LLYVK. Expected 180, got 198.
+2025-02-05 21:56:21,601 - ERROR - Vector dimension mismatch for LLYVA. Expected 180, got 198.
+2025-02-05 21:56:29,537 - ERROR - Vector dimension mismatch for TKC. Expected 180, got 324.
+2025-02-05 21:56:37,494 - ERROR - Vector dimension mismatch for TEO. Expected 180, got 324.
+2025-02-05 21:56:43,698 - ERROR - Vector dimension mismatch for TIMB. Expected 180, got 311.
+2025-02-05 21:56:48,483 - ERROR - Vector dimension mismatch for LUMN. Expected 180, got 236.
+2025-02-05 21:56:59,749 - ERROR - Vector dimension mismatch for USM. Expected 180, got 240.
+2025-02-05 21:57:08,628 - ERROR - Vector dimension mismatch for MSGS. Expected 180, got 156.
+2025-02-05 21:57:15,633 - ERROR - Vector dimension mismatch for SHAK. Expected 180, got 164.
+2025-02-05 21:57:23,743 - ERROR - Vector dimension mismatch for PHI. Expected 180, got 324.
+2025-02-05 21:57:31,316 - ERROR - Vector dimension mismatch for TIGO. Expected 180, got 324.
+2025-02-05 21:57:39,241 - ERROR - Vector dimension mismatch for LBTYA. Expected 180, got 193.
+2025-02-05 21:57:49,017 - ERROR - Vector dimension mismatch for LBTYK. Expected 180, got 193.
+2025-02-05 21:57:56,376 - ERROR - Vector dimension mismatch for LBTYB. Expected 180, got 193.
+2025-02-05 21:58:01,081 - ERROR - Vector dimension mismatch for TDS. Expected 180, got 240.
+2025-02-05 21:58:07,287 - ERROR - Vector dimension mismatch for CCOI. Expected 180, got 216.
+2025-02-05 21:58:17,737 - ERROR - Vector dimension mismatch for GSAT. Expected 180, got 221.
+2025-02-05 21:58:22,495 - ERROR - Vector dimension mismatch for CNK. Expected 180, got 228.
+2025-02-05 21:58:26,491 - ERROR - Vector dimension mismatch for SG. Expected 180, got 47.
+2025-02-05 21:58:34,115 - ERROR - Vector dimension mismatch for IRDM. Expected 180, got 220.
+2025-02-05 21:58:38,797 - ERROR - Vector dimension mismatch for VEON. Expected 180, got 324.
+2025-02-05 22:00:47,331 - WARNING - [WARN] Failed to fetch data for WEN: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777273) and data type object
+2025-02-05 22:01:22,713 - WARNING - Skipping WEN due to incomplete data.
+2025-02-05 22:01:30,687 - ERROR - Vector dimension mismatch for MANU. Expected 180, got 270.
+2025-02-05 22:03:35,989 - WARNING - [WARN] Failed to fetch data for CAKE: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777271) and data type object
+2025-02-05 22:04:10,727 - WARNING - Skipping CAKE due to incomplete data.
+2025-02-05 22:04:19,178 - ERROR - Vector dimension mismatch for BATRA. Expected 180, got 31.
+2025-02-05 22:04:27,863 - ERROR - Vector dimension mismatch for BATRK. Expected 180, got 31.
+2025-02-05 22:04:32,332 - ERROR - Vector dimension mismatch for IQ. Expected 180, got 129.
+2025-02-05 22:04:42,136 - ERROR - Vector dimension mismatch for CABO. Expected 180, got 157.
+2025-02-05 22:04:42,216 - WARNING - [WARN] Failed to fetch data for LGF.A: 500: 404: No quarterly reports found
+2025-02-05 22:04:42,217 - WARNING - Skipping LGF.A due to incomplete data.
+2025-02-05 22:04:42,312 - WARNING - [WARN] Failed to fetch data for LGF.B: 500: 404: No quarterly reports found
+2025-02-05 22:04:42,313 - WARNING - Skipping LGF.B due to incomplete data.
+2025-02-05 22:04:48,490 - ERROR - Vector dimension mismatch for HDL. Expected 180, got 22.
+2025-02-05 22:04:52,792 - ERROR - Vector dimension mismatch for SPHR. Expected 180, got 88.
+2025-02-05 22:04:58,991 - ERROR - Vector dimension mismatch for ARCO. Expected 180, got 240.
+2025-02-05 22:05:05,975 - ERROR - Vector dimension mismatch for AMC. Expected 180, got 172.
+2025-02-05 22:05:12,569 - ERROR - Vector dimension mismatch for LILA. Expected 180, got 122.
+2025-02-05 22:05:17,296 - ERROR - Vector dimension mismatch for LILAK. Expected 180, got 122.
+2025-02-05 22:05:25,717 - ERROR - Vector dimension mismatch for ATUS. Expected 180, got 130.
+2025-02-05 22:05:37,858 - ERROR - Vector dimension mismatch for CBRL. Expected 180, got 231.
+2025-02-05 22:05:42,579 - ERROR - Vector dimension mismatch for PZZA. Expected 180, got 259.
+2025-02-05 22:05:50,028 - ERROR - Vector dimension mismatch for IHS. Expected 180, got 186.
+2025-02-05 22:05:58,529 - ERROR - Vector dimension mismatch for IMAX. Expected 180, got 224.
+2025-02-05 22:06:04,406 - ERROR - Vector dimension mismatch for IDT. Expected 180, got 216.
+2025-02-05 22:06:10,274 - ERROR - Vector dimension mismatch for CNNE. Expected 180, got 124.
+2025-02-05 22:06:14,208 - ERROR - Vector dimension mismatch for FWRG. Expected 180, got 55.
+2025-02-05 22:06:18,660 - ERROR - Vector dimension mismatch for GOGO. Expected 180, got 189.
+2025-02-05 22:06:26,106 - ERROR - Vector dimension mismatch for PLAY. Expected 180, got 166.
+2025-02-05 22:06:34,171 - ERROR - Vector dimension mismatch for BLMN. Expected 180, got 210.
+2025-02-05 22:06:40,550 - ERROR - Vector dimension mismatch for KRUS. Expected 180, got 90.
+2025-02-05 22:06:47,390 - ERROR - Vector dimension mismatch for TV. Expected 180, got 324.
+2025-02-05 22:06:51,443 - ERROR - Vector dimension mismatch for PTLO. Expected 180, got 60.
+2025-02-05 22:09:02,579 - WARNING - [WARN] Failed to fetch data for BJRI: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777273) and data type object
+2025-02-05 22:09:39,799 - WARNING - Skipping BJRI due to incomplete data.
+2025-02-05 22:09:44,767 - ERROR - Vector dimension mismatch for HUYA. Expected 180, got 130.
+2025-02-05 22:09:49,265 - ERROR - Vector dimension mismatch for RBBN. Expected 180, got 118.
+2025-02-05 22:09:57,619 - ERROR - Vector dimension mismatch for JACK. Expected 180, got 234.
+2025-02-05 22:10:10,163 - ERROR - Vector dimension mismatch for BH. Expected 180, got 114.
+2025-02-05 22:10:10,303 - WARNING - [WARN] Failed to fetch data for BH.A: 500: 404: No quarterly reports found
+2025-02-05 22:10:10,303 - WARNING - Skipping BH.A due to incomplete data.
+2025-02-05 22:10:15,056 - ERROR - Vector dimension mismatch for MCS. Expected 180, got 213.
+2025-02-05 22:10:19,606 - ERROR - Vector dimension mismatch for SHEN. Expected 180, got 220.
+2025-02-05 22:10:26,920 - ERROR - Vector dimension mismatch for ATEX. Expected 180, got 166.
+2025-02-05 22:10:30,950 - ERROR - Vector dimension mismatch for RSVR. Expected 180, got 68.
+2025-02-05 22:10:35,811 - ERROR - Vector dimension mismatch for RICK. Expected 180, got 227.
+2025-02-05 22:10:46,800 - ERROR - Vector dimension mismatch for DIN. Expected 180, got 222.
+2025-02-05 22:10:51,271 - ERROR - Vector dimension mismatch for AMCX. Expected 180, got 220.
+2025-02-05 22:10:51,897 - WARNING - [WARN] Failed to fetch data for VENU: 500: 404: No quarterly earnings data found
+2025-02-05 22:10:51,897 - WARNING - Skipping VENU due to incomplete data.
+2025-02-05 22:10:53,274 - WARNING - [WARN] Failed to fetch data for NIPG: 500: 404: No quarterly earnings data found
+2025-02-05 22:10:53,274 - WARNING - Skipping NIPG due to incomplete data.
+2025-02-05 22:10:57,575 - ERROR - Vector dimension mismatch for WOW. Expected 180, got 128.
+2025-02-05 22:11:06,201 - ERROR - Vector dimension mismatch for LOCO. Expected 180, got 169.
+2025-02-05 22:11:13,695 - ERROR - Vector dimension mismatch for PBPB. Expected 180, got 190.
+2025-02-05 22:11:23,498 - ERROR - Vector dimension mismatch for DENN. Expected 180, got 215.
+2025-02-05 22:11:32,898 - ERROR - Vector dimension mismatch for NATH. Expected 180, got 217.
+2025-02-05 22:11:40,044 - ERROR - Vector dimension mismatch for AENT. Expected 180, got 64.
+2025-02-05 22:11:46,898 - ERROR - Vector dimension mismatch for GENK. Expected 180, got 33.
+2025-02-05 22:11:51,497 - ERROR - Vector dimension mismatch for ATNI. Expected 180, got 220.
+2025-02-05 22:11:56,313 - ERROR - Vector dimension mismatch for RDCM. Expected 180, got 323.
+2025-02-05 22:12:07,713 - ERROR - Vector dimension mismatch for CXDO. Expected 180, got 224.
+2025-02-05 22:12:19,910 - ERROR - Vector dimension mismatch for GAIA. Expected 180, got 224.
+2025-02-05 22:12:25,874 - ERROR - Vector dimension mismatch for LVO. Expected 180, got 216.
+2025-02-05 22:12:30,357 - ERROR - Vector dimension mismatch for STKS. Expected 180, got 220.
+2025-02-05 22:12:34,837 - ERROR - Vector dimension mismatch for RRGB. Expected 180, got 212.
+2025-02-05 22:12:43,149 - ERROR - Vector dimension mismatch for FATBB. Expected 180, got 112.
+2025-02-05 22:12:47,943 - ERROR - Vector dimension mismatch for SIFY. Expected 180, got 324.
+2025-02-05 22:12:55,763 - ERROR - Vector dimension mismatch for FAT. Expected 180, got 112.
+2025-02-05 22:13:00,861 - ERROR - Vector dimension mismatch for THCH. Expected 180, got 92.
+2025-02-05 22:13:10,776 - ERROR - Vector dimension mismatch for FNGR. Expected 180, got 172.
+2025-02-05 22:13:15,226 - ERROR - Vector dimension mismatch for CNVS. Expected 180, got 220.
+2025-02-05 22:13:19,898 - ERROR - Vector dimension mismatch for UCL. Expected 180, got 92.
+2025-02-05 22:15:29,988 - WARNING - [WARN] Failed to fetch data for NDLS: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777265) and data type object
+2025-02-05 22:16:04,343 - WARNING - Skipping NDLS due to incomplete data.
+2025-02-05 22:16:11,735 - ERROR - Vector dimension mismatch for ANGH. Expected 180, got 57.
+2025-02-05 22:18:14,773 - WARNING - [WARN] Failed to fetch data for ARKR: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 22:18:49,141 - WARNING - Skipping ARKR due to incomplete data.
+2025-02-05 22:20:56,247 - WARNING - [WARN] Failed to fetch data for BDL: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777273) and data type object
+2025-02-05 22:21:30,019 - WARNING - Skipping BDL due to incomplete data.
+2025-02-05 22:21:34,874 - ERROR - Vector dimension mismatch for MPU. Expected 180, got 324.
+2025-02-05 22:21:40,918 - ERROR - Vector dimension mismatch for AGAE. Expected 180, got 120.
+2025-02-05 22:21:45,525 - ERROR - Vector dimension mismatch for RDIB. Expected 180, got 224.
+2025-02-05 22:21:50,164 - ERROR - Vector dimension mismatch for RAVE. Expected 180, got 216.
+2025-02-05 22:21:55,852 - ERROR - Vector dimension mismatch for KORE. Expected 180, got 61.
+2025-02-05 22:22:01,631 - ERROR - Vector dimension mismatch for CHSN. Expected 180, got 45.
+2025-02-05 22:22:07,086 - ERROR - Vector dimension mismatch for RDI. Expected 180, got 224.
+2025-02-05 22:22:11,781 - ERROR - Vector dimension mismatch for GTIM. Expected 180, got 226.
+2025-02-05 22:22:17,355 - ERROR - Vector dimension mismatch for TOON. Expected 180, got 226.
+2025-02-05 22:22:22,314 - ERROR - Vector dimension mismatch for KUKE. Expected 180, got 72.
+2025-02-05 22:24:24,482 - WARNING - [WARN] Failed to fetch data for PNST: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777233) and data type object
+2025-02-05 22:24:57,679 - WARNING - Skipping PNST due to incomplete data.
+2025-02-05 22:25:04,635 - ERROR - Vector dimension mismatch for CPOP. Expected 180, got 68.
+2025-02-05 22:25:11,840 - ERROR - Vector dimension mismatch for PETZ. Expected 180, got 127.
+2025-02-05 22:25:18,500 - ERROR - Vector dimension mismatch for BTBD. Expected 180, got 84.
+2025-02-05 22:25:19,107 - WARNING - [WARN] Failed to fetch data for BREA: 500: 404: No quarterly earnings data found
+2025-02-05 22:25:19,108 - WARNING - Skipping BREA due to incomplete data.
+2025-02-05 22:25:26,393 - ERROR - Vector dimension mismatch for HOFV. Expected 180, got 114.
+2025-02-05 22:25:27,533 - WARNING - [WARN] Failed to fetch data for BLMZ: 500: 404: No quarterly earnings data found
+2025-02-05 22:25:27,534 - WARNING - Skipping BLMZ due to incomplete data.
+2025-02-05 22:25:31,851 - ERROR - Vector dimension mismatch for REBN. Expected 180, got 67.
+2025-02-05 22:25:36,049 - ERROR - Vector dimension mismatch for YOSH. Expected 180, got 42.
+2025-02-05 22:25:41,698 - ERROR - Vector dimension mismatch for ADD. Expected 180, got 283.
+2025-02-05 22:25:46,651 - ERROR - Vector dimension mismatch for NVDA. Expected 180, got 251.
+2025-02-05 22:25:51,137 - ERROR - Vector dimension mismatch for AVGO. Expected 180, got 118.
+2025-02-05 22:25:55,729 - ERROR - Vector dimension mismatch for TSM. Expected 180, got 324.
+2025-02-05 22:26:00,347 - ERROR - Vector dimension mismatch for AMD. Expected 180, got 238.
+2025-02-05 22:26:06,896 - ERROR - Vector dimension mismatch for QCOM. Expected 180, got 252.
+2025-02-05 22:26:11,606 - ERROR - Vector dimension mismatch for TXN. Expected 180, got 250.
+2025-02-05 22:26:15,809 - ERROR - Vector dimension mismatch for ARM. Expected 180, got 136.
+2025-02-05 22:26:20,949 - ERROR - Vector dimension mismatch for MU. Expected 180, got 239.
+2025-02-05 22:26:25,989 - ERROR - Vector dimension mismatch for ADI. Expected 180, got 252.
+2025-02-05 22:26:30,487 - ERROR - Vector dimension mismatch for MRVL. Expected 180, got 64.
+2025-02-05 22:26:35,455 - ERROR - Vector dimension mismatch for INTC. Expected 180, got 255.
+2025-02-05 22:26:40,155 - ERROR - Vector dimension mismatch for NXPI. Expected 180, got 112.
+2025-02-05 22:26:44,954 - ERROR - Vector dimension mismatch for MPWR. Expected 180, got 221.
+2025-02-05 22:26:49,745 - ERROR - Vector dimension mismatch for MCHP. Expected 180, got 252.
+2025-02-05 22:26:54,537 - ERROR - Vector dimension mismatch for ON. Expected 180, got 240.
+2025-02-05 22:27:00,233 - ERROR - Vector dimension mismatch for ASX. Expected 180, got 324.
+2025-02-05 22:27:07,738 - ERROR - Vector dimension mismatch for GFS. Expected 180, got 68.
+2025-02-05 22:27:12,943 - ERROR - Vector dimension mismatch for STM. Expected 180, got 324.
+2025-02-05 22:27:17,867 - ERROR - Vector dimension mismatch for ALAB. Expected 180, got 26.
+2025-02-05 22:27:23,649 - ERROR - Vector dimension mismatch for UMC. Expected 180, got 324.
+2025-02-05 22:29:28,795 - WARNING - [WARN] Failed to fetch data for SWKS: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777277) and data type object
+2025-02-05 22:30:01,868 - WARNING - Skipping SWKS due to incomplete data.
+2025-02-05 22:30:11,440 - ERROR - Vector dimension mismatch for CRDO. Expected 180, got 52.
+2025-02-05 22:30:16,032 - ERROR - Vector dimension mismatch for MTSI. Expected 180, got 208.
+2025-02-05 22:30:20,370 - ERROR - Vector dimension mismatch for QRVO. Expected 180, got 175.
+2025-02-05 22:32:29,735 - WARNING - [WARN] Failed to fetch data for LSCC: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777271) and data type object
+2025-02-05 22:33:06,379 - WARNING - Skipping LSCC due to incomplete data.
+2025-02-05 22:33:11,688 - ERROR - Vector dimension mismatch for RMBS. Expected 180, got 236.
+2025-02-05 22:33:16,697 - ERROR - Vector dimension mismatch for SMTC. Expected 180, got 236.
+2025-02-05 22:33:21,575 - ERROR - Vector dimension mismatch for TSEM. Expected 180, got 324.
+2025-02-05 22:33:26,136 - ERROR - Vector dimension mismatch for SITM. Expected 180, got 90.
+2025-02-05 22:33:30,984 - ERROR - Vector dimension mismatch for CRUS. Expected 180, got 223.
+2025-02-05 22:33:35,884 - ERROR - Vector dimension mismatch for ALGM. Expected 180, got 80.
+2025-02-05 22:35:31,513 - WARNING - [WARN] Failed to fetch data for SLAB: 500: Unable to allocate 11.1 GiB for an array with shape (89, 16777272) and data type object
+2025-02-05 22:36:04,948 - WARNING - Skipping SLAB due to incomplete data.
+2025-02-05 22:36:11,993 - ERROR - Vector dimension mismatch for PI. Expected 180, got 140.
+2025-02-05 22:36:16,993 - ERROR - Vector dimension mismatch for POWI. Expected 180, got 236.
+2025-02-05 22:36:22,215 - ERROR - Vector dimension mismatch for SYNA. Expected 180, got 232.
+2025-02-05 22:36:31,328 - ERROR - Vector dimension mismatch for DIOD. Expected 180, got 236.
+2025-02-05 22:36:36,946 - ERROR - Vector dimension mismatch for VSH. Expected 180, got 240.
+2025-02-05 22:36:42,090 - ERROR - Vector dimension mismatch for HIMX. Expected 180, got 322.
+2025-02-05 22:36:47,123 - ERROR - Vector dimension mismatch for MXL. Expected 180, got 224.
+2025-02-05 22:36:51,961 - ERROR - Vector dimension mismatch for SIMO. Expected 180, got 321.
+2025-02-05 22:36:58,287 - ERROR - Vector dimension mismatch for AOSL. Expected 180, got 216.
+2025-02-05 22:37:05,549 - ERROR - Vector dimension mismatch for WOLF. Expected 180, got 235.
+2025-02-05 22:37:10,039 - ERROR - Vector dimension mismatch for CEVA. Expected 180, got 220.
+2025-02-05 22:37:16,494 - ERROR - Vector dimension mismatch for IMOS. Expected 180, got 196.
+2025-02-05 22:37:22,012 - ERROR - Vector dimension mismatch for NVTS. Expected 180, got 66.
+2025-02-05 22:37:26,221 - ERROR - Vector dimension mismatch for LASR. Expected 180, got 112.
+2025-02-05 22:37:30,110 - ERROR - Vector dimension mismatch for SKYT. Expected 180, got 68.
+2025-02-05 22:37:34,675 - ERROR - Vector dimension mismatch for AIP. Expected 180, got 56.
+2025-02-05 22:37:39,204 - ERROR - Vector dimension mismatch for POET. Expected 180, got 316.
+2025-02-05 22:37:44,095 - ERROR - Vector dimension mismatch for NVEC. Expected 180, got 224.
+2025-02-05 22:37:48,183 - ERROR - Vector dimension mismatch for VLN. Expected 180, got 76.
+2025-02-05 22:37:52,288 - ERROR - Vector dimension mismatch for ICG. Expected 180, got 48.
+2025-02-05 22:37:56,673 - ERROR - Vector dimension mismatch for MX. Expected 180, got 220.
+2025-02-05 22:38:00,922 - ERROR - Vector dimension mismatch for MRAM. Expected 180, got 138.
+2025-02-05 22:40:14,104 - WARNING - [WARN] Failed to fetch data for QUIK: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 22:40:48,387 - WARNING - Skipping QUIK due to incomplete data.
+2025-02-05 22:40:48,562 - WARNING - [WARN] Failed to fetch data for NaN: 500: 404: No quarterly reports found
+2025-02-05 22:40:48,562 - WARNING - Skipping NaN due to incomplete data.
+2025-02-05 22:40:49,296 - WARNING - [WARN] Failed to fetch data for LAES: 500: 404: No quarterly earnings data found
+2025-02-05 22:40:49,296 - WARNING - Skipping LAES due to incomplete data.
+2025-02-05 22:40:55,529 - ERROR - Vector dimension mismatch for GCTS. Expected 180, got 54.
+2025-02-05 22:41:05,919 - ERROR - Vector dimension mismatch for GSIT. Expected 180, got 224.
+2025-02-05 22:41:10,521 - ERROR - Vector dimension mismatch for SQNS. Expected 180, got 243.
+2025-02-05 22:41:14,750 - ERROR - Vector dimension mismatch for WKEY. Expected 180, got 107.
+2025-02-05 22:41:18,921 - ERROR - Vector dimension mismatch for MOBX. Expected 180, got 57.
+2025-02-05 22:41:23,552 - ERROR - Vector dimension mismatch for PXLW. Expected 180, got 220.
+2025-02-05 22:41:31,025 - ERROR - Vector dimension mismatch for LEDS. Expected 180, got 220.
+2025-02-05 22:41:35,384 - ERROR - Vector dimension mismatch for WISA. Expected 180, got 109.
+2025-02-05 22:41:39,849 - ERROR - Vector dimension mismatch for PRSO. Expected 180, got 216.
+2025-02-05 22:41:44,488 - ERROR - Vector dimension mismatch for MSFT. Expected 180, got 252.
+2025-02-05 22:41:49,257 - ERROR - Vector dimension mismatch for ORCL. Expected 180, got 244.
+2025-02-05 22:41:53,930 - ERROR - Vector dimension mismatch for CRM. Expected 180, got 258.
+2025-02-05 22:41:58,723 - ERROR - Vector dimension mismatch for SAP. Expected 180, got 324.
+2025-02-05 22:42:04,145 - ERROR - Vector dimension mismatch for NOW. Expected 180, got 208.
+2025-02-05 22:42:08,909 - ERROR - Vector dimension mismatch for ADBE. Expected 180, got 256.
+2025-02-05 22:42:12,858 - ERROR - Vector dimension mismatch for PLTR. Expected 180, got 72.
+2025-02-05 22:42:17,579 - ERROR - Vector dimension mismatch for INTU. Expected 180, got 248.
+2025-02-05 22:42:21,635 - ERROR - Vector dimension mismatch for UBER. Expected 180, got 100.
+2025-02-05 22:42:25,903 - ERROR - Error uploading vector for SHOP: Invalid type for variable '0'. Required value type is float and passed type was dict at ['values'][0]
+2025-02-05 22:42:30,269 - ERROR - Vector dimension mismatch for PANW. Expected 180, got 200.
+2025-02-05 22:42:34,227 - ERROR - Vector dimension mismatch for APP. Expected 180, got 68.
+2025-02-05 22:42:40,566 - ERROR - Vector dimension mismatch for ADP. Expected 180, got 247.
+2025-02-05 22:42:45,096 - ERROR - Vector dimension mismatch for MSTR. Expected 180, got 221.
+2025-02-05 22:42:49,165 - ERROR - Vector dimension mismatch for CRWD. Expected 180, got 100.
+2025-02-05 22:44:59,454 - WARNING - [WARN] Failed to fetch data for CDNS: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 22:45:34,520 - WARNING - Skipping CDNS due to incomplete data.
+2025-02-05 22:45:40,022 - ERROR - Vector dimension mismatch for SNPS. Expected 180, got 236.
+2025-02-05 22:45:44,834 - ERROR - Vector dimension mismatch for FTNT. Expected 180, got 220.
+2025-02-05 22:45:49,034 - ERROR - Vector dimension mismatch for TEAM. Expected 180, got 58.
+2025-02-05 22:45:53,448 - ERROR - Vector dimension mismatch for WDAY. Expected 180, got 208.
+2025-02-05 22:45:57,947 - ERROR - Vector dimension mismatch for ADSK. Expected 180, got 256.
+2025-02-05 22:46:03,441 - ERROR - Vector dimension mismatch for TTD. Expected 180, got 136.
+2025-02-05 22:46:08,545 - ERROR - Vector dimension mismatch for SNOW. Expected 180, got 72.
+2025-02-05 22:46:13,358 - ERROR - Vector dimension mismatch for ROP. Expected 180, got 252.
+2025-02-05 22:46:18,195 - ERROR - Vector dimension mismatch for XYZ. Expected 180, got 144.
+2025-02-05 22:46:23,066 - ERROR - Vector dimension mismatch for PAYX. Expected 180, got 252.
+2025-02-05 22:46:27,139 - ERROR - Vector dimension mismatch for DDOG. Expected 180, got 91.
+2025-02-05 22:46:31,844 - ERROR - Vector dimension mismatch for FICO. Expected 180, got 240.
+2025-02-05 22:46:35,954 - ERROR - Vector dimension mismatch for NET. Expected 180, got 88.
+2025-02-05 22:46:40,230 - ERROR - Vector dimension mismatch for HUBS. Expected 180, got 170.
+2025-02-05 22:46:44,743 - ERROR - Vector dimension mismatch for ANSS. Expected 180, got 236.
+2025-02-05 22:46:48,889 - ERROR - Vector dimension mismatch for ZS. Expected 180, got 112.
+2025-02-05 22:46:53,044 - ERROR - Vector dimension mismatch for GDDY. Expected 180, got 164.
+2025-02-05 22:46:56,874 - ERROR - Vector dimension mismatch for IOT. Expected 180, got 44.
+2025-02-05 22:47:04,342 - ERROR - Vector dimension mismatch for CPAY. Expected 180, got 221.
+2025-02-05 22:47:08,960 - ERROR - Vector dimension mismatch for TYL. Expected 180, got 221.
+2025-02-05 22:47:13,096 - ERROR - Vector dimension mismatch for ZM. Expected 180, got 96.
+2025-02-05 22:49:27,236 - WARNING - [WARN] Failed to fetch data for PTC: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 22:50:04,174 - WARNING - Skipping PTC due to incomplete data.
+2025-02-05 22:50:09,084 - ERROR - Vector dimension mismatch for TOST. Expected 180, got 56.
+2025-02-05 22:50:14,347 - ERROR - Vector dimension mismatch for CHKP. Expected 180, got 324.
+2025-02-05 22:50:19,343 - ERROR - Vector dimension mismatch for VRSN. Expected 180, got 256.
+2025-02-05 22:50:23,986 - ERROR - Vector dimension mismatch for SSNC. Expected 180, got 220.
+2025-02-05 22:50:28,472 - ERROR - Vector dimension mismatch for MDB. Expected 180, got 116.
+2025-02-05 22:50:52,453 - ERROR - Vector dimension mismatch for GRAB. Expected 180, got 70.
+2025-02-05 22:50:57,794 - ERROR - Vector dimension mismatch for KSPI. Expected 180, got 36.
+2025-02-05 22:51:04,615 - ERROR - Vector dimension mismatch for DOCU. Expected 180, got 112.
+2025-02-05 22:51:08,868 - ERROR - Vector dimension mismatch for AFRM. Expected 180, got 69.
+2025-02-05 22:51:13,469 - ERROR - Vector dimension mismatch for CYBR. Expected 180, got 198.
+2025-02-05 22:51:17,725 - ERROR - Vector dimension mismatch for NTNX. Expected 180, got 136.
+2025-02-05 22:51:22,450 - ERROR - Vector dimension mismatch for MANH. Expected 180, got 221.
+2025-02-05 22:51:26,929 - ERROR - Vector dimension mismatch for TWLO. Expected 180, got 140.
+2025-02-05 22:53:35,239 - WARNING - [WARN] Failed to fetch data for GEN: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777277) and data type object
+2025-02-05 22:54:10,603 - WARNING - Skipping GEN due to incomplete data.
+2025-02-05 22:54:16,148 - ERROR - Vector dimension mismatch for GWRE. Expected 180, got 212.
+2025-02-05 22:54:20,778 - ERROR - Vector dimension mismatch for DT. Expected 180, got 96.
+2025-02-05 22:54:26,665 - ERROR - Vector dimension mismatch for AZPN. Expected 180, got 50.
+2025-02-05 22:54:31,595 - ERROR - Vector dimension mismatch for FFIV. Expected 180, got 236.
+2025-02-05 22:54:36,220 - ERROR - Vector dimension mismatch for OKTA. Expected 180, got 128.
+2025-02-05 22:54:40,494 - ERROR - Vector dimension mismatch for DUOL. Expected 180, got 60.
+2025-02-05 22:54:44,484 - ERROR - Vector dimension mismatch for BSY. Expected 180, got 74.
+2025-02-05 22:54:49,566 - ERROR - Vector dimension mismatch for AKAM. Expected 180, got 250.
+2025-02-05 22:54:54,165 - ERROR - Vector dimension mismatch for WIX. Expected 180, got 204.
+2025-02-05 22:54:58,705 - ERROR - Vector dimension mismatch for RBRK. Expected 180, got 44.
+2025-02-05 22:55:06,117 - ERROR - Vector dimension mismatch for MNDY. Expected 180, got 76.
+2025-02-05 22:55:10,272 - ERROR - Vector dimension mismatch for YMM. Expected 180, got 76.
+2025-02-05 22:55:15,953 - ERROR - Vector dimension mismatch for PCOR. Expected 180, got 65.
+2025-02-05 22:55:20,930 - ERROR - Vector dimension mismatch for KVYO. Expected 180, got 24.
+2025-02-05 22:55:25,471 - ERROR - Error uploading vector for PAYC: Invalid type for variable '0'. Required value type is float and passed type was dict at ['values'][0]
+2025-02-05 22:55:32,344 - ERROR - Vector dimension mismatch for PCTY. Expected 180, got 178.
+2025-02-05 22:55:37,630 - ERROR - Vector dimension mismatch for DAY. Expected 180, got 116.
+2025-02-05 22:55:42,996 - ERROR - Vector dimension mismatch for ESTC. Expected 180, got 107.
+2025-02-05 22:55:48,061 - ERROR - Vector dimension mismatch for NICE. Expected 180, got 324.
+2025-02-05 22:55:52,954 - ERROR - Vector dimension mismatch for FOUR. Expected 180, got 79.
+2025-02-05 22:55:57,953 - ERROR - Vector dimension mismatch for DSGX. Expected 180, got 324.
+2025-02-05 22:56:02,744 - ERROR - Vector dimension mismatch for GTLB. Expected 180, got 60.
+2025-02-05 22:56:07,140 - ERROR - Vector dimension mismatch for DBX. Expected 180, got 112.
+2025-02-05 22:56:12,122 - ERROR - Vector dimension mismatch for DOX. Expected 180, got 324.
+2025-02-05 22:56:16,328 - ERROR - Vector dimension mismatch for BILL. Expected 180, got 88.
+2025-02-05 22:56:20,884 - ERROR - Vector dimension mismatch for ALTR. Expected 180, got 122.
+2025-02-05 22:56:25,010 - ERROR - Vector dimension mismatch for U. Expected 180, got 72.
+2025-02-05 22:56:29,727 - ERROR - Vector dimension mismatch for PEGA. Expected 180, got 221.
+2025-02-05 22:56:34,162 - ERROR - Vector dimension mismatch for APPF. Expected 180, got 156.
+2025-02-05 22:56:38,371 - ERROR - Vector dimension mismatch for CFLT. Expected 180, got 60.
+2025-02-05 22:56:42,687 - ERROR - Vector dimension mismatch for VERX. Expected 180, got 77.
+2025-02-05 22:56:42,782 - WARNING - [WARN] Failed to fetch data for TTAN: 500: 404: No quarterly reports found
+2025-02-05 22:56:42,782 - WARNING - Skipping TTAN due to incomplete data.
+2025-02-05 22:56:48,816 - ERROR - Vector dimension mismatch for INFA. Expected 180, got 56.
+2025-02-05 22:56:52,920 - ERROR - Vector dimension mismatch for CCCS. Expected 180, got 70.
+2025-02-05 22:56:57,040 - ERROR - Vector dimension mismatch for PATH. Expected 180, got 64.
+2025-02-05 22:57:02,585 - ERROR - Vector dimension mismatch for OTEX. Expected 180, got 256.
+2025-02-05 22:57:06,667 - ERROR - Vector dimension mismatch for S. Expected 180, got 60.
+2025-02-05 22:57:11,270 - ERROR - Vector dimension mismatch for SPSC. Expected 180, got 220.
+2025-02-05 22:57:15,464 - ERROR - Vector dimension mismatch for OS. Expected 180, got 28.
+2025-02-05 22:57:20,097 - ERROR - Vector dimension mismatch for WEX. Expected 180, got 236.
+2025-02-05 22:57:24,239 - ERROR - Vector dimension mismatch for CWAN. Expected 180, got 56.
+2025-02-05 22:57:28,908 - ERROR - Vector dimension mismatch for CVLT. Expected 180, got 240.
+2025-02-05 22:57:32,984 - ERROR - Vector dimension mismatch for HCP. Expected 180, got 50.
+2025-02-05 22:57:37,101 - ERROR - Vector dimension mismatch for SRAD. Expected 180, got 76.
+2025-02-05 22:57:41,112 - ERROR - Vector dimension mismatch for SOUN. Expected 180, got 62.
+2025-02-05 22:57:47,482 - ERROR - Vector dimension mismatch for QXO. Expected 180, got 224.
+2025-02-05 22:57:52,110 - ERROR - Vector dimension mismatch for QTWO. Expected 180, got 176.
+2025-02-05 22:57:56,447 - ERROR - Vector dimension mismatch for LYFT. Expected 180, got 98.
+2025-02-05 22:58:01,361 - ERROR - Vector dimension mismatch for ACIW. Expected 180, got 236.
+2025-02-05 22:58:06,145 - ERROR - Vector dimension mismatch for INTA. Expected 180, got 64.
+2025-02-05 22:58:10,555 - ERROR - Vector dimension mismatch for WK. Expected 180, got 167.
+2025-02-05 22:58:15,347 - ERROR - Vector dimension mismatch for FRSH. Expected 180, got 52.
+2025-02-05 22:58:19,691 - ERROR - Vector dimension mismatch for TENB. Expected 180, got 109.
+2025-02-05 22:58:24,324 - ERROR - Vector dimension mismatch for QLYS. Expected 180, got 202.
+2025-02-05 22:58:28,472 - ERROR - Vector dimension mismatch for CLBT. Expected 180, got 76.
+2025-02-05 22:58:32,980 - ERROR - Vector dimension mismatch for VRNS. Expected 180, got 173.
+2025-02-05 22:58:37,071 - ERROR - Vector dimension mismatch for BRZE. Expected 180, got 56.
+2025-02-05 22:58:41,156 - ERROR - Vector dimension mismatch for RELY. Expected 180, got 56.
+2025-02-05 22:58:45,163 - ERROR - Vector dimension mismatch for CORZ. Expected 180, got 60.
+2025-02-05 22:58:49,347 - ERROR - Vector dimension mismatch for ASAN. Expected 180, got 72.
+2025-02-05 22:58:53,460 - ERROR - Vector dimension mismatch for ZETA. Expected 180, got 64.
+2025-02-05 22:58:58,083 - ERROR - Vector dimension mismatch for BOX. Expected 180, got 160.
+2025-02-05 22:59:04,525 - ERROR - Vector dimension mismatch for IDCC. Expected 180, got 236.
+2025-02-05 22:59:11,589 - ERROR - Vector dimension mismatch for EEFT. Expected 180, got 240.
+2025-02-05 22:59:15,858 - ERROR - Vector dimension mismatch for AI. Expected 180, got 64.
+2025-02-05 22:59:20,027 - ERROR - Vector dimension mismatch for GBTG. Expected 180, got 72.
+2025-02-05 22:59:24,389 - ERROR - Vector dimension mismatch for PYCR. Expected 180, got 62.
+2025-02-05 22:59:28,542 - ERROR - Vector dimension mismatch for PAY. Expected 180, got 64.
+2025-02-05 22:59:33,680 - ERROR - Vector dimension mismatch for FROG. Expected 180, got 72.
+2025-02-05 22:59:38,414 - ERROR - Vector dimension mismatch for BLKB. Expected 180, got 236.
+2025-02-05 22:59:42,528 - ERROR - Vector dimension mismatch for ALIT. Expected 180, got 72.
+2025-02-05 22:59:46,605 - ERROR - Vector dimension mismatch for RUM. Expected 180, got 63.
+2025-02-05 22:59:51,843 - ERROR - Vector dimension mismatch for BL. Expected 180, got 138.
+2025-02-05 22:59:55,837 - ERROR - Vector dimension mismatch for NCNO. Expected 180, got 54.
+2025-02-05 23:00:00,069 - ERROR - Vector dimension mismatch for PAYO. Expected 180, got 60.
+2025-02-05 23:00:09,205 - ERROR - Vector dimension mismatch for ALKT. Expected 180, got 64.
+2025-02-05 23:00:17,473 - ERROR - Vector dimension mismatch for LIF. Expected 180, got 45.
+2025-02-05 23:00:21,764 - ERROR - Vector dimension mismatch for DOCN. Expected 180, got 64.
+2025-02-05 23:00:26,106 - ERROR - Vector dimension mismatch for AVPT. Expected 180, got 86.
+2025-02-05 23:00:30,528 - ERROR - Vector dimension mismatch for ZI. Expected 180, got 81.
+2025-02-05 23:00:34,804 - ERROR - Vector dimension mismatch for DLO. Expected 180, got 76.
+2025-02-05 23:00:38,877 - ERROR - Vector dimension mismatch for DV. Expected 180, got 61.
+2025-02-05 23:00:43,091 - ERROR - Vector dimension mismatch for YOU. Expected 180, got 61.
+2025-02-05 23:00:47,720 - ERROR - Vector dimension mismatch for RNG. Expected 180, got 186.
+2025-02-05 23:00:52,109 - ERROR - Vector dimension mismatch for ALRM. Expected 180, got 156.
+2025-02-05 23:00:56,862 - ERROR - Vector dimension mismatch for TDC. Expected 180, got 237.
+2025-02-05 23:01:01,257 - ERROR - Vector dimension mismatch for BTDR. Expected 180, got 46.
+2025-02-05 23:01:07,279 - ERROR - Vector dimension mismatch for GRND. Expected 180, got 68.
+2025-02-05 23:01:11,802 - ERROR - Vector dimension mismatch for FIVN. Expected 180, got 176.
+2025-02-05 23:01:16,598 - ERROR - Vector dimension mismatch for PAR. Expected 180, got 220.
+2025-02-05 23:01:21,363 - ERROR - Vector dimension mismatch for AGYS. Expected 180, got 224.
+2025-02-05 23:01:25,898 - ERROR - Vector dimension mismatch for CALX. Expected 180, got 225.
+2025-02-05 23:01:30,403 - ERROR - Vector dimension mismatch for STNE. Expected 180, got 128.
+2025-02-05 23:01:34,398 - ERROR - Vector dimension mismatch for ODD. Expected 180, got 44.
+2025-02-05 23:01:38,839 - ERROR - Vector dimension mismatch for SWI. Expected 180, got 106.
+2025-02-05 23:01:43,242 - ERROR - Vector dimension mismatch for RPD. Expected 180, got 156.
+2025-02-05 23:01:47,957 - ERROR - Vector dimension mismatch for BB. Expected 180, got 106.
+2025-02-05 23:01:52,720 - ERROR - Vector dimension mismatch for PRGS. Expected 180, got 236.
+2025-02-05 23:01:57,038 - ERROR - Vector dimension mismatch for APPN. Expected 180, got 125.
+2025-02-05 23:02:01,476 - ERROR - Vector dimension mismatch for NATL. Expected 180, got 33.
+2025-02-05 23:02:07,231 - ERROR - Vector dimension mismatch for FLYW. Expected 180, got 60.
+2025-02-05 23:02:11,685 - ERROR - Vector dimension mismatch for SEMR. Expected 180, got 64.
+2025-02-05 23:02:16,524 - ERROR - Vector dimension mismatch for LSPD. Expected 180, got 112.
+2025-02-05 23:02:20,804 - ERROR - Vector dimension mismatch for CXM. Expected 180, got 61.
+2025-02-05 23:02:25,920 - ERROR - Vector dimension mismatch for IBTA. Expected 180, got 26.
+2025-02-05 23:02:30,210 - ERROR - Vector dimension mismatch for KC. Expected 180, got 96.
+2025-02-05 23:02:34,697 - ERROR - Vector dimension mismatch for RAMP. Expected 180, got 240.
+2025-02-05 23:02:44,336 - ERROR - Vector dimension mismatch for PLUS. Expected 180, got 220.
+2025-02-05 23:02:48,399 - ERROR - Vector dimension mismatch for AVDX. Expected 180, got 62.
+2025-02-05 23:02:52,607 - ERROR - Vector dimension mismatch for PAGS. Expected 180, got 147.
+2025-02-05 23:02:58,386 - ERROR - Vector dimension mismatch for EVTC. Expected 180, got 192.
+2025-02-05 23:03:02,792 - ERROR - Vector dimension mismatch for SPT. Expected 180, got 80.
+2025-02-05 23:03:08,826 - ERROR - Vector dimension mismatch for DFIN. Expected 180, got 136.
+2025-02-05 23:03:13,123 - ERROR - Vector dimension mismatch for JAMF. Expected 180, got 76.
+2025-02-05 23:03:17,381 - ERROR - Vector dimension mismatch for EVCM. Expected 180, got 61.
+2025-02-05 23:03:21,804 - ERROR - Vector dimension mismatch for DAVA. Expected 180, got 132.
+2025-02-05 23:03:26,079 - ERROR - Vector dimension mismatch for MQ. Expected 180, got 61.
+2025-02-05 23:03:30,460 - ERROR - Vector dimension mismatch for GB. Expected 180, got 108.
+2025-02-05 23:03:35,455 - ERROR - Vector dimension mismatch for PD. Expected 180, got 96.
+2025-02-05 23:03:35,539 - WARNING - [WARN] Failed to fetch data for DBD: 500: 404: No quarterly reports found
+2025-02-05 23:03:35,540 - WARNING - Skipping DBD due to incomplete data.
+2025-02-05 23:03:39,616 - ERROR - Vector dimension mismatch for NN. Expected 180, got 54.
+2025-02-05 23:03:43,971 - ERROR - Vector dimension mismatch for MTTR. Expected 180, got 66.
+2025-02-05 23:03:48,698 - ERROR - Vector dimension mismatch for NTCT. Expected 180, got 220.
+2025-02-05 23:03:53,655 - ERROR - Vector dimension mismatch for UPBD. Expected 180, got 236.
+2025-02-05 23:03:58,349 - ERROR - Vector dimension mismatch for VRNT. Expected 180, got 226.
+2025-02-05 23:04:04,759 - ERROR - Vector dimension mismatch for ZUO. Expected 180, got 112.
+2025-02-05 23:04:09,557 - ERROR - Vector dimension mismatch for CSGS. Expected 180, got 220.
+2025-02-05 23:04:13,646 - ERROR - Vector dimension mismatch for MLNK. Expected 180, got 61.
+2025-02-05 23:04:18,652 - ERROR - Vector dimension mismatch for SPNS. Expected 180, got 319.
+2025-02-05 23:04:23,157 - ERROR - Vector dimension mismatch for ADEA. Expected 180, got 80.
+2025-02-05 23:04:27,199 - ERROR - Vector dimension mismatch for ENFN. Expected 180, got 56.
+2025-02-05 23:04:31,187 - ERROR - Vector dimension mismatch for AMPL. Expected 180, got 61.
+2025-02-05 23:04:35,712 - ERROR - Vector dimension mismatch for ATEN. Expected 180, got 172.
+2025-02-05 23:04:39,923 - ERROR - Vector dimension mismatch for KARO. Expected 180, got 82.
+2025-02-05 23:04:44,884 - ERROR - Vector dimension mismatch for FSLY. Expected 180, got 92.
+2025-02-05 23:04:49,042 - ERROR - Vector dimension mismatch for SMWB. Expected 180, got 76.
+2025-02-05 23:04:53,652 - ERROR - Error uploading vector for SABR: Invalid type for variable '0'. Required value type is float and passed type was dict at ['values'][0]
+2025-02-05 23:04:57,935 - ERROR - Vector dimension mismatch for DCBO. Expected 180, got 103.
+2025-02-05 23:05:03,169 - ERROR - Vector dimension mismatch for DSP. Expected 180, got 66.
+2025-02-05 23:05:07,914 - ERROR - Vector dimension mismatch for TUYA. Expected 180, got 96.
+2025-02-05 23:05:12,107 - ERROR - Vector dimension mismatch for OLO. Expected 180, got 64.
+2025-02-05 23:05:16,170 - ERROR - Vector dimension mismatch for DAVE. Expected 180, got 60.
+2025-02-05 23:05:20,377 - ERROR - Vector dimension mismatch for VTEX. Expected 180, got 76.
+2025-02-05 23:05:20,464 - WARNING - [WARN] Failed to fetch data for EXOD: 500: 404: No quarterly reports found
+2025-02-05 23:05:20,464 - WARNING - Skipping EXOD due to incomplete data.
+2025-02-05 23:05:25,100 - ERROR - Vector dimension mismatch for PRO. Expected 180, got 216.
+2025-02-05 23:05:29,353 - ERROR - Vector dimension mismatch for PSFE. Expected 180, got 112.
+2025-02-05 23:05:34,036 - ERROR - Vector dimension mismatch for PDFS. Expected 180, got 221.
+2025-02-05 23:05:38,523 - ERROR - Vector dimension mismatch for TIXT. Expected 180, got 84.
+2025-02-05 23:05:42,719 - ERROR - Vector dimension mismatch for VMEO. Expected 180, got 63.
+2025-02-05 23:05:46,919 - ERROR - Vector dimension mismatch for ML. Expected 180, got 74.
+2025-02-05 23:05:51,016 - ERROR - Vector dimension mismatch for BLND. Expected 180, got 65.
+2025-02-05 23:05:55,795 - ERROR - Vector dimension mismatch for RDWR. Expected 180, got 324.
+2025-02-05 23:05:59,991 - ERROR - Vector dimension mismatch for BASE. Expected 180, got 60.
+2025-02-05 23:06:04,511 - ERROR - Vector dimension mismatch for GCT. Expected 180, got 24.
+2025-02-05 23:06:08,690 - ERROR - Vector dimension mismatch for ETWO. Expected 180, got 80.
+2025-02-05 23:06:13,422 - ERROR - Vector dimension mismatch for CINT. Expected 180, got 72.
+2025-02-05 23:06:17,790 - ERROR - Vector dimension mismatch for RSKD. Expected 180, got 76.
+2025-02-05 23:06:22,302 - ERROR - Vector dimension mismatch for AIOT. Expected 180, got 90.
+2025-02-05 23:06:26,716 - ERROR - Vector dimension mismatch for YEXT. Expected 180, got 128.
+2025-02-05 23:06:31,010 - ERROR - Vector dimension mismatch for IIIV. Expected 180, got 114.
+2025-02-05 23:06:35,606 - ERROR - Vector dimension mismatch for SCWX. Expected 180, got 144.
+2025-02-05 23:06:41,042 - ERROR - Vector dimension mismatch for OSPN. Expected 180, got 220.
+2025-02-05 23:06:45,166 - ERROR - Vector dimension mismatch for PUBM. Expected 180, got 64.
+2025-02-05 23:06:49,462 - ERROR - Vector dimension mismatch for PRTH. Expected 180, got 135.
+2025-02-05 23:06:53,893 - ERROR - Vector dimension mismatch for RPAY. Expected 180, got 110.
+2025-02-05 23:06:58,530 - ERROR - Vector dimension mismatch for CGNT. Expected 180, got 324.
+2025-02-05 23:07:03,993 - ERROR - Vector dimension mismatch for PGY. Expected 180, got 26.
+2025-02-05 23:07:08,825 - ERROR - Vector dimension mismatch for DJCO. Expected 180, got 220.
+2025-02-05 23:07:13,157 - ERROR - Vector dimension mismatch for RZLV. Expected 180, got 16.
+2025-02-05 23:07:17,320 - ERROR - Vector dimension mismatch for YALA. Expected 180, got 90.
+2025-02-05 23:07:21,681 - ERROR - Vector dimension mismatch for IMXI. Expected 180, got 128.
+2025-02-05 23:07:26,042 - ERROR - Vector dimension mismatch for CRNC. Expected 180, got 88.
+2025-02-05 23:07:30,219 - ERROR - Vector dimension mismatch for RXT. Expected 180, got 78.
+2025-02-05 23:07:30,439 - WARNING - [WARN] Failed to fetch data for HKD: 500: 404: No quarterly earnings data found
+2025-02-05 23:07:30,440 - WARNING - Skipping HKD due to incomplete data.
+2025-02-05 23:07:34,763 - ERROR - Vector dimension mismatch for RDVT. Expected 180, got 112.
+2025-02-05 23:07:39,038 - ERROR - Vector dimension mismatch for CCSI. Expected 180, got 56.
+2025-02-05 23:07:43,232 - ERROR - Vector dimension mismatch for BIGC. Expected 180, got 80.
+2025-02-05 23:07:47,765 - ERROR - Vector dimension mismatch for MTLS. Expected 180, got 192.
+2025-02-05 23:07:52,436 - ERROR - Vector dimension mismatch for MITK. Expected 180, got 220.
+2025-02-05 23:07:56,772 - ERROR - Vector dimension mismatch for BAND. Expected 180, got 120.
+2025-02-05 23:08:01,068 - ERROR - Vector dimension mismatch for PRCH. Expected 180, got 82.
+2025-02-05 23:08:06,747 - ERROR - Vector dimension mismatch for API. Expected 180, got 88.
+2025-02-05 23:08:11,039 - ERROR - Vector dimension mismatch for BKKT. Expected 180, got 69.
+2025-02-05 23:08:15,332 - ERROR - Vector dimension mismatch for XPER. Expected 180, got 44.
+2025-02-05 23:08:19,921 - ERROR - Vector dimension mismatch for TRAK. Expected 180, got 216.
+2025-02-05 23:08:26,065 - ERROR - Vector dimension mismatch for LSAK. Expected 180, got 232.
+2025-02-05 23:08:32,302 - ERROR - Vector dimension mismatch for LGTY. Expected 180, got 220.
+2025-02-05 23:08:36,748 - ERROR - Vector dimension mismatch for OOMA. Expected 180, got 152.
+2025-02-05 23:08:37,327 - WARNING - [WARN] Failed to fetch data for DGNX: 500: 404: No quarterly reports found
+2025-02-05 23:08:37,327 - WARNING - Skipping DGNX due to incomplete data.
+2025-02-05 23:08:42,116 - ERROR - Vector dimension mismatch for EGHT. Expected 180, got 220.
+2025-02-05 23:08:46,236 - ERROR - Vector dimension mismatch for ARQQ. Expected 180, got 78.
+2025-02-05 23:08:51,002 - ERROR - Vector dimension mismatch for ASUR. Expected 180, got 226.
+2025-02-05 23:08:55,751 - ERROR - Vector dimension mismatch for KLTR. Expected 180, got 62.
+2025-02-05 23:09:00,095 - ERROR - Vector dimension mismatch for EB. Expected 180, got 104.
+2025-02-05 23:09:04,664 - ERROR - Vector dimension mismatch for BLZE. Expected 180, got 56.
+2025-02-05 23:09:09,413 - ERROR - Vector dimension mismatch for ALLT. Expected 180, got 311.
+2025-02-05 23:09:13,761 - ERROR - Vector dimension mismatch for DOMO. Expected 180, got 104.
+2025-02-05 23:09:18,039 - ERROR - Vector dimension mismatch for NRDY. Expected 180, got 72.
+2025-02-05 23:09:22,897 - ERROR - Vector dimension mismatch for LAW. Expected 180, got 61.
+2025-02-05 23:09:26,994 - ERROR - Vector dimension mismatch for SMRT. Expected 180, got 65.
+2025-02-05 23:09:32,320 - ERROR - Vector dimension mismatch for ILLR. Expected 180, got 93.
+2025-02-05 23:09:37,138 - ERROR - Vector dimension mismatch for EXFY. Expected 180, got 56.
+2025-02-05 23:09:42,068 - ERROR - Vector dimension mismatch for PDYN. Expected 180, got 70.
+2025-02-05 23:09:46,910 - ERROR - Vector dimension mismatch for IMMR. Expected 180, got 220.
+2025-02-05 23:09:50,963 - ERROR - Vector dimension mismatch for ONTF. Expected 180, got 64.
+2025-02-05 23:09:54,962 - ERROR - Vector dimension mismatch for SVCO. Expected 180, got 28.
+2025-02-05 23:09:59,703 - ERROR - Vector dimension mismatch for SANG. Expected 180, got 324.
+2025-02-05 23:10:06,928 - ERROR - Vector dimension mismatch for RMNI. Expected 180, got 156.
+2025-02-05 23:10:07,112 - WARNING - [WARN] Failed to fetch data for ATGL: 500: 404: No quarterly earnings data found
+2025-02-05 23:10:07,113 - WARNING - Skipping ATGL due to incomplete data.
+2025-02-05 23:10:11,655 - ERROR - Vector dimension mismatch for PERF. Expected 180, got 196.
+2025-02-05 23:10:16,232 - ERROR - Vector dimension mismatch for ARBE. Expected 180, got 96.
+2025-02-05 23:10:20,667 - ERROR - Vector dimension mismatch for TLS. Expected 180, got 224.
+2025-02-05 23:10:24,849 - ERROR - Vector dimension mismatch for AEVA. Expected 180, got 78.
+2025-02-05 23:10:29,473 - ERROR - Vector dimension mismatch for APPS. Expected 180, got 222.
+2025-02-05 23:10:33,673 - ERROR - Vector dimension mismatch for MAPS. Expected 180, got 84.
+2025-02-05 23:10:38,378 - ERROR - Vector dimension mismatch for AEYE. Expected 180, got 194.
+2025-02-05 23:10:38,938 - WARNING - [WARN] Failed to fetch data for HPAI: 500: 404: No quarterly reports found
+2025-02-05 23:10:38,939 - WARNING - Skipping HPAI due to incomplete data.
+2025-02-05 23:10:43,037 - ERROR - Vector dimension mismatch for MRT. Expected 180, got 40.
+2025-02-05 23:10:47,635 - ERROR - Vector dimension mismatch for BCOV. Expected 180, got 212.
+2025-02-05 23:10:52,367 - ERROR - Vector dimension mismatch for EGAN. Expected 180, got 214.
+2025-02-05 23:10:56,735 - ERROR - Vector dimension mismatch for REKR. Expected 180, got 123.
+2025-02-05 23:11:00,943 - ERROR - Vector dimension mismatch for PSQH. Expected 180, got 60.
+2025-02-05 23:11:06,772 - ERROR - Vector dimension mismatch for TCX. Expected 180, got 220.
+2025-02-05 23:11:11,298 - ERROR - Vector dimension mismatch for TROO. Expected 180, got 234.
+2025-02-05 23:11:16,002 - ERROR - Vector dimension mismatch for CCRD. Expected 180, got 221.
+2025-02-05 23:11:20,911 - ERROR - Vector dimension mismatch for GRRR. Expected 180, got 84.
+2025-02-05 23:11:25,498 - ERROR - Vector dimension mismatch for AZ. Expected 180, got 108.
+2025-02-05 23:11:29,901 - ERROR - Vector dimension mismatch for SSTI. Expected 180, got 124.
+2025-02-05 23:11:34,751 - ERROR - Vector dimension mismatch for PAYS. Expected 180, got 224.
+2025-02-05 23:11:38,953 - ERROR - Vector dimension mismatch for AISP. Expected 180, got 60.
+2025-02-05 23:11:43,442 - ERROR - Vector dimension mismatch for XNET. Expected 180, got 220.
+2025-02-05 23:11:47,553 - ERROR - Vector dimension mismatch for RDZN. Expected 180, got 47.
+2025-02-05 23:11:47,637 - WARNING - [WARN] Failed to fetch data for YAAS: 500: 404: No quarterly reports found
+2025-02-05 23:11:47,637 - WARNING - Skipping YAAS due to incomplete data.
+2025-02-05 23:11:47,769 - WARNING - [WARN] Failed to fetch data for NTCL: 500: 404: No quarterly reports found
+2025-02-05 23:11:47,770 - WARNING - Skipping NTCL due to incomplete data.
+2025-02-05 23:11:52,063 - ERROR - Vector dimension mismatch for ZENV. Expected 180, got 76.
+2025-02-05 23:11:59,481 - ERROR - Vector dimension mismatch for LPSN. Expected 180, got 220.
+2025-02-05 23:12:05,807 - ERROR - Vector dimension mismatch for RSSS. Expected 180, got 216.
+2025-02-05 23:12:10,166 - ERROR - Vector dimension mismatch for VERI. Expected 180, got 128.
+2025-02-05 23:12:14,360 - ERROR - Vector dimension mismatch for QH. Expected 180, got 94.
+2025-02-05 23:12:18,403 - ERROR - Vector dimension mismatch for YXT. Expected 180, got 32.
+2025-02-05 23:12:22,695 - ERROR - Vector dimension mismatch for OCFT. Expected 180, got 98.
+2025-02-05 23:12:27,235 - ERROR - Vector dimension mismatch for UPLD. Expected 180, got 170.
+2025-02-05 23:12:31,872 - ERROR - Vector dimension mismatch for DHX. Expected 180, got 220.
+2025-02-05 23:12:32,096 - WARNING - [WARN] Failed to fetch data for ZENA: 500: 404: No quarterly earnings data found
+2025-02-05 23:12:32,097 - WARNING - Skipping ZENA due to incomplete data.
+2025-02-05 23:12:36,906 - ERROR - Vector dimension mismatch for SNCR. Expected 180, got 219.
+2025-02-05 23:12:41,453 - ERROR - Vector dimension mismatch for PHUN. Expected 180, got 140.
+2025-02-05 23:12:49,395 - ERROR - Vector dimension mismatch for INUV. Expected 180, got 224.
+2025-02-05 23:12:53,843 - ERROR - Vector dimension mismatch for VTSI. Expected 180, got 120.
+2025-02-05 23:12:58,081 - ERROR - Vector dimension mismatch for ALAR. Expected 180, got 170.
+2025-02-05 23:13:04,754 - ERROR - Vector dimension mismatch for USIO. Expected 180, got 223.
+2025-02-05 23:13:09,330 - ERROR - Vector dimension mismatch for ALTS. Expected 180, got 224.
+2025-02-05 23:13:13,865 - ERROR - Vector dimension mismatch for AUID. Expected 180, got 188.
+2025-02-05 23:13:18,345 - ERROR - Vector dimension mismatch for BMR. Expected 180, got 254.
+2025-02-05 23:13:22,809 - ERROR - Vector dimension mismatch for BMTX. Expected 180, got 105.
+2025-02-05 23:13:27,495 - ERROR - Vector dimension mismatch for WFCF. Expected 180, got 221.
+2025-02-05 23:13:31,804 - ERROR - Vector dimension mismatch for NUKK. Expected 180, got 69.
+2025-02-05 23:13:36,341 - ERROR - Vector dimension mismatch for DUOT. Expected 180, got 220.
+2025-02-05 23:13:44,740 - ERROR - Vector dimension mismatch for IDN. Expected 180, got 220.
+2025-02-05 23:13:50,654 - ERROR - Vector dimension mismatch for INLX. Expected 180, got 220.
+2025-02-05 23:13:50,889 - WARNING - [WARN] Failed to fetch data for SYT: 500: 404: No quarterly earnings data found
+2025-02-05 23:13:50,890 - WARNING - Skipping SYT due to incomplete data.
+2025-02-05 23:13:55,123 - ERROR - Vector dimension mismatch for MSAI. Expected 180, got 54.
+2025-02-05 23:13:59,197 - ERROR - Vector dimension mismatch for AIXI. Expected 180, got 37.
+2025-02-05 23:14:04,322 - ERROR - Vector dimension mismatch for SWVL. Expected 180, got 90.
+2025-02-05 23:14:05,375 - WARNING - [WARN] Failed to fetch data for LGCL: 500: 404: No quarterly earnings data found
+2025-02-05 23:14:05,376 - WARNING - Skipping LGCL due to incomplete data.
+2025-02-05 23:14:09,941 - ERROR - Vector dimension mismatch for RTC. Expected 180, got 300.
+2025-02-05 23:14:13,905 - ERROR - Vector dimension mismatch for NVNI. Expected 180, got 16.
+2025-02-05 23:14:18,754 - ERROR - Vector dimension mismatch for MNDO. Expected 180, got 324.
+2025-02-05 23:14:22,866 - ERROR - Vector dimension mismatch for VRAR. Expected 180, got 58.
+2025-02-05 23:14:27,668 - ERROR - Vector dimension mismatch for HKIT. Expected 180, got 92.
+2025-02-05 23:14:32,896 - ERROR - Vector dimension mismatch for FAAS. Expected 180, got 46.
+2025-02-05 23:14:33,037 - WARNING - [WARN] Failed to fetch data for WCT: 500: 404: No quarterly reports found
+2025-02-05 23:14:33,038 - WARNING - Skipping WCT due to incomplete data.
+2025-02-05 23:14:37,351 - ERROR - Vector dimension mismatch for MTC. Expected 180, got 108.
+2025-02-05 23:14:41,627 - ERROR - Vector dimension mismatch for JG. Expected 180, got 131.
+2025-02-05 23:14:46,691 - ERROR - Vector dimension mismatch for KPLT. Expected 180, got 80.
+2025-02-05 23:14:49,950 - WARNING - [WARN] Failed to fetch data for ISDR: 500: Error calculating valuations: 500: Error processing data: 404: No price data available
+2025-02-05 23:14:49,951 - WARNING - Skipping ISDR due to incomplete data.
+2025-02-05 23:14:54,579 - ERROR - Vector dimension mismatch for AWRE. Expected 180, got 222.
+2025-02-05 23:14:59,247 - ERROR - Vector dimension mismatch for NXPL. Expected 180, got 216.
+2025-02-05 23:15:06,914 - ERROR - Vector dimension mismatch for VHC. Expected 180, got 225.
+2025-02-05 23:15:11,810 - ERROR - Vector dimension mismatch for HTCR. Expected 180, got 54.
+2025-02-05 23:15:11,891 - WARNING - [WARN] Failed to fetch data for MASK: 500: 404: No quarterly reports found
+2025-02-05 23:15:11,892 - WARNING - Skipping MASK due to incomplete data.
+2025-02-05 23:15:16,017 - ERROR - Vector dimension mismatch for XBP. Expected 180, got 61.
+2025-02-05 23:15:20,697 - ERROR - Vector dimension mismatch for NTWK. Expected 180, got 222.
+2025-02-05 23:15:25,639 - ERROR - Vector dimension mismatch for LDTC. Expected 180, got 31.
+2025-02-05 23:15:31,327 - ERROR - Vector dimension mismatch for SURG. Expected 180, got 220.
+2025-02-05 23:15:36,483 - ERROR - Vector dimension mismatch for MOGO. Expected 180, got 176.
+2025-02-05 23:15:40,571 - ERROR - Vector dimension mismatch for CXAI. Expected 180, got 46.
+2025-02-05 23:15:45,098 - ERROR - Vector dimension mismatch for AIFF. Expected 180, got 220.
+2025-02-05 23:15:49,764 - ERROR - Vector dimension mismatch for CREX. Expected 180, got 220.
+2025-02-05 23:15:54,984 - ERROR - Vector dimension mismatch for CNTM. Expected 180, got 46.
+2025-02-05 23:15:59,266 - ERROR - Vector dimension mismatch for EZFL. Expected 180, got 58.
+2025-02-05 23:16:05,815 - ERROR - Vector dimension mismatch for SMSI. Expected 180, got 220.
+2025-02-05 23:16:10,924 - ERROR - Vector dimension mismatch for HUBC. Expected 180, got 36.
+2025-02-05 23:16:13,127 - WARNING - [WARN] Failed to fetch data for STEC: 404: No quarterly cash flow data found
+2025-02-05 23:16:13,127 - WARNING - Skipping STEC due to incomplete data.
+2025-02-05 23:16:17,368 - ERROR - Vector dimension mismatch for NXTT. Expected 180, got 85.
+2025-02-05 23:16:21,495 - ERROR - Vector dimension mismatch for BNAI. Expected 180, got 60.
+2025-02-05 23:16:26,324 - ERROR - Vector dimension mismatch for BLIN. Expected 180, got 220.
+2025-02-05 23:16:32,908 - ERROR - Vector dimension mismatch for INTZ. Expected 180, got 219.
+2025-02-05 23:16:33,143 - WARNING - [WARN] Failed to fetch data for ORKT: 500: 404: No quarterly earnings data found
+2025-02-05 23:16:33,143 - WARNING - Skipping ORKT due to incomplete data.
+2025-02-05 23:16:37,572 - ERROR - Vector dimension mismatch for DTSS. Expected 180, got 152.
+2025-02-05 23:16:41,807 - ERROR - Vector dimension mismatch for DATS. Expected 180, got 63.
+2025-02-05 23:16:46,556 - ERROR - Vector dimension mismatch for MLGO. Expected 180, got 52.
+2025-02-05 23:16:51,085 - ERROR - Vector dimension mismatch for BLBX. Expected 180, got 169.
+2025-02-05 23:16:51,750 - WARNING - [WARN] Failed to fetch data for RYDE: 500: 404: No quarterly earnings data found
+2025-02-05 23:16:51,750 - WARNING - Skipping RYDE due to incomplete data.
+2025-02-05 23:16:56,649 - ERROR - Vector dimension mismatch for PET. Expected 180, got 56.
+2025-02-05 23:17:00,914 - ERROR - Vector dimension mismatch for XTKG. Expected 180, got 25.
+2025-02-05 23:17:07,346 - ERROR - Vector dimension mismatch for CISO. Expected 180, got 82.
+2025-02-05 23:17:11,806 - ERROR - Vector dimension mismatch for APCX. Expected 180, got 86.
+2025-02-05 23:17:16,018 - ERROR - Vector dimension mismatch for CYN. Expected 180, got 62.
+2025-02-05 23:17:20,555 - ERROR - Vector dimension mismatch for RVYL. Expected 180, got 220.
+2025-02-05 23:17:24,755 - ERROR - Vector dimension mismatch for BNZI. Expected 180, got 64.
+2025-02-05 23:17:24,983 - WARNING - [WARN] Failed to fetch data for UBXG: 500: 404: No quarterly earnings data found
+2025-02-05 23:17:24,983 - WARNING - Skipping UBXG due to incomplete data.
+2025-02-05 23:17:30,320 - ERROR - Vector dimension mismatch for LIDR. Expected 180, got 66.
+2025-02-05 23:17:30,539 - WARNING - [WARN] Failed to fetch data for MFI: 500: 404: No quarterly earnings data found
+2025-02-05 23:17:30,540 - WARNING - Skipping MFI due to incomplete data.
+2025-02-05 23:17:31,194 - WARNING - [WARN] Failed to fetch data for ELWS: 500: 404: No quarterly earnings data found
+2025-02-05 23:17:31,195 - WARNING - Skipping ELWS due to incomplete data.
+2025-02-05 23:17:35,766 - ERROR - Vector dimension mismatch for AMST. Expected 180, got 74.
+2025-02-05 23:17:41,011 - ERROR - Vector dimension mismatch for JNVR. Expected 180, got 29.
+2025-02-05 23:17:45,864 - ERROR - Vector dimension mismatch for IDAI. Expected 180, got 60.
+2025-02-05 23:17:50,075 - ERROR - Vector dimension mismatch for VS. Expected 180, got 49.
+2025-02-05 23:17:55,373 - ERROR - Vector dimension mismatch for GITS. Expected 180, got 33.
+2025-02-05 23:18:00,003 - ERROR - Vector dimension mismatch for MRIN. Expected 180, got 192.
+2025-02-05 23:18:05,506 - ERROR - Vector dimension mismatch for FRGT. Expected 180, got 86.
+2025-02-05 23:18:10,366 - ERROR - Vector dimension mismatch for ULY. Expected 180, got 32.
+2025-02-05 23:18:14,541 - ERROR - Vector dimension mismatch for TGL. Expected 180, got 46.
+2025-02-05 23:18:21,424 - ERROR - Vector dimension mismatch for FTFT. Expected 180, got 228.
+2025-02-05 23:18:25,993 - ERROR - Vector dimension mismatch for VERB. Expected 180, got 189.
+2025-02-05 23:18:30,610 - ERROR - Vector dimension mismatch for CETX. Expected 180, got 220.
+2025-02-05 23:18:35,884 - ERROR - Vector dimension mismatch for JTAI. Expected 180, got 56.
+2025-02-05 23:18:40,736 - ERROR - Vector dimension mismatch for OBLG. Expected 180, got 220.
+2025-02-05 23:18:45,660 - ERROR - Vector dimension mismatch for IFBD. Expected 180, got 77.
+2025-02-05 23:18:49,717 - ERROR - Vector dimension mismatch for SOPA. Expected 180, got 58.
+2025-02-05 23:18:54,293 - ERROR - Vector dimension mismatch for OLB. Expected 180, got 224.
+2025-02-05 23:18:58,410 - ERROR - Vector dimension mismatch for AUUD. Expected 180, got 66.
+2025-02-05 23:19:03,901 - ERROR - Vector dimension mismatch for RPM. Expected 180, got 240.
+2025-02-05 23:19:07,970 - ERROR - Vector dimension mismatch for BCAN. Expected 180, got 42.
+2025-02-05 23:19:12,627 - ERROR - Vector dimension mismatch for MYSZ. Expected 180, got 222.
+2025-02-05 23:19:17,257 - ERROR - Vector dimension mismatch for TAOP. Expected 180, got 292.
+2025-02-05 23:19:21,391 - ERROR - Vector dimension mismatch for SGN. Expected 180, got 28.
+2025-02-05 23:19:26,081 - ERROR - Vector dimension mismatch for ATCH. Expected 180, got 19.
+2025-02-05 23:19:30,550 - ERROR - Vector dimension mismatch for LYT. Expected 180, got 59.
+2025-02-05 23:19:37,038 - ERROR - Vector dimension mismatch for FSLR. Expected 180, got 247.
+2025-02-05 23:19:43,333 - ERROR - Vector dimension mismatch for ENPH. Expected 180, got 210.
+2025-02-05 23:19:47,375 - ERROR - Vector dimension mismatch for NXT. Expected 180, got 42.
+2025-02-05 23:19:51,831 - ERROR - Vector dimension mismatch for RUN. Expected 180, got 160.
+2025-02-05 23:19:56,450 - ERROR - Vector dimension mismatch for JKS. Expected 180, got 267.
+2025-02-05 23:20:00,523 - ERROR - Vector dimension mismatch for ARRY. Expected 180, got 72.
+2025-02-05 23:20:08,086 - ERROR - Vector dimension mismatch for SEDG. Expected 180, got 158.
+2025-02-05 23:20:12,177 - ERROR - Vector dimension mismatch for SHLS. Expected 180, got 68.
+2025-02-05 23:20:16,960 - ERROR - Vector dimension mismatch for CSIQ. Expected 180, got 320.
+2025-02-05 23:20:21,298 - ERROR - Vector dimension mismatch for NOVA. Expected 180, got 98.
+2025-02-05 23:20:25,313 - ERROR - Vector dimension mismatch for TOYO. Expected 180, got 20.
+2025-02-05 23:22:33,069 - WARNING - [WARN] Failed to fetch data for CSLR: 500: Unable to allocate 11.1 GiB for an array with shape (89, 16777229) and data type object
+2025-02-05 23:23:06,556 - WARNING - Skipping CSLR due to incomplete data.
+2025-02-05 23:23:11,158 - ERROR - Vector dimension mismatch for ZEO. Expected 180, got 53.
+2025-02-05 23:23:15,508 - ERROR - Vector dimension mismatch for MAXN. Expected 180, got 92.
+2025-02-05 23:23:19,996 - ERROR - Vector dimension mismatch for SOL. Expected 180, got 54.
+2025-02-05 23:23:24,065 - ERROR - Vector dimension mismatch for SMXT. Expected 180, got 22.
+2025-02-05 23:23:28,314 - ERROR - Vector dimension mismatch for TYGO. Expected 180, got 64.
+2025-02-05 23:23:33,017 - ERROR - Vector dimension mismatch for FTCI. Expected 180, got 64.
+2025-02-05 23:23:37,278 - ERROR - Vector dimension mismatch for SPRU. Expected 180, got 88.
+2025-02-05 23:23:41,839 - ERROR - Vector dimension mismatch for BEEM. Expected 180, got 221.
+2025-02-05 23:23:45,784 - ERROR - Vector dimension mismatch for VSTE. Expected 180, got 21.
+2025-02-05 23:23:45,986 - WARNING - [WARN] Failed to fetch data for TURB: 500: 404: No quarterly earnings data found
+2025-02-05 23:23:45,986 - WARNING - Skipping TURB due to incomplete data.
+2025-02-05 23:23:50,276 - ERROR - Vector dimension mismatch for VVPR. Expected 180, got 150.
+2025-02-05 23:23:54,897 - ERROR - Vector dimension mismatch for ASTI. Expected 180, got 220.
+2025-02-05 23:23:59,204 - ERROR - Vector dimension mismatch for LIN. Expected 180, got 114.
+2025-02-05 23:24:05,621 - ERROR - Vector dimension mismatch for SHW. Expected 180, got 252.
+2025-02-05 23:24:10,374 - ERROR - Vector dimension mismatch for APD. Expected 180, got 254.
+2025-02-05 23:24:15,122 - ERROR - Vector dimension mismatch for ECL. Expected 180, got 256.
+2025-02-05 23:24:19,613 - ERROR - Vector dimension mismatch for DD. Expected 180, got 126.
+2025-02-05 23:24:24,487 - ERROR - Vector dimension mismatch for PPG. Expected 180, got 256.
+2025-02-05 23:24:30,274 - ERROR - Vector dimension mismatch for LYB. Expected 180, got 218.
+2025-02-05 23:24:34,927 - ERROR - Vector dimension mismatch for IFF. Expected 180, got 236.
+2025-02-05 23:24:39,516 - ERROR - Vector dimension mismatch for WLK. Expected 180, got 221.
+2025-02-05 23:24:44,423 - ERROR - Vector dimension mismatch for SQM. Expected 180, got 324.
+2025-02-05 23:24:49,227 - ERROR - Vector dimension mismatch for EMN. Expected 180, got 252.
+2025-02-05 23:24:53,794 - ERROR - Vector dimension mismatch for ALB. Expected 180, got 240.
+2025-02-05 23:24:58,168 - ERROR - Vector dimension mismatch for AXTA. Expected 180, got 168.
+2025-02-05 23:25:07,055 - ERROR - Vector dimension mismatch for ESI. Expected 180, got 168.
+2025-02-05 23:25:10,839 - ERROR - Vector dimension mismatch for ALTM. Expected 180, got 22.
+2025-02-05 23:25:15,478 - ERROR - Vector dimension mismatch for BCPC. Expected 180, got 221.
+2025-02-05 23:25:20,118 - ERROR - Vector dimension mismatch for CBT. Expected 180, got 240.
+2025-02-05 23:25:24,747 - ERROR - Vector dimension mismatch for NEU. Expected 180, got 232.
+2025-02-05 23:25:29,583 - ERROR - Vector dimension mismatch for AVNT. Expected 180, got 224.
+2025-02-05 23:25:34,069 - ERROR - Vector dimension mismatch for ASH. Expected 180, got 142.
+2025-02-05 23:25:38,551 - ERROR - Vector dimension mismatch for FUL. Expected 180, got 240.
+2025-02-05 23:25:43,171 - ERROR - Vector dimension mismatch for SXT. Expected 180, got 236.
+2025-02-05 23:25:47,891 - ERROR - Vector dimension mismatch for SSL. Expected 180, got 308.
+2025-02-05 23:25:52,508 - ERROR - Vector dimension mismatch for WDFC. Expected 180, got 216.
+2025-02-05 23:25:56,886 - ERROR - Vector dimension mismatch for CC. Expected 180, got 162.
+2025-02-05 23:26:01,569 - ERROR - Vector dimension mismatch for IOSP. Expected 180, got 220.
+2025-02-05 23:28:18,223 - WARNING - [WARN] Failed to fetch data for HWKN: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777273) and data type object
+2025-02-05 23:28:53,164 - WARNING - Skipping HWKN due to incomplete data.
+2025-02-05 23:28:59,941 - ERROR - Vector dimension mismatch for KWR. Expected 180, got 220.
+2025-02-05 23:29:06,157 - ERROR - Vector dimension mismatch for MTX. Expected 180, got 240.
+2025-02-05 23:29:10,459 - ERROR - Vector dimension mismatch for PRM. Expected 180, got 57.
+2025-02-05 23:29:14,661 - ERROR - Vector dimension mismatch for NGVT. Expected 180, got 148.
+2025-02-05 23:29:19,261 - ERROR - Vector dimension mismatch for SCL. Expected 180, got 224.
+2025-02-05 23:29:25,473 - ERROR - Vector dimension mismatch for KRO. Expected 180, got 220.
+2025-02-05 23:29:29,572 - ERROR - Vector dimension mismatch for ECVT. Expected 180, got 128.
+2025-02-05 23:29:33,775 - ERROR - Vector dimension mismatch for OEC. Expected 180, got 108.
+2025-02-05 23:29:39,705 - ERROR - Vector dimension mismatch for KOP. Expected 180, got 240.
+2025-02-05 23:29:44,301 - ERROR - Vector dimension mismatch for ODC. Expected 180, got 216.
+2025-02-05 23:29:48,917 - ERROR - Vector dimension mismatch for MATV. Expected 180, got 224.
+2025-02-05 23:29:54,844 - ERROR - Vector dimension mismatch for GEVO. Expected 180, got 220.
+2025-02-05 23:30:00,998 - ERROR - Vector dimension mismatch for HDSN. Expected 180, got 222.
+2025-02-05 23:30:10,960 - ERROR - Vector dimension mismatch for LWLG. Expected 180, got 220.
+2025-02-05 23:30:15,326 - ERROR - Vector dimension mismatch for FF. Expected 180, got 222.
+2025-02-05 23:30:19,886 - ERROR - Vector dimension mismatch for TSE. Expected 180, got 173.
+2025-02-05 23:30:24,426 - ERROR - Vector dimension mismatch for ALTO. Expected 180, got 224.
+2025-02-05 23:30:28,919 - ERROR - Vector dimension mismatch for CMT. Expected 180, got 220.
+2025-02-05 23:30:33,321 - ERROR - Vector dimension mismatch for NTIC. Expected 180, got 220.
+2025-02-05 23:30:33,504 - WARNING - [WARN] Failed to fetch data for IZTC: 500: 404: No quarterly earnings data found
+2025-02-05 23:30:33,505 - WARNING - Skipping IZTC due to incomplete data.
+2025-02-05 23:30:39,179 - ERROR - Vector dimension mismatch for FSI. Expected 180, got 220.
+2025-02-05 23:30:44,959 - ERROR - Vector dimension mismatch for LOOP. Expected 180, got 224.
+2025-02-05 23:30:48,855 - ERROR - Vector dimension mismatch for FEAM. Expected 180, got 50.
+2025-02-05 23:30:52,784 - ERROR - Vector dimension mismatch for CRKN. Expected 180, got 89.
+2025-02-05 23:30:56,727 - ERROR - Vector dimension mismatch for BGLC. Expected 180, got 96.
+2025-02-05 23:31:00,598 - ERROR - Vector dimension mismatch for BON. Expected 180, got 77.
+2025-02-05 23:31:07,364 - ERROR - Vector dimension mismatch for SNES. Expected 180, got 130.
+2025-02-05 23:31:11,275 - ERROR - Vector dimension mismatch for CNEY. Expected 180, got 73.
+2025-02-05 23:31:15,919 - ERROR - Vector dimension mismatch for ETN. Expected 180, got 198.
+2025-02-05 23:31:20,505 - ERROR - Vector dimension mismatch for PH. Expected 180, got 256.
+2025-02-05 23:31:25,129 - ERROR - Vector dimension mismatch for ITW. Expected 180, got 252.
+2025-02-05 23:31:30,054 - ERROR - Vector dimension mismatch for EMR. Expected 180, got 254.
+2025-02-05 23:31:34,628 - ERROR - Vector dimension mismatch for CMI. Expected 180, got 256.
+2025-02-05 23:31:39,085 - ERROR - Vector dimension mismatch for AME. Expected 180, got 252.
+2025-02-05 23:31:43,027 - ERROR - Vector dimension mismatch for OTIS. Expected 180, got 88.
+2025-02-05 23:31:47,082 - ERROR - Vector dimension mismatch for IR. Expected 180, got 128.
+2025-02-05 23:31:51,660 - ERROR - Vector dimension mismatch for ROK. Expected 180, got 252.
+2025-02-05 23:31:56,027 - ERROR - Vector dimension mismatch for XYL. Expected 180, got 215.
+2025-02-05 23:32:00,562 - ERROR - Vector dimension mismatch for DOV. Expected 180, got 252.
+2025-02-05 23:32:07,636 - ERROR - Vector dimension mismatch for SYM. Expected 180, got 60.
+2025-02-05 23:32:13,411 - ERROR - Vector dimension mismatch for PNR. Expected 180, got 234.
+2025-02-05 23:32:17,952 - ERROR - Vector dimension mismatch for IEX. Expected 180, got 236.
+2025-02-05 23:32:22,446 - ERROR - Vector dimension mismatch for GGG. Expected 180, got 230.
+2025-02-05 23:32:26,994 - ERROR - Vector dimension mismatch for NDSN. Expected 180, got 236.
+2025-02-05 23:32:31,563 - ERROR - Vector dimension mismatch for ITT. Expected 180, got 248.
+2025-02-05 23:34:38,867 - WARNING - [WARN] Failed to fetch data for RRX: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 23:35:13,516 - WARNING - Skipping RRX due to incomplete data.
+2025-02-05 23:35:18,823 - ERROR - Vector dimension mismatch for AOS. Expected 180, got 240.
+2025-02-05 23:35:22,878 - ERROR - Vector dimension mismatch for CR. Expected 180, got 36.
+2025-02-05 23:35:27,412 - ERROR - Vector dimension mismatch for GNRC. Expected 180, got 220.
+2025-02-05 23:35:31,937 - ERROR - Vector dimension mismatch for GTLS. Expected 180, got 240.
+2025-02-05 23:35:36,729 - ERROR - Vector dimension mismatch for DCI. Expected 180, got 232.
+2025-02-05 23:35:41,394 - ERROR - Vector dimension mismatch for FLS. Expected 180, got 256.
+2025-02-05 23:37:51,753 - WARNING - [WARN] Failed to fetch data for MIDD: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 23:38:27,177 - WARNING - Skipping MIDD due to incomplete data.
+2025-02-05 23:38:32,488 - ERROR - Vector dimension mismatch for WTS. Expected 180, got 236.
+2025-02-05 23:38:36,739 - ERROR - Vector dimension mismatch for SMR. Expected 180, got 66.
+2025-02-05 23:38:41,367 - ERROR - Vector dimension mismatch for JBTM. Expected 180, got 218.
+2025-02-05 23:38:45,719 - ERROR - Vector dimension mismatch for CSWI. Expected 180, got 157.
+2025-02-05 23:38:50,090 - ERROR - Vector dimension mismatch for GTES. Expected 180, got 116.
+2025-02-05 23:40:57,017 - WARNING - [WARN] Failed to fetch data for FELE: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777276) and data type object
+2025-02-05 23:41:33,196 - WARNING - Skipping FELE due to incomplete data.
+2025-02-05 23:43:45,760 - WARNING - [WARN] Failed to fetch data for KAI: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 23:44:21,698 - WARNING - Skipping KAI due to incomplete data.
+2025-02-05 23:44:26,288 - ERROR - Vector dimension mismatch for MIR. Expected 180, got 77.
+2025-02-05 23:44:31,133 - ERROR - Vector dimension mismatch for NPO. Expected 180, got 223.
+2025-02-05 23:44:35,855 - ERROR - Vector dimension mismatch for CXT. Expected 180, got 240.
+2025-02-05 23:44:40,490 - ERROR - Vector dimension mismatch for MWA. Expected 180, got 228.
+2025-02-05 23:44:45,041 - ERROR - Vector dimension mismatch for ATS. Expected 180, got 324.
+2025-02-05 23:44:49,557 - ERROR - Vector dimension mismatch for ENOV. Expected 180, got 223.
+2025-02-05 23:44:54,056 - ERROR - Vector dimension mismatch for HI. Expected 180, got 235.
+2025-02-05 23:44:58,502 - ERROR - Vector dimension mismatch for EPAC. Expected 180, got 232.
+2025-02-05 23:45:07,677 - ERROR - Vector dimension mismatch for B. Expected 180, got 236.
+2025-02-05 23:45:12,170 - ERROR - Vector dimension mismatch for SXI. Expected 180, got 220.
+2025-02-05 23:45:16,007 - ERROR - Vector dimension mismatch for NPWR. Expected 180, got 60.
+2025-02-05 23:45:20,847 - ERROR - Vector dimension mismatch for XMTR. Expected 180, got 61.
+2025-02-05 23:45:26,657 - ERROR - Vector dimension mismatch for TNC. Expected 180, got 221.
+2025-02-05 23:45:30,350 - ERROR - Vector dimension mismatch for NNE. Expected 180, got 14.
+2025-02-05 23:47:36,095 - WARNING - [WARN] Failed to fetch data for HLIO: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 23:48:10,805 - WARNING - Skipping HLIO due to incomplete data.
+2025-02-05 23:48:15,656 - ERROR - Vector dimension mismatch for KRNT. Expected 180, got 181.
+2025-02-05 23:48:20,254 - ERROR - Vector dimension mismatch for AMSC. Expected 180, got 245.
+2025-02-05 23:48:24,810 - ERROR - Vector dimension mismatch for THR. Expected 180, got 216.
+2025-02-05 23:48:29,754 - ERROR - Vector dimension mismatch for GRC. Expected 180, got 220.
+2025-02-05 23:48:36,757 - ERROR - Vector dimension mismatch for PSIX. Expected 180, got 202.
+2025-02-05 23:48:40,785 - ERROR - Vector dimension mismatch for SERV. Expected 180, got 64.
+2025-02-05 23:48:45,334 - ERROR - Vector dimension mismatch for GHM. Expected 180, got 220.
+2025-02-05 23:48:50,047 - ERROR - Vector dimension mismatch for BLDP. Expected 180, got 324.
+2025-02-05 23:48:54,650 - ERROR - Vector dimension mismatch for OFLX. Expected 180, got 224.
+2025-02-05 23:48:58,834 - ERROR - Vector dimension mismatch for LXFR. Expected 180, got 109.
+2025-02-05 23:49:05,610 - ERROR - Vector dimension mismatch for RR. Expected 180, got 25.
+2025-02-05 23:49:10,269 - ERROR - Vector dimension mismatch for PKOH. Expected 180, got 220.
+2025-02-05 23:51:18,980 - WARNING - [WARN] Failed to fetch data for TWIN: 500: Unable to allocate 11.6 GiB for an array with shape (93, 16777272) and data type object
+2025-02-05 23:51:52,608 - WARNING - Skipping TWIN due to incomplete data.
+2025-02-05 23:51:57,638 - ERROR - Vector dimension mismatch for BW. Expected 180, got 161.
+2025-02-05 23:52:05,091 - ERROR - Vector dimension mismatch for HURC. Expected 180, got 222.
+2025-02-05 23:52:09,637 - ERROR - Vector dimension mismatch for OPTT. Expected 180, got 222.
+2025-02-05 23:52:14,374 - ERROR - Vector dimension mismatch for TAYD. Expected 180, got 216.
+2025-02-05 23:52:18,173 - ERROR - Vector dimension mismatch for SHMD. Expected 180, got 22.
+2025-02-05 23:52:18,331 - WARNING - [WARN] Failed to fetch data for HUHU: 500: 404: No quarterly reports found
+2025-02-05 23:52:18,331 - WARNING - Skipping HUHU due to incomplete data.
+2025-02-05 23:52:22,901 - ERROR - Vector dimension mismatch for IVAC. Expected 180, got 220.
+2025-02-05 23:52:27,156 - ERROR - Vector dimension mismatch for TPIC. Expected 180, got 141.
+2025-02-05 23:52:31,081 - ERROR - Vector dimension mismatch for LASE. Expected 180, got 74.
+2025-02-05 23:52:31,163 - WARNING - [WARN] Failed to fetch data for INLF: 500: 404: No quarterly reports found
+2025-02-05 23:52:31,163 - WARNING - Skipping INLF due to incomplete data.
+2025-02-05 23:52:31,393 - WARNING - [WARN] Failed to fetch data for XCH: 500: 404: No quarterly earnings data found
+2025-02-05 23:52:31,395 - WARNING - Skipping XCH due to incomplete data.
+2025-02-05 23:52:31,531 - WARNING - [WARN] Failed to fetch data for LBGJ: 500: 404: No quarterly reports found
+2025-02-05 23:52:31,531 - WARNING - Skipping LBGJ due to incomplete data.
+2025-02-05 23:52:36,125 - ERROR - Vector dimension mismatch for BWEN. Expected 180, got 216.
+2025-02-05 23:52:40,367 - ERROR - Vector dimension mismatch for GTEC. Expected 180, got 107.
+2025-02-05 23:52:44,718 - ERROR - Vector dimension mismatch for CETY. Expected 180, got 220.
+2025-02-05 23:52:49,234 - ERROR - Vector dimension mismatch for CVV. Expected 180, got 220.
+2025-02-05 23:52:49,406 - WARNING - [WARN] Failed to fetch data for SPPL: 500: 404: No quarterly earnings data found
+2025-02-05 23:52:49,407 - WARNING - Skipping SPPL due to incomplete data.
+2025-02-05 23:52:53,171 - ERROR - Vector dimension mismatch for BURU. Expected 180, got 70.
+2025-02-05 23:52:53,388 - WARNING - [WARN] Failed to fetch data for JCSE: 500: 404: No quarterly earnings data found
+2025-02-05 23:52:53,390 - WARNING - Skipping JCSE due to incomplete data.
+2025-02-05 23:52:57,804 - ERROR - Vector dimension mismatch for GOOGL. Expected 180, got 152.
+2025-02-05 23:53:03,859 - ERROR - Vector dimension mismatch for GOOG. Expected 180, got 152.
+2025-02-05 23:53:08,351 - ERROR - Vector dimension mismatch for META. Expected 180, got 208.
+2025-02-05 23:53:12,919 - ERROR - Vector dimension mismatch for ACN. Expected 180, got 248.
+2025-02-05 23:53:17,406 - ERROR - Vector dimension mismatch for IBM. Expected 180, got 248.
+2025-02-05 23:53:22,015 - ERROR - Vector dimension mismatch for FI. Expected 180, got 252.
+2025-02-05 23:53:26,076 - ERROR - Vector dimension mismatch for SPOT. Expected 180, got 137.
+2025-02-05 23:53:30,681 - ERROR - Vector dimension mismatch for INFY. Expected 180, got 324.
+2025-02-05 23:53:34,826 - ERROR - Vector dimension mismatch for DASH. Expected 180, got 66.
+2025-02-05 23:53:39,396 - ERROR - Vector dimension mismatch for FIS. Expected 180, got 256.
+2025-02-05 23:53:43,861 - ERROR - Vector dimension mismatch for IT. Expected 180, got 233.
+2025-02-05 23:53:48,301 - ERROR - Vector dimension mismatch for CTSH. Expected 180, got 252.
+2025-02-05 23:53:52,715 - ERROR - Vector dimension mismatch for WIT. Expected 180, got 324.
+2025-02-05 23:53:56,344 - ERROR - Vector dimension mismatch for RDDT. Expected 180, got 64.
+2025-02-05 23:54:00,998 - ERROR - Vector dimension mismatch for BIDU. Expected 180, got 324.
+2025-02-05 23:54:05,986 - ERROR - Vector dimension mismatch for BR. Expected 180, got 234.
+2025-02-05 23:54:10,404 - ERROR - Vector dimension mismatch for CDW. Expected 180, got 220.
+2025-02-05 23:54:15,078 - ERROR - Vector dimension mismatch for GIB. Expected 180, got 324.
+2025-02-05 23:54:18,987 - ERROR - Vector dimension mismatch for PINS. Expected 180, got 92.
+2025-02-05 23:54:23,302 - ERROR - Vector dimension mismatch for LDOS. Expected 180, got 233.
+2025-02-05 23:54:27,489 - ERROR - Vector dimension mismatch for Z. Expected 180, got 160.
+2025-02-05 23:54:31,516 - ERROR - Vector dimension mismatch for SNAP. Expected 180, got 128.
+2025-02-05 23:54:35,635 - ERROR - Vector dimension mismatch for ZG. Expected 180, got 160.
+2025-02-05 23:54:39,578 - ERROR - Vector dimension mismatch for TME. Expected 180, got 124.
+2025-02-05 23:54:43,885 - ERROR - Vector dimension mismatch for EPAM. Expected 180, got 208.
+2025-02-05 23:54:48,334 - ERROR - Vector dimension mismatch for JKHY. Expected 180, got 232.
+2025-02-05 23:54:52,165 - ERROR - Vector dimension mismatch for AUR. Expected 180, got 66.
+2025-02-05 23:54:56,693 - ERROR - Vector dimension mismatch for CACI. Expected 180, got 232.
+2025-02-05 23:55:00,704 - ERROR - Vector dimension mismatch for PSN. Expected 180, got 100.
+2025-02-05 23:55:06,674 - ERROR - Vector dimension mismatch for KD. Expected 180, got 54.
+2025-02-05 23:55:10,653 - ERROR - Vector dimension mismatch for NBIS. Expected 180, got 20.
+2025-02-05 23:55:15,122 - ERROR - Vector dimension mismatch for GLOB. Expected 180, got 202.
+2025-02-05 23:55:19,531 - ERROR - Vector dimension mismatch for G. Expected 180, got 244.
+2025-02-05 23:55:23,807 - ERROR - Vector dimension mismatch for MTCH. Expected 180, got 238.
+2025-02-05 23:55:28,471 - ERROR - Vector dimension mismatch for EXLS. Expected 180, got 220.
+2025-02-05 23:55:32,418 - ERROR - Vector dimension mismatch for DJT. Expected 180, got 56.
+2025-02-05 23:55:36,491 - ERROR - Vector dimension mismatch for BZ. Expected 180, got 76.
+2025-02-05 23:55:40,744 - ERROR - Vector dimension mismatch for SAIC. Expected 180, got 189.
+2025-02-05 23:55:45,006 - ERROR - Vector dimension mismatch for INGM. Expected 180, got 26.
+2025-02-05 23:55:45,225 - WARNING - [WARN] Failed to fetch data for WRD: 500: 404: No quarterly earnings data found
+2025-02-05 23:55:45,226 - WARNING - Skipping WRD due to incomplete data.
+2025-02-05 23:55:49,575 - ERROR - Vector dimension mismatch for ASGN. Expected 180, got 220.
+2025-02-05 23:55:53,659 - ERROR - Vector dimension mismatch for GDS. Expected 180, got 154.
+2025-02-05 23:55:57,628 - ERROR - Vector dimension mismatch for CLVT. Expected 180, got 93.
+2025-02-05 23:56:03,870 - ERROR - Vector dimension mismatch for DXC. Expected 180, got 132.
+2025-02-05 23:56:08,261 - ERROR - Vector dimension mismatch for IAC. Expected 180, got 84.
+2025-02-05 23:56:12,084 - ERROR - Vector dimension mismatch for CNXC. Expected 180, got 64.
+2025-02-05 23:56:16,413 - ERROR - Vector dimension mismatch for ATHM. Expected 180, got 208.
+2025-02-05 23:56:20,367 - ERROR - Vector dimension mismatch for WNS. Expected 180, got 245.
+2025-02-05 23:56:24,846 - ERROR - Vector dimension mismatch for YELP. Expected 180, got 208.
+2025-02-05 23:56:29,309 - ERROR - Vector dimension mismatch for YY. Expected 180, got 220.
+2025-02-05 23:56:33,535 - ERROR - Vector dimension mismatch for WB. Expected 180, got 185.
+2025-02-05 23:56:37,624 - ERROR - Vector dimension mismatch for APLD. Expected 180, got 56.
+2025-02-05 23:56:41,510 - ERROR - Vector dimension mismatch for UPWK. Expected 180, got 107.
+2025-02-05 23:56:45,427 - ERROR - Vector dimension mismatch for GENI. Expected 180, got 84.
+2025-02-05 23:56:49,787 - ERROR - Vector dimension mismatch for VYX. Expected 180, got 242.
+2025-02-05 23:56:54,015 - ERROR - Vector dimension mismatch for VNET. Expected 180, got 231.
+2025-02-05 23:56:57,984 - ERROR - Vector dimension mismatch for GDYN. Expected 180, got 100.
+2025-02-05 23:57:04,691 - ERROR - Vector dimension mismatch for NABL. Expected 180, got 61.
+2025-02-05 23:57:08,358 - ERROR - Vector dimension mismatch for WBTN. Expected 180, got 26.
+2025-02-05 23:57:12,288 - ERROR - Vector dimension mismatch for OPRA. Expected 180, got 128.
+2025-02-05 23:57:16,281 - ERROR - Vector dimension mismatch for TASK. Expected 180, got 61.
+2025-02-05 23:57:21,036 - ERROR - Vector dimension mismatch for FORTY. Expected 180, got 324.
+2025-02-05 23:57:25,364 - ERROR - Vector dimension mismatch for TTGT. Expected 180, got 315.
+2025-02-05 23:57:29,660 - ERROR - Vector dimension mismatch for MOMO. Expected 180, got 186.
+2025-02-05 23:57:33,485 - ERROR - Vector dimension mismatch for NYAX. Expected 180, got 72.
+2025-02-05 23:57:37,310 - ERROR - Vector dimension mismatch for TBLA. Expected 180, got 40.
+2025-02-05 23:57:41,515 - ERROR - Vector dimension mismatch for XRX. Expected 180, got 92.
+2025-02-05 23:57:45,764 - ERROR - Vector dimension mismatch for BMBL. Expected 180, got 68.
+2025-02-05 23:57:49,830 - ERROR - Vector dimension mismatch for PENG. Expected 180, got 129.
+2025-02-05 23:57:54,273 - ERROR - Vector dimension mismatch for INOD. Expected 180, got 224.
+2025-02-05 23:57:58,366 - ERROR - Vector dimension mismatch for FVRR. Expected 180, got 108.
+2025-02-05 23:58:06,048 - ERROR - Vector dimension mismatch for GETY. Expected 180, got 46.
+2025-02-05 23:58:09,887 - ERROR - Vector dimension mismatch for BBAI. Expected 180, got 62.
+2025-02-05 23:58:14,136 - ERROR - Vector dimension mismatch for SSTK. Expected 180, got 196.
+2025-02-05 23:58:18,097 - ERROR - Vector dimension mismatch for NRDS. Expected 180, got 50.
+2025-02-05 23:58:21,966 - ERROR - Vector dimension mismatch for SEAT. Expected 180, got 52.
+2025-02-05 23:58:25,873 - ERROR - Vector dimension mismatch for KIND. Expected 180, got 60.
+2025-02-05 23:58:30,023 - ERROR - Vector dimension mismatch for ANGI. Expected 180, got 119.
+2025-02-05 23:58:34,624 - ERROR - Vector dimension mismatch for DMRC. Expected 180, got 220.
+2025-02-05 23:58:38,955 - ERROR - Vector dimension mismatch for HCKT. Expected 180, got 220.
+2025-02-05 23:58:43,324 - ERROR - Vector dimension mismatch for MAX. Expected 180, got 73.
+2025-02-05 23:58:48,405 - ERROR - Vector dimension mismatch for THRY. Expected 180, got 177.
+2025-02-05 23:58:53,130 - ERROR - Vector dimension mismatch for EVER. Expected 180, got 111.
+2025-02-05 23:58:57,642 - ERROR - Vector dimension mismatch for CNDT. Expected 180, got 136.
+2025-02-05 23:59:04,895 - ERROR - Vector dimension mismatch for MGIC. Expected 180, got 324.
+2025-02-05 23:59:09,450 - ERROR - Vector dimension mismatch for CTLP. Expected 180, got 213.
+2025-02-05 23:59:13,460 - ERROR - Vector dimension mismatch for DOYU. Expected 180, got 111.
+2025-02-05 23:59:18,097 - ERROR - Vector dimension mismatch for UIS. Expected 180, got 237.
+2025-02-05 23:59:22,720 - ERROR - Vector dimension mismatch for PERI. Expected 180, got 324.
+2025-02-05 23:59:26,878 - ERROR - Vector dimension mismatch for JFIN. Expected 180, got 112.
+2025-02-05 23:59:31,120 - ERROR - Vector dimension mismatch for GRPN. Expected 180, got 212.
+2025-02-05 23:59:35,638 - ERROR - Vector dimension mismatch for TSSI. Expected 180, got 221.
+2025-02-05 23:59:39,473 - ERROR - Vector dimension mismatch for OB. Expected 180, got 60.
+2025-02-05 23:59:43,782 - ERROR - Vector dimension mismatch for TRUE. Expected 180, got 172.
+2025-02-05 23:59:47,532 - ERROR - Vector dimension mismatch for IBEX. Expected 180, got 37.
+2025-02-05 23:59:51,652 - ERROR - Vector dimension mismatch for ZH. Expected 180, got 96.
+2025-02-05 23:59:55,540 - ERROR - Vector dimension mismatch for NOTE. Expected 180, got 66.
+2025-02-06 00:00:00,039 - ERROR - Vector dimension mismatch for TTEC. Expected 180, got 230.
+2025-02-06 00:00:14,702 - ERROR - Vector dimension mismatch for TRVG. Expected 180, got 151.
+2025-02-06 00:00:21,701 - ERROR - Vector dimension mismatch for CSPI. Expected 180, got 220.
+2025-02-06 00:00:26,086 - ERROR - Vector dimension mismatch for III. Expected 180, got 216.
+2025-02-06 00:00:30,224 - ERROR - Vector dimension mismatch for CMCM. Expected 180, got 191.
+2025-02-06 00:00:30,320 - WARNING - [WARN] Failed to fetch data for TDTH: 500: 404: No quarterly reports found
+2025-02-06 00:00:30,320 - WARNING - Skipping TDTH due to incomplete data.
+2025-02-06 00:00:34,096 - ERROR - Vector dimension mismatch for VEEA. Expected 180, got 62.
+2025-02-06 00:00:38,032 - ERROR - Vector dimension mismatch for BZFD. Expected 180, got 60.
+2025-02-06 00:00:42,204 - ERROR - Vector dimension mismatch for CCG. Expected 180, got 122.
+2025-02-06 00:00:46,574 - ERROR - Vector dimension mismatch for AREN. Expected 180, got 214.
+2025-02-06 00:00:50,370 - ERROR - Vector dimension mismatch for CTM. Expected 180, got 44.
+2025-02-06 00:00:54,038 - ERROR - Vector dimension mismatch for PODC. Expected 180, got 28.
+2025-02-06 00:00:57,912 - ERROR - Vector dimension mismatch for BODI. Expected 180, got 67.
+2025-02-06 00:01:05,806 - ERROR - Vector dimension mismatch for MNY. Expected 180, got 36.
+2025-02-06 00:01:10,177 - ERROR - Vector dimension mismatch for IZEA. Expected 180, got 220.
+2025-02-06 00:01:14,344 - ERROR - Vector dimension mismatch for ZDGE. Expected 180, got 144.
+2025-02-06 00:01:14,428 - WARNING - [WARN] Failed to fetch data for GLE: 500: 404: No quarterly reports found
+2025-02-06 00:01:14,430 - WARNING - Skipping GLE due to incomplete data.
+2025-02-06 00:01:18,856 - ERROR - Vector dimension mismatch for WYY. Expected 180, got 220.
+2025-02-06 00:01:22,917 - ERROR - Vector dimension mismatch for CLPS. Expected 180, got 128.
+2025-02-06 00:01:27,325 - ERROR - Vector dimension mismatch for SCOR. Expected 180, got 253.
+2025-02-06 00:01:31,652 - ERROR - Vector dimension mismatch for BTCM. Expected 180, got 175.
+2025-02-06 00:01:36,008 - ERROR - Vector dimension mismatch for DTST. Expected 180, got 220.
+2025-02-06 00:01:40,592 - ERROR - Vector dimension mismatch for FENG. Expected 180, got 243.
+2025-02-06 00:01:44,601 - ERROR - Vector dimension mismatch for GIFT. Expected 180, got 48.
+2025-02-06 00:01:48,625 - ERROR - Vector dimension mismatch for SAIH. Expected 180, got 26.
+2025-02-06 00:01:52,811 - ERROR - Vector dimension mismatch for STBX. Expected 180, got 67.
+2025-02-06 00:01:56,906 - ERROR - Vector dimension mismatch for JFU. Expected 180, got 105.
+2025-02-06 00:01:57,090 - WARNING - [WARN] Failed to fetch data for JDZG: 500: 404: No quarterly earnings data found
+2025-02-06 00:01:57,091 - WARNING - Skipping JDZG due to incomplete data.
+2025-02-06 00:01:57,300 - WARNING - [WARN] Failed to fetch data for JZ: 500: 404: No quarterly earnings data found
+2025-02-06 00:01:57,301 - WARNING - Skipping JZ due to incomplete data.
+2025-02-06 00:01:57,540 - WARNING - [WARN] Failed to fetch data for ARBB: 500: 404: No quarterly earnings data found
+2025-02-06 00:01:57,541 - WARNING - Skipping ARBB due to incomplete data.
+2025-02-06 00:02:03,426 - ERROR - Vector dimension mismatch for LCFY. Expected 180, got 61.
+2025-02-06 00:02:07,899 - ERROR - Vector dimension mismatch for GMM. Expected 180, got 41.
+2025-02-06 00:02:11,806 - ERROR - Vector dimension mismatch for SOGP. Expected 180, got 33.
+2025-02-06 00:02:15,733 - ERROR - Vector dimension mismatch for SLE. Expected 180, got 100.
+2025-02-06 00:02:19,447 - ERROR - Vector dimension mismatch for ASST. Expected 180, got 34.
+2025-02-06 00:02:23,535 - ERROR - Vector dimension mismatch for ONFO. Expected 180, got 47.
+2025-02-06 00:02:27,842 - ERROR - Vector dimension mismatch for UPXI. Expected 180, got 59.
+2025-02-06 00:02:32,238 - ERROR - Vector dimension mismatch for DGLY. Expected 180, got 220.
+2025-02-06 00:02:36,668 - ERROR - Vector dimension mismatch for TC. Expected 180, got 99.
+2025-02-06 00:02:36,668 - WARNING - Failed tickers: ['GE', 'RTX', 'BA', 'LMT', 'TDG', 'GD', 'NOC', 'HWM', 'AXON', 'LHX', 'HEI', 'HEI.A', 'TXT', 'CW', 'RKLB', 'ESLT', 'BWXT', 'WWD', 'DRS', 'SARO', 'HII', 'CAE', 'LOAR', 'ERJ', 'MOG.B', 'MOG.A', 'HXL', 'KTOS', 'AVAV', 'ACHR', 'SPR', 'LUNR', 'MRCY', 'AIR', 'VSEC', 'VVX', 'CDRE', 'TGI', 'EVEX', 'RDW', 'PL', 'EH', 'DCO', 'SKYH', 'NPK', 'BYRN', 'ATRO', 'RGR', 'SWBI', 'EVTL', 'TATT', 'PKE', 'SATL', 'GAUZ', 'POWW', 'ISSC', 'SPCE', 'CODA', 'CVU', 'SPAI', 'OPXS', 'SIDU', 'SVT', 'HOVR', 'SIF', 'MNTS', 'PRZO', 'DPRO', 'AIRI', 'XTIA', 'KITT', 'GPUS', 'KWE', 'CSCO', 'MSI', 'HPE', 'ERIC', 'UI', 'NOK', 'ZBRA', 'CIEN', 'JNPR', 'SATS', 'LITE', 'ASTS', 'BDC', 'VIAV', 'EXTR', 'AAOI', 'INFN', 'HLIT', 'VSAT', 'COMM', 'DGII', 'ADTN', 'NTGR', 'CLFD', 'CRNT', 'GILT', 'AUDC', 'AVNW', 'TSAT', 'FEIM', 'ONDS', 'INSG', 'LTRX', 'KVHI', 'SATX', 'BKTI', 'SILC', 'AIRG', 'PCLA', 'CMTL', 'FKWL', 'OCC', 'AMPG', 'CMBM', 'UTSI', 'SYNX', 'BOSC', 'MOB', 'SONM', 'MYNA', 'CLRO', 'ASNS', 'BOXL', 'VISL', 'MITQ', 'SYTA', 'ZTS', 'HLN', 'TAK', 'TEVA', 'NBIX', 'ITCI', 'VTRS', 'RDY', 'LNTH', 'ELAN', 'ALKS', 'ALVO', 'PBH', 'AKAN', 'PRGO', 'BHC', 'AMRX', 'HCM', 'SUPN', 'AMPH', 'DVAX', 'INDV', 'EVO', 'KNSA', 'HROW', 'ANIP', 'PCRX', 'TLRY', 'COLL', 'BGM', 'EOLS', 'PAHC', 'AVDL', 'CRON', 'EBS', 'IRWD', 'AKBA', 'SIGA', 'TKNO', 'ORGO', 'KMDA', 'ESPR', 'ETON', 'AQST', 'CGC', 'ANIK', 'LFCR', 'ACB', 'ZYBT', 'OGI', 'PROC', 'BIOA', 'CRDL', 'CTOR', 'INCR', 'DERM', 'ASRT', 'RMTI', 'OPTN', 'RGC', 'SCYX', 'CPIX', 'IXHL', 'DRRX', 'GELS', 'CYTH', 'FLGC', 'TXMD', 'TLPH', 'AYTU', 'EVOK', 'RDHL', 'BFRI', 'QNTM', 'IMCC', 'SBFM', 'CPHI', 'SNOA', 'SHPH', 'PTPI', 'YCBD', 'PRFX', 'SXTC', 'ASML', 'AMAT', 'LRCX', 'KLAC', 'APH', 'GLW', 'TEL', 'GRMN', 'KEYS', 'FTV', 'TDY', 'TER', 'TRMB', 'JBL', 'FLEX', 'COHR', 'ENTG', 'CLS', 'SNX', 'ONTO', 'FN', 'MKSI', 'NVMI', 'OLED', 'CGNX', 'AMKR', 'BMI', 'ARW', 'LFUS', 'VNT', 'NSIT', 'NOVT', 'ITRI', 'AVT', 'CAMT', 'PONY', 'SANM', 'ST', 'PLXS', 'ESE', 'AMBA', 'FORM', 'IPGP', 'OSIS', 'VICR', 'TTMI', 'KLIC', 'ACLS', 'CNXN', 'ROG', 'KN', 'BHE', 'UCTT', 'CTS', 'VECO', 'PLAB', 'SCSC', 'ACMR', 'DQ', 'COHU', 'BELFA', 'BELFB', 'ICHR', 'INDI', 'DAKT', 'MLAB', 'LYTS', 'ITRN', 'CLMB', 'FARO', 'OUST', 'KULR', 'MEI', 'ALNT', 'MVIS', 'AEHR', 'BKSY', 'VPG', 'ATOM', 'KOPN', 'RELL', 'MPTI', 'NEON', 'GNSS', 'LPTH', 'WBX', 'INTT', 'WRAP', 'AXTI', 'LINK', 'ELTK', 'ASYS', 'OPTX', 'MIND', 'SOTK', 'SELX', 'REFR', 'FCUV', 'DSWL', 'LGL', 'HOLO', 'MTEK', 'CPSH', 'EMKR', 'DAIO', 'TRT', 'ELSE', 'IZM', 'TAIT', 'SMTK', 'KNW', 'ASTC', 'SGMA', 'IMTE', 'OST', 'WATT', 'SVRE', 'SOBR', 'VRT', 'HUBB', 'NVT', 'AYI', 'BE', 'AEIS', 'ENS', 'POWL', 'HAYW', 'ATKR', 'ENR', 'ENVX', 'PLUG', 'EOSE', 'ADSE', 'MVST', 'PLPC', 'KE', 'EAF', 'AMPX', 'FREY', 'NVX', 'SKYX', 'FCEL', 'LTBR', 'ULBI', 'NEOV', 'ELVA', 'CBAT', 'ESP', 'SDST', 'GWH', 'IPWR', 'STI', 'RFIL', 'PPSI', 'RAYA', 'APWC', 'FLUX', 'EPOW', 'CCTG', 'DFLI', 'LNKS', 'NXU', 'POLA', 'XPON', 'NFLX', 'TMUS', 'MCD', 'DIS', 'VZ', 'T', 'CMCSA', 'SBUX', 'CMG', 'CHTR', 'AMX', 'YUM', 'LYV', 'CHT', 'QSR', 'TKO', 'WBD', 'FWONK', 'FWONA', 'TEF', 'FOXA', 'DRI', 'FOX', 'VOD', 'TU', 'BCE', 'YUMC', 'TLK', 'NWS', 'NWSA', 'WMG', 'RCI', 'DPZ', 'EDR', 'CAVA', 'VIV', 'TXRH', 'ROKU', 'LBRDK', 'LBRDA', 'BROS', 'FYBR', 'WING', 'SKM', 'KT', 'PARAA', 'SIRI', 'PARA', 'EAT', 'LLYVK', 'LLYVA', 'TKC', 'TEO', 'TIMB', 'LUMN', 'USM', 'MSGS', 'SHAK', 'PHI', 'TIGO', 'LBTYA', 'LBTYK', 'LBTYB', 'TDS', 'CCOI', 'GSAT', 'CNK', 'SG', 'IRDM', 'VEON', 'WEN', 'MANU', 'CAKE', 'BATRA', 'BATRK', 'IQ', 'CABO', 'LGF.A', 'LGF.B', 'HDL', 'SPHR', 'ARCO', 'AMC', 'LILA', 'LILAK', 'ATUS', 'CBRL', 'PZZA', 'IHS', 'IMAX', 'IDT', 'CNNE', 'FWRG', 'GOGO', 'PLAY', 'BLMN', 'KRUS', 'TV', 'PTLO', 'BJRI', 'HUYA', 'RBBN', 'JACK', 'BH', 'BH.A', 'MCS', 'SHEN', 'ATEX', 'RSVR', 'RICK', 'DIN', 'AMCX', 'VENU', 'NIPG', 'WOW', 'LOCO', 'PBPB', 'DENN', 'NATH', 'AENT', 'GENK', 'ATNI', 'RDCM', 'CXDO', 'GAIA', 'LVO', 'STKS', 'RRGB', 'FATBB', 'SIFY', 'FAT', 'THCH', 'FNGR', 'CNVS', 'UCL', 'NDLS', 'ANGH', 'ARKR', 'BDL', 'MPU', 'AGAE', 'RDIB', 'RAVE', 'KORE', 'CHSN', 'RDI', 'GTIM', 'TOON', 'KUKE', 'PNST', 'CPOP', 'PETZ', 'BTBD', 'BREA', 'HOFV', 'BLMZ', 'REBN', 'YOSH', 'ADD', 'NVDA', 'AVGO', 'TSM', 'AMD', 'QCOM', 'TXN', 'ARM', 'MU', 'ADI', 'MRVL', 'INTC', 'NXPI', 'MPWR', 'MCHP', 'ON', 'ASX', 'GFS', 'STM', 'ALAB', 'UMC', 'SWKS', 'CRDO', 'MTSI', 'QRVO', 'LSCC', 'RMBS', 'SMTC', 'TSEM', 'SITM', 'CRUS', 'ALGM', 'SLAB', 'PI', 'POWI', 'SYNA', 'DIOD', 'VSH', 'HIMX', 'MXL', 'SIMO', 'AOSL', 'WOLF', 'CEVA', 'IMOS', 'NVTS', 'LASR', 'SKYT', 'AIP', 'POET', 'NVEC', 'VLN', 'ICG', 'MX', 'MRAM', 'QUIK', 'NaN', 'LAES', 'GCTS', 'GSIT', 'SQNS', 'WKEY', 'MOBX', 'PXLW', 'LEDS', 'WISA', 'PRSO', 'MSFT', 'ORCL', 'CRM', 'SAP', 'NOW', 'ADBE', 'PLTR', 'INTU', 'UBER', 'SHOP', 'PANW', 'APP', 'ADP', 'MSTR', 'CRWD', 'CDNS', 'SNPS', 'FTNT', 'TEAM', 'WDAY', 'ADSK', 'TTD', 'SNOW', 'ROP', 'XYZ', 'PAYX', 'DDOG', 'FICO', 'NET', 'HUBS', 'ANSS', 'ZS', 'GDDY', 'IOT', 'CPAY', 'TYL', 'ZM', 'PTC', 'TOST', 'CHKP', 'VRSN', 'SSNC', 'MDB', 'GRAB', 'KSPI', 'DOCU', 'AFRM', 'CYBR', 'NTNX', 'MANH', 'TWLO', 'GEN', 'GWRE', 'DT', 'AZPN', 'FFIV', 'OKTA', 'DUOL', 'BSY', 'AKAM', 'WIX', 'RBRK', 'MNDY', 'YMM', 'PCOR', 'KVYO', 'PAYC', 'PCTY', 'DAY', 'ESTC', 'NICE', 'FOUR', 'DSGX', 'GTLB', 'DBX', 'DOX', 'BILL', 'ALTR', 'U', 'PEGA', 'APPF', 'CFLT', 'VERX', 'TTAN', 'INFA', 'CCCS', 'PATH', 'OTEX', 'S', 'SPSC', 'OS', 'WEX', 'CWAN', 'CVLT', 'HCP', 'SRAD', 'SOUN', 'QXO', 'QTWO', 'LYFT', 'ACIW', 'INTA', 'WK', 'FRSH', 'TENB', 'QLYS', 'CLBT', 'VRNS', 'BRZE', 'RELY', 'CORZ', 'ASAN', 'ZETA', 'BOX', 'IDCC', 'EEFT', 'AI', 'GBTG', 'PYCR', 'PAY', 'FROG', 'BLKB', 'ALIT', 'RUM', 'BL', 'NCNO', 'PAYO', 'ALKT', 'LIF', 'DOCN', 'AVPT', 'ZI', 'DLO', 'DV', 'YOU', 'RNG', 'ALRM', 'TDC', 'BTDR', 'GRND', 'FIVN', 'PAR', 'AGYS', 'CALX', 'STNE', 'ODD', 'SWI', 'RPD', 'BB', 'PRGS', 'APPN', 'NATL', 'FLYW', 'SEMR', 'LSPD', 'CXM', 'IBTA', 'KC', 'RAMP', 'PLUS', 'AVDX', 'PAGS', 'EVTC', 'SPT', 'DFIN', 'JAMF', 'EVCM', 'DAVA', 'MQ', 'GB', 'PD', 'DBD', 'NN', 'MTTR', 'NTCT', 'UPBD', 'VRNT', 'ZUO', 'CSGS', 'MLNK', 'SPNS', 'ADEA', 'ENFN', 'AMPL', 'ATEN', 'KARO', 'FSLY', 'SMWB', 'SABR', 'DCBO', 'DSP', 'TUYA', 'OLO', 'DAVE', 'VTEX', 'EXOD', 'PRO', 'PSFE', 'PDFS', 'TIXT', 'VMEO', 'ML', 'BLND', 'RDWR', 'BASE', 'GCT', 'ETWO', 'CINT', 'RSKD', 'AIOT', 'YEXT', 'IIIV', 'SCWX', 'OSPN', 'PUBM', 'PRTH', 'RPAY', 'CGNT', 'PGY', 'DJCO', 'RZLV', 'YALA', 'IMXI', 'CRNC', 'RXT', 'HKD', 'RDVT', 'CCSI', 'BIGC', 'MTLS', 'MITK', 'BAND', 'PRCH', 'API', 'BKKT', 'XPER', 'TRAK', 'LSAK', 'LGTY', 'OOMA', 'DGNX', 'EGHT', 'ARQQ', 'ASUR', 'KLTR', 'EB', 'BLZE', 'ALLT', 'DOMO', 'NRDY', 'LAW', 'SMRT', 'ILLR', 'EXFY', 'PDYN', 'IMMR', 'ONTF', 'SVCO', 'SANG', 'RMNI', 'ATGL', 'PERF', 'ARBE', 'TLS', 'AEVA', 'APPS', 'MAPS', 'AEYE', 'HPAI', 'MRT', 'BCOV', 'EGAN', 'REKR', 'PSQH', 'TCX', 'TROO', 'CCRD', 'GRRR', 'AZ', 'SSTI', 'PAYS', 'AISP', 'XNET', 'RDZN', 'YAAS', 'NTCL', 'ZENV', 'LPSN', 'RSSS', 'VERI', 'QH', 'YXT', 'OCFT', 'UPLD', 'DHX', 'ZENA', 'SNCR', 'PHUN', 'INUV', 'VTSI', 'ALAR', 'USIO', 'ALTS', 'AUID', 'BMR', 'BMTX', 'WFCF', 'NUKK', 'DUOT', 'IDN', 'INLX', 'SYT', 'MSAI', 'AIXI', 'SWVL', 'LGCL', 'RTC', 'NVNI', 'MNDO', 'VRAR', 'HKIT', 'FAAS', 'WCT', 'MTC', 'JG', 'KPLT', 'ISDR', 'AWRE', 'NXPL', 'VHC', 'HTCR', 'MASK', 'XBP', 'NTWK', 'LDTC', 'SURG', 'MOGO', 'CXAI', 'AIFF', 'CREX', 'CNTM', 'EZFL', 'SMSI', 'HUBC', 'STEC', 'NXTT', 'BNAI', 'BLIN', 'INTZ', 'ORKT', 'DTSS', 'DATS', 'MLGO', 'BLBX', 'RYDE', 'PET', 'XTKG', 'CISO', 'APCX', 'CYN', 'RVYL', 'BNZI', 'UBXG', 'LIDR', 'MFI', 'ELWS', 'AMST', 'JNVR', 'IDAI', 'VS', 'GITS', 'MRIN', 'FRGT', 'ULY', 'TGL', 'FTFT', 'VERB', 'CETX', 'JTAI', 'OBLG', 'IFBD', 'SOPA', 'OLB', 'AUUD', 'RPM', 'BCAN', 'MYSZ', 'TAOP', 'SGN', 'ATCH', 'LYT', 'FSLR', 'ENPH', 'NXT', 'RUN', 'JKS', 'ARRY', 'SEDG', 'SHLS', 'CSIQ', 'NOVA', 'TOYO', 'CSLR', 'ZEO', 'MAXN', 'SOL', 'SMXT', 'TYGO', 'FTCI', 'SPRU', 'BEEM', 'VSTE', 'TURB', 'VVPR', 'ASTI', 'LIN', 'SHW', 'APD', 'ECL', 'DD', 'PPG', 'LYB', 'IFF', 'WLK', 'SQM', 'EMN', 'ALB', 'AXTA', 'ESI', 'ALTM', 'BCPC', 'CBT', 'NEU', 'AVNT', 'ASH', 'FUL', 'SXT', 'SSL', 'WDFC', 'CC', 'IOSP', 'HWKN', 'KWR', 'MTX', 'PRM', 'NGVT', 'SCL', 'KRO', 'ECVT', 'OEC', 'KOP', 'ODC', 'MATV', 'GEVO', 'HDSN', 'LWLG', 'FF', 'TSE', 'ALTO', 'CMT', 'NTIC', 'IZTC', 'FSI', 'LOOP', 'FEAM', 'CRKN', 'BGLC', 'BON', 'SNES', 'CNEY', 'ETN', 'PH', 'ITW', 'EMR', 'CMI', 'AME', 'OTIS', 'IR', 'ROK', 'XYL', 'DOV', 'SYM', 'PNR', 'IEX', 'GGG', 'NDSN', 'ITT', 'RRX', 'AOS', 'CR', 'GNRC', 'GTLS', 'DCI', 'FLS', 'MIDD', 'WTS', 'SMR', 'JBTM', 'CSWI', 'GTES', 'FELE', 'KAI', 'MIR', 'NPO', 'CXT', 'MWA', 'ATS', 'ENOV', 'HI', 'EPAC', 'B', 'SXI', 'NPWR', 'XMTR', 'TNC', 'NNE', 'HLIO', 'KRNT', 'AMSC', 'THR', 'GRC', 'PSIX', 'SERV', 'GHM', 'BLDP', 'OFLX', 'LXFR', 'RR', 'PKOH', 'TWIN', 'BW', 'HURC', 'OPTT', 'TAYD', 'SHMD', 'HUHU', 'IVAC', 'TPIC', 'LASE', 'INLF', 'XCH', 'LBGJ', 'BWEN', 'GTEC', 'CETY', 'CVV', 'SPPL', 'BURU', 'JCSE', 'GOOGL', 'GOOG', 'META', 'ACN', 'IBM', 'FI', 'SPOT', 'INFY', 'DASH', 'FIS', 'IT', 'CTSH', 'WIT', 'RDDT', 'BIDU', 'BR', 'CDW', 'GIB', 'PINS', 'LDOS', 'Z', 'SNAP', 'ZG', 'TME', 'EPAM', 'JKHY', 'AUR', 'CACI', 'PSN', 'KD', 'NBIS', 'GLOB', 'G', 'MTCH', 'EXLS', 'DJT', 'BZ', 'SAIC', 'INGM', 'WRD', 'ASGN', 'GDS', 'CLVT', 'DXC', 'IAC', 'CNXC', 'ATHM', 'WNS', 'YELP', 'YY', 'WB', 'APLD', 'UPWK', 'GENI', 'VYX', 'VNET', 'GDYN', 'NABL', 'WBTN', 'OPRA', 'TASK', 'FORTY', 'TTGT', 'MOMO', 'NYAX', 'TBLA', 'XRX', 'BMBL', 'PENG', 'INOD', 'FVRR', 'GETY', 'BBAI', 'SSTK', 'NRDS', 'SEAT', 'KIND', 'ANGI', 'DMRC', 'HCKT', 'MAX', 'THRY', 'EVER', 'CNDT', 'MGIC', 'CTLP', 'DOYU', 'UIS', 'PERI', 'JFIN', 'GRPN', 'TSSI', 'OB', 'TRUE', 'IBEX', 'ZH', 'NOTE', 'TTEC', 'TRVG', 'CSPI', 'III', 'CMCM', 'TDTH', 'VEEA', 'BZFD', 'CCG', 'AREN', 'CTM', 'PODC', 'BODI', 'MNY', 'IZEA', 'ZDGE', 'GLE', 'WYY', 'CLPS', 'SCOR', 'BTCM', 'DTST', 'FENG', 'GIFT', 'SAIH', 'STBX', 'JFU', 'JDZG', 'JZ', 'ARBB', 'LCFY', 'GMM', 'SOGP', 'SLE', 'ASST', 'ONFO', 'UPXI', 'DGLY', 'TC']

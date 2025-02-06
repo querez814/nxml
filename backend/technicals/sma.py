@@ -3,7 +3,7 @@ import dotenv as env
 import os
 import requests as r
 from typing import List, Dict, Any
-from fetch.prices import get_closing_prices  # Assumed to work with your ticker data
+from fetch.prices import get_closing_prices
 import statistics
 from datetime import datetime, timedelta
 
