@@ -3,6 +3,7 @@ from fastapi import APIRouter, HTTPException
 import requests as r
 import dotenv as env
 import os
+import sys
 import pandas as pd
 import numpy as np
 import gc

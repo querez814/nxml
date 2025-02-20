@@ -1,3 +1,4 @@
+
 import os
 import time
 import numpy as np
@@ -143,9 +144,9 @@ def process_ticker(ticker):
         return None
 
 def main():
-    """Main function to process all tickers."""
+    """Main function to process 10 tickers."""
     database_url = setup_db_url()
-    tickers = fetch_ticker_list(database_url)
+    tickers = fetch_ticker_list(database_url)[:10]  # Process only the first 10 tickers for testing
 
     failed_tickers = []
 
@@ -156,10 +157,10 @@ def main():
 
     if failed_tickers:
         logging.warning(f"Failed tickers: {failed_tickers}")
-        with open("failed_tickers.txt", "w") as f:
+        with open("failed_tickers_test.txt", "w") as f:
             f.write("\n".join(failed_tickers))
 
-    print("[DONE] Processing complete!")
+    print("[DONE] Processing of 10 tickers complete!")
 
 if __name__ == "__main__":
     main()
