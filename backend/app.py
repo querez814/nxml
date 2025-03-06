@@ -33,6 +33,7 @@ app.add_middleware(
         "https://yourduediligence.app",  
         "https://investorterminal-production.up.railway.app",
         "https://n8n.simplicitytechsolutions.com",
+        "https://byom-chat.vercel.app/"
     ],
     allow_credentials=True,
     allow_methods=["*"],
