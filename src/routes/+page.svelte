@@ -18,7 +18,7 @@
 		<h1
 			class="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-center font-sans text-3xl font-semibold text-transparent md:text-4xl"
 		>
-			NXML Terminal
+			DDP
 		</h1>
 		<p class="text-center text-sm text-neutral-500">Enter the team password to continue.</p>
 
