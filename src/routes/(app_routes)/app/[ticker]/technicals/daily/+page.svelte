@@ -5,6 +5,10 @@
 
 	let { data }: { data: PageData } = $props();
 
+	const hasData = $derived(
+		data?.priceData && data?.macd && data?.rsi && data?.aroon && data?.stochastic && data?.summary
+	);
+
 	// DOM elements for charts
 	let priceChartEl: HTMLElement;
 	let macdChartEl: HTMLElement;
@@ -16,7 +20,7 @@
 	let rsiChart: ApexCharts;
 
 	// Price chart configuration
-	const priceChartOptions = {
+	const priceChartOptions = $derived.by(() => ({
 		chart: {
 			type: 'candlestick',
 			height: 400,
@@ -35,12 +39,14 @@
 		},
 		series: [
 			{
-				data: [
-					{
-						x: new Date(),
-						y: [data.priceData.open, data.priceData.high, data.priceData.low, data.priceData.close]
-					}
-				]
+				data: data?.priceData
+					? [
+							{
+								x: new Date(),
+								y: [data.priceData.open, data.priceData.high, data.priceData.low, data.priceData.close]
+							}
+						]
+					: []
 			}
 		],
 		xaxis: {
@@ -54,10 +60,10 @@
 				enabled: true
 			}
 		}
-	};
+	}));
 
 	// MACD chart configuration
-	const macdChartOptions = {
+	const macdChartOptions = $derived.by(() => ({
 		chart: {
 			type: 'line',
 			height: 200,
@@ -69,17 +75,17 @@
 			{
 				name: 'MACD',
 				type: 'line',
-				data: [data.macd.values.macd]
+				data: data?.macd ? [data.macd.values.macd] : []
 			},
 			{
 				name: 'Signal',
 				type: 'line',
-				data: [data.macd.values.signal]
+				data: data?.macd ? [data.macd.values.signal] : []
 			},
 			{
 				name: 'Histogram',
 				type: 'bar',
-				data: [data.macd.values.histogram]
+				data: data?.macd ? [data.macd.values.histogram] : []
 			}
 		],
 		colors: ['#2E93fA', '#FF9800', '#66DA26'],
@@ -88,10 +94,10 @@
 				formatter: (value: number) => value.toFixed(2)
 			}
 		}
-	};
+	}));
 
 	// RSI chart configuration
-	const rsiChartOptions = {
+	const rsiChartOptions = $derived.by(() => ({
 		chart: {
 			type: 'line',
 			height: 200,
@@ -102,7 +108,7 @@
 		series: [
 			{
 				name: 'RSI',
-				data: [data.rsi.value]
+				data: data?.rsi ? [data.rsi.value] : []
 			}
 		],
 		yaxis: {
@@ -126,9 +132,10 @@
 				}
 			]
 		}
-	};
+	}));
 
 	onMount(() => {
+		if (!hasData || !priceChartEl || !macdChartEl || !rsiChartEl) return;
 		// Initialize all charts
 		priceChart = new ApexCharts(priceChartEl, priceChartOptions);
 		macdChart = new ApexCharts(macdChartEl, macdChartOptions);
@@ -147,6 +154,12 @@
 </script>
 
 <div class="min-h-screen bg-gray-100 p-6">
+	{#if !hasData}
+		<div class="rounded-lg bg-amber-50 p-6 text-amber-800">
+			<p class="font-semibold">Unable to load technical data</p>
+			<p class="mt-2 text-sm">Ensure the backend is running and ALPHA_VANTAGE key is set.</p>
+		</div>
+	{:else}
 	<!-- Main Dashboard Container -->
 	<div class="mx-auto max-w-7xl space-y-6">
 		<!-- Header Section -->
@@ -156,20 +169,20 @@
 				<div class="rounded-md bg-gray-50 p-4">
 					<p class="text-sm text-gray-500">Overall Trend</p>
 					<p
-						class="text-lg font-semibold {data.summary.overall_trend === 'bullish'
+						class="text-lg font-semibold {data.summary?.overall_trend === 'bullish'
 							? 'text-green-600'
 							: 'text-red-600'}"
 					>
-						{data.summary.overall_trend.toUpperCase()}
+						{data.summary?.overall_trend?.toUpperCase() ?? ''}
 					</p>
 				</div>
 				<div class="rounded-md bg-gray-50 p-4">
 					<p class="text-sm text-gray-500">Signal Strength</p>
-					<p class="text-lg font-semibold">{data.summary.signal_strength}</p>
+					<p class="text-lg font-semibold">{data.summary?.signal_strength ?? ''}</p>
 				</div>
 				<div class="rounded-md bg-gray-50 p-4">
 					<p class="text-sm text-gray-500">Recommended Action</p>
-					<p class="text-lg font-semibold">{data.summary.recommended_action.toUpperCase()}</p>
+					<p class="text-lg font-semibold">{data.summary?.recommended_action?.toUpperCase() ?? ''}</p>
 				</div>
 			</div>
 		</div>
@@ -189,11 +202,11 @@
 				<div class="mt-4 grid grid-cols-2 gap-4 text-sm">
 					<div>
 						<p class="text-gray-500">Trend</p>
-						<p class="font-semibold">{data.macd.signals.trend}</p>
+						<p class="font-semibold">{data.macd?.signals?.trend ?? ''}</p>
 					</div>
 					<div>
 						<p class="text-gray-500">Momentum</p>
-						<p class="font-semibold">{data.macd.signals.momentum}</p>
+						<p class="font-semibold">{data.macd?.signals?.momentum ?? ''}</p>
 					</div>
 				</div>
 			</div>
@@ -205,11 +218,11 @@
 				<div class="mt-4 grid grid-cols-2 gap-4 text-sm">
 					<div>
 						<p class="text-gray-500">Status</p>
-						<p class="font-semibold">{data.rsi.status}</p>
+						<p class="font-semibold">{data.rsi?.status ?? ''}</p>
 					</div>
 					<div>
 						<p class="text-gray-500">Trend</p>
-						<p class="font-semibold">{data.rsi.trend}</p>
+						<p class="font-semibold">{data.rsi?.trend ?? ''}</p>
 					</div>
 				</div>
 			</div>
@@ -223,19 +236,19 @@
 				<div class="grid grid-cols-2 gap-4">
 					<div>
 						<p class="text-sm text-gray-500">Up</p>
-						<p class="text-lg font-semibold">{data.aroon.values.aroon_up.toFixed(2)}</p>
+						<p class="text-lg font-semibold">{data.aroon?.values?.aroon_up?.toFixed(2) ?? '-'}</p>
 					</div>
 					<div>
 						<p class="text-sm text-gray-500">Down</p>
-						<p class="text-lg font-semibold">{data.aroon.values.aroon_down.toFixed(2)}</p>
+						<p class="text-lg font-semibold">{data.aroon?.values?.aroon_down?.toFixed(2) ?? '-'}</p>
 					</div>
 					<div>
 						<p class="text-sm text-gray-500">Trend</p>
-						<p class="font-semibold">{data.aroon.signals.trend}</p>
+						<p class="font-semibold">{data.aroon?.signals?.trend ?? ''}</p>
 					</div>
 					<div>
 						<p class="text-sm text-gray-500">Signal</p>
-						<p class="font-semibold">{data.aroon.signals.signal}</p>
+						<p class="font-semibold">{data.aroon?.signals?.signal ?? ''}</p>
 					</div>
 				</div>
 			</div>
@@ -246,22 +259,23 @@
 				<div class="grid grid-cols-2 gap-4">
 					<div>
 						<p class="text-sm text-gray-500">K-Line</p>
-						<p class="text-lg font-semibold">{data.stochastic.values.k_line.toFixed(2)}</p>
+						<p class="text-lg font-semibold">{data.stochastic?.values?.k_line?.toFixed(2) ?? '-'}</p>
 					</div>
 					<div>
 						<p class="text-sm text-gray-500">D-Line</p>
-						<p class="text-lg font-semibold">{data.stochastic.values.d_line.toFixed(2)}</p>
+						<p class="text-lg font-semibold">{data.stochastic?.values?.d_line?.toFixed(2) ?? '-'}</p>
 					</div>
 					<div>
 						<p class="text-sm text-gray-500">Status</p>
-						<p class="font-semibold">{data.stochastic.signals.status}</p>
+						<p class="font-semibold">{data.stochastic?.signals?.status ?? ''}</p>
 					</div>
 					<div>
 						<p class="text-sm text-gray-500">Signal</p>
-						<p class="font-semibold">{data.stochastic.signals.signal}</p>
+						<p class="font-semibold">{data.stochastic?.signals?.signal ?? ''}</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
+	{/if}
 </div>

@@ -22,7 +22,10 @@ router = APIRouter()
 
 @router.get("/general")
 async def general_news():
-    market_news_url = f"https://stocknewsapi.com/api/v1/category?section=general&items=8&page=1&token={os.getenv("STOCK_NEWS_API_KEY")}"
+    market_news_url = (
+        "https://stocknewsapi.com/api/v1/category"
+        f"?section=general&items=8&page=1&token={news_api}"
+    )
     response = r.get(market_news_url)
     #enforce json
     response_native = response.json()
@@ -35,14 +38,20 @@ async def general_news():
 
 @router.get("/{ticker}")
 async def get_ticker_news(ticker:str):
-    news_url = f"https://stocknewsapi.com/api/v1?tickers={ticker}&items=10&page=1&token={os.getenv("STOCK_NEWS_API_KEY")}" 
+    news_url = (
+        "https://stocknewsapi.com/api/v1"
+        f"?tickers={ticker}&items=10&page=1&token={news_api}"
+    )
     response = r.get(news_url)
     #enforce json
     response_native = response.json()
     response_data = response_native["data"]
 
     #get analyst upgrade/downgrade
-    analyst_rate_url = f"https://stocknewsapi.com/api/v1/ratings?tickers={ticker}&items=10&page=1&token={os.getenv("STOCK_NEWS_API_KEY")}"
+    analyst_rate_url = (
+        "https://stocknewsapi.com/api/v1/ratings"
+        f"?tickers={ticker}&items=10&page=1&token={news_api}"
+    )
     analyst_rate_response = r.get(analyst_rate_url)
     #enforce json
     analyst_rate_native = analyst_rate_response.json()

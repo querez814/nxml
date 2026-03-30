@@ -3,7 +3,7 @@
 	import DataTable from '$lib/components/display/DataTable.svelte';
 
 	let { data }: { data: PageData } = $props();
-	const quarters = data.quarters || [];
+	const quarters = $derived(data.quarters || []);
 
 	function formatMetricName(name: string): string {
 		const metricDisplayNames: { [key: string]: string } = {
@@ -26,7 +26,7 @@
 				.replace(/\b\w/g, (c) => c.toUpperCase())
 		);
 	}
-	const quarterDates = quarters.map((q) => q.fiscalDateEnding);
+	const quarterDates = $derived(quarters.map((q) => q.fiscalDateEnding));
 
 	const valuationMetrics = [
 		'evtosales',
@@ -56,7 +56,7 @@
 		'Industry'
 	];
 
-	const rawData =
+	const rawData = $derived(
 		quarters.length > 0
 			? valuationMetrics.map((metric) => ({
 					metric: formatMetricName(metric),
@@ -64,12 +64,13 @@
 					...quarters.reduce(
 						(acc, quarter) => ({
 							...acc,
-							[quarter.fiscalDateEnding]: quarter[metric].toFixed(2)
+							[quarter.fiscalDateEnding]: quarter[metric] != null ? Number(quarter[metric]).toFixed(2) : '-'
 						}),
 						{}
 					)
 				}))
-			: [];
+			: []
+	);
 
 	const yoyData = [];
 	const qoqData = [];

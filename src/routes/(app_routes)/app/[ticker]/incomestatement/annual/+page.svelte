@@ -1,11 +1,11 @@
 <script lang="ts">
-	import type { PageData } from '../quarterly/$types';
+	import type { PageData } from './$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 	import IncomeStatementTutorial from '$lib/components/tutorial/incomestatement/IncomeStatementTutorial.svelte';
 	let showTutorial = $state(false);
 
 	let { data }: { data: PageData } = $props();
-	const quarters = data.quarters || [];
+	const quarters = $derived(data.quarters || []);
 
 	function formatMetricName(name: string): string {
 		return name
@@ -16,7 +16,7 @@
 			.replace(/\b\w/g, (c) => c.toUpperCase());
 	}
 
-	const quarterDates = quarters.map((q: any) => q.fiscalDateEnding);
+	const quarterDates = $derived(quarters.map((q: any) => q.fiscalDateEnding));
 
 	const marginMetrics = ['grossMargin', 'ebitdaMargin', 'operatingMargin', 'netMargin'];
 
@@ -29,7 +29,7 @@
 		...marginMetrics
 	];
 
-	const rawData =
+	const rawData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
 					.filter(
@@ -50,9 +50,10 @@
 							{}
 						)
 					}))
-			: [];
+			: []
+	);
 
-	const yoyData =
+	const yoyData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
 					.filter(
@@ -72,9 +73,10 @@
 							{}
 						)
 					}))
-			: [];
+			: []
+	);
 
-	const marginsData =
+	const marginsData = $derived(
 		quarters.length > 0
 			? marginMetrics.map((metric) => ({
 					metric: formatMetricName(metric),
@@ -87,7 +89,8 @@
 						{}
 					)
 				}))
-			: [];
+			: []
+	);
 </script>
 
 <div class="mb-4 flex justify-end">

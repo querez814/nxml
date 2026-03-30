@@ -99,6 +99,3 @@ def get_market_env():
     for sym in symbols:
         results[sym] = get_env_for_symbol(sym)
     return results
-
-
-print(get_market_env())

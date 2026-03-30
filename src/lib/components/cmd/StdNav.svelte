@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { ChevronDown, LineChart, PieChart, DollarSign, BarChart2 } from 'lucide-svelte';
+	import { ChevronDown, LineChart, PieChart, DollarSign, BarChart2, ShieldAlert } from 'lucide-svelte';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
@@ -35,6 +35,12 @@
 			path: 'valuation',
 			icon: LineChart,
 			subsections: ['Quarterly']
+		},
+		{
+			name: 'Financing Risk',
+			path: 'financing-risk',
+			icon: ShieldAlert,
+			subsections: ['Analysis']
 		}
 	];
 

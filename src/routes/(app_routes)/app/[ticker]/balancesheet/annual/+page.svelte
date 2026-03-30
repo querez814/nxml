@@ -1,9 +1,9 @@
 <script lang="ts">
-	import type { PageData } from '../$types';
+	import type { PageData } from './$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 	import BalanceSheetTutorial from '$lib/components/tutorial/balancesheet/BalanceSheetTutorial.svelte';
 	let { data }: { data: PageData } = $props();
-	const quarters = data.quarters || [];
+	const quarters = $derived(data.quarters || []);
 	let showTutorial = $state(false);
 	function formatMetricName(name: string): string {
 		return name
@@ -14,9 +14,9 @@
 			.replace(/\b\w/g, (c) => c.toUpperCase());
 	}
 
-	const quarterDates = quarters.map((q: any) => q.fiscalDateEnding);
+	const quarterDates = $derived(quarters.map((q: any) => q.fiscalDateEnding));
 
-	const rawData =
+	const rawData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
 					.filter(
@@ -34,9 +34,10 @@
 							{}
 						)
 					}))
-			: [];
+			: []
+	);
 
-	const yoyData =
+	const yoyData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
 					.filter((key) => key.endsWith('_YoY'))
@@ -50,9 +51,10 @@
 							{}
 						)
 					}))
-			: [];
+			: []
+	);
 
-	const qoqData =
+	const qoqData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
 					.filter((key) => key.endsWith('_QoQ'))
@@ -66,7 +68,8 @@
 							{}
 						)
 					}))
-			: [];
+			: []
+	);
 </script>
 
 <div class="mb-4 flex justify-end">

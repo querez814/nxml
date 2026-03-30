@@ -87,7 +87,7 @@
 							class="h-2 w-2 rounded-full transition-colors duration-200"
 							class:bg-primary={i === $currentStep}
 							class:bg-muted={i !== $currentStep}
-						/>
+						></div>
 					{/each}
 				</div>
 			</div>

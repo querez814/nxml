@@ -1,0 +1,6 @@
+pinecone
+openai
+nltk
+finvizfinance
+sec-edgar-downloader
+edgar

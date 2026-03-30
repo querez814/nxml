@@ -8,9 +8,7 @@
 	import Others from '$lib/components/technicals/Indicators/Others.svelte';
 
 	let { data }: { data: PageData } = $props();
-	console.log('Page Data', data);
-	let ticker = data.ticker;
-	console.log('ticker', ticker);
+	const ticker = $derived(data.ticker);
 </script>
 
 <Rsi {ticker} />

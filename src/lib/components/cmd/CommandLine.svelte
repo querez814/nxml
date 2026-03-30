@@ -1,9 +1,10 @@
 <script lang="ts">
-	import { goto } from '$app/navigation';
 	import { onMount } from 'svelte';
+	import { goto } from '$app/navigation';
 
-	let { onTickerChange } = $props<{
+	let { onTickerChange, currentTicker = '' } = $props<{
 		onTickerChange?: (ticker: string, fullPath?: string) => void;
+		currentTicker?: string;
 	}>();
 	let inputValue = $state('');
 	let history: string[] = [];
@@ -30,6 +31,18 @@
 			return;
 		}
 
+		// On ticker page: "is q" = section + subsection for current ticker
+		if (currentTicker && parts.length === 2) {
+			const section = sectionAliases[parts[0] as keyof typeof sectionAliases] || parts[0];
+			const subsection = subsectionAliases[parts[1] as keyof typeof subsectionAliases] || parts[1];
+			if (Object.values(sectionAliases).includes(section) && Object.values(subsectionAliases).includes(subsection)) {
+				const p = `/app/${currentTicker}/${section}/${subsection}`;
+				goto(p);
+				return;
+			}
+		}
+
+		// Full form: "NTNX is q" or "AAPL bs q"
 		if (parts.length > 0 && /^[A-Za-z]{1,5}$/.test(parts[0])) {
 			const ticker = parts[0].toUpperCase();
 			let path = `/app/${ticker}`;
@@ -52,17 +65,20 @@
 				}
 			}
 
-			goto(path, { invalidateAll: true });
+			goto(path);
 		}
 	}
 
-	function handleSubmit() {
+	function handleSubmit(event?: Event) {
+		event?.preventDefault();
+		event?.stopPropagation();
 		if (inputValue.trim()) {
 			history = [...history, inputValue];
 			historyIndex = history.length;
 			parseCommand(inputValue);
 			inputValue = '';
 		}
+		return false;
 	}
 
 	function handleKeydown(event: KeyboardEvent) {
@@ -96,22 +112,48 @@
 
 	onMount(() => {
 		window.addEventListener('keydown', handleGlobalKeydown);
+		// Ensure input gets focus so Enter works (autofocus can fail in some contexts)
+		setTimeout(() => inputRef?.focus(), 100);
 		return () => {
 			window.removeEventListener('keydown', handleGlobalKeydown);
 		};
 	});
 </script>
 
-<div class="flex w-full flex-col">
-	<div class="flex w-full items-center rounded-md border border-gray-800 bg-gray-900 p-3">
+<form
+	class="flex w-full flex-col"
+	role="search"
+	style="display: contents"
+	onsubmit={(e) => {
+		e.preventDefault();
+		e.stopPropagation();
+		handleSubmit(e);
+		return false;
+	}}
+>
+	<div
+		class="flex w-full items-center gap-2 rounded-md border border-gray-800 bg-gray-900 p-3"
+		role="button"
+		tabindex="0"
+		onclick={() => inputRef?.focus()}
+		onkeydown={(e) => { if (e.key === 'Enter') { e.preventDefault(); inputRef?.focus(); } }}
+	>
 		<span class="mr-2 font-mono text-green-400">❯</span>
 		<input
 			bind:this={inputRef}
 			type="text"
 			bind:value={inputValue}
 			onkeydown={handleKeydown}
-			placeholder="Try 'AAPL bs q' or type 'help'"
+			autofocus
+			placeholder="Try 'NTNX is q' or 'AAPL bs q'"
 			class="flex-1 border-none bg-transparent font-mono text-sm text-gray-100 outline-none placeholder:text-gray-600"
+			aria-label="Command line - type ticker and section, e.g. NTNX is q"
 		/>
+		<button
+			type="submit"
+			class="rounded bg-green-600 px-3 py-1 text-sm font-medium text-white hover:bg-green-500"
+		>
+			Go
+		</button>
 	</div>
-</div>
+</form>

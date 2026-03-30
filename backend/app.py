@@ -17,6 +17,11 @@ from fetch.latextobinaryimg import router as latex_router
 from entry import router as init_router
 from technicals.momentum import router as momentum_router
 from movers import router as movers_router
+from analysis.income_statement import router as analysis_income_router
+from analysis.cashflow_statement import router as analysis_cashflow_router
+from analysis.balancesheet_statement import router as analysis_balancesheet_router
+from analysis.financing_risk import router as analysis_financing_risk_router
+from analysis.revenue_segments import router as analysis_revenue_segments_router
 from technicals.sma import router as setup_router
 from technicals.rsi import router as rsi_router
 from technicals.dmi import router as dmi_router
@@ -76,5 +81,10 @@ app.include_router(dmi_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(macd_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(oscillator_router, prefix="/technicals", tags = ["Technicals"] )
 app.include_router(movers_router, prefix="/current", tags=["Current"])
+app.include_router(analysis_income_router, prefix="/analysis", tags=["Analysis"])
+app.include_router(analysis_cashflow_router, prefix="/analysis", tags=["Analysis"])
+app.include_router(analysis_balancesheet_router, prefix="/analysis", tags=["Analysis"])
+app.include_router(analysis_financing_risk_router, prefix="/analysis", tags=["Analysis"])
+app.include_router(analysis_revenue_segments_router, prefix="/analysis", tags=["Analysis"])
 #app.include_router(competitors_router, prefix="/current", tags=["Current"])
 #app.include_router(screener_router, prefix="/screen", tags=["Current"])

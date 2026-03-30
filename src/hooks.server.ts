@@ -1,12 +1,15 @@
-import type { Handle } from '@sveltejs/kit'
-import { sequence } from '@sveltejs/kit/hooks'
-import { handleClerk } from 'clerk-sveltekit/server'
-import { CLERK_SECRET_KEY } from '$env/static/private'
+import { redirect, type Handle } from '@sveltejs/kit';
 
-export const handle: Handle = sequence(
-	handleClerk(CLERK_SECRET_KEY, {
-		debug: true,
-		protectedPaths: ['/app'],
-		signInUrl: '/',
-	})
-)
+const GATE_COOKIE = 'app_gate';
+const PROTECTED_PREFIX = '/app';
+
+export const handle: Handle = ({ resolve, event }) => {
+	if (event.url.pathname.startsWith(PROTECTED_PREFIX)) {
+		const gate = event.cookies.get(GATE_COOKIE);
+		if (gate !== '1') {
+			redirect(302, '/');
+		}
+	}
+
+	return resolve(event);
+};

@@ -10,7 +10,7 @@ export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
 };
 
 export const fetchIncomeStatementAnnual = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/income-statemen/annual/${ticker}`);
+	const response = await fetch(`${api_url}/financials/income-statement/annual/${ticker}`);
 	if (!response.ok) {
 		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
 	}

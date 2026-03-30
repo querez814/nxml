@@ -87,7 +87,7 @@
 								: 'bg-muted'}"
 							on:click={() => scrollTo(i)}
 							aria-label="Go to slide {i + 1}"
-						/>
+						></button>
 					{/each}
 				</div>
 				<button class="relative right-0" on:click={scrollNext}>
