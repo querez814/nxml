@@ -1,25 +1,35 @@
+import { dedupeRequest } from '$lib/utils/inflightRequestCache';
 const api_url = import.meta.env.VITE_API_URL;
 
 export const fetchIncomeStatement = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/income-statement/quarterly/${ticker}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
-	}
-	const rawData = await response.json();
-	return cleanIncomeStatementData(rawData);
+	const url = `${api_url}/financials/income-statement/quarterly/${ticker}`;
+	return dedupeRequest(`income-q:${ticker.toUpperCase()}`, async () => {
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
+		}
+		const rawData = await response.json();
+		return cleanIncomeStatementData(rawData);
+	});
 };
 
 export const fetchIncomeStatementAnnual = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/income-statement/annual/${ticker}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
-	}
-	const rawData = await response.json();
-	return cleanIncomeStatementDataAnnual(rawData);
+	const url = `${api_url}/financials/income-statement/annual/${ticker}`;
+	return dedupeRequest(`income-a:${ticker.toUpperCase()}`, async () => {
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Failed to fetch income statement data: ${response.statusText}`);
+		}
+		const rawData = await response.json();
+		return cleanIncomeStatementDataAnnual(rawData);
+	});
 };
 
-const cleanIncomeStatementData = (data: any[]): any[] => {
-	return data.map((item) => ({
+const toRows = (data: unknown): any[] => (Array.isArray(data) ? data : []);
+
+const cleanIncomeStatementData = (data: unknown): any[] => {
+	const rows = toRows(data);
+	return rows.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 		totalRevenue: (parseFloat(item.totalRevenue) / 1e6).toLocaleString(),
 		costOfRevenue: (parseFloat(item.costOfRevenue) / 1e6).toLocaleString(),
@@ -157,8 +167,9 @@ const cleanIncomeStatementData = (data: any[]): any[] => {
 	}));
 };
 
-const cleanIncomeStatementDataAnnual = (data: any[]): any[] => {
-	return data.map((item) => ({
+const cleanIncomeStatementDataAnnual = (data: unknown): any[] => {
+	const rows = toRows(data);
+	return rows.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 		grossProfit: (parseFloat(item.grossProfit) / 1e6).toLocaleString(),
 		totalRevenue: (parseFloat(item.totalRevenue) / 1e6).toLocaleString(),

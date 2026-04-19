@@ -1,14 +1,14 @@
 from fastapi import APIRouter, HTTPException
-from fetch.income_statement import get_quarterly_statement_data
 from datetime import datetime
-from fetch.cashflow import get_quarterly_cashflow_statement_data
 from zoneinfo import ZoneInfo
-from fetch.balancesheet import get_quarterly_balance_sheet_data
-from typing import Optional
+from typing import Optional, Any, List, Dict
 import requests as r
+
+from fetch.av_util import av_get_json_async, av_get_json_sync, raise_if_av_blocked
 import dotenv as env
 import os
 import pandas as pd
+
 env.load_dotenv()
 
 av_api = os.getenv("ALPHA_VANTAGE")
@@ -22,23 +22,42 @@ TIMEFRAME_FUNCTION_MAP = {
     "monthly": "TIME_SERIES_MONTHLY_ADJUSTED"
 }
 
-@router.get("/prices/{ticker}")
-def get_prices(ticker: str):
-    url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={ticker}&outputsize=full&apikey={av_api}"
-    response = r.get(url)
-    data_json = response.json()
+def _daily_adjusted_to_records(data_json: dict) -> List[Dict[str, Any]]:
     time_series = data_json.get("Time Series (Daily)", {})
-    transformed_data = []
+    transformed_data: List[Dict[str, Any]] = []
     for date, values in time_series.items():
-        flattened_entry = {"fiscalDateEnding": date}
+        flattened_entry: Dict[str, Any] = {"fiscalDateEnding": date}
         for key, value in values.items():
             try:
                 flattened_entry[key] = round(float(value), 2)
             except ValueError:
                 flattened_entry[key] = 0
         transformed_data.append(flattened_entry)
+    return transformed_data
+
+
+@router.get("/prices/{ticker}")
+def get_prices(ticker: str):
+    url = f"https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol={ticker}&outputsize=full&apikey={av_api}"
+    data_json = av_get_json_sync(url)
+    transformed_data = _daily_adjusted_to_records(data_json)
     prices_df = pd.DataFrame(transformed_data)
     return prices_df.to_dict(orient="records")
+
+
+async def get_daily_prices_compact_async(ticker: str) -> List[Dict[str, Any]]:
+    """Latest ~100 trading days — for news/valuation chips without full history."""
+    url = (
+        "https://www.alphavantage.co/query"
+        f"?function=TIME_SERIES_DAILY_ADJUSTED&symbol={ticker}&outputsize=compact&apikey={av_api}"
+    )
+    try:
+        data_json = await av_get_json_async(url)
+    except HTTPException as exc:
+        if exc.status_code == 429:
+            return []
+        raise
+    return _daily_adjusted_to_records(dict(data_json))
 
 @router.get("/close/{ticker}")
 def get_closing_prices(ticker: str):

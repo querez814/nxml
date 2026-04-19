@@ -8,16 +8,7 @@
 		date: string | Date;
 	}
 
-	// Props
-	let {
-		data,
-		xKey,
-		yKey,
-		yKeys = undefined,
-		title = '',
-		width: initialWidth = undefined,
-		height: initialHeight = undefined
-	} = $props<{
+	type Props = {
 		data: DataPoint[];
 		xKey: string;
 		yKey?: string;
@@ -25,42 +16,51 @@
 		title?: string;
 		width?: number;
 		height?: number;
-	}>();
+	};
 
-	let chartDiv: HTMLDivElement | null = null;
+	let {
+		data,
+		xKey,
+		yKey,
+		yKeys,
+		title = '',
+		width: widthProp,
+		height: heightProp
+	}: Props = $props();
 
-	let dimensions = $state({
-		width: initialWidth || 0,
-		height: initialHeight || 0
-	});
+	let chartDiv: HTMLDivElement | null = $state(null);
+	let measuredWidth = $state(0);
+	let measuredHeight = $state(0);
+
+	const widthValue = $derived(widthProp ?? measuredWidth);
+	const heightValue = $derived(heightProp ?? measuredHeight);
 
 	$effect(() => {
-		if (chartDiv) {
-			dimensions = {
-				width: initialWidth || chartDiv.clientWidth,
-				height: initialHeight || chartDiv.clientHeight
-			};
-		}
+		if (!chartDiv) return;
+		if (widthProp !== undefined && heightProp !== undefined) return;
+		measuredWidth = chartDiv.clientWidth;
+		measuredHeight = chartDiv.clientHeight;
 	});
 
 	const margin = { top: 20, right: 20, bottom: 30, left: 40 };
 
-	let xScale = $state<ScaleTime<number, number>>(scaleTime());
-	let yScale = $state<ScaleLinear<number, number>>(scaleLinear());
-	let lineGenerator = $state<Line<DataPoint>>(line<DataPoint>());
+	let xScale: ScaleTime<number, number> = $state(scaleTime());
+	let yScale: ScaleLinear<number, number> = $state(scaleLinear());
+	let lineGenerator: Line<DataPoint> = $state(line<DataPoint>());
 
 	$effect(() => {
-		if (!data.length || !dimensions.width || !dimensions.height) return;
+		if (!data?.length || !widthValue || !heightValue) return;
 
-		const dateExtent = extent(data, (d: any) => new Date(d[xKey])) as [Date, Date];
-		xScale = xScale.domain(dateExtent).range([margin.left, dimensions.width - margin.right]);
+		const dateExtent = extent(data, (d: DataPoint) => new Date(d[xKey])) as [Date, Date];
+		xScale = xScale.domain(dateExtent).range([margin.left, widthValue - margin.right]);
 
-		const allValues: number[] = yKeys
-			? data.flatMap((d: any) => yKeys.map((key: any) => d[key]))
-			: data.map((d: any) => d[yKey as string]);
+		const localYKeys = yKeys;
+		const allValues: number[] = localYKeys
+			? data.flatMap((d: DataPoint) => localYKeys.map((key: string) => d[key]))
+			: data.map((d: DataPoint) => d[yKey as string]);
 
 		const valueExtent = extent(allValues) as [number, number];
-		yScale = yScale.domain(valueExtent).range([dimensions.height - margin.bottom, margin.top]);
+		yScale = yScale.domain(valueExtent).range([heightValue - margin.bottom, margin.top]);
 
 		lineGenerator = lineGenerator
 			.x((d) => xScale(new Date(d[xKey])))
@@ -77,11 +77,11 @@
 </script>
 
 <div class="h-full w-full" bind:this={chartDiv}>
-	{#if dimensions.width > 0 && dimensions.height > 0 && data.length}
-		<svg width={dimensions.width} height={dimensions.height} class="h-full w-full">
+	{#if widthValue > 0 && heightValue > 0 && data?.length}
+		<svg width={widthValue} height={heightValue} class="h-full w-full">
 			{#if title}
 				<text
-					x={dimensions.width / 2}
+					x={widthValue / 2}
 					y={margin.top / 2}
 					text-anchor="middle"
 					class="fill-current text-sm font-medium"
@@ -102,7 +102,7 @@
 				<path d={getPathData(data)} class="fill-none stroke-current" />
 			{/if}
 
-			<g transform={`translate(0,${dimensions.height - margin.bottom})`}>
+			<g transform={`translate(0,${heightValue - margin.bottom})`}>
 				{#each xScale.ticks(5) as tick (tick.getTime())}
 					<g transform={`translate(${xScale(tick)},0)`}>
 						<line y2="6" stroke="currentColor" />

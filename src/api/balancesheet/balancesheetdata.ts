@@ -1,26 +1,36 @@
+import { dedupeRequest } from '$lib/utils/inflightRequestCache';
 const api_url = import.meta.env.VITE_API_URL;
 //
 export const fetchBalanceSheet = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/balancesheet-statement/quarterly/${ticker}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
-	}
+	const url = `${api_url}/financials/balancesheet-statement/quarterly/${ticker}`;
+	return dedupeRequest(`balance-q:${ticker.toUpperCase()}`, async () => {
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
+		}
 
-	const rawData = await response.json();
-	return cleanBalanceSheetData(rawData);
+		const rawData = await response.json();
+		return cleanBalanceSheetData(rawData);
+	});
 };
 
 export const fetchBalanceSheetAnnual = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/balancesheet-statement/annual/${ticker}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
-	}
-	const rawData = await response.json();
-	return cleanBalanceSheetDataAnnual(rawData);
+	const url = `${api_url}/financials/balancesheet-statement/annual/${ticker}`;
+	return dedupeRequest(`balance-a:${ticker.toUpperCase()}`, async () => {
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Failed to fetch balance sheet data: ${response.statusText}`);
+		}
+		const rawData = await response.json();
+		return cleanBalanceSheetDataAnnual(rawData);
+	});
 };
 
-const cleanBalanceSheetData = (data: any[]): any[] => {
-	return data.map((item) => ({
+const toRows = (data: unknown): any[] => (Array.isArray(data) ? data : []);
+
+const cleanBalanceSheetData = (data: unknown): any[] => {
+	const rows = toRows(data);
+	return rows.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 		cashAndCashEquivalentsAtCarryingValue: (
 			parseFloat(item.cashAndCashEquivalentsAtCarryingValue) / 1e6
@@ -83,8 +93,9 @@ const cleanBalanceSheetData = (data: any[]): any[] => {
 	}));
 };
 
-const cleanBalanceSheetDataAnnual = (data: any[]): any[] => {
-	return data.map((item) => ({
+const cleanBalanceSheetDataAnnual = (data: unknown): any[] => {
+	const rows = toRows(data);
+	return rows.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 		cashAndCashEquivalentsAtCarryingValue: (
 			parseFloat(item.cashAndCashEquivalentsAtCarryingValue) / 1e6

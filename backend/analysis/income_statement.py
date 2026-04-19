@@ -11,6 +11,7 @@ import requests
 from dotenv import load_dotenv
 
 from fetch.income_statement import get_quarterly_statement_data
+import db
 
 load_dotenv()
 
@@ -144,6 +145,7 @@ async def analyze_income_statement(ticker: str):
         )
 
     try:
+        ticker_u = ticker.upper()
         # Fetch quarterly data from internal income statement API
         quarters_raw = get_quarterly_statement_data(ticker)
         quarters = quarters_raw[:8]  # Slice to most recent 8 quarters
@@ -153,6 +155,13 @@ async def analyze_income_statement(ticker: str):
                 status_code=404,
                 detail=f"No quarterly income statement data found for {ticker}",
             )
+
+        ctx = db.analysis_context_key(
+            ticker_u, str(quarters[0].get("fiscalDateEnding") or "") if quarters else None
+        )
+        cached = await db.fetch_llm_cache_row("income_analysis", ticker_u, ctx)
+        if cached and not db.is_llm_cache_stale(cached) and isinstance(cached.get("payload"), dict):
+            return dict(cached["payload"])
 
         # Convert to JSON-serializable format (handle numpy types, NaN, etc.)
         def to_json_safe(val):
@@ -212,7 +221,9 @@ async def analyze_income_statement(ticker: str):
             )
 
         analysis_text = choices[0].get("message", {}).get("content", "").strip()
-        return {"ticker": ticker.upper(), "analysis": analysis_text}
+        out = {"ticker": ticker_u, "analysis": analysis_text}
+        await db.upsert_llm_cache("income_analysis", ticker_u, ctx, out, OPENROUTER_MODEL)
+        return out
 
     except HTTPException:
         raise

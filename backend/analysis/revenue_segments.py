@@ -11,6 +11,8 @@ from fastapi import APIRouter, HTTPException
 import requests
 from dotenv import load_dotenv
 
+import db
+
 load_dotenv()
 
 router = APIRouter()
@@ -218,6 +220,12 @@ async def get_revenue_segments(ticker: str):
     try:
         ticker_upper = ticker.upper()
         filing_url, filing_date = _get_latest_10q_url(ticker_upper, sec_key)
+
+        ctx = f"{ticker_upper}:{filing_date}"
+        cached = await db.fetch_llm_cache_row("revenue_segments", ticker_upper, ctx)
+        if cached and not db.is_llm_cache_stale(cached) and isinstance(cached.get("payload"), dict):
+            return dict(cached["payload"])
+
         mdna_text = _extract_section(filing_url, "part1item2", sec_key, max_chars=60_000)
         financial_statements_text = _extract_section(
             filing_url, "part1item1", sec_key, max_chars=60_000
@@ -283,6 +291,7 @@ async def get_revenue_segments(ticker: str):
 
         result["ticker"] = result.get("ticker") or ticker_upper
         result["filing_date"] = result.get("filing_date") or filing_date
+        await db.upsert_llm_cache("revenue_segments", ticker_upper, ctx, result, OPENROUTER_MODEL)
         return result
 
     except HTTPException:

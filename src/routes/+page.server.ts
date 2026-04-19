@@ -1,8 +1,21 @@
 import { redirect, fail } from '@sveltejs/kit';
 import { timingSafeEqual } from 'crypto';
+import { env as privateEnv } from '$env/dynamic/private';
 import type { Actions } from './$types';
 
 const GATE_COOKIE = 'app_gate';
+
+/** Last resort if neither ``APP_GATE_PASS`` nor legacy ``APP_GATE_PASSWORD`` is set. */
+const DEFAULT_GATE_PASSWORD = 'yXtFund70#';
+
+/** In a ``.env`` file, ``#`` starts a comment unless the value is quoted, e.g. ``APP_GATE_PASS="yXtFund70#"``. */
+function expectedGateSecret(): string {
+	const fromPass =
+		privateEnv.APP_GATE_PASS?.trim() || process.env.APP_GATE_PASS?.trim();
+	const fromLegacy =
+		privateEnv.APP_GATE_PASSWORD?.trim() || process.env.APP_GATE_PASSWORD?.trim();
+	return fromPass || fromLegacy || DEFAULT_GATE_PASSWORD;
+}
 
 export const actions: Actions = {
 	default: async ({ request, cookies }) => {
@@ -13,10 +26,7 @@ export const actions: Actions = {
 			return fail(400, { error: 'Password is required.' });
 		}
 
-		const expected = process.env.APP_GATE_PASSWORD ?? '';
-		if (!expected) {
-			return fail(500, { error: 'Gate not configured.' });
-		}
+		const expected = expectedGateSecret();
 
 		const a = Buffer.from(password, 'utf-8');
 		const b = Buffer.from(expected, 'utf-8');

@@ -23,18 +23,27 @@
 		a: 'annual'
 	};
 
-	function parseCommand(input: string): void {
-		const parts = input.toLowerCase().trim().split(/\s+/);
+	/** Single-token shortcuts like ``brk.b`` or ``GOOGL`` — not section aliases. */
+	const RESERVED_SINGLE = new Set(['bs', 'cf', 'is', 'val']);
 
-		if (parts[0] === 'clear') {
+	function isTickerToken(raw: string): boolean {
+		if (!raw || RESERVED_SINGLE.has(raw.toLowerCase())) return false;
+		return /^[A-Za-z][A-Za-z0-9.-]{0,14}$/.test(raw);
+	}
+
+	function parseCommand(input: string): void {
+		const parts = input.trim().split(/\s+/).map((p) => p.trim()).filter(Boolean);
+		const lower = parts.map((p) => p.toLowerCase());
+
+		if (lower[0] === 'clear') {
 			inputValue = '';
 			return;
 		}
 
 		// On ticker page: "is q" = section + subsection for current ticker
 		if (currentTicker && parts.length === 2) {
-			const section = sectionAliases[parts[0] as keyof typeof sectionAliases] || parts[0];
-			const subsection = subsectionAliases[parts[1] as keyof typeof subsectionAliases] || parts[1];
+			const section = sectionAliases[lower[0] as keyof typeof sectionAliases] || lower[0];
+			const subsection = subsectionAliases[lower[1] as keyof typeof subsectionAliases] || lower[1];
 			if (Object.values(sectionAliases).includes(section) && Object.values(subsectionAliases).includes(subsection)) {
 				const p = `/app/${currentTicker}/${section}/${subsection}`;
 				goto(p);
@@ -42,19 +51,30 @@
 			}
 		}
 
+		// Just a ticker → overview ``/app/{TICKER}`` (preserve dots, e.g. brk.b)
+		if (parts.length === 1 && isTickerToken(parts[0])) {
+			const sym = parts[0].toUpperCase();
+			if (onTickerChange) {
+				onTickerChange(sym);
+			} else {
+				goto(`/app/${sym}`);
+			}
+			return;
+		}
+
 		// Full form: "NTNX is q" or "AAPL bs q"
-		if (parts.length > 0 && /^[A-Za-z]{1,5}$/.test(parts[0])) {
+		if (parts.length > 0 && isTickerToken(parts[0])) {
 			const ticker = parts[0].toUpperCase();
 			let path = `/app/${ticker}`;
 
 			if (parts[1]) {
-				const section = sectionAliases[parts[1] as keyof typeof sectionAliases] || parts[1];
+				const section = sectionAliases[lower[1] as keyof typeof sectionAliases] || lower[1];
 				if (section in sectionAliases || Object.values(sectionAliases).includes(section)) {
 					path += `/${section}`;
 
 					if (parts[2]) {
 						const subsection =
-							subsectionAliases[parts[2] as keyof typeof subsectionAliases] || parts[2];
+							subsectionAliases[lower[2] as keyof typeof subsectionAliases] || lower[2];
 						if (
 							subsection in subsectionAliases ||
 							Object.values(subsectionAliases).includes(subsection)
@@ -145,9 +165,9 @@
 			bind:value={inputValue}
 			onkeydown={handleKeydown}
 			autofocus
-			placeholder="Try 'NTNX is q' or 'AAPL bs q'"
+			placeholder="Ticker (e.g. AAPL) or NTNX is q"
 			class="flex-1 border-none bg-transparent font-mono text-sm text-gray-100 outline-none placeholder:text-gray-600"
-			aria-label="Command line - type ticker and section, e.g. NTNX is q"
+			aria-label="Command line — type a ticker for overview, or ticker plus section e.g. NTNX is q"
 		/>
 		<button
 			type="submit"

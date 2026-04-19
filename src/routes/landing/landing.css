@@ -1,0 +1,325 @@
+.tzr-landing {
+	--tzr-emerald-deep: #062e1e;
+	--tzr-gold-metallic: #d4af37;
+	--tzr-charcoal-rich: #121212;
+	--tzr-text: rgba(255, 255, 255, 0.9);
+	--tzr-text-dim: rgba(255, 255, 255, 0.62);
+
+	min-height: 100vh;
+	background: var(--tzr-charcoal-rich);
+	color: var(--tzr-text);
+	font-family: 'Montserrat', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+}
+
+.tzr-landing :where(h1, h2, h3, .brand-name, .brand-line) {
+	font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+.tzr-landing a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.tzr-landing .navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 50;
+	padding: 2rem 0;
+	transition: background-color 240ms ease, backdrop-filter 240ms ease, border-color 240ms ease, padding 240ms ease;
+}
+
+.tzr-landing .navbar.is-scrolled {
+	padding: 1rem 0;
+	background: color-mix(in srgb, var(--tzr-charcoal-rich) 94%, transparent);
+	backdrop-filter: blur(12px);
+	border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.tzr-landing .navbar-inner {
+	max-width: 80rem;
+	margin: 0 auto;
+	padding: 0 1.5rem;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 1rem;
+}
+
+.tzr-landing .brand {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.5rem;
+}
+
+.tzr-landing .brand-mark {
+	background: var(--tzr-gold-metallic);
+	color: var(--tzr-emerald-deep);
+	font-family: 'Playfair Display', Georgia, serif;
+	font-weight: 700;
+	font-size: 1.125rem;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	padding: 0.5rem 0.55rem;
+}
+
+.tzr-landing .brand-name {
+	display: none;
+	text-transform: uppercase;
+	letter-spacing: -0.03em;
+	font-weight: 500;
+	font-size: 1.3rem;
+}
+
+.tzr-landing .desktop-nav {
+	display: none;
+	align-items: center;
+	gap: 1.75rem;
+}
+
+.tzr-landing .desktop-nav > a {
+	text-transform: uppercase;
+	font-size: 0.625rem;
+	letter-spacing: 0.2em;
+	font-weight: 600;
+	color: var(--tzr-text-dim);
+	transition: color 160ms ease;
+}
+
+.tzr-landing .desktop-nav > a:hover {
+	color: #fff;
+}
+
+.tzr-landing .mobile-toggle {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2.25rem;
+	height: 2.25rem;
+	border: 1px solid rgba(255, 255, 255, 0.22);
+	background: transparent;
+	color: #fff;
+	cursor: pointer;
+}
+
+.tzr-landing .mobile-toggle svg {
+	width: 1.2rem;
+	height: 1.2rem;
+	fill: none;
+	stroke: currentColor;
+	stroke-width: 2;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+}
+
+.tzr-landing .mobile-nav {
+	display: grid;
+	gap: 1rem;
+	padding: 1rem 1.5rem 1.25rem;
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	background: color-mix(in srgb, var(--tzr-charcoal-rich) 96%, transparent);
+}
+
+.tzr-landing .mobile-nav > a {
+	text-transform: uppercase;
+	letter-spacing: 0.18em;
+	font-size: 0.72rem;
+	color: var(--tzr-text-dim);
+}
+
+.tzr-landing .cta-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	background: var(--tzr-gold-metallic);
+	color: var(--tzr-emerald-deep);
+	text-transform: uppercase;
+	letter-spacing: 0.16em;
+	font-size: 0.68rem;
+	font-weight: 700;
+	padding: 0.8rem 1.2rem;
+	transition: transform 140ms ease, background-color 160ms ease;
+}
+
+.tzr-landing .cta-link:hover {
+	background: #f0ce61;
+	transform: translateY(-1px);
+}
+
+.tzr-landing .hero {
+	min-height: 100vh;
+	display: flex;
+	align-items: center;
+	background:
+		radial-gradient(circle at center, #0a3d29 0%, var(--tzr-emerald-deep) 100%),
+		linear-gradient(180deg, rgba(18, 18, 18, 0.15), rgba(18, 18, 18, 0.45));
+}
+
+.tzr-landing .hero-content,
+.tzr-landing .contact-content,
+.tzr-landing .footer-inner {
+	max-width: 80rem;
+	margin: 0 auto;
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.tzr-landing .hero-content {
+	padding-top: 7rem;
+	padding-bottom: 3rem;
+	max-width: 68rem;
+}
+
+.tzr-landing .eyebrow {
+	margin: 0 0 1.1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.3em;
+	font-size: 0.62rem;
+	font-weight: 600;
+	color: var(--tzr-gold-metallic);
+}
+
+.tzr-landing h1 {
+	margin: 0;
+	max-width: 58rem;
+	font-size: clamp(2.3rem, 8vw, 5.2rem);
+	line-height: 1.08;
+	letter-spacing: -0.03em;
+}
+
+.tzr-landing h1 > span {
+	display: block;
+	font-style: italic;
+	font-weight: 400;
+	opacity: 0.85;
+}
+
+.tzr-landing .hero-content > p {
+	margin: 1.6rem 0 0;
+	max-width: 41rem;
+	font-size: clamp(1rem, 2.2vw, 1.25rem);
+	line-height: 1.65;
+	color: var(--tzr-text-dim);
+}
+
+.tzr-landing .hero-actions {
+	margin-top: 2rem;
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem;
+}
+
+.tzr-landing .secondary-link {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid rgba(255, 255, 255, 0.24);
+	padding: 0.8rem 1rem;
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 0.66rem;
+	font-weight: 600;
+	color: var(--tzr-text);
+}
+
+.tzr-landing .secondary-link:hover {
+	background: rgba(255, 255, 255, 0.08);
+}
+
+.tzr-landing .contact {
+	background: var(--tzr-emerald-deep);
+	padding: 6rem 0;
+}
+
+.tzr-landing .contact h2 {
+	margin: 0;
+	font-size: clamp(2rem, 5.8vw, 3.4rem);
+	text-transform: capitalize;
+	letter-spacing: -0.02em;
+}
+
+.tzr-landing .contact p {
+	margin-top: 1rem;
+	max-width: 42rem;
+	line-height: 1.7;
+	color: var(--tzr-text-dim);
+}
+
+.tzr-landing .contact a[href^='mailto:'] {
+	display: inline-block;
+	margin-top: 1.25rem;
+	font-size: 0.9rem;
+	text-decoration: underline;
+	text-decoration-color: rgba(212, 175, 55, 0.6);
+	text-underline-offset: 0.2rem;
+}
+
+.tzr-landing .footer {
+	border-top: 1px solid rgba(255, 255, 255, 0.08);
+	padding: 2.5rem 0;
+	background: var(--tzr-charcoal-rich);
+}
+
+.tzr-landing .footer-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 1.5rem;
+}
+
+.tzr-landing .brand-line {
+	margin: 0;
+	font-size: 1.4rem;
+}
+
+.tzr-landing .footer p {
+	margin: 0.65rem 0 0;
+	max-width: 36rem;
+	color: rgba(255, 255, 255, 0.55);
+	font-size: 0.92rem;
+	line-height: 1.6;
+}
+
+.tzr-landing .footer nav {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 1rem;
+}
+
+.tzr-landing .footer nav a {
+	text-transform: uppercase;
+	letter-spacing: 0.14em;
+	font-size: 0.63rem;
+	color: var(--tzr-text-dim);
+}
+
+.tzr-landing .footer nav a:hover {
+	color: #fff;
+}
+
+@media (min-width: 640px) {
+	.tzr-landing .brand-name {
+		display: inline-block;
+	}
+}
+
+@media (min-width: 900px) {
+	.tzr-landing .desktop-nav {
+		display: flex;
+	}
+
+	.tzr-landing .mobile-toggle,
+	.tzr-landing .mobile-nav {
+		display: none;
+	}
+
+	.tzr-landing .hero-content {
+		padding-top: 9rem;
+	}
+
+	.tzr-landing .footer-inner {
+		flex-direction: row;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+}

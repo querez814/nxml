@@ -1,45 +1,120 @@
 <script lang="ts">
-	import { enhance } from '$app/forms';
-	import Spotlight from '$lib/components/ui/Spotlight/Spotlight.svelte';
+	import './landing/landing.css';
 
-	let { form } = $props();
+	let scrollPosition = $state(0);
+	let isScrolled = $derived(scrollPosition > 50);
+	let isMobileMenuOpen = $state(false);
+
+	const navItems = [
+		{ label: 'About', href: '#about' },
+		{ label: 'Contact', href: '#contact' }
+	];
+
+	function handleScroll() {
+		scrollPosition = window.scrollY;
+	}
+
+	function toggleMobileMenu() {
+		isMobileMenuOpen = !isMobileMenuOpen;
+	}
+
+	function closeMobileMenu() {
+		isMobileMenuOpen = false;
+	}
 </script>
 
-<div class="relative flex min-h-screen w-full items-center justify-center">
-	<Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="gray" />
-	<span
-		class="absolute inset-0 -z-10 h-full w-full bg-background bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]"
-	></span>
-	<div
-		class="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-background/60 to-background"
-	></div>
+<svelte:window onscroll={handleScroll} />
 
-	<div class="z-10 flex w-full max-w-sm flex-col items-center gap-6 px-6">
-		<h1
-			class="bg-gradient-to-b from-neutral-200 to-neutral-500 bg-clip-text text-center font-sans text-3xl font-semibold text-transparent md:text-4xl"
-		>
-			DDP
-		</h1>
-		<p class="text-center text-sm text-neutral-500">Enter the team password to continue.</p>
+<div class="tzr-landing">
+	<header class={`navbar ${isScrolled ? 'is-scrolled' : ''}`}>
+		<div class="navbar-inner">
+			<a class="brand" href="/" aria-label="TZR Fund home">
+				<span class="brand-mark">TZR</span>
+				<span class="brand-name">Fund</span>
+			</a>
 
-		<form method="POST" use:enhance class="flex w-full flex-col gap-3">
-			<input
-				name="password"
-				type="password"
-				placeholder="Password"
-				required
-				autocomplete="off"
-				class="w-full rounded-lg border border-neutral-700/50 bg-neutral-900/60 px-4 py-2.5 font-mono text-sm text-neutral-200 placeholder-neutral-600 outline-none ring-amber-500/40 transition focus:border-amber-500/50 focus:ring-2"
-			/>
+			<nav class="desktop-nav" aria-label="Primary">
+				{#each navItems as item (item.href)}
+					<a href={item.href}>{item.label}</a>
+				{/each}
+				<a class="cta-link" href="/programs-password">Click here to enter DDP</a>
+			</nav>
+
 			<button
-				type="submit"
-				class="rounded-lg bg-amber-500/20 px-4 py-2.5 font-mono text-sm font-medium text-amber-400 transition hover:bg-amber-500/30"
+				type="button"
+				class="mobile-toggle"
+				aria-label={isMobileMenuOpen ? 'Close navigation menu' : 'Open navigation menu'}
+				aria-expanded={isMobileMenuOpen}
+				aria-controls="mobile-nav"
+				onclick={toggleMobileMenu}
 			>
-				Enter
+				{#if isMobileMenuOpen}
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M6 6L18 18M18 6L6 18" />
+					</svg>
+				{:else}
+					<svg viewBox="0 0 24 24" aria-hidden="true">
+						<path d="M3 6h18M3 12h18M3 18h18" />
+					</svg>
+				{/if}
 			</button>
-			{#if form?.error}
-				<p class="text-center text-xs text-red-400">{form.error}</p>
-			{/if}
-		</form>
-	</div>
+		</div>
+
+		{#if isMobileMenuOpen}
+			<nav id="mobile-nav" class="mobile-nav" aria-label="Mobile">
+				{#each navItems as item (item.href)}
+					<a href={item.href} onclick={closeMobileMenu}>{item.label}</a>
+				{/each}
+				<a class="cta-link" href="/programs-password" onclick={closeMobileMenu}>Click here to enter DDP</a>
+			</nav>
+		{/if}
+	</header>
+
+	<main>
+		<section id="about" class="hero">
+			<div class="hero-content">
+				<p class="eyebrow">Multi-Strategy Opportunity Fund</p>
+				<h1>
+					Discerning capital meets
+					<span>disciplined strategy.</span>
+				</h1>
+				<p>
+					Uncovering latent value in the global technology sector through sophisticated equity and
+					options management.
+				</p>
+				<div class="hero-actions">
+					<a class="cta-link" href="/programs-password">Click here to enter DDP</a>
+					<a class="secondary-link" href="#contact">Contact investor relations</a>
+				</div>
+			</div>
+		</section>
+
+		<section id="contact" class="contact">
+			<div class="contact-content">
+				<p class="eyebrow">Investor Relations</p>
+				<h2>Inquiry for qualified investors.</h2>
+				<p>
+					TZR Fund is open to accredited individuals and institutional partners who share our long-term
+					vision for disciplined growth.
+				</p>
+				<a href="mailto:investorrelations@tzrfund.com">investorrelations@tzrfund.com</a>
+			</div>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<div class="footer-inner">
+			<div>
+				<p class="brand-line">TZR Fund</p>
+				<p>
+					A multi-strategy opportunity fund specializing in technology and undervalued global equities.
+				</p>
+			</div>
+			<nav aria-label="Footer">
+				<a href="#about">About</a>
+				<a href="#contact">Contact</a>
+				<a href="/programs-password">Click here to enter DDP</a>
+			</nav>
+		</div>
+	</footer>
 </div>

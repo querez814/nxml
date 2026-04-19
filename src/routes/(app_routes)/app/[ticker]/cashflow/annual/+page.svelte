@@ -1,6 +1,7 @@
 <script lang="ts">
 	import type { PageData } from './$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
+	import { keepVarianceKey } from '$lib/utils/financialTableKeys';
 
 	let { data }: { data: PageData } = $props();
 	const quarters = $derived(data.quarters || []);
@@ -57,9 +58,7 @@
 	const yoyData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
-					.filter(
-						(key) => key.endsWith('_YoY') && !marginMetrics.some((metric) => key.startsWith(metric))
-					)
+					.filter((key) => keepVarianceKey(key, marginMetrics, '_YoY'))
 					.map((metric) => ({
 						metric: formatMetricName(metric.replace('_YoY', '')),
 						originalMetric: metric.replace('_YoY', ''),

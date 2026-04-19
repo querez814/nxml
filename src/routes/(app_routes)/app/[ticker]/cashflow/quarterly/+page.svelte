@@ -5,6 +5,7 @@
 	import type { PageData } from '../quarterly/$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 	import CashFlowTutorial from '$lib/components/tutorial/cashflow/CashFlowTutorial.svelte';
+	import { keepVarianceKey } from '$lib/utils/financialTableKeys';
 
 	const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -99,9 +100,7 @@
 	const yoyData = $derived(
 		quarters.length > 0
 			? Object.keys(quarters[0])
-					.filter(
-						(key) => key.endsWith('_YoY') && !marginMetrics.some((metric) => key.startsWith(metric))
-					)
+					.filter((key) => keepVarianceKey(key, marginMetrics, '_YoY'))
 					.map((metric) => ({
 						metric: formatMetricName(metric.replace('_YoY', '')),
 						originalMetric: metric.replace('_YoY', ''),
@@ -120,9 +119,7 @@
 			? Object.keys(quarters[0])
 					.filter(
 						(key) =>
-							key.endsWith('_QoQ') &&
-							!key.includes('_Derivative') &&
-							!marginMetrics.some((metric) => key.startsWith(metric))
+							!key.includes('_Derivative') && keepVarianceKey(key, marginMetrics, '_QoQ')
 					)
 					.map((metric) => ({
 						metric: formatMetricName(metric.replace('_QoQ', '')),

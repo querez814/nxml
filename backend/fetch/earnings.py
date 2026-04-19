@@ -1,5 +1,5 @@
 from fastapi import APIRouter, HTTPException
-import requests as r
+from fetch.av_util import av_get_json_sync
 import dotenv as env
 import os
 import pandas as pd
@@ -12,11 +12,7 @@ router = APIRouter()
 @router.get("/earnings-statement/quarterly/{ticker}")
 def get_quarterly_earnings_data(ticker: str):
     url = f"https://www.alphavantage.co/query?function=EARNINGS&symbol={ticker}&apikey={av_api}"
-    response = r.get(url)
-    if response.status_code != 200:
-        raise HTTPException(status_code=500, detail="Failed to fetch data from Alpha Vantage")
-
-    data_json = response.json()
+    data_json = av_get_json_sync(url)
     quarterly_reports = data_json.get("quarterlyEarnings", [])
     if not quarterly_reports:
         raise HTTPException(status_code=404, detail="No quarterly earnings data found")
@@ -56,11 +52,7 @@ def get_quarterly_earnings_data(ticker: str):
 @router.get("/earnings-statement/annual/{ticker}")
 def get_annual_earnings_data(ticker: str):
     url = f"https://www.alphavantage.co/query?function=EARNINGS&symbol={ticker}&apikey={av_api}"
-    response = r.get(url)
-    if response.status_code != 200:
-        raise HTTPException(status_code=500, detail="Failed to fetch data from Alpha Vantage")
-
-    data_json = response.json()
+    data_json = av_get_json_sync(url)
     annual_reports = data_json.get("annualEarnings", [])
     if not annual_reports:
         raise HTTPException(status_code=404, detail="No quarterly earnings data found")

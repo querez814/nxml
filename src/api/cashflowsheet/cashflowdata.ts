@@ -1,26 +1,36 @@
+import { dedupeRequest } from '$lib/utils/inflightRequestCache';
 const api_url = import.meta.env.VITE_API_URL;
 
 export const fetchCashFlow = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/cashflow-statement/quarterly/${ticker}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch cash flow data: ${response.statusText}`);
-	}
+	const url = `${api_url}/financials/cashflow-statement/quarterly/${ticker}`;
+	return dedupeRequest(`cashflow-q:${ticker.toUpperCase()}`, async () => {
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Failed to fetch cash flow data: ${response.statusText}`);
+		}
 
-	const rawData = await response.json();
-	return cleanCashFlowData(rawData);
+		const rawData = await response.json();
+		return cleanCashFlowData(rawData);
+	});
 };
 
 export const fetchCashFlowAnnual = async (ticker: string): Promise<any[]> => {
-	const response = await fetch(`${api_url}/financials/cashflow-statement/annual/${ticker}`);
-	if (!response.ok) {
-		throw new Error(`Failed to fetch cash flow data: ${response.statusText}`);
-	}
-	const rawData = await response.json();
-	return cleanCashFlowDataAnnual(rawData);
+	const url = `${api_url}/financials/cashflow-statement/annual/${ticker}`;
+	return dedupeRequest(`cashflow-a:${ticker.toUpperCase()}`, async () => {
+		const response = await fetch(url);
+		if (!response.ok) {
+			throw new Error(`Failed to fetch cash flow data: ${response.statusText}`);
+		}
+		const rawData = await response.json();
+		return cleanCashFlowDataAnnual(rawData);
+	});
 };
 
-const cleanCashFlowData = (data: any[]): any[] => {
-	return data.map((item) => ({
+const toRows = (data: unknown): any[] => (Array.isArray(data) ? data : []);
+
+const cleanCashFlowData = (data: unknown): any[] => {
+	const rows = toRows(data);
+	return rows.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 
 		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),
@@ -131,8 +141,9 @@ const cleanCashFlowData = (data: any[]): any[] => {
 	}));
 };
 
-const cleanCashFlowDataAnnual = (data: any[]): any[] => {
-	return data.map((item) => ({
+const cleanCashFlowDataAnnual = (data: unknown): any[] => {
+	const rows = toRows(data);
+	return rows.map((item) => ({
 		fiscalDateEnding: item.fiscalDateEnding,
 
 		netIncome: (parseFloat(item.netIncome) / 1e6).toLocaleString(),

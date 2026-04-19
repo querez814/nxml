@@ -1,10 +1,22 @@
 <script lang="ts">
-	import { ChevronDown, LineChart, PieChart, DollarSign, BarChart2, ShieldAlert } from 'lucide-svelte';
+	import {
+		ChevronDown,
+		LineChart,
+		PieChart,
+		DollarSign,
+		BarChart2,
+		ShieldAlert,
+		LayoutDashboard
+	} from 'lucide-svelte';
 	import { page } from '$app/stores';
 	import { goto } from '$app/navigation';
-	import { onMount } from 'svelte';
 
 	let { ticker = '' } = $props<{ ticker?: string }>();
+
+	const overviewPath = $derived(ticker ? `/app/${ticker}` : '');
+	const onOverview = $derived(
+		ticker ? $page.url.pathname === overviewPath || $page.url.pathname === `/app/${ticker.toLowerCase()}` : false
+	);
 
 	let isOpen = $state(false);
 	let tickerInput = $state('');
@@ -109,6 +121,16 @@
 	{/if}
 
 	{#if ticker}
+		<a
+			href={overviewPath}
+			class="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm font-medium transition-colors {onOverview
+				? 'bg-accent/50 text-accent-foreground'
+				: 'text-muted-foreground hover:bg-accent hover:text-accent-foreground'}"
+			aria-current={onOverview ? 'page' : undefined}
+		>
+			<LayoutDashboard class="h-4 w-4" />
+			Overview
+		</a>
 		<button
 			onclick={toggleNav}
 			class="flex items-center gap-2 rounded-md px-3 py-1.5 text-sm text-muted-foreground hover:bg-accent hover:text-accent-foreground"

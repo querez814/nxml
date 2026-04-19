@@ -11,6 +11,8 @@ from fastapi import APIRouter, HTTPException
 import requests
 from dotenv import load_dotenv
 
+import db
+
 load_dotenv()
 
 router = APIRouter()
@@ -296,6 +298,11 @@ async def analyze_financing_risk(ticker: str):
         ticker_upper = ticker.upper()
         filing_url, filing_date = _get_latest_10q_url(ticker_upper, sec_key)
 
+        ctx = f"{ticker_upper}:{filing_date}"
+        cached = await db.fetch_llm_cache_row("financing_risk", ticker_upper, ctx)
+        if cached and not db.is_llm_cache_stale(cached) and isinstance(cached.get("payload"), dict):
+            return dict(cached["payload"])
+
         # part1item2 = MD&A (includes Liquidity and Capital Resources)
         # part1item1 = Financial Statements (includes debt, lease, commitment notes)
         mda_text = _extract_section(filing_url, "part1item2", sec_key)
@@ -376,7 +383,7 @@ async def analyze_financing_risk(ticker: str):
             raw_sections.append("## Financial Statements and Notes\n\n" + sec["other_financing_notes"])
         financing_risk_raw = "\n\n---\n\n".join(raw_sections) if raw_sections else ""
 
-        return {
+        out = {
             "ticker": ticker_upper,
             "filing_date": filing_date,
             "financing_risk_json": financing_risk_json,
@@ -385,6 +392,8 @@ async def analyze_financing_risk(ticker: str):
             "financing_risk_summary": financing_risk_summary,
             "analysis": analysis_text,
         }
+        await db.upsert_llm_cache("financing_risk", ticker_upper, ctx, out, OPENROUTER_MODEL)
+        return out
 
     except HTTPException:
         raise

@@ -1,16 +1,17 @@
 <script lang="ts">
+	import type { PageData } from './$types';
 	import CommandLine from '$lib/components/cmd/CommandLine.svelte';
 	import * as Card from '$lib/components/ui/card';
 	import * as Button from '$lib/components/ui/button';
 	import * as Dialog from '$lib/components/ui/dialog';
 	import * as Separator from '$lib/components/ui/separator';
-	import { Terminal, Sparkles, Keyboard } from 'lucide-svelte';
+	import { Terminal, Sparkles, Keyboard, Loader2 } from 'lucide-svelte';
 	import LandingTutorial from '$lib/components/welcome/LandingTutorial.svelte';
 	import CommandList from '$lib/components/welcome/CommandList.svelte';
 
+	let { data }: { data: PageData } = $props();
 	let showTutorial = $state(false);
 	let showCommands = $state(false);
-
 </script>
 
 <div class="min-h-screen bg-gradient-to-b from-background to-muted">
@@ -53,6 +54,87 @@
 
 								<div class="relative w-full">
 									<CommandLine />
+								</div>
+
+								<div class="w-full space-y-3">
+									<div class="flex items-end justify-between gap-3">
+										<h2 class="flex items-center gap-2 text-base font-semibold tracking-tight">
+											Market Headlines
+											{#await data.streamed.newsRecap}
+												<Loader2
+													class="h-4 w-4 animate-spin text-muted-foreground"
+													aria-label="Loading market headlines"
+												/>
+											{:then _}{/await}
+										</h2>
+										<p class="text-xs text-muted-foreground">Weekly recap sources, scroll to browse</p>
+									</div>
+
+									{#await data.streamed.newsRecap}
+										<div
+											class="flex items-center gap-2 rounded-lg border border-dashed border-border/80 bg-muted/20 px-4 py-3 text-sm text-muted-foreground"
+											role="status"
+											aria-live="polite"
+										>
+											<Loader2 class="h-4 w-4 animate-spin" aria-hidden="true" />
+											<span>Loading market headlines…</span>
+										</div>
+									{:then newsRecap}
+										{@const articles = newsRecap?.articles ?? []}
+										{#if articles.length}
+											<div class="overflow-x-auto pb-1">
+												<div class="flex snap-x snap-mandatory gap-4">
+													{#each articles as article (article.id)}
+														<a
+															href={article.url}
+															target="_blank"
+															rel="noopener noreferrer"
+															class="group min-w-[250px] max-w-[300px] shrink-0 snap-start overflow-hidden rounded-lg border border-border/80 bg-card/60 transition-colors hover:border-primary/50"
+														>
+															{#if article.thumbnail_url}
+																<img
+																	src={article.thumbnail_url}
+																	alt={article.title}
+																	class="h-32 w-full object-cover"
+																	loading="lazy"
+																/>
+															{:else}
+																<div
+																	class="flex h-32 w-full items-center justify-center bg-muted/40 text-xs text-muted-foreground"
+																>
+																	No thumbnail
+																</div>
+															{/if}
+															<div class="space-y-2 p-3">
+																<p class="line-clamp-2 text-sm font-medium leading-snug">
+																	{article.title}
+																</p>
+																<p class="text-xs text-muted-foreground">
+																	{article.publisher}
+																	{#if article.published_at}
+																		<span aria-hidden="true"> · </span>
+																		{new Date(article.published_at).toLocaleDateString()}
+																	{/if}
+																</p>
+															</div>
+														</a>
+													{/each}
+												</div>
+											</div>
+										{:else}
+											<div
+												class="rounded-lg border border-dashed border-border/80 bg-muted/20 px-4 py-3 text-sm text-muted-foreground"
+											>
+												No market headlines are available yet.
+											</div>
+										{/if}
+									{:catch}
+										<div
+											class="rounded-lg border border-dashed border-border/80 bg-muted/20 px-4 py-3 text-sm text-muted-foreground"
+										>
+											Couldn't load market headlines. Please try again later.
+										</div>
+									{/await}
 								</div>
 
 								<div class="w-full space-y-4">

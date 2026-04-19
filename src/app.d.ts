@@ -7,6 +7,13 @@ declare global {
 		// interface PageData {}
 		// interface PageState {}
 		// interface Platform {}
+
+		/** Server-only env (set in cloud / ``.env`` — not ``PUBLIC_*``). */
+		interface PrivateEnv {
+			APP_GATE_PASS?: string;
+			/** @deprecated use ``APP_GATE_PASS`` */
+			APP_GATE_PASSWORD?: string;
+		}
 	}
 }
 

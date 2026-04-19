@@ -1,6 +1,5 @@
 from fastapi import APIRouter, HTTPException
 import asyncio
-import requests as r
 import dotenv as env
 import os
 import pandas as pd
@@ -8,8 +7,9 @@ from datetime import datetime
 from typing import List, Dict, Any
 import pytz
 from collections import Counter
-from fetch.prices import get_prices
-from packages import get_valuation
+
+from fetch.av_util import av_get_json_async, av_get_json_sync
+from fetch.prices import get_daily_prices_compact_async
 
 env.load_dotenv()
 
@@ -21,10 +21,7 @@ router = APIRouter()
 @router.get("/summary/{ticker}")
 def get_summary(ticker:str):
     url = f"https://www.alphavantage.co/query?function=OVERVIEW&symbol={ticker}&apikey={av_api}"
-    response = r.get(url)
-    data_json = response.json()
-    
-    return data_json
+    return av_get_json_sync(url)
 
 
 def get_individual_sentiment(ticker_sentiment: float) -> str:
@@ -225,6 +222,14 @@ def curate_news(data_json: Dict[str, Any], ticker: str, sort_by: str = 'relevanc
         }
     }
 
+async def _fetch_alpha_vantage_news_sentiment(ticker: str) -> Dict[str, Any]:
+    url = (
+        "https://www.alphavantage.co/query"
+        f"?function=NEWS_SENTIMENT&tickers={ticker}&limit=50&apikey={av_api}"
+    )
+    return dict(await av_get_json_async(url))
+
+
 @router.get("/news/{ticker}")
 async def get_curated_news(
     ticker: str, 
@@ -232,33 +237,48 @@ async def get_curated_news(
     min_relevance: float = 0.3,
     excluded_sources: str = 'Motley Fool'
 ):
-    url = f"https://www.alphavantage.co/query?function=NEWS_SENTIMENT&tickers={ticker}&limit=50&apikey={av_api}"
-    response = r.get(url)
-    data_json = response.json()
+    from fetch.valuations import get_valuation_async
+
+    async def _valuation_safe():
+        try:
+            return await get_valuation_async(ticker)
+        except Exception:
+            return None
+
+    async def _prices_safe():
+        try:
+            return await get_daily_prices_compact_async(ticker)
+        except Exception:
+            return []
+
+    data_json, ttm_valuation, prices_list = await asyncio.gather(
+        _fetch_alpha_vantage_news_sentiment(ticker),
+        _valuation_safe(),
+        _prices_safe(),
+    )
 
     excluded_list = [s.strip() for s in excluded_sources.split(',')]
     curated_data = curate_news(data_json, ticker, sort_by, min_relevance, excluded_list)
-    
-    ttm_valuation = await get_valuation(ticker) 
+
     if ttm_valuation:
-        latest_valuation = ttm_valuation[0]  
-        curated_data["ttm_display"] = {
-            "evtosales": latest_valuation["evtosales"],
-            "evtogrossprofit": latest_valuation["evtogrossprofit"],
-            "evtoebitda": latest_valuation["evtoebitda"],
-            "evtonetincome": latest_valuation["evtonetincome"],
-            "revenue_per_share_ttm": latest_valuation["revenue_per_share_ttm"],
-            "price_to_sales_ratio_ttm": latest_valuation["price_to_sales_ratio_ttm"],
-            "AnalystTargetPrice": latest_valuation["AnalystTargetPrice"],
-            "AnalystRatingStrongBuy": latest_valuation["AnalystRatingStrongBuy"],
-            "AnalystRatingBuy": latest_valuation["AnalystRatingBuy"],
-            "AnalystRatingHold": latest_valuation["AnalystRatingHold"],
-            "AnalystRatingSell": latest_valuation["AnalystRatingSell"],
-            "AnalystRatingStrongSell": latest_valuation["AnalystRatingStrongSell"],
-        }
-    
-    prices_list = await get_prices(ticker) if asyncio.iscoroutinefunction(get_prices) else get_prices(ticker)
-    
+        latest = ttm_valuation[0]
+        ttm_keys = [
+            "pe_ratio", "pe_fwd", "pe_fwd_nongaap", "peg_ratio", "peg_nongaap_fwd",
+            "ps_ttm", "ps_fwd", "pb_ratio",
+            "price_to_cash_flow_ttm", "price_to_fcf_ttm",
+            "ev_to_revenue", "ev_to_sales_fwd", "ev_to_ebitda", "ev_to_ebit",
+            "ev_to_gross_profit", "ev_to_fcf_ttm", "ev_to_net_income",
+            "dividend_yield", "dividend_yield_ttm", "payout_ratio",
+            "roe_ttm", "roa_ttm", "profit_margin", "operating_margin_ttm",
+            "book_value_per_share", "diluted_eps_ttm", "revenue_per_share_ttm",
+            "beta", "week52_high", "week52_low", "ma_50d", "ma_200d",
+            "analyst_target_price",
+            "analyst_rating_strong_buy", "analyst_rating_buy", "analyst_rating_hold",
+            "analyst_rating_sell", "analyst_rating_strong_sell",
+            "sector", "industry",
+        ]
+        curated_data["ttm_display"] = {k: latest.get(k) for k in ttm_keys}
+
     if prices_list:
         prices_list.sort(key=lambda p: p["fiscalDateEnding"], reverse=True)
         latest_price_record = prices_list[0]

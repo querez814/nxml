@@ -14,8 +14,3 @@ def fetch_cgl():
     url = f"https://www.alphavantage.co/query?function=TOP_GAINERS_LOSERS&apikey={av_api}"
     data = r.get(url).json()
     return data
-
-    
-print(fetch_cgl())
-
-

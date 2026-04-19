@@ -19,15 +19,14 @@
 	const ticker = $derived($page.params.ticker?.toUpperCase() ?? '');
 
 	// Original = raw SEC filing text; Summary = AI analysis (key points + full narrative)
-	const displayContent = $derived(
-		displayMode === 'original'
-			? (financingRiskRaw ?? '')
-			: [financingRiskSummary, financingRiskNarrative].filter(Boolean).join('\n\n---\n\n')
+	const summaryMarkdown = $derived(
+		[financingRiskSummary, financingRiskNarrative].filter(Boolean).join('\n\n---\n\n')
 	);
 
-	const displayHtml = $derived(
-		displayContent
-			? DOMPurify.sanitize(marked.parse(displayContent) as string, { USE_PROFILES: { html: true } })
+	/** Summary = markdown → HTML. Original = raw 10-Q excerpt: do NOT run through marked or each line becomes a paragraph and pseudo-tables turn into huge vertical gaps. */
+	const summaryHtml = $derived(
+		summaryMarkdown
+			? DOMPurify.sanitize(marked.parse(summaryMarkdown) as string, { USE_PROFILES: { html: true } })
 			: ''
 	);
 
@@ -122,11 +121,30 @@
 					</button>
 				</div>
 			</div>
-			<div
-				class="prose prose-invert prose-sm max-w-none text-gray-300 [&_h2]:mt-4 [&_h2]:text-amber-400 [&_h3]:mt-3 [&_h3]:text-amber-300/90 [&_h4]:mt-2 [&_h4]:text-amber-200/80 [&_ul]:list-disc [&_ul]:pl-5 [&_pre]:overflow-x-auto [&_pre]:rounded [&_pre]:bg-gray-800/50 [&_pre]:p-3"
-			>
-				{@html displayHtml}
-			</div>
+			{#if displayMode === 'original'}
+				<div
+					class="max-h-[min(70vh,720px)] overflow-auto rounded-md border border-gray-800/80 bg-black/30 p-4"
+				>
+					<pre
+						class="whitespace-pre-wrap break-words font-mono text-[11px] leading-relaxed text-gray-300 [word-break:break-word]"
+					>{financingRiskRaw ?? ''}</pre>
+				</div>
+				<p class="mt-2 text-[10px] text-gray-500">
+					Original is plain SEC excerpt (monospace). Summary uses formatted markdown; wide tables scroll
+					horizontally there.
+				</p>
+			{:else}
+				<div class="max-h-[min(70vh,720px)] overflow-x-auto overflow-y-auto rounded-md border border-gray-800/80">
+					<div
+						class="prose prose-invert prose-sm min-w-0 max-w-none p-4 text-gray-300 [&_table]:block [&_table]:w-max [&_table]:min-w-full [&_table]:border-collapse [&_table]:border [&_table]:border-gray-700 [&_td]:border [&_td]:border-gray-700 [&_td]:px-2 [&_td]:py-1 [&_th]:border [&_th]:border-gray-700 [&_th]:px-2 [&_th]:py-1 [&_h2]:mt-4 [&_h2]:text-amber-400 [&_h3]:mt-3 [&_h3]:text-amber-300/90 [&_h4]:mt-2 [&_h4]:text-amber-200/80 [&_ul]:list-disc [&_ul]:pl-5 [&_pre]:overflow-x-auto [&_pre]:rounded [&_pre]:bg-gray-800/50 [&_pre]:p-3"
+					>
+						{#if summaryHtml}
+							<!-- eslint-disable-next-line svelte/no-at-html-tags -->
+							{@html summaryHtml}
+						{/if}
+					</div>
+				</div>
+			{/if}
 		</div>
 	{:else}
 		<div class="rounded-lg border border-dashed border-gray-700/50 bg-gray-900/20 p-8 text-center">

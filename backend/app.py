@@ -1,15 +1,19 @@
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
-from fastapi.middleware.cors import CORSMiddleware 
+from fastapi.middleware.cors import CORSMiddleware
 from fetch.cashflow import router as cashflow_router
 from fetch.balancesheet import router as balancesheet_router
 from fetch.income_statement import router as income_router
 from fetch.is_computations import router as is_computations_router
 from fetch.earnings import router as earnings_router
+from fetch.earnings_estimates import router as earnings_estimates_router
+from fetch.dividends import router as dividends_router
 from fetch.valuations import router as valuation_router
 from fetch.summary import router as summary_router
 from fetch.prices import router as prices_router
 from fetch.technicals import router as entry_router
 from packages import router as pkg_router
+from news_recap import router as news_recap_router
 from newssearch import router as news_router
 from earningscalendar import router as calendar_router
 #from competitors import router as competitors_router
@@ -27,7 +31,29 @@ from technicals.rsi import router as rsi_router
 from technicals.dmi import router as dmi_router
 from technicals.oscillators import router as oscillator_router
 from technicals.macd import router as macd_router
-app = FastAPI()
+import db as valuation_db
+import http_client as shared_http
+
+
+@asynccontextmanager
+async def lifespan(_app: FastAPI):
+    # Record the running event loop so worker-thread sync helpers
+    # (db.sync_wait_awaitable) can schedule DB work back onto the loop that
+    # owns the asyncpg pool, instead of spinning up a throwaway loop that
+    # would later raise "Event loop is closed".
+    valuation_db.set_main_loop()
+    # Warm the valuation cache pool. Failure is non-fatal (valuations fall back to on-demand compute).
+    await valuation_db.get_pool()
+    await shared_http.init_http_client()
+    try:
+        yield
+    finally:
+        await shared_http.close_http_client()
+        await valuation_db.close_pool()
+        valuation_db.set_main_loop(None)
+
+
+app = FastAPI(lifespan=lifespan)
 
 
 app.add_middleware(
@@ -60,7 +86,9 @@ def read_root():
     return {"Hello dawg"}
 
     
-app.include_router(earnings_router, prefix="/financials", tags=["Earnings Statement"])    
+app.include_router(earnings_router, prefix="/financials", tags=["Earnings Statement"])
+app.include_router(earnings_estimates_router, prefix="/financials", tags=["Earnings Estimates"])
+app.include_router(dividends_router, prefix="/financials", tags=["Dividends"])
 app.include_router(income_router, prefix="/financials", tags=["Income Statement"])
 app.include_router(cashflow_router, prefix="/financials", tags=["Cash Flow"])
 app.include_router(balancesheet_router, prefix="/financials", tags=["Balance Sheet"])
@@ -70,6 +98,7 @@ app.include_router(summary_router, prefix="/financials", tags=["Summary"])
 app.include_router(prices_router, prefix="/financials", tags=["Summary"])
 app.include_router(entry_router, prefix="/technicals", tags=["Technicals"])
 app.include_router(pkg_router, prefix="/current", tags=["Current"])
+app.include_router(news_recap_router, prefix="/news", tags=["News recap"])
 app.include_router(news_router, prefix="/news", tags=["Current"])
 app.include_router(calendar_router, prefix="/news", tags=["Current"])
 app.include_router(latex_router, tags=["latex"])
