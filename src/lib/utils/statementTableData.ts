@@ -3,7 +3,24 @@
  */
 
 import { formatRatio } from '../../api/valuation/valuationdata';
+import { normalizeFiscalQuarterEndDate } from './fiscalQuarterDates';
 import { keepVarianceKey } from './financialTableKeys';
+
+type StatementTableOptions = {
+	normalizeQuarterDates?: boolean;
+};
+
+function buildQuarterDateEntries(
+	quarters: Record<string, unknown>[],
+	{ normalizeQuarterDates = false }: StatementTableOptions = {}
+) {
+	return quarters.map((quarter) => ({
+		quarter,
+		quarterDate: normalizeQuarterDates
+			? normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)
+			: String(quarter.fiscalDateEnding)
+	}));
+}
 
 function incomeFormatMetricName(name: string): string {
 	const specialCases: Record<string, string> = {
@@ -48,7 +65,10 @@ const incomeExcludedKeys = [
 	...incomeMarginMetrics
 ];
 
-export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) {
+export function buildIncomeStatementTables(
+	quarters: Record<string, unknown>[],
+	options: StatementTableOptions = {}
+) {
 	if (!quarters.length) {
 		return {
 			rawData: [] as Record<string, unknown>[],
@@ -59,7 +79,8 @@ export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) 
 		};
 	}
 	const q0 = quarters[0] as Record<string, unknown>;
-	const quarterDates = quarters.map((q) => String((q as { fiscalDateEnding: string }).fiscalDateEnding));
+	const quarterDateEntries = buildQuarterDateEntries(quarters, options);
+	const quarterDates = quarterDateEntries.map(({ quarterDate }) => quarterDate);
 
 	const rawData = Object.keys(q0)
 		.filter(
@@ -72,12 +93,10 @@ export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) 
 		.map((metric) => ({
 			metric: incomeFormatMetricName(metric),
 			originalMetric: metric,
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -93,12 +112,10 @@ export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) 
 		.map((metric) => ({
 			metric: incomeFormatMetricName(metric.replace('_YoY', '')),
 			originalMetric: metric.replace('_YoY', ''),
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -114,12 +131,10 @@ export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) 
 		.map((metric) => ({
 			metric: incomeFormatMetricName(metric.replace('_QoQ', '')),
 			originalMetric: metric.replace('_QoQ', ''),
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -128,10 +143,10 @@ export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) 
 	const marginsData = incomeMarginMetrics.map((metric) => ({
 		metric: incomeFormatMetricName(metric),
 		originalMetric: metric,
-		...quarters.reduce(
-			(acc, quarter) => ({
+		...quarterDateEntries.reduce(
+			(acc, { quarter, quarterDate }) => ({
 				...acc,
-				[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[metric]
+				[quarterDate]: quarter[metric]
 			}),
 			{}
 		)
@@ -140,7 +155,10 @@ export function buildIncomeStatementTables(quarters: Record<string, unknown>[]) 
 	return { rawData, yoyData, qoqData, marginsData, quarterDates };
 }
 
-export function buildBalanceSheetTables(quarters: Record<string, unknown>[]) {
+export function buildBalanceSheetTables(
+	quarters: Record<string, unknown>[],
+	options: StatementTableOptions = {}
+) {
 	if (!quarters.length) {
 		return {
 			rawData: [] as Record<string, unknown>[],
@@ -150,7 +168,8 @@ export function buildBalanceSheetTables(quarters: Record<string, unknown>[]) {
 		};
 	}
 	const q0 = quarters[0] as Record<string, unknown>;
-	const quarterDates = quarters.map((q) => String((q as { fiscalDateEnding: string }).fiscalDateEnding));
+	const quarterDateEntries = buildQuarterDateEntries(quarters, options);
+	const quarterDates = quarterDateEntries.map(({ quarterDate }) => quarterDate);
 
 	const rawData = Object.keys(q0)
 		.filter(
@@ -162,12 +181,10 @@ export function buildBalanceSheetTables(quarters: Record<string, unknown>[]) {
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric),
 			originalMetric: metric,
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -178,12 +195,10 @@ export function buildBalanceSheetTables(quarters: Record<string, unknown>[]) {
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_YoY', '')),
 			originalMetric: metric.replace('_YoY', ''),
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -194,12 +209,10 @@ export function buildBalanceSheetTables(quarters: Record<string, unknown>[]) {
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_QoQ', '')),
 			originalMetric: metric.replace('_QoQ', ''),
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -219,7 +232,10 @@ const cfMarginMetrics = [
 
 const cfExcludedKeys = ['_id', 'symbol', 'reportedCurrency', '__v', 'fiscalDateEnding', ...cfMarginMetrics];
 
-export function buildCashFlowTables(quarters: Record<string, unknown>[]) {
+export function buildCashFlowTables(
+	quarters: Record<string, unknown>[],
+	options: StatementTableOptions = {}
+) {
 	if (!quarters.length) {
 		return {
 			rawData: [] as Record<string, unknown>[],
@@ -231,19 +247,18 @@ export function buildCashFlowTables(quarters: Record<string, unknown>[]) {
 		};
 	}
 	const q0 = quarters[0] as Record<string, unknown>;
-	const quarterDates = quarters.map((q) => String((q as { fiscalDateEnding: string }).fiscalDateEnding));
+	const quarterDateEntries = buildQuarterDateEntries(quarters, options);
+	const quarterDates = quarterDateEntries.map(({ quarterDate }) => quarterDate);
 
 	const rawData = Object.keys(q0)
 		.filter((key) => !cfExcludedKeys.includes(key) && !key.endsWith('_YoY') && !key.endsWith('_QoQ'))
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric),
 			originalMetric: metric,
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -254,12 +269,10 @@ export function buildCashFlowTables(quarters: Record<string, unknown>[]) {
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_YoY', '')),
 			originalMetric: metric.replace('_YoY', ''),
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -272,12 +285,10 @@ export function buildCashFlowTables(quarters: Record<string, unknown>[]) {
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_QoQ', '')),
 			originalMetric: metric.replace('_QoQ', ''),
-			...quarters.reduce(
-				(acc, quarter) => ({
+			...quarterDateEntries.reduce(
+				(acc, { quarter, quarterDate }) => ({
 					...acc,
-					[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[
-						metric
-					]
+					[quarterDate]: quarter[metric]
 				}),
 				{}
 			)
@@ -286,10 +297,10 @@ export function buildCashFlowTables(quarters: Record<string, unknown>[]) {
 	const marginsData = cfMarginMetrics.map((metric) => ({
 		metric: bsCfFormatMetricName(metric),
 		originalMetric: metric,
-		...quarters.reduce(
-			(acc, quarter) => ({
+		...quarterDateEntries.reduce(
+			(acc, { quarter, quarterDate }) => ({
 				...acc,
-				[(quarter as { fiscalDateEnding: string }).fiscalDateEnding]: (quarter as Record<string, unknown>)[metric]
+				[quarterDate]: quarter[metric]
 			}),
 			{}
 		)

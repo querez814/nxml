@@ -1,7 +1,7 @@
 import type { PageServerLoad } from './$types';
-import { fetchIncomeStatement } from '../../../../api/incomesheet/incomedata';
-import { fetchBalanceSheet } from '../../../../api/balancesheet/balancesheetdata';
-import { fetchCashFlow } from '../../../../api/cashflowsheet/cashflowdata';
+import { fetchIncomeStatement, fetchIncomeStatementAnnual } from '../../../../api/incomesheet/incomedata';
+import { fetchBalanceSheet, fetchBalanceSheetAnnual } from '../../../../api/balancesheet/balancesheetdata';
+import { fetchCashFlow, fetchCashFlowAnnual } from '../../../../api/cashflowsheet/cashflowdata';
 import { fetchValuation, fetchValuationLayout } from '../../../../api/valuation/valuationdata';
 import { fetchNewsRecapTicker } from '$lib/api/newsRecap';
 import siteMetadata from '$lib/config/site-metadata';
@@ -12,13 +12,24 @@ export const load = (async ({ params, fetch }) => {
 	const ticker = (params.ticker ?? '').trim();
 	const api = siteMetadata.urls.app.api;
 
-	/* Critical path only: reduce first-render latency and AV burst pressure. */
-	const [incomeQuarters, balanceQuarters, cashQuarters, valuationQuarters, layout] = await Promise.all([
+	const [
+		incomeQuarters,
+		balanceQuarters,
+		cashQuarters,
+		valuationQuarters,
+		layout,
+		incomeAnnual,
+		balanceAnnual,
+		cashAnnual
+	] = await Promise.all([
 		withBackoff(() => fetchIncomeStatement(ticker), []),
 		withBackoff(() => fetchBalanceSheet(ticker), []),
 		withBackoff(() => fetchCashFlow(ticker), []),
 		withBackoff(() => fetchValuation(ticker), []),
-		withBackoff(() => fetchValuationLayout(ticker), null)
+		withBackoff(() => fetchValuationLayout(ticker), null),
+		withBackoff(() => fetchIncomeStatementAnnual(ticker), []),
+		withBackoff(() => fetchBalanceSheetAnnual(ticker), []),
+		withBackoff(() => fetchCashFlowAnnual(ticker), [])
 	]);
 
 	const valuationSnapshot =
@@ -33,12 +44,11 @@ export const load = (async ({ params, fetch }) => {
 		layout,
 		valuationSnapshot,
 		incomeQuarters,
-		/* Deferred on first navigation to keep ticker transitions fast. */
-		incomeAnnual: [],
+		incomeAnnual,
 		balanceQuarters,
-		balanceAnnual: [],
+		balanceAnnual,
 		cashQuarters,
-		cashAnnual: [],
+		cashAnnual,
 		valuationQuarters,
 		streamed: {
 			newsRecap: newsRecapPromise

@@ -1,7 +1,8 @@
 import { redirect, fail } from '@sveltejs/kit';
 import { timingSafeEqual } from 'crypto';
 import { env as privateEnv } from '$env/dynamic/private';
-import type { Actions } from './$types';
+import type { Actions, PageServerLoad } from './$types';
+import { loadMarketSentimentStream } from '$lib/server/marketSentimentLoad';
 
 const GATE_COOKIE = 'app_gate';
 
@@ -16,6 +17,8 @@ function expectedGateSecret(): string {
 		privateEnv.APP_GATE_PASSWORD?.trim() || process.env.APP_GATE_PASSWORD?.trim();
 	return fromPass || fromLegacy || DEFAULT_GATE_PASSWORD;
 }
+
+export const load = (({ fetch }) => loadMarketSentimentStream(fetch)) satisfies PageServerLoad;
 
 export const actions: Actions = {
 	default: async ({ request, cookies }) => {

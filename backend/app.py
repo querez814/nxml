@@ -14,6 +14,7 @@ from fetch.prices import router as prices_router
 from fetch.technicals import router as entry_router
 from packages import router as pkg_router
 from news_recap import router as news_recap_router
+from fetch.av_news_sentiment import router as av_news_sentiment_router
 from newssearch import router as news_router
 from earningscalendar import router as calendar_router
 #from competitors import router as competitors_router
@@ -99,6 +100,7 @@ app.include_router(prices_router, prefix="/financials", tags=["Summary"])
 app.include_router(entry_router, prefix="/technicals", tags=["Technicals"])
 app.include_router(pkg_router, prefix="/current", tags=["Current"])
 app.include_router(news_recap_router, prefix="/news", tags=["News recap"])
+app.include_router(av_news_sentiment_router, prefix="/news", tags=["News sentiment"])
 app.include_router(news_router, prefix="/news", tags=["Current"])
 app.include_router(calendar_router, prefix="/news", tags=["Current"])
 app.include_router(latex_router, tags=["latex"])

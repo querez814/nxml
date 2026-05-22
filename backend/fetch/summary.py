@@ -4,11 +4,12 @@ import dotenv as env
 import os
 import pandas as pd
 from datetime import datetime
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 import pytz
 from collections import Counter
 
-from fetch.av_util import av_get_json_async, av_get_json_sync
+from fetch.av_util import av_get_json_sync
+from fetch.news_sentiment import fetch_news_sentiment_async
 from fetch.prices import get_daily_prices_compact_async
 
 env.load_dotenv()
@@ -222,12 +223,127 @@ def curate_news(data_json: Dict[str, Any], ticker: str, sort_by: str = 'relevanc
         }
     }
 
-async def _fetch_alpha_vantage_news_sentiment(ticker: str) -> Dict[str, Any]:
-    url = (
-        "https://www.alphavantage.co/query"
-        f"?function=NEWS_SENTIMENT&tickers={ticker}&limit=50&apikey={av_api}"
+
+def _max_ticker_relevance(article: Dict[str, Any]) -> float:
+    ts = article.get("ticker_sentiment") or []
+    if not ts:
+        return 0.0
+    best = 0.0
+    for x in ts:
+        try:
+            best = max(best, float(x.get("relevance_score", 0)))
+        except (TypeError, ValueError):
+            continue
+    return best
+
+
+def curate_market_news(
+    data_json: Dict[str, Any],
+    sort_by: str = "recent",
+    min_ticker_relevance: float = 0.0,
+    excluded_sources: Optional[List[str]] = None,
+) -> Dict[str, Any]:
+    """Curate AV news feed for broad market / landing: no single-ticker filter; uses overall sentiment."""
+    if excluded_sources is None:
+        excluded_sources = ["Motley Fool"]
+    if not data_json or "feed" not in data_json:
+        return {"error": "No news data available"}
+
+    articles = data_json["feed"]
+    curated_articles: List[Dict[str, Any]] = []
+
+    for article in articles:
+        if article.get("source") in excluded_sources:
+            continue
+        max_rel = _max_ticker_relevance(article)
+        if max_rel < min_ticker_relevance:
+            continue
+
+        pub_time = datetime.strptime(article["time_published"], "%Y%m%dT%H%M%S")
+        pub_time = pytz.utc.localize(pub_time).date()
+
+        try:
+            overall = float(article.get("overall_sentiment_score", 0) or 0)
+        except (TypeError, ValueError):
+            overall = 0.0
+
+        insights = extract_key_insights(article)
+        rel_weight = max(max_rel, 0.01)
+
+        enriched_article = {
+            "title": article["title"],
+            "url": article["url"],
+            "published_at": pub_time.isoformat(),
+            "source": article["source"],
+            "summary": article.get("summary", ""),
+            "ticker_relevance": rel_weight,
+            "ticker_sentiment": overall,
+            "sentiment_label": get_individual_sentiment(overall),
+            "overall_sentiment": overall,
+            "key_insights": insights,
+            "topics": [
+                t["topic"]
+                for t in article.get("topics", [])
+                if isinstance(t, dict) and float(t.get("relevance_score", 0)) > 0.5
+            ],
+        }
+        curated_articles.append(enriched_article)
+
+    sort_keys = {
+        "recent": lambda x: x["published_at"],
+        "relevance": lambda x: x["ticker_relevance"],
+        "sentiment": lambda x: abs(x["ticker_sentiment"]),
+    }
+    curated_articles.sort(
+        key=sort_keys.get(sort_by, sort_keys["recent"]), reverse=True
     )
-    return dict(await av_get_json_async(url))
+
+    key_topics = extract_key_topics(articles)
+    sentiment_trend = get_sentiment_trend(curated_articles)
+
+    sentiment_buckets = {
+        "positive": [a for a in curated_articles if a["ticker_sentiment"] > 0.15],
+        "negative": [a for a in curated_articles if a["ticker_sentiment"] < -0.15],
+        "neutral": [
+            a
+            for a in curated_articles
+            if -0.15 <= a["ticker_sentiment"] <= 0.15
+        ],
+    }
+
+    sentiment_distribution = {
+        "positive": len(sentiment_buckets["positive"]),
+        "neutral": len(sentiment_buckets["neutral"]),
+        "negative": len(sentiment_buckets["negative"]),
+    }
+
+    market_sentiment = get_market_sentiment(curated_articles, sentiment_distribution)
+
+    return {
+        "ticker": "MARKET",
+        "market_sentiment": market_sentiment,
+        "summary": {
+            "total_relevant_articles": len(curated_articles),
+            "sentiment_trend": sentiment_trend,
+            "key_topics": key_topics,
+            "sentiment_distribution": sentiment_distribution,
+            "market_sentiment": market_sentiment,
+        },
+        "top_articles": curated_articles[:5],
+        "sentiment_analysis": {
+            "positive": sentiment_buckets["positive"][:3],
+            "negative": sentiment_buckets["negative"][:3],
+        },
+        "market_context": {
+            "trending_topics": key_topics,
+            "sentiment_trend": sentiment_trend,
+            "market_sentiment": market_sentiment,
+        },
+    }
+
+
+async def _fetch_alpha_vantage_news_sentiment(ticker: str) -> Dict[str, Any]:
+    return await fetch_news_sentiment_async(tickers=ticker, limit=50)
 
 
 @router.get("/news/{ticker}")

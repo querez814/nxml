@@ -1,5 +1,9 @@
 <script lang="ts">
+	import type { PageData } from './$types';
 	import './landing/landing.css';
+	import MarketHeadlinesStrip from '$lib/components/landing/MarketHeadlinesStrip.svelte';
+
+	let { data }: { data: PageData } = $props();
 
 	let scrollPosition = $state(0);
 	let isScrolled = $derived(scrollPosition > 50);
@@ -88,6 +92,8 @@
 				</div>
 			</div>
 		</section>
+
+		<MarketHeadlinesStrip sentiment={data.streamed.marketSentiment} />
 
 		<section id="contact" class="contact">
 			<div class="contact-content">

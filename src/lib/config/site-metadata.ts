@@ -9,9 +9,9 @@ const apiUrl = () =>
 const baseAppUrl = () => (env.PUBLIC_BASE_APP_URL as string | undefined) ?? '';
 
 const siteMetadata = {
-	title: 'Due Diligence',
+	title: 'TZR Fund',
 	author: 'The Team :)',
-	headerTitle: 'Due Diligence',
+	headerTitle: 'TZR Fund',
 	description: '',
 	theme: 'system',
 	locale: 'en-US',
