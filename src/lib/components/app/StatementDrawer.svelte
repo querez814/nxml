@@ -88,10 +88,10 @@
 	});
 
 	const tables = $derived.by(() => {
-		const normalizeQuarterDates = period === 'quarterly';
-		if (kind === 'income') return buildIncomeStatementTables(rows, { normalizeQuarterDates });
-		if (kind === 'balance') return buildBalanceSheetTables(rows, { normalizeQuarterDates });
-		if (kind === 'cashflow') return buildCashFlowTables(rows, { normalizeQuarterDates });
+		const useQuarterLabels = period === 'quarterly';
+		if (kind === 'income') return buildIncomeStatementTables(rows, { useQuarterLabels });
+		if (kind === 'balance') return buildBalanceSheetTables(rows, { useQuarterLabels });
+		if (kind === 'cashflow') return buildCashFlowTables(rows, { useQuarterLabels });
 		return { ...buildValuationTable(rows), yoyData: undefined, qoqData: undefined, marginsData: undefined };
 	});
 

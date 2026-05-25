@@ -6,7 +6,7 @@
 	import DataTable from '$lib/components/display/DataTable.svelte';
 	import CashFlowTutorial from '$lib/components/tutorial/cashflow/CashFlowTutorial.svelte';
 	import { keepVarianceKey } from '$lib/utils/financialTableKeys';
-	import { normalizeFiscalQuarterEndDate } from '$lib/utils/fiscalQuarterDates';
+	import { formatFiscalQuarterLabel } from '$lib/utils/fiscalQuarterDates';
 
 	const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -59,7 +59,7 @@
 	}
 
 	const quarterDates = $derived(
-		quarters.map((q: any) => normalizeFiscalQuarterEndDate(q.fiscalDateEnding))
+		quarters.map((q: any) => formatFiscalQuarterLabel(q.fiscalDateEnding))
 	);
 
 	const marginMetrics = [
@@ -92,7 +92,7 @@
 						...quarters.reduce(
 							(acc: any, quarter: any) => ({
 								...acc,
-								[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+								[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 							}),
 							{}
 						)
@@ -110,7 +110,7 @@
 						...quarters.reduce(
 							(acc: any, quarter: any) => ({
 								...acc,
-								[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+								[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 							}),
 							{}
 						)
@@ -130,7 +130,7 @@
 						...quarters.reduce(
 							(acc: any, quarter: any) => ({
 								...acc,
-								[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+								[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 							}),
 							{}
 						)
@@ -145,7 +145,7 @@
 					...quarters.reduce(
 						(acc: any, quarter: any) => ({
 							...acc,
-							[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+							[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 						}),
 						{}
 					)

@@ -1,4 +1,4 @@
-const quarterEndByIndex = ['03-31', '06-30', '09-30', '12-31'] as const;
+const quarterLabelByIndex = ['Q1', 'Q2', 'Q3', 'Q4'] as const;
 
 function getFiscalMonth(dateValue: string): { year: number; month: number } | null {
 	const isoMatch = dateValue.match(/^(\d{4})-(\d{2})-\d{2}/);
@@ -18,11 +18,11 @@ function getFiscalMonth(dateValue: string): { year: number; month: number } | nu
 	};
 }
 
-export function normalizeFiscalQuarterEndDate(fiscalDateEnding: unknown): string {
+export function formatFiscalQuarterLabel(fiscalDateEnding: unknown): string {
 	const originalDate = String(fiscalDateEnding ?? '');
 	const parsed = getFiscalMonth(originalDate);
 	if (!parsed || parsed.month < 1 || parsed.month > 12) return originalDate;
 
 	const quarterIndex = Math.ceil(parsed.month / 3) - 1;
-	return `${parsed.year}-${quarterEndByIndex[quarterIndex]}`;
+	return `${quarterLabelByIndex[quarterIndex]} ${parsed.year}`;
 }

@@ -5,7 +5,7 @@
 	import type { PageData } from './$types';
 	import DataTable from '$lib/components/display/DataTable.svelte';
 	import BalanceSheetTutorial from '$lib/components/tutorial/balancesheet/BalanceSheetTutorial.svelte';
-	import { normalizeFiscalQuarterEndDate } from '$lib/utils/fiscalQuarterDates';
+	import { formatFiscalQuarterLabel } from '$lib/utils/fiscalQuarterDates';
 
 	const apiUrl = import.meta.env.VITE_API_URL;
 
@@ -56,7 +56,7 @@
 	}
 
 	const quarterDates = $derived(
-		quarters.map((q) => normalizeFiscalQuarterEndDate(q.fiscalDateEnding))
+		quarters.map((q) => formatFiscalQuarterLabel(q.fiscalDateEnding))
 	);
 
 	const rawData = $derived(
@@ -73,7 +73,7 @@
 						...quarters.reduce(
 							(acc, quarter) => ({
 								...acc,
-								[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+								[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 							}),
 							{}
 						)
@@ -90,7 +90,7 @@
 						...quarters.reduce(
 							(acc, quarter) => ({
 								...acc,
-								[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+								[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 							}),
 							{}
 						)
@@ -107,7 +107,7 @@
 						...quarters.reduce(
 							(acc, quarter) => ({
 								...acc,
-								[normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)]: quarter[metric]
+								[formatFiscalQuarterLabel(quarter.fiscalDateEnding)]: quarter[metric]
 							}),
 							{}
 						)

@@ -108,6 +108,19 @@
 		}
 		return s.startsWith('-') ? 'text-red-400' : 'text-emerald-400';
 	}
+
+	function formatPeriodHeader(period: unknown): string {
+		const value = String(period);
+		if (/^Q[1-4]\s+\d{4}$/.test(value)) return value;
+
+		const date = new Date(value);
+		if (Number.isNaN(date.getTime())) return value;
+
+		return date.toLocaleDateString('en-US', {
+			year: 'numeric',
+			month: 'short'
+		});
+	}
 </script>
 
 <div class="container mx-auto px-4 py-6">
@@ -167,10 +180,7 @@
 										<ThSort table={rawTable} field={'metric'}>Metric</ThSort>
 										{#each props.quarters as quarter}
 											<ThSort table={rawTable} field={quarter}>
-												{new Date(quarter).toLocaleDateString('en-US', {
-													year: 'numeric',
-													month: 'short'
-												})}
+												{formatPeriodHeader(quarter)}
 											</ThSort>
 										{/each}
 									</tr>
@@ -213,10 +223,7 @@
 										<ThSort table={yoyTable} field={'metric'}>Metric</ThSort>
 										{#each props.quarters as quarter}
 											<ThSort table={yoyTable} field={quarter}>
-												{new Date(quarter).toLocaleDateString('en-US', {
-													year: 'numeric',
-													month: 'short'
-												})}
+												{formatPeriodHeader(quarter)}
 											</ThSort>
 										{/each}
 									</tr>
@@ -259,10 +266,7 @@
 										<ThSort table={qoqTable} field={'metric'}>Metric</ThSort>
 										{#each props.quarters as quarter}
 											<ThSort table={qoqTable} field={quarter}>
-												{new Date(quarter).toLocaleDateString('en-US', {
-													year: 'numeric',
-													month: 'short'
-												})}
+												{formatPeriodHeader(quarter)}
 											</ThSort>
 										{/each}
 									</tr>
@@ -386,10 +390,7 @@
 										<ThSort table={marginsTable} field={'metric'}>Metric</ThSort>
 										{#each props.quarters as quarter}
 											<ThSort table={marginsTable} field={quarter}>
-												{new Date(quarter).toLocaleDateString('en-US', {
-													year: 'numeric',
-													month: 'short'
-												})}
+												{formatPeriodHeader(quarter)}
 											</ThSort>
 										{/each}
 									</tr>

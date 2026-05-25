@@ -3,21 +3,21 @@
  */
 
 import { formatRatio } from '../../api/valuation/valuationdata';
-import { normalizeFiscalQuarterEndDate } from './fiscalQuarterDates';
+import { formatFiscalQuarterLabel } from './fiscalQuarterDates';
 import { keepVarianceKey } from './financialTableKeys';
 
 type StatementTableOptions = {
-	normalizeQuarterDates?: boolean;
+	useQuarterLabels?: boolean;
 };
 
-function buildQuarterDateEntries(
+function buildQuarterColumnEntries(
 	quarters: Record<string, unknown>[],
-	{ normalizeQuarterDates = false }: StatementTableOptions = {}
+	{ useQuarterLabels = false }: StatementTableOptions = {}
 ) {
 	return quarters.map((quarter) => ({
 		quarter,
-		quarterDate: normalizeQuarterDates
-			? normalizeFiscalQuarterEndDate(quarter.fiscalDateEnding)
+		quarterColumn: useQuarterLabels
+			? formatFiscalQuarterLabel(quarter.fiscalDateEnding)
 			: String(quarter.fiscalDateEnding)
 	}));
 }
@@ -79,8 +79,8 @@ export function buildIncomeStatementTables(
 		};
 	}
 	const q0 = quarters[0] as Record<string, unknown>;
-	const quarterDateEntries = buildQuarterDateEntries(quarters, options);
-	const quarterDates = quarterDateEntries.map(({ quarterDate }) => quarterDate);
+	const quarterColumnEntries = buildQuarterColumnEntries(quarters, options);
+	const quarterDates = quarterColumnEntries.map(({ quarterColumn }) => quarterColumn);
 
 	const rawData = Object.keys(q0)
 		.filter(
@@ -93,10 +93,10 @@ export function buildIncomeStatementTables(
 		.map((metric) => ({
 			metric: incomeFormatMetricName(metric),
 			originalMetric: metric,
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -112,10 +112,10 @@ export function buildIncomeStatementTables(
 		.map((metric) => ({
 			metric: incomeFormatMetricName(metric.replace('_YoY', '')),
 			originalMetric: metric.replace('_YoY', ''),
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -131,10 +131,10 @@ export function buildIncomeStatementTables(
 		.map((metric) => ({
 			metric: incomeFormatMetricName(metric.replace('_QoQ', '')),
 			originalMetric: metric.replace('_QoQ', ''),
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -143,10 +143,10 @@ export function buildIncomeStatementTables(
 	const marginsData = incomeMarginMetrics.map((metric) => ({
 		metric: incomeFormatMetricName(metric),
 		originalMetric: metric,
-		...quarterDateEntries.reduce(
-			(acc, { quarter, quarterDate }) => ({
+		...quarterColumnEntries.reduce(
+			(acc, { quarter, quarterColumn }) => ({
 				...acc,
-				[quarterDate]: quarter[metric]
+				[quarterColumn]: quarter[metric]
 			}),
 			{}
 		)
@@ -168,8 +168,8 @@ export function buildBalanceSheetTables(
 		};
 	}
 	const q0 = quarters[0] as Record<string, unknown>;
-	const quarterDateEntries = buildQuarterDateEntries(quarters, options);
-	const quarterDates = quarterDateEntries.map(({ quarterDate }) => quarterDate);
+	const quarterColumnEntries = buildQuarterColumnEntries(quarters, options);
+	const quarterDates = quarterColumnEntries.map(({ quarterColumn }) => quarterColumn);
 
 	const rawData = Object.keys(q0)
 		.filter(
@@ -181,10 +181,10 @@ export function buildBalanceSheetTables(
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric),
 			originalMetric: metric,
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -195,10 +195,10 @@ export function buildBalanceSheetTables(
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_YoY', '')),
 			originalMetric: metric.replace('_YoY', ''),
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -209,10 +209,10 @@ export function buildBalanceSheetTables(
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_QoQ', '')),
 			originalMetric: metric.replace('_QoQ', ''),
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -247,18 +247,18 @@ export function buildCashFlowTables(
 		};
 	}
 	const q0 = quarters[0] as Record<string, unknown>;
-	const quarterDateEntries = buildQuarterDateEntries(quarters, options);
-	const quarterDates = quarterDateEntries.map(({ quarterDate }) => quarterDate);
+	const quarterColumnEntries = buildQuarterColumnEntries(quarters, options);
+	const quarterDates = quarterColumnEntries.map(({ quarterColumn }) => quarterColumn);
 
 	const rawData = Object.keys(q0)
 		.filter((key) => !cfExcludedKeys.includes(key) && !key.endsWith('_YoY') && !key.endsWith('_QoQ'))
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric),
 			originalMetric: metric,
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -269,10 +269,10 @@ export function buildCashFlowTables(
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_YoY', '')),
 			originalMetric: metric.replace('_YoY', ''),
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -285,10 +285,10 @@ export function buildCashFlowTables(
 		.map((metric) => ({
 			metric: bsCfFormatMetricName(metric.replace('_QoQ', '')),
 			originalMetric: metric.replace('_QoQ', ''),
-			...quarterDateEntries.reduce(
-				(acc, { quarter, quarterDate }) => ({
+			...quarterColumnEntries.reduce(
+				(acc, { quarter, quarterColumn }) => ({
 					...acc,
-					[quarterDate]: quarter[metric]
+					[quarterColumn]: quarter[metric]
 				}),
 				{}
 			)
@@ -297,10 +297,10 @@ export function buildCashFlowTables(
 	const marginsData = cfMarginMetrics.map((metric) => ({
 		metric: bsCfFormatMetricName(metric),
 		originalMetric: metric,
-		...quarterDateEntries.reduce(
-			(acc, { quarter, quarterDate }) => ({
+		...quarterColumnEntries.reduce(
+			(acc, { quarter, quarterColumn }) => ({
 				...acc,
-				[quarterDate]: quarter[metric]
+				[quarterColumn]: quarter[metric]
 			}),
 			{}
 		)
